@@ -9,7 +9,6 @@ import argparse
 import traceback
 from pathlib import Path
 from datetime import datetime, timezone, timedelta
-from urllib.parse import urlparse
 
 # Настройка часового пояса (Москва UTC+3)
 MOSCOW_TZ = timezone(timedelta(hours=3))
@@ -17,6 +16,13 @@ MOSCOW_TZ = timezone(timedelta(hours=3))
 def get_moscow_time():
     """Возвращает текущее время по Москве"""
     return datetime.now(MOSCOW_TZ)
+
+def create_info_channel(update_time):
+    """Создает информационный канал с датой обновления"""
+    info_line = f'#EXTINF:-1 group-title="📊 ИНФО" tvg-logo="https://i.imgur.com/8K7kFk3.png",📅 Обновлено: {update_time.strftime("%d.%m.%Y %H:%M")} MSK'
+    # Ссылка на информационный ролик или просто пустой стрим
+    info_url = 'https://raw.githubusercontent.com/AlexanderRU44/m3u-Merger/main/output/info.m3u8'
+    return {'info': info_line, 'url': info_url, 'source': 'M3U-Merger', 'has_catchup': False}
 
 # Список групп, которые нужно исключить
 EXCLUDED_GROUPS = [
@@ -27,7 +33,6 @@ EXCLUDED_GROUPS = [
     '↕️ Торрент ТВ ↕️',
     'Торрент ТВ',
     'Torrent TV',
-    # Новые группы для исключения
     'Киргизия',
     'Узбекистан',
     'Наш Нет 🇺🇦',
@@ -202,7 +207,6 @@ def merge_m3u_files(input_dir, output_file, remove_duplicates=True, sort_channel
             if not channel.get('url'):
                 continue
             
-            # Проверяем, нужно ли исключить канал
             if is_excluded_group(channel['info']):
                 excluded_count += 1
                 continue
@@ -215,21 +219,16 @@ def merge_m3u_files(input_dir, output_file, remove_duplicates=True, sort_channel
                     continue
                 seen_urls.add(channel['url'])
             
-            # Если есть архив - добавляем в список архивных
             if channel.get('has_catchup', False):
                 archive_count += 1
-                # Копируем канал и добавляем группу "📺 АРХИВНЫЕ"
                 archive_channel = channel.copy()
-                # Добавляем group-title если его нет, или заменяем
                 if 'group-title="' in archive_channel['info']:
-                    # Заменяем существующую группу
                     archive_channel['info'] = re.sub(
                         r'group-title="[^"]*"',
                         'group-title="📺 АРХИВНЫЕ"',
                         archive_channel['info']
                     )
                 else:
-                    # Добавляем группу перед названием канала
                     archive_channel['info'] = archive_channel['info'].replace(
                         ',',
                         ' group-title="📺 АРХИВНЫЕ",'
@@ -238,44 +237,44 @@ def merge_m3u_files(input_dir, output_file, remove_duplicates=True, sort_channel
                 
             all_channels.append(channel)
     
-    # ДОБАВЛЯЕМ АРХИВНЫЕ КАНАЛЫ В ОСНОВНОЙ СПИСОК
+    # Добавляем информационный канал с датой обновления
+    now = get_moscow_time()
+    info_channel = create_info_channel(now)
+    all_channels.insert(0, info_channel)  # Вставляем в начало
+    
     if archive_channels:
         print(f"📺 Добавление {len(archive_channels)} архивных каналов в основной плейлист")
         all_channels.extend(archive_channels)
     
-    # Сортировка
     if sort_channels:
         all_channels.sort(key=lambda x: x.get('info', ''))
         archive_channels.sort(key=lambda x: x.get('info', ''))
     
-    # Запись основного плейлиста
     try:
         print(f"💾 Запись основного плейлиста в {output_file}...")
-        write_m3u(all_channels, output_file)
+        write_m3u(all_channels, output_file, now)
     except Exception as e:
         print(f"❌ Ошибка записи {output_file}: {e}")
         traceback.print_exc()
         return False, {}
     
-    # Сохраняем архивные каналы в отдельный файл
     if archive_channels:
         try:
             archive_file = Path(output_file).parent / 'merged_archive.m3u'
-            write_m3u(archive_channels, archive_file)
+            write_m3u(archive_channels, archive_file, now)
             print(f"📦 Архивные каналы сохранены в {archive_file}")
         except Exception as e:
             print(f"❌ Ошибка записи архивного файла: {e}")
             traceback.print_exc()
             return False, {}
     
-    # Статистика
     stats = {
-        'generated': datetime.now(MOSCOW_TZ).isoformat(),
+        'generated': now.isoformat(),
         'input_dir': str(input_dir),
         'output_file': str(output_file),
         'total_files': len(m3u_files),
         'total_channels': total_count,
-        'unique_channels': len(all_channels) - len(archive_channels),
+        'unique_channels': len(all_channels) - len(archive_channels) - 1,  # -1 за информационный канал
         'duplicates_removed': duplicates_count,
         'excluded_channels': excluded_count,
         'excluded_groups': EXCLUDED_GROUPS,
@@ -290,28 +289,26 @@ def merge_m3u_files(input_dir, output_file, remove_duplicates=True, sort_channel
     print("\n" + "="*50)
     print(f"📊 Статистика:")
     print(f"  Всего каналов: {total_count}")
-    print(f"  Уникальных: {len(all_channels) - len(archive_channels)}")
+    print(f"  Уникальных: {len(all_channels) - len(archive_channels) - 1}")
     print(f"  Удалено дубликатов: {duplicates_count}")
     print(f"  🗑️ Исключено каналов: {excluded_count}")
     print(f"  📺 Каналов с архивом: {archive_count}")
+    print(f"  📅 Обновлено: {now.strftime('%d.%m.%Y %H:%M')} MSK")
     print(f"  Источников: {len(m3u_files)}")
     print(f"✅ Результат сохранен в {output_file}")
     print("="*50)
     
     return True, stats
 
-def write_m3u(channels, output_file):
+def write_m3u(channels, output_file, update_time):
     """Записывает каналы в M3U файл"""
     
     output_path = Path(output_file)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     
-    # Используем московское время
-    now = get_moscow_time()
-    
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write('#EXTM3U\n')
-        f.write(f'# Создано: {now.strftime("%Y-%m-%d %H:%M:%S")} MSK\n')
+        f.write(f'# Создано: {update_time.strftime("%Y-%m-%d %H:%M:%S")} MSK\n')
         f.write(f'# Всего каналов: {len(channels)}\n')
         
         archive_count = sum(1 for ch in channels if ch.get('has_catchup', False))
