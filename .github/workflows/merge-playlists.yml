@@ -1,0 +1,119 @@
+name: Merge M3U Playlists
+
+on:
+  # Автоматический запуск при пуше в папку playlists
+  push:
+    paths:
+      - 'playlists/**'
+    branches:
+      - main
+      - master
+  
+  # Ручной запуск из интерфейса GitHub
+  workflow_dispatch:
+    inputs:
+      keep_duplicates:
+        description: 'Оставить дубликаты?'
+        type: boolean
+        default: false
+      sort_channels:
+        description: 'Сортировать каналы?'
+        type: boolean
+        default: true
+
+  # Запуск по расписанию (каждый день в 3:00)
+  schedule:
+    - cron: '0 3 * * *'
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Разрешаем запись в репозиторий
+    
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+      
+      - name: 📦 Install dependencies
+        run: |
+          pip install -r requirements.txt || true
+          pip install --upgrade pip
+      
+      - name: 🔍 Check playlists
+        run: |
+          echo "📂 Проверка файлов в playlists/:"
+          ls -la playlists/ || echo "Папка playlists пуста"
+      
+      - name: 🔄 Merge playlists
+        id: merge
+        run: |
+          KEEP_DUPS="${{ github.event.inputs.keep_duplicates || false }}"
+          SORT="${{ github.event.inputs.sort_channels || true }}"
+          
+          ARGS=""
+          if [ "$KEEP_DUPS" = "true" ]; then
+            ARGS="$ARGS --keep-duplicates"
+          fi
+          if [ "$SORT" = "true" ]; then
+            ARGS="$ARGS --sort"
+          fi
+          
+          python merge_m3u.py --input-dir ./playlists --output ./output/merged.m3u $ARGS --generate-stats
+          
+          echo "status=success" >> $GITHUB_OUTPUT
+      
+      - name: 📊 Show statistics
+        if: success()
+        run: |
+          echo "📊 Статистика:"
+          cat output/stats.json || echo "Нет статистики"
+          echo ""
+          echo "📄 Содержимое merged.m3u (первые 10 строк):"
+          head -n 10 output/merged.m3u || echo "Файл пуст"
+      
+      - name: 📝 Commit and push
+        if: success()
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          # Проверяем, есть ли изменения
+          if git diff --quiet; then
+            echo "✅ Нет изменений для коммита"
+          else
+            git add output/
+            git commit -m "🔄 Автоматическое обновление плейлиста $(date '+%Y-%m-%d %H:%M')"
+            git push
+            echo "✅ Изменения запушены в репозиторий"
+          fi
+      
+      - name: 📎 Upload artifact (для скачивания)
+        uses: actions/upload-artifact@v4
+        with:
+          name: merged-playlist
+          path: output/merged.m3u
+          retention-days: 30
+      
+      - name: 📋 Create/Update release
+        if: success()
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: latest
+          name: "Последняя версия плейлиста"
+          body: |
+            ## 📺 Объединенный плейлист
+            
+            📅 Обновлено: $(date '+%Y-%m-%d %H:%M:%S')
+            
+            ### 📊 Статистика
+            ```json
+            $(cat output/stats.json 2>/dev/null || echo "Нет данных")
