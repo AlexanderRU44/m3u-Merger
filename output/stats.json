@@ -1,0 +1,17 @@
+{
+  "generated": "2026-08-25T15:15:54.519862",
+  "input_dir": "./playlists",
+  "output_file": "./output/merged.m3u",
+  "files": [
+    {
+      "name": "source1.m3u",
+      "size": 422599,
+      "modified": "2026-08-25T15:15:54.229859"
+    },
+    {
+      "name": "source2.m3u8",
+      "size": 747028,
+      "modified": "2026-08-25T15:15:54.402863"
+    }
+  ]
+}
