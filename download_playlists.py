@@ -37,21 +37,39 @@ def download_playlist(url, output_path, timeout=60):
 
 def main():
     # ═══════════════════════════════════════════════════════════
-    # 🔽 ВАШИ ССЫЛКИ НА ПЛЕЙЛИСТЫ
+    # 🔽 ВСЕ ИСТОЧНИКИ (6 ПЛЕЙЛИСТОВ)
     # ═══════════════════════════════════════════════════════════
     
     playlists = [
+        # 1. Плейлист от Dimonovich
         {
             'url': 'https://raw.githubusercontent.com/Dimonovich/TV/Dimonovich/FREE/TV',
             'name': 'dimonovich_tv.m3u'
         },
+        # 2. Плейлист ShamsTV
         {
             'url': 'http://iptvshams.ru/ShamsTV.m3u8',
             'name': 'shams_tv.m3u8'
         },
+        # 3. Плейлист IPTVru (основной)
         {
             'url': 'https://smolnp.github.io/IPTVru//IPTVru.m3u',
             'name': 'iptv_ru.m3u'
+        },
+        # 4. Плейлист IPTVstable (стабильная версия)
+        {
+            'url': 'https://raw.githubusercontent.com/smolnp/IPTVru/refs/heads/gh-pages/IPTVstable.m3u8',
+            'name': 'iptv_stable.m3u8'
+        },
+        # 5. Плейлист Zabava
+        {
+            'url': 'https://raw.githubusercontent.com/CrocoUser/zabava-project/refs/heads/main/zabava-ef.m3u',
+            'name': 'zabava_ef.m3u'
+        },
+        # 6. НОВЫЙ: Плейлист от LoganetTV
+        {
+            'url': 'https://loganettv.github.io/playlists/all.m3u',
+            'name': 'loganet_tv.m3u'
         },
     ]
     
