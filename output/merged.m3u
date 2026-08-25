@@ -1,12 +1,10 @@
 #EXTM3U
-# Создано: 2026-08-25 22:09:45 MSK
-# Всего каналов: 4889
+# Создано: 2026-08-25 22:15:54 MSK
+# Всего каналов: 4888
 # Каналов с архивом: 544
 
-#EXTINF:-1 group-title="📊 ИНФО" tvg-logo="https://i.imgur.com/8K7kFk3.png",📅 Обновлено: 25.08.2026 22:09 MSK
+#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: 25.08.2026 22:15 MSK
 https://raw.githubusercontent.com/AlexanderRU44/m3u-Merger/main/output/info.m3u8
-#EXTINF:-1,ИНФОКАНАЛ
-https://github.com/CrocoUser/files/raw/refs/heads/main/infokanal.m3u8
 #EXTINF:-1 group-title="Основные" tvg-id="pervy",Первый
 #EXTVLCOPT:http-user-agent=HlsWinkPlayer
 https://zabava-htlive.cdn.ngenix.net/hls/CH_1TVSD/variant.m3u8

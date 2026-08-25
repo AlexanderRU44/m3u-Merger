@@ -1,12 +1,12 @@
 {
-  "generated": "2026-08-25T22:09:45.633702+03:00",
+  "generated": "2026-08-25T22:15:54.754104+03:00",
   "input_dir": "./playlists",
   "output_file": "./output/merged.m3u",
   "total_files": 6,
-  "total_channels": 5154,
-  "unique_channels": 4616,
+  "total_channels": 5153,
+  "unique_channels": 4615,
   "duplicates_removed": 538,
-  "excluded_channels": 595,
+  "excluded_channels": 596,
   "excluded_groups": [
     "🔺 INFO 🔺",
     "- ИНФО -",
@@ -20,7 +20,8 @@
     "Наш Нет 🇺🇦",
     "Наш Нет",
     "Itv.uz (🇺🇿)",
-    "Itv.uz"
+    "Itv.uz",
+    "ИНФОКАНАЛ"
   ],
   "archive_channels": 272,
   "sources": {
@@ -39,5 +40,5 @@
     "playlists/shams_tv.m3u8": 439279,
     "playlists/iptv_stable.m3u8": 41592
   },
-  "output_size": 1193732
+  "output_size": 1193589
 }
