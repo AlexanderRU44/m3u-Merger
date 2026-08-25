@@ -5,6 +5,7 @@ on:
     paths:
       - 'playlists/**'
       - 'download_playlists.py'
+      - 'merge_m3u.py'
     branches:
       - main
       - master
@@ -20,8 +21,8 @@ on:
         type: boolean
         default: true
 
-schedule:
-  - cron: '0 18 * * *'  # 18:00 UTC = 21:00 MSK
+  schedule:
+    - cron: '10 18 * * *'  # 18:10 UTC = 21:10 MSK
 
 jobs:
   merge:
@@ -101,13 +102,14 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           
-          git add playlists/ output/
+          git add -f playlists/ output/
           
           if git diff --staged --quiet; then
             echo "✅ Нет изменений для коммита"
           else
             git commit -m "🔄 Автоматическое обновление плейлистов $(date '+%Y-%m-%d %H:%M')"
-            git push
+            git pull --rebase origin main || true
+            git push origin main
             echo "✅ Изменения запушены в репозиторий"
           fi
       
@@ -118,22 +120,15 @@ jobs:
           path: output/merged.m3u
           retention-days: 30
       
-      - name: 📋 Create/Update release
+      - name: 📋 Create/Update Release
         if: success()
         uses: softprops/action-gh-release@v1
         with:
           tag_name: latest
-          name: "Последняя версия плейлиста"
+          name: "📺 Актуальный плейлист"
           body: |
             ## 📺 Объединенный плейлист
             
-            📅 Обновлено: ${{ github.event.head_commit.timestamp || github.event.repository.updated_at }}
+            📅 **Обновлено:** $(date '+%Y-%m-%d %H:%M:%S') MSK
             
-            Скачайте актуальную версию плейлиста в аттачментах ниже.
-          files: |
-            output/merged.m3u
-            output/stats.json
-          draft: false
-          prerelease: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            ### 📊 Статистика
