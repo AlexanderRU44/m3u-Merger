@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - 'playlists/**'
-      - 'download_playlists.py'  # Добавляем триггер на изменение скрипта
+      - 'download_playlists.py'
     branches:
       - main
       - master
@@ -21,7 +21,7 @@ on:
         default: true
 
   schedule:
-    - cron: '0 3 * * *'  # Каждый день в 3:00
+    - cron: '0 3 * * *'
 
 jobs:
   merge:
@@ -43,7 +43,7 @@ jobs:
       
       - name: 📦 Install dependencies
         run: |
-          pip install requests  # Добавляем requests
+          pip install requests
           pip install -r requirements.txt || true
       
       - name: 📥 Download playlists from URLs
@@ -82,10 +82,18 @@ jobs:
         if: success()
         run: |
           echo "📊 Статистика:"
-          cat output/stats.json || echo "Нет статистики"
+          if [ -f output/stats.json ]; then
+            cat output/stats.json
+          else
+            echo "Нет статистики"
+          fi
           echo ""
           echo "📄 Содержимое merged.m3u (первые 10 строк):"
-          head -n 10 output/merged.m3u || echo "Файл пуст"
+          if [ -f output/merged.m3u ]; then
+            head -n 10 output/merged.m3u
+          else
+            echo "Файл не создан"
+          fi
       
       - name: 📝 Commit and push
         if: success()
@@ -119,8 +127,8 @@ jobs:
           body: |
             ## 📺 Объединенный плейлист
             
-            📅 Обновлено: $(date '+%Y-%m-%d %H:%M:%S')
+            📅 Обновлено: ${{ github.event.head_commit.timestamp || github.event.repository.updated_at }}
             
             ### 📊 Статистика
             ```json
-            $(cat output/stats.json 2>/dev/null || echo "Нет данных")
+            ${{ steps.merge.outputs.stats }}
