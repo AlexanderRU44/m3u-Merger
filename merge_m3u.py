@@ -1,3 +1,7 @@
+
+## 🐍 Обновленный `merge_m3u.py` с сохранением статистики в output
+
+```python
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
@@ -68,20 +72,23 @@ def merge_m3u_files(input_dir, output_file, remove_duplicates=True, sort_channel
     
     if not m3u_files:
         print(f"❌ Не найдено M3U файлов в {input_dir}")
-        return False
+        return False, {}
     
     print(f"📂 Найдено {len(m3u_files)} файлов:")
     for f in m3u_files:
-        print(f"  - {f.name}")
+        size = f.stat().st_size
+        print(f"  - {f.name} ({size} байт)")
     
     all_channels = []
     seen_urls = set()
     duplicates_count = 0
     total_count = 0
+    sources = {}
     
     for file_path in m3u_files:
         print(f"📖 Чтение {file_path.name}...")
         channels = parse_m3u(file_path)
+        sources[file_path.name] = len(channels)
         
         for channel in channels:
             if not channel['url']:
@@ -105,6 +112,21 @@ def merge_m3u_files(input_dir, output_file, remove_duplicates=True, sort_channel
     write_m3u(all_channels, output_file)
     
     # Статистика
+    stats = {
+        'generated': datetime.now().isoformat(),
+        'input_dir': str(input_dir),
+        'output_file': str(output_file),
+        'total_files': len(m3u_files),
+        'total_channels': total_count,
+        'unique_channels': len(all_channels),
+        'duplicates_removed': duplicates_count,
+        'sources': sources,
+        'file_sizes': {
+            str(f): f.stat().st_size for f in m3u_files
+        },
+        'output_size': Path(output_file).stat().st_size if Path(output_file).exists() else 0
+    }
+    
     print("\n" + "="*50)
     print(f"📊 Статистика:")
     print(f"  Всего каналов: {total_count}")
@@ -114,7 +136,7 @@ def merge_m3u_files(input_dir, output_file, remove_duplicates=True, sort_channel
     print(f"✅ Результат сохранен в {output_file}")
     print("="*50)
     
-    return True
+    return True, stats
 
 def write_m3u(channels, output_file):
     """Записывает каналы в M3U файл"""
@@ -129,7 +151,6 @@ def write_m3u(channels, output_file):
         
         for channel in channels:
             if channel.get('info'):
-                # Добавляем источник в комментарий
                 if channel.get('source'):
                     info = channel['info']
                     if not info.endswith(']') and not info.endswith(')'):
@@ -148,13 +169,13 @@ def main():
     parser.add_argument(
         '--input-dir',
         default='./playlists',
-        help='Директория с исходными плейлистами (по умолчанию: ./playlists)'
+        help='Директория с исходными плейлистами'
     )
     
     parser.add_argument(
         '--output',
         default='./output/merged.m3u',
-        help='Выходной файл (по умолчанию: ./output/merged.m3u)'
+        help='Выходной файл'
     )
     
     parser.add_argument(
@@ -177,46 +198,32 @@ def main():
     
     args = parser.parse_args()
     
-    # Проверяем существование директории
     if not Path(args.input_dir).exists():
         print(f"❌ Директория {args.input_dir} не найдена")
         sys.exit(1)
     
-    # Объединяем
-    success = merge_m3u_files(
+    success, stats = merge_m3u_files(
         args.input_dir,
         args.output,
         remove_duplicates=not args.keep_duplicates,
         sort_channels=args.sort
     )
     
-    if success and args.generate_stats:
-        generate_stats(args.input_dir, args.output)
+    if success and args.generate_stats and stats:
+        stats_file = Path(args.output).parent / 'stats.json'
+        with open(stats_file, 'w', encoding='utf-8') as f:
+            json.dump(stats, f, indent=2, ensure_ascii=False)
+        
+        # Выводим JSON для GitHub Actions
+        print("::set-output name=stats::" + json.dumps(stats))
+        
+        # Также выводим в читаемом виде
+        print(f"\n📊 Статистика сохранена в {stats_file}")
+        print("="*50)
+        print(json.dumps(stats, indent=2, ensure_ascii=False))
+        print("="*50)
     
     sys.exit(0 if success else 1)
-
-def generate_stats(input_dir, output_file):
-    """Генерирует JSON со статистикой"""
-    stats = {
-        'generated': datetime.now().isoformat(),
-        'input_dir': input_dir,
-        'output_file': output_file,
-        'files': []
-    }
-    
-    for ext in ['*.m3u', '*.m3u8']:
-        for f in Path(input_dir).glob(ext):
-            stats['files'].append({
-                'name': f.name,
-                'size': f.stat().st_size,
-                'modified': datetime.fromtimestamp(f.stat().st_mtime).isoformat()
-            })
-    
-    stats_file = Path(output_file).parent / 'stats.json'
-    with open(stats_file, 'w', encoding='utf-8') as f:
-        json.dump(stats, f, indent=2, ensure_ascii=False)
-    
-    print(f"📊 Статистика сохранена в {stats_file}")
 
 if __name__ == '__main__':
     main()
