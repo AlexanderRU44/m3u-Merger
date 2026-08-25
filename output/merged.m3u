@@ -1,6 +1,6 @@
 #EXTM3U
-# Создано: 2026-08-25 16:06:22
-# Всего каналов: 4826
+# Создано: 2026-08-25 16:20:36
+# Всего каналов: 4813
 # Каналов с архивом: 295
 
 #EXTINF:-1 channel-id="SamsungTVPlus-USAK3508705A" tvg-name="Stingray Naturescape" tvg-id="USAK3508705A" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/USAK3508705A_20240520T212618SQUARE.png" group-title="RELAX🏝️" tvg-chno="4572",Stingray Naturescape
@@ -7654,10 +7654,6 @@ https://lbgo.bozztv.com/07/ushba56/tracks-v1a1/mono.m3u8
 https://lbgo.bozztv.com/07/ushba61/index.m3u8
 #EXTINF:-1 group-title="📺 Usba TV" tvg-logo="https://ushba.tv/assets/images/logo-roku1.png" ,Шоу Бенни Хилла
 https://lbgo.bozztv.com/07/ushba62/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="🔺 INFO 🔺" tvg-logo="https://i.postimg.cc/76BWD3tc/1.gif",Обновление:25.08.2026
-http://194.26.229.213/zastavka/index.m3u8
-#EXTINF:-1 group-title="🔺 INFO 🔺" tvg-logo="https://i.postimg.cc/nrj0J6Dj/1.png",Android TV + Free TV
-http://194.26.229.213/intro/index.m3u8
 #EXTINF:-1 tvg-id="000101_MegaKadr" tvg-name="Bear TV МегаКадр RU UHD" tvg-logo="http://uhd.bear-tv.net:8080/bear_uhd/logo.png" group-title="Bear TV",Bear TV МегаКадр RU UHD
 https://uhd.bear-tv.net/000101_MegaKadr/index.m3u8?token=2__wqx2YvuBv00
 #EXTINF:-1 tvg-id="000102_GoldenScreen" tvg-name="Bear TV Золотой Экран RU UHD" tvg-logo="http://uhd.bear-tv.net:8080/bear_uhd/logo.png" group-title="Bear TV",Bear TV Золотой Экран RU UHD
@@ -7881,8 +7877,6 @@ https://uhd.bear-tv.net/bear_tv_velykyy_ekran/index.m3u8?token=2__wqx2YvuBv00
 https://uhd.bear-tv.net/bear_tv_vybir_glyadacha/index.m3u8?token=2__wqx2YvuBv00
 #EXTINF:-1 tvg-id="bear_tv_zolota_kolektsiya" tvg-name="Bear TV Золота Колекція UA HD" tvg-logo="http://uhd.bear-tv.net:8080/bear_uhd/logo.png" group-title="Bear TV",Bear TV Золота Колекція UA HD
 https://uhd.bear-tv.net/bear_tv_zolota_kolektsiya/index.m3u8?token=2__wqx2YvuBv00
-#EXTINF:-1 tvg-id="belarus24" tvg-logo="https://iptvx.one/picons/belarus24.png" group-title="Информационные",Беларусь 24 HD
-https://ngtrk.dc.beltelecom.by/ngtrk/smil:belarus24.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="belarus4-gomel" tvg-logo="https://iptvx.one/picons/belarus4-gomel.png" group-title="Местные" ,Беларусь 4 Гомель
 http://46.56.85.151:8080/0.m3u8
 #EXTINF:-1 tvg-id="belarus5" tvg-logo="https://iptvx.one/picons/belarus5hd.png" group-title="Спортивные",Беларусь 5 HD
@@ -7924,12 +7918,8 @@ http://s84942.cdn.ngenix.net/hls/CH_R28_OTT_DV_BLAG_GOROD24/variant.m3u8
 https://gtk.tv/hls/gtyar.m3u8
 #EXTINF:-1 tvg-id="https://static.wikia.nocookie.net/tvpedia/images/6/64/ASTRAKHAN.RU_SPORT.jpg/revision/latest/scale-to-width-down/1200?cb=20240419121027&path-prefix=ru" tvg-logo="https://raw.githubusercontent.com/blackbirdstudiorus/LoganetXIPTV/main/IMG_20230719_152756.png" group-title="Спортивные" ,Astrakhan.RU SPORT
 http://streaming.astrakhan.ru/astrakhanrusporthd/playlist.m3u8
-#EXTINF:-1 tvg-id="https://www.eapo.org/wp-content/uploads/2024/03/tass_logo_cyrillic.svg.png" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/61/TASS_Logo_Cyrillic.svg" group-title="Информационные" ,ТАСС
-https://tass-hls.servicecdn.ru/httpstreamer/tass-loop-main.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="impuls-sewera" tvg-logo="https://iptvx.one/picons/impuls-sewera.png" group-title="Местные" ,Импульс Севера
 https://bl.rutube.ru/livestream/342a3e4f3c9bb0d7830a52af0d956c44/index.m3u8?s=na5lRe1FycA0nFHRZrfcsg&e=2070623514&scheme=https
-#EXTINF:-1 tvg-id="izvestia" tvg-logo="https://iptvx.one/picons/izvestia.png" group-title="Информационные",Известия HD
-http://s20441.cdn.ngenix.net/hls/CH_R49_MGTK/variant.m3u8
 #EXTINF:-1 tvg-id="kamcha-1" tvg-logo="https://iptvx.one/picons/kamcha-1.png" group-title="Местные" ,Камчатка 1
 http://s14131.cdn.ngenix.net/hls/CH_R41_OTT_DV_KAM_KAMCHATKA/variant.m3u8
 #EXTINF:-1 tvg-id="katun-24" tvg-logo="https://iptvx.one/picons/katun-24.png" group-title="Местные" ,Катунь 24
@@ -8041,8 +8031,6 @@ https://yaroslavl.mediacdn.ru/cdn/pervyaroslavsk/playlist.m3u8
 http://178.124.207.1:1780/tvp
 #EXTINF:-1 tvg-id="prnk-tv" tvg-logo="https://iptvx.one/picons/prnk-tv.png" group-title="Общественные" ,ПРНК HD
 https://serv25.vintera.tv/1pnk/prnk/chunks.m3u8
-#EXTINF:-1 tvg-id="pro-business" tvg-logo="https://iptvx.one/picons/pro-business.png" group-title="Информационные",Про бизнес
-https://tv-streaming.bsh.ru:21938/probusiness/probusiness.stream/chunklist.m3u8
 #EXTINF:-1 tvg-id="pro-zhizn" tvg-logo="https://iptvx.one/picons/pro-zhizn.png" group-title="Местные" ,Про жизнь
 https://27trk.iptv2022.com/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="prodvizhenie" tvg-logo="https://iptvx.one/picons/prodvizhenie.png" group-title="Развлекательные",Продвижение
@@ -8051,8 +8039,6 @@ http://origin5.mediacdn.ru/live/prodvizhenie_new/index.m3u8
 http://cdn-01.bonus-tv.ru/prosveschenie_edge/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="radio-shanson" tvg-logo="https://iptvx.one/picons/radio-shanson.png" group-title="Музыкальные" ,Радио Шансон
 http://chanson-video.hostingradio.ru:8080/hls/chansonabr/live.m3u8
-#EXTINF:-1 tvg-id="rbk" tvg-logo="https://iptvx.one/picons/rbk.png" group-title="Информационные" ,РБК HD
-http://online.video.rbc.ru/online/rbctvhd_1080p/index.m3u8
 #EXTINF:-1 tvg-id="region29" tvg-logo="https://iptvx.one/picons/region29.png" group-title="Местные" ,Регион 29
 http://rt-nw-arkh-htlive.cdn.ngenix.net/hls/CH_R02_PRAVDASEVERA/variant.m3u8
 #EXTINF:-1 tvg-id="region67" tvg-logo="https://iptvx.one/picons/region67.png" group-title="Местные" ,Регион 67
@@ -8065,8 +8051,6 @@ http://stream.mediawork.cz/retrotv/retrotvHQ1/playlist.m3u8
 https://dagestan.mediacdn.ru/cdn/dagestan/playlist.m3u8
 #EXTINF:-1 tvg-id="rifey-tv" tvg-logo="https://iptvx.one/picons/rifey-tv.png" group-title="Местные" ,Рифей-ТВ
 https://bl.rutube.ru/livestream/57486bf8e1c01d16a5a939c463867fab/index.m3u8?s=7e16kFowncLriG9eElNY7g&e=2070623512&scheme=https
-#EXTINF:-1 tvg-id="rossia-24" tvg-logo="https://iptvx.one/picons/rossia-24.png" group-title="Информационные" ,Россия 24 HD
-https://vgtrkregion-reg.cdnvideo.ru/vgtrk/0/russia24-hd/720p.m3u8
 #EXTINF:-1 tvg-id="rtd-ru" tvg-logo="https://iptvx.one/picons/rt-doc.png" group-title="Познавательные" ,RTД HD
 http://rt-doc.rttv.com/dvr/rtdru/rtdru1080.m3u8
 #EXTINF:-1 tvg-id="rts-abakan" tvg-logo="https://iptvx.one/picons/rts-abakan.png" group-title="Местные" ,РТС - Абакан
@@ -8101,8 +8085,6 @@ http://serv30.vintera.tv:8081/sochi/sochi_stream/playlist.m3u8
 http://serv30.vintera.tv:8081/sochi/sochi24_tv/playlist.m3u8
 #EXTINF:-1 tvg-id="solnce" tvg-logo="https://iptvx.one/picons/solnce.png" group-title="Детские" ,Солнце
 http://tv.mediacdn.ru/live/solntse/playlist_3000k.m3u8
-#EXTINF:-1 tvg-id="solovjinypomiot" tvg-logo="https://iptvx.one/picons/solovjinypomiot.png" group-title="Информационные" ,Соловьев.Live HD
-https://stream.smotrim.ru/hls2/solovievlive/playlist_6.m3u8
 #EXTINF:-1 tvg-id="soyuz" tvg-logo="https://iptvx.one/picons/soyuz.png" group-title="Христианские" ,Союз HD
 http://hls-tvsoyuz.cdnvideo.ru/tvsoyuz/soyuz/playlist.m3u8
 #EXTINF:-1 tvg-id="spas" tvg-logo="https://iptvx.one/picons/spas.png" group-title="Христианские" ,Спас
@@ -8183,8 +8165,6 @@ https://cdn.universmotri.ru/live/hq.sdp/playlist.m3u8
 http://rt-ural-chel-htlive.cdn.ngenix.net/hls/CH_R02_OTT_URAL1/variant.m3u8
 #EXTINF:-1 tvg-id="utv-cheboxary" tvg-logo="https://iptvx.one/picons/utv-cheboxary.png" group-title="Местные" ,ЮТВ Чебоксары
 http://rt-vlg-chr-htlive.cdn.ngenix.net/hls/CH_R01_UTV/variant.m3u8
-#EXTINF:-1 tvg-id="vmeste-rf" tvg-logo="https://iptvx.one/picons/vmeste-rf.png" group-title="Информационные",ВМЕСТЕ:РФ HD
-https://qcpdqumitwf.a.trbcdn.net/livemastersrt/pr4mw_lvie-vmesterf-srt.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="volga" tvg-logo="https://iptvx.one/picons/volga.png" group-title="Местные" ,Волга
 http://rt-vlg-nn-htlive.cdn.ngenix.net/hls/CH_R03_VOLGA/variant.m3u8
 #EXTINF:-1 tvg-id="volgograd-24" tvg-logo="https://iptvx.one/picons/volgograd-24.png" group-title="Местные" ,Волгоград 24
@@ -9933,8 +9913,6 @@ http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_0d72.m3u8
 http://stream.shbro.org/stream/14B37BB54802/Otvvideom3u8.m3u8
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/DZ9M94gY/Viasat-History.png" group-title="Россия",Viasat History
 http://stream.shbro.org/stream/14B37BB54802/7b9avideom3u8.m3u8
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/GmdQmMDF/Shams-TVava-(2).jpg" group-title="- ИНФО -",ПОДПИШИСЬ
-http://stream.shbro.org/stream/14B37BB54802/tintroshammp4.m3u8
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/J4wRwcQn/i-TV-Cinema-Logo.png" group-title="Кино Канал",ITV Cinema
 http://stream.shbro.org/stream/14B37BB54802/4000indexm3u8.m3u8
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/JhQvnKqY/sts.png" group-title="Россия",СТС
@@ -10125,8 +10103,6 @@ http://stream.shbro.org/stream/14B37BB54802/1016indexm3u8.m3u8
 http://stream.shbro.org/stream/14B37BB54802/1286indexm3u8.m3u8
 #EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2026/06/23//bfa00beb-dafa-447d-bcf7-ff2fa954bf61-q-500x500.jpeg" group-title="Узбекистан",HayotTV
 http://stream.shbro.org/stream/14B37BB54802/1064indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptvshams.ru/tarif.jpg" group-title="- ИНФО -",ПЛАТНЫЕ ТАРИФЫ
-http://stream.shbro.org/stream/14B37BB54802/msrutarifmp4.m3u8
 #EXTINF:-1 tvg-logo="https://lime-tv.ru/wp-content/uploads/2020/10/1522668479_htm.jpg" group-title="Россия",НТМ
 http://stream.shbro.org/stream/14B37BB54802/lplaylistm3u8_34ea.m3u8
 #EXTINF:-1 tvg-logo="https://lime-tv.ru/wp-content/uploads/2020/10/1522668479_htm.jpg" group-title="Россия",НТМ HD
@@ -10231,8 +10207,6 @@ http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_8a02.m3u8
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_e8cc.m3u8
 #EXTINF:-1 tvg-logo="https://ramtv.ru/wp-content/uploads/2021/12/cropped-Logo2020-white2-e1640011054620.png" group-title="Россия",Раменское ТВ
 http://stream.shbro.org/stream/14B37BB54802/netrtv0m3u8.m3u8
-#EXTINF:-1 tvg-logo="https://shamilbro.ucoz.net/ustanovka.jpg" group-title="- ИНФО -",УСТАНОВКА
-http://stream.shbro.org/stream/14B37BB54802/tustanovkamp4.m3u8
 #EXTINF:-1 tvg-logo="https://shams.usite.pro/Log/Discovery.png" group-title="Россия",Discovery
 http://stream.shbro.org/stream/14B37BB54802/nnelindexm3u8_a6c8.m3u8
 #EXTINF:-1 tvg-logo="https://shams.usite.pro/Log/Scripach_tv.png" group-title="Кино Канал",Scripach tv FHD
