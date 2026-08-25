@@ -18,9 +18,8 @@ def get_moscow_time():
     return datetime.now(MOSCOW_TZ)
 
 def create_info_channel(update_time):
-    """Создает информационный канал с датой обновления"""
-    info_line = f'#EXTINF:-1 group-title="📊 ИНФО" tvg-logo="https://i.imgur.com/8K7kFk3.png",📅 Обновлено: {update_time.strftime("%d.%m.%Y %H:%M")} MSK'
-    # Ссылка на информационный ролик или просто пустой стрим
+    """Создает информационный канал с датой обновления (без логотипа)"""
+    info_line = f'#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: {update_time.strftime("%d.%m.%Y %H:%M")} MSK'
     info_url = 'https://raw.githubusercontent.com/AlexanderRU44/m3u-Merger/main/output/info.m3u8'
     return {'info': info_line, 'url': info_url, 'source': 'M3U-Merger', 'has_catchup': False}
 
@@ -39,6 +38,7 @@ EXCLUDED_GROUPS = [
     'Наш Нет',
     'Itv.uz (🇺🇿)',
     'Itv.uz',
+    'ИНФОКАНАЛ',  # Удаляем все каналы с этим названием
 ]
 
 def extract_url(line):
@@ -61,9 +61,13 @@ def get_group_title(info_line):
     return None
 
 def is_excluded_group(info_line):
-    """Проверяет, нужно ли исключить канал по группе"""
+    """Проверяет, нужно ли исключить канал по группе или названию"""
     group = get_group_title(info_line)
     if not group:
+        # Если группы нет, проверяем название канала
+        for excluded in EXCLUDED_GROUPS:
+            if excluded.lower() in info_line.lower():
+                return True
         return False
     
     for excluded in EXCLUDED_GROUPS:
@@ -237,7 +241,7 @@ def merge_m3u_files(input_dir, output_file, remove_duplicates=True, sort_channel
                 
             all_channels.append(channel)
     
-    # Добавляем информационный канал с датой обновления
+    # Добавляем информационный канал с датой обновления (без логотипа)
     now = get_moscow_time()
     info_channel = create_info_channel(now)
     all_channels.insert(0, info_channel)  # Вставляем в начало
