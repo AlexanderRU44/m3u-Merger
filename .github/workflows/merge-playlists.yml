@@ -33,7 +33,14 @@ jobs:
           git diff --staged --quiet || git commit -m "Auto update"
           git push
       
-      - uses: softprops/action-gh-release@v1
+      - name: Delete old latest release
+        run: |
+          gh release delete latest --yes || true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
         with:
           tag_name: latest
           name: Latest Playlist
