@@ -1,15 +1,14 @@
 name: Merge M3U Playlists
 
 on:
-  # Автоматический запуск при пуше в папку playlists
   push:
     paths:
       - 'playlists/**'
+      - 'download_playlists.py'  # Добавляем триггер на изменение скрипта
     branches:
       - main
       - master
   
-  # Ручной запуск из интерфейса GitHub
   workflow_dispatch:
     inputs:
       keep_duplicates:
@@ -21,15 +20,14 @@ on:
         type: boolean
         default: true
 
-  # Запуск по расписанию (каждый день в 3:00)
   schedule:
-    - cron: '0 3 * * *'
+    - cron: '0 3 * * *'  # Каждый день в 3:00
 
 jobs:
   merge:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # Разрешаем запись в репозиторий
+      contents: write
     
     steps:
       - name: 📥 Checkout repository
@@ -45,13 +43,22 @@ jobs:
       
       - name: 📦 Install dependencies
         run: |
+          pip install requests  # Добавляем requests
           pip install -r requirements.txt || true
-          pip install --upgrade pip
       
-      - name: 🔍 Check playlists
+      - name: 📥 Download playlists from URLs
         run: |
-          echo "📂 Проверка файлов в playlists/:"
-          ls -la playlists/ || echo "Папка playlists пуста"
+          echo "📥 Скачивание плейлистов по ссылкам..."
+          python download_playlists.py
+      
+      - name: 🔍 Check downloaded playlists
+        run: |
+          echo "📂 Содержимое playlists/:"
+          ls -la playlists/
+          echo ""
+          echo "📄 Проверка первого файла:"
+          head -n 5 playlists/*.m3u 2>/dev/null || echo "Нет .m3u файлов"
+          head -n 5 playlists/*.m3u8 2>/dev/null || echo "Нет .m3u8 файлов"
       
       - name: 🔄 Merge playlists
         id: merge
@@ -86,17 +93,17 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           
-          # Проверяем, есть ли изменения
-          if git diff --quiet; then
+          git add playlists/ output/
+          
+          if git diff --staged --quiet; then
             echo "✅ Нет изменений для коммита"
           else
-            git add output/
-            git commit -m "🔄 Автоматическое обновление плейлиста $(date '+%Y-%m-%d %H:%M')"
+            git commit -m "🔄 Автоматическое обновление плейлистов $(date '+%Y-%m-%d %H:%M')"
             git push
             echo "✅ Изменения запушены в репозиторий"
           fi
       
-      - name: 📎 Upload artifact (для скачивания)
+      - name: 📎 Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: merged-playlist
