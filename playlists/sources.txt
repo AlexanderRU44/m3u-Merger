@@ -1,7 +1,9 @@
 # Источники плейлистов
-# Обновлено: 2026-08-25 16:35:44
-# Всего: 3, Загружено: 3
+# Обновлено: 2026-08-25 16:48:23
+# Всего: 5, Загружено: 5
 
 ✅ https://raw.githubusercontent.com/Dimonovich/TV/Dimonovich/FREE/TV -> dimonovich_tv.m3u
 ✅ http://iptvshams.ru/ShamsTV.m3u8 -> shams_tv.m3u8
 ✅ https://smolnp.github.io/IPTVru//IPTVru.m3u -> iptv_ru.m3u
+✅ https://raw.githubusercontent.com/smolnp/IPTVru/refs/heads/gh-pages/IPTVstable.m3u8 -> iptv_stable.m3u8
+✅ https://raw.githubusercontent.com/CrocoUser/zabava-project/refs/heads/main/zabava-ef.m3u -> zabava_ef.m3u
