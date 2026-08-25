@@ -1,12 +1,12 @@
 {
-  "generated": "2026-08-25T19:58:00.250356+03:00",
+  "generated": "2026-08-25T20:10:09.414769+03:00",
   "input_dir": "./playlists",
   "output_file": "./output/merged.m3u",
-  "total_files": 3,
-  "total_channels": 4654,
-  "unique_channels": 4503,
-  "duplicates_removed": 151,
-  "excluded_channels": 325,
+  "total_files": 6,
+  "total_channels": 5516,
+  "unique_channels": 4978,
+  "duplicates_removed": 538,
+  "excluded_channels": 333,
   "excluded_groups": [
     "🔺 INFO 🔺",
     "- ИНФО -",
@@ -16,16 +16,22 @@
     "Торрент ТВ",
     "Torrent TV"
   ],
-  "archive_channels": 295,
+  "archive_channels": 272,
   "sources": {
+    "zabava_ef.m3u": 112,
     "dimonovich_tv.m3u": 3302,
     "iptv_ru.m3u": 247,
-    "shams_tv.m3u8": 1430
+    "loganet_tv.m3u": 511,
+    "shams_tv.m3u8": 1479,
+    "iptv_stable.m3u8": 198
   },
   "file_sizes": {
+    "playlists/zabava_ef.m3u": 20709,
     "playlists/dimonovich_tv.m3u": 747028,
     "playlists/iptv_ru.m3u": 52453,
-    "playlists/shams_tv.m3u8": 422599
+    "playlists/loganet_tv.m3u": 78077,
+    "playlists/shams_tv.m3u8": 439279,
+    "playlists/iptv_stable.m3u8": 41592
   },
-  "output_size": 1226611
+  "output_size": 1296880
 }
