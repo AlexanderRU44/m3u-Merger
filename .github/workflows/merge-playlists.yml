@@ -15,6 +15,8 @@ jobs:
     
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       
       - uses: actions/setup-python@v5
         with:
@@ -26,14 +28,20 @@ jobs:
       
       - run: python merge_m3u.py --input-dir ./playlists --output ./output/merged.m3u --generate-stats
       
-      - run: |
+      - name: Commit and push
+        run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -f playlists/ output/
-          git diff --staged --quiet || git commit -m "Auto update"
-          git push
+          
+          if git diff --staged --quiet; then
+            echo "✅ Нет изменений для коммита"
+          else
+            git commit -m "Auto update"
+            git pull --rebase origin main || true
+            git push origin main
+          fi
       
-      # ⬇️ ЭТОТ ШАГ РЕШАЕТ ПРОБЛЕМУ ⬇️
       - name: Delete old latest release
         run: |
           gh release delete latest --yes || true
