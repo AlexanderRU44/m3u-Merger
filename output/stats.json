@@ -1,17 +1,20 @@
 {
-  "generated": "2026-08-25T16:20:36.977016",
+  "generated": "2026-08-25T16:26:47.354258",
   "input_dir": "./playlists",
   "output_file": "./output/merged.m3u",
   "total_files": 3,
-  "total_channels": 4964,
-  "unique_channels": 4813,
+  "total_channels": 4654,
+  "unique_channels": 4503,
   "duplicates_removed": 151,
-  "excluded_channels": 15,
+  "excluded_channels": 325,
   "excluded_groups": [
     "🔺 INFO 🔺",
     "- ИНФО -",
     "INFO",
-    "Инфо"
+    "Инфо",
+    "↕️ Торрент ТВ ↕️",
+    "Торрент ТВ",
+    "Torrent TV"
   ],
   "archive_channels": 295,
   "sources": {
@@ -24,5 +27,5 @@
     "playlists/iptv_ru.m3u": 52453,
     "playlists/shams_tv.m3u8": 422599
   },
-  "output_size": 1188995
+  "output_size": 1139507
 }
