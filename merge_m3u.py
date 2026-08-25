@@ -224,6 +224,12 @@ def merge_m3u_files(input_dir, output_file, remove_duplicates=True, sort_channel
                 
             all_channels.append(channel)
     
+    # ДОБАВЛЯЕМ АРХИВНЫЕ КАНАЛЫ В ОСНОВНОЙ СПИСОК
+    # Это ключевое изменение!
+    if archive_channels:
+        print(f"📺 Добавление {len(archive_channels)} архивных каналов в основной плейлист")
+        all_channels.extend(archive_channels)
+    
     # Сортировка
     if sort_channels:
         all_channels.sort(key=lambda x: x.get('info', ''))
@@ -256,7 +262,7 @@ def merge_m3u_files(input_dir, output_file, remove_duplicates=True, sort_channel
         'output_file': str(output_file),
         'total_files': len(m3u_files),
         'total_channels': total_count,
-        'unique_channels': len(all_channels),
+        'unique_channels': len(all_channels) - len(archive_channels),
         'duplicates_removed': duplicates_count,
         'excluded_channels': excluded_count,
         'excluded_groups': EXCLUDED_GROUPS,
@@ -271,7 +277,7 @@ def merge_m3u_files(input_dir, output_file, remove_duplicates=True, sort_channel
     print("\n" + "="*50)
     print(f"📊 Статистика:")
     print(f"  Всего каналов: {total_count}")
-    print(f"  Уникальных: {len(all_channels)}")
+    print(f"  Уникальных: {len(all_channels) - len(archive_channels)}")
     print(f"  Удалено дубликатов: {duplicates_count}")
     print(f"  🗑️ Исключено каналов: {excluded_count}")
     print(f"  📺 Каналов с архивом: {archive_count}")
