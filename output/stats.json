@@ -1,17 +1,20 @@
 {
-  "generated": "2026-08-25T15:15:54.519862",
+  "generated": "2026-08-25T15:35:53.478776",
   "input_dir": "./playlists",
   "output_file": "./output/merged.m3u",
-  "files": [
-    {
-      "name": "source1.m3u",
-      "size": 422599,
-      "modified": "2026-08-25T15:15:54.229859"
-    },
-    {
-      "name": "source2.m3u8",
-      "size": 747028,
-      "modified": "2026-08-25T15:15:54.402863"
-    }
-  ]
+  "total_files": 3,
+  "total_channels": 4979,
+  "unique_channels": 4826,
+  "duplicates_removed": 153,
+  "sources": {
+    "dimonovich_tv.m3u": 3302,
+    "iptv_ru.m3u": 247,
+    "shams_tv.m3u8": 1430
+  },
+  "file_sizes": {
+    "playlists/dimonovich_tv.m3u": 747028,
+    "playlists/iptv_ru.m3u": 52453,
+    "playlists/shams_tv.m3u8": 422599
+  },
+  "output_size": 1313210
 }
