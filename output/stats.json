@@ -1,11 +1,12 @@
 {
-  "generated": "2026-08-25T15:35:53.478776",
+  "generated": "2026-08-25T15:50:36.328711",
   "input_dir": "./playlists",
   "output_file": "./output/merged.m3u",
   "total_files": 3,
   "total_channels": 4979,
   "unique_channels": 4826,
   "duplicates_removed": 153,
+  "archive_channels": 295,
   "sources": {
     "dimonovich_tv.m3u": 3302,
     "iptv_ru.m3u": 247,
@@ -16,5 +17,5 @@
     "playlists/iptv_ru.m3u": 52453,
     "playlists/shams_tv.m3u8": 422599
   },
-  "output_size": 1313210
+  "output_size": 1318855
 }
