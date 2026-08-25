@@ -1,9 +1,9 @@
 #EXTM3U
-# Создано: 2026-08-25 22:07:56 MSK
+# Создано: 2026-08-25 22:08:32 MSK
 # Всего каналов: 4889
 # Каналов с архивом: 544
 
-#EXTINF:-1 group-title="📊 ИНФО" tvg-logo="https://i.imgur.com/8K7kFk3.png",📅 Обновлено: 25.08.2026 22:07 MSK
+#EXTINF:-1 group-title="📊 ИНФО" tvg-logo="https://i.imgur.com/8K7kFk3.png",📅 Обновлено: 25.08.2026 22:08 MSK
 https://raw.githubusercontent.com/AlexanderRU44/m3u-Merger/main/output/info.m3u8
 #EXTINF:-1,ИНФОКАНАЛ
 https://github.com/CrocoUser/files/raw/refs/heads/main/infokanal.m3u8
