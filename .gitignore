@@ -28,7 +28,7 @@ Thumbs.db
 playlists/download_stats.json
 output/stats.json
 
-# Но НЕ игнорируем сам output и playlists
+# НЕ игнорируем output и playlists
 # Убедитесь, что этих строк НЕТ:
 # output/
 # playlists/
