@@ -1,7 +1,3 @@
-
-## 🐍 Обновленный `merge_m3u.py` с сохранением статистики в output
-
-```python
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
@@ -214,10 +210,6 @@ def main():
         with open(stats_file, 'w', encoding='utf-8') as f:
             json.dump(stats, f, indent=2, ensure_ascii=False)
         
-        # Выводим JSON для GitHub Actions
-        print("::set-output name=stats::" + json.dumps(stats))
-        
-        # Также выводим в читаемом виде
         print(f"\n📊 Статистика сохранена в {stats_file}")
         print("="*50)
         print(json.dumps(stats, indent=2, ensure_ascii=False))
