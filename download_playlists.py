@@ -37,45 +37,43 @@ def download_playlist(url, output_path, timeout=60):
 
 def main():
     # ═══════════════════════════════════════════════════════════
-    # 🔽 ВСТАВЬТЕ ВАШИ ССЫЛКИ ЗДЕСЬ
+    # 🔽 ВАШИ ССЫЛКИ НА ПЛЕЙЛИСТЫ (ДОБАВЛЕНЫ)
     # ═══════════════════════════════════════════════════════════
     
     playlists = [
-        # Примеры:
-        # {
-        #     'url': 'https://example.com/playlist.m3u',
-        #     'name': 'source1.m3u'
-        # },
-        # {
-        #     'url': 'https://example.com/stream.m3u8',
-        #     'name': 'source2.m3u8'
-        # },
+        # 1. Плейлист от Dimonovich (с большим количеством каналов)
+        {
+            'url': 'https://raw.githubusercontent.com/Dimonovich/TV/Dimonovich/FREE/TV',
+            'name': 'dimonovich_tv.m3u'
+        },
+        
+        # 2. Плейлист ShamsTV
+        {
+            'url': 'http://iptvshams.ru/ShamsTV.m3u8',
+            'name': 'shams_tv.m3u8'
+        },
+        
+        # 3. Плейлист IPTVru
+        {
+            'url': 'https://smolnp.github.io/IPTVru//IPTVru.m3u',
+            'name': 'iptv_ru.m3u'
+        },
+        
+        # 4. Дополнительный плейлист (опционально)
         # {
         #     'url': 'https://iptv-org.github.io/iptv/index.m3u',
         #     'name': 'iptv_org.m3u'
         # },
-        
-        # ═══════════════════════════════════════════════════════
-        # 🔽 ДОБАВЬТЕ СВОИ ССЫЛКИ НИЖЕ
-        # ═══════════════════════════════════════════════════════
-        
-        # {
-        #     'url': 'ВАША_ПЕРВАЯ_ССЫЛКА',
-        #     'name': 'my_playlist1.m3u'
-        # },
-        # {
-        #     'url': 'ВАША_ВТОРАЯ_ССЫЛКА',
-        #     'name': 'my_playlist2.m3u8'
-        # },
     ]
     
     # ═══════════════════════════════════════════════════════════
-    # Код ниже не нужно менять
+    # Код ниже НЕ МЕНЯЙТЕ
     # ═══════════════════════════════════════════════════════════
     
+    # Создаем папку
     Path('./playlists').mkdir(exist_ok=True)
     
-    # Удаляем старые файлы
+    # Удаляем старые файлы (кроме README.md)
     for old_file in Path('./playlists').glob('*.m3u*'):
         if old_file.name != 'README.md':
             old_file.unlink()
@@ -85,6 +83,18 @@ def main():
     print(f"📥 Загрузка плейлистов ({len(playlists)} источников)")
     print(f"⏰ {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print("="*60)
+    
+    if not playlists:
+        print("❌ Нет ссылок для скачивания!")
+        print("💡 Добавьте ссылки в массив 'playlists' в файле download_playlists.py")
+        print("📝 Создаю тестовый файл для проверки...")
+        
+        # Создаем тестовый файл, чтобы скрипт не падал
+        with open('./playlists/test.m3u', 'w', encoding='utf-8') as f:
+            f.write('#EXTM3U\n')
+            f.write('#EXTINF:-1,Test Channel\n')
+            f.write('http://example.com/test\n')
+        return
     
     success_count = 0
     results = {}
