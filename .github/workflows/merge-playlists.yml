@@ -33,6 +33,7 @@ jobs:
           git diff --staged --quiet || git commit -m "Auto update"
           git push
       
+      # ⬇️ ЭТОТ ШАГ РЕШАЕТ ПРОБЛЕМУ ⬇️
       - name: Delete old latest release
         run: |
           gh release delete latest --yes || true
