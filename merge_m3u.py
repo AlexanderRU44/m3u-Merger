@@ -10,6 +10,14 @@ from pathlib import Path
 from datetime import datetime
 from urllib.parse import urlparse
 
+# Список групп, которые нужно исключить
+EXCLUDED_GROUPS = [
+    '🔺 INFO 🔺',
+    '- ИНФО -',
+    'INFO',
+    'Инфо',
+]
+
 def extract_url(line):
     """Извлекает URL из строки M3U"""
     line = line.strip()
@@ -21,6 +29,24 @@ def extract_url(line):
     if match:
         return match.group(0)
     return None
+
+def get_group_title(info_line):
+    """Извлекает название группы из строки EXTINF"""
+    match = re.search(r'group-title="([^"]*)"', info_line, re.IGNORECASE)
+    if match:
+        return match.group(1)
+    return None
+
+def is_excluded_group(info_line):
+    """Проверяет, нужно ли исключить канал по группе"""
+    group = get_group_title(info_line)
+    if not group:
+        return False
+    
+    for excluded in EXCLUDED_GROUPS:
+        if excluded.lower() in group.lower():
+            return True
+    return False
 
 def has_catchup(info_line):
     """Проверяет, есть ли у канала поддержка архива"""
@@ -134,6 +160,7 @@ def merge_m3u_files(input_dir, output_file, remove_duplicates=True, sort_channel
     duplicates_count = 0
     total_count = 0
     archive_count = 0
+    excluded_count = 0
     sources = {}
     
     for file_path in m3u_files:
@@ -143,6 +170,11 @@ def merge_m3u_files(input_dir, output_file, remove_duplicates=True, sort_channel
         
         for channel in channels:
             if not channel['url']:
+                continue
+            
+            # Проверяем, нужно ли исключить канал
+            if is_excluded_group(channel['info']):
+                excluded_count += 1
                 continue
             
             total_count += 1
@@ -199,6 +231,8 @@ def merge_m3u_files(input_dir, output_file, remove_duplicates=True, sort_channel
         'total_channels': total_count,
         'unique_channels': len(all_channels),
         'duplicates_removed': duplicates_count,
+        'excluded_channels': excluded_count,
+        'excluded_groups': EXCLUDED_GROUPS,
         'archive_channels': archive_count,
         'sources': sources,
         'file_sizes': {
@@ -212,6 +246,7 @@ def merge_m3u_files(input_dir, output_file, remove_duplicates=True, sort_channel
     print(f"  Всего каналов: {total_count}")
     print(f"  Уникальных: {len(all_channels)}")
     print(f"  Удалено дубликатов: {duplicates_count}")
+    print(f"  🗑️ Исключено каналов: {excluded_count}")
     print(f"  📺 Каналов с архивом: {archive_count}")
     print(f"  Источников: {len(m3u_files)}")
     print(f"✅ Результат сохранен в {output_file}")
@@ -236,13 +271,8 @@ def write_m3u(channels, output_file):
         
         for channel in channels:
             if channel.get('info'):
-                if channel.get('source'):
-                    info = channel['info']
-                    # НЕ добавляем [source: ...] и 📺АРХИВ
-                    # Просто пишем оригинальную строку
-                    f.write(info + '\n')
-                else:
-                    f.write(channel['info'] + '\n')
+                # Пишем оригинальную строку без добавлений
+                f.write(channel['info'] + '\n')
             if channel.get('url'):
                 f.write(channel['url'] + '\n')
 
