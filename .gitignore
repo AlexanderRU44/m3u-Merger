@@ -9,8 +9,8 @@ venv/
 ENV/
 .venv
 
-# Output files
-output/
+# Output files - ЗАКОММЕНТИРУЙТЕ ЭТУ СТРОКУ
+# output/
 *.m3u.bak
 
 # IDE
@@ -24,6 +24,6 @@ output/
 .DS_Store
 Thumbs.db
 
-# Stats
-playlists/download_stats.json
-output/stats.json
+# Stats - можно оставить
+# playlists/download_stats.json
+# output/stats.json
