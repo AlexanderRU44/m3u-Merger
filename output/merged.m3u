@@ -1,6 +1,6 @@
 #EXTM3U
-# Создано: 2026-08-25 20:10:09 MSK
-# Всего каналов: 5250
+# Создано: 2026-08-25 20:47:26 MSK
+# Всего каналов: 4988
 # Каналов с архивом: 544
 
 #EXTINF:-1 channel-id="SamsungTVPlus-USAK3508705A" tvg-name="Stingray Naturescape" tvg-id="USAK3508705A" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/USAK3508705A_20240520T212618SQUARE.png" group-title="RELAX🏝️" tvg-chno="4572",Stingray Naturescape
@@ -473,180 +473,6 @@ http://176.118.197.101/Teatr/index.m3u8
 http://176.118.197.101/Telekafe/index.m3u8
 #EXTINF:-1 group-title="Internet42 LLC", Че
 http://176.118.197.101/Che/index.m3u8
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2020/06/17//379d07323f571965a4dc44b456a14530-q-500x500.jpeg", Узбекистан
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/gJEVcZKGHtdpzdW4948oQA/e/1787730588/1001/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2020/06/17//4091c27ad1899f00d8f900e4a1243611-q-500x500.jpeg", O'zbekiston 24 HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/TCp_qhF-7n1KabS4UVzfdA/e/1787730595/1011/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2020/06/17//58b2e970ecde5f03f461b8fe59550fac-q-500x500.jpeg", O'zbekiston tarixi FHD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/htfSJL2VUfqQuP1trbvNyQ/e/1787730612/1209/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2020/06/17//6184bdb718f893d4c4480ed8db4aeaa3-q-500x500.jpeg", Bolajon
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/g0WfXhX8LHIgIlKfEW3WbA/e/1787730607/1007/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2020/06/17//622d1ccb45505a6a0c4a5b231a1664eb-q-500x500.jpeg", Dunyo bo`ylab
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/REgsWQR3RFQtuLOSQCL-0g/e/1787730613/1006/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2020/06/17//6f5be573ae591540e132f03c6dd242a5-q-500x500.jpeg", Uzreport HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/1bm_PxNrJh0wrJYLS5XKcw/e/1787730614/1015/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2020/06/17//96e9b1e79d2d9442b778115079e09d21-q-500x500.jpeg", Ташкент
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/woML-q9bteChhT283hcCAQ/e/1787730592/1003/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2020/06/17//d2e38ec0058f9c217b4c77c88f81404e-q-500x500.jpeg", Kinoteatr HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/vLOu_glC53p5P_lXZloiuA/e/1787730612/1009/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2021/03/23//bc4fba2dcb3166bd9aaa3d73229f6ef0-q-500x500.jpeg", Aqlvoy
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/xe12vsWBTv7ArM7gjyNPWw/e/1787730607/1205/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2021/11/03//2675cdc82b452ba3267237a976d173fc-q-500x500.jpeg", MY5 SD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/LMnwI4uQhR_E8X7-oe_fZA/e/1787730600/1217/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2021/11/03//5a52a0580d30e504a5dbf424962bed82-q-500x500.jpeg", MY5 HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/DhIExJIXZ1aV1eJRUqL5bw/e/1787730599/1012/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2022/01/22//4a58120210414aef66c88ca130dd3650-q-500x500.jpeg", Nurafshon TV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/ErxpNe-roDHeR_Ow_fVW4A/e/1787730618/1220/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2022/03/31//01111699cb98bd366b6fd444ed741801-q-500x500.jpeg", Ruxsor TV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/s8SIn8HNh6VgpLVda7GjZw/e/1787730617/4008/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2022/08/23//105c61567d1ca0420d2ff99256054af6-q-500x500.jpeg", Ёшлар
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/kTU55BOPckXXo85aj5ULaA/e/1787730590/1002/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2022/08/23//2b3a36d6b5ad122598ce23f472f908ce-q-500x500.jpeg", Navo
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/r6F21gR69O8EhEBxLdzCjw/e/1787730608/1008/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2023/04/18//9ae8b2d0eae85af6fd49277616dc9b13-q-500x500.jpeg", Хабар 24 KZ
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/qogEREuOsIEyOrjEckseXg/e/1787730587/1408/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2023/05/31//27e8188e91570f9ccf5c29121c183e6a-q-500x500.jpeg", Mahalla
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/19BmGJOwm0k9uRCWjgM8KA/e/1787730611/1013/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2023/05/31//95737b9a2b913a6fadf576f61933a635-q-500x500.jpeg", Madaniyat va Marifat
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/McXknsAJ81xs4lPzensv-w/e/1787730610/1005/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2023/06/02//15db9906a0f50fb5ccadc0c30f1e532d-q-500x500.jpeg", Milliy SD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/pkrIlSdvVXW5Lkq_pXfM5Q/e/1787730598/1216/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2023/06/02//d1498a17fd6850c0e7404e9487353cfc-q-500x500.jpeg", Gold Television
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/HsZ8zLx7m5Dp_-fk2v0dfQ/e/1787730616/4007/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2023/06/02//fa77872772e7f7406369bd0fe4e48e47-q-500x500.jpeg", Milliy TV HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/t19K7SDF9-ihHwy0ruXEoQ/e/1787730597/1014/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/01/24//4a4b31ebb4248789549263ad774c2c61-q-500x500.jpeg", Renessans TV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/cCWUyLcDtm6zUUsRpuUgWA/e/1787730605/1221/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/04/20//05d8f97e2f2b552b2fea0b05a78c42b9-q-500x500.jpeg", Namangan
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/atzUaNRTNkCR3tOkNk1zbw/e/1787730627/1466/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/04/20//5098a8b805e7326ec7dc8f3bf2e180f2-q-500x500.jpeg", Qaraqalpaqstan
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/g1VSHzivTbiqrRaAehLQTQ/e/1787730628/1467/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/04/20//52d247a1c7a06b96f9092d614b939f7c-q-500x500.jpeg", Qashkadaryo
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/ijJBMPsWfzivYZOxvNc-MA/e/1787730622/1461/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/04/20//595b563167b272fbeb4caff0c27a1581-q-500x500.jpeg", Andijon
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/AEGUDB5OTGD3lnITlZm3hA/e/1787730619/1457/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/04/20//7503745371fe9a9778c7111458c5d43e-q-500x500.jpeg", Xorazm MTRK
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/5o8RSFjKfcH4ZWV9zHTNPw/e/1787730625/1464/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/04/20//793ae8aa37f748e74ddec8761fccd026-q-500x500.jpeg", Sirdaryo
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/l1EDbenC7vmtesdjmzUUxA/e/1787730623/1462/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/04/20//95e6300e134acd2a9f037ce3c3887158-q-500x500.jpeg", Navoi
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/9giEsdtNkmbMQYNEBg4xpQ/e/1787730621/1460/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/04/20//a0534f66a3cce9a795ff7027b1a23c94-q-500x500.jpeg", Surxondaryo MTRK
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/RaXquj3DWy8jT3u77UMnow/e/1787730624/1463/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/04/20//a413e4713cb517535bb72e3adddfe943-q-500x500.jpeg", Fergana MTRK
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/Aq3qSHr2chOdeRbrSvZ9eQ/e/1787730620/1458/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/04/20//db56b3e322425b29a81ded37a774f83c-q-500x500.jpeg", Samarkand
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/Uj_AXPPnIwARhBRD18yxdg/e/1787730630/1468/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/04/20//e1c2b2bcecf5ff7855dbb0b90308776b-q-500x500.jpeg", Jizzax
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/iautSyJg_7XAuwk3Ii8u3Q/e/1787730626/1465/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/04/26//b8ae4fe9e3795f28cdebd4b6e1993e2c-q-500x500.jpeg", Bukhara
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/vMiuhQ1rBvrtOAadUneppQ/e/1787730629/1459/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/07/10//36d91922645f095fde22cb2b836715be-q-500x500.jpeg", Vodiy TV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/YW7JsQ_uG7Biqn3B9uFOWQ/e/1787730631/4012/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/07/23//8707395e931d3bb2ce18579a995d16a7-q-500x500.jpeg", Shifo TV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/cIz_948w1tHQiu-swUSagg/e/1787730631/1469/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/07/23//d20bd7900e47c133b4fe42afaff686de-q-500x500.jpeg", Mimi TV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/ayrKkhMwOxsM05U8xtoZ-g/e/1787730632/1470/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/08/19//ae399dbe120262ce79931f6f22e84ba4-q-500x500.jpeg", Taraqqiyot TV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/nvN--yruqN3h3sFjZp-wdQ/e/1787730615/1204/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/10/15//75b4b090cb1f5663d7eb0373c1fb1a80-q-500x500.jpeg", Jizzax TV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/SvAww0v0aDeTEfMwW5KNgg/e/1787730636/1488/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/10/15//e4a7c541ecae647033f9a2248b87fb6b-q-500x500.jpeg", ishonch TV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/5cpBzGa5-wOgMfs4f1RNlg/e/1787730637/1489/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/10/16//17af904b28e714551e8396fcc077e11a-q-500x500.jpeg", TTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/yUWnsMJGK_CwPDmb9KOsVA/e/1787730633/1494/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/10/16//486ab75fe90f29227f3d114adf7ff3e7-q-500x500.jpeg", 8TV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/xvGK1nJ36vYhxN5uei75fQ/e/1787730639/1496/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/10/16//5e1500c4d1b9595a50ad350cee8cd647-q-500x500.jpeg", Ellikqala TV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/ZNBdu2AfSAiF2Z9_vpuZIA/e/1787730638/1495/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/10/16//bffc77f6b96e90ba72634340afe2d28f-q-500x500.jpeg", Amudaryo TV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/CLjivi3onuYayEk7EDWwMg/e/1787730640/1491/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/10/17//1f68774291aa8afc63a9696929ffbbee-q-500x500.jpeg", Jaslar TV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/Q0RzCoVCOmYQyxLXGtQKIQ/e/1787730642/1490/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/10/17//c32cb89a20def5498dac66a7a6923399-q-500x500.jpeg", Muloqot TV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/F65wfYSbZDntUHyXJhtQ_w/e/1787730642/1285/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/10/18//4d3cca95cc849ef5cb15e9a397316622-q-500x500.jpeg", TTV Musiqa
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/u9Pz5dJmQMX_oLLa5f8J_Q/e/1787730635/1485/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/10/18//9421425ce5dc3385aac7fd42c2273223-q-500x500.jpeg", TTV Kino
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/9OiP-Sgx6GZ2Da-Jb2qq7A/e/1787730634/1486/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/10/30//4a675cfc1ca9fc523519e8154c67f3a4-q-500x500.jpeg", Nasaf TV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/xMVGa-asvWxKyGnvJgOolQ/e/1787730641/1492/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/12/18//e6505a1ed9a0e61a67aa3e7afeb52167-q-500x500.jpeg", MakonTV HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/L4pRauESEHmYUYpm0qXdOA/e/1787730643/1497/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2025/03/25//2930662a99d6931a690adbfe650f5e49-q-500x500.jpeg", Denov TV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/txM4AzG55prSgWLbYmVYTg/e/1787730645/1499/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2025/05/01//7c8b25dfefb8655b74b5927ca5858adf-q-500x500.jpeg", iTV Cinema
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/2gKMrxonXue0R2aizygVHg/e/1787730585/4000/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2025/05/01//ac76145a39e0a0e5086a5fc7d1651999-q-500x500.jpeg", iTV Music
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/_P3kMKvcZXR4BrZafrIlWA/e/1787730586/4001/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2026/02/03/78260dff583b8faa298b70fc3edf5e43-q-500x500.jpeg", DasturxonTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/oYHOOWOKQoPhgrlWVxRRXQ/e/1787730606/1206/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2026/05/22//a5395b0b-1448-43da-a622-3a117c37ad78-q-500x500.jpeg", Farovon Yurt
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/nF2n7YEqsnKBKof3GQrLww/e/1787730644/1301/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2026/06/23//bfa00beb-dafa-447d-bcf7-ff2fa954bf61-q-500x500.jpeg", HAYOT TV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/my_eYhiyamMgcSAAtbvtmQ/e/1787730604/1064/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2026/07/24//58cb6baf-bb93-4bcd-b405-ad940b1ecb83-q-500x500.jpeg", ZO'R TV FHD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/rs_03E_oD7JUkW0wDWgLkA/e/1787730596/1286/index.m3u8?ip=2.59.161.252
-#EXTINF:-1 group-title="Itv.uz (🇺🇿)" tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2026/08/13//df5afa69-409f-4410-b71e-57baba82160b-q-500x500.jpeg", iTV Kids
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://iptv.itv.uz/hls/live/t/V5NRt2lKr0az0TkMBqQP0Q/e/1787730586/4006/index.m3u8?ip=2.59.161.252
 #EXTINF:-1 group-title="Lime (VPN 🇷🇺)" tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/1/logo_256_1705554875.png", 2x2
 #EXTVLCOPT:http-user-agent={"platform":"android","app":"limehd.ru.ctvshka","version_name":"5.8.0","version_code":"580","sdk":"34","name":"Xiaomi+13+Ultra","device_id":"a7f8e9d1c2b3a4f5","is_huawei":"0"}
 https://mhd116.iptv2022.com/x/lD0rByxMXaqiuRS7lcxl4g,1787730579/streaming/2x2/324/1/index.m3u8
@@ -5876,81 +5702,6 @@ http://ocko-live.ssl.cdn.cra.cz/channels/ocko_expres/playlist/cze/live_hq.m3u8
 http://ocko-live.ssl.cdn.cra.cz/channels/ocko_gold/playlist/cze/live_hq.m3u8
 #EXTINF:-1 group-title="Музыкальные 🎶",Майдан
 http://live-maidantv.cdnvideo.ru/maidantv/maidantv.smil/playlist.m3u8
-#EXTINF:-1 group-title="Наш Нет 🇺🇦", 24 Канал
-#EXTVLCOPT:http-user-agent=UA
-https://ext.cdn.nashnet.tv/228.0.0.33/index.m3u8
-#EXTINF:-1 group-title="Наш Нет 🇺🇦", 5 Канал
-#EXTVLCOPT:http-user-agent=UA
-https://ext.cdn.nashnet.tv/228.0.4.26/index.m3u8
-#EXTINF:-1 group-title="Наш Нет 🇺🇦", 8 Канал
-#EXTVLCOPT:http-user-agent=UA
-https://ext.cdn.nashnet.tv/228.0.0.138/index.m3u8
-#EXTINF:-1 group-title="Наш Нет 🇺🇦", ATR HD
-#EXTVLCOPT:http-user-agent=UA
-https://ext.cdn.nashnet.tv/228.0.0.49/index.m3u8
-#EXTINF:-1 group-title="Наш Нет 🇺🇦", CNN
-#EXTVLCOPT:http-user-agent=UA
-https://ext.cdn.nashnet.tv/228.0.0.75/index.m3u8
-#EXTINF:-1 group-title="Наш Нет 🇺🇦", Lale HD
-#EXTVLCOPT:http-user-agent=UA
-https://ext.cdn.nashnet.tv/228.0.0.50/index.m3u8
-#EXTINF:-1 group-title="Наш Нет 🇺🇦", Megogo live HD
-#EXTVLCOPT:http-user-agent=UA
-https://ext.cdn.nashnet.tv/228.0.2.214/index.m3u8
-#EXTINF:-1 group-title="Наш Нет 🇺🇦", Milady television
-#EXTVLCOPT:http-user-agent=UA
-https://ext.cdn.nashnet.tv/228.0.1.45/index.m3u8
-#EXTINF:-1 group-title="Наш Нет 🇺🇦", Obozrevatel TV HD
-#EXTVLCOPT:http-user-agent=UA
-https://ext.cdn.nashnet.tv/228.0.0.148/index.m3u8
-#EXTINF:-1 group-title="Наш Нет 🇺🇦", UA:Перший
-#EXTVLCOPT:http-user-agent=UA
-https://ext.cdn.nashnet.tv/228.0.2.45/index.m3u8
-#EXTINF:-1 group-title="Наш Нет 🇺🇦", Апостроф TV HD
-#EXTVLCOPT:http-user-agent=UA
-https://ext.cdn.nashnet.tv/228.0.2.165/index.m3u8
-#EXTINF:-1 group-title="Наш Нет 🇺🇦", Еспресо TV HD
-#EXTVLCOPT:http-user-agent=UA
-https://ext.cdn.nashnet.tv/228.0.0.191/index.m3u8
-#EXTINF:-1 group-title="Наш Нет 🇺🇦", Капучино TV
-#EXTVLCOPT:http-user-agent=UA
-http://ext.cdn.nashnet.tv/228.0.0.136/index.m3u8
-#EXTINF:-1 group-title="Наш Нет 🇺🇦", Караван ТВ
-#EXTVLCOPT:http-user-agent=UA
-https://ext.cdn.nashnet.tv/228.0.2.30/index.m3u8
-#EXTINF:-1 group-title="Наш Нет 🇺🇦", Київ HD UA
-#EXTVLCOPT:http-user-agent=UA
-https://ext.cdn.nashnet.tv/228.0.0.15/index.m3u8
-#EXTINF:-1 group-title="Наш Нет 🇺🇦", Надія
-#EXTVLCOPT:http-user-agent=UA
-https://ext.cdn.nashnet.tv/228.0.0.172/index.m3u8
-#EXTINF:-1 group-title="Наш Нет 🇺🇦", Наталі
-#EXTVLCOPT:http-user-agent=UA
-https://ext.cdn.nashnet.tv/228.0.0.140/index.m3u8
-#EXTINF:-1 group-title="Наш Нет 🇺🇦", Перший західний HD
-#EXTVLCOPT:http-user-agent=UA
-https://ext.cdn.nashnet.tv/228.0.0.162/index.m3u8
-#EXTINF:-1 group-title="Наш Нет 🇺🇦", Прямий
-#EXTVLCOPT:http-user-agent=UA
-https://ext.cdn.nashnet.tv/228.0.0.122/index.m3u8
-#EXTINF:-1 group-title="Наш Нет 🇺🇦", Рада
-#EXTVLCOPT:http-user-agent=UA
-https://ext.cdn.nashnet.tv/228.0.0.24/index.m3u8
-#EXTINF:-1 group-title="Наш Нет 🇺🇦", Сонце
-#EXTVLCOPT:http-user-agent=UA
-https://ext.cdn.nashnet.tv/228.0.0.165/index.m3u8
-#EXTINF:-1 group-title="Наш Нет 🇺🇦", Суспільне Київ
-#EXTVLCOPT:http-user-agent=UA
-https://ext.cdn.nashnet.tv/228.0.0.41/index.m3u8
-#EXTINF:-1 group-title="Наш Нет 🇺🇦", Суспільне Крим
-#EXTVLCOPT:http-user-agent=UA
-https://ext.cdn.nashnet.tv/228.0.0.71/index.m3u8
-#EXTINF:-1 group-title="Наш Нет 🇺🇦", Суспільне Культура
-#EXTVLCOPT:http-user-agent=UA
-https://ext.cdn.nashnet.tv/228.0.0.141/index.m3u8
-#EXTINF:-1 group-title="Наш Нет 🇺🇦", Эко-ТВ
-#EXTVLCOPT:http-user-agent=UA
-https://ext.cdn.nashnet.tv/228.0.1.60/index.m3u8
 #EXTINF:-1 group-title="Новости" audio-track="rus", Deutsche Welle
 https://dwamdstream110.akamaized.net/hls/live/2017971/dwstream110/index.m3u8
 #EXTINF:-1 group-title="Новости" audio-track="rus", Deutsche Welle HD
@@ -9290,8 +9041,6 @@ https://bl.rutube.ru/livestream/c93be53cba8a4ba6ac311b395a00f4d5/index.m3u8?s=2r
 https://fs.uplink.kz/zhara/tracks-v1a1/mono.ts.m3u8?token=onlinetv
 #EXTINF:-1 tvg-id="zvezda" tvg-logo="https://iptvx.one/picons/zvezda.png" group-title="Общественные" ,Звезда HD
 http://tvchannelstream1.tvzvezda.ru/cdn/tvzvezda/playlist_hdhigh.m3u8
-#EXTINF:-1 tvg-logo="http://1lot.tv/ch/9979.png" group-title="Киргизия",Regionᴴᴰ
-http://stream.shbro.org/stream/14B37BB54802/6880800m3u8.m3u8
 #EXTINF:-1 tvg-logo="http://cdn.server-iptv.live/logo/tv/match-strana-ru.png" group-title="СПОРТ",МАТЧ! СТРАНА
 http://stream.shbro.org/stream/14B37BB54802/c361videom3u8.m3u8
 #EXTINF:-1 tvg-logo="http://cdn.server-iptv.live/logo/tv/match_ru_arena.png" group-title="СПОРТ",Матч! Арена HD
@@ -9422,8 +9171,6 @@ http://stream.shbro.org/stream/14B37BB54802/a1monotsm3u8_3c89.m3u8
 http://stream.shbro.org/stream/14B37BB54802/mplaylistm3u8_6916.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=06388bdc24874e68d5654595e14f7a62a245513a-4913172-images-thumbs&n=13" group-title="Кино Канал",4ever Drama HD
 http://stream.shbro.org/stream/14B37BB54802/d557videom3u8.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=06abcc36e0d41fcbf4411e8ddce1b1f057671c49-5206557-images-thumbs&n=13" group-title="Узбекистан",Zo'r-TV
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_6670.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=06e0dbe95e50ba0f875effb8b3b187bb398ad553-5888695-images-thumbs&n=13" group-title="СПОРТ",Бокс ТВ
 http://stream.shbro.org/stream/14B37BB54802/tv1indexm3u8_51bb.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=07d63d86d8ca3713eb3c163fdec962dce6d5814d-5886904-images-thumbs&n=13" group-title="Россия",Кинопремьера
@@ -9608,14 +9355,10 @@ http://stream.shbro.org/stream/14B37BB54802/480pindexm3u8.m3u8
 http://stream.shbro.org/stream/14B37BB54802/4846138545m3u8.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=3902406ccd26dea16d024baff8fd4c17d76986d0-5712428-images-thumbs&n=13" group-title="Россия Региональные",Ямал ТВ HD
 http://stream.shbro.org/stream/14B37BB54802/4846138545m3u8_fb94.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=390739aa13d3ece1e55936087b9e5aa9387b11bb-8342484-images-thumbs&n=13" group-title="Киргизия",УТРК Таласᴴᴰ
-http://stream.shbro.org/stream/14B37BB54802/alasindexm3u8.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=39e7898fe67071126ad60912a495cf1fd698bd72-9101109-images-thumbs&n=13" group-title="Музыка",Maidan TV HD
 http://stream.shbro.org/stream/14B37BB54802/0playlistm3u8_c782.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=3a61098444f8bb744d1dd91143a3ba2699265a02-5110698-images-thumbs&n=13" group-title="Кино Канал",SHOT TV HD
 http://stream.shbro.org/stream/14B37BB54802/8207videom3u8.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=3a9bf99bbddf82dea5dbafae66f7ccc4300e50bf-5598230-images-thumbs&n=13" group-title="Узбекистан",Gold TV
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_7d7a.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=3b2d7ff02e274d40fd48adb6391af4947de18fa5-12715110-images-thumbs&n=13" group-title="Кино Канал",BCU Survival HD
 http://stream.shbro.org/stream/14B37BB54802/8acegetstream_7c71.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=3c75a04baf2881ece8e68525096ea1d8ae378332-5875773-images-thumbs&n=13" group-title="Россия",ТНВ
@@ -9668,8 +9411,6 @@ http://stream.shbro.org/stream/14B37BB54802/d260videom3u8.m3u8
 http://stream.shbro.org/stream/14B37BB54802/umorindexm3u8_cfbf.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=49e3da2aecea8a2066a21033a3c18aa54dc7a5e5-5370410-images-thumbs&n=13" group-title="Россия Региональные",Жизнь Глазова
 http://stream.shbro.org/stream/14B37BB54802/v24streamm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=49e5ef7c92faf69c41ef122be4d6cf7ee393666c-5175149-images-thumbs&n=13" group-title="Узбекистан",Eliqqala TV
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_caec.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=4a14a9143311dfc9eb628f04f91d44116335ed87-3947215-images-thumbs&n=13" group-title="СПОРТ",МАТЧ! БОЕЦ HD
 http://stream.shbro.org/stream/14B37BB54802/8027videom3u8.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=4a33725e4f10780f3e135a30c629deba2627689e-5232852-images-thumbs&n=13" group-title="Развлекательные",France 24
@@ -9706,8 +9447,6 @@ http://stream.shbro.org/stream/14B37BB54802/hmanifestm3u8.m3u8
 http://stream.shbro.org/stream/14B37BB54802/xmanifestm3u8.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=52a9e9ea86c56cc67566e0b18e6381a0acff5ed6-12493262-images-thumbs&n=13" group-title="Россия Региональные",Колыма Плюс ТВ
 http://stream.shbro.org/stream/14B37BB54802/eplaylistm3u8_ba7f.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=52f8bd02c28c449db803bf918a6b41cddc67bf1b-7679814-images-thumbs&n=13" group-title="Узбекистан",JaslarTV
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_8419.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=530cbcc63ef21b5cde243366724301eebcc17586-4230038-images-thumbs&n=13" group-title="Россия Региональные",Abaza TV
 http://stream.shbro.org/stream/14B37BB54802/siteindexm3u8.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=5380975b3ec2a7389f5039cd70bd5eb23e45cabb-5340121-images-thumbs&n=13" group-title="Россия",Звезда Плюс HD
@@ -9764,8 +9503,6 @@ http://stream.shbro.org/stream/14B37BB54802/8acegetstream_0da2.m3u8
 http://stream.shbro.org/stream/14B37BB54802/388indexm3u8.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=5f2ef49f3923e26998bb7f739013d8c93acab3a0-4901462-images-thumbs&n=13" group-title="СПОРТ",Старт Триумф HD
 http://stream.shbro.org/stream/14B37BB54802/9186videom3u8.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=5fd619b4021670ee50233306bb7690019ea1acc0-4809949-images-thumbs&n=13" group-title="Узбекистан",KULGU TV
-http://stream.shbro.org/stream/14B37BB54802/hlsstreamm3u8_a868.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=608e728ba6499f90e15dfae38b0154da10f321b5-4575627-images-thumbs&n=13" group-title="СПОРТ",beIN SPORTS XTRA
 http://stream.shbro.org/stream/14B37BB54802/listR1080pm3u8.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=61bbf996825767fe3558c3c92a767baccd766aec-5041987-images-thumbs&n=13" group-title="Россия",viju Premiere
@@ -9940,8 +9677,6 @@ http://stream.shbro.org/stream/14B37BB54802/1sdindexm3u8_11d2.m3u8
 http://stream.shbro.org/stream/14B37BB54802/1hdindexm3u8_42ea.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=62cd5dee1910795d6a4238c5d88372063cba1547-5222496-images-thumbs&n=13" group-title="Россия Региональные",Первый Городской (Одесса)
 http://stream.shbro.org/stream/14B37BB54802/2playlistm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=62e5e87dae86417fa2b6bad5bcdbb00b6ec879609cab7275-10254932-images-thumbs&n=13" group-title="Киргизия",TMedia
-http://stream.shbro.org/stream/14B37BB54802/2980860m3u8.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=62e6834cf5679bdcff0cc1ddff1eeb75eae0eb22-2466270-images-thumbs&n=13" group-title="Россия Региональные",Надежда
 http://stream.shbro.org/stream/14B37BB54802/1playlistm3u8_b11c.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=6376c6ee195fd5bb591d035acade98bd0c1eca60-5750905-images-thumbs&n=13" group-title="СПОРТ",UNBEATEN
@@ -10010,8 +9745,6 @@ http://stream.shbro.org/stream/14B37BB54802/8139videom3u8.m3u8
 http://stream.shbro.org/stream/14B37BB54802/T220802hdm3u8.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=70d0b3bdb81fb798adb6fffc61602f34db05c5b4-5339669-images-thumbs&n=13" group-title="Россия",Запад 24
 http://stream.shbro.org/stream/14B37BB54802/4hdindexm3u8_518d.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=726a6e157b91531798da0156f9f500e331b19ecc-5262023-images-thumbs&n=13" group-title="Узбекистан",Vodiy TV
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_1517.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=72ba43470558da0d6b8e56b46668472f-4886747-images-thumbs&n=13" group-title="Россия Региональные",Продвижение (Асино)
 http://stream.shbro.org/stream/14B37BB54802/ruhlstvm3u8.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=72ba43470558da0d6b8e56b46668472f-4886747-images-thumbs&n=13" group-title="Россия Региональные",Продвижение (Астрахань) [HD]
@@ -10210,8 +9943,6 @@ http://stream.shbro.org/stream/14B37BB54802/8470videom3u8.m3u8
 http://stream.shbro.org/stream/14B37BB54802/8471videom3u8.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=9b9298636398a377c2346698338c970b994004a9-10244736-images-thumbs&n=13" group-title="СПОРТ",BOX SR Sport 4 Live 4K HDR
 http://stream.shbro.org/stream/14B37BB54802/8472videom3u8.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=9c4e72a320378c5f5ebb807bef9599b0fade2659-5192743-images-thumbs&n=13" group-title="Киргизия",Nur TVᴴᴰ
-http://stream.shbro.org/stream/14B37BB54802/17280860m3u8.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=9d4bcd62ea010a8601b5f33cb6c1a84fb0526a83-10344054-images-thumbs&n=13" group-title="Кино Канал",NOW series HD
 http://stream.shbro.org/stream/14B37BB54802/d566videom3u8.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=9e12b0495f08147b8e38acccf81203c3f751b874-12347089-images-thumbs&n=13" group-title="Детские",CTC kids
@@ -10250,8 +9981,6 @@ http://stream.shbro.org/stream/14B37BB54802/002d2ae873m3u8.m3u8
 http://stream.shbro.org/stream/14B37BB54802/miksindexm3u8.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=a1fc63c5da167abeea1a7d0904ba1d335c5f90e2-5234655-images-thumbs&n=13" group-title="Россия",Киномикс
 http://stream.shbro.org/stream/14B37BB54802/1233indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=a219bda3cec09c45a6e93c54ecf59f7650c4f855-3548415-images-thumbs&n=13" group-title="Киргизия",7 канал
-http://stream.shbro.org/stream/14B37BB54802/11780860m3u8.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=a2f42294dc65d8f4661fdb62414a2d656289a009-5219173-images-thumbs&n=13" group-title="Кино Канал",BCU Ultra 4K
 http://stream.shbro.org/stream/14B37BB54802/8acegetstream_3074.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=a316e3659d17dcd31b37158cc6850236d790487c-4034276-images-thumbs&n=13" group-title="Россия Региональные",Саратов 24
@@ -10352,8 +10081,6 @@ http://stream.shbro.org/stream/14B37BB54802/add5indexm3u8_c5a9.m3u8
 http://stream.shbro.org/stream/14B37BB54802/10stream0m3u8.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=b9931318e304033a950534d3de7dd020c51fdd55-5886904-images-thumbs&n=13" group-title="Россия",VIP Megahit
 http://stream.shbro.org/stream/14B37BB54802/d057videom3u8.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=b9e162dc7fa457e85237bcc26487962cbf09fcd3-5244093-images-thumbs&n=13" group-title="Узбекистан",Amudaryo TV
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_d0d8.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=ba0c679a0ac112e901f17ba50e081bb0fa3ce867-5329285-images-thumbs&n=13" group-title="Кино Канал",MovieToper FHD
 http://stream.shbro.org/stream/14B37BB54802/movietoperlive.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=bc16ee2c25037cf49a776d8900e078b3ff4ed611-10415072-images-thumbs&n=13" group-title="СПОРТ",Авто Плюс HD
@@ -10364,14 +10091,10 @@ http://stream.shbro.org/stream/14B37BB54802/hlsgtyarm3u8.m3u8
 http://stream.shbro.org/stream/14B37BB54802/id43videom3u8.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=bdb46b7309f80fe382d49e8af6e4a3c584d6a899-3573951-images-thumbs&n=13" group-title="Развлекательные",5 Канал HD
 http://stream.shbro.org/stream/14B37BB54802/2118742539m3u8.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=bfc65e49ce33a55f25a8f3328189c0ffe28cf2c8-4868957-images-thumbs&n=13" group-title="Узбекистан",Istiqlol TV
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_8361.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=c2f7275676dc43939bfaf8dc9d473dd3ad85130b-4513470-images-thumbs&n=13" group-title="СПОРТ",Okko Спорт HD
 http://stream.shbro.org/stream/14B37BB54802/9184videom3u8.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=c346b65520715334c9359946c7b5dae2e270a5c6-8238962-images-thumbs&n=13" group-title="Россия Региональные",ЮУрГУ ТВ (Челябинск)
 http://stream.shbro.org/stream/14B37BB54802/kplaylistm3u8_388d.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=c34f69bdaf7d191dd5486cf3c7e8928b902b4603-9226126-images-thumbs&n=13" group-title="Узбекистан",Ishonch TV
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_1bdc.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=c39bdd2f5bfce1de34e50239f78faf7ed0b09391-5296267-images-thumbs&n=13" group-title="Кино Канал",TVMChannel
 http://stream.shbro.org/stream/14B37BB54802/v1a1indexm3u8_f0c4.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=c3b13206cc9cb0884ba46b1e8085a4d98f2bac52-5713591-images-thumbs&n=13" group-title="Россия",Здоровое ТВ
@@ -10454,8 +10177,6 @@ http://stream.shbro.org/stream/14B37BB54802/isthdhighm3u8_52ba.m3u8
 http://stream.shbro.org/stream/14B37BB54802/isthdhighm3u8_7da4.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=d46f9de9ccffdc2b315266b5d81cfa9441fac57f-11389260-images-thumbs&n=13" group-title="Развлекательные",Прима
 http://stream.shbro.org/stream/14B37BB54802/4playlistm3u8_a583.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=d54df6a3420efcbe427ca46a2fea365c296083f9-5130204-images-thumbs&n=13" group-title="Киргизия",Marva TV
-http://stream.shbro.org/stream/14B37BB54802/13780860m3u8.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=d55e04970f8f53125179de16e68d5f5e96aa4260-5603780-images-thumbs&n=13" group-title="Познавательные",ПРО-ФАКТ
 http://stream.shbro.org/stream/14B37BB54802/d301videom3u8.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=d57b2cfa715615f513b4b4d1e1c4e1e5b74fabb0-8219873-images-thumbs&n=13" group-title="Россия Региональные",БСТ (Башкирское)
@@ -10692,8 +10413,6 @@ http://stream.shbro.org/stream/14B37BB54802/1playlistm3u8.m3u8
 http://stream.shbro.org/stream/14B37BB54802/1playlistm3u8_bc25.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=eca4559623b2d641d68293a6ea9509434dece2df-13013698-images-thumbs&n=13" group-title="Музыка",m2o TV HD
 http://stream.shbro.org/stream/14B37BB54802/Oplaylistm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=eca777dc21fe19332a13102f9f2cd62e87e0e21c-12373778-images-thumbs&n=13" group-title="Узбекистан",ntv (o'zbekiston)
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_705f.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=ecb41aefa8925b1d488c426358e3ff2e89255484-5345276-images-thumbs&n=13" group-title="Россия Региональные",Югра ТВ
 http://stream.shbro.org/stream/14B37BB54802/vplaylistm3u8_d17e.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=eccbd99179b9e585264804fb7313120cf74e4099-3713143-images-thumbs&n=13" group-title="Россия Региональные",Волжский Плюс
@@ -10734,8 +10453,6 @@ http://stream.shbro.org/stream/14B37BB54802/listR1080pm3u8_082b.m3u8
 http://stream.shbro.org/stream/14B37BB54802/3playlistm3u8_251a.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=f4e42241fe4abaae6dc609425563b94a6813f231-12585680-images-thumbs&n=13" group-title="Познавательные",Space Stream
 http://stream.shbro.org/stream/14B37BB54802/d297videom3u8.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=f51c1da7a51c0546bcfb203433da9f56a562576c-4538573-images-thumbs&n=13" group-title="Узбекистан",TTV Telekanal
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_edc2.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=f56b2d324917a2659785d4f07f5dad2ae6e763ec-4814374-images-thumbs&n=13" group-title="Кино Канал",BCU Action HD
 http://stream.shbro.org/stream/14B37BB54802/8acegetstream.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=f60c898a66f0e5762bcb8a5a00bfd069b5d0aaf6-4055801-images-thumbs&n=13" group-title="СПОРТ",Fifa+
@@ -10778,16 +10495,12 @@ http://stream.shbro.org/stream/14B37BB54802/8acegetstream_e851.m3u8
 http://stream.shbro.org/stream/14B37BB54802/3f8avideom3u8.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=fed13589212ac997048216009aa1bb705ab00585-2834022-images-thumbs&n=13" group-title="Россия",Домашний
 http://stream.shbro.org/stream/14B37BB54802/8000Domashniy.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=ff2f740fbad5769f7cbb244d485db595d84a3f5e-4211971-images-thumbs&n=13" group-title="Киргизия",УТРК Жалал-Абад
-http://stream.shbro.org/stream/14B37BB54802/16280860m3u8.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=ffd0834af8192ddd01291ff8af067dcff3de7c6a-5886727-images-thumbs&n=13" group-title="Развлекательные",МИ - УКРАЇНА HD
 http://stream.shbro.org/stream/14B37BB54802/2118742680m3u8.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=fff677e9e6ab885bab110e1ec55747cd2d406fd9-16463591-images-thumbs&n=13" group-title="СПОРТ",Футбол
 http://stream.shbro.org/stream/14B37BB54802/8147videom3u8.m3u8
 #EXTINF:-1 tvg-logo="https://bst.bratsk.ru/bst24_mainlogo_v1.png" group-title="Россия",БСТ 24
 http://stream.shbro.org/stream/14B37BB54802/sdstreamm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://cdn.uzd.udevs.io/uzdigital-images-compressed/images/1e4ee1ad-c3d4-4131-bc43-74b7a1e29ea2.png" group-title="Узбекистан",Navo
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_cb05.m3u8
 #EXTINF:-1 tvg-logo="https://cdn2-static.ntv.ru/home/schedule/2025/20250926/1st_otdel_vert_live.jpg" group-title="Кино Канал",НТВ Сериалы Первый отдел
 http://stream.shbro.org/stream/14B37BB54802/ind240tsm3u8_dfeb.m3u8
 #EXTINF:-1 tvg-logo="https://cdn2-static.ntv.ru/home/schedule/2025/20250926/nevs_black_live3.jpg" group-title="Кино Канал",НТВ Сериалы Невский
@@ -10798,26 +10511,12 @@ http://stream.shbro.org/stream/14B37BB54802/ind240tsm3u8_ab31.m3u8
 http://stream.shbro.org/stream/14B37BB54802/ind240tsm3u8_370e.m3u8
 #EXTINF:-1 tvg-logo="https://cdn2-static.ntv.ru/home/schedule/2025/20251021/balabol_vse_vert.jpg" group-title="Кино Канал",НТВ Сериалы Балабол
 http://stream.shbro.org/stream/14B37BB54802/ind240tsm3u8_6650.m3u8
-#EXTINF:-1 tvg-logo="https://cp.biz-media.org/media/portfolio/solnechniy_WtxdGnG.png" group-title="Узбекистан",Солнечный тв
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_97f5.m3u8
-#EXTINF:-1 tvg-logo="https://cp.biz-media.org/media/portfolio/solnechniy_WtxdGnG.png" group-title="Узбекистан",Солнечный тв
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_fea6.m3u8
-#EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2020/06/12/005922d7-3bd7-4eab-9146-4d5dea1d949b.png" group-title="Узбекистан",Dunyo Bo'ylab
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_d6ba.m3u8
-#EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2020/06/12/035fe5e3-f968-45fd-93af-31e4b91cdebf.png" group-title="Узбекистан",Sevimli
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_7da6.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2020/06/12/23dfcfff-b1fd-4f57-bb0b-39ffa79d45b5.png" group-title="Россия",Россия 1
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_f5f5.m3u8
-#EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2020/06/12/257d6f2f-a233-4e37-8767-af7d224876f8.png" group-title="Узбекистан",Mahalla
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_aeb3.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2020/06/12/265ed287-b0aa-4fbf-b09a-924635e62820.png" group-title="Детские",Карусель
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_e212.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2020/06/12/283fa812-87b2-4e42-9e2f-0907dc041a64.png" group-title="Кино Канал",Родное кино
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_81ec.m3u8
-#EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2020/06/12/2eb5212f-fda5-42f3-a1cf-56bda22bbb77.png" group-title="Узбекистан",Toshkent
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_96f9.m3u8
-#EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2020/06/12/2fa215cc-332c-4181-8d30-cb32ab9b7f61.png" group-title="Узбекистан",O'zbekiston4
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_ad2a.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2020/06/12/32daf72b-4cce-4eb7-adc9-e44d7b395e57.png" group-title="Кино Канал",Индийское кино
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_ed16.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2020/06/12/3581815e-23b6-4e2b-9d15-141be8b5e5f2.png" group-title="Познавательные",National Geographic
@@ -10826,18 +10525,12 @@ http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_d0a4.m3u8
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_95f6.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2020/06/12/5c110ff3-9c65-4c15-bda7-e21d6ab5c815.png" group-title="Кино Канал",Кинопремьера HD
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_0bb8.m3u8
-#EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2020/06/12/5e8a53f0-c142-4e88-887b-df7491f6d0fe.png" group-title="Узбекистан",Kinoteatr
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_2ea2.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2020/06/12/61708bfe-535d-4e03-81aa-5a949b9ba443.png" group-title="Детские",Bolajon
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_e6c1.m3u8
-#EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2020/06/12/656157a5-310c-4ea8-8c7f-a5d7db68c409.png" group-title="Узбекистан",Madaniyat va ma'rifat
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_c714.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2020/06/12/725b7125-c247-4ec7-a2e0-7cd4779cc59c.png" group-title="Музыка",Ru-TV
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_8f14.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2020/06/12/7264f8a9-b852-461e-8791-3dd998e5a9e5.png" group-title="Россия",Первый канал
 http://stream.shbro.org/stream/14B37BB54802/dca4videom3u8_50ff.m3u8
-#EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2020/06/12/80f29007-3f69-44fd-a8de-4c5d9783beb1.png" group-title="Узбекистан",O'zbekiston
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_fef3.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2020/06/12/828d4562-bf08-4874-9c0f-52e86676d1e9.png" group-title="Кино Канал",Ретро
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_a8fe.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2020/06/12/835def0f-e2bc-442f-93b9-b44d9f079e9b.png" group-title="Кино Канал",Дом кино
@@ -10856,10 +10549,6 @@ http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_cb7a.m3u8
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_44f2.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2020/06/12/ac492313-1888-47ce-97c6-8095a3e2781e.png" group-title="Россия",Euronews
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_830b.m3u8
-#EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2020/06/12/b72767f1-cb87-48f3-b299-ee1b2fd06795.png" group-title="Узбекистан",Uzreport
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_0afe.m3u8
-#EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2020/06/12/c037c019-f6e7-41fb-8001-d5adeec3b69a.png" group-title="Узбекистан",O'zbekiston tarixi
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_235d.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2020/06/12/d032aa68-76e4-493c-8a7b-12415116a651.png" group-title="Познавательные",Viasat History
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_c53c.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2020/06/12/e315edeb-2758-4831-8e33-f4c4e104626a.png" group-title="Познавательные",Nat Geo Wild HD
@@ -10870,8 +10559,6 @@ http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_8205.m3u8
 http://stream.shbro.org/stream/14B37BB54802/v2a1monom3u8_4647.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2020/06/12/f42a0d33-6a1d-41f5-9f1f-5a725fc1b9c0.png" group-title="Кино Канал",Кинопоказ
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_01b8.m3u8
-#EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2020/06/12/f9b7dca1-6d47-480d-9958-7ce77b63ba8d.png" group-title="Узбекистан",Yoshlar
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_f4a1.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2020/06/12/fac02a6a-8752-47d9-bf0b-951e785f7b16.png" group-title="Музыка",Музыка первого
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_e406.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2020/10/16/0a7c48cd-6663-4f9d-8423-16d029e35854.png" group-title="Кино Канал",Кинокомедия
@@ -10892,48 +10579,32 @@ http://stream.shbro.org/stream/14B37BB54802/v2a1monom3u8_0016.m3u8
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_991d.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2020/10/16/f45cf32c-a27c-4dd6-81b2-a46fb59c8771.png" group-title="Кино Канал",Киносерия
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_5052.m3u8
-#EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2021/04/27/4db20de5-0bb9-4126-b12e-908d327ecf70.png" group-title="Узбекистан",Dasturxon
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_e3cb.m3u8
-#EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2021/12/14/044a1ecc-cf92-4c32-8a8b-54ce07c69546.png" group-title="Узбекистан",Milliy TV
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_bb15.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2021/12/14/1d294da3-5f54-4e99-bb45-1308f13da3c1.png" group-title="Россия",Мир +2
 http://stream.shbro.org/stream/14B37BB54802/0playlistm3u8_4ff5.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2021/12/14/1d294da3-5f54-4e99-bb45-1308f13da3c1.png" group-title="Россия",Мир +3
 http://stream.shbro.org/stream/14B37BB54802/0playlistm3u8_b102.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2021/12/14/1d294da3-5f54-4e99-bb45-1308f13da3c1.png" group-title="Россия",Мир +7
 http://stream.shbro.org/stream/14B37BB54802/0playlistm3u8_eaa5.m3u8
-#EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2021/12/14/56fe1797-3b4e-4f18-816b-e633ebc34316.png" group-title="Узбекистан",Taraqqiyot tv
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_1a55.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2021/12/14/a0e101d7-b517-41dd-92cb-2221ebf50612.png" group-title="Россия",Мир 24
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_3377.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2021/12/14/ad0b928c-20ad-4e6d-9216-be5c0e47ce45.png" group-title="Познавательные",Fashion TV
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_6562.m3u8
-#EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2021/12/14/add3022f-0964-470f-acee-4441c9d49201.png" group-title="Узбекистан",My5
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_ab7f.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2021/12/14/e9b2085d-5064-4189-99a4-b8615dc39e78.png" group-title="Детские",Aqlvoy
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_bd1b.m3u8
-#EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2021/12/14/e9b2085d-5064-4189-99a4-b8615dc39e78.png" group-title="Узбекистан",Aqlvoy
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_bd4f.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2022/12/02/85251811-aae5-4eea-84a6-145d713229f5.png" group-title="Музыка",FTV
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_b5f3.m3u8
-#EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2022/12/07/61bc27f8-5c9f-4f79-87fd-648b76039d4c.jpg" group-title="Узбекистан",BIZ TV
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_248b.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2023/08/14/0d1b728f-7442-4448-8ff8-1e232aa72859.png" group-title="Познавательные",Усадьба
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_194e.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2023/08/14/1495fed7-420b-491a-800a-078be172df55.png" group-title="Познавательные",Наша Сибирь
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_b649.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2023/08/14/18a5b475-ed03-4ab6-b255-73e093bb71f8.png" group-title="Познавательные",Приключения
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_9884.m3u8
-#EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2023/08/14/23bab5dc-4a74-4db8-8a30-6b10918cdd4f.png" group-title="Узбекистан",MYDAYTV
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_994e.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2023/08/14/2a4a6e8e-1ec9-4646-975a-dbdeb0583508.png" group-title="Кино Канал",viju+ TV1000 Русское
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_68ab.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2023/08/14/45ee918d-9034-480b-9995-910d4e049960.png" group-title="Познавательные",Глазами Туриста
 http://stream.shbro.org/stream/14B37BB54802/v2a1monom3u8_465f.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2023/08/14/4c012a02-4a62-4554-98ac-d3610cfd05fe.png" group-title="Кино Канал",viju+ TV1000
 http://stream.shbro.org/stream/14B37BB54802/v2a1monom3u8_02a1.m3u8
-#EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2023/08/14/5951e3a5-db4d-41c0-a9f2-1d485801aa0e.png" group-title="Узбекистан",I-kbol
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_e368.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2023/08/14/6cb32a2d-19e2-4474-80af-6c4ce11eed9e.png" group-title="Познавательные",Живи
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_1bd6.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2023/08/14/775fe752-e2e3-4b4c-ac09-2f60a91ecbfa.png" group-title="Познавательные",Здоровое ТВ
@@ -10958,8 +10629,6 @@ http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_8b13.m3u8
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_8051.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2023/09/11/0c18930a-be53-4597-88fc-27a943b6b48d.jpeg" group-title="Познавательные",Живи активно
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_95ed.m3u8
-#EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2023/09/11/1285670f-8da5-4d02-a789-70031bec9c95.png" group-title="Узбекистан",RTV
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_2cd4.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2023/09/11/378ea87e-e9e2-41cc-b181-17eb9d636518.png" group-title="Кино Канал",Hollywood
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_cb5a.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2023/09/11/3b40ca30-297f-416d-b054-ca948550e1b5.jpeg" group-title="Познавательные",Наука ТВ
@@ -11000,12 +10669,8 @@ http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_76a5.m3u8
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_e849.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2023/09/11/e2168492-0948-47b2-b6e4-c8373add1961.jpeg" group-title="Познавательные",ZooПарк
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_fd6f.m3u8
-#EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2024/01/30/e2b9fdd9-560a-494f-bf8f-4a085d042624.jpeg" group-title="Узбекистан",LuxTV
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_21cb.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2024/02/20/2946c715-b99f-4fcc-b405-74663b663624.jpeg" group-title="Кино Канал",Дорама
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_17e0.m3u8
-#EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2024/02/20/411653eb-8eec-4a1c-852c-114b37be5689.jpeg" group-title="Узбекистан",BIZ Cinema
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_ffe8.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2024/02/20/6f4db2ed-fd01-4e38-b633-dfa20befcfa7.jpeg" group-title="Россия",ТВЦ
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_e55b.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2024/02/20/8f0b15f3-746e-425a-9057-ad1efbb274ec.jpeg" group-title="Музыка",Муз-ТВ O'zbekiston
@@ -11014,40 +10679,10 @@ http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_29c7.m3u8
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_9f2b.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2024/02/20/e525159b-d1fa-4452-82db-401316a5e9e5.jpeg" group-title="Детские",Уникум
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_028a.m3u8
-#EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2025/01/28/dbe98084-792d-4954-bc01-fc658317e3bf.png" group-title="Узбекистан",Makon TV
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_eb88.m3u8
-#EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2025/02/07/007deac2-7440-43a8-892b-b1bb5a2be2ab.jpeg" group-title="Узбекистан",TTV Kino
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_43a2.m3u8
-#EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2025/02/07/34d60aeb-fac7-4e70-9e17-c6c49163c3a2.jpeg" group-title="Узбекистан",TTV Telekanal
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_77d6.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2025/02/07/6b8fa054-cd8d-4722-9964-f5109ef45df6.jpeg" group-title="Музыка",S-Music
 http://stream.shbro.org/stream/14B37BB54802/v2a1monom3u8_a323.m3u8
-#EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2025/02/07/f9bf163d-632a-49f5-928c-a40d47df8bf7.jpeg" group-title="Узбекистан",Cinema (uzb)
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_28ac.m3u8
-#EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2025/02/10/5842ad76-eef6-494b-acb8-ab79ef2cb70d.jpeg" group-title="Узбекистан",JaslarTV
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_01f8.m3u8
-#EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2025/02/10/af774beb-b08b-4b1a-8d9d-cef336126e87.jpeg" group-title="Узбекистан",Nasaf TV
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_d49a.m3u8
-#EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2025/03/24/1702a7f8-8f1f-4d75-92b4-468a40c125bf.jpeg" group-title="Узбекистан",Ishonch TV
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_d478.m3u8
-#EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2025/03/24/3b397981-ece6-4fb9-a66f-29b07d234f0f.jpeg" group-title="Узбекистан",Shifo TV
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_604f.m3u8
 #EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2025/03/24/97ebf698-4817-4935-bf69-e9a254f9bcc7.jpeg" group-title="Детские",MiMi
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_edda.m3u8
-#EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2025/03/24/b7d410f4-508c-4299-b118-d4107489c5c6.jpeg" group-title="Узбекистан",Muloqot TV
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_7fd8.m3u8
-#EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2025/03/24/c454009d-156c-433b-ab68-079cb3e6d5d2.jpeg" group-title="Узбекистан",JTV
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_ab2a.m3u8
-#EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2025/03/24/c58b1e89-4197-4534-bf89-605c9dc842ea.jpeg" group-title="Узбекистан",Vodiy TV
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_4461.m3u8
-#EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2025/03/24/d8af2b7e-bee1-4ace-9fee-a8304d7f11b8.jpeg" group-title="Узбекистан",Eliqqala TV
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_50b0.m3u8
-#EXTINF:-1 tvg-logo="https://files.cinerama.uz/images/tv_channels/2025/03/24/e242bb73-9172-4461-8ae3-f812ad7392db.jpeg" group-title="Узбекистан",Amudaryo TV
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_48f6.m3u8
-#EXTINF:-1 tvg-logo="https://i.ibb.co/2Kvcj5Q/manas.jpg" group-title="Киргизия",МАНАС
-http://stream.shbro.org/stream/14B37BB54802/hlsmanasm3u8_d789.m3u8
-#EXTINF:-1 tvg-logo="https://i.ibb.co/VJ7cPRH/Xp5clCA.png" group-title="Киргизия",УТРКᴴᴰ
-http://stream.shbro.org/stream/14B37BB54802/8376monom3u8.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/AihoVc0.png" group-title="Местные" ,Луганск 24
 https://edge-ekat1.teletarget.ru/stream/lnr/lugansk24/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/uMw3kks.png" group-title="Музыкальные" ,DanceHits80
@@ -11070,10 +10705,6 @@ http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_c046.m3u8
 http://stream.shbro.org/stream/14B37BB54802/5bf7videom3u8.m3u8
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/BbWJfGRT/2008-2010.png" group-title="Россия",ТВК (Красноярск)
 http://stream.shbro.org/stream/14B37BB54802/v2a1monom3u8_1321.m3u8
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/CxjJXMxg/Tas-ix-Media.png" group-title="Узбекистан",Tas-ix.Media
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_df38.m3u8
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/CxjJXMxg/Tas-ix-Media.png" group-title="Узбекистан",tasix-media kino
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_0d72.m3u8
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/D06WvJWn/1.png" group-title="Развлекательные",IPTVPLAY ДЕСЯТОЕ КОРОЛЕВСТВО
 http://stream.shbro.org/stream/14B37BB54802/Otvvideom3u8.m3u8
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/DZ9M94gY/Viasat-History.png" group-title="Россия",Viasat History
@@ -11152,136 +10783,6 @@ http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_298a.m3u8
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_c264.m3u8
 #EXTINF:-1 tvg-logo="https://img.catcast.tv/uploads/26012021/logos/39749-600fef81376fc.png" group-title="Кино Канал",FilmON
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_0c43.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2020/06/17//379d07323f571965a4dc44b456a14530-q-500x500.jpeg" group-title="Узбекистан",Oʻzbekiston
-http://stream.shbro.org/stream/14B37BB54802/1001indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2020/06/17//4091c27ad1899f00d8f900e4a1243611-q-500x500.jpeg" group-title="Узбекистан",O'zbekiston 24 HD
-http://stream.shbro.org/stream/14B37BB54802/1011indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2020/06/17//58b2e970ecde5f03f461b8fe59550fac-q-500x500.jpeg" group-title="Узбекистан",O'zbekiston tarixi FHD
-http://stream.shbro.org/stream/14B37BB54802/1209indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2020/06/17//6184bdb718f893d4c4480ed8db4aeaa3-q-500x500.jpeg" group-title="Узбекистан",Bolajon
-http://stream.shbro.org/stream/14B37BB54802/1007indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2020/06/17//622d1ccb45505a6a0c4a5b231a1664eb-q-500x500.jpeg" group-title="Узбекистан",Dunyo bo`ylab
-http://stream.shbro.org/stream/14B37BB54802/1006indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2020/06/17//6f5be573ae591540e132f03c6dd242a5-q-500x500.jpeg" group-title="Узбекистан",Uzreport HD
-http://stream.shbro.org/stream/14B37BB54802/1015indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2020/06/17//96e9b1e79d2d9442b778115079e09d21-q-500x500.jpeg" group-title="Узбекистан",Toshkent
-http://stream.shbro.org/stream/14B37BB54802/1003indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2020/06/17//d2e38ec0058f9c217b4c77c88f81404e-q-500x500.jpeg" group-title="Узбекистан",Kinoteatr HD
-http://stream.shbro.org/stream/14B37BB54802/1009indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2020/06/17//f79dce2ae2bd9ef84b6888f226fbb293-q-500x500.jpeg" group-title="Узбекистан",Sport TV
-http://stream.shbro.org/stream/14B37BB54802/1004indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2020/08/24//261595d890bd48621a89240d3d182aa2-q-500x500.jpeg" group-title="Узбекистан",Biz Music
-http://stream.shbro.org/stream/14B37BB54802/1212indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2020/08/24//b2e7b7a4e645fbef99b302d06b35670d-q-500x500.jpeg" group-title="Узбекистан",Biz Cinema
-http://stream.shbro.org/stream/14B37BB54802/1213indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2021/03/23//bc4fba2dcb3166bd9aaa3d73229f6ef0-q-500x500.jpeg" group-title="Узбекистан",Aqlvoy
-http://stream.shbro.org/stream/14B37BB54802/1205indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2021/11/03//2675cdc82b452ba3267237a976d173fc-q-500x500.jpeg" group-title="Узбекистан",MY5 SD
-http://stream.shbro.org/stream/14B37BB54802/1217indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2021/11/03//5a52a0580d30e504a5dbf424962bed82-q-500x500.jpeg" group-title="Узбекистан",MY5 HD
-http://stream.shbro.org/stream/14B37BB54802/1012indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2022/01/22//4a58120210414aef66c88ca130dd3650-q-500x500.jpeg" group-title="Узбекистан",Nurafshon TV
-http://stream.shbro.org/stream/14B37BB54802/1220indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2022/03/31//01111699cb98bd366b6fd444ed741801-q-500x500.jpeg" group-title="Узбекистан",Ruxsor TV
-http://stream.shbro.org/stream/14B37BB54802/4008indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2022/08/23//105c61567d1ca0420d2ff99256054af6-q-500x500.jpeg" group-title="Узбекистан",Yoshlar
-http://stream.shbro.org/stream/14B37BB54802/1002indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2022/08/23//2b3a36d6b5ad122598ce23f472f908ce-q-500x500.jpeg" group-title="Узбекистан",Navo
-http://stream.shbro.org/stream/14B37BB54802/1008indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2022/11/30//4b9b4faa5635e282bb1f3ece579c5fea-q-500x500.jpeg" group-title="Узбекистан",Sevimli TV FHD
-http://stream.shbro.org/stream/14B37BB54802/1056indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2022/12/06//d650b7a25deeb8a4f48a899eca793598-q-500x500.jpeg" group-title="Узбекистан",Biz TV
-http://stream.shbro.org/stream/14B37BB54802/1211indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2023/05/31//27e8188e91570f9ccf5c29121c183e6a-q-500x500.jpeg" group-title="Узбекистан",Mahalla
-http://stream.shbro.org/stream/14B37BB54802/1013indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2023/05/31//95737b9a2b913a6fadf576f61933a635-q-500x500.jpeg" group-title="Узбекистан",Madaniyat va Marifat
-http://stream.shbro.org/stream/14B37BB54802/1005indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2023/06/01//0e264d0a734bc52d4887a98dddd13bfa-q-500x500.jpeg" group-title="Узбекистан",MYDAYTV
-http://stream.shbro.org/stream/14B37BB54802/1265indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2023/06/02//15db9906a0f50fb5ccadc0c30f1e532d-q-500x500.jpeg" group-title="Узбекистан",Milliy SD
-http://stream.shbro.org/stream/14B37BB54802/1216indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2023/06/02//d1498a17fd6850c0e7404e9487353cfc-q-500x500.jpeg" group-title="Узбекистан",Gold Television
-http://stream.shbro.org/stream/14B37BB54802/4007indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2023/06/02//fa77872772e7f7406369bd0fe4e48e47-q-500x500.jpeg" group-title="Узбекистан",Milliy TV HD
-http://stream.shbro.org/stream/14B37BB54802/1014indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2023/06/19//2b9d5460c300fafc6cac117e0650b4fd-q-500x500.jpeg" group-title="Узбекистан",S-Ikbol
-http://stream.shbro.org/stream/14B37BB54802/1282indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2023/07/26//0cc702bdf78b38aff615d7c502dd4fe2-q-500x500.jpeg" group-title="Узбекистан",Istiqlol TV
-http://stream.shbro.org/stream/14B37BB54802/1283indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2023/07/26//3b502b779ef41d61b37bc535bf869f87-q-500x500.jpeg" group-title="Узбекистан",NTV
-http://stream.shbro.org/stream/14B37BB54802/1284indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2023/10/28//a29a63851d77f2b79dd890b5e888b72d-q-500x500.jpeg" group-title="Узбекистан",Lux TV
-http://stream.shbro.org/stream/14B37BB54802/1210indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/01/24//4a4b31ebb4248789549263ad774c2c61-q-500x500.jpeg" group-title="Узбекистан",Renessans TV
-http://stream.shbro.org/stream/14B37BB54802/1221indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/07/10//36d91922645f095fde22cb2b836715be-q-500x500.jpeg" group-title="Узбекистан",Vodiy TV
-http://stream.shbro.org/stream/14B37BB54802/4012indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/07/23//8707395e931d3bb2ce18579a995d16a7-q-500x500.jpeg" group-title="Узбекистан",Shifo TV
-http://stream.shbro.org/stream/14B37BB54802/1469indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/07/23//d20bd7900e47c133b4fe42afaff686de-q-500x500.jpeg" group-title="Узбекистан",Mimi TV
-http://stream.shbro.org/stream/14B37BB54802/1470indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/08/19//ae399dbe120262ce79931f6f22e84ba4-q-500x500.jpeg" group-title="Узбекистан",Taraqqiyot TV
-http://stream.shbro.org/stream/14B37BB54802/1204indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/10/15//75b4b090cb1f5663d7eb0373c1fb1a80-q-500x500.jpeg" group-title="Узбекистан",Jizzax TV 2
-http://stream.shbro.org/stream/14B37BB54802/1488indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/10/15//e4a7c541ecae647033f9a2248b87fb6b-q-500x500.jpeg" group-title="Узбекистан",ishonch TV
-http://stream.shbro.org/stream/14B37BB54802/1489indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/10/16//17af904b28e714551e8396fcc077e11a-q-500x500.jpeg" group-title="Узбекистан",TTV
-http://stream.shbro.org/stream/14B37BB54802/1494indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/10/16//486ab75fe90f29227f3d114adf7ff3e7-q-500x500.jpeg" group-title="Узбекистан",8TV
-http://stream.shbro.org/stream/14B37BB54802/1496indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/10/16//5e1500c4d1b9595a50ad350cee8cd647-q-500x500.jpeg" group-title="Узбекистан",Ellikqala TV
-http://stream.shbro.org/stream/14B37BB54802/1495indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/10/16//bffc77f6b96e90ba72634340afe2d28f-q-500x500.jpeg" group-title="Узбекистан",Amudaryo TV
-http://stream.shbro.org/stream/14B37BB54802/1491indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/10/17//1f68774291aa8afc63a9696929ffbbee-q-500x500.jpeg" group-title="Узбекистан",Jaslar TV
-http://stream.shbro.org/stream/14B37BB54802/1490indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/10/17//c32cb89a20def5498dac66a7a6923399-q-500x500.jpeg" group-title="Узбекистан",Muloqot TV
-http://stream.shbro.org/stream/14B37BB54802/1285indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/10/18//4d3cca95cc849ef5cb15e9a397316622-q-500x500.jpeg" group-title="Узбекистан",TTV Musiqa
-http://stream.shbro.org/stream/14B37BB54802/1485indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/10/18//9421425ce5dc3385aac7fd42c2273223-q-500x500.jpeg" group-title="Узбекистан",TTV Kino
-http://stream.shbro.org/stream/14B37BB54802/1486indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/10/30//4a675cfc1ca9fc523519e8154c67f3a4-q-500x500.jpeg" group-title="Узбекистан",Nasaf TV
-http://stream.shbro.org/stream/14B37BB54802/1492indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2024/12/18//e6505a1ed9a0e61a67aa3e7afeb52167-q-500x500.jpeg" group-title="Узбекистан",Makon TV HD
-http://stream.shbro.org/stream/14B37BB54802/1497indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2025/01/07//20d9335019d646e341e84482f3b5679b-q-500x500.jpeg" group-title="Узбекистан",Futbol TV
-http://stream.shbro.org/stream/14B37BB54802/1010indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2025/03/25//2930662a99d6931a690adbfe650f5e49-q-500x500.jpeg" group-title="Узбекистан",Denov TV
-http://stream.shbro.org/stream/14B37BB54802/1499indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2025/05/01//7c8b25dfefb8655b74b5927ca5858adf-q-500x500.jpeg" group-title="Узбекистан",iTV Cinema
-http://stream.shbro.org/stream/14B37BB54802/4000indexm3u8_c8d6.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2025/05/01//ac76145a39e0a0e5086a5fc7d1651999-q-500x500.jpeg" group-title="Узбекистан",iTV Music
-http://stream.shbro.org/stream/14B37BB54802/4001indexm3u8_1a20.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2025/09/18//5cf836db9faacd4b41f57e70671f942b-q-500x500.jpeg" group-title="Узбекистан",Retro TV
-http://stream.shbro.org/stream/14B37BB54802/1290indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2025/09/18//7317b6d18e305e72f6cb3c5c69212a12-q-500x500.jpeg" group-title="Узбекистан",Qiziq TV
-http://stream.shbro.org/stream/14B37BB54802/1291indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2026/02/03/78260dff583b8faa298b70fc3edf5e43-q-500x500.jpeg" group-title="Узбекистан",DasturxonTV
-http://stream.shbro.org/stream/14B37BB54802/1206indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2026/05/22//a5395b0b-1448-43da-a622-3a117c37ad78-q-500x500.jpeg" group-title="Узбекистан",Farovon Yurt
-http://stream.shbro.org/stream/14B37BB54802/1301indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2026/06/12//3436bbe3-43fc-4f4d-a15f-afd586a8f7bd-q-500x500.jpeg" group-title="Узбекистан",Zoʻr TV HD
-http://stream.shbro.org/stream/14B37BB54802/1016indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2026/06/12//879fc874-2679-4f56-81b9-9bceb4b04ccd-q-500x500.jpeg" group-title="Узбекистан",Zoʻr TV FHD
-http://stream.shbro.org/stream/14B37BB54802/1286indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptv.itv.uz/uploads/iptv/channels/2026/06/23//bfa00beb-dafa-447d-bcf7-ff2fa954bf61-q-500x500.jpeg" group-title="Узбекистан",HayotTV
-http://stream.shbro.org/stream/14B37BB54802/1064indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptvx.one/picons/312-kino.png" group-title="Киргизия",312 Кино
-http://stream.shbro.org/stream/14B37BB54802/oplaylistm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptvx.one/picons/312-serial.png" group-title="Киргизия",312 Сериал
-http://stream.shbro.org/stream/14B37BB54802/kplaylistm3u8_613c.m3u8
-#EXTINF:-1 tvg-logo="https://iptvx.one/picons/cinemax-kg.png" group-title="Киргизия",Cinemax
-http://stream.shbro.org/stream/14B37BB54802/8382monom3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptvx.one/picons/ktrk-sport.png" group-title="Киргизия",Спортᴴᴰ
-http://stream.shbro.org/stream/14B37BB54802/8381monom3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptvx.one/picons/lubimy-kg.png" group-title="Киргизия",Любимый
-http://stream.shbro.org/stream/14B37BB54802/8378monom3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptvx.one/picons/tv15-kg.png" group-title="Киргизия",TV15ᴴᴰ
-http://stream.shbro.org/stream/14B37BB54802/24880860m3u8.m3u8
-#EXTINF:-1 tvg-logo="https://iptvx.one/picons/utrk-madanyat-kg.png" group-title="Киргизия",УТРК Маданият
-http://stream.shbro.org/stream/14B37BB54802/8377monom3u8.m3u8
 #EXTINF:-1 tvg-logo="https://lime-tv.ru/wp-content/uploads/2020/10/1522668479_htm.jpg" group-title="Россия",НТМ
 http://stream.shbro.org/stream/14B37BB54802/lplaylistm3u8_34ea.m3u8
 #EXTINF:-1 tvg-logo="https://lime-tv.ru/wp-content/uploads/2020/10/1522668479_htm.jpg" group-title="Россия",НТМ HD
@@ -11290,102 +10791,16 @@ http://stream.shbro.org/stream/14B37BB54802/lplaylistm3u8_8190.m3u8
 http://stream.shbro.org/stream/14B37BB54802/venttd720m3u8.m3u8
 #EXTINF:-1 tvg-logo="https://lime-tv.ru/wp-content/uploads/2020/10/1532276954_shelkovskoe-tv.jpg" group-title="Россия",Щелковское ТВ
 http://stream.shbro.org/stream/14B37BB54802/41rulivem3u8.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/aql.webp" group-title="Узбекистан",Aqlvoy
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_cf13.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/biz1.webp" group-title="Узбекистан",BIZ TV
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_cb37.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/biz2.webp" group-title="Узбекистан",BIZ Cinema
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_8c04.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/biz3.webp" group-title="Узбекистан",BIZ Music
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_249c.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/biznes.png" group-title="Узбекистан",Biznes TV
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_8f69.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/bola.webp" group-title="Узбекистан",Bolajon
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_fa75.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/cinema.webp" group-title="Узбекистан",Cinema (uzb)
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_0f1f.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/dtv.webp" group-title="Узбекистан",Dasturxon
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_9245.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/dunyo.webp" group-title="Узбекистан",Dunyo Bo'ylab
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_e78d.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/ftv.webp" group-title="Узбекистан",FTV
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_0aaf.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/iqbol.webp" group-title="Узбекистан",I-kbol
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_534b.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/istiq.webp" group-title="Узбекистан",Istiqlol TV
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_5e91.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/kinot.webp" group-title="Узбекистан",Kinoteatr
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_7e26.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/live.png" group-title="Узбекистан",Live TV
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_3cdd.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/lux.webp" group-title="Узбекистан",LuxTV
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_d4b6.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/madan.webp" group-title="Узбекистан",Madaniyat va ma'rifat
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_8195.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/milliy.webp" group-title="Узбекистан",Milliy TV
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_f67b.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/mimi.jpeg" group-title="Узбекистан",MiMi
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_026d.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/muz.png" group-title="Узбекистан",Муз-тв (o'zbekiston)
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_c50e.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/my5.webp" group-title="Узбекистан",My5
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_1a83.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/myd.webp" group-title="Узбекистан",MYDAYTV
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_d744.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/navo.webp" group-title="Узбекистан",Navo
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_2a11.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/ntv.webp" group-title="Узбекистан",Gold TV
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_3aaf.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/ntv.webp" group-title="Узбекистан",ntv (o'zbekiston)
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_d043.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/report.webp" group-title="Узбекистан",Uzreport
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_8918.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/sev.webp" group-title="Узбекистан",Sevimli
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_adc5.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/shifo.png" group-title="Узбекистан",Shifo TV
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_0eb9.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/smusic.webp" group-title="Узбекистан",Globus Music
-http://stream.shbro.org/stream/14B37BB54802/v2a1monom3u8_edbd.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/stv.webp" group-title="Узбекистан",Солнечный тв
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_f114.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/taraqq.webp" group-title="Узбекистан",Taraqqiyot tv
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_5358.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/tarix.webp" group-title="Узбекистан",O'zbekiston tarixi
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_f07a.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/tosh.webp" group-title="Узбекистан",Toshkent
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_cfbd.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/travel.webp" group-title="Узбекистан",Travel-tv (O'zbekiston)
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_7d26.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/ttv1.webp" group-title="Узбекистан",TTV Telekanal
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_6297.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/ttv2.webp" group-title="Узбекистан",TTV Kino
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_4aba.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/uz24.webp" group-title="Узбекистан",O'zbekiston-24
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_398d.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/uztv.webp" group-title="Узбекистан",O'zbekiston
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_83b5.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/yosh.webp" group-title="Узбекистан",Yoshlar
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_d77a.m3u8
-#EXTINF:-1 tvg-logo="https://m3u.usite.pro/tv/zur.webp" group-title="Узбекистан",Zo'r-TV
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_8c5b.m3u8
 #EXTINF:-1 tvg-logo="https://mirbelogorya.ru/images/logo/Logo_Mir_Belogorya_purple_gradient.png" group-title="Россия Региональные",Мир Белагорья
 http://stream.shbro.org/stream/14B37BB54802/oryaindexm3u8_d117.m3u8
 #EXTINF:-1 tvg-logo="https://online-red.com/images/tv/sochi-live.png" group-title="Россия Региональные",Sochi Live HD
 http://stream.shbro.org/stream/14B37BB54802/mplaylistm3u8_7b0a.m3u8
-#EXTINF:-1 tvg-logo="https://otv.server-img.lfstrm.tv/image/aHR0cDovL2ltZy5iNjEyLnRpZ2h0dmlkZW8uY29tL2NoYW5uZWxzL3NlbWVpbnlpLnBuZw==?width=340&height=192&quality=93" group-title="Киргизия",Семейный
-http://stream.shbro.org/stream/14B37BB54802/8380monom3u8.m3u8
 #EXTINF:-1 tvg-logo="https://pbs.twimg.com/profile_images/1161883563492564992/OPawdkI-_400x400.jpg" group-title="Россия",12 КАНАЛ (ОМСК)
 http://stream.shbro.org/stream/14B37BB54802/isthdhighm3u8_641e.m3u8
 #EXTINF:-1 tvg-logo="https://pbs.twimg.com/profile_images/941295036817444864/6IoGlBl6_400x400.jpg" group-title="Россия",МТВ(Волгоград)
 http://stream.shbro.org/stream/14B37BB54802/pplaylistm3u8_c81d.m3u8
 #EXTINF:-1 tvg-logo="https://pic.rutubelist.ru/video/b3/0d/b30d0e06503723e4c61adc98848bd0a9.jpg" group-title="Россия",Мордовия 24
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_d22d.m3u8
-#EXTINF:-1 tvg-logo="https://play-lh.googleusercontent.com/J1X3QmF7XeYqjSzb0680kdrNlUYiVLg44VO3T_cY23-fq9VTxa55x4e31x00zoK1H7E=w240-h480-rw" group-title="Узбекистан",Travel-tv (O'zbekiston)
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_2c59.m3u8
-#EXTINF:-1 tvg-logo="https://play-lh.googleusercontent.com/hjSBke6Y6pJhbAZQZdH59uY5rmm_MlDph8-CvJxg86pKwMdEE9598T52LAUrci9e2VZg=w240-h480-rw" group-title="Узбекистан",Tasix-Media
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_8a02.m3u8
-#EXTINF:-1 tvg-logo="https://play-lh.googleusercontent.com/hjSBke6Y6pJhbAZQZdH59uY5rmm_MlDph8-CvJxg86pKwMdEE9598T52LAUrci9e2VZg=w240-h480-rw" group-title="Узбекистан",tasix-media kino
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_e8cc.m3u8
 #EXTINF:-1 tvg-logo="https://ramtv.ru/wp-content/uploads/2021/12/cropped-Logo2020-white2-e1640011054620.png" group-title="Россия",Раменское ТВ
 http://stream.shbro.org/stream/14B37BB54802/netrtv0m3u8.m3u8
 #EXTINF:-1 tvg-logo="https://shams.usite.pro/Log/Discovery.png" group-title="Россия",Discovery
@@ -11712,42 +11127,24 @@ http://stream.shbro.org/stream/14B37BB54802/v2a1monom3u8_20af.m3u8
 http://stream.shbro.org/stream/14B37BB54802/4playlistm3u8_da1b.m3u8
 #EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/Jj52sq152/5fb535cm/yD5ciKOrkO9oF0rQiDDaEcsiNs6zJ7cFnAYqO3P0CA3SrrWsoTV3UMGHEhx0uGeg3eTp41DrBTXVEsEFJQqmwh1qaayXb6S-zcJOgTzUGmFbY8J_Z6ezdFkmm0rGgfk4Ul7wibejxRLmMeVvcy8VYnlh6TZA2qHklPFX5DRuo3Ca_8xrwzgQefjVa7bK0FrRCmMxDsH04Wc75tk_J6BLbaIJ9452MKUyRUNErDMexeA5kWmmIZp1FTYghqAEP4DDGS5fu5MKAqqJl6tWydJLkJvyku7TNdCHObYKDJXQuv-A29S8ZEFUobbwVhzxbRUzCrHrFpJaphT2QbaA186RQRjuvosQioF6-AfbBurQGaEp4iFcQtewpVrHyE7mARktIyg0DhTwdJHVYtdc0z3XMiqC61dQO2WG54HFQRTc0UMLTDzI86jASrmmewQZkIuTufETTVFH0weLNHk9toBpnUMZBKz0ANSBpkDlrrAtlWAZg3s1g_qnxsVgRQDVf0Pim1--CVNY0FmatIhkCiFaYulTUP6CZkOVi4YKT8eTiZ2ya9XcRjDGItVChq9BbeXQuZFpJUAZBYUEItZSRX6BcNuNnhtwueP56UQZFqlQCoIpU4Af0WSQtItXyQ7XoQjfAbm0vsbytjLmMWT9Ah4XsBtz66dTGqYm1GG0klXdYMCYv804s1jQ20jmWzdrY-oRqNFRbBDXU3f4VnhNh7OancCYVT5mcsdQBmLXbGFfNaBowYkWkEmF5GRTBlB0DKKzav1fm2Hb4lvaZUnWKWD6I7ggIE8wJpCV6MRpHMUAOo_wqUfPxfCng8aA91zSHeVieZFZpyJKZzckYrTQ5-0AsMg9XxuiO6B5mIZrdRgACbNaEYC-M0aTNoiUGIz0IIqP8bqFvsXCFBH20TVfYfzH0Htw-aeQCYVFpBLWwaVswxG43W2rA6hDmrtUakaL0cjD6yOTfBIGIeR7VKov1bEa8" group-title="Россия",TV1000 Action
 http://stream.shbro.org/stream/14B37BB54802/2de8videom3u8.m3u8
-#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/mDh100316/fdbf92fdE0N_/K7YUGwDyFOIwknLyaBkm13gaJoGEdwIAcd8IWn0eiCLdKHFX7hWeVmlT82Rkf-yXhCQlj6RxPp3yL2imHGNyemqi0E9Bd8EmEUcyclhJBwKsKzdEJDLTpFQfmR-Yfs0SbpumcNmzKbB-1KRzwG_MItRg9PvA8ugMt8pvozhyQEyaVTZopHBnsFYxg-LoOGXC-MqkpZfxUZLEnDiounsKN83Z9SHbIBgB_BZUgICe3bMVQCB6IkEriqVKPkNrEcD9G2bnmxaQhiIGs0PiaSsFAeiYRtYEgMAhZB4oOGoKSFXdmiTimTJZwY43xEJwnq3y5ADjuHBT2lqWmt7jOnHC7conBXslIvaRxILgQYrr1-P46MWXVtHBAQbfiLpq24rWTvhk89tgaQL8FVfyAyzPkeaiYkiAw2kZplnsQmhh4V2YtueppsPn47Sw0LG6SjTDK2hHBFXi0BMFP_lKiZto1Q9YdyHa04kznPREMkMOztGEEVCr0XGpWTQrTxBasvA8C5ake6UD9EImYdHhiWmFYKmLZVfF4FOzVN_aeVvLOaedOqYwaNHoQx8XtdBjvs3wZ7OSOzJhaLqkad7QuvHTPXtmZRq3cYTwV2DQEZvYZ2M6OyckJrKwMOat-gur-ljFj1tUgFsACVGf16Vh002-kuSi8bnw03vZFYv8o1qxQr_ptsQZpmOlAUcigrEJGhVD66gVlCawAMAELGpIOeg7lRzpNeCZ0ogw_zeWkVCPX9OkcZL60CNo-ldqjROq8bN_2ZdnGBezZ8CE8KBwu1o2MuvKhsbUgrGxJjx4-boqeNeey9aAqvDps0xmhlGwXO9AxXEi2hBRmon1mCyAWdLxjqpFJlkWg2fAd2Exsyo5FBK5-dRHRBOxMKR_OTrp6clGDHkWcouBmNA_5AYAQQyucwYBo1piIFkaB8qNgRjiI78rxxV5ZWLmEdcBoGKrGlQCOKoGh_ei0ONEbaq4o" group-title="Узбекистан",Cinema UZ
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_79f7.m3u8
-#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/mDh100316/fdbf92fdE0N_/K7YUGwDyFOIwknLyaBkm13gaJoGEdwIAcd8IWn0eiCLdKHFX7hWeVmlT82Rkf-yXhCQlj6RxPp3yL2imHGNyemqi0E9Bd8EmEUcyclhJBwKsKzdEJDLTpFQfmR-Yfs0SbpumcNmzKbB-1KRzwG_MItRg9PvA8ugMt8pvozhyQEyaVTZopHBnsFYxg-LoOGXC-MqkpZfxUZLEnDiounsKN83Z9SHbIBgB_BZUgICe3bMVQCB6IkEriqVKPkNrEcD9G2bnmxaQhiIGs0PiaSsFAeiYRtYEgMAhZB4oOGoKSFXdmiTimTJZwY43xEJwnq3y5ADjuHBT2lqWmt7jOnHC7conBXslIvaRxILgQYrr1-P46MWXVtHBAQbfiLpq24rWTvhk89tgaQL8FVfyAyzPkeaiYkiAw2kZplnsQmhh4V2YtueppsPn47Sw0LG6SjTDK2hHBFXi0BMFP_lKiZto1Q9YdyHa04kznPREMkMOztGEEVCr0XGpWTQrTxBasvA8C5ake6UD9EImYdHhiWmFYKmLZVfF4FOzVN_aeVvLOaedOqYwaNHoQx8XtdBjvs3wZ7OSOzJhaLqkad7QuvHTPXtmZRq3cYTwV2DQEZvYZ2M6OyckJrKwMOat-gur-ljFj1tUgFsACVGf16Vh002-kuSi8bnw03vZFYv8o1qxQr_ptsQZpmOlAUcigrEJGhVD66gVlCawAMAELGpIOeg7lRzpNeCZ0ogw_zeWkVCPX9OkcZL60CNo-ldqjROq8bN_2ZdnGBezZ8CE8KBwu1o2MuvKhsbUgrGxJjx4-boqeNeey9aAqvDps0xmhlGwXO9AxXEi2hBRmon1mCyAWdLxjqpFJlkWg2fAd2Exsyo5FBK5-dRHRBOxMKR_OTrp6clGDHkWcouBmNA_5AYAQQyucwYBo1piIFkaB8qNgRjiI78rxxV5ZWLmEdcBoGKrGlQCOKoGh_ei0ONEbaq4o" group-title="Узбекистан",Itv Cinema
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_cfb1.m3u8
 #EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/mDh100316/fdbf92fdE0N_/K7YUGwDyFOIwknLyaBkm13gaJoGEdwIAcd8dDxiOLYc4OEFCi7Vbdskj9qQB2kyS1CRwf-EUjs2HP_iTCfNHCirS0G8Rh1HWkTcyclhJBwKsKzdEJDLTpFQfmR-Yfs0SbpumcNmzKbB-1KRzwG_MItRg9PvA8ugMt8pvozhyQEyaVTZopHBnsFYxg-LoOGXC-MqkpZfxUZLEnDiounsKN83Z9SHbIBgB_BZUgICe3bMVQCB6IkEriqVKPkNrEcD9G2bnmxaQhiIGs0PiaSsFAeiYRtYEgMAhZB4oOGoKSFXdmiTimTJZwY43xEJwnq3y5ADjuHBT2lqWmt7jOnHC7conBXslIvaRxILgQYrr1-P46MWXVtHBAQbfiLpq24rWTvhk89tgaQL8FVfyAyzPkeaiYkiAw2kZplnsQmhh4V2YtueppsPn47Sw0LG6SjTDK2hHBFXi0BMFP_lKiZto1Q9YdyHa04kznPREMkMOztGEEVCr0XGpWTQrTxBasvA8C5ake6UD9EImYdHhiWmFYKmLZVfF4FOzVN_aeVvLOaedOqYwaNHoQx8XtdBjvs3wZ7OSOzJhaLqkad7QuvHTPXtmZRq3cYTwV2DQEZvYZ2M6OyckJrKwMOat-gur-ljFj1tUgFsACVGf16Vh002-kuSi8bnw03vZFYv8o1qxQr_ptsQZpmOlAUcigrEJGhVD66gVlCawAMAELGpIOeg7lRzpNeCZ0ogw_zeWkVCPX9OkcZL60CNo-ldqjROq8bN_2ZdnGBezZ8CE8KBwu1o2MuvKhsbUgrGxJjx4-boqeNeey9aAqvDps0xmhlGwXO9AxXEi2hBRmon1mCyAWdLxjqpFJlkWg2fAd2Exsyo5FBK5-dRHRBOxMKR_OTrp6clGDHkWcouBmNA_5AYAQQyucwYBo1piIFkaB8qNgRjiI78rxxV5ZWLmEdcBoGKrGlQCOKoGh_ei0ONEbaq4o" group-title="СПОРТ",World Billiards TV
 http://stream.shbro.org/stream/14B37BB54802/1028c5651em3u8.m3u8
 #EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/mDh100316/fdbf92fdE0N_/K7YUGwDyFOIwknLyaBkm13gaJoGEdwIAcd8tegj7LXI4TdESrhWrBtnTk7QRqslC8VFlP_Fhfn2HL-22edYXOgrS0A9Rl1E2cTcyclhJBwKsKzdEJDLTpFQfmR-Yfs0SbpumcNmzKbB-1KRzwG_MItRg9PvA8ugMt8pvozhyQEyaVTZopHBnsFYxg-LoOGXC-MqkpZfxUZLEnDiounsKN83Z9SHbIBgB_BZUgICe3bMVQCB6IkEriqVKPkNrEcD9G2bnmxaQhiIGs0PiaSsFAeiYRtYEgMAhZB4oOGoKSFXdmiTimTJZwY43xEJwnq3y5ADjuHBT2lqWmt7jOnHC7conBXslIvaRxILgQYrr1-P46MWXVtHBAQbfiLpq24rWTvhk89tgaQL8FVfyAyzPkeaiYkiAw2kZplnsQmhh4V2YtueppsPn47Sw0LG6SjTDK2hHBFXi0BMFP_lKiZto1Q9YdyHa04kznPREMkMOztGEEVCr0XGpWTQrTxBasvA8C5ake6UD9EImYdHhiWmFYKmLZVfF4FOzVN_aeVvLOaedOqYwaNHoQx8XtdBjvs3wZ7OSOzJhaLqkad7QuvHTPXtmZRq3cYTwV2DQEZvYZ2M6OyckJrKwMOat-gur-ljFj1tUgFsACVGf16Vh002-kuSi8bnw03vZFYv8o1qxQr_ptsQZpmOlAUcigrEJGhVD66gVlCawAMAELGpIOeg7lRzpNeCZ0ogw_zeWkVCPX9OkcZL60CNo-ldqjROq8bN_2ZdnGBezZ8CE8KBwu1o2MuvKhsbUgrGxJjx4-boqeNeey9aAqvDps0xmhlGwXO9AxXEi2hBRmon1mCyAWdLxjqpFJlkWg2fAd2Exsyo5FBK5-dRHRBOxMKR_OTrp6clGDHkWcouBmNA_5AYAQQyucwYBo1piIFkaB8qNgRjiI78rxxV5ZWLmEdcBoGKrGlQCOKoGh_ei0ONEbaq4o" group-title="СПОРТ",Матч! Планета
 http://stream.shbro.org/stream/14B37BB54802/ta1indexm3u8.m3u8
 #EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/mDh100316/fdbf92fdE0N_/K7YUGwDyFOIwknLyaBkm13gaJoGEdwIAcd94T137SEd4KGRH26D7Fsl2xtSkylznwTEwevRELu3yD5hmHHNHPyrS0G8RJ4GWcQcyclhJBwKsKzdEJDLTpFQfmR-Yfs0SbpumcNmzKbB-1KRzwG_MItRg9PvA8ugMt8pvozhyQEyaVTZopHBnsFYxg-LoOGXC-MqkpZfxUZLEnDiounsKN83Z9SHbIBgB_BZUgICe3bMVQCB6IkEriqVKPkNrEcD9G2bnmxaQhiIGs0PiaSsFAeiYRtYEgMAhZB4oOGoKSFXdmiTimTJZwY43xEJwnq3y5ADjuHBT2lqWmt7jOnHC7conBXslIvaRxILgQYrr1-P46MWXVtHBAQbfiLpq24rWTvhk89tgaQL8FVfyAyzPkeaiYkiAw2kZplnsQmhh4V2YtueppsPn47Sw0LG6SjTDK2hHBFXi0BMFP_lKiZto1Q9YdyHa04kznPREMkMOztGEEVCr0XGpWTQrTxBasvA8C5ake6UD9EImYdHhiWmFYKmLZVfF4FOzVN_aeVvLOaedOqYwaNHoQx8XtdBjvs3wZ7OSOzJhaLqkad7QuvHTPXtmZRq3cYTwV2DQEZvYZ2M6OyckJrKwMOat-gur-ljFj1tUgFsACVGf16Vh002-kuSi8bnw03vZFYv8o1qxQr_ptsQZpmOlAUcigrEJGhVD66gVlCawAMAELGpIOeg7lRzpNeCZ0ogw_zeWkVCPX9OkcZL60CNo-ldqjROq8bN_2ZdnGBezZ8CE8KBwu1o2MuvKhsbUgrGxJjx4-boqeNeey9aAqvDps0xmhlGwXO9AxXEi2hBRmon1mCyAWdLxjqpFJlkWg2fAd2Exsyo5FBK5-dRHRBOxMKR_OTrp6clGDHkWcouBmNA_5AYAQQyucwYBo1piIFkaB8qNgRjiI78rxxV5ZWLmEdcBoGKrGlQCOKoGh_ei0ONEbaq4o" group-title="СПОРТ",Setanta Sports 1 HD
 http://stream.shbro.org/stream/14B37BB54802/8565videom3u8.m3u8
-#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/mDh100316/fdbf92fdE0N_/K7YUGwDyFOIwknLyaBkm13gaJoGEdwIAcd94T137SEd4KGRH26D7Fsl2xtSkylznwTEwevRELu3yD5hmHHNHPyrS0G8RJ4GWcQcyclhJBwKsKzdEJDLTpFTqnQ8baOoVT0umkekCqdG91sYBYa5YI8WSg-6RgZm4pov_sIlAYU2qlKYpZlClo2QS8HPoaaQze-nUx4RxgiKm71oquCq5RE3YlyBrwFki_SfXkKCOjKInIUBogwHIWPXofwEIc7C-GHRHuzbSZaPlAZCw-DtGQOiYRXQk85Kydp4YSKhpaIcPytbgGeHJ4A0np9FRzk9gdTOxuLDRKPikiH0R2TJSXivGNwj048YABsFCUuhLxQG6yURURjIyMHZP2ss7CyiWTZjmI2vDWlB-lcWyU2zOkIWjAvuAEhpZ9pheoYujsIyoJyZ6hNH28DZgoXI7y0eSufpVRkXSQ8CVDzjIeqs7REwrBhILIkmQPrfE8jHf_HPUEcK7EmC5C8RLT8AYg_Neq-c12xYA96AFQxDRuShlwSn41uYUMmDzR19puujJ6lX-KWdiiMG4ch4Hx9PSfT7jNwEDWIIiKMskCGzBaHMyP7mVRWlnAfZQF_Ly0iqYJ7LKqjVlpkBAgbduCNj6qBjlzfiGcAgBqMOu9LSxUWxdYfWzEDszwAq4xEj9Q_qjkzyoh2SYd0Ok8IUwgPL7CxUCyqiFlUTB0MIlfGuIaRp5hQ8qBxFo4ZszLTZV8BG_PiLVQwMYcSF7CDQIDIPKgjA9GVemWbSRhjE3cKOD-2mGUDiaNORm0cJzpr4oyus4muU8CGaS27CL883l5WNwv44CFTHxa9PT2pvHK05yuVBxfBhnpllHABfyphOBo6la1NGoCzRl5JKDsPV9mVt5iloXHXkX8agyC6I8taRQs88PgmdAMvghgXuahhucQzjSQlxrhieI52CGIycwwbMoCQYRG7pVtgSAEDK1jskJc" group-title="Узбекистан",Setanta Sports 1
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_d1ad.m3u8
 #EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/mDh100316/fdbf92fdE0N_/K7YUGwDyFOIwknLyaBkm13gaJoGEdwIAcd94WgiOXWJdXXHi66X7Uzljg8Rhz7miwVTlbwEUG5jyn222vNZHCm9y0G-xZ0HmEQcyclhJBwKsKzdEJDLTpFQfmR-Yfs0SbpumcNmzKbB-1KRzwG_MItRg9PvA8ugMt8pvozhyQEyaVTZopHBnsFYxg-LoOGXC-MqkpZfxUZLEnDiounsKN83Z9SHbIBgB_BZUgICe3bMVQCB6IkEriqVKPkNrEcD9G2bnmxaQhiIGs0PiaSsFAeiYRtYEgMAhZB4oOGoKSFXdmiTimTJZwY43xEJwnq3y5ADjuHBT2lqWmt7jOnHC7conBXslIvaRxILgQYrr1-P46MWXVtHBAQbfiLpq24rWTvhk89tgaQL8FVfyAyzPkeaiYkiAw2kZplnsQmhh4V2YtueppsPn47Sw0LG6SjTDK2hHBFXi0BMFP_lKiZto1Q9YdyHa04kznPREMkMOztGEEVCr0XGpWTQrTxBasvA8C5ake6UD9EImYdHhiWmFYKmLZVfF4FOzVN_aeVvLOaedOqYwaNHoQx8XtdBjvs3wZ7OSOzJhaLqkad7QuvHTPXtmZRq3cYTwV2DQEZvYZ2M6OyckJrKwMOat-gur-ljFj1tUgFsACVGf16Vh002-kuSi8bnw03vZFYv8o1qxQr_ptsQZpmOlAUcigrEJGhVD66gVlCawAMAELGpIOeg7lRzpNeCZ0ogw_zeWkVCPX9OkcZL60CNo-ldqjROq8bN_2ZdnGBezZ8CE8KBwu1o2MuvKhsbUgrGxJjx4-boqeNeey9aAqvDps0xmhlGwXO9AxXEi2hBRmon1mCyAWdLxjqpFJlkWg2fAd2Exsyo5FBK5-dRHRBOxMKR_OTrp6clGDHkWcouBmNA_5AYAQQyucwYBo1piIFkaB8qNgRjiI78rxxV5ZWLmEdcBoGKrGlQCOKoGh_ei0ONEbaq4o" group-title="Кино Канал",AMEDIA 1 HD
 http://stream.shbro.org/stream/14B37BB54802/8204videom3u8.m3u8
-#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/mDh100316/fdbf92fdE0N_/K7YUGwDyFOIwknLyaBkm13gaJoGEdwIAcd99GniLDQINfWFny4WLZhlDQ7F0iolChFQQCoQEm623f-2zfIYXej-S0H9hZ9GGERcyclhJBwKsKzdEJDLTpFQfmR-Yfs0SbpumcNmzKbB-1KRzwG_MItRg9PvA8ugMt8pvozhyQEyaVTZopHBnsFYxg-LoOGXC-MqkpZfxUZLEnDiounsKN83Z9SHbIBgB_BZUgICe3bMVQCB6IkEriqVKPkNrEcD9G2bnmxaQhiIGs0PiaSsFAeiYRtYEgMAhZB4oOGoKSFXdmiTimTJZwY43xEJwnq3y5ADjuHBT2lqWmt7jOnHC7conBXslIvaRxILgQYrr1-P46MWXVtHBAQbfiLpq24rWTvhk89tgaQL8FVfyAyzPkeaiYkiAw2kZplnsQmhh4V2YtueppsPn47Sw0LG6SjTDK2hHBFXi0BMFP_lKiZto1Q9YdyHa04kznPREMkMOztGEEVCr0XGpWTQrTxBasvA8C5ake6UD9EImYdHhiWmFYKmLZVfF4FOzVN_aeVvLOaedOqYwaNHoQx8XtdBjvs3wZ7OSOzJhaLqkad7QuvHTPXtmZRq3cYTwV2DQEZvYZ2M6OyckJrKwMOat-gur-ljFj1tUgFsACVGf16Vh002-kuSi8bnw03vZFYv8o1qxQr_ptsQZpmOlAUcigrEJGhVD66gVlCawAMAELGpIOeg7lRzpNeCZ0ogw_zeWkVCPX9OkcZL60CNo-ldqjROq8bN_2ZdnGBezZ8CE8KBwu1o2MuvKhsbUgrGxJjx4-boqeNeey9aAqvDps0xmhlGwXO9AxXEi2hBRmon1mCyAWdLxjqpFJlkWg2fAd2Exsyo5FBK5-dRHRBOxMKR_OTrp6clGDHkWcouBmNA_5AYAQQyucwYBo1piIFkaB8qNgRjiI78rxxV5ZWLmEdcBoGKrGlQCOKoGh_ei0ONEbaq4o" group-title="Киргизия",MTV Liveᴴᴰ
-http://stream.shbro.org/stream/14B37BB54802/19780820m3u8.m3u8
-#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/mDh100316/fdbf92fdE0N_/K7YUGwDyFOIwknLyaBkm13gaJoGEdwIAcd99LyiuPUJtDXRHXhC-Zkxzs6FEetz30VR1jwREi7jyH32GDGYSCk-C0H8xh1HmkScyclhJBwKsKzdEJDLTpFQfmR-Yfs0SbpumcNmzKbB-1KRzwG_MItRg9PvA8ugMt8pvozhyQEyaVTZopHBnsFYxg-LoOGXC-MqkpZfxUZLEnDiounsKN83Z9SHbIBgB_BZUgICe3bMVQCB6IkEriqVKPkNrEcD9G2bnmxaQhiIGs0PiaSsFAeiYRtYEgMAhZB4oOGoKSFXdmiTimTJZwY43xEJwnq3y5ADjuHBT2lqWmt7jOnHC7conBXslIvaRxILgQYrr1-P46MWXVtHBAQbfiLpq24rWTvhk89tgaQL8FVfyAyzPkeaiYkiAw2kZplnsQmhh4V2YtueppsPn47Sw0LG6SjTDK2hHBFXi0BMFP_lKiZto1Q9YdyHa04kznPREMkMOztGEEVCr0XGpWTQrTxBasvA8C5ake6UD9EImYdHhiWmFYKmLZVfF4FOzVN_aeVvLOaedOqYwaNHoQx8XtdBjvs3wZ7OSOzJhaLqkad7QuvHTPXtmZRq3cYTwV2DQEZvYZ2M6OyckJrKwMOat-gur-ljFj1tUgFsACVGf16Vh002-kuSi8bnw03vZFYv8o1qxQr_ptsQZpmOlAUcigrEJGhVD66gVlCawAMAELGpIOeg7lRzpNeCZ0ogw_zeWkVCPX9OkcZL60CNo-ldqjROq8bN_2ZdnGBezZ8CE8KBwu1o2MuvKhsbUgrGxJjx4-boqeNeey9aAqvDps0xmhlGwXO9AxXEi2hBRmon1mCyAWdLxjqpFJlkWg2fAd2Exsyo5FBK5-dRHRBOxMKR_OTrp6clGDHkWcouBmNA_5AYAQQyucwYBo1piIFkaB8qNgRjiI78rxxV5ZWLmEdcBoGKrGlQCOKoGh_ei0ONEbaq4o" group-title="Узбекистан",JTV
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_3ae3.m3u8
 #EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/mDh100316/fdbf92fdE0N_/K7YUGwDyFOIwknLyaBkm13gaJoGEdwIAcd99P63ObXdtDQFXi7Cew2wTs2EUb8mHoWQ1HxREjq2XL-jjGaNnj1-C0C8BF0GGkVb2MhiJZyPJzqaF9bIisQBvWMstK_3SSFunkNmC-LGvZESTsx5M0nRxIZ5wALgLQxo9YWnyww1pVqYJZoKmABchoIOIORZBCZpHFhQB4TM2_9tqmgn4FW345cOIgGuAHuaGY0BevcPlsAFK8eILyMUIvTCJoaCN2NeV2JUwRuGFcSJDiLgFIcqKFfRnkpCihV9ZegrZiVcP6KYSS8J5wd6Up_OCrr2zpEFBiTOwGTkVO23QKfDAj8gG1Dp1A_SRNrMT4CtbxfMommV3JsDBo6U9mNqI2ViVjHvEUlqAK_Ed5oVgMt0P0cdD4wjDQImKVguu4oii0Kx4VEXYp4AVgETDIdDba2QQCEnl9bXD8rK3PnireDoYd486ZEGIgZgRLIZkc_KdLdCHIVA6IBE7ShaZ3EHakAO9Gcdlm3WD1ZPlUfDRi1hHoavLBtfmU_AxF2-YiEvoSCb9qAaQmTOacFwFh4IQvZ3TpsLy-LDyK4v1CZ7QGnBAnhi3lVoUkafjVyDx0HtK9kOoWLaVlbCi0pTd6qg5GHlHn7pnYikAS5FOhUeSoQ1uoMRB45syMJmYlrh88mmQAA-aJUX7F4C1wqYws4Lb2DQxiIklpyWwoGJkP2s4eoprJM8p1QNJwpkQL-WnoVGOrEGFATD4cRBpi7X6nYPZYED-WhVkWBYxZQBn82GgGmp0EvmJRzR3QpLTFR17KssJqWeNq_fgKfG7caxW9rGRbn_xFmAwSFHQG3nGWG8iSpNjvKtmthlXMFUAZwDwMdn7FzDZ23Rm9tID05SfOGsIWmrWHDlFINvQygDPJXQxwJ8vsCWjQMnRomq6Vao9g0vSU26a5zQqd0O0gbagkKAIejRwyVontDZhsrJHfyr4g" group-title="Казахстан",KTK
 http://stream.shbro.org/stream/14B37BB54802/t26indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/mDh100316/fdbf92fdE0N_/K7YUGwDyFOIwknLyaBkm13gaJoGEdwIAcd99X3iOeELYfQFn-_VbBmwDw2FEetynwTRVP9EBC53yCtiWfGZXCl9i0C8RR4G2kea2MhiJZyPJzqaF9bIisQBvWMstK_3SSFunkNmC-LGvZESTsx5M0nRxIZ5wALgLQxo9YWnyww1pVqYJZoKmABchoIOIORZBCZpHFhQB4TM2_9tqmgn4FW345cOIgGuAHuaGY0BevcPlsAFK8eILyMUIvTCJoaCN2NeV2JUwRuGFcSJDiLgFIcqKFfRnkpCihV9ZegrZiVcP6KYSS8J5wd6Up_OCrr2zpEFBiTOwGTkVO23QKfDAj8gG1Dp1A_SRNrMT4CtbxfMommV3JsDBo6U9mNqI2ViVjHvEUlqAK_Ed5oVgMt0P0cdD4wjDQImKVguu4oii0Kx4VEXYp4AVgETDIdDba2QQCEnl9bXD8rK3PnireDoYd486ZEGIgZgRLIZkc_KdLdCHIVA6IBE7ShaZ3EHakAO9Gcdlm3WD1ZPlUfDRi1hHoavLBtfmU_AxF2-YiEvoSCb9qAaQmTOacFwFh4IQvZ3TpsLy-LDyK4v1CZ7QGnBAnhi3lVoUkafjVyDx0HtK9kOoWLaVlbCi0pTd6qg5GHlHn7pnYikAS5FOhUeSoQ1uoMRB45syMJmYlrh88mmQAA-aJUX7F4C1wqYws4Lb2DQxiIklpyWwoGJkP2s4eoprJM8p1QNJwpkQL-WnoVGOrEGFATD4cRBpi7X6nYPZYED-WhVkWBYxZQBn82GgGmp0EvmJRzR3QpLTFR17KssJqWeNq_fgKfG7caxW9rGRbn_xFmAwSFHQG3nGWG8iSpNjvKtmthlXMFUAZwDwMdn7FzDZ23Rm9tID05SfOGsIWmrWHDlFINvQygDPJXQxwJ8vsCWjQMnRomq6Vao9g0vSU26a5zQqd0O0gbagkKAIejRwyVontDZhsrJHfyr4g" group-title="Узбекистан",TTV Kino
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_b767.m3u8
 #EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/mDh100316/fdbf92fdE0N_/K7YUGwDyFOIwknLyaBkm13gaJoGEdwIAcd9dOj2uGDcdLSEni6WLdnkDw4FxmtlXgXFVmsR0jsiHSoiGfOZSOgrS0C8xB6HGcWb2MhiJZyPJzqaF9bIisQBvWMstK_3SSFunkNmC-LGvZESTsx5M0nRxIZ5wALgLQxo9YWnyww1pVqYJZoKmABchoIOIORZBCZpHFhQB4TM2_9tqmgn4FW345cOIgGuAHuaGY0BevcPlsAFK8eILyMUIvTCJoaCN2NeV2JUwRuGFcSJDiLgFIcqKFfRnkpCihV9ZegrZiVcP6KYSS8J5wd6Up_OCrr2zpEFBiTOwGTkVO23QKfDAj8gG1Dp1A_SRNrMT4CtbxfMommV3JsDBo6U9mNqI2ViVjHvEUlqAK_Ed5oVgMt0P0cdD4wjDQImKVguu4oii0Kx4VEXYp4AVgETDIdDba2QQCEnl9bXD8rK3PnireDoYd486ZEGIgZgRLIZkc_KdLdCHIVA6IBE7ShaZ3EHakAO9Gcdlm3WD1ZPlUfDRi1hHoavLBtfmU_AxF2-YiEvoSCb9qAaQmTOacFwFh4IQvZ3TpsLy-LDyK4v1CZ7QGnBAnhi3lVoUkafjVyDx0HtK9kOoWLaVlbCi0pTd6qg5GHlHn7pnYikAS5FOhUeSoQ1uoMRB45syMJmYlrh88mmQAA-aJUX7F4C1wqYws4Lb2DQxiIklpyWwoGJkP2s4eoprJM8p1QNJwpkQL-WnoVGOrEGFATD4cRBpi7X6nYPZYED-WhVkWBYxZQBn82GgGmp0EvmJRzR3QpLTFR17KssJqWeNq_fgKfG7caxW9rGRbn_xFmAwSFHQG3nGWG8iSpNjvKtmthlXMFUAZwDwMdn7FzDZ23Rm9tID05SfOGsIWmrWHDlFINvQygDPJXQxwJ8vsCWjQMnRomq6Vao9g0vSU26a5zQqd0O0gbagkKAIejRwyVontDZhsrJHfyr4g" group-title="СПОРТ",Волейбол HD
 http://stream.shbro.org/stream/14B37BB54802/9192videom3u8.m3u8
-#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/mDh100316/fdbf92fdE0N_/K7YUGwDyFOIwknLyaBkm13gaJoGEdwIAcd9dbz27KEcNfRHnnsDO1klzg8Rxn4yi9FQVP8E0HujnP6iTPOMCL1rC0G9BF7GWIXcyclhJBwKsKzdEJDLTpFTqnQ8baOoVT0umkekCqdG91sYBYa5YI8WSg-6RgZm4pov_sIlAYU2qlKYpZlClo2QS8HPoaaQze-nUx4RxgiKm71oquCq5RE3YlyBrwFki_SfXkKCOjKInIUBogwHIWPXofwEIc7C-GHRHuzbSZaPlAZCw-DtGQOiYRXQk85Kydp4YSKhpaIcPytbgGeHJ4A0np9FRzk9gdTOxuLDRKPikiH0R2TJSXivGNwj048YABsFCUuhLxQG6yURURjIyMHZP2ss7CyiWTZjmI2vDWlB-lcWyU2zOkIWjAvuAEhpZ9pheoYujsIyoJyZ6hNH28DZgoXI7y0eSufpVRkXSQ8CVDzjIeqs7REwrBhILIkmQPrfE8jHf_HPUEcK7EmC5C8RLT8AYg_Neq-c12xYA96AFQxDRuShlwSn41uYUMmDzR19puujJ6lX-KWdiiMG4ch4Hx9PSfT7jNwEDWIIiKMskCGzBaHMyP7mVRWlnAfZQF_Ly0iqYJ7LKqjVlpkBAgbduCNj6qBjlzfiGcAgBqMOu9LSxUWxdYfWzEDszwAq4xEj9Q_qjkzyoh2SYd0Ok8IUwgPL7CxUCyqiFlUTB0MIlfGuIaRp5hQ8qBxFo4ZszLTZV8BG_PiLVQwMYcSF7CDQIDIPKgjA9GVemWbSRhjE3cKOD-2mGUDiaNORm0cJzpr4oyus4muU8CGaS27CL883l5WNwv44CFTHxa9PT2pvHK05yuVBxfBhnpllHABfyphOBo6la1NGoCzRl5JKDsPV9mVt5iloXHXkX8agyC6I8taRQs88PgmdAMvghgXuahhucQzjSQlxrhieI52CGIycwwbMoCQYRG7pVtgSAEDK1jskJc" group-title="Узбекистан",Setanta Sports 2
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_4bd4.m3u8
 #EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/mDh100316/fdbf92fdE0N_/K7YUGwDyFOIwknLyaBkm13gaJoGEdwIAcdo4L12LDUI4PQEX_tW7ZlkzprRByulCoSRVWqTEK-iSKti2HHNHmiqi0C8xB8GmYUaGMhiJZyPJzqaF9bIisQBvWMstK_3SSFunkNmC-LGvZESTsx5M0nRxIZ5wALgLQxo9YWnyww1pVqYJZoKmABchoIOIORZBCZpHFhQB4TM2_9tqmgn4FW345cOIgGuAHuaGY0BevcPlsAFK8eILyMUIvTCJoaCN2NeV2JUwRuGFcSJDiLgFIcqKFfRnkpCihV9ZegrZiVcP6KYSS8J5wd6Up_OCrr2zpEFBiTOwGTkVO23QKfDAj8gG1Dp1A_SRNrMT4CtbxfMommV3JsDBo6U9mNqI2ViVjHvEUlqAK_Ed5oVgMt0P0cdD4wjDQImKVguu4oii0Kx4VEXYp4AVgETDIdDba2QQCEnl9bXD8rK3PnireDoYd486ZEGIgZgRLIZkc_KdLdCHIVA6IBE7ShaZ3EHakAO9Gcdlm3WD1ZPlUfDRi1hHoavLBtfmU_AxF2-YiEvoSCb9qAaQmTOacFwFh4IQvZ3TpsLy-LDyK4v1CZ7QGnBAnhi3lVoUkafjVyDx0HtK9kOoWLaVlbCi0pTd6qg5GHlHn7pnYikAS5FOhUeSoQ1uoMRB45syMJmYlrh88mmQAA-aJUX7F4C1wqYws4Lb2DQxiIklpyWwoGJkP2s4eoprJM8p1QNJwpkQL-WnoVGOrEGFATD4cRBpi7X6nYPZYED-WhVkWBYxZQBn82GgGmp0EvmJRzR3QpLTFR17KssJqWeNq_fgKfG7caxW9rGRbn_xFmAwSFHQG3nGWG8iSpNjvKtmthlXMFUAZwDwMdn7FzDZ23Rm9tID05SfOGsIWmrWHDlFINvQygDPJXQxwJ8vsCWjQMnRomq6Vao9g0vSU26a5zQqd0O0gbagkKAIejRwyVontDZhsrJHfyr4g" group-title="СПОРТ",BOX SportCast HD
 http://stream.shbro.org/stream/14B37BB54802/8436videom3u8.m3u8
 #EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/mDh100316/fdbf92fdE0N_/K7YUGwDyFOIwknLyaBkm13gaJoGEdwIAcdo4Sh2uKFd4LRFHq9CbBsljw_Qxv4zi9HEQD8QkK82Cn9h2vOYyLwqS0C8RZ5GGgRZ2MhiJZyPJzqaF9bIisQBvWMstK_3SSFunkNmC-LGvZESTsx5M0nRxIZ5wALgLQxo9YWnyww1pVqYJZoKmABchoIOIORZBCZpHFhQB4TM2_9tqmgn4FW345cOIgGuAHuaGY0BevcPlsAFK8eILyMUIvTCJoaCN2NeV2JUwRuGFcSJDiLgFIcqKFfRnkpCihV9ZegrZiVcP6KYSS8J5wd6Up_OCrr2zpEFBiTOwGTkVO23QKfDAj8gG1Dp1A_SRNrMT4CtbxfMommV3JsDBo6U9mNqI2ViVjHvEUlqAK_Ed5oVgMt0P0cdD4wjDQImKVguu4oii0Kx4VEXYp4AVgETDIdDba2QQCEnl9bXD8rK3PnireDoYd486ZEGIgZgRLIZkc_KdLdCHIVA6IBE7ShaZ3EHakAO9Gcdlm3WD1ZPlUfDRi1hHoavLBtfmU_AxF2-YiEvoSCb9qAaQmTOacFwFh4IQvZ3TpsLy-LDyK4v1CZ7QGnBAnhi3lVoUkafjVyDx0HtK9kOoWLaVlbCi0pTd6qg5GHlHn7pnYikAS5FOhUeSoQ1uoMRB45syMJmYlrh88mmQAA-aJUX7F4C1wqYws4Lb2DQxiIklpyWwoGJkP2s4eoprJM8p1QNJwpkQL-WnoVGOrEGFATD4cRBpi7X6nYPZYED-WhVkWBYxZQBn82GgGmp0EvmJRzR3QpLTFR17KssJqWeNq_fgKfG7caxW9rGRbn_xFmAwSFHQG3nGWG8iSpNjvKtmthlXMFUAZwDwMdn7FzDZ23Rm9tID05SfOGsIWmrWHDlFINvQygDPJXQxwJ8vsCWjQMnRomq6Vao9g0vSU26a5zQqd0O0gbagkKAIejRwyVontDZhsrJHfyr4g" group-title="Кино Канал",НТВ Сериал
 http://stream.shbro.org/stream/14B37BB54802/8308videom3u8.m3u8
-#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/mDh100316/fdbf92fdE0N_/K7YUGwDyFOIwknLyaBkm13gaJoGEdwIAcdo9Xx3uGBLdKERyrpX-xswWxtFkmlmC0RQVP8FkHnjSn4imvGNCSl_y0G8RR_GmYVcyclhJBwKsKzdEJDLTpFQfmR-Yfs0SbpumcNmzKbB-1KRzwG_MItRg9PvA8ugMt8pvozhyQEyaVTZopHBnsFYxg-LoOGXC-MqkpZfxUZLEnDiounsKN83Z9SHbIBgB_BZUgICe3bMVQCB6IkEriqVKPkNrEcD9G2bnmxaQhiIGs0PiaSsFAeiYRtYEgMAhZB4oOGoKSFXdmiTimTJZwY43xEJwnq3y5ADjuHBT2lqWmt7jOnHC7conBXslIvaRxILgQYrr1-P46MWXVtHBAQbfiLpq24rWTvhk89tgaQL8FVfyAyzPkeaiYkiAw2kZplnsQmhh4V2YtueppsPn47Sw0LG6SjTDK2hHBFXi0BMFP_lKiZto1Q9YdyHa04kznPREMkMOztGEEVCr0XGpWTQrTxBasvA8C5ake6UD9EImYdHhiWmFYKmLZVfF4FOzVN_aeVvLOaedOqYwaNHoQx8XtdBjvs3wZ7OSOzJhaLqkad7QuvHTPXtmZRq3cYTwV2DQEZvYZ2M6OyckJrKwMOat-gur-ljFj1tUgFsACVGf16Vh002-kuSi8bnw03vZFYv8o1qxQr_ptsQZpmOlAUcigrEJGhVD66gVlCawAMAELGpIOeg7lRzpNeCZ0ogw_zeWkVCPX9OkcZL60CNo-ldqjROq8bN_2ZdnGBezZ8CE8KBwu1o2MuvKhsbUgrGxJjx4-boqeNeey9aAqvDps0xmhlGwXO9AxXEi2hBRmon1mCyAWdLxjqpFJlkWg2fAd2Exsyo5FBK5-dRHRBOxMKR_OTrp6clGDHkWcouBmNA_5AYAQQyucwYBo1piIFkaB8qNgRjiI78rxxV5ZWLmEdcBoGKrGlQCOKoGh_ei0ONEbaq4o" group-title="Киргизия",8 каналᴴᴰ
-http://stream.shbro.org/stream/14B37BB54802/19780800m3u8.m3u8
 #EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/mDh100316/fdbf92fdE0N_/K7YUGwDyFOIwknLyaBkm13gaJoGEdwIAcdo9b32-CEcYSGECnoDLdtxz47S0r8mi0VQAX9FhK523KojGqcNiWi-S0G8BF6EmIQcyclhJBwKsKzdEJDLTpFQfmR-Yfs0SbpumcNmzKbB-1KRzwG_MItRg9PvA8ugMt8pvozhyQEyaVTZopHBnsFYxg-LoOGXC-MqkpZfxUZLEnDiounsKN83Z9SHbIBgB_BZUgICe3bMVQCB6IkEriqVKPkNrEcD9G2bnmxaQhiIGs0PiaSsFAeiYRtYEgMAhZB4oOGoKSFXdmiTimTJZwY43xEJwnq3y5ADjuHBT2lqWmt7jOnHC7conBXslIvaRxILgQYrr1-P46MWXVtHBAQbfiLpq24rWTvhk89tgaQL8FVfyAyzPkeaiYkiAw2kZplnsQmhh4V2YtueppsPn47Sw0LG6SjTDK2hHBFXi0BMFP_lKiZto1Q9YdyHa04kznPREMkMOztGEEVCr0XGpWTQrTxBasvA8C5ake6UD9EImYdHhiWmFYKmLZVfF4FOzVN_aeVvLOaedOqYwaNHoQx8XtdBjvs3wZ7OSOzJhaLqkad7QuvHTPXtmZRq3cYTwV2DQEZvYZ2M6OyckJrKwMOat-gur-ljFj1tUgFsACVGf16Vh002-kuSi8bnw03vZFYv8o1qxQr_ptsQZpmOlAUcigrEJGhVD66gVlCawAMAELGpIOeg7lRzpNeCZ0ogw_zeWkVCPX9OkcZL60CNo-ldqjROq8bN_2ZdnGBezZ8CE8KBwu1o2MuvKhsbUgrGxJjx4-boqeNeey9aAqvDps0xmhlGwXO9AxXEi2hBRmon1mCyAWdLxjqpFJlkWg2fAd2Exsyo5FBK5-dRHRBOxMKR_OTrp6clGDHkWcouBmNA_5AYAQQyucwYBo1piIFkaB8qNgRjiI78rxxV5ZWLmEdcBoGKrGlQCOKoGh_ei0ONEbaq4o" group-title="СПОРТ",1TV Sport
 http://stream.shbro.org/stream/14B37BB54802/a1monotsm3u8_6e7a.m3u8
-#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/mDh100316/fdbf92fdE0N_/K7YUGwDyFOIwknLyaBkm13gaJoGEdwIAcdotPx3rfZJobTEy_oW7UwkzxoERqlmH5HE1WqRhTv2Cisj2HPbCPxrS0G9xV0G2UecyclhJBwKsKzdEJDLTpFQfmR-Yfs0SbpumcNmzKbB-1KRzwG_MItRg9PvA8ugMt8pvozhyQEyaVTZopHBnsFYxg-LoOGXC-MqkpZfxUZLEnDiounsKN83Z9SHbIBgB_BZUgICe3bMVQCB6IkEriqVKPkNrEcD9G2bnmxaQhiIGs0PiaSsFAeiYRtYEgMAhZB4oOGoKSFXdmiTimTJZwY43xEJwnq3y5ADjuHBT2lqWmt7jOnHC7conBXslIvaRxILgQYrr1-P46MWXVtHBAQbfiLpq24rWTvhk89tgaQL8FVfyAyzPkeaiYkiAw2kZplnsQmhh4V2YtueppsPn47Sw0LG6SjTDK2hHBFXi0BMFP_lKiZto1Q9YdyHa04kznPREMkMOztGEEVCr0XGpWTQrTxBasvA8C5ake6UD9EImYdHhiWmFYKmLZVfF4FOzVN_aeVvLOaedOqYwaNHoQx8XtdBjvs3wZ7OSOzJhaLqkad7QuvHTPXtmZRq3cYTwV2DQEZvYZ2M6OyckJrKwMOat-gur-ljFj1tUgFsACVGf16Vh002-kuSi8bnw03vZFYv8o1qxQr_ptsQZpmOlAUcigrEJGhVD66gVlCawAMAELGpIOeg7lRzpNeCZ0ogw_zeWkVCPX9OkcZL60CNo-ldqjROq8bN_2ZdnGBezZ8CE8KBwu1o2MuvKhsbUgrGxJjx4-boqeNeey9aAqvDps0xmhlGwXO9AxXEi2hBRmon1mCyAWdLxjqpFJlkWg2fAd2Exsyo5FBK5-dRHRBOxMKR_OTrp6clGDHkWcouBmNA_5AYAQQyucwYBo1piIFkaB8qNgRjiI78rxxV5ZWLmEdcBoGKrGlQCOKoGh_ei0ONEbaq4o" group-title="Узбекистан",Кино UZ
-http://stream.shbro.org/stream/14B37BB54802/hlsstreamm3u8_1714.m3u8
 #EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/mDh100316/fdbf92fdE0N_/K7YUGwDyFOIwknLyaBkm13gaJoGEdwIAcdotPz0ePZJoXSQnzqWeVskzg7QE37lHETFQSrEUjoiimtiWrLZ3Gh_S0G8RJ5GmgUcyclhJBwKsKzdEJDLTpFQfmR-Yfs0SbpumcNmzKbB-1KRzwG_MItRg9PvA8ugMt8pvozhyQEyaVTZopHBnsFYxg-LoOGXC-MqkpZfxUZLEnDiounsKN83Z9SHbIBgB_BZUgICe3bMVQCB6IkEriqVKPkNrEcD9G2bnmxaQhiIGs0PiaSsFAeiYRtYEgMAhZB4oOGoKSFXdmiTimTJZwY43xEJwnq3y5ADjuHBT2lqWmt7jOnHC7conBXslIvaRxILgQYrr1-P46MWXVtHBAQbfiLpq24rWTvhk89tgaQL8FVfyAyzPkeaiYkiAw2kZplnsQmhh4V2YtueppsPn47Sw0LG6SjTDK2hHBFXi0BMFP_lKiZto1Q9YdyHa04kznPREMkMOztGEEVCr0XGpWTQrTxBasvA8C5ake6UD9EImYdHhiWmFYKmLZVfF4FOzVN_aeVvLOaedOqYwaNHoQx8XtdBjvs3wZ7OSOzJhaLqkad7QuvHTPXtmZRq3cYTwV2DQEZvYZ2M6OyckJrKwMOat-gur-ljFj1tUgFsACVGf16Vh002-kuSi8bnw03vZFYv8o1qxQr_ptsQZpmOlAUcigrEJGhVD66gVlCawAMAELGpIOeg7lRzpNeCZ0ogw_zeWkVCPX9OkcZL60CNo-ldqjROq8bN_2ZdnGBezZ8CE8KBwu1o2MuvKhsbUgrGxJjx4-boqeNeey9aAqvDps0xmhlGwXO9AxXEi2hBRmon1mCyAWdLxjqpFJlkWg2fAd2Exsyo5FBK5-dRHRBOxMKR_OTrp6clGDHkWcouBmNA_5AYAQQyucwYBo1piIFkaB8qNgRjiI78rxxV5ZWLmEdcBoGKrGlQCOKoGh_ei0ONEbaq4o" group-title="СПОРТ",BOX SportCast Live 3 HD
 http://stream.shbro.org/stream/14B37BB54802/8451videom3u8.m3u8
 #EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/mDh100316/fdbf92fdE0N_/K7YUGwDyFOIwknLyaBkm13gaJoGEdwIAcdotT12eCDdofVEy_gWO1kxWtoEB2lyXlCRATxQEC63yP52zCaYnnw_S0C9RJ1GmcfaWMhiJZyPJzqaF9bIisQBvWMstK_3SSFunkNmC-LGvZESTsx5M0nRxIZ5wALgLQxo9YWnyww1pVqYJZoKmABchoIOIORZBCZpHFhQB4TM2_9tqmgn4FW345cOIgGuAHuaGY0BevcPlsAFK8eILyMUIvTCJoaCN2NeV2JUwRuGFcSJDiLgFIcqKFfRnkpCihV9ZegrZiVcP6KYSS8J5wd6Up_OCrr2zpEFBiTOwGTkVO23QKfDAj8gG1Dp1A_SRNrMT4CtbxfMommV3JsDBo6U9mNqI2ViVjHvEUlqAK_Ed5oVgMt0P0cdD4wjDQImKVguu4oii0Kx4VEXYp4AVgETDIdDba2QQCEnl9bXD8rK3PnireDoYd486ZEGIgZgRLIZkc_KdLdCHIVA6IBE7ShaZ3EHakAO9Gcdlm3WD1ZPlUfDRi1hHoavLBtfmU_AxF2-YiEvoSCb9qAaQmTOacFwFh4IQvZ3TpsLy-LDyK4v1CZ7QGnBAnhi3lVoUkafjVyDx0HtK9kOoWLaVlbCi0pTd6qg5GHlHn7pnYikAS5FOhUeSoQ1uoMRB45syMJmYlrh88mmQAA-aJUX7F4C1wqYws4Lb2DQxiIklpyWwoGJkP2s4eoprJM8p1QNJwpkQL-WnoVGOrEGFATD4cRBpi7X6nYPZYED-WhVkWBYxZQBn82GgGmp0EvmJRzR3QpLTFR17KssJqWeNq_fgKfG7caxW9rGRbn_xFmAwSFHQG3nGWG8iSpNjvKtmthlXMFUAZwDwMdn7FzDZ23Rm9tID05SfOGsIWmrWHDlFINvQygDPJXQxwJ8vsCWjQMnRomq6Vao9g0vSU26a5zQqd0O0gbagkKAIejRwyVontDZhsrJHfyr4g" group-title="Казахстан",Manas TV
@@ -11768,8 +11165,6 @@ http://stream.shbro.org/stream/14B37BB54802/vplaylistm3u8_32f1.m3u8
 http://stream.shbro.org/stream/14B37BB54802/8019videom3u8.m3u8
 #EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/mDh100316/fdbf92fdE0N_/K7YUGwDyFOIwknLyaBkm13gaJoGEdwIAcdpdn63unWINLWEX7oVedkxT4-EEmkmHATFlb9TRTr33D5hzSYZiOgqS0L8RV5H2YXcyclhJBwKsKzdEJDLTpFQfmR-Yfs0SbpumcNmzKbB-1KRzwG_MItRg9PvA8ugMt8pvozhyQEyaVTZopHBnsFYxg-LoOGXC-MqkpZfxUZLEnDiounsKN83Z9SHbIBgB_BZUgICe3bMVQCB6IkEriqVKPkNrEcD9G2bnmxaQhiIGs0PiaSsFAeiYRtYEgMAhZB4oOGoKSFXdmiTimTJZwY43xEJwnq3y5ADjuHBT2lqWmt7jOnHC7conBXslIvaRxILgQYrr1-P46MWXVtHBAQbfiLpq24rWTvhk89tgaQL8FVfyAyzPkeaiYkiAw2kZplnsQmhh4V2YtueppsPn47Sw0LG6SjTDK2hHBFXi0BMFP_lKiZto1Q9YdyHa04kznPREMkMOztGEEVCr0XGpWTQrTxBasvA8C5ake6UD9EImYdHhiWmFYKmLZVfF4FOzVN_aeVvLOaedOqYwaNHoQx8XtdBjvs3wZ7OSOzJhaLqkad7QuvHTPXtmZRq3cYTwV2DQEZvYZ2M6OyckJrKwMOat-gur-ljFj1tUgFsACVGf16Vh002-kuSi8bnw03vZFYv8o1qxQr_ptsQZpmOlAUcigrEJGhVD66gVlCawAMAELGpIOeg7lRzpNeCZ0ogw_zeWkVCPX9OkcZL60CNo-ldqjROq8bN_2ZdnGBezZ8CE8KBwu1o2MuvKhsbUgrGxJjx4-boqeNeey9aAqvDps0xmhlGwXO9AxXEi2hBRmon1mCyAWdLxjqpFJlkWg2fAd2Exsyo5FBK5-dRHRBOxMKR_OTrp6clGDHkWcouBmNA_5AYAQQyucwYBo1piIFkaB8qNgRjiI78rxxV5ZWLmEdcBoGKrGlQCOKoGh_ei0ONEbaq4o" group-title="Кино Канал",Мосфильм. Золотая коллекция HD
 http://stream.shbro.org/stream/14B37BB54802/8707videom3u8.m3u8
-#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/mDh100316/fdbf92fdE0N_/K7YUGwDyFOIwknLyaBkm13gaJoGEdwIAcdpoPz3ueCLNOERC7qXuxjkTxrEByunCoQEwDwEEXv23T3jzfLM3OirC0G9xN_GWMXcyclhJBwKsKzdEJDLTpFQfmR-Yfs0SbpumcNmzKbB-1KRzwG_MItRg9PvA8ugMt8pvozhyQEyaVTZopHBnsFYxg-LoOGXC-MqkpZfxUZLEnDiounsKN83Z9SHbIBgB_BZUgICe3bMVQCB6IkEriqVKPkNrEcD9G2bnmxaQhiIGs0PiaSsFAeiYRtYEgMAhZB4oOGoKSFXdmiTimTJZwY43xEJwnq3y5ADjuHBT2lqWmt7jOnHC7conBXslIvaRxILgQYrr1-P46MWXVtHBAQbfiLpq24rWTvhk89tgaQL8FVfyAyzPkeaiYkiAw2kZplnsQmhh4V2YtueppsPn47Sw0LG6SjTDK2hHBFXi0BMFP_lKiZto1Q9YdyHa04kznPREMkMOztGEEVCr0XGpWTQrTxBasvA8C5ake6UD9EImYdHhiWmFYKmLZVfF4FOzVN_aeVvLOaedOqYwaNHoQx8XtdBjvs3wZ7OSOzJhaLqkad7QuvHTPXtmZRq3cYTwV2DQEZvYZ2M6OyckJrKwMOat-gur-ljFj1tUgFsACVGf16Vh002-kuSi8bnw03vZFYv8o1qxQr_ptsQZpmOlAUcigrEJGhVD66gVlCawAMAELGpIOeg7lRzpNeCZ0ogw_zeWkVCPX9OkcZL60CNo-ldqjROq8bN_2ZdnGBezZ8CE8KBwu1o2MuvKhsbUgrGxJjx4-boqeNeey9aAqvDps0xmhlGwXO9AxXEi2hBRmon1mCyAWdLxjqpFJlkWg2fAd2Exsyo5FBK5-dRHRBOxMKR_OTrp6clGDHkWcouBmNA_5AYAQQyucwYBo1piIFkaB8qNgRjiI78rxxV5ZWLmEdcBoGKrGlQCOKoGh_ei0ONEbaq4o" group-title="Узбекистан",Кино 2
-http://stream.shbro.org/stream/14B37BB54802/hlsstreamm3u8_ee3e.m3u8
 #EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/mDh100316/fdbf92fdE0N_/K7YUGwDyFOIwknLyaBkm13gaJoGEdwIAcdpoSm2OfULILSR329VOE0wTw7ERqvlH0XRAf4RxTt23T4hmTNYySr9y0H8xB-EmYWcyclhJBwKsKzdEJDLTpFQfmR-Yfs0SbpumcNmzKbB-1KRzwG_MItRg9PvA8ugMt8pvozhyQEyaVTZopHBnsFYxg-LoOGXC-MqkpZfxUZLEnDiounsKN83Z9SHbIBgB_BZUgICe3bMVQCB6IkEriqVKPkNrEcD9G2bnmxaQhiIGs0PiaSsFAeiYRtYEgMAhZB4oOGoKSFXdmiTimTJZwY43xEJwnq3y5ADjuHBT2lqWmt7jOnHC7conBXslIvaRxILgQYrr1-P46MWXVtHBAQbfiLpq24rWTvhk89tgaQL8FVfyAyzPkeaiYkiAw2kZplnsQmhh4V2YtueppsPn47Sw0LG6SjTDK2hHBFXi0BMFP_lKiZto1Q9YdyHa04kznPREMkMOztGEEVCr0XGpWTQrTxBasvA8C5ake6UD9EImYdHhiWmFYKmLZVfF4FOzVN_aeVvLOaedOqYwaNHoQx8XtdBjvs3wZ7OSOzJhaLqkad7QuvHTPXtmZRq3cYTwV2DQEZvYZ2M6OyckJrKwMOat-gur-ljFj1tUgFsACVGf16Vh002-kuSi8bnw03vZFYv8o1qxQr_ptsQZpmOlAUcigrEJGhVD66gVlCawAMAELGpIOeg7lRzpNeCZ0ogw_zeWkVCPX9OkcZL60CNo-ldqjROq8bN_2ZdnGBezZ8CE8KBwu1o2MuvKhsbUgrGxJjx4-boqeNeey9aAqvDps0xmhlGwXO9AxXEi2hBRmon1mCyAWdLxjqpFJlkWg2fAd2Exsyo5FBK5-dRHRBOxMKR_OTrp6clGDHkWcouBmNA_5AYAQQyucwYBo1piIFkaB8qNgRjiI78rxxV5ZWLmEdcBoGKrGlQCOKoGh_ei0ONEbaq4o" group-title="Детские",Чип и Дейл
 http://stream.shbro.org/stream/14B37BB54802/gersindexm3u8.m3u8
 #EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/mDh100316/fdbf92fdE0N_/K7YUGwDyFOIwknLyaBkm13gaJoGEdwIAcdptbz0OTQIIXSFni4C-Jnkj9tSxyknnxFQ1j9Rhe73XP23zHHNnSj-i0G8BJ6EmgRcyclhJBwKsKzdEJDLTpFQfmR-Yfs0SbpumcNmzKbB-1KRzwG_MItRg9PvA8ugMt8pvozhyQEyaVTZopHBnsFYxg-LoOGXC-MqkpZfxUZLEnDiounsKN83Z9SHbIBgB_BZUgICe3bMVQCB6IkEriqVKPkNrEcD9G2bnmxaQhiIGs0PiaSsFAeiYRtYEgMAhZB4oOGoKSFXdmiTimTJZwY43xEJwnq3y5ADjuHBT2lqWmt7jOnHC7conBXslIvaRxILgQYrr1-P46MWXVtHBAQbfiLpq24rWTvhk89tgaQL8FVfyAyzPkeaiYkiAw2kZplnsQmhh4V2YtueppsPn47Sw0LG6SjTDK2hHBFXi0BMFP_lKiZto1Q9YdyHa04kznPREMkMOztGEEVCr0XGpWTQrTxBasvA8C5ake6UD9EImYdHhiWmFYKmLZVfF4FOzVN_aeVvLOaedOqYwaNHoQx8XtdBjvs3wZ7OSOzJhaLqkad7QuvHTPXtmZRq3cYTwV2DQEZvYZ2M6OyckJrKwMOat-gur-ljFj1tUgFsACVGf16Vh002-kuSi8bnw03vZFYv8o1qxQr_ptsQZpmOlAUcigrEJGhVD66gVlCawAMAELGpIOeg7lRzpNeCZ0ogw_zeWkVCPX9OkcZL60CNo-ldqjROq8bN_2ZdnGBezZ8CE8KBwu1o2MuvKhsbUgrGxJjx4-boqeNeey9aAqvDps0xmhlGwXO9AxXEi2hBRmon1mCyAWdLxjqpFJlkWg2fAd2Exsyo5FBK5-dRHRBOxMKR_OTrp6clGDHkWcouBmNA_5AYAQQyucwYBo1piIFkaB8qNgRjiI78rxxV5ZWLmEdcBoGKrGlQCOKoGh_ei0ONEbaq4o" group-title="Казахстан",Channel 7 Kazakhstan
@@ -11778,8 +11173,6 @@ http://stream.shbro.org/stream/14B37BB54802/t27indexm3u8.m3u8
 http://stream.shbro.org/stream/14B37BB54802/f2c9d56495m3u8.m3u8
 #EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/mDh100316/fdbf92fdE0N_/K7YUGwDyFOIwknLyaBkm13gaJoGEdwIAcdrNejjOnQJ9CHEXu8W-xmkj84REv4mC8TRgf4QhXp2Hf92zSYMSCk9y0C8RV1H2QUbWMhiJZyPJzqaF9bIisQBvWMstK_3SSFunkNmC-LGvZESTsx5M0nRxIZ5wALgLQxo9YWnyww1pVqYJZoKmABchoIOIORZBCZpHFhQB4TM2_9tqmgn4FW345cOIgGuAHuaGY0BevcPlsAFK8eILyMUIvTCJoaCN2NeV2JUwRuGFcSJDiLgFIcqKFfRnkpCihV9ZegrZiVcP6KYSS8J5wd6Up_OCrr2zpEFBiTOwGTkVO23QKfDAj8gG1Dp1A_SRNrMT4CtbxfMommV3JsDBo6U9mNqI2ViVjHvEUlqAK_Ed5oVgMt0P0cdD4wjDQImKVguu4oii0Kx4VEXYp4AVgETDIdDba2QQCEnl9bXD8rK3PnireDoYd486ZEGIgZgRLIZkc_KdLdCHIVA6IBE7ShaZ3EHakAO9Gcdlm3WD1ZPlUfDRi1hHoavLBtfmU_AxF2-YiEvoSCb9qAaQmTOacFwFh4IQvZ3TpsLy-LDyK4v1CZ7QGnBAnhi3lVoUkafjVyDx0HtK9kOoWLaVlbCi0pTd6qg5GHlHn7pnYikAS5FOhUeSoQ1uoMRB45syMJmYlrh88mmQAA-aJUX7F4C1wqYws4Lb2DQxiIklpyWwoGJkP2s4eoprJM8p1QNJwpkQL-WnoVGOrEGFATD4cRBpi7X6nYPZYED-WhVkWBYxZQBn82GgGmp0EvmJRzR3QpLTFR17KssJqWeNq_fgKfG7caxW9rGRbn_xFmAwSFHQG3nGWG8iSpNjvKtmthlXMFUAZwDwMdn7FzDZ23Rm9tID05SfOGsIWmrWHDlFINvQygDPJXQxwJ8vsCWjQMnRomq6Vao9g0vSU26a5zQqd0O0gbagkKAIejRwyVontDZhsrJHfyr4g" group-title="Детские",Супер Герои
 http://stream.shbro.org/stream/14B37BB54802/446evideom3u8.m3u8
-#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/mDh100316/fdbf92fdE0N_/K7YUGwDyFOIwknLyaBkm13gaJoGEdwIAcdrdCn3OLVJtOGEX7sVeU3nT1rQx7-nHgbRVn_QEi8jiSqjTfLM3ny_i0H8RR_H2EXcyclhJBwKsKzdEJDLTpFQfmR-Yfs0SbpumcNmzKbB-1KRzwG_MItRg9PvA8ugMt8pvozhyQEyaVTZopHBnsFYxg-LoOGXC-MqkpZfxUZLEnDiounsKN83Z9SHbIBgB_BZUgICe3bMVQCB6IkEriqVKPkNrEcD9G2bnmxaQhiIGs0PiaSsFAeiYRtYEgMAhZB4oOGoKSFXdmiTimTJZwY43xEJwnq3y5ADjuHBT2lqWmt7jOnHC7conBXslIvaRxILgQYrr1-P46MWXVtHBAQbfiLpq24rWTvhk89tgaQL8FVfyAyzPkeaiYkiAw2kZplnsQmhh4V2YtueppsPn47Sw0LG6SjTDK2hHBFXi0BMFP_lKiZto1Q9YdyHa04kznPREMkMOztGEEVCr0XGpWTQrTxBasvA8C5ake6UD9EImYdHhiWmFYKmLZVfF4FOzVN_aeVvLOaedOqYwaNHoQx8XtdBjvs3wZ7OSOzJhaLqkad7QuvHTPXtmZRq3cYTwV2DQEZvYZ2M6OyckJrKwMOat-gur-ljFj1tUgFsACVGf16Vh002-kuSi8bnw03vZFYv8o1qxQr_ptsQZpmOlAUcigrEJGhVD66gVlCawAMAELGpIOeg7lRzpNeCZ0ogw_zeWkVCPX9OkcZL60CNo-ldqjROq8bN_2ZdnGBezZ8CE8KBwu1o2MuvKhsbUgrGxJjx4-boqeNeey9aAqvDps0xmhlGwXO9AxXEi2hBRmon1mCyAWdLxjqpFJlkWg2fAd2Exsyo5FBK5-dRHRBOxMKR_OTrp6clGDHkWcouBmNA_5AYAQQyucwYBo1piIFkaB8qNgRjiI78rxxV5ZWLmEdcBoGKrGlQCOKoGh_ei0ONEbaq4o" group-title="Узбекистан",Nurafshon
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_5527.m3u8
 #EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/mDh100316/fdbf92fdE0N_/K7YUGwDyFOIwknLyaBkm13gaJoGEdwIAcdrdOgiLPTIY-DE3jpDLYwlmttSx77zi0RQFf8QUftjib8imHGbSCkrS0C8RR-E2IXb2MhiJZyPJzqaF9bIisQBvWMstK_3SSFunkNmC-LGvZESTsx5M0nRxIZ5wALgLQxo9YWnyww1pVqYJZoKmABchoIOIORZBCZpHFhQB4TM2_9tqmgn4FW345cOIgGuAHuaGY0BevcPlsAFK8eILyMUIvTCJoaCN2NeV2JUwRuGFcSJDiLgFIcqKFfRnkpCihV9ZegrZiVcP6KYSS8J5wd6Up_OCrr2zpEFBiTOwGTkVO23QKfDAj8gG1Dp1A_SRNrMT4CtbxfMommV3JsDBo6U9mNqI2ViVjHvEUlqAK_Ed5oVgMt0P0cdD4wjDQImKVguu4oii0Kx4VEXYp4AVgETDIdDba2QQCEnl9bXD8rK3PnireDoYd486ZEGIgZgRLIZkc_KdLdCHIVA6IBE7ShaZ3EHakAO9Gcdlm3WD1ZPlUfDRi1hHoavLBtfmU_AxF2-YiEvoSCb9qAaQmTOacFwFh4IQvZ3TpsLy-LDyK4v1CZ7QGnBAnhi3lVoUkafjVyDx0HtK9kOoWLaVlbCi0pTd6qg5GHlHn7pnYikAS5FOhUeSoQ1uoMRB45syMJmYlrh88mmQAA-aJUX7F4C1wqYws4Lb2DQxiIklpyWwoGJkP2s4eoprJM8p1QNJwpkQL-WnoVGOrEGFATD4cRBpi7X6nYPZYED-WhVkWBYxZQBn82GgGmp0EvmJRzR3QpLTFR17KssJqWeNq_fgKfG7caxW9rGRbn_xFmAwSFHQG3nGWG8iSpNjvKtmthlXMFUAZwDwMdn7FzDZ23Rm9tID05SfOGsIWmrWHDlFINvQygDPJXQxwJ8vsCWjQMnRomq6Vao9g0vSU26a5zQqd0O0gbagkKAIejRwyVontDZhsrJHfyr4g" group-title="Кино Канал",Русский Иллюзион HD
 http://stream.shbro.org/stream/14B37BB54802/8132videom3u8.m3u8
 #EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/xG5rS6087/9ce7b8aAgUd8/gNLxpiC67ZDyc7vXmdx26HYxQ7FUq9bt2v01KvyqCdGzNQNsJCNXjbGQysCbVTd9GEpkGc-boBue07lXESRGCcSWNdIxbwhEo_b7V6mMVz2iAFJ09O4HSf840Q9pL8lREJPkDmY15R7WIo1SX6AivU0b0LjeLcOKuJIdcAUQRJ4zohKVtkp_ooayqufbfRcs98GxZQS-lv2OOVMqCQl-ZQMy570kVmU9dYJsYG5ToR08KmYZnv4RT-kzjnAmo6VdwDFARycaLfCkUJimap6EL8eQU-dEfXQf3xrRK_koLQbC4lcfVJTn_qRA7PO-kKNebRsWae2tkxx5E10wNmA1bAIzQ5Zl2vyjNbCbFgiPZ82FQgF3V5xnDa_qcSuYSM1GgcEVfSS3lJ7Wgn0ALuJyrz4Y90ifrNPeqWCvIPZTl52xgBBH9CpMk_RSeLWrDQX_tJFQxCcclr0_64CKuatP5NMhVR7mZsdfx4B8sB-TkrwsKPVL_NzwDuqAzuC0sne-0YDDpEUI3RO1oHvluq12_MWwYbdEDAfcnImAuqmbHLZAIzTv5jaGjdexfsG-IZBsHElnWA9so18aoL_yJXMk3iEQYQf1Gn8QlDBZNcq-pm_lwTP29I0GDA96kMp7qNxmwgL0XrYFhs2kY98SPwFivk4at0lOrmJf-RIes9YBd1zCAFMndRpuk9Tgufc6rxd_x6BTxZT-hp7dmiBqyriulLOBJny3R1S-VPG8wv8CUh29WkYrXS0yHcrjHECXY6R-AVKidScpTJOWUAplOT137CYQUXfXTJUsH6pA2kmKDKeAQ5d9N4T2fqYDfdCuQWN8LSiFe22vUv6rEV4B9NPk7TOCMgY3Sr6ChgE6xNsM5RzmoAP15H5nHMxKMImYSpwlYEB1XXZUBW12YK2BvJIA79w4JAkdHyBMGQGtcQVCdLzzU2GGZ8gNgsWi6dUKvpYud_IRZJV-1O7sG6OKQ" group-title="Россия",Мульт
