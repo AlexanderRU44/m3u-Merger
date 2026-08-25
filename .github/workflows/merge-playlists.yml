@@ -2,11 +2,10 @@ name: Merge M3U Playlists
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
   workflow_dispatch:
   schedule:
-    - cron: '20 18 * * *'
+    - cron: '25 18 * * *'
 
 jobs:
   merge:
@@ -21,21 +20,26 @@ jobs:
         with:
           python-version: '3.10'
       
-      - run: pip install requests
+      - name: Install dependencies
+        run: pip install requests
       
-      - run: python download_playlists.py
+      - name: Download playlists
+        run: python download_playlists.py
       
-      - run: python merge_m3u.py --input-dir ./playlists --output ./output/merged.m3u --generate-stats
+      - name: Merge playlists
+        run: python merge_m3u.py --input-dir ./playlists --output ./output/merged.m3u --generate-stats
       
-      - run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -f playlists/ output/
-          git diff --staged --quiet || (git commit -m "Update playlists" && git push)
+          git diff --staged --quiet || git commit -m "Auto update $(date -u '+%Y-%m-%d %H:%M')"
+          git push
       
-      - uses: softprops/action-gh-release@v1
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
         with:
           tag_name: latest
+          name: "Latest Playlist"
           files: output/merged.m3u
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
