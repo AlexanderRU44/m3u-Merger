@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-25T15:58:52.466670",
+  "generated": "2026-08-25T16:06:22.567907",
   "input_dir": "./playlists",
   "output_file": "./output/merged.m3u",
   "total_files": 3,
@@ -17,5 +17,5 @@
     "playlists/iptv_ru.m3u": 52453,
     "playlists/shams_tv.m3u8": 422599
   },
-  "output_size": 1318855
+  "output_size": 1191630
 }
