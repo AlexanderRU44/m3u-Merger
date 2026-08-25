@@ -20,8 +20,8 @@ on:
         type: boolean
         default: true
 
-  schedule:
-    - cron: '0 3 * * *'
+schedule:
+  - cron: '0 18 * * *'  # 18:00 UTC = 21:00 MSK
 
 jobs:
   merge:
