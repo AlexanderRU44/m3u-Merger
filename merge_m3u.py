@@ -238,14 +238,8 @@ def write_m3u(channels, output_file):
             if channel.get('info'):
                 if channel.get('source'):
                     info = channel['info']
-                    if not info.endswith(']') and not info.endswith(')'):
-                        info = f'{info} [source: {channel["source"]}]'
-                    
-                    # Добавляем маркер архива
-                    if channel.get('has_catchup', False):
-                        days = channel.get('catchup_days', '?')
-                        info = f'{info} 📺АРХИВ {days}д'
-                    
+                    # НЕ добавляем [source: ...] и 📺АРХИВ
+                    # Просто пишем оригинальную строку
                     f.write(info + '\n')
                 else:
                     f.write(channel['info'] + '\n')
