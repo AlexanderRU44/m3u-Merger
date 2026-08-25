@@ -37,43 +37,31 @@ def download_playlist(url, output_path, timeout=60):
 
 def main():
     # ═══════════════════════════════════════════════════════════
-    # 🔽 ВАШИ ССЫЛКИ НА ПЛЕЙЛИСТЫ (ДОБАВЛЕНЫ)
+    # 🔽 ВАШИ ССЫЛКИ НА ПЛЕЙЛИСТЫ
     # ═══════════════════════════════════════════════════════════
     
     playlists = [
-        # 1. Плейлист от Dimonovich (с большим количеством каналов)
         {
             'url': 'https://raw.githubusercontent.com/Dimonovich/TV/Dimonovich/FREE/TV',
             'name': 'dimonovich_tv.m3u'
         },
-        
-        # 2. Плейлист ShamsTV
         {
             'url': 'http://iptvshams.ru/ShamsTV.m3u8',
             'name': 'shams_tv.m3u8'
         },
-        
-        # 3. Плейлист IPTVru
         {
             'url': 'https://smolnp.github.io/IPTVru//IPTVru.m3u',
             'name': 'iptv_ru.m3u'
         },
-        
-        # 4. Дополнительный плейлист (опционально)
-        # {
-        #     'url': 'https://iptv-org.github.io/iptv/index.m3u',
-        #     'name': 'iptv_org.m3u'
-        # },
     ]
     
     # ═══════════════════════════════════════════════════════════
     # Код ниже НЕ МЕНЯЙТЕ
     # ═══════════════════════════════════════════════════════════
     
-    # Создаем папку
     Path('./playlists').mkdir(exist_ok=True)
     
-    # Удаляем старые файлы (кроме README.md)
+    # Удаляем старые файлы
     for old_file in Path('./playlists').glob('*.m3u*'):
         if old_file.name != 'README.md':
             old_file.unlink()
@@ -89,7 +77,6 @@ def main():
         print("💡 Добавьте ссылки в массив 'playlists' в файле download_playlists.py")
         print("📝 Создаю тестовый файл для проверки...")
         
-        # Создаем тестовый файл, чтобы скрипт не падал
         with open('./playlists/test.m3u', 'w', encoding='utf-8') as f:
             f.write('#EXTM3U\n')
             f.write('#EXTINF:-1,Test Channel\n')
