@@ -1,0 +1,55 @@
+{
+  "timestamp": "2026-08-25T18:15:31.433661",
+  "total": 6,
+  "success": 6,
+  "results": {
+    "dimonovich_tv.m3u": {
+      "url": "https://raw.githubusercontent.com/Dimonovich/TV/Dimonovich/FREE/TV",
+      "success": true,
+      "info": {
+        "size": 698818,
+        "status": "success"
+      }
+    },
+    "shams_tv.m3u8": {
+      "url": "http://iptvshams.ru/ShamsTV.m3u8",
+      "success": true,
+      "info": {
+        "size": 414738,
+        "status": "success"
+      }
+    },
+    "iptv_ru.m3u": {
+      "url": "https://smolnp.github.io/IPTVru//IPTVru.m3u",
+      "success": true,
+      "info": {
+        "size": 47914,
+        "status": "success"
+      }
+    },
+    "iptv_stable.m3u8": {
+      "url": "https://raw.githubusercontent.com/smolnp/IPTVru/refs/heads/gh-pages/IPTVstable.m3u8",
+      "success": true,
+      "info": {
+        "size": 37976,
+        "status": "success"
+      }
+    },
+    "zabava_ef.m3u": {
+      "url": "https://raw.githubusercontent.com/CrocoUser/zabava-project/refs/heads/main/zabava-ef.m3u",
+      "success": true,
+      "info": {
+        "size": 19218,
+        "status": "success"
+      }
+    },
+    "loganet_tv.m3u": {
+      "url": "https://loganettv.github.io/playlists/all.m3u",
+      "success": true,
+      "info": {
+        "size": 71608,
+        "status": "success"
+      }
+    }
+  }
+}
