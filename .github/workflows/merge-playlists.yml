@@ -129,6 +129,11 @@ jobs:
             
             📅 Обновлено: ${{ github.event.head_commit.timestamp || github.event.repository.updated_at }}
             
-            ### 📊 Статистика
-            ```json
-            ${{ steps.merge.outputs.stats }}
+            Скачайте актуальную версию плейлиста в аттачментах ниже.
+          files: |
+            output/merged.m3u
+            output/stats.json
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
