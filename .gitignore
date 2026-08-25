@@ -9,9 +9,9 @@ venv/
 ENV/
 .venv
 
-# Output files - ЗАКОММЕНТИРУЙТЕ ЭТУ СТРОКУ
-# output/
+# Backup files
 *.m3u.bak
+*.bak
 
 # IDE
 .vscode/
@@ -24,6 +24,11 @@ ENV/
 .DS_Store
 Thumbs.db
 
-# Stats - можно оставить
-# playlists/download_stats.json
-# output/stats.json
+# Stats (не обязательно, можно оставить)
+playlists/download_stats.json
+output/stats.json
+
+# Но НЕ игнорируем сам output и playlists
+# Убедитесь, что этих строк НЕТ:
+# output/
+# playlists/
