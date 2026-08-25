@@ -6,6 +6,7 @@ import re
 import sys
 import json
 import argparse
+import traceback
 from pathlib import Path
 from datetime import datetime
 from urllib.parse import urlparse
@@ -16,6 +17,9 @@ EXCLUDED_GROUPS = [
     '- ИНФО -',
     'INFO',
     'Инфо',
+    '↕️ Торрент ТВ ↕️',
+    'Торрент ТВ',
+    'Torrent TV',
 ]
 
 def extract_url(line):
@@ -103,11 +107,16 @@ def parse_m3u(file_path):
     current_channel = None
     
     try:
+        print(f"    🔍 Парсинг {file_path.name}...")
         with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
             lines = f.readlines()
+        
+        print(f"    📄 Прочитано {len(lines)} строк")
+        line_count = 0
             
         for line in lines:
             line = line.strip()
+            line_count += 1
             
             if not line:
                 continue
@@ -135,11 +144,15 @@ def parse_m3u(file_path):
                     
     except Exception as e:
         print(f"⚠️ Ошибка при чтении {file_path}: {e}")
+        traceback.print_exc()
         
+    print(f"    ✅ Найдено {len(channels)} каналов в {file_path.name}")
     return channels
 
 def merge_m3u_files(input_dir, output_file, remove_duplicates=True, sort_channels=False):
     """Объединяет все M3U файлы из директории"""
+    
+    print(f"🔍 Проверка директории: {input_dir}")
     
     m3u_files = []
     for ext in ['*.m3u', '*.m3u8']:
@@ -147,6 +160,9 @@ def merge_m3u_files(input_dir, output_file, remove_duplicates=True, sort_channel
     
     if not m3u_files:
         print(f"❌ Не найдено M3U файлов в {input_dir}")
+        print(f"📂 Содержимое {input_dir}:")
+        for item in Path(input_dir).iterdir():
+            print(f"  - {item.name}")
         return False, {}
     
     print(f"📂 Найдено {len(m3u_files)} файлов:")
@@ -169,7 +185,7 @@ def merge_m3u_files(input_dir, output_file, remove_duplicates=True, sort_channel
         sources[file_path.name] = len(channels)
         
         for channel in channels:
-            if not channel['url']:
+            if not channel.get('url'):
                 continue
             
             # Проверяем, нужно ли исключить канал
@@ -214,13 +230,24 @@ def merge_m3u_files(input_dir, output_file, remove_duplicates=True, sort_channel
         archive_channels.sort(key=lambda x: x.get('info', ''))
     
     # Запись основного плейлиста
-    write_m3u(all_channels, output_file)
+    try:
+        print(f"💾 Запись основного плейлиста в {output_file}...")
+        write_m3u(all_channels, output_file)
+    except Exception as e:
+        print(f"❌ Ошибка записи {output_file}: {e}")
+        traceback.print_exc()
+        return False, {}
     
     # Сохраняем архивные каналы в отдельный файл
     if archive_channels:
-        archive_file = Path(output_file).parent / 'merged_archive.m3u'
-        write_m3u(archive_channels, archive_file)
-        print(f"📦 Архивные каналы сохранены в {archive_file}")
+        try:
+            archive_file = Path(output_file).parent / 'merged_archive.m3u'
+            write_m3u(archive_channels, archive_file)
+            print(f"📦 Архивные каналы сохранены в {archive_file}")
+        except Exception as e:
+            print(f"❌ Ошибка записи архивного файла: {e}")
+            traceback.print_exc()
+            return False, {}
     
     # Статистика
     stats = {
@@ -257,7 +284,8 @@ def merge_m3u_files(input_dir, output_file, remove_duplicates=True, sort_channel
 def write_m3u(channels, output_file):
     """Записывает каналы в M3U файл"""
     
-    Path(output_file).parent.mkdir(parents=True, exist_ok=True)
+    output_path = Path(output_file)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
     
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write('#EXTM3U\n')
@@ -271,7 +299,6 @@ def write_m3u(channels, output_file):
         
         for channel in channels:
             if channel.get('info'):
-                # Пишем оригинальную строку без добавлений
                 f.write(channel['info'] + '\n')
             if channel.get('url'):
                 f.write(channel['url'] + '\n')
@@ -311,30 +338,58 @@ def main():
         help='Сгенерировать JSON со статистикой'
     )
     
-    args = parser.parse_args()
+    try:
+        args = parser.parse_args()
+    except Exception as e:
+        print(f"❌ Ошибка парсинга аргументов: {e}")
+        traceback.print_exc()
+        sys.exit(1)
+    
+    print("="*50)
+    print("🚀 Запуск merge_m3u.py")
+    print(f"📁 input-dir: {args.input_dir}")
+    print(f"📁 output: {args.output}")
+    print(f"🔧 keep-duplicates: {args.keep_duplicates}")
+    print(f"🔧 sort: {args.sort}")
+    print(f"🔧 generate-stats: {args.generate_stats}")
+    print("="*50)
     
     if not Path(args.input_dir).exists():
         print(f"❌ Директория {args.input_dir} не найдена")
+        print(f"📂 Текущая директория: {os.getcwd()}")
         sys.exit(1)
     
-    success, stats = merge_m3u_files(
-        args.input_dir,
-        args.output,
-        remove_duplicates=not args.keep_duplicates,
-        sort_channels=args.sort
-    )
+    try:
+        success, stats = merge_m3u_files(
+            args.input_dir,
+            args.output,
+            remove_duplicates=not args.keep_duplicates,
+            sort_channels=args.sort
+        )
+    except Exception as e:
+        print(f"❌ Критическая ошибка: {e}")
+        traceback.print_exc()
+        sys.exit(1)
     
-    if success and args.generate_stats and stats:
-        stats_file = Path(args.output).parent / 'stats.json'
-        with open(stats_file, 'w', encoding='utf-8') as f:
-            json.dump(stats, f, indent=2, ensure_ascii=False)
-        
-        print(f"\n📊 Статистика сохранена в {stats_file}")
-        print("="*50)
-        print(json.dumps(stats, indent=2, ensure_ascii=False))
-        print("="*50)
+    if not success:
+        print("❌ Ошибка при объединении плейлистов")
+        sys.exit(1)
     
-    sys.exit(0 if success else 1)
+    if args.generate_stats and stats:
+        try:
+            stats_file = Path(args.output).parent / 'stats.json'
+            with open(stats_file, 'w', encoding='utf-8') as f:
+                json.dump(stats, f, indent=2, ensure_ascii=False)
+            
+            print(f"\n📊 Статистика сохранена в {stats_file}")
+            print("="*50)
+            print(json.dumps(stats, indent=2, ensure_ascii=False))
+            print("="*50)
+        except Exception as e:
+            print(f"⚠️ Не удалось сохранить статистику: {e}")
+    
+    print("✅ Скрипт успешно завершен")
+    sys.exit(0)
 
 if __name__ == '__main__':
     main()
