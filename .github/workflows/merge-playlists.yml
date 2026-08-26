@@ -5,7 +5,7 @@ on:
     branches: [ main ]
   workflow_dispatch:
   schedule:
-    - cron: '35 18 * * *'
+    - cron: '0 */6 * * *'  # Каждые 6 часов
 
 jobs:
   merge:
