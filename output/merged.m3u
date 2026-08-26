@@ -1,9 +1,9 @@
 #EXTM3U
-# Создано: 2026-08-26 11:24:00 MSK
-# Всего каналов: 4888
+# Создано: 2026-08-26 14:01:01 MSK
+# Всего каналов: 5155
 # Каналов с архивом: 544
 
-#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: 26.08.2026 11:24 MSK
+#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: 26.08.2026 14:01 MSK
 https://raw.githubusercontent.com/AlexanderRU44/m3u-Merger/main/output/info.m3u8
 #EXTINF:-1 group-title="Основные" tvg-id="pervy",Первый
 #EXTVLCOPT:http-user-agent=HlsWinkPlayer
@@ -10137,6 +10137,10 @@ http://stream.shbro.org/stream/14B37BB54802/tb1228000m3u8.m3u8
 http://stream.shbro.org/stream/14B37BB54802/tb3128000m3u8_ff75.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=39e7898fe67071126ad60912a495cf1fd698bd72-9101109-images-thumbs&n=13" group-title="Музыка",Maidan TV HD
 http://stream.shbro.org/stream/14B37BB54802/0playlistm3u8_c782.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=b463adb9f692e43a4171132e22d077dc87d22515-9229153-images-thumbs&n=13" group-title="Казахстан",Orken Live
+http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_ba5c.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=e3c2d37a5afdad1bbd0248b917f91053600cd96c-5332191-images-thumbs&n=13" group-title="Казахстан",Qazsport HD
+http://stream.shbro.org/stream/14B37BB54802/f108indexm3u8.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=10f9da47f23dfb5e388eccc96480c595648c4886-5424841-images-thumbs&n=13" group-title="Казахстан",Abai TV
 http://stream.shbro.org/stream/14B37BB54802/a1monotsm3u8_bc4f.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=10f9da47f23dfb5e388eccc96480c595648c4886-5424841-images-thumbs&n=13" group-title="Казахстан",Abai TV HD
@@ -10199,6 +10203,536 @@ http://stream.shbro.org/stream/14B37BB54802/t28indexm3u8.m3u8
 http://stream.shbro.org/stream/14B37BB54802/t71indexm3u8.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=5efeddf5b7d6b16a36bee874a35ab6dbac13e82e-9858428-images-thumbs&n=13" group-title="Казахстан",31 Kanal
 http://stream.shbro.org/stream/14B37BB54802/388indexm3u8.m3u8
+#EXTINF:-1 tvg-logo="http://1lot.tv/ch/6550.png" group-title="Украина",FreeДом
+http://stream.shbro.org/stream/14B37BB54802/vplaylistm3u8_40f5.m3u8
+#EXTINF:-1 tvg-logo="https://oktv.uz/Channels/ch_3472.png" group-title="Украина",ОЦЕᴴᴰ
+http://stream.shbro.org/stream/14B37BB54802/hlsOshTVm3u8.m3u8
+#EXTINF:-1 tvg-logo="http://1lot.tv/ch/10651.png" group-title="Украина",МИ+ Україна
+http://stream.shbro.org/stream/14B37BB54802/weukrainem3u8.m3u8
+#EXTINF:-1 tvg-logo="https://iptvx.one/picons/reportior.png" group-title="Украина",Репортер (Одеса) SD
+http://stream.shbro.org/stream/14B37BB54802/dplaylistm3u8_e73d.m3u8
+#EXTINF:-1 tvg-logo="https://iptvx.one/picons/itv-ua.png" group-title="Украина",ITV (Рівне)
+http://stream.shbro.org/stream/14B37BB54802/qplaylistm3u8_721d.m3u8
+#EXTINF:-1 tvg-logo="http://epg.one/img2/2123.png" group-title="Украина",СК1 (Житомир)
+http://stream.shbro.org/stream/14B37BB54802/qplaylistm3u8_142d.m3u8
+#EXTINF:-1 tvg-logo="http://1lot.tv/ch/8155.png" group-title="Украина",Рiвне 1 SD
+http://stream.shbro.org/stream/14B37BB54802/rplaylistm3u8_fb3c.m3u8
+#EXTINF:-1 tvg-logo="http://1lot.tv/ch/8024.png" group-title="Украина",Сфера ТВ (Рiвне)
+http://stream.shbro.org/stream/14B37BB54802/pplaylistm3u8_a54c.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=92b72a3c8924ba0d40e16846a180a6739fdbb2e1bd66dc74-10850463-images-thumbs&n=13" group-title="Украина",Перший Закарпатьский
+http://stream.shbro.org/stream/14B37BB54802/351348081PK.m3u8
+#EXTINF:-1 tvg-logo="http://epg.one/img2/8859.png" group-title="Украина",Первый городскойᴴᴰ (Кривий Ріг)
+http://stream.shbro.org/stream/14B37BB54802/qplaylistm3u8_e899.m3u8
+#EXTINF:-1 tvg-logo="https://iptvx.one/picons/pervy-gorodskoy-odessa.png" group-title="Украина",Перший міський (Одеса)
+http://stream.shbro.org/stream/14B37BB54802/el2chunksm3u8.m3u8
+#EXTINF:-1 tvg-logo="http://1lot.tv/ch/11082.png" group-title="Украина",TIC ТВ (Одеса)
+http://stream.shbro.org/stream/14B37BB54802/4playlistm3u8_e02a.m3u8
+#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/mDh100316/fdbf92fdE0N_/K7YUGwDyFOIwknLyaBkm13gaJoGEdwIAcdo9Dy37CFdoXUH37vCOxlwTk3Rhmoyi0QT1moFhe833X8hjCbMXWq_C0G8RJ4GWAecyclhJBwKsKzdEJDLTpFQfmR-Yfs0SbpumcNmzKbB-1KRzwG_MItRg9PvA8ugMt8pvozhyQEyaVTZopHBnsFYxg-LoOGXC-MqkpZfxUZLEnDiounsKN83Z9SHbIBgB_BZUgICe3bMVQCB6IkEriqVKPkNrEcD9G2bnmxaQhiIGs0PiaSsFAeiYRtYEgMAhZB4oOGoKSFXdmiTimTJZwY43xEJwnq3y5ADjuHBT2lqWmt7jOnHC7conBXslIvaRxILgQYrr1-P46MWXVtHBAQbfiLpq24rWTvhk89tgaQL8FVfyAyzPkeaiYkiAw2kZplnsQmhh4V2YtueppsPn47Sw0LG6SjTDK2hHBFXi0BMFP_lKiZto1Q9YdyHa04kznPREMkMOztGEEVCr0XGpWTQrTxBasvA8C5ake6UD9EImYdHhiWmFYKmLZVfF4FOzVN_aeVvLOaedOqYwaNHoQx8XtdBjvs3wZ7OSOzJhaLqkad7QuvHTPXtmZRq3cYTwV2DQEZvYZ2M6OyckJrKwMOat-gur-ljFj1tUgFsACVGf16Vh002-kuSi8bnw03vZFYv8o1qxQr_ptsQZpmOlAUcigrEJGhVD66gVlCawAMAELGpIOeg7lRzpNeCZ0ogw_zeWkVCPX9OkcZL60CNo-ldqjROq8bN_2ZdnGBezZ8CE8KBwu1o2MuvKhsbUgrGxJjx4-boqeNeey9aAqvDps0xmhlGwXO9AxXEi2hBRmon1mCyAWdLxjqpFJlkWg2fAd2Exsyo5FBK5-dRHRBOxMKR_OTrp6clGDHkWcouBmNA_5AYAQQyucwYBo1piIFkaB8qNgRjiI78rxxV5ZWLmEdcBoGKrGlQCOKoGh_ei0ONEbaq4o" group-title="Украина",ТРК Круг (Одеса)
+http://stream.shbro.org/stream/14B37BB54802/dplaylistm3u8_297a.m3u8
+#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/mDh100316/fdbf92fdE0N_/K7YUGwDyFOIwknLyaBkm13gaJoGEdwIAcd8oemiuHUJtDTFHvoC-I0k29sRxz4lHoRR1asTBDn3yithzPJYSL3-C0C8xR7HmIeaWMhiJZyPJzqaF9bIisQBvWMstK_3SSFunkNmC-LGvZESTsx5M0nRxIZ5wALgLQxo9YWnyww1pVqYJZoKmABchoIOIORZBCZpHFhQB4TM2_9tqmgn4FW345cOIgGuAHuaGY0BevcPlsAFK8eILyMUIvTCJoaCN2NeV2JUwRuGFcSJDiLgFIcqKFfRnkpCihV9ZegrZiVcP6KYSS8J5wd6Up_OCrr2zpEFBiTOwGTkVO23QKfDAj8gG1Dp1A_SRNrMT4CtbxfMommV3JsDBo6U9mNqI2ViVjHvEUlqAK_Ed5oVgMt0P0cdD4wjDQImKVguu4oii0Kx4VEXYp4AVgETDIdDba2QQCEnl9bXD8rK3PnireDoYd486ZEGIgZgRLIZkc_KdLdCHIVA6IBE7ShaZ3EHakAO9Gcdlm3WD1ZPlUfDRi1hHoavLBtfmU_AxF2-YiEvoSCb9qAaQmTOacFwFh4IQvZ3TpsLy-LDyK4v1CZ7QGnBAnhi3lVoUkafjVyDx0HtK9kOoWLaVlbCi0pTd6qg5GHlHn7pnYikAS5FOhUeSoQ1uoMRB45syMJmYlrh88mmQAA-aJUX7F4C1wqYws4Lb2DQxiIklpyWwoGJkP2s4eoprJM8p1QNJwpkQL-WnoVGOrEGFATD4cRBpi7X6nYPZYED-WhVkWBYxZQBn82GgGmp0EvmJRzR3QpLTFR17KssJqWeNq_fgKfG7caxW9rGRbn_xFmAwSFHQG3nGWG8iSpNjvKtmthlXMFUAZwDwMdn7FzDZ23Rm9tID05SfOGsIWmrWHDlFINvQygDPJXQxwJ8vsCWjQMnRomq6Vao9g0vSU26a5zQqd0O0gbagkKAIejRwyVontDZhsrJHfyr4g" group-title="Украина",Измаiл
+http://stream.shbro.org/stream/14B37BB54802/qplaylistm3u8_161b.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=50537ba9bc3cf8958bb445b74ba099b21e081c49-13306392-images-thumbs&n=13" group-title="Украина",ГLAS PLUS
+http://stream.shbro.org/stream/14B37BB54802/390418m3u8.m3u8
+#EXTINF:-1 tvg-logo="http://epg.one/img2/3652.png" group-title="Украина",AMC
+http://stream.shbro.org/stream/14B37BB54802/1792indexm3u8.m3u8
+#EXTINF:-1 tvg-logo="http://epg.one/img2/8854.png" group-title="Украина",Масон ТВᴴᴰ
+http://stream.shbro.org/stream/14B37BB54802/vhdvideom3u8.m3u8
+#EXTINF:-1 tvg-logo="http://epg.one/img2/8893.png" group-title="Украина",Закон ТВᴴᴰ
+http://stream.shbro.org/stream/14B37BB54802/vhdvideom3u8_ba93.m3u8
+#EXTINF:-1 tvg-logo="https://myradio24.com/users/tisradio/nocover.jpg" group-title="Украина",TRANCE IS STAR RADIO SD
+http://stream.shbro.org/stream/14B37BB54802/oplaylistm3u8_eb5c.m3u8
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/WzLh40Th/image.png" group-title="Украина",Львівська Хвиля FM
+http://stream.shbro.org/stream/14B37BB54802/fm8000lvivfm.m3u8
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/WzLh40Th/image.png" group-title="Украина",Bossa Nova FM
+http://stream.shbro.org/stream/14B37BB54802/diaeeliveNRJ.m3u8
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/WzLh40Th/image.png" group-title="Украина",Army FM
+http://stream.shbro.org/stream/14B37BB54802/1298000ArmyFM.m3u8
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/WzLh40Th/image.png" group-title="Украина",Hope FM
+http://stream.shbro.org/stream/14B37BB54802/777hopefm256.m3u8
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/WzLh40Th/image.png" group-title="Украина",Радiо НВ FM
+http://stream.shbro.org/stream/14B37BB54802/000radionvmp3.m3u8
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/WzLh40Th/image.png" group-title="Украина",Радіо Gora FM
+http://stream.shbro.org/stream/14B37BB54802/8000hiphop128.m3u8
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/WzLh40Th/image.png" group-title="Украина",Тіса FM
+http://stream.shbro.org/stream/14B37BB54802/8000tysafmmp3.m3u8
+#EXTINF:-1 tvg-logo="http://epg.one/img2/103.png" group-title="Украина",100% News
+http://stream.shbro.org/stream/14B37BB54802/331632m3u8.m3u8
+#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/mDh100316/fdbf92fdE0N_/K7YUGwDyFOIwknLyaBkm13gaJoGEdwIAcd9YOniLfYcdOHQn-7COFjkTw3Sh2kyHBFQgWqRUjmiCWq3zfPNCCl_C0G8Rh7HGgWcyclhJBwKsKzdEJDLTpFQfmR-Yfs0SbpumcNmzKbB-1KRzwG_MItRg9PvA8ugMt8pvozhyQEyaVTZopHBnsFYxg-LoOGXC-MqkpZfxUZLEnDiounsKN83Z9SHbIBgB_BZUgICe3bMVQCB6IkEriqVKPkNrEcD9G2bnmxaQhiIGs0PiaSsFAeiYRtYEgMAhZB4oOGoKSFXdmiTimTJZwY43xEJwnq3y5ADjuHBT2lqWmt7jOnHC7conBXslIvaRxILgQYrr1-P46MWXVtHBAQbfiLpq24rWTvhk89tgaQL8FVfyAyzPkeaiYkiAw2kZplnsQmhh4V2YtueppsPn47Sw0LG6SjTDK2hHBFXi0BMFP_lKiZto1Q9YdyHa04kznPREMkMOztGEEVCr0XGpWTQrTxBasvA8C5ake6UD9EImYdHhiWmFYKmLZVfF4FOzVN_aeVvLOaedOqYwaNHoQx8XtdBjvs3wZ7OSOzJhaLqkad7QuvHTPXtmZRq3cYTwV2DQEZvYZ2M6OyckJrKwMOat-gur-ljFj1tUgFsACVGf16Vh002-kuSi8bnw03vZFYv8o1qxQr_ptsQZpmOlAUcigrEJGhVD66gVlCawAMAELGpIOeg7lRzpNeCZ0ogw_zeWkVCPX9OkcZL60CNo-ldqjROq8bN_2ZdnGBezZ8CE8KBwu1o2MuvKhsbUgrGxJjx4-boqeNeey9aAqvDps0xmhlGwXO9AxXEi2hBRmon1mCyAWdLxjqpFJlkWg2fAd2Exsyo5FBK5-dRHRBOxMKR_OTrp6clGDHkWcouBmNA_5AYAQQyucwYBo1piIFkaB8qNgRjiI78rxxV5ZWLmEdcBoGKrGlQCOKoGh_ei0ONEbaq4o" group-title="Украина",Renome
+http://stream.shbro.org/stream/14B37BB54802/istrenomem3u8.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=9eee89bc4a7bee70b96af497561ad2436be9dcab-5870594-images-thumbs&n=13" group-title="Украина",О.Н.Т
+http://stream.shbro.org/stream/14B37BB54802/337533m3u8.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=210e8bb538e6a2d70eb9795304b57d979eea92b7-5233216-images-thumbs&n=13" group-title="Украина",Гордон Live
+http://stream.shbro.org/stream/14B37BB54802/3E820000000.m3u8
+#EXTINF:-1 tvg-logo="http://epg.one/img2/9786.png" group-title="Украина",NTS Moldova
+http://stream.shbro.org/stream/14B37BB54802/55677950000.m3u8
+#EXTINF:-1 tvg-logo="https://images.icon-icons.com/923/PNG/96/telegram_icon-icons.com_72055.png" group-title="Туркменистан",Turkmenistan
+http://stream.shbro.org/stream/14B37BB54802/hlsch005m3u8.m3u8
+#EXTINF:-1 group-title="Туркменистан",Altyn Asyr
+http://stream.shbro.org/stream/14B37BB54802/720indexm3u8_13d4.m3u8
+#EXTINF:-1 group-title="Туркменистан",Yaslyk
+http://stream.shbro.org/stream/14B37BB54802/720indexm3u8_d8ff.m3u8
+#EXTINF:-1 group-title="Туркменистан",Miras
+http://stream.shbro.org/stream/14B37BB54802/720indexm3u8_1429.m3u8
+#EXTINF:-1 group-title="Туркменистан",Turkmen sport
+http://stream.shbro.org/stream/14B37BB54802/720indexm3u8_aa64.m3u8
+#EXTINF:-1 group-title="Туркменистан",Ascabat
+http://stream.shbro.org/stream/14B37BB54802/720indexm3u8_4658.m3u8
+#EXTINF:-1 group-title="Туркменистан",Turkmenistan
+http://stream.shbro.org/stream/14B37BB54802/720indexm3u8_6d82.m3u8
+#EXTINF:-1 group-title="Германия",Allgau TV
+http://stream.shbro.org/stream/14B37BB54802/pplaylistm3u8_ffe9.m3u8
+#EXTINF:-1 group-title="Германия",Augsburg TV
+http://stream.shbro.org/stream/14B37BB54802/pplaylistm3u8_0032.m3u8
+#EXTINF:-1 group-title="Германия",BLK TV
+http://stream.shbro.org/stream/14B37BB54802/hplaylistm3u8.m3u8
+#EXTINF:-1 group-title="Германия",Bibel TV Echt Jetzt
+http://stream.shbro.org/stream/14B37BB54802/1playlistm3u8_f45d.m3u8
+#EXTINF:-1 group-title="Германия",Bibel TV Impuls
+http://stream.shbro.org/stream/14B37BB54802/1playlistm3u8_3b9c.m3u8
+#EXTINF:-1 group-title="Германия",DMF TV
+http://stream.shbro.org/stream/14B37BB54802/1playlistm3u8_aef9.m3u8
+#EXTINF:-1 group-title="Германия",Das Erste
+http://stream.shbro.org/stream/14B37BB54802/r1080p5000m3u8.m3u8
+#EXTINF:-1 group-title="Германия",Die Neue Zeit TV
+http://stream.shbro.org/stream/14B37BB54802/00000sldem3u8.m3u8
+#EXTINF:-1 group-title="Германия",Dokusat
+http://stream.shbro.org/stream/14B37BB54802/1playlistm3u8_f3db.m3u8
+#EXTINF:-1 group-title="Германия",ERZ TV
+http://stream.shbro.org/stream/14B37BB54802/mplaylistm3u8_4287.m3u8
+#EXTINF:-1 group-title="Германия",EWTN Deutsch
+http://stream.shbro.org/stream/14B37BB54802/eplaylistm3u8_edf8.m3u8
+#EXTINF:-1 group-title="Германия",FS1
+http://stream.shbro.org/stream/14B37BB54802/webstreamm3u8.m3u8
+#EXTINF:-1 group-title="Германия",Filstalwelle TV
+http://stream.shbro.org/stream/14B37BB54802/chunklistm3u8_cbb0.m3u8
+#EXTINF:-1 group-title="Германия",Folketinget TV
+http://stream.shbro.org/stream/14B37BB54802/pplehttpam3u8.m3u8
+#EXTINF:-1 group-title="Германия",Franken Fernsehen TV
+http://stream.shbro.org/stream/14B37BB54802/pplaylistm3u8_2c1a.m3u8
+#EXTINF:-1 group-title="Германия",HSE 24
+http://stream.shbro.org/stream/14B37BB54802/4playlistm3u8_4e82.m3u8
+#EXTINF:-1 group-title="Германия",HSE 24 Extra
+http://stream.shbro.org/stream/14B37BB54802/aplaylistm3u8_bae2.m3u8
+#EXTINF:-1 group-title="Германия",HSE 24 Trend
+http://stream.shbro.org/stream/14B37BB54802/dplaylistm3u8_2f68.m3u8
+#EXTINF:-1 group-title="Германия",Handystar TV
+http://stream.shbro.org/stream/14B37BB54802/amPlaylistm3u8.m3u8
+#EXTINF:-1 group-title="Германия",Hitradio OE3
+http://stream.shbro.org/stream/14B37BB54802/amanifestm3u8.m3u8
+#EXTINF:-1 group-title="Германия",Ideaal TV
+http://stream.shbro.org/stream/14B37BB54802/mplaylistm3u8_b79f.m3u8
+#EXTINF:-1 group-title="Германия",Ingolstadt TV
+http://stream.shbro.org/stream/14B37BB54802/pplaylistm3u8_1cae.m3u8
+#EXTINF:-1 group-title="Германия",Ischgl TV
+http://stream.shbro.org/stream/14B37BB54802/livestreamm3u8.m3u8
+#EXTINF:-1 group-title="Германия",Juwelo DE
+http://stream.shbro.org/stream/14B37BB54802/1264livem3u8.m3u8
+#EXTINF:-1 group-title="Германия",Kath TV
+http://stream.shbro.org/stream/14B37BB54802/8443720pm3u8.m3u8
+#EXTINF:-1 group-title="Германия",Kaufbei TV Deutsch
+http://stream.shbro.org/stream/14B37BB54802/03stream0m3u8.m3u8
+#EXTINF:-1 group-title="Германия",Kika
+http://stream.shbro.org/stream/14B37BB54802/wwmasterm3u8.m3u8
+#EXTINF:-1 group-title="Германия",L1 Limburg
+http://stream.shbro.org/stream/14B37BB54802/1tvindexm3u8.m3u8
+#EXTINF:-1 group-title="Германия",Light Channel TV DE
+http://stream.shbro.org/stream/14B37BB54802/chunklistm3u8_f486.m3u8
+#EXTINF:-1 group-title="Германия",MDF.1
+http://stream.shbro.org/stream/14B37BB54802/hplaylistm3u8_01e1.m3u8
+#EXTINF:-1 group-title="Германия",More than Sports TV
+http://stream.shbro.org/stream/14B37BB54802/bplaylistm3u8.m3u8
+#EXTINF:-1 group-title="Германия",NDR
+http://stream.shbro.org/stream/14B37BB54802/intmasterm3u8.m3u8
+#EXTINF:-1 group-title="Германия",NDR 1 Radio MV
+http://stream.shbro.org/stream/14B37BB54802/master720m3u8.m3u8
+#EXTINF:-1 group-title="Германия",NOA 4 Hamburg
+http://stream.shbro.org/stream/14B37BB54802/ewifi6500m3u8.m3u8
+#EXTINF:-1 group-title="Германия",NOA 4 Norderstedt
+http://stream.shbro.org/stream/14B37BB54802/ewifi6500m3u8_8b13.m3u8
+#EXTINF:-1 group-title="Германия",Niederbayern TV Deggendorf
+http://stream.shbro.org/stream/14B37BB54802/pplaylistm3u8_afef.m3u8
+#EXTINF:-1 group-title="Германия",Niederbayern TV Landshut
+http://stream.shbro.org/stream/14B37BB54802/pplaylistm3u8_7fe8.m3u8
+#EXTINF:-1 group-title="Германия",Niederbayern TV Passau
+http://stream.shbro.org/stream/14B37BB54802/pplaylistm3u8_5d45.m3u8
+#EXTINF:-1 group-title="Германия",Nrwision TV
+http://stream.shbro.org/stream/14B37BB54802/mplaylistm3u8_2303.m3u8
+#EXTINF:-1 group-title="Германия",OF TV
+http://stream.shbro.org/stream/14B37BB54802/chunklistm3u8_8aed.m3u8
+#EXTINF:-1 group-title="Германия",OK Dessau
+http://stream.shbro.org/stream/14B37BB54802/hplaylistm3u8_6a6c.m3u8
+#EXTINF:-1 group-title="Германия",OK Kiel TV
+http://stream.shbro.org/stream/14B37BB54802/eltvindexm3u8.m3u8
+#EXTINF:-1 group-title="Германия",OK Magdeburg
+http://stream.shbro.org/stream/14B37BB54802/hplaylistm3u8_b41e.m3u8
+#EXTINF:-1 group-title="Германия",OK Merseburg
+http://stream.shbro.org/stream/14B37BB54802/hplaylistm3u8_dcaf.m3u8
+#EXTINF:-1 group-title="Германия",OK Salzwedel
+http://stream.shbro.org/stream/14B37BB54802/hplaylistm3u8_eddd.m3u8
+#EXTINF:-1 group-title="Германия",OK Stendal
+http://stream.shbro.org/stream/14B37BB54802/hplaylistm3u8_e68e.m3u8
+#EXTINF:-1 group-title="Германия",OK Wernigerode
+http://stream.shbro.org/stream/14B37BB54802/chunklistm3u8_4a7c.m3u8
+#EXTINF:-1 group-title="Германия",OK Wettin
+http://stream.shbro.org/stream/14B37BB54802/hplaylistm3u8_63a4.m3u8
+#EXTINF:-1 group-title="Германия",Okto TV
+http://stream.shbro.org/stream/14B37BB54802/eplaylistm3u8_9da1.m3u8
+#EXTINF:-1 group-title="Германия",PunktUM
+http://stream.shbro.org/stream/14B37BB54802/hplaylistm3u8_3f0c.m3u8
+#EXTINF:-1 group-title="Германия",QVC 1 DE
+http://stream.shbro.org/stream/14B37BB54802/04qvc33m3u8.m3u8
+#EXTINF:-1 group-title="Германия",QVC 2 DE
+http://stream.shbro.org/stream/14B37BB54802/9variantm3u8.m3u8
+#EXTINF:-1 group-title="Германия",QVC Style DE
+http://stream.shbro.org/stream/14B37BB54802/0efindexm3u8.m3u8
+#EXTINF:-1 group-title="Германия",RBW
+http://stream.shbro.org/stream/14B37BB54802/hplaylistm3u8_38a8.m3u8
+#EXTINF:-1 group-title="Германия",RFH TV
+http://stream.shbro.org/stream/14B37BB54802/hplaylistm3u8_436d.m3u8
+#EXTINF:-1 group-title="Германия",RFO TV
+http://stream.shbro.org/stream/14B37BB54802/pplaylistm3u8_827f.m3u8
+#EXTINF:-1 group-title="Германия",Ran 1
+http://stream.shbro.org/stream/14B37BB54802/hplaylistm3u8_0679.m3u8
+#EXTINF:-1 group-title="Германия",Regio TV Bodensee
+http://stream.shbro.org/stream/14B37BB54802/1playlistm3u8_3f4c.m3u8
+#EXTINF:-1 group-title="Германия",Regio TV Stuttgart
+http://stream.shbro.org/stream/14B37BB54802/1playlistm3u8_863a.m3u8
+#EXTINF:-1 group-title="Германия",SR Fernsehen
+http://stream.shbro.org/stream/14B37BB54802/720p3328m3u8.m3u8
+#EXTINF:-1 group-title="Германия",SWR 3
+http://stream.shbro.org/stream/14B37BB54802/720p3328m3u8_3b63.m3u8
+#EXTINF:-1 group-title="Германия",SWR Dasding
+http://stream.shbro.org/stream/14B37BB54802/720p3328m3u8_69dd.m3u8
+#EXTINF:-1 group-title="Германия",Saarland TV 1
+http://stream.shbro.org/stream/14B37BB54802/1playlistm3u8_ea2b.m3u8
+#EXTINF:-1 group-title="Германия",Saarland TV 2
+http://stream.shbro.org/stream/14B37BB54802/1playlistm3u8_b8ec.m3u8
+#EXTINF:-1 group-title="Германия",Sachsen Eins
+http://stream.shbro.org/stream/14B37BB54802/1playlistm3u8_b4ab.m3u8
+#EXTINF:-1 group-title="Германия",Sachsen Fernsehen Chemnitz
+http://stream.shbro.org/stream/14B37BB54802/1playlistm3u8_629e.m3u8
+#EXTINF:-1 group-title="Германия",Sachsen Fernsehen Dresden
+http://stream.shbro.org/stream/14B37BB54802/1playlistm3u8_985d.m3u8
+#EXTINF:-1 group-title="Германия",Sachsen Fernsehen Leipzig
+http://stream.shbro.org/stream/14B37BB54802/1playlistm3u8_44bd.m3u8
+#EXTINF:-1 group-title="Германия",Seenluft 24
+http://stream.shbro.org/stream/14B37BB54802/chunklistm3u8_4c49.m3u8
+#EXTINF:-1 group-title="Германия",Sonnenklar TV
+http://stream.shbro.org/stream/14B37BB54802/amPlaylistm3u8_0e00.m3u8
+#EXTINF:-1 group-title="Германия",Sylt 1
+http://stream.shbro.org/stream/14B37BB54802/chunklistm3u8_ecdc.m3u8
+#EXTINF:-1 group-title="Германия",TV Aktuell (DE)
+http://stream.shbro.org/stream/14B37BB54802/pplaylistm3u8_35b2.m3u8
+#EXTINF:-1 group-title="Германия",TV Mainfranken
+http://stream.shbro.org/stream/14B37BB54802/pplaylistm3u8_fcc2.m3u8
+#EXTINF:-1 group-title="Германия",TV Oberfranken
+http://stream.shbro.org/stream/14B37BB54802/pplaylistm3u8_1e64.m3u8
+#EXTINF:-1 group-title="Германия",Tagesschau 24
+http://stream.shbro.org/stream/14B37BB54802/720p3328m3u8_5f28.m3u8
+#EXTINF:-1 group-title="Германия",Tagesschau 24 Live
+http://stream.shbro.org/stream/14B37BB54802/720p3328m3u8_0418.m3u8
+#EXTINF:-1 group-title="Германия",UStad TV
+http://stream.shbro.org/stream/14B37BB54802/stadindexm3u8.m3u8
+#EXTINF:-1 group-title="Германия",Volksmusik TV
+http://stream.shbro.org/stream/14B37BB54802/1playlistm3u8_44b2.m3u8
+#EXTINF:-1 group-title="Германия",WDR Fernsehen
+http://stream.shbro.org/stream/14B37BB54802/aster3328m3u8.m3u8
+#EXTINF:-1 group-title="Германия",Welt der Wunder
+http://stream.shbro.org/stream/14B37BB54802/1playlistm3u8_fb07.m3u8
+#EXTINF:-1 group-title="Германия",XITE DE
+http://stream.shbro.org/stream/14B37BB54802/vttindexm3u8.m3u8
+#EXTINF:-1 group-title="Германия",ZICO TV
+http://stream.shbro.org/stream/14B37BB54802/v2a1monom3u8_3288.m3u8
+#EXTINF:-1 group-title="Германия",Bibel TV Musik
+http://stream.shbro.org/stream/14B37BB54802/1playlistm3u8_d076.m3u8
+#EXTINF:-1 group-title="Германия",HSE24
+http://stream.shbro.org/stream/14B37BB54802/er1080p25m3u8.m3u8
+#EXTINF:-1 group-title="Германия",OK Dessau
+http://stream.shbro.org/stream/14B37BB54802/hplaylistm3u8_397c.m3u8
+#EXTINF:-1 group-title="Германия",OK Stendal
+http://stream.shbro.org/stream/14B37BB54802/hplaylistm3u8_3f04.m3u8
+#EXTINF:-1 group-title="Германия",PunktUM
+http://stream.shbro.org/stream/14B37BB54802/hplaylistm3u8_91ba.m3u8
+#EXTINF:-1 group-title="Германия",Ran 1
+http://stream.shbro.org/stream/14B37BB54802/hplaylistm3u8_8561.m3u8
+#EXTINF:-1 group-title="Германия",WDR Koeln
+http://stream.shbro.org/stream/14B37BB54802/247masterm3u8.m3u8
+#EXTINF:-1 group-title="Германия",Erz-TV Stollberg
+http://stream.shbro.org/stream/14B37BB54802/mplaylistm3u8_b4cc.m3u8
+#EXTINF:-1 group-title="Германия",HSE
+http://stream.shbro.org/stream/14B37BB54802/4playlistm3u8_3e1e.m3u8
+#EXTINF:-1 group-title="Германия",HSE24 Extra
+http://stream.shbro.org/stream/14B37BB54802/aplaylistm3u8_5674.m3u8
+#EXTINF:-1 group-title="Германия",HSE24 Trend
+http://stream.shbro.org/stream/14B37BB54802/dplaylistm3u8_b7db.m3u8
+#EXTINF:-1 group-title="Германия",KulturMD
+http://stream.shbro.org/stream/14B37BB54802/hplaylistm3u8_abae.m3u8
+#EXTINF:-1 group-title="Германия",Light Channel
+http://stream.shbro.org/stream/14B37BB54802/eplaylistm3u8_7a34.m3u8
+#EXTINF:-1 group-title="Германия",MDF.1
+http://stream.shbro.org/stream/14B37BB54802/hplaylistm3u8_0357.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/okdessau.png" group-title="Германия",OK Dessau
+http://stream.shbro.org/stream/14B37BB54802/hplaylistm3u8_5d4e.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/okmagdeburg.png" group-title="Германия",OK Magdeburg
+http://stream.shbro.org/stream/14B37BB54802/hplaylistm3u8_630e.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/okmerseburg.png" group-title="Германия",OK Merseburg-Querfurt
+http://stream.shbro.org/stream/14B37BB54802/hplaylistm3u8_c951.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/oksalzwedel.png" group-title="Германия",OK Salzwedel
+http://stream.shbro.org/stream/14B37BB54802/hplaylistm3u8_208a.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/okstendal.png" group-title="Германия",OK Stendal
+http://stream.shbro.org/stream/14B37BB54802/hplaylistm3u8_8e9c.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/okwernigerode.png" group-title="Германия",OK Wernigerode
+http://stream.shbro.org/stream/14B37BB54802/hplaylistm3u8_5124.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=5ff54632cfe1f24e0459eea5fe40db2b0b5bff72-10375362-images-thumbs&n=13" group-title="Турция",24 TV Turkey
+http://stream.shbro.org/stream/14B37BB54802/tv24720pm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=ba0b775d5f4397053c266d96b777970f0c0621de-4477174-images-thumbs&n=13" group-title="Турция",360 TV Turkey
+http://stream.shbro.org/stream/14B37BB54802/tv360720pm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=e0091919de0ed0c427c79a1ff84aca95b2402133-5869848-images-thumbs&n=13" group-title="Турция",A Spor
+http://stream.shbro.org/stream/14B37BB54802/aspor480pm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=b85a757fb544a7c4e8d85d444da99937a24c8473-12319474-images-thumbs&n=13" group-title="Турция",Aksu TV
+http://stream.shbro.org/stream/14B37BB54802/vplaylistm3u8_fdae.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=a9f92ee84ea5e55745b0239ab744638c7ef441ee-16431805-images-thumbs&n=13" group-title="Турция",BIR TV
+http://stream.shbro.org/stream/14B37BB54802/1playlistm3u8_fe52.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=f2f5f91744049f2f5a1d93214130879c991b22d2-4592723-images-thumbs&n=13" group-title="Турция",BRT 1
+http://stream.shbro.org/stream/14B37BB54802/nt1chunksm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=95fa7beacfe7657791444264722455284e073f04-12647631-images-thumbs&n=13" group-title="Турция",BRT 2
+http://stream.shbro.org/stream/14B37BB54802/nt1chunksm3u8_8e47.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=612bcd40afd69cad68e4fd80da390b5e32f9ded1-6907564-images-thumbs&n=13" group-title="Турция",BRİÇ VE SANTRAÇ TV
+http://stream.shbro.org/stream/14B37BB54802/testindexm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=8f1f2e80af0c17b63c00058fa73e3704bc90a0aa-4120554-images-thumbs&n=13" group-title="Турция",Balkan Turk
+http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_b3ef.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=5a1b0615b560ed0433eb63eed3a66a285dc623ba-4876801-images-thumbs&n=13" group-title="Турция",Bengu Turk
+http://stream.shbro.org/stream/14B37BB54802/uturk720pm3u8.m3u8
+#EXTINF:-1 group-title="Турция",Beyaz TV
+http://stream.shbro.org/stream/14B37BB54802/yaztv720pm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=956bd98e294549b36ed83625c15590fb554a5e4b-5298842-images-thumbs&n=13" group-title="Турция",Bloomberg HT
+http://stream.shbro.org/stream/14B37BB54802/loomberghtm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=c7ce19bb6d754c4ca05652944d1fd34bb0249cb8-12529201-images-thumbs&n=13" group-title="Турция",Cay TV
+http://stream.shbro.org/stream/14B37BB54802/nt1chunksm3u8_2ec5.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=6b2715232a87be34ae00f0407b9fddd7584fd1fe-4261963-images-thumbs&n=13" group-title="Турция",DREAM TV TURK
+http://stream.shbro.org/stream/14B37BB54802/0playlistm3u8_5412.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=31255a40e9408213a3e777585e009442c3158ce2-12569767-images-thumbs&n=13" group-title="Турция",Deniz Postasi
+http://stream.shbro.org/stream/14B37BB54802/iplaylistm3u8_24a1.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=ff12c35f0cd1fc6228d83f28e66ab974291eded0-12515389-images-thumbs&n=13" group-title="Турция",Diyanet TV
+http://stream.shbro.org/stream/14B37BB54802/lplaylistm3u8_147e.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=ab21cdbecea2cfff011389f4292a24ae6f0b5d6f-4531115-images-thumbs&n=13" group-title="Турция",ESTV TURK
+http://stream.shbro.org/stream/14B37BB54802/vplaylistm3u8_b896.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=f240801af2b8e7228de4223fd0b6f9240bfd4f29-5661435-images-thumbs&n=13" group-title="Турция",Euro DNP
+http://stream.shbro.org/stream/14B37BB54802/0playlistm3u8_17fb.m3u8
+#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/E4BH72L83/0733ecCT/-BHgO9aA9k8lH1lQcolfy_gHgVwH7aJqi4eQz6e0sOv_oTdoX1HTMZuylm2vR2MkXIaYDhqfDqc9w3Kapz9hEo01sEryRMJekOpNMZadn7toRnXt022mG06nIb4SsSTLOsSyWCk3JDPcFHHOqMAB84hjCMtPvtomSWXRC-DIhjUpQSN6ZdBVa9e9CESyak0Ku1cFrobs1hkO17B6MNG3jshjhf_otGdRLXeyDpsQsOIbcLkIXq1uFVtnUr9xOhSlyuHxKday1euW3GiEsAufC2s3RB-1XgaoDoSiOBJydT4LA0efSEWXgdzGw-8o0DLheKJqmS0fTLdpRJFfsjhE5mgh8vuWUtQ7FT3LdHF6Lkn4h0Vf5Xw0OJz0g9kx0ObtClAUX3gEZjGNVZBNmIEhMbnDqbkd_69nKtRhnrMa9HWbUmK7teDGeqV8uvegai9LWuZ2jHUPxqtvB-B7AeKX7YiiVe64dlegT2bAXRtRc_M60ejIL089VJuUQH-xOjVnGzESqfbBhRnmv5gkEHp9O3iHZyx0LjX5bgVS-AATRR8LQxfMacRWwVy0w-_rAzMjS0N5im0-PvQa9pC9AnsF56hz0lq28lfa5q0Kd_Bo7_up1RVOVf3VGV1lUHvzoVesyoPHj1j25RPsdiK-6KEQIfqQKAoeTfz2a1TAz2J5JTcZMlJKFjDkWPb_2TQAeC_5WXbFjMVMlhhvBhKpcbDlv-ljVjxYZmWxv1XRvKlTAAF4UCpoHL5uZ6i0Y69TGjZWinJCqZeClFrHHrjngzgfaxsVdZ2EHleZDGeCmgPh5u-YUZbd2GWE4e7loZ_JUjFT2QAayRzsX4YoJEHcoWi3BnsB8Jq0orfr5d_7BiI5vhjIprSd1h50Kb5VwMiyYPa8S7FGbfo2psO-tfNtaOIRsmjRSRpNHG1UKeRybLCoFrW6MAKKpsOUGQW8GKeCSR6KqRV2PJVfths-1AErMeG1k" group-title="Турция",Fresh TV
+http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_5d38.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=47b52e89a449a5541bb1892fa746d98187375ed4-5233217-images-thumbs&n=13" group-title="Турция",Haber Global
+http://stream.shbro.org/stream/14B37BB54802/lobal720pm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/E4BH72L83/0733ecCT/-BHgO9aA9k8lH1lQcolfy_gHgVwH7aJqi4eQz6K0de7vtEcdf1TzMd5Xw2jfNyN0PMYYC0r6G-IdRkKf11oxAh1l9SrSRIIeUFpdIcfJ3_uoJlSINvxnys5WNOpicPB-b_Ryfuk2xDPtxXAfGCDhgPnj-Gtea7-WuzXW_SCIVkZJo9DZ1xPHabffOEXgG24ouVYX3beMZYq-x_DIAuO1jMjD1b9qdabCjgawLMiR8BPqUjt6Td-MhLm2YmzSGsal6XGDarWTRyjWv_hHgclv-NkXpu4FXNSK7dWy6qEhBU-oAbUfm4V2Mz93UZ8IE_NwOIGqCf_9LraadYKv0EqFBylyUSpVkperNxwIhvB4LWtpFua-J25EGJ30U8kDstZO-1J1L9p0xmKsJPMvWQAjsVlCijkfHv71CoVDrvL6FvRa4hEJ54DWG3Zti1fgeS_JCCU1LlSc1-tul_H5McPWzAkTxO-oRVegn3TjrIlS4TJLA_sLr4zNREqkoqzSOwR0OZIDSsbDtVi1T1jn8Ctf62k0lS91b4XqbCVy-MARJE_oUeY-GkQ2s013UVzbEjFD2ZK5Sd6PbcUodGAfkwuEx3tS8Ar1EXZYp90LB-K5nzo7RvcOpo9l2Qwn8QtyA5eOKIGlDyj35AOPlgBfeTEz8grDOTqtTW-0iiQSf5ErVHY60uCqN6L0SPUOSPfyeZ3KmJY1nhfMZOtvZSOJY7GErcgQFg-4d0ZQrGUCHoshE3DKwVs4Xt_-d2qHck7yODXlesIDK4XS9nkUb5t0skkPiPsmJN9FDeWIDvUQ-zKy1Nz60PePu5YWARwVIX6KEEHRmvH6OAzuH_f6pQG8gLllFAlwMAil8Udb1Sx61bPofFtI5ySNRS5VOjy3QkqzoocPGgBHrei0NFFMR9PfOjCgYEuiKWn83M32OpaxrUAY1tU4giAaxNK1u7bP23XDSO46-yWFzgTsZ7q9dqHJMuGl4" group-title="Турция",Haber Turk
+http://stream.shbro.org/stream/14B37BB54802/rturk720pm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=9dad4442c58a0e065276bef60b612adf917fbe50-4162430-images-thumbs&n=13" group-title="Турция",Hala London
+http://stream.shbro.org/stream/14B37BB54802/halalondonm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=8e9ae50be43f1ef3952f0c859530701e49b5802a-12518569-images-thumbs&n=13" group-title="Турция",Hala TV
+http://stream.shbro.org/stream/14B37BB54802/aTVchunksm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/E4BH72L83/0733ecCT/-BHgO9aA9k8lH1lQcolfy_gHgVwH7aJqi4eQz6c05fv6YQLdStTzcY4npq3vMlM0PJaNvnqabpJNhnLKkj8EJ2gwxUrSRIJ-gOodIbfJ3_uoJlSINvxnys5WNOpicPB-b_Ryfuk2xDPtxXAfGCDhgPnj-Gtea7-WuzXW_SCIVkZJo9DZ1xPHabffOEXgG24ouVYX3beMZYq-x_DIAuO1jMjD1b9qdabCjgawLMiR8BPqUjt6Td-MhLm2YmzSGsal6XGDarWTRyjWv_hHgclv-NkXpu4FXNSK7dWy6qEhBU-oAbUfm4V2Mz93UZ8IE_NwOIGqCf_9LraadYKv0EqFBylyUSpVkperNxwIhvB4LWtpFua-J25EGJ30U8kDstZO-1J1L9p0xmKsJPMvWQAjsVlCijkfHv71CoVDrvL6FvRa4hEJ54DWG3Zti1fgeS_JCCU1LlSc1-tul_H5McPWzAkTxO-oRVegn3TjrIlS4TJLA_sLr4zNREqkoqzSOwR0OZIDSsbDtVi1T1jn8Ctf62k0lS91b4XqbCVy-MARJE_oUeY-GkQ2s013UVzbEjFD2ZK5Sd6PbcUodGAfkwuEx3tS8Ar1EXZYp90LB-K5nzo7RvcOpo9l2Qwn8QtyA5eOKIGlDyj35AOPlgBfeTEz8grDOTqtTW-0iiQSf5ErVHY60uCqN6L0SPUOSPfyeZ3KmJY1nhfMZOtvZSOJY7GErcgQFg-4d0ZQrGUCHoshE3DKwVs4Xt_-d2qHck7yODXlesIDK4XS9nkUb5t0skkPiPsmJN9FDeWIDvUQ-zKy1Nz60PePu5YWARwVIX6KEEHRmvH6OAzuH_f6pQG8gLllFAlwMAil8Udb1Sx61bPofFtI5ySNRS5VOjy3QkqzoocPGgBHrei0NFFMR9PfOjCgYEuiKWn83M32OpaxrUAY1tU4giAaxNK1u7bP23XDSO46-yWFzgTsZ7q9dqHJMuGl4" group-title="Турция",Icel TV
+http://stream.shbro.org/stream/14B37BB54802/1playlistm3u8_305e.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=61b5cd225a8cf9d71a0a86fca612dff111594825-4251909-images-thumbs&n=13" group-title="Турция",Kanal 15
+http://stream.shbro.org/stream/14B37BB54802/l15chunksm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=621515ac1b3a31bf923eed60081bfa0f6f879d1c-5829296-images-thumbs&n=13" group-title="Турция",Kanal 23
+http://stream.shbro.org/stream/14B37BB54802/l23chunksm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=382db90e3c772f2e407dcf5077ed722900876688-4010643-images-thumbs&n=13" group-title="Турция",Kanal 33
+http://stream.shbro.org/stream/14B37BB54802/nt1chunksm3u8_8a06.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=b438fb459b3d0745a1b5f5fa8aa89aaaf616e618-4322237-images-thumbs&n=13" group-title="Турция",Kanal 34
+http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_bbeb.m3u8
+#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/E4BH72L83/0733ecCT/-BHgO9aA9k8lH1lQcolfy_gHgVwH7aJqi4eQz6K0kN6qBFJob4TDoYsH5niv1wNU7IM9Llr_HvJ980eap49hIk0AxQ-CRFIO0MoNQafJ3_uoJlSINvxnys5WNOpicPB-b_Ryfuk2xDPtxXAfGCDhgPnj-Gtea7-WuzXW_SCIVkZJo9DZ1xPHabffOEXgG24ouVYX3beMZYq-x_DIAuO1jMjD1b9qdabCjgawLMiR8BPqUjt6Td-MhLm2YmzSGsal6XGDarWTRyjWv_hHgclv-NkXpu4FXNSK7dWy6qEhBU-oAbUfm4V2Mz93UZ8IE_NwOIGqCf_9LraadYKv0EqFBylyUSpVkperNxwIhvB4LWtpFua-J25EGJ30U8kDstZO-1J1L9p0xmKsJPMvWQAjsVlCijkfHv71CoVDrvL6FvRa4hEJ54DWG3Zti1fgeS_JCCU1LlSc1-tul_H5McPWzAkTxO-oRVegn3TjrIlS4TJLA_sLr4zNREqkoqzSOwR0OZIDSsbDtVi1T1jn8Ctf62k0lS91b4XqbCVy-MARJE_oUeY-GkQ2s013UVzbEjFD2ZK5Sd6PbcUodGAfkwuEx3tS8Ar1EXZYp90LB-K5nzo7RvcOpo9l2Qwn8QtyA5eOKIGlDyj35AOPlgBfeTEz8grDOTqtTW-0iiQSf5ErVHY60uCqN6L0SPUOSPfyeZ3KmJY1nhfMZOtvZSOJY7GErcgQFg-4d0ZQrGUCHoshE3DKwVs4Xt_-d2qHck7yODXlesIDK4XS9nkUb5t0skkPiPsmJN9FDeWIDvUQ-zKy1Nz60PePu5YWARwVIX6KEEHRmvH6OAzuH_f6pQG8gLllFAlwMAil8Udb1Sx61bPofFtI5ySNRS5VOjy3QkqzoocPGgBHrei0NFFMR9PfOjCgYEuiKWn83M32OpaxrUAY1tU4giAaxNK1u7bP23XDSO46-yWFzgTsZ7q9dqHJMuGl4" group-title="Турция",Kanal 58
+http://stream.shbro.org/stream/14B37BB54802/l58chunksm3u8.m3u8
+#EXTINF:-1 group-title="Турция",Kanal 7
+http://stream.shbro.org/stream/14B37BB54802/nal71080pm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=1a56680a6383023c23ca1705300b38123607da31-4559743-images-thumbs&n=13" group-title="Турция",Kanal 7 Avrupa
+http://stream.shbro.org/stream/14B37BB54802/chunklistm3u8_7e41.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=22b3e25a0c1ec02fa29460533eca3bd7b90218f9-5630042-images-thumbs&n=13" group-title="Турция",Kanal Avrupa
+http://stream.shbro.org/stream/14B37BB54802/v2a1monom3u8_a1db.m3u8
+#EXTINF:-1 group-title="Турция",Kanal D
+http://stream.shbro.org/stream/14B37BB54802/0playlistm3u8_1c25.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=5b6008c036d646408acca82a2c7ad02d7b215724-4026925-images-thumbs&n=13" group-title="Турция",Kanal D Drama
+http://stream.shbro.org/stream/14B37BB54802/nplaylistm3u8_6032.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=7fc5d852c24d874411b7a19342780a80fa583840-5870716-images-thumbs&n=13" group-title="Турция",Kibris
+http://stream.shbro.org/stream/14B37BB54802/nt1chunksm3u8_5de0.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=d7f51218c7cc1fcacdade8cbd3fd5b0d6d70496f-4442687-images-thumbs&n=13" group-title="Турция",Kibris Ada TV
+http://stream.shbro.org/stream/14B37BB54802/nt1chunksm3u8_2e6b.m3u8
+#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/E4BH72L83/0733ecCT/-BHgO9aA9k8lH1lQcolfy_gHgVwH7aJqi4eQz6c0wPuaFOctOtTDQfunphgKYmZUabNNTjqaHtJo03fP908BZz1Q1X_yRIJegJqNYQfJ3_uoJlSINvxnys5WNOpicPB-b_Ryfuk2xDPtxXAfGCDhgPnj-Gtea7-WuzXW_SCIVkZJo9DZ1xPHabffOEXgG24ouVYX3beMZYq-x_DIAuO1jMjD1b9qdabCjgawLMiR8BPqUjt6Td-MhLm2YmzSGsal6XGDarWTRyjWv_hHgclv-NkXpu4FXNSK7dWy6qEhBU-oAbUfm4V2Mz93UZ8IE_NwOIGqCf_9LraadYKv0EqFBylyUSpVkperNxwIhvB4LWtpFua-J25EGJ30U8kDstZO-1J1L9p0xmKsJPMvWQAjsVlCijkfHv71CoVDrvL6FvRa4hEJ54DWG3Zti1fgeS_JCCU1LlSc1-tul_H5McPWzAkTxO-oRVegn3TjrIlS4TJLA_sLr4zNREqkoqzSOwR0OZIDSsbDtVi1T1jn8Ctf62k0lS91b4XqbCVy-MARJE_oUeY-GkQ2s013UVzbEjFD2ZK5Sd6PbcUodGAfkwuEx3tS8Ar1EXZYp90LB-K5nzo7RvcOpo9l2Qwn8QtyA5eOKIGlDyj35AOPlgBfeTEz8grDOTqtTW-0iiQSf5ErVHY60uCqN6L0SPUOSPfyeZ3KmJY1nhfMZOtvZSOJY7GErcgQFg-4d0ZQrGUCHoshE3DKwVs4Xt_-d2qHck7yODXlesIDK4XS9nkUb5t0skkPiPsmJN9FDeWIDvUQ-zKy1Nz60PePu5YWARwVIX6KEEHRmvH6OAzuH_f6pQG8gLllFAlwMAil8Udb1Sx61bPofFtI5ySNRS5VOjy3QkqzoocPGgBHrei0NFFMR9PfOjCgYEuiKWn83M32OpaxrUAY1tU4giAaxNK1u7bP23XDSO46-yWFzgTsZ7q9dqHJMuGl4" group-title="Турция",Kibris Genc TV
+http://stream.shbro.org/stream/14B37BB54802/nt1chunksm3u8_5306.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=7fc5d852c24d874411b7a19342780a80fa583840-5870716-images-thumbs&n=13" group-title="Турция",Kibris Sim TV
+http://stream.shbro.org/stream/14B37BB54802/nt1chunksm3u8_0398.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=a225ee94f08df3b076e1d3fc7b593f2f1652a911-2032062-images-thumbs&n=13" group-title="Турция",Kral Pop TV
+http://stream.shbro.org/stream/14B37BB54802/puhukralpopdai.m3u8
+#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/E4BH72L83/0733ecCT/-BHgO9aA9k8lH1lQcolfy_gHgVwH7aJqi4eQz6eR0F7fNFJoD6SGZNtXthi6EkYEXMMoHn__S5c9kwLP0johEm2A5VqyRIJe8Ip9IQfJ3_uoJlSINvxnys5WNOpicPB-b_Ryfuk2xDPtxXAfGCDhgPnj-Gtea7-WuzXW_SCIVkZJo9DZ1xPHabffOEXgG24ouVYX3beMZYq-x_DIAuO1jMjD1b9qdabCjgawLMiR8BPqUjt6Td-MhLm2YmzSGsal6XGDarWTRyjWv_hHgclv-NkXpu4FXNSK7dWy6qEhBU-oAbUfm4V2Mz93UZ8IE_NwOIGqCf_9LraadYKv0EqFBylyUSpVkperNxwIhvB4LWtpFua-J25EGJ30U8kDstZO-1J1L9p0xmKsJPMvWQAjsVlCijkfHv71CoVDrvL6FvRa4hEJ54DWG3Zti1fgeS_JCCU1LlSc1-tul_H5McPWzAkTxO-oRVegn3TjrIlS4TJLA_sLr4zNREqkoqzSOwR0OZIDSsbDtVi1T1jn8Ctf62k0lS91b4XqbCVy-MARJE_oUeY-GkQ2s013UVzbEjFD2ZK5Sd6PbcUodGAfkwuEx3tS8Ar1EXZYp90LB-K5nzo7RvcOpo9l2Qwn8QtyA5eOKIGlDyj35AOPlgBfeTEz8grDOTqtTW-0iiQSf5ErVHY60uCqN6L0SPUOSPfyeZ3KmJY1nhfMZOtvZSOJY7GErcgQFg-4d0ZQrGUCHoshE3DKwVs4Xt_-d2qHck7yODXlesIDK4XS9nkUb5t0skkPiPsmJN9FDeWIDvUQ-zKy1Nz60PePu5YWARwVIX6KEEHRmvH6OAzuH_f6pQG8gLllFAlwMAil8Udb1Sx61bPofFtI5ySNRS5VOjy3QkqzoocPGgBHrei0NFFMR9PfOjCgYEuiKWn83M32OpaxrUAY1tU4giAaxNK1u7bP23XDSO46-yWFzgTsZ7q9dqHJMuGl4" group-title="Турция",Life TV Turk
+http://stream.shbro.org/stream/14B37BB54802/vplaylistm3u8_7c70.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=df483e7c0454be695cf5779edaf81f0d7889d735-16418177-images-thumbs&n=13" group-title="Турция",MC EU TV
+http://stream.shbro.org/stream/14B37BB54802/chunklistm3u8_011e.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=dbb0181703369b971292cc1bf7c6b6383dc1939f-4696439-images-thumbs&n=13" group-title="Турция",Med Muzik TV
+http://stream.shbro.org/stream/14B37BB54802/ive3live3m3u8.m3u8
+#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/E4BH72L83/0733ecCT/-BHgO9aA9k8lH1lQcolfy_gHgVwH7aJqi4eQz6fR0J7fJHIon6GmFL4H1k3KZ3MELMYdTj-KW0J4kzKfx2-UQj0w1V_iRII-UIotQefJ3_uoJlSINvxnys5WNOpicPB-b_Ryfuk2xDPtxXAfGCDhgPnj-Gtea7-WuzXW_SCIVkZJo9DZ1xPHabffOEXgG24ouVYX3beMZYq-x_DIAuO1jMjD1b9qdabCjgawLMiR8BPqUjt6Td-MhLm2YmzSGsal6XGDarWTRyjWv_hHgclv-NkXpu4FXNSK7dWy6qEhBU-oAbUfm4V2Mz93UZ8IE_NwOIGqCf_9LraadYKv0EqFBylyUSpVkperNxwIhvB4LWtpFua-J25EGJ30U8kDstZO-1J1L9p0xmKsJPMvWQAjsVlCijkfHv71CoVDrvL6FvRa4hEJ54DWG3Zti1fgeS_JCCU1LlSc1-tul_H5McPWzAkTxO-oRVegn3TjrIlS4TJLA_sLr4zNREqkoqzSOwR0OZIDSsbDtVi1T1jn8Ctf62k0lS91b4XqbCVy-MARJE_oUeY-GkQ2s013UVzbEjFD2ZK5Sd6PbcUodGAfkwuEx3tS8Ar1EXZYp90LB-K5nzo7RvcOpo9l2Qwn8QtyA5eOKIGlDyj35AOPlgBfeTEz8grDOTqtTW-0iiQSf5ErVHY60uCqN6L0SPUOSPfyeZ3KmJY1nhfMZOtvZSOJY7GErcgQFg-4d0ZQrGUCHoshE3DKwVs4Xt_-d2qHck7yODXlesIDK4XS9nkUb5t0skkPiPsmJN9FDeWIDvUQ-zKy1Nz60PePu5YWARwVIX6KEEHRmvH6OAzuH_f6pQG8gLllFAlwMAil8Udb1Sx61bPofFtI5ySNRS5VOjy3QkqzoocPGgBHrei0NFFMR9PfOjCgYEuiKWn83M32OpaxrUAY1tU4giAaxNK1u7bP23XDSO46-yWFzgTsZ7q9dqHJMuGl4" group-title="Турция",Minika Cocuk
+http://stream.shbro.org/stream/14B37BB54802/cocuk720pm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=826ba0adea0dfa7c066095e969f56c130fb868f2-10310276-images-thumbs&n=13" group-title="Турция",Minika Go
+http://stream.shbro.org/stream/14B37BB54802/ikago720pm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=d856b3498c5e3fcec25fd050a74ea5fe36fde2ea-12616328-images-thumbs&n=13" group-title="Турция",NR1
+http://stream.shbro.org/stream/14B37BB54802/1playlistm3u8_3328.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=ea338cc840646f2daeda830258b0bdee59c686aa-4360535-images-thumbs&n=13" group-title="Турция",NR1 ASK
+http://stream.shbro.org/stream/14B37BB54802/milchunksm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/E4BH72L83/0733ecCT/-BHgO9aA9k8lH1lQcolfy_gHgVwH7aJqi4eQz6e0kLvfRBcdX8HDMetnllivcjMkWdZYPk-vDpc9swfax3oxd2gQtW-iRMJeoFotIRYtn7toRnXt022mG06nIb4SsSTLOsSyWCk3JDPcFHHOqMAB84hjCMtPvtomSWXRC-DIhjUpQSN6ZdBVa9e9CESyak0Ku1cFrobs1hkO17B6MNG3jshjhf_otGdRLXeyDpsQsOIbcLkIXq1uFVtnUr9xOhSlyuHxKday1euW3GiEsAufC2s3RB-1XgaoDoSiOBJydT4LA0efSEWXgdzGw-8o0DLheKJqmS0fTLdpRJFfsjhE5mgh8vuWUtQ7FT3LdHF6Lkn4h0Vf5Xw0OJz0g9kx0ObtClAUX3gEZjGNVZBNmIEhMbnDqbkd_69nKtRhnrMa9HWbUmK7teDGeqV8uvegai9LWuZ2jHUPxqtvB-B7AeKX7YiiVe64dlegT2bAXRtRc_M60ejIL089VJuUQH-xOjVnGzESqfbBhRnmv5gkEHp9O3iHZyx0LjX5bgVS-AATRR8LQxfMacRWwVy0w-_rAzMjS0N5im0-PvQa9pC9AnsF56hz0lq28lfa5q0Kd_Bo7_up1RVOVf3VGV1lUHvzoVesyoPHj1j25RPsdiK-6KEQIfqQKAoeTfz2a1TAz2J5JTcZMlJKFjDkWPb_2TQAeC_5WXbFjMVMlhhvBhKpcbDlv-ljVjxYZmWxv1XRvKlTAAF4UCpoHL5uZ6i0Y69TGjZWinJCqZeClFrHHrjngzgfaxsVdZ2EHleZDGeCmgPh5u-YUZbd2GWE4e7loZ_JUjFT2QAayRzsX4YoJEHcoWi3BnsB8Jq0orfr5d_7BiI5vhjIprSd1h50Kb5VwMiyYPa8S7FGbfo2psO-tfNtaOIRsmjRSRpNHG1UKeRybLCoFrW6MAKKpsOUGQW8GKeCSR6KqRV2PJVfths-1AErMeG1k" group-title="Турция",NR1 DAMAR
+http://stream.shbro.org/stream/14B37BB54802/milchunksm3u8_2f15.m3u8
+#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/E4BH72L83/0733ecCT/-BHgO9aA9k8lH1lQcolfy_gHgVwH7aJqi4eQz6Lklf6vVEIdSvTzca4Ctqj6NyNEOaZobjqaLpJ487Lvgj9R4j2A0D-SRJJ-sFqN4ffJ3_uoJlSINvxnys5WNOpicPB-b_Ryfuk2xDPtxXAfGCDhgPnj-Gtea7-WuzXW_SCIVkZJo9DZ1xPHabffOEXgG24ouVYX3beMZYq-x_DIAuO1jMjD1b9qdabCjgawLMiR8BPqUjt6Td-MhLm2YmzSGsal6XGDarWTRyjWv_hHgclv-NkXpu4FXNSK7dWy6qEhBU-oAbUfm4V2Mz93UZ8IE_NwOIGqCf_9LraadYKv0EqFBylyUSpVkperNxwIhvB4LWtpFua-J25EGJ30U8kDstZO-1J1L9p0xmKsJPMvWQAjsVlCijkfHv71CoVDrvL6FvRa4hEJ54DWG3Zti1fgeS_JCCU1LlSc1-tul_H5McPWzAkTxO-oRVegn3TjrIlS4TJLA_sLr4zNREqkoqzSOwR0OZIDSsbDtVi1T1jn8Ctf62k0lS91b4XqbCVy-MARJE_oUeY-GkQ2s013UVzbEjFD2ZK5Sd6PbcUodGAfkwuEx3tS8Ar1EXZYp90LB-K5nzo7RvcOpo9l2Qwn8QtyA5eOKIGlDyj35AOPlgBfeTEz8grDOTqtTW-0iiQSf5ErVHY60uCqN6L0SPUOSPfyeZ3KmJY1nhfMZOtvZSOJY7GErcgQFg-4d0ZQrGUCHoshE3DKwVs4Xt_-d2qHck7yODXlesIDK4XS9nkUb5t0skkPiPsmJN9FDeWIDvUQ-zKy1Nz60PePu5YWARwVIX6KEEHRmvH6OAzuH_f6pQG8gLllFAlwMAil8Udb1Sx61bPofFtI5ySNRS5VOjy3QkqzoocPGgBHrei0NFFMR9PfOjCgYEuiKWn83M32OpaxrUAY1tU4giAaxNK1u7bP23XDSO46-yWFzgTsZ7q9dqHJMuGl4" group-title="Турция",NR1 DANCE
+http://stream.shbro.org/stream/14B37BB54802/lplaylistm3u8_4949.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=033f3a125b86146be63e5808a86673a50fd113a5-4753661-images-thumbs&n=13" group-title="Турция",NR1 TURK
+http://stream.shbro.org/stream/14B37BB54802/milchunksm3u8_0af7.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=c35e4a1b8621f4dd059f639c0fe30659af6cc015-4142142-images-thumbs&n=13" group-title="Турция",NTV Turkey
+http://stream.shbro.org/stream/14B37BB54802/hlspuhuntvdai.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=6be601749ae629995ec3531e37854746f4e0a94f-4357983-images-thumbs&n=13" group-title="Турция",POWER
+http://stream.shbro.org/stream/14B37BB54802/chunklistm3u8_340d.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=969335119d4ca5879b4485f6ea78fb838419c6e6-5305607-images-thumbs&n=13" group-title="Турция",POWER DANCE
+http://stream.shbro.org/stream/14B37BB54802/lplaylistm3u8_311b.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=7af243f7438a0b07604254269fd0b6da24b0244d-9837529-images-thumbs&n=13" group-title="Турция",POWER LOVE
+http://stream.shbro.org/stream/14B37BB54802/lplaylistm3u8_ef34.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=e1581549ec25cd5769ef71f16458e0086d19bdfc-9843161-images-thumbs&n=13" group-title="Турция",POWER TURK
+http://stream.shbro.org/stream/14B37BB54802/chunklistm3u8_494d.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=ed3c0b6b3ea3fca852be8f403091a8cd7d38f270-12434137-images-thumbs&n=13" group-title="Турция",POWER TURK AKUSTIK
+http://stream.shbro.org/stream/14B37BB54802/lplaylistm3u8_5b59.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=ec4e6dcd5d002a43817b6d8157f70dbf57f613cf-4571750-images-thumbs&n=13" group-title="Турция",Persiana 4 Turk
+http://stream.shbro.org/stream/14B37BB54802/pplaylistm3u8_c89a.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=f30f62b2529a8d2ef3750c8e063ddea80b823c2f-5218303-images-thumbs&n=13" group-title="Турция",Persiana Turkiye
+http://stream.shbro.org/stream/14B37BB54802/hlsstreamm3u8_df21.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=e13a7d3a08f25153ee233d8d14cf274e5445c081-5235096-images-thumbs&n=13" group-title="Турция",Rehber TV
+http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_1956.m3u8
+#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/E4BH72L83/0733ecCT/-BHgO9aA9k8lH1lQcolfy_gHgVwH7aJqi4eQz6KBkM6fsQIdP7HjRMuy5ji6dyMBPIZYeyqPfpJdRkd6x49hIjhlhVqiRIL-sFp98ZfJ3_uoJlSINvxnys5WNOpicPB-b_Ryfuk2xDPtxXAfGCDhgPnj-Gtea7-WuzXW_SCIVkZJo9DZ1xPHabffOEXgG24ouVYX3beMZYq-x_DIAuO1jMjD1b9qdabCjgawLMiR8BPqUjt6Td-MhLm2YmzSGsal6XGDarWTRyjWv_hHgclv-NkXpu4FXNSK7dWy6qEhBU-oAbUfm4V2Mz93UZ8IE_NwOIGqCf_9LraadYKv0EqFBylyUSpVkperNxwIhvB4LWtpFua-J25EGJ30U8kDstZO-1J1L9p0xmKsJPMvWQAjsVlCijkfHv71CoVDrvL6FvRa4hEJ54DWG3Zti1fgeS_JCCU1LlSc1-tul_H5McPWzAkTxO-oRVegn3TjrIlS4TJLA_sLr4zNREqkoqzSOwR0OZIDSsbDtVi1T1jn8Ctf62k0lS91b4XqbCVy-MARJE_oUeY-GkQ2s013UVzbEjFD2ZK5Sd6PbcUodGAfkwuEx3tS8Ar1EXZYp90LB-K5nzo7RvcOpo9l2Qwn8QtyA5eOKIGlDyj35AOPlgBfeTEz8grDOTqtTW-0iiQSf5ErVHY60uCqN6L0SPUOSPfyeZ3KmJY1nhfMZOtvZSOJY7GErcgQFg-4d0ZQrGUCHoshE3DKwVs4Xt_-d2qHck7yODXlesIDK4XS9nkUb5t0skkPiPsmJN9FDeWIDvUQ-zKy1Nz60PePu5YWARwVIX6KEEHRmvH6OAzuH_f6pQG8gLllFAlwMAil8Udb1Sx61bPofFtI5ySNRS5VOjy3QkqzoocPGgBHrei0NFFMR9PfOjCgYEuiKWn83M32OpaxrUAY1tU4giAaxNK1u7bP23XDSO46-yWFzgTsZ7q9dqHJMuGl4" group-title="Турция",SUN TV
+http://stream.shbro.org/stream/14B37BB54802/rtvchunksm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=a90f3fe7e8c96a331fe1d4dbbee1236bb741e4c0-5277647-images-thumbs&n=13" group-title="Турция",Sat 7 Turk
+http://stream.shbro.org/stream/14B37BB54802/chunksdvrm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=8f78b9cb1fbff015515441f289ede7f90f0917e3-4055050-images-thumbs&n=13" group-title="Турция",Semerkand TV
+http://stream.shbro.org/stream/14B37BB54802/lplaylistm3u8_86d7.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=2ae10d6829a06d2bfaafde3b1f6e409e47f90ee0-11395047-images-thumbs&n=13" group-title="Турция",Star TV Turk
+http://stream.shbro.org/stream/14B37BB54802/hlsstartv4puhu.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=7c2e51587585eb949598c58b03b9fae7505c88f5-10718767-images-thumbs&n=13" group-title="Турция",TBMM
+http://stream.shbro.org/stream/14B37BB54802/listv720pm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=a55444893c2cabf378d071a5aac73a1dae198f25-5292157-images-thumbs&n=13" group-title="Турция",TEVE 2
+http://stream.shbro.org/stream/14B37BB54802/0playlistm3u8_511b.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=8a870f5876b5adf6ef2f4e38ae41cbbfe20aa902-4011148-images-thumbs&n=13" group-title="Турция",TGRT Haber
+http://stream.shbro.org/stream/14B37BB54802/rcomtgrtm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=e2a7e684312e4d3449b083a4234d873f062b1afd-5131517-images-thumbs&n=13" group-title="Турция",TIVI 6
+http://stream.shbro.org/stream/14B37BB54802/vi6chunksm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/E4BH72L83/0733ecCT/-BHgO9aA9k8lH1lQcolfy_gHgVwH7aJqi4eQz6K0kN7KFGJtP5TzFO4nljj_FzYEGaNYDiq6G4Jdw7La9w9hQp0lFa8CRLI-0KqN4efJ3_uoJlSINvxnys5WNOpicPB-b_Ryfuk2xDPtxXAfGCDhgPnj-Gtea7-WuzXW_SCIVkZJo9DZ1xPHabffOEXgG24ouVYX3beMZYq-x_DIAuO1jMjD1b9qdabCjgawLMiR8BPqUjt6Td-MhLm2YmzSGsal6XGDarWTRyjWv_hHgclv-NkXpu4FXNSK7dWy6qEhBU-oAbUfm4V2Mz93UZ8IE_NwOIGqCf_9LraadYKv0EqFBylyUSpVkperNxwIhvB4LWtpFua-J25EGJ30U8kDstZO-1J1L9p0xmKsJPMvWQAjsVlCijkfHv71CoVDrvL6FvRa4hEJ54DWG3Zti1fgeS_JCCU1LlSc1-tul_H5McPWzAkTxO-oRVegn3TjrIlS4TJLA_sLr4zNREqkoqzSOwR0OZIDSsbDtVi1T1jn8Ctf62k0lS91b4XqbCVy-MARJE_oUeY-GkQ2s013UVzbEjFD2ZK5Sd6PbcUodGAfkwuEx3tS8Ar1EXZYp90LB-K5nzo7RvcOpo9l2Qwn8QtyA5eOKIGlDyj35AOPlgBfeTEz8grDOTqtTW-0iiQSf5ErVHY60uCqN6L0SPUOSPfyeZ3KmJY1nhfMZOtvZSOJY7GErcgQFg-4d0ZQrGUCHoshE3DKwVs4Xt_-d2qHck7yODXlesIDK4XS9nkUb5t0skkPiPsmJN9FDeWIDvUQ-zKy1Nz60PePu5YWARwVIX6KEEHRmvH6OAzuH_f6pQG8gLllFAlwMAil8Udb1Sx61bPofFtI5ySNRS5VOjy3QkqzoocPGgBHrei0NFFMR9PfOjCgYEuiKWn83M32OpaxrUAY1tU4giAaxNK1u7bP23XDSO46-yWFzgTsZ7q9dqHJMuGl4" group-title="Турция",TON TV
+http://stream.shbro.org/stream/14B37BB54802/ntvchunksm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=56b269e93bb91a70f68426b253cc45e452c21d6a-12945130-images-thumbs&n=13" group-title="Турция",TRT ARABI
+http://stream.shbro.org/stream/14B37BB54802/master720m3u8_7c81.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=362ce8b91448e79a823191cd6263daeba1d620e3-4949370-images-thumbs&n=13" group-title="Турция",TRT AVAZ
+http://stream.shbro.org/stream/14B37BB54802/master720m3u8_bb93.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=91804257eb29b57ef1e999fb336cbec5c3230c40-4256965-images-thumbs&n=13" group-title="Турция",TRT COCUK
+http://stream.shbro.org/stream/14B37BB54802/master720m3u8_fbfb.m3u8
+#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/E4BH72L83/0733ecCT/-BHgO9aA9k8lH1lQcolfy_gHgVwH7aJqi4eQz6eh0PsfdHINOtGWBOtiA1iKAhNxTPYdHlp6W0dN4yffh490V10l1WrCROJO4Op9YcfJ3_uoJlSINvxnys5WNOpicPB-b_Ryfuk2xDPtxXAfGCDhgPnj-Gtea7-WuzXW_SCIVkZJo9DZ1xPHabffOEXgG24ouVYX3beMZYq-x_DIAuO1jMjD1b9qdabCjgawLMiR8BPqUjt6Td-MhLm2YmzSGsal6XGDarWTRyjWv_hHgclv-NkXpu4FXNSK7dWy6qEhBU-oAbUfm4V2Mz93UZ8IE_NwOIGqCf_9LraadYKv0EqFBylyUSpVkperNxwIhvB4LWtpFua-J25EGJ30U8kDstZO-1J1L9p0xmKsJPMvWQAjsVlCijkfHv71CoVDrvL6FvRa4hEJ54DWG3Zti1fgeS_JCCU1LlSc1-tul_H5McPWzAkTxO-oRVegn3TjrIlS4TJLA_sLr4zNREqkoqzSOwR0OZIDSsbDtVi1T1jn8Ctf62k0lS91b4XqbCVy-MARJE_oUeY-GkQ2s013UVzbEjFD2ZK5Sd6PbcUodGAfkwuEx3tS8Ar1EXZYp90LB-K5nzo7RvcOpo9l2Qwn8QtyA5eOKIGlDyj35AOPlgBfeTEz8grDOTqtTW-0iiQSf5ErVHY60uCqN6L0SPUOSPfyeZ3KmJY1nhfMZOtvZSOJY7GErcgQFg-4d0ZQrGUCHoshE3DKwVs4Xt_-d2qHck7yODXlesIDK4XS9nkUb5t0skkPiPsmJN9FDeWIDvUQ-zKy1Nz60PePu5YWARwVIX6KEEHRmvH6OAzuH_f6pQG8gLllFAlwMAil8Udb1Sx61bPofFtI5ySNRS5VOjy3QkqzoocPGgBHrei0NFFMR9PfOjCgYEuiKWn83M32OpaxrUAY1tU4giAaxNK1u7bP23XDSO46-yWFzgTsZ7q9dqHJMuGl4" group-title="Турция",TRT DIYANET COCUK
+http://stream.shbro.org/stream/14B37BB54802/master720m3u8_014c.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=d69178f142f6a61465c67723c5357bdf4741ce25-5309142-images-thumbs&n=13" group-title="Турция",TRT EBA
+http://stream.shbro.org/stream/14B37BB54802/master720m3u8_2704.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=9e320ca6606c587a9272491398a35ce774ffc3c8-4827941-images-thumbs&n=13" group-title="Турция",TRT HABER
+http://stream.shbro.org/stream/14B37BB54802/master720m3u8_a785.m3u8
+#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/E4BH72L83/0733ecCT/-BHgO9aA9k8lH1lQcolfy_gHgVwH7aJqi4eQz6K0YEu_tOINetGTQeui9kiqEibhWbMIDkrvG0INo7d69z9x8l11ta-iRFI-ULpdIefJ3_uoJlSINvxnys5WNOpicPB-b_Ryfuk2xDPtxXAfGCDhgPnj-Gtea7-WuzXW_SCIVkZJo9DZ1xPHabffOEXgG24ouVYX3beMZYq-x_DIAuO1jMjD1b9qdabCjgawLMiR8BPqUjt6Td-MhLm2YmzSGsal6XGDarWTRyjWv_hHgclv-NkXpu4FXNSK7dWy6qEhBU-oAbUfm4V2Mz93UZ8IE_NwOIGqCf_9LraadYKv0EqFBylyUSpVkperNxwIhvB4LWtpFua-J25EGJ30U8kDstZO-1J1L9p0xmKsJPMvWQAjsVlCijkfHv71CoVDrvL6FvRa4hEJ54DWG3Zti1fgeS_JCCU1LlSc1-tul_H5McPWzAkTxO-oRVegn3TjrIlS4TJLA_sLr4zNREqkoqzSOwR0OZIDSsbDtVi1T1jn8Ctf62k0lS91b4XqbCVy-MARJE_oUeY-GkQ2s013UVzbEjFD2ZK5Sd6PbcUodGAfkwuEx3tS8Ar1EXZYp90LB-K5nzo7RvcOpo9l2Qwn8QtyA5eOKIGlDyj35AOPlgBfeTEz8grDOTqtTW-0iiQSf5ErVHY60uCqN6L0SPUOSPfyeZ3KmJY1nhfMZOtvZSOJY7GErcgQFg-4d0ZQrGUCHoshE3DKwVs4Xt_-d2qHck7yODXlesIDK4XS9nkUb5t0skkPiPsmJN9FDeWIDvUQ-zKy1Nz60PePu5YWARwVIX6KEEHRmvH6OAzuH_f6pQG8gLllFAlwMAil8Udb1Sx61bPofFtI5ySNRS5VOjy3QkqzoocPGgBHrei0NFFMR9PfOjCgYEuiKWn83M32OpaxrUAY1tU4giAaxNK1u7bP23XDSO46-yWFzgTsZ7q9dqHJMuGl4" group-title="Турция",TRT KURDI
+http://stream.shbro.org/stream/14B37BB54802/master720m3u8_3c5e.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=46290898d191fdc69ffe7af8f1f2f7be33b1df34-5256771-images-thumbs&n=13" group-title="Турция",TRT TURK
+http://stream.shbro.org/stream/14B37BB54802/master720m3u8_7874.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=03805f8d5a8d723cbf5816ed47dc20713f4bbb79-10767434-images-thumbs&n=13" group-title="Турция",TRT WORLD
+http://stream.shbro.org/stream/14B37BB54802/master720m3u8_7816.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=d23f6a7c9324e1da067326895db117e26d7026f4-4935775-images-thumbs&n=13" group-title="Турция",TV 100 Turk
+http://stream.shbro.org/stream/14B37BB54802/v100tv100m3u8.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=9393397b79a3ff68acfa3de5c64b2912d133077a-4248389-images-thumbs&n=13" group-title="Турция",TV 2020
+http://stream.shbro.org/stream/14B37BB54802/nt1chunksm3u8_d635.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=bfdd8f94d8e9e8e9defdcd8b388ad5f7871f6029-5370628-images-thumbs&n=13" group-title="Турция",TV 4 Turk
+http://stream.shbro.org/stream/14B37BB54802/4tv4720pm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/E4BH72L83/0733ecCT/-BHgO9aA9k8lH1lQcolfy_gHgVwH7aJqi4eQz6fUpZvftCLIP_SWRJsy8yj_d1YhXPMIfirPTvJNwyeK5x9EAp0F4A8CRELuQKqNEffJ3_uoJlSINvxnys5WNOpicPB-b_Ryfuk2xDPtxXAfGCDhgPnj-Gtea7-WuzXW_SCIVkZJo9DZ1xPHabffOEXgG24ouVYX3beMZYq-x_DIAuO1jMjD1b9qdabCjgawLMiR8BPqUjt6Td-MhLm2YmzSGsal6XGDarWTRyjWv_hHgclv-NkXpu4FXNSK7dWy6qEhBU-oAbUfm4V2Mz93UZ8IE_NwOIGqCf_9LraadYKv0EqFBylyUSpVkperNxwIhvB4LWtpFua-J25EGJ30U8kDstZO-1J1L9p0xmKsJPMvWQAjsVlCijkfHv71CoVDrvL6FvRa4hEJ54DWG3Zti1fgeS_JCCU1LlSc1-tul_H5McPWzAkTxO-oRVegn3TjrIlS4TJLA_sLr4zNREqkoqzSOwR0OZIDSsbDtVi1T1jn8Ctf62k0lS91b4XqbCVy-MARJE_oUeY-GkQ2s013UVzbEjFD2ZK5Sd6PbcUodGAfkwuEx3tS8Ar1EXZYp90LB-K5nzo7RvcOpo9l2Qwn8QtyA5eOKIGlDyj35AOPlgBfeTEz8grDOTqtTW-0iiQSf5ErVHY60uCqN6L0SPUOSPfyeZ3KmJY1nhfMZOtvZSOJY7GErcgQFg-4d0ZQrGUCHoshE3DKwVs4Xt_-d2qHck7yODXlesIDK4XS9nkUb5t0skkPiPsmJN9FDeWIDvUQ-zKy1Nz60PePu5YWARwVIX6KEEHRmvH6OAzuH_f6pQG8gLllFAlwMAil8Udb1Sx61bPofFtI5ySNRS5VOjy3QkqzoocPGgBHrei0NFFMR9PfOjCgYEuiKWn83M32OpaxrUAY1tU4giAaxNK1u7bP23XDSO46-yWFzgTsZ7q9dqHJMuGl4" group-title="Турция",TV 41
+http://stream.shbro.org/stream/14B37BB54802/v41chunksm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=5c282dc801510ac51287f2706b2e699665820f11-6974550-images-thumbs&n=13" group-title="Турция",TV 8 TURK
+http://stream.shbro.org/stream/14B37BB54802/oftv8tv8m3u8.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=35d0e17af382ef95dbbd6ccbee21e1b90fd9ccf5-12752373-images-thumbs&n=13" group-title="Турция",TV 8.5
+http://stream.shbro.org/stream/14B37BB54802/ucuk1080pm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=98fa8afb9b99e195b26643599c19f7837421b188-10811575-images-thumbs&n=13" group-title="Турция",Tabii TV
+http://stream.shbro.org/stream/14B37BB54802/tvtabiitvm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/E4BH72L83/0733ecCT/-BHgO9aA9k8lH1lQcolfy_gHgVwH7aJqi4eQz6KUwKuvoSINf-HGFL5S83jfYjME6aNNDo-PHoc9gzevwkpkB1glwBrSRMJ-sModMQYNn7toRnXt022mG06nIb4SsSTLOsSyWCk3JDPcFHHOqMAB84hjCMtPvtomSWXRC-DIhjUpQSN6ZdBVa9e9CESyak0Ku1cFrobs1hkO17B6MNG3jshjhf_otGdRLXeyDpsQsOIbcLkIXq1uFVtnUr9xOhSlyuHxKday1euW3GiEsAufC2s3RB-1XgaoDoSiOBJydT4LA0efSEWXgdzGw-8o0DLheKJqmS0fTLdpRJFfsjhE5mgh8vuWUtQ7FT3LdHF6Lkn4h0Vf5Xw0OJz0g9kx0ObtClAUX3gEZjGNVZBNmIEhMbnDqbkd_69nKtRhnrMa9HWbUmK7teDGeqV8uvegai9LWuZ2jHUPxqtvB-B7AeKX7YiiVe64dlegT2bAXRtRc_M60ejIL089VJuUQH-xOjVnGzESqfbBhRnmv5gkEHp9O3iHZyx0LjX5bgVS-AATRR8LQxfMacRWwVy0w-_rAzMjS0N5im0-PvQa9pC9AnsF56hz0lq28lfa5q0Kd_Bo7_up1RVOVf3VGV1lUHvzoVesyoPHj1j25RPsdiK-6KEQIfqQKAoeTfz2a1TAz2J5JTcZMlJKFjDkWPb_2TQAeC_5WXbFjMVMlhhvBhKpcbDlv-ljVjxYZmWxv1XRvKlTAAF4UCpoHL5uZ6i0Y69TGjZWinJCqZeClFrHHrjngzgfaxsVdZ2EHleZDGeCmgPh5u-YUZbd2GWE4e7loZ_JUjFT2QAayRzsX4YoJEHcoWi3BnsB8Jq0orfr5d_7BiI5vhjIprSd1h50Kb5VwMiyYPa8S7FGbfo2psO-tfNtaOIRsmjRSRpNHG1UKeRybLCoFrW6MAKKpsOUGQW8GKeCSR6KqRV2PJVfths-1AErMeG1k" group-title="Турция",Ulke TV
+http://stream.shbro.org/stream/14B37BB54802/chunklistm3u8_2a7d.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=a10bb052f0f4e4d699f0cafcf62120acef450e8d-10414509-images-thumbs&n=13" group-title="Турция",Urfanatik TV
+http://stream.shbro.org/stream/14B37BB54802/vplaylistm3u8_8172.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=a29bbcd20d0ecf7c65c363c87371ffe7ce2ed18f-5309503-images-thumbs&n=13" group-title="Турция",Zarok TV
+http://stream.shbro.org/stream/14B37BB54802/hlsstreamm3u8_d736.m3u8
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/YC4FPSR2/In-Shot-20250209-215704320.png" group-title="Турция",TABİİ TV ᵀᵛˢʰᵃᵐ
+http://stream.shbro.org/stream/14B37BB54802/iitv1080pm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/xT8NkdWG/NOW-TV-Turkey-wordmark-red-svg.png" group-title="Турция",NOW TV ᵀᵛˢʰᵃᵐ
+http://stream.shbro.org/stream/14B37BB54802/nowtv720pm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/PrSc4SVs/In-Shot-20250209-224757709.png" group-title="Турция",KANAL 7 ᵀᵛˢʰᵃᵐ
+http://stream.shbro.org/stream/14B37BB54802/nal71080pm3u8_9895.m3u8
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/LXF0Xw5f/In-Shot-20250209-224919699.png" group-title="Турция",360 TV ᵀᵛˢʰᵃᵐ
+http://stream.shbro.org/stream/14B37BB54802/tv360720pm3u8_297e.m3u8
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/c1m5xDSg/TRT-T-rk-logo-svg.png" group-title="Турция",TRT TURK ᵀᵛˢʰᵃᵐ
+http://stream.shbro.org/stream/14B37BB54802/master720m3u8_7c31.m3u8
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/gjTVwLs5/logo-v5.png" group-title="Турция",EURO D ᵀᵛˢʰᵃᵐ
+http://stream.shbro.org/stream/14B37BB54802/pplaylistm3u8_cfc9.m3u8
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/y81PMF49/In-Shot-20250223-113143453.png" group-title="Турция",KANAL 19 ᵀᵛˢʰᵃᵐ
+http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_85ff.m3u8
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/T2c5ZBR7/logo-97.png" group-title="Турция",LİFE TV HD ᵀᵛˢʰᵃᵐ
+http://stream.shbro.org/stream/14B37BB54802/etvchunksm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/N0WV0rXP/TRT-ocuk-logo-2021-svg.png" group-title="Турция",TRT COCUK ᵀᵛˢʰᵃᵐ
+http://stream.shbro.org/stream/14B37BB54802/trmasterm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=aa554335636cccadfda4087a469ebf569627b1ca-11923513-images-thumbs&n=13" group-title="Азербайжан",AZSTAR TV ᵀᵛˢʰᵃᵐ
+http://stream.shbro.org/stream/14B37BB54802/pplaylistm3u8_4876.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=10d003bf5f788bbc5a213f1d9a57261fccf7c032-4800766-images-thumbs&n=13" group-title="Азербайжан",LİVE TV ᵀᵛˢʰᵃᵐ
+http://stream.shbro.org/stream/14B37BB54802/vetvindexm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/tJRmj6vV/In-Shot-20250209-204833425.png" group-title="Азербайжан",ZAHRA TV ᵀᵛˢʰᵃᵐ
+http://stream.shbro.org/stream/14B37BB54802/lplaylistm3u8_03e1.m3u8
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/pXQ8b7b4/icon.png" group-title="Азербайжан",AYAZ TV ᵀᵛˢʰᵃᵐ
+http://stream.shbro.org/stream/14B37BB54802/azTV1500km3u8.m3u8
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/PJbFG4MH/In-Shot-20250209-195400220.png" group-title="Азербайжан",MUSİC AZERBAYCAN ᵀᵛˢʰᵃᵐ
+http://stream.shbro.org/stream/14B37BB54802/vplaylistm3u8_2b3a.m3u8
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/vHMNrJQZ/In-Shot-20250209-195632491.png" group-title="Азербайжан",SİRİUS TV ᵀᵛˢʰᵃᵐ
+http://stream.shbro.org/stream/14B37BB54802/1siriustvm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/KYd9RVqF/In-Shot-20250209-195931309.png" group-title="Азербайжан",SON ÜMİD TV ᵀᵛˢʰᵃᵐ
+http://stream.shbro.org/stream/14B37BB54802/vplaylistm3u8_e428.m3u8
+#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/E4BH72L83/0733ecCT/-BHgO9aA9k8lH1lQcolfy_gHgVwH7aJqi4eQz6LhlY66MTJImoTDVNsStkiaAkNUfMZtKx_KO_cNhkLqd3-Rcg11harSREJ-oEpNcQfJ3_uoJlSINvxnys5WNOpicPB-b_Ryfuk2xDPtxXAfGCDhgPnj-Gtea7-WuzXW_SCIVkZJo9DZ1xPHabffOEXgG24ouVYX3beMZYq-x_DIAuO1jMjD1b9qdabCjgawLMiR8BPqUjt6Td-MhLm2YmzSGsal6XGDarWTRyjWv_hHgclv-NkXpu4FXNSK7dWy6qEhBU-oAbUfm4V2Mz93UZ8IE_NwOIGqCf_9LraadYKv0EqFBylyUSpVkperNxwIhvB4LWtpFua-J25EGJ30U8kDstZO-1J1L9p0xmKsJPMvWQAjsVlCijkfHv71CoVDrvL6FvRa4hEJ54DWG3Zti1fgeS_JCCU1LlSc1-tul_H5McPWzAkTxO-oRVegn3TjrIlS4TJLA_sLr4zNREqkoqzSOwR0OZIDSsbDtVi1T1jn8Ctf62k0lS91b4XqbCVy-MARJE_oUeY-GkQ2s013UVzbEjFD2ZK5Sd6PbcUodGAfkwuEx3tS8Ar1EXZYp90LB-K5nzo7RvcOpo9l2Qwn8QtyA5eOKIGlDyj35AOPlgBfeTEz8grDOTqtTW-0iiQSf5ErVHY60uCqN6L0SPUOSPfyeZ3KmJY1nhfMZOtvZSOJY7GErcgQFg-4d0ZQrGUCHoshE3DKwVs4Xt_-d2qHck7yODXlesIDK4XS9nkUb5t0skkPiPsmJN9FDeWIDvUQ-zKy1Nz60PePu5YWARwVIX6KEEHRmvH6OAzuH_f6pQG8gLllFAlwMAil8Udb1Sx61bPofFtI5ySNRS5VOjy3QkqzoocPGgBHrei0NFFMR9PfOjCgYEuiKWn83M32OpaxrUAY1tU4giAaxNK1u7bP23XDSO46-yWFzgTsZ7q9dqHJMuGl4" group-title="Азербайжан",Baku TV
+http://stream.shbro.org/stream/14B37BB54802/kutv1080pm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://mytv.do.am/logo/geghama.png" group-title="Армения",Գեղամա TV
+http://stream.shbro.org/stream/14B37BB54802/hamaindexm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://cdn.epg.one/img2/5941.png" group-title="Армения",Արմաունթ TV
+http://stream.shbro.org/stream/14B37BB54802/C352indexm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://cdn.epg.one/img2/5606.png" group-title="Армения",Ֆրեշ TV FRESH
+http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_08be.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=0bd249a8b4483bd22bbbb5df34b1ddf0c8dd1d57-10576924-images-thumbs&n=13" group-title="Армения",Film TV
+http://stream.shbro.org/stream/14B37BB54802/7playlistm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://mytv.do.am/logo/deltamusic1.png" group-title="Армения",Delta Music
+http://stream.shbro.org/stream/14B37BB54802/0indexm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Y7Rxs9J/SGN-03-22-2022-1647976102720.png" group-title="Армения",Շանթ
+http://stream.shbro.org/stream/14B37BB54802/hantindexm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=e0073f7e511dfdbb9abaf50eac6ffc077e5d1043-8220238-images-thumbs&n=13" group-title="Армения",Amga
+http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_3186.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/1KDxsXR/SGN-05-01-2022-1651413983093.png" group-title="Армения",USArmenia TV
+http://stream.shbro.org/stream/14B37BB54802/IANET1080m3u8.m3u8
+#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/E4BH72L83/0733ecCT/-BHgO9aA9k8lH1lQcolfy_gHgVwH7aJqi4eQz6e04PuqYXJdeuHGAftX1qgfMlYRWZNdCxq_C6dNQ0K_8j-BEo0VADqiRIJOoFo9YcfJ3_uoJlSINvxnys5WNOpicPB-b_Ryfuk2xDPtxXAfGCDhgPnj-Gtea7-WuzXW_SCIVkZJo9DZ1xPHabffOEXgG24ouVYX3beMZYq-x_DIAuO1jMjD1b9qdabCjgawLMiR8BPqUjt6Td-MhLm2YmzSGsal6XGDarWTRyjWv_hHgclv-NkXpu4FXNSK7dWy6qEhBU-oAbUfm4V2Mz93UZ8IE_NwOIGqCf_9LraadYKv0EqFBylyUSpVkperNxwIhvB4LWtpFua-J25EGJ30U8kDstZO-1J1L9p0xmKsJPMvWQAjsVlCijkfHv71CoVDrvL6FvRa4hEJ54DWG3Zti1fgeS_JCCU1LlSc1-tul_H5McPWzAkTxO-oRVegn3TjrIlS4TJLA_sLr4zNREqkoqzSOwR0OZIDSsbDtVi1T1jn8Ctf62k0lS91b4XqbCVy-MARJE_oUeY-GkQ2s013UVzbEjFD2ZK5Sd6PbcUodGAfkwuEx3tS8Ar1EXZYp90LB-K5nzo7RvcOpo9l2Qwn8QtyA5eOKIGlDyj35AOPlgBfeTEz8grDOTqtTW-0iiQSf5ErVHY60uCqN6L0SPUOSPfyeZ3KmJY1nhfMZOtvZSOJY7GErcgQFg-4d0ZQrGUCHoshE3DKwVs4Xt_-d2qHck7yODXlesIDK4XS9nkUb5t0skkPiPsmJN9FDeWIDvUQ-zKy1Nz60PePu5YWARwVIX6KEEHRmvH6OAzuH_f6pQG8gLllFAlwMAil8Udb1Sx61bPofFtI5ySNRS5VOjy3QkqzoocPGgBHrei0NFFMR9PfOjCgYEuiKWn83M32OpaxrUAY1tU4giAaxNK1u7bP23XDSO46-yWFzgTsZ7q9dqHJMuGl4" group-title="Армения",ARTN TV
+http://stream.shbro.org/stream/14B37BB54802/bileindexm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/W2Qfw8N/SGN-08-28-2021-1630166352824.png" group-title="Армения",Fresh TV
+http://stream.shbro.org/stream/14B37BB54802/shTVindexm3u8_2170.m3u8
+#EXTINF:-1 group-title="Болгария",Travel TV
+http://stream.shbro.org/stream/14B37BB54802/travelSDm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://hd.traveltv.bg/wp-content/uploads/sites/3/2018/12/ThisIsBG.HDTV_.TV_-500x73.png" group-title="Болгария",This is Bulgaria HD
+http://stream.shbro.org/stream/14B37BB54802/ulgariaHDm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=34ab8937c8b83359cde8f3be75f68b5b975cd828-10246869-images-thumbs&n=13" group-title="Болгария",Tiankov FOLK
+http://stream.shbro.org/stream/14B37BB54802/ovfolkSDm3u8.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=dc1b3e54b4a4283ca859d63db668a313612cc8f3-5292478-images-thumbs&n=13" group-title="Болгария",Light Channel
+http://stream.shbro.org/stream/14B37BB54802/Mplaylistm3u8_6bcd.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=55965850d431b70f8ceeee57a4573478ffd9287d-9185791-images-thumbs&n=13" group-title="Болгария",Пловдивска Православна ТВ
+http://stream.shbro.org/stream/14B37BB54802/mplaylistm3u8_2752.m3u8
+#EXTINF:-1 group-title="Болгария",TV1
+http://stream.shbro.org/stream/14B37BB54802/livestreamm3u8_dfca.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=3352e9ff725b0c546c255f37c357958e-5129576-images-thumbs&n=13" group-title="Грузия",Formula TV HD
+http://stream.shbro.org/stream/14B37BB54802/v1a1indexm3u8_54da.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=a34f1f576723b35980c39cb3ae86885a99711568-5342409-images-thumbs&n=13" group-title="Грузия",1TV HD
+http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_776f.m3u8
+#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/E4BH72L83/0733ecCT/-BHgO9aA9k8lH1lQcolfy_gHgVwH7aJqi4eQz6eUsNvfMVLNetSDVN5SFriKYmYkDKaYbh-KHqJ49jLftw9hMl0lwGqiRJI-0MpdQYfJ3_uoJlSINvxnys5WNOpicPB-b_Ryfuk2xDPtxXAfGCDhgPnj-Gtea7-WuzXW_SCIVkZJo9DZ1xPHabffOEXgG24ouVYX3beMZYq-x_DIAuO1jMjD1b9qdabCjgawLMiR8BPqUjt6Td-MhLm2YmzSGsal6XGDarWTRyjWv_hHgclv-NkXpu4FXNSK7dWy6qEhBU-oAbUfm4V2Mz93UZ8IE_NwOIGqCf_9LraadYKv0EqFBylyUSpVkperNxwIhvB4LWtpFua-J25EGJ30U8kDstZO-1J1L9p0xmKsJPMvWQAjsVlCijkfHv71CoVDrvL6FvRa4hEJ54DWG3Zti1fgeS_JCCU1LlSc1-tul_H5McPWzAkTxO-oRVegn3TjrIlS4TJLA_sLr4zNREqkoqzSOwR0OZIDSsbDtVi1T1jn8Ctf62k0lS91b4XqbCVy-MARJE_oUeY-GkQ2s013UVzbEjFD2ZK5Sd6PbcUodGAfkwuEx3tS8Ar1EXZYp90LB-K5nzo7RvcOpo9l2Qwn8QtyA5eOKIGlDyj35AOPlgBfeTEz8grDOTqtTW-0iiQSf5ErVHY60uCqN6L0SPUOSPfyeZ3KmJY1nhfMZOtvZSOJY7GErcgQFg-4d0ZQrGUCHoshE3DKwVs4Xt_-d2qHck7yODXlesIDK4XS9nkUb5t0skkPiPsmJN9FDeWIDvUQ-zKy1Nz60PePu5YWARwVIX6KEEHRmvH6OAzuH_f6pQG8gLllFAlwMAil8Udb1Sx61bPofFtI5ySNRS5VOjy3QkqzoocPGgBHrei0NFFMR9PfOjCgYEuiKWn83M32OpaxrUAY1tU4giAaxNK1u7bP23XDSO46-yWFzgTsZ7q9dqHJMuGl4" group-title="Грузия",1 არხი განათლება
+http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_faaf.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=3dd252d199e0c8646dbb61f9dbd99399552913a2-9849055-images-thumbs&n=13" group-title="Грузия",1 Radio
+http://stream.shbro.org/stream/14B37BB54802/ksa1monom3u8.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=829c64203fdce4cd47038c2d6919fbb4dd9a16d7-15382075-images-thumbs&n=13" group-title="Грузия",2 Radio
+http://stream.shbro.org/stream/14B37BB54802/ksa1monom3u8_459c.m3u8
+#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=3352e9ff725b0c546c255f37c357958e-5129576-images-thumbs&n=13" group-title="Грузия",Formula
+http://stream.shbro.org/stream/14B37BB54802/aplaylistm3u8_91f7.m3u8
 #EXTINF:-1 tvg-id="kongresstv" tvg-logo="https://iptvx.one/picons/kongresstv.png" group-title="Общественные" ,Конгресс ТВ
 http://live-3.otcnet.ru/congresstv/index.m3u8
 #EXTINF:-1 tvg-id="prosveschenie" tvg-logo="https://iptvx.one/picons/prosveschenie.png" group-title="Образовательные",Просвещение

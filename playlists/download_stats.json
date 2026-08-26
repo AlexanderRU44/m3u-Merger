@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-26T08:24:00.694780",
+  "timestamp": "2026-08-26T11:01:00.921402",
   "total": 6,
   "success": 6,
   "results": {
@@ -15,7 +15,7 @@
       "url": "http://iptvshams.ru/ShamsTV.m3u8",
       "success": true,
       "info": {
-        "size": 414738,
+        "size": 479900,
         "status": "success"
       }
     },
