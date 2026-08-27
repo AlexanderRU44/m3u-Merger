@@ -1,9 +1,9 @@
 #EXTM3U
-# Создано: 2026-08-27 10:54:17 MSK
-# Всего каналов: 4906
+# Создано: 2026-08-27 11:01:16 MSK
+# Всего каналов: 4898
 # Каналов с архивом: 544
 
-#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: 27.08.2026 10:54 MSK
+#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: 27.08.2026 11:01 MSK
 https://raw.githubusercontent.com/AlexanderRU44/m3u-Merger/main/output/info.m3u8
 #EXTINF:-1 group-title="Основные" tvg-id="pervy",Первый
 #EXTVLCOPT:http-user-agent=HlsWinkPlayer
@@ -10219,22 +10219,6 @@ http://stream.shbro.org/stream/14B37BB54802/t28indexm3u8.m3u8
 http://stream.shbro.org/stream/14B37BB54802/t71indexm3u8.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=5efeddf5b7d6b16a36bee874a35ab6dbac13e82e-9858428-images-thumbs&n=13" group-title="Казахстан",31 Kanal
 http://stream.shbro.org/stream/14B37BB54802/388indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=aa554335636cccadfda4087a469ebf569627b1ca-11923513-images-thumbs&n=13" group-title="Азербайжан",AZSTAR TV ᵀᵛˢʰᵃᵐ
-http://stream.shbro.org/stream/14B37BB54802/pplaylistm3u8_4876.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=10d003bf5f788bbc5a213f1d9a57261fccf7c032-4800766-images-thumbs&n=13" group-title="Азербайжан",LİVE TV ᵀᵛˢʰᵃᵐ
-http://stream.shbro.org/stream/14B37BB54802/vetvindexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/tJRmj6vV/In-Shot-20250209-204833425.png" group-title="Азербайжан",ZAHRA TV ᵀᵛˢʰᵃᵐ
-http://stream.shbro.org/stream/14B37BB54802/lplaylistm3u8_03e1.m3u8
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/pXQ8b7b4/icon.png" group-title="Азербайжан",AYAZ TV ᵀᵛˢʰᵃᵐ
-http://stream.shbro.org/stream/14B37BB54802/azTV1500km3u8.m3u8
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/PJbFG4MH/In-Shot-20250209-195400220.png" group-title="Азербайжан",MUSİC AZERBAYCAN ᵀᵛˢʰᵃᵐ
-http://stream.shbro.org/stream/14B37BB54802/vplaylistm3u8_2b3a.m3u8
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/vHMNrJQZ/In-Shot-20250209-195632491.png" group-title="Азербайжан",SİRİUS TV ᵀᵛˢʰᵃᵐ
-http://stream.shbro.org/stream/14B37BB54802/1siriustvm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/KYd9RVqF/In-Shot-20250209-195931309.png" group-title="Азербайжан",SON ÜMİD TV ᵀᵛˢʰᵃᵐ
-http://stream.shbro.org/stream/14B37BB54802/vplaylistm3u8_e428.m3u8
-#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/E4BH72L83/0733ecCT/-BHgO9aA9k8lH1lQcolfy_gHgVwH7aJqi4eQz6LhlY66MTJImoTDVNsStkiaAkNUfMZtKx_KO_cNhkLqd3-Rcg11harSREJ-oEpNcQfJ3_uoJlSINvxnys5WNOpicPB-b_Ryfuk2xDPtxXAfGCDhgPnj-Gtea7-WuzXW_SCIVkZJo9DZ1xPHabffOEXgG24ouVYX3beMZYq-x_DIAuO1jMjD1b9qdabCjgawLMiR8BPqUjt6Td-MhLm2YmzSGsal6XGDarWTRyjWv_hHgclv-NkXpu4FXNSK7dWy6qEhBU-oAbUfm4V2Mz93UZ8IE_NwOIGqCf_9LraadYKv0EqFBylyUSpVkperNxwIhvB4LWtpFua-J25EGJ30U8kDstZO-1J1L9p0xmKsJPMvWQAjsVlCijkfHv71CoVDrvL6FvRa4hEJ54DWG3Zti1fgeS_JCCU1LlSc1-tul_H5McPWzAkTxO-oRVegn3TjrIlS4TJLA_sLr4zNREqkoqzSOwR0OZIDSsbDtVi1T1jn8Ctf62k0lS91b4XqbCVy-MARJE_oUeY-GkQ2s013UVzbEjFD2ZK5Sd6PbcUodGAfkwuEx3tS8Ar1EXZYp90LB-K5nzo7RvcOpo9l2Qwn8QtyA5eOKIGlDyj35AOPlgBfeTEz8grDOTqtTW-0iiQSf5ErVHY60uCqN6L0SPUOSPfyeZ3KmJY1nhfMZOtvZSOJY7GErcgQFg-4d0ZQrGUCHoshE3DKwVs4Xt_-d2qHck7yODXlesIDK4XS9nkUb5t0skkPiPsmJN9FDeWIDvUQ-zKy1Nz60PePu5YWARwVIX6KEEHRmvH6OAzuH_f6pQG8gLllFAlwMAil8Udb1Sx61bPofFtI5ySNRS5VOjy3QkqzoocPGgBHrei0NFFMR9PfOjCgYEuiKWn83M32OpaxrUAY1tU4giAaxNK1u7bP23XDSO46-yWFzgTsZ7q9dqHJMuGl4" group-title="Азербайжан",Baku TV
-http://stream.shbro.org/stream/14B37BB54802/kutv1080pm3u8.m3u8
 #EXTINF:-1 tvg-id="kongresstv" tvg-logo="https://iptvx.one/picons/kongresstv.png" group-title="Общественные" ,Конгресс ТВ
 http://live-3.otcnet.ru/congresstv/index.m3u8
 #EXTINF:-1 tvg-id="prosveschenie" tvg-logo="https://iptvx.one/picons/prosveschenie.png" group-title="Образовательные",Просвещение

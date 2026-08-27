@@ -1,12 +1,12 @@
 {
-  "generated": "2026-08-27T10:54:17.603426+03:00",
+  "generated": "2026-08-27T11:01:16.722536+03:00",
   "input_dir": "./playlists",
   "output_file": "./output/merged.m3u",
   "total_files": 6,
-  "total_channels": 5164,
-  "unique_channels": 4633,
+  "total_channels": 5156,
+  "unique_channels": 4625,
   "duplicates_removed": 531,
-  "excluded_channels": 853,
+  "excluded_channels": 861,
   "excluded_groups": [
     "🔺 INFO 🔺",
     "- ИНФО -",
@@ -28,7 +28,7 @@
     "Армения",
     "Болгария",
     "Украина",
-    "Азербайджан",
+    "Азербайжан",
     "Грузия"
   ],
   "archive_channels": 272,
@@ -48,5 +48,5 @@
     "playlists/shams_tv.m3u8": 506834,
     "playlists/iptv_stable.m3u8": 41592
   },
-  "output_size": 1198072
+  "output_size": 1195356
 }
