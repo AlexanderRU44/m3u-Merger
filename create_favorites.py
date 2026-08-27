@@ -238,6 +238,19 @@ def is_favorite_exact(info_line):
     
     return False
 
+def is_info_channel(info_line):
+    """
+    Проверяет, является ли канал информационной заглушкой.
+    """
+    if not info_line:
+        return False
+    
+    channel_name = get_channel_name(info_line)
+    if not channel_name:
+        return False
+    
+    return '📅 Обновлено' in channel_name
+
 def parse_m3u(file_path):
     if not Path(file_path).exists():
         print(f"⚠️ Файл {file_path} не найден!")
@@ -273,6 +286,10 @@ def parse_m3u(file_path):
 
 def is_blocked_channel(info_line):
     if not info_line:
+        return False
+    
+    # Информационный канал не блокируем
+    if is_info_channel(info_line):
         return False
     
     info_lower = info_line.lower()
@@ -391,6 +408,10 @@ def get_new_group(info_line):
     if not info_line:
         return '📦 Прочее'
     
+    # Информационный канал отправляем в "Прочее"
+    if is_info_channel(info_line):
+        return '📦 Прочее'
+    
     # Проверка на избранное по точному совпадению
     if is_favorite_exact(info_line):
         return '❤️ Избранное'
@@ -415,6 +436,10 @@ def get_new_group(info_line):
 def should_skip_check(info_line):
     if not info_line:
         return False
+    
+    # Информационный канал пропускаем проверку
+    if is_info_channel(info_line):
+        return True
     
     group_match = re.search(r'group-title="([^"]*)"', info_line, re.IGNORECASE)
     if not group_match:
@@ -466,7 +491,7 @@ def check_all_parallel(channels, max_workers=MAX_WORKERS):
             to_check.append(ch)
     
     if skipped:
-        print(f"⏭️ Пропущено проверки: {len(skipped)} каналов (из {', '.join(SKIP_CHECK_GROUPS)})")
+        print(f"⏭️ Пропущено проверки: {len(skipped)} каналов")
     
     if not to_check:
         print("✅ Все каналы пропущены проверки!")
@@ -499,6 +524,18 @@ def check_all_parallel(channels, max_workers=MAX_WORKERS):
     
     print()
     return working, dead
+
+def create_info_channel(update_time):
+    """
+    Создаёт информационный канал с датой обновления.
+    """
+    info_line = f'#EXTINF:-1 tvg-logo="" group-title="📦 Прочее",📅 Обновлено: {update_time.strftime("%Y-%m-%d %H:%M:%S")} MSK'
+    url = 'http://info.channel/update'
+    
+    return {
+        'info': info_line,
+        'url': url,
+    }
 
 def write_m3u_with_groups(channels, output_file, update_time, checked_count=None, dead_count=None, dedup_count=None, skipped_count=None, blocked_count=None):
     output_path = Path(output_file)
@@ -650,15 +687,26 @@ def main():
     print(f"  📊 Процент рабочих: {round(len(working)/(len(working)+len(dead))*100, 1) if (len(working)+len(dead)) > 0 else 0}%")
     
     # =============================================
-    # 6. СОХРАНЯЕМ ПЛЕЙЛИСТ
+    # 6. ДОБАВЛЯЕМ ИНФОРМАЦИОННЫЙ КАНАЛ
+    # =============================================
+    print("\n" + "="*50)
+    print("📅 ДОБАВЛЕНИЕ ИНФОРМАЦИОННОГО КАНАЛА")
+    print("="*50)
+    
+    now = get_moscow_time()
+    info_channel = create_info_channel(now)
+    working.append(info_channel)
+    print(f"✅ Добавлен информационный канал: {info_channel['info']}")
+    
+    # =============================================
+    # 7. СОХРАНЯЕМ ПЛЕЙЛИСТ
     # =============================================
     if working:
-        now = get_moscow_time()
         write_m3u_with_groups(
             working, 
             output_file, 
             now,
-            checked_count=len(working)+len(dead),
+            checked_count=len(working)+len(dead) - 1,  # -1 за информационный канал
             dead_count=len(dead),
             dedup_count=dedup_count,
             skipped_count=skipped_count,
