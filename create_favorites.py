@@ -33,6 +33,36 @@ SKIP_CHECK_GROUPS = [
 ARCHIVE_SOURCE_GROUP = 'Wink (VPN 🇷🇺)'
 
 # ═══════════════════════════════════════════════════════════════
+# 🔽 СПИСОК КАНАЛОВ ДЛЯ УДАЛЕНИЯ
+# ═══════════════════════════════════════════════════════════════
+# Каналы, в названии или группе которых есть эти слова, будут удалены
+
+BLOCKED_KEYWORDS = [
+    # Спортивные каналы
+    'матч', 'match',
+    'спорт', 'sport',
+    'футбол', 'football',
+    'хоккей',
+    'khl',
+    'eurosport',
+    'setanta',
+    'arena sport',
+    'mma',
+    'бокс',
+    'баскет',
+    'окко',
+    'старт',
+    'премьер',
+    'матч тв', 'match tv',
+    'евроспорт',
+    'setanta sports',
+    'мир баскетбола',
+    
+    # Другие удаляемые каналы
+    'камин тв',
+]
+
+# ═══════════════════════════════════════════════════════════════
 # 🔽 ПРАВИЛА ПЕРЕГРУППИРОВКИ
 # ═══════════════════════════════════════════════════════════════
 
@@ -96,12 +126,6 @@ GROUP_RULES = {
         'super six', 'super tv', 'this is bulgaria', 'ugra travel',
         'шурентий live', 'ля минор', 'амedia premium', 'амedia hit'
     ],
-    '⚽ Спортивные каналы': [
-        'матч', 'match', 'спорт', 'sport', 'футбол', 'football', 'хоккей',
-        'khl', 'eurosport', 'setanta', 'arena sport', 'mma', 'бокс',
-        'баскет', 'окко', 'старт', 'премьер', 'матч тв', 'match tv',
-        'евроспорт', 'спорт', 'setanta sports', 'мир баскетбола'
-    ],
     '👶 Детские и мультипликационные': [
         'карусель', 'мульт', 'cartoon', 'nickelodeon', 'nick jr', 'tiji',
         'gulli', 'disney', 'да винчи', 'da vinci', 'детский', 'baby',
@@ -114,6 +138,10 @@ GROUP_RULES = {
         '4k удивительные животные', 'арабские эмираты 4k', 'гватемала 4k',
         'подводный мир в 4к', 'путешествие', 'приключения', 'дальше',
         'без названия', 'unknown', 'test', 'demo', 'sample'
+    ],
+    '❤️ Избранное': [
+        # Сюда можно добавлять названия каналов вручную
+        # Например: 'мой любимый канал', 'another channel'
     ]
 }
 
@@ -208,6 +236,31 @@ def parse_m3u(file_path):
         return []
     
     return channels
+
+def is_blocked_channel(info_line):
+    """
+    Проверяет, является ли канал заблокированным для удаления.
+    Возвращает True, если канал нужно удалить.
+    """
+    if not info_line:
+        return False
+    
+    info_lower = info_line.lower()
+    
+    # Проверяем в названии
+    for keyword in BLOCKED_KEYWORDS:
+        if keyword.lower() in info_lower:
+            return True
+    
+    # Проверяем в группе
+    group_match = re.search(r'group-title="([^"]*)"', info_line, re.IGNORECASE)
+    if group_match:
+        group_name = group_match.group(1).lower()
+        for keyword in BLOCKED_KEYWORDS:
+            if keyword.lower() in group_name:
+                return True
+    
+    return False
 
 def deduplicate_channels(channels):
     """Удаляет региональные дубли каналов"""
@@ -396,7 +449,7 @@ def get_channel_name(info_line):
         return match.group(1).strip()
     return 'Без названия'
 
-def write_m3u_with_groups(channels, output_file, update_time, checked_count=None, dead_count=None, dedup_count=None, skipped_count=None):
+def write_m3u_with_groups(channels, output_file, update_time, checked_count=None, dead_count=None, dedup_count=None, skipped_count=None, blocked_count=None):
     """Записывает каналы в M3U файл с группировкой по категориям"""
     
     output_path = Path(output_file)
@@ -416,12 +469,12 @@ def write_m3u_with_groups(channels, output_file, update_time, checked_count=None
         '⌚ Архив',
         '📺 Федеральные каналы',
         '📰 Новости и познавательные',
-        '⚽ Спортивные каналы',
         '🎬 Кино и сериалы',
         '📺 Развлекательные и общие',
         '🎵 Музыкальные каналы',
         '👶 Детские и мультипликационные',
         '📦 Прочее',
+        '❤️ Избранное',  # Добавлено в конец
     ]
     
     other_groups = sorted([g for g in groups.keys() if g not in group_order])
@@ -440,6 +493,8 @@ def write_m3u_with_groups(channels, output_file, update_time, checked_count=None
             f.write(f'# Удалено региональных дублей: {dedup_count}\n')
         if skipped_count is not None:
             f.write(f'# Пропущено проверки: {skipped_count}\n')
+        if blocked_count is not None:
+            f.write(f'# Удалено заблокированных каналов: {blocked_count}\n')
         f.write('\n')
         
         for group_name in ordered_groups:
@@ -479,7 +534,24 @@ def main():
     print(f"📊 Всего каналов: {len(channels)}")
     
     # =============================================
-    # 2. УДАЛЯЕМ РЕГИОНАЛЬНЫЕ ДУБЛИ
+    # 2. УДАЛЯЕМ ЗАБЛОКИРОВАННЫЕ КАНАЛЫ
+    # =============================================
+    print("\n" + "="*50)
+    print("🚫 УДАЛЕНИЕ ЗАБЛОКИРОВАННЫХ КАНАЛОВ")
+    print("="*50)
+    
+    original_count = len(channels)
+    channels = [ch for ch in channels if not is_blocked_channel(ch['info'])]
+    blocked_count = original_count - len(channels)
+    
+    if blocked_count > 0:
+        print(f"🗑️ Удалено заблокированных каналов: {blocked_count}")
+        print(f"   Список ключевых слов: {', '.join(BLOCKED_KEYWORDS)}")
+    else:
+        print("✅ Заблокированных каналов не найдено")
+    
+    # =============================================
+    # 3. УДАЛЯЕМ РЕГИОНАЛЬНЫЕ ДУБЛИ
     # =============================================
     print("\n" + "="*50)
     print("🗑️  УДАЛЕНИЕ РЕГИОНАЛЬНЫХ ДУБЛЕЙ")
@@ -490,7 +562,7 @@ def main():
     print(f"📊 Было: {original_count}, стало: {len(channels)}, удалено: {dedup_count}")
     
     # =============================================
-    # 3. ПРОВЕРКА КАНАЛОВ (С ПРОПУСКОМ ДЛЯ SKIP_CHECK_GROUPS)
+    # 4. ПРОВЕРКА КАНАЛОВ (С ПРОПУСКОМ ДЛЯ SKIP_CHECK_GROUPS)
     # =============================================
     print("\n" + "="*50)
     print("🔍 ПРОВЕРКА КАНАЛОВ")
@@ -509,7 +581,7 @@ def main():
     print(f"  📊 Процент рабочих: {round(len(working)/(len(working)+len(dead))*100, 1) if (len(working)+len(dead)) > 0 else 0}%")
     
     # =============================================
-    # 4. СОХРАНЯЕМ ПЛЕЙЛИСТ
+    # 5. СОХРАНЯЕМ ПЛЕЙЛИСТ
     # =============================================
     if working:
         now = get_moscow_time()
@@ -520,7 +592,8 @@ def main():
             checked_count=len(working)+len(dead),
             dead_count=len(dead),
             dedup_count=dedup_count,
-            skipped_count=skipped_count
+            skipped_count=skipped_count,
+            blocked_count=blocked_count
         )
         print(f"\n✅ Плейлист сохранён: {output_file}")
         print(f"   Всего каналов: {len(working)}")
