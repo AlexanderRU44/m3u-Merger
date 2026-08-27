@@ -1,12 +1,12 @@
 {
-  "generated": "2026-08-27T09:08:01.625785+03:00",
+  "generated": "2026-08-27T10:21:42.215260+03:00",
   "input_dir": "./playlists",
   "output_file": "./output/merged.m3u",
   "total_files": 6,
-  "total_channels": 5420,
-  "unique_channels": 4883,
-  "duplicates_removed": 537,
-  "excluded_channels": 596,
+  "total_channels": 5164,
+  "unique_channels": 4633,
+  "duplicates_removed": 531,
+  "excluded_channels": 853,
   "excluded_groups": [
     "🔺 INFO 🔺",
     "- ИНФО -",
@@ -21,12 +21,20 @@
     "Наш Нет",
     "Itv.uz (🇺🇿)",
     "Itv.uz",
-    "ИНФОКАНАЛ"
+    "ИНФОКАНАЛ",
+    "Турция",
+    "Туркменистан",
+    "Германия",
+    "Армения",
+    "Болгария",
+    "Украина",
+    "Азербайджан",
+    "Грузия"
   ],
   "archive_channels": 272,
   "sources": {
     "zabava_ef.m3u": 112,
-    "dimonovich_tv.m3u": 3202,
+    "dimonovich_tv.m3u": 3203,
     "iptv_ru.m3u": 247,
     "loganet_tv.m3u": 511,
     "shams_tv.m3u8": 1746,
@@ -34,11 +42,11 @@
   },
   "file_sizes": {
     "playlists/zabava_ef.m3u": 20709,
-    "playlists/dimonovich_tv.m3u": 719407,
+    "playlists/dimonovich_tv.m3u": 719655,
     "playlists/iptv_ru.m3u": 52453,
     "playlists/loganet_tv.m3u": 78077,
     "playlists/shams_tv.m3u8": 506834,
     "playlists/iptv_stable.m3u8": 41592
   },
-  "output_size": 1260572
+  "output_size": 1198072
 }
