@@ -63,18 +63,24 @@ BLOCKED_KEYWORDS = [
 ]
 
 # ═══════════════════════════════════════════════════════════════
+# 🔽 ТОЧНЫЕ НАЗВАНИЯ КАНАЛОВ ДЛЯ ИЗБРАННОГО
+# ═══════════════════════════════════════════════════════════════
+# Каналы с этими точными названиями попадут в группу ❤️ Избранное
+
+FAVORITE_EXACT_NAMES = [
+    'Investigation Discovery',
+    '5 Канал',
+    'НТВ',
+    'ТВЦ',
+    'НСТ',
+    'КИНОУЖАС',
+]
+
+# ═══════════════════════════════════════════════════════════════
 # 🔽 ПРАВИЛА ПЕРЕГРУППИРОВКИ
 # ═══════════════════════════════════════════════════════════════
 
 GROUP_RULES = {
-    '❤️ Избранное': [
-        'investigation discovery',
-        '5 канал', 'пятый канал',
-        'нтв', 'ntv',
-        'твц', 'тв центр',
-        'нст',
-        'киноужас',
-    ],
     '📺 Федеральные каналы': [
         'первый канал', 'россия 1', 'россия-1', 'ртр', 'ntv', 'нтв',
         'рентв', 'рен тв', '5 канал', 'пятый канал', 'тв центр', 'твц',
@@ -207,6 +213,36 @@ def get_channel_brand(info_line):
     
     return name
 
+def get_channel_name(info_line):
+    """Извлекает название канала из строки EXTINF"""
+    match = re.search(r',([^,]*)$', info_line)
+    if match:
+        return match.group(1).strip()
+    match = re.search(r'tvg-name="([^"]*)"', info_line, re.IGNORECASE)
+    if match:
+        return match.group(1).strip()
+    return 'Без названия'
+
+def is_favorite_exact(info_line):
+    """
+    Проверяет, является ли канал избранным по точному совпадению названия.
+    Возвращает True, если название канала точно совпадает с одним из списка.
+    """
+    if not info_line:
+        return False
+    
+    channel_name = get_channel_name(info_line)
+    if not channel_name:
+        return False
+    
+    # Проверяем точное совпадение (без учёта регистра)
+    channel_name_lower = channel_name.lower()
+    for favorite_name in FAVORITE_EXACT_NAMES:
+        if favorite_name.lower() == channel_name_lower:
+            return True
+    
+    return False
+
 def parse_m3u(file_path):
     """Парсит M3U файл и возвращает список каналов"""
     if not Path(file_path).exists():
@@ -327,6 +363,10 @@ def get_new_group(info_line):
     if not info_line:
         return '📦 Прочее'
     
+    # ПРОВЕРКА НА ИЗБРАННОЕ ПО ТОЧНОМУ СОВПАДЕНИЮ
+    if is_favorite_exact(info_line):
+        return '❤️ Избранное'
+    
     info_lower = info_line.lower()
     
     # Извлекаем текущую группу
@@ -444,15 +484,6 @@ def check_all_parallel(channels, max_workers=MAX_WORKERS):
     print()
     return working, dead
 
-def get_channel_name(info_line):
-    match = re.search(r',([^,]*)$', info_line)
-    if match:
-        return match.group(1).strip()
-    match = re.search(r'tvg-name="([^"]*)"', info_line, re.IGNORECASE)
-    if match:
-        return match.group(1).strip()
-    return 'Без названия'
-
 def write_m3u_with_groups(channels, output_file, update_time, checked_count=None, dead_count=None, dedup_count=None, skipped_count=None, blocked_count=None):
     """Записывает каналы в M3U файл с группировкой по категориям"""
     
@@ -470,7 +501,7 @@ def write_m3u_with_groups(channels, output_file, update_time, checked_count=None
     
     # Сортируем группы в нужном порядке
     group_order = [
-        '❤️ Избранное',  # Высший приоритет
+        '❤️ Избранное',
         '⌚ Архив',
         '📺 Федеральные каналы',
         '📰 Новости и познавательные',
