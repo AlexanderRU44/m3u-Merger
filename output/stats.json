@@ -1,12 +1,12 @@
 {
-  "generated": "2026-08-27T14:21:42.029949+03:00",
+  "generated": "2026-08-27T14:54:24.331206+03:00",
   "input_dir": "./playlists",
   "output_file": "./output/merged.m3u",
   "total_files": 7,
-  "total_channels": 7269,
-  "unique_channels": 6261,
-  "duplicates_removed": 1008,
-  "excluded_channels": 1367,
+  "total_channels": 7260,
+  "unique_channels": 6258,
+  "duplicates_removed": 1002,
+  "excluded_channels": 1376,
   "excluded_groups": [
     "🔺 INFO 🔺",
     "- ИНФО -",
@@ -42,9 +42,10 @@
     "Венгрия",
     "Великобритания",
     "USA",
-    "Казахстан"
+    "Казахстан",
+    "Республика Крым"
   ],
-  "archive_channels": 267,
+  "archive_channels": 273,
   "sources": {
     "zabava_ef.m3u": 112,
     "dimonovich_tv.m3u": 3365,
@@ -63,5 +64,5 @@
     "playlists/shams_tv.m3u8": 592077,
     "playlists/iptv_stable.m3u8": 41592
   },
-  "output_size": 1524400
+  "output_size": 1526010
 }
