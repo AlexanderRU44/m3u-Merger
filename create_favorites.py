@@ -3,15 +3,17 @@
 
 import re
 import os
+import sys
+import time
+import requests
 from pathlib import Path
 from datetime import datetime, timezone, timedelta
 
 # ═══════════════════════════════════════════════════════════════
-# 🔽 СПИСОК КЛЮЧЕВЫХ СЛОВ ДЛЯ ИЗБРАННОГО
+# 🔽 НАСТРОЙКИ
 # ═══════════════════════════════════════════════════════════════
-# Каналы, названия которых содержат эти слова, попадут в Избранное
-# Группой будет полное название канала (например, "Россия 1")
 
+# Список ключевых слов для избранного
 FAVORITE_KEYWORDS = [
     # === Российские ===
     'Первый канал',
@@ -75,14 +77,41 @@ FAVORITE_KEYWORDS = [
     'Жара',
     
     # ⬇️ ДОБАВЬТЕ СВОИ КЛЮЧЕВЫЕ СЛОВА ЗДЕСЬ
-    # 'Мой любимый канал',
 ]
+
+# Настройки проверки
+CHECK_TIMEOUT = 5          # Таймаут на проверку канала (секунд)
+CHECK_DELAY = 0.5          # Задержка между проверками (секунд)
 
 # Настройка часового пояса (Москва UTC+3)
 MOSCOW_TZ = timezone(timedelta(hours=3))
 
 def get_moscow_time():
     return datetime.now(MOSCOW_TZ)
+
+def check_stream(url, timeout=CHECK_TIMEOUT):
+    """
+    Проверяет, отвечает ли стрим-сервер.
+    Возвращает True, если удалось получить данные.
+    """
+    if not url or not url.startswith(('http://', 'https://')):
+        return False
+    
+    try:
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        }
+        response = requests.get(url, headers=headers, timeout=timeout, stream=True)
+        
+        if response.status_code != 200:
+            return False
+        
+        # Пробуем прочитать первые 1024 байта
+        chunk = response.raw.read(1024)
+        return bool(chunk)
+        
+    except Exception:
+        return False
 
 def is_favorite(info_line):
     """Проверяет, является ли канал избранным по ключевым словам"""
@@ -99,12 +128,10 @@ def is_favorite(info_line):
 
 def get_channel_name(info_line):
     """Извлекает название канала из строки EXTINF"""
-    # Ищем название после последней запятой
     match = re.search(r',([^,]*)$', info_line)
     if match:
         return match.group(1).strip()
     
-    # Если не нашли, пробуем найти tvg-name
     match = re.search(r'tvg-name="([^"]*)"', info_line, re.IGNORECASE)
     if match:
         return match.group(1).strip()
@@ -140,7 +167,7 @@ def parse_m3u(file_path):
     
     return channels
 
-def write_m3u_with_groups(channels, output_file, update_time):
+def write_m3u_with_groups(channels, output_file, update_time, checked_count=None, dead_count=None):
     """Записывает каналы в M3U файл с группировкой по названию"""
     
     output_path = Path(output_file)
@@ -151,11 +178,8 @@ def write_m3u_with_groups(channels, output_file, update_time):
     
     for ch in channels:
         name = get_channel_name(ch['info'])
-        # Убираем всё после запятой (версии, HD, и т.д.)
-        # Например: "Россия 1 HD" → "Россия 1"
         base_name = re.sub(r'\s*(HD|FHD|UHD|4K|\+.*|\(.*\))$', '', name, flags=re.IGNORECASE).strip()
         
-        # Если название сильно изменилось, оставляем как есть
         if not base_name:
             base_name = name
         
@@ -163,29 +187,27 @@ def write_m3u_with_groups(channels, output_file, update_time):
             groups[base_name] = []
         groups[base_name].append(ch)
     
-    print(f"📂 Создано групп: {len(groups)}")
-    
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write('#EXTM3U\n')
         f.write(f'# ❤️ Избранное — {update_time.strftime("%Y-%m-%d %H:%M:%S")} MSK\n')
         f.write(f'# Всего каналов: {len(channels)}\n')
-        f.write(f'# Групп: {len(groups)}\n\n')
+        f.write(f'# Групп: {len(groups)}\n')
         
-        # Сортируем группы по названию
+        if checked_count is not None:
+            f.write(f'# Проверено каналов: {checked_count}\n')
+        if dead_count is not None:
+            f.write(f'# Удалено нерабочих: {dead_count}\n')
+        
+        f.write('\n')
+        
         for group_name in sorted(groups.keys()):
             channel_list = groups[group_name]
-            
-            # Добавляем комментарий-разделитель для группы
             f.write(f'# === ГРУППА: {group_name} ===\n')
             
             for ch in channel_list:
-                # Изменяем или добавляем group-title
                 info = ch['info']
-                
-                # Удаляем старый group-title, если есть
                 info = re.sub(r'group-title="[^"]*"\s*', '', info)
                 
-                # Добавляем новый group-title
                 if 'group-title="' not in info:
                     info = info.replace(
                         ',',
@@ -195,14 +217,15 @@ def write_m3u_with_groups(channels, output_file, update_time):
                 f.write(info + '\n')
                 f.write(ch['url'] + '\n')
             
-            f.write('\n')  # Пустая строка между группами
+            f.write('\n')
 
 def main():
     input_file = './output/merged.m3u'
     output_file = './output/favorites.m3u'
+    output_file_checked = './output/favorites_checked.m3u'
     
     print("="*50)
-    print("❤️  СОЗДАНИЕ ПЛЕЙЛИСТА ИЗБРАННОЕ (С ГРУППАМИ)")
+    print("❤️  СОЗДАНИЕ ПЛЕЙЛИСТА ИЗБРАННОЕ")
     print("="*50)
     
     if not Path(input_file).exists():
@@ -214,39 +237,85 @@ def main():
     channels = parse_m3u(input_file)
     print(f"📊 Всего каналов в merged.m3u: {len(channels)}")
     
-    # Фильтруем избранные каналы
+    # 1. Фильтруем избранные каналы
     favorites = []
     for ch in channels:
         if is_favorite(ch['info']):
             favorites.append(ch)
     
-    print(f"❤️ Найдено избранных каналов: {len(favorites)}")
+    total_favorites = len(favorites)
+    print(f"❤️ Найдено избранных каналов: {total_favorites}")
     
     if not favorites:
         print("⚠️ Избранные каналы не найдены!")
         print("   Проверьте список FAVORITE_KEYWORDS в create_favorites.py")
         return
     
-    # Показываем статистику по группам
-    groups = {}
-    for ch in favorites:
-        name = get_channel_name(ch['info'])
-        base_name = re.sub(r'\s*(HD|FHD|UHD|4K|\+.*|\(.*\))$', '', name, flags=re.IGNORECASE).strip()
-        if base_name not in groups:
-            groups[base_name] = 0
-        groups[base_name] += 1
-    
-    print("\n📂 Группы каналов:")
-    for group_name, count in sorted(groups.items()):
-        print(f"  - {group_name}: {count} каналов")
-    
-    # Сохраняем с группировкой
+    # 2. Сохраняем все избранные (без проверки)
     now = get_moscow_time()
     write_m3u_with_groups(favorites, output_file, now)
+    print(f"✅ Сохранены все избранные: {output_file}")
     
-    print(f"\n✅ Плейлист Избранное сохранён: {output_file}")
-    print(f"   Всего каналов: {len(favorites)}")
-    print(f"   Групп: {len(groups)}")
+    # 3. Проверяем ВСЕ каналы на работоспособность
+    print("\n" + "="*50)
+    print("🔍 ПРОВЕРКА РАБОТОСПОСОБНОСТИ ВСЕХ КАНАЛОВ")
+    print("="*50)
+    print(f"📊 Всего к проверке: {total_favorites} каналов")
+    print(f"⏱️  Примерное время: ~{round(total_favorites * (CHECK_TIMEOUT + CHECK_DELAY) / 60, 1)} минут")
+    print("-"*50)
+    
+    working_channels = []
+    dead_channels = []
+    checked_count = 0
+    
+    for i, ch in enumerate(favorites, 1):
+        # Показываем прогресс
+        name = get_channel_name(ch['info'])
+        sys.stdout.write(f"\r  [{i}/{total_favorites}] Проверка: {name[:35]}...")
+        sys.stdout.flush()
+        
+        is_working = check_stream(ch['url'])
+        checked_count += 1
+        
+        if is_working:
+            working_channels.append(ch)
+        else:
+            dead_channels.append(ch)
+        
+        # Пауза между проверками
+        time.sleep(CHECK_DELAY)
+    
+    print(f"\n\n📊 Результат проверки:")
+    print(f"  ✅ Проверено: {checked_count}")
+    print(f"  📺 Работает: {len(working_channels)}")
+    print(f"  ❌ Не работает: {len(dead_channels)}")
+    print(f"  📊 Процент рабочих: {round(len(working_channels)/checked_count*100, 1) if checked_count > 0 else 0}%")
+    
+    # 4. Сохраняем только рабочие каналы
+    if working_channels:
+        write_m3u_with_groups(
+            working_channels, 
+            output_file_checked, 
+            now,
+            checked_count=checked_count,
+            dead_count=len(dead_channels)
+        )
+        print(f"\n✅ Сохранены только рабочие каналы: {output_file_checked}")
+        print(f"   Всего рабочих каналов: {len(working_channels)}")
+    else:
+        print("\n❌ Нет рабочих каналов!")
+    
+    # 5. Показываем список нерабочих каналов (первые 10)
+    if dead_channels:
+        print("\n📋 Примеры нерабочих каналов (первые 10):")
+        for i, ch in enumerate(dead_channels[:10], 1):
+            name = get_channel_name(ch['info'])
+            print(f"  {i}. {name[:50]}")
+        if len(dead_channels) > 10:
+            print(f"  ... и ещё {len(dead_channels) - 10} каналов")
+    
+    print("\n" + "="*50)
+    print("✅ Готово!")
     print("="*50)
 
 if __name__ == '__main__':
