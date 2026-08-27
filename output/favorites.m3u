@@ -1,7 +1,7 @@
 #EXTM3U
-# ❤️ Избранное — 2026-08-27 11:45:40 MSK
-# Всего каналов: 1654
-# Групп: 571
+# ❤️ Избранное — 2026-08-27 11:47:58 MSK
+# Всего каналов: 1670
+# Групп: 572
 
 # === ГРУППА: 1HD Music ===
 #EXTINF:-1 tvg-id="1hd" audio-track="rus" group-title="1HD Music", 1HD Music
@@ -63,6 +63,10 @@ https://stream.ecable.tv/afrobeats/tracks-v1a1/mono.m3u8
 #EXTINF:-1  group-title="Amedia 1",Amedia 1
 http://hls127.freeott.top:8080/Amedia_1/video.m3u8
 #EXTINF:-1  group-title="Amedia 1",Amedia 1
+http://5.9.11.197:57419/chu-109/mpegts
+#EXTINF:-1  group-title="Amedia 1",Amedia 1 HD
+http://5.9.11.197:57419/chu-401/mpegts
+#EXTINF:-1  group-title="Amedia 1",Amedia 1
 https://fs.uplink.kz/amedia_1/mono.m3u8?token=onlinetv
 #EXTINF:-1  group-title="Amedia 1",Amedia 1
 https://s70378.cdn.ngenix.net/amedia_1/2/index.m3u8
@@ -76,6 +80,8 @@ http://stream.mcquack.net/117/index.m3u8
 # === ГРУППА: Amedia 2 ===
 #EXTINF:-1  group-title="Amedia 2",Amedia 2
 http://45.145.32.13:20440/kineko/index.m3u8?token=test
+#EXTINF:-1  group-title="Amedia 2",Amedia 2 HD
+http://5.9.11.197:57419/chu-402/mpegts
 #EXTINF:-1  group-title="Amedia 2",Amedia 2
 https://s70378.cdn.ngenix.net/amedia_2/2/index.m3u8
 #EXTINF:-1  group-title="Amedia 2",Amedia 2 HD
@@ -97,6 +103,8 @@ http://stream.shbro.org/stream/14B37BB54802/3ee5videom3u8_aef6.m3u8
 #EXTINF:-1  group-title="Amedia Hit",Amedia Hit
 http://45.145.32.13:20440/mama/index.m3u8?token=test
 #EXTINF:-1  group-title="Amedia Hit",Amedia Hit HD
+http://5.9.11.197:57419/chu-87/mpegts
+#EXTINF:-1  group-title="Amedia Hit",Amedia Hit HD
 https://fs.uplink.kz/amedia_hit_hd/mono.m3u8?token=onlinetv
 #EXTINF:-1  group-title="Amedia Hit",Amedia Hit
 https://s70378.cdn.ngenix.net/amedia_hit/2/index.m3u8
@@ -112,6 +120,8 @@ http://stream.shbro.org/stream/14B37BB54802/3ee5videom3u8.m3u8
 # === ГРУППА: Amedia Premium ===
 #EXTINF:-1  group-title="Amedia Premium",Amedia Premium
 http://45.145.32.13:20440/amedia_premium_hd/index.m3u8?token=test
+#EXTINF:-1  group-title="Amedia Premium",Amedia Premium
+http://5.9.11.197:57419/chu-88/mpegts
 #EXTINF:-1  group-title="Amedia Premium",Amedia Premium HD
 https://fs.uplink.kz/amedia_premium_hd/mono.m3u8?token=onlinetv
 #EXTINF:-1  group-title="Amedia Premium",Amedia Premium HD
@@ -1325,6 +1335,10 @@ http://hls.stb.md/TV1000_HD_H264/video.m3u8?token=eyJhbGciOiJIUzI1NiIsInR5cCI6Ik
 #EXTINF:-1  group-title="TV1000",TV1000
 http://46.8.46.14/tv1000/index.m3u8
 #EXTINF:-1  group-title="TV1000",TV1000
+http://5.9.11.197:57419/chu-103/mpegts
+#EXTINF:-1  group-title="TV1000",TV1000 HD
+http://5.9.11.197:57419/chu-410/mpegts
+#EXTINF:-1  group-title="TV1000",TV1000
 https://fs.uplink.kz/viju_tv1000/mono.m3u8?token=onlinetv
 #EXTINF:-1  group-title="TV1000",TV1000
 https://stream8.cinerama.uz/1058/tracks-v1a1/mono.m3u8
@@ -1350,6 +1364,8 @@ https://live-hls-viasat-secure-flus.cdnvideo.ru/viasat/TV1000_Action_HD.smil/tra
 http://hls.stb.md/TV1000ACTION_HD_H264/video.m3u8?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpcCI6IjEwOS4yMDEuMTUyLjE4MSIsIm5iZiI6MTc4NzgxMzQ4OCwiZXhwIjoxNzg3ODk5ODg4LCJpYXQiOjE3ODc4MTM0ODgsImlzcyI6InN0Yi5zdGFybmV0Lm1kIn0.VqfkHBpYoMsrffBdtgAvzvaCCszy-sMmgXxCCX_AI7Q
 #EXTINF:-1  group-title="TV1000 Action",TV1000 Action
 http://46.8.46.14/actiontv/index.m3u8
+#EXTINF:-1  group-title="TV1000 Action",TV1000 Action HD
+http://5.9.11.197:57419/chu-409/mpegts
 #EXTINF:-1  group-title="TV1000 Action",TV1000 Action
 https://fs.uplink.kz/viju_tv1000_action/mono.m3u8?token=onlinetv
 #EXTINF:-1  group-title="TV1000 Action",TV1000 Action
@@ -1370,6 +1386,8 @@ https://stream8.cinerama.uz/1059/tracks-v1a1/mono.m3u8
 # === ГРУППА: TV1000 Русское кино ===
 #EXTINF:-1 catchup="append" catchup-days="7" catchup-type="flussonic" group-title="TV1000 Русское кино",TV1000 Русское кино HD
 http://hls.stb.md/TV1000RU_HD_H264/video.m3u8?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpcCI6IjEwOS4yMDEuMTUyLjE4MSIsIm5iZiI6MTc4NzgxMzQ4OCwiZXhwIjoxNzg3ODk5ODg4LCJpYXQiOjE3ODc4MTM0ODgsImlzcyI6InN0Yi5zdGFybmV0Lm1kIn0.VqfkHBpYoMsrffBdtgAvzvaCCszy-sMmgXxCCX_AI7Q
+#EXTINF:-1  group-title="TV1000 Русское кино",TV1000 Русское кино
+http://5.9.11.197:57419/chu-102/mpegts
 #EXTINF:-1  group-title="TV1000 Русское кино",TV1000 Русское кино
 https://fs.uplink.kz/viju_tv1000_russkoe/mono.m3u8?token=onlinetv
 #EXTINF:-1  group-title="TV1000 Русское кино",TV1000 Русское кино
@@ -2186,6 +2204,8 @@ http://hls1.stb.md/KINOTV_HD_H264/video.m3u8?token=eyJhbGciOiJIUzI1NiIsInR5cCI6I
 http://46.8.46.14/kinotv/index.m3u8
 #EXTINF:-1  group-title="Кино ТВ",Кино ТВ
 http://185.46.16.239:8000/Kino_TV
+#EXTINF:-1  group-title="Кино ТВ",Кино ТВ
+http://5.9.11.197:57419/chu-117/mpegts
 #EXTINF:-1  group-title="Кино ТВ",Кино ТВ HD
 http://tv.ttk.mx:9113
 #EXTINF:-1  group-title="Кино ТВ",Кино ТВ
@@ -2214,6 +2234,8 @@ http://hls.stb.md/KINO_KOMEDYA_H264/video.m3u8?token=eyJhbGciOiJIUzI1NiIsInR5cCI
 http://185.46.16.239:8000/Fox_HD
 #EXTINF:-1  group-title="Кинокомедия", Кинокомедия
 http://176.118.197.101/Kinokomediya/index.m3u8
+#EXTINF:-1  group-title="Кинокомедия",Кинокомедия
+http://5.9.11.197:57419/chu-119/mpegts
 #EXTINF:-1  group-title="Кинокомедия",Кинокомедия
 https://fs.uplink.kz/kinokomedia/mono.m3u8?token=onlinetv
 #EXTINF:-1  group-title="Кинокомедия",Кинокомедия
@@ -2258,6 +2280,8 @@ http://hls.stb.md/KINOPREMIERA_H264/video.m3u8?token=eyJhbGciOiJIUzI1NiIsInR5cCI
 # === ГРУППА: Кинохит ===
 #EXTINF:-1 catchup="append" catchup-days="7" catchup-type="flussonic" group-title="Кинохит",Кинохит
 http://hls.stb.md/KINOHIT_H264/video.m3u8?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpcCI6IjEwOS4yMDEuMTUyLjE4MSIsIm5iZiI6MTc4NzgxMzQ4OCwiZXhwIjoxNzg3ODk5ODg4LCJpYXQiOjE3ODc4MTM0ODgsImlzcyI6InN0Yi5zdGFybmV0Lm1kIn0.VqfkHBpYoMsrffBdtgAvzvaCCszy-sMmgXxCCX_AI7Q
+#EXTINF:-1  group-title="Кинохит",Кинохит
+http://5.9.11.197:57419/chu-118/mpegts
 #EXTINF:-1  group-title="Кинохит",Кинохит
 https://fs.uplink.kz/kinohit/mono.m3u8?token=onlinetv
 #EXTINF:-1  group-title="Кинохит",Кинохит
@@ -2733,6 +2757,8 @@ http://45.145.32.13:20440/ctc_kids_hd/index.m3u8?token=test
 #EXTINF:-1  group-title="Мир сериала", Мир сериала
 http://176.118.197.101/MirSeriala/index.m3u8
 #EXTINF:-1  group-title="Мир сериала",Мир сериала
+http://5.9.11.197:57419/chu-127/mpegts
+#EXTINF:-1  group-title="Мир сериала",Мир сериала
 https://s70378.cdn.ngenix.net/mir_seriala/1/index.m3u8
 #EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/26118/logo_256_1717161033.png" group-title="Мир сериала", Мир сериала
 https://mhd116.iptv2022.com/x/YABmiyvB4v36hQ_rx3zB5Q,1787900154/streaming/mir_seriala/324/1/index.m3u8
@@ -3129,6 +3155,8 @@ http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_1d65.m3u8
 #EXTINF:-1  group-title="НТВ Хит",НТВ Хит
 https://cdn.ntv.ru/th_hit/tracks-v1a1/playlist.m3u8
 #EXTINF:-1  group-title="НТВ Хит",НТВ Хит
+http://5.9.11.197:57419/chu-130/mpegts
+#EXTINF:-1  group-title="НТВ Хит",НТВ Хит
 http://tv.ttk.mx:9173
 #EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/14064/logo_256_1673861719.png" group-title="НТВ Хит", НТВ Хит
 https://mhd116.iptv2022.com/x/SSYdzfdjZ9scNDFwPIDYwg,1787900154/streaming/sever_crimea24/324/1/index.m3u8
@@ -3140,6 +3168,10 @@ http://cdn2.ntv.ru/th_hit/playlist.m3u8
 http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_cb3a.m3u8
 #EXTINF:-1 tvg-logo="https://toplogos.ru/images/logo-ntv-hit.png"  group-title="НТВ Хит",НТВ Хит
 http://stream.shbro.org/stream/14B37BB54802/8383videom3u8.m3u8
+
+# === ГРУППА: НТВ стиль ===
+#EXTINF:-1  group-title="НТВ стиль",НТВ стиль
+http://5.9.11.197:57419/chu-129/mpegts
 
 # === ГРУППА: НТВ-Беларусь ===
 #EXTINF:-1 audio-track="rus" group-title="НТВ-Беларусь", НТВ-Беларусь
@@ -3982,6 +4014,8 @@ http://stream.shbro.org/stream/14B37BB54802/08a7videom3u8_b8c8.m3u8
 http://stream.shbro.org/stream/14B37BB54802/8026videom3u8.m3u8
 
 # === ГРУППА: Русский бестселлер ===
+#EXTINF:-1  group-title="Русский бестселлер",Русский бестселлер
+http://5.9.11.197:57419/chu-135/mpegts
 #EXTINF:-1  group-title="Русский бестселлер",Русский бестселлер
 http://tv.ttk.mx:9043
 #EXTINF:-1  group-title="Русский бестселлер",Русский бестселлер
