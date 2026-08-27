@@ -28,7 +28,20 @@ Thumbs.db
 playlists/download_stats.json
 output/stats.json
 
-# НЕ игнорируем output и playlists
-# Убедитесь, что этих строк НЕТ:
-# output/
-# playlists/
+# ═══════════════════════════════════════════════════════════════
+# 🔽 ПЛЕЙЛИСТЫ (НЕ ИГНОРИРУЕМ, А СОХРАНЯЕМ)
+# ═══════════════════════════════════════════════════════════════
+# ВАЖНО: НЕ добавляем output/ и playlists/ в .gitignore!
+# Эти папки должны быть в репозитории, чтобы файлы были доступны
+# по ссылкам raw.githubusercontent.com
+
+# Исключаем только временные/бэкап файлы
+*.tmp
+*.temp
+
+# НЕ игнорируем:
+# - output/merged.m3u
+# - output/merged_archive.m3u
+# - output/favorites.m3u
+# - playlists/*.m3u
+# - playlists/*.m3u8
