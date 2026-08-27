@@ -1,12 +1,12 @@
 {
-  "generated": "2026-08-27T12:44:13.719803+03:00",
+  "generated": "2026-08-27T14:10:10.235165+03:00",
   "input_dir": "./playlists",
   "output_file": "./output/merged.m3u",
   "total_files": 7,
-  "total_channels": 7217,
-  "unique_channels": 6209,
+  "total_channels": 7427,
+  "unique_channels": 6419,
   "duplicates_removed": 1008,
-  "excluded_channels": 1171,
+  "excluded_channels": 1209,
   "excluded_groups": [
     "🔺 INFO 🔺",
     "- ИНФО -",
@@ -29,7 +29,8 @@
     "Болгария",
     "Украина",
     "Азербайжан",
-    "Грузия"
+    "Грузия",
+    "XXX"
   ],
   "archive_channels": 267,
   "sources": {
@@ -38,7 +39,7 @@
     "bugsfreeweb.m3u": 2209,
     "iptv_ru.m3u": 247,
     "loganet_tv.m3u": 511,
-    "shams_tv.m3u8": 1746,
+    "shams_tv.m3u8": 1994,
     "iptv_stable.m3u8": 198
   },
   "file_sizes": {
@@ -47,8 +48,8 @@
     "playlists/bugsfreeweb.m3u": 482152,
     "playlists/iptv_ru.m3u": 52453,
     "playlists/loganet_tv.m3u": 78077,
-    "playlists/shams_tv.m3u8": 506834,
+    "playlists/shams_tv.m3u8": 592077,
     "playlists/iptv_stable.m3u8": 41592
   },
-  "output_size": 1525295
+  "output_size": 1586360
 }
