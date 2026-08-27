@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-08-27T09:32:05.729013",
-  "total": 6,
-  "success": 6,
+  "timestamp": "2026-08-27T09:44:13.488736",
+  "total": 7,
+  "success": 7,
   "results": {
     "dimonovich_tv.m3u": {
       "url": "https://raw.githubusercontent.com/Dimonovich/TV/Dimonovich/FREE/TV",
@@ -48,6 +48,14 @@
       "success": true,
       "info": {
         "size": 71608,
+        "status": "success"
+      }
+    },
+    "bugsfreeweb.m3u": {
+      "url": "https://raw.githubusercontent.com/bugsfreeweb/LiveTVCollector/refs/heads/main/LiveTV/Russia/LiveTV.m3u",
+      "success": true,
+      "info": {
+        "size": 457066,
         "status": "success"
       }
     }
