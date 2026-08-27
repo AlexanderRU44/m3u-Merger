@@ -1,50 +1,102 @@
 #EXTM3U
-# ❤️ Избранное — 2026-08-27 21:30:21 MSK
-# Всего каналов: 223
-# Групп: 3
-# Проверено: 571
-# Удалено нерабочих: 348
+# ❤️ Избранное — 2026-08-27 21:35:24 MSK
+# Всего каналов: 571
+# Групп: 8
 # Удалено региональных дублей: 46
 
 # === ГРУППА: 📺 Федеральные каналы ===
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/157/logo_256.webp" group-title="📺 Федеральные каналы", Матч ТВ
+https://mhd116.iptv2022.com/x/UTR-a5W5M0zgdJ__LrcMBw,1787900154/streaming/matchott/324/5/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10100/logo_256.webp" group-title="📺 Федеральные каналы", НТВ HD
+https://mhd116.iptv2022.com/x/ixTbBKAfZQxDEUEGzCkAkQ,1787900154/streaming/ntv_msk/324/5/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/3/logo_256.webp" group-title="📺 Федеральные каналы", Пятый канал
+https://mhd116.iptv2022.com/x/JgG9ZZ6ppYLSiVB4thNCDA,1787900154/streaming/5kanalott/324/5/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/78/logo_256.webp" group-title="📺 Федеральные каналы", Карусель
+https://mhd116.iptv2022.com/x/N1UP43ks2PVI4k-h-POBQA,1787900154/streaming/karusel/324/5/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/101/logo_256.webp" group-title="📺 Федеральные каналы", ОТР
+https://mhd116.iptv2022.com/x/tgkGjSbO-H6E6ZaT4FXCdQ,1787900154/streaming/otr/324/5/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/129/logo_256.webp" group-title="📺 Федеральные каналы", ТВ Центр
+https://mhd116.iptv2022.com/x/p3lcEZcYLgx-dEtvl6e6Hg,1787900154/streaming/tvc/324/5/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/113/logo_256.webp" group-title="📺 Федеральные каналы", РЕН ТВ
+https://mhd116.iptv2022.com/x/FbXEqzI2tapLCbup7P0vVA,1787900154/streaming/rentvott/324/5/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/124/logo_256.webp" group-title="📺 Федеральные каналы", Спас
+https://mhd116.iptv2022.com/x/aBrpMSCqeQrsgE9l7QmLNw,1787900154/streaming/spas/324/5/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/126/logo_256.webp" group-title="📺 Федеральные каналы", СТС HD
+https://mhd116.iptv2022.com/x/hOXtJ47ih4lxxe2YRdUrXw,1787900154/streaming/stsott/324/5/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/72/logo_256.webp" group-title="📺 Федеральные каналы", Звезда
+https://mhd116.iptv2022.com/x/aZdMW59kTn8Uc0bLyTecsg,1787900154/streaming/zvezda/324/5/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/88/logo_256.webp" group-title="📺 Федеральные каналы", Мир
+https://mhd116.iptv2022.com/x/_6XUaqNuGd-LAexLoyW4ug,1787900154/streaming/mirott/324/5/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/136/logo_256.webp" group-title="📺 Федеральные каналы", ТНТ
+https://mhd116.iptv2022.com/x/V9R9Rs3kR6eSHD9NelRnXw,1787900154/streaming/tntott/324/5/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/168/logo_256.webp" group-title="📺 Федеральные каналы", ТНТ4
+https://mhd116.iptv2022.com/x/WxPYnqBfOqMU54HVeFFtiw,1787900154/streaming/tnt4ott/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10259/logo_256.webp" group-title="📺 Федеральные каналы", СТС Love
+https://mhd116.iptv2022.com/x/C8F5xDpronAcjCuNfsdXRA,1787900154/streaming/stsloveott/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/26118/logo_256_1717161033.png" group-title="📺 Федеральные каналы", Мир сериала
+https://mhd116.iptv2022.com/x/YABmiyvB4v36hQ_rx3zB5Q,1787900154/streaming/mir_seriala/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10220/logo_256_1655449233.png" group-title="📺 Федеральные каналы", Детский Мир
+https://mhd116.iptv2022.com/x/WHjBC2aVoOE8bhV9iMN8Cg,1787900154/streaming/detmir/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10140/logo_256_1661855687.png" group-title="📺 Федеральные каналы", МИР-24
+https://mhd116.iptv2022.com/x/DiBa6T457og97k32WchZ0w,1787900154/streaming/mir24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10222/logo_256_1658737177.png" group-title="📺 Федеральные каналы", Открытый мир
+https://mhd116.iptv2022.com/x/gNsQWgYCgM1x34vBj5OoTA,1787900154/streaming/openmir/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/123/logo_256_1658737619.png" group-title="📺 Федеральные каналы", Союз
+https://mhd116.iptv2022.com/x/ddDFNPFyRwF20BsopcuKqQ,1787900154/streaming/souz/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10266/logo_256.webp" group-title="📺 Федеральные каналы", ННТВ
+https://mhd116.iptv2022.com/x/Vo-oqvqaqwVCo_iHELDaqg,1787900154/streaming/nntv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10115/logo_256_1660805754.png" group-title="📺 Федеральные каналы", Мир Белогорья
+https://mhd116.iptv2022.com/x/GVUo-UEPY-xbZ5zsnKp74w,1787900154/streaming/belogorie/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10460/logo_256_1660804953.png" group-title="📺 Федеральные каналы", Евразия (Оренбургская область г. Орск)
+https://mhd116.iptv2022.com/x/dKU-1WuhaIT2B4pMl-R7eg,1787900154/streaming/eurasia/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10471/logo_256_1660804589.png" group-title="📺 Федеральные каналы", Вариант (Владимир)
+https://mhd116.iptv2022.com/x/1q1GcU_VHfHwQ6Jy3aa3CA,1787900154/streaming/variant/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10188/logo_256_1660804771.png" group-title="📺 Федеральные каналы", Губерния 33 (Владимир)
+https://mhd116.iptv2022.com/x/pfQxVcgLUOw2UnP1F7qbkQ,1787900154/streaming/guberniya-v/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10837/logo_256_1730380644.png" group-title="📺 Федеральные каналы", Смотри Радио (Оренбург)
+https://mhd116.iptv2022.com/x/RDR74_qjHO8q7MyoMEyxyQ,1787900154/streaming/radio-orsk/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/14064/logo_256_1673861719.png" group-title="📺 Федеральные каналы", НТВ Хит
+https://mhd116.iptv2022.com/x/SSYdzfdjZ9scNDFwPIDYwg,1787900154/streaming/sever_crimea24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/31249/logo_256.webp" group-title="📺 Федеральные каналы", Союзный
+https://mhd116.iptv2022.com/x/_r8bMSJKsCG3qqBbxdVGxw,1787900154/streaming/souzniy/324/1/index.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📺 Федеральные каналы",Первый канал
+https://zabava-htlive.cdn.ngenix.net/hls/CH_1TVSD/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📺 Федеральные каналы",НТВ
+http://zabava-htlive.cdn.ngenix.net/hls/CH_NTV/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📺 Федеральные каналы",Рен ТВ +4
+http://zabava-htlive.cdn.ngenix.net/hls/CH_RENTV_4/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📺 Федеральные каналы",Рен ТВ +7
 http://zabava-htlive.cdn.ngenix.net/hls/CH_RENTV_7/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📺 Федеральные каналы",Россия 1
 https://zabava-htlive.cdn.ngenix.net/hls/CH_RUSSIA1/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📺 Федеральные каналы",Первый канал
-https://zabava-htlive.cdn.ngenix.net/hls/CH_1TVSD/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📺 Федеральные каналы",Рен ТВ +4
-http://zabava-htlive.cdn.ngenix.net/hls/CH_RENTV_4/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📺 Федеральные каналы",НТВ
-http://zabava-htlive.cdn.ngenix.net/hls/CH_NTV/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📺 Федеральные каналы",ТНТ (+7)
-http://zabava-htlive.cdn.ngenix.net/hls/CH_TNT_7/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📺 Федеральные каналы",ТНТ
 http://zabava-htlive.cdn.ngenix.net/hls/CH_TNT/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📺 Федеральные каналы",ТНТ (+4)
-http://zabava-htlive.cdn.ngenix.net/hls/CH_TNT_4/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📺 Федеральные каналы",ТНТ (+2)
 http://zabava-htlive.cdn.ngenix.net/hls/CH_TNT_2/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📺 Федеральные каналы",ТНТ (+4)
+http://zabava-htlive.cdn.ngenix.net/hls/CH_TNT_4/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📺 Федеральные каналы",ТНТ (+7)
+http://zabava-htlive.cdn.ngenix.net/hls/CH_TNT_7/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📺 Федеральные каналы",ТНТ4
 http://zabava-htlive.cdn.ngenix.net/hls/CH_TNT4/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp} group-title="📺 Федеральные каналы",ТНТ4 (+4)
-https://s25617.cdn.ngenix.net/mdrm/CH_TNT4_4/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp} group-title="📺 Федеральные каналы",ТНТ4 (+2)
 https://s25617.cdn.ngenix.net/mdrm/CH_TNT4_2/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp} group-title="📺 Федеральные каналы",ТНТ4 (+4)
+https://s25617.cdn.ngenix.net/mdrm/CH_TNT4_4/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp} group-title="📺 Федеральные каналы",ТНТ4 (+7)
+https://s25617.cdn.ngenix.net/mdrm/CH_TNT4_7/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📺 Федеральные каналы",СТС
 http://zabava-htlive.cdn.ngenix.net/hls/CH_STS/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📺 Федеральные каналы",СТС (+2)
 http://zabava-htlive.cdn.ngenix.net/hls/CH_STS_2/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp} group-title="📺 Федеральные каналы",ТНТ4 (+7)
-https://s25617.cdn.ngenix.net/mdrm/CH_TNT4_7/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📺 Федеральные каналы",СТС (+4)
+http://zabava-htlive.cdn.ngenix.net/hls/CH_STS_4/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📺 Федеральные каналы",СТС (+7)
 http://zabava-htlive.cdn.ngenix.net/hls/CH_STS_7/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📺 Федеральные каналы",СТС Love
 http://zabava-htlive.cdn.ngenix.net/hls/CH_STSLOVE/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📺 Федеральные каналы",ТВЦ +4
 https://zabava-htlive.cdn.ngenix.net/hls/CH_TVC_4/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📺 Федеральные каналы",СТС (+4)
-http://zabava-htlive.cdn.ngenix.net/hls/CH_STS_4/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📺 Федеральные каналы",ТВЦ +7
 https://zabava-htlive.cdn.ngenix.net/hls/CH_TVC_7/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📺 Федеральные каналы",МИР (+2)
@@ -59,402 +111,1054 @@ https://rt-vlg-orb-htlive.cdn.ngenix.net/hls/CH_R02_EVRAZIY/variant.m3u8
 https://s45177.cdn.ngenix.net/hls/CH_R02_MATURTV/variant.m3u8
 
 # === ГРУППА: 📰 Новости и познавательные ===
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Россия К (+2)
-http://zabava-htlive.cdn.ngenix.net/hls/CH_RUSSIAK_2/variant.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/148/logo_256.webp" group-title="📰 Новости и познавательные", Россия 24
+https://mhd116.iptv2022.com/x/hqbc4V90MHtpupwEwwnpdg,1787900154/streaming/rossia24nn/324/5/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10185/logo_256.webp" group-title="📰 Новости и познавательные", Москва 24
+https://mhd116.iptv2022.com/x/hO3Tx9SQqb7Cll1lb2L0tw,1787900154/streaming/moscow24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10043/logo_256.webp" group-title="📰 Новости и познавательные", 360
+https://mhd116.iptv2022.com/x/-uBkAn8zcPnVcCRcKJEQug,1787900154/streaming/360sd/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10143/logo_256_1655452209.png" group-title="📰 Новости и познавательные", Известия
+https://mhd116.iptv2022.com/x/kMbZ0t8JS1DTnaKUWd0C4Q,1787900154/streaming/izvestia/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/112/logo_256_1658737400.png" group-title="📰 Новости и познавательные", РБК
+https://mhd116.iptv2022.com/x/WdCN9sS_AwT5OyZDws9OsQ,1787900154/streaming/rbk/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/46/logo_256_1658733605.png" group-title="📰 Новости и познавательные", BRIDGE РУССКИЙ ХИТ
+https://mhd116.iptv2022.com/x/L9Bc7Qb5Q8gkc_D89iJrmw,1787900154/streaming/br_rushit/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10061/logo_256_1658733635.png" group-title="📰 Новости и познавательные", RT
+https://mhd116.iptv2022.com/x/mp7Fz_mgicExb16j2sFNHQ,1787900154/streaming/rt/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10098/logo_256_1658733845.png" group-title="📰 Новости и познавательные", RTД
+https://mhd116.iptv2022.com/x/vYz_ZZXZCpo--AOK_B7kOw,1787900154/streaming/rtdhd/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10651/logo_256.png" group-title="📰 Новости и познавательные", RT DOC Eng
+https://mhd116.iptv2022.com/x/c2AhgAMEZ0fw5wbI4xlixQ,1787900154/streaming/rtdoc_eng/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10652/logo_256.png" group-title="📰 Новости и познавательные", RT Eng
+https://mhd116.iptv2022.com/x/0d3C9DN09WQQXoSJEIr4Mg,1787900154/streaming/rt_eng/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10653/logo_256.png" group-title="📰 Новости и познавательные", RT France
+https://mhd116.iptv2022.com/x/a-5rSV2cUC2mXpVxceo5QQ,1787900154/streaming/rt_fra/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/26965/logo_256.png" group-title="📰 Новости и познавательные", RT Deutsch
+https://mhd116.iptv2022.com/x/xGAVayXzfF6k9-lp0ImRww,1787900154/streaming/rt_deu/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/24998/logo_256.png" group-title="📰 Новости и познавательные", RT Español
+https://mhd116.iptv2022.com/x/YmUoKLM2Ih-V-xjzPXqYMg,1787900154/streaming/rt_esp/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/22121/logo_256.png" group-title="📰 Новости и познавательные", RT Arabic
+https://mhd116.iptv2022.com/x/iG74hLA-P7qY3Ltrr7e1gw,1787900154/streaming/rt_arab/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10377/logo_256_1717161074.png" group-title="📰 Новости и познавательные", 360 Новости
+https://mhd116.iptv2022.com/x/Ngt0fyFcheR8rLCgLpuvRQ,1787900154/streaming/360news/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10670/logo_256_1658736096.png" group-title="📰 Новости и познавательные", Здоровье
+https://mhd116.iptv2022.com/x/s5r8q0LhLdl1xKF0HKDYXg,1787900154/streaming/zdrav/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/12384/logo_256_1655390600.png" group-title="📰 Новости и познавательные", Travelxp HD
+https://mhd116.iptv2022.com/x/bjRJJCJCCVTzzHuuUze0ig,1787900154/streaming/travelxp/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10112/logo_256_1660805198.png" group-title="📰 Новости и познавательные", Инфо 24 (Шадринск)
+https://mhd116.iptv2022.com/x/muUwU9MGzZzJYmJpVxsjJw,1787900154/streaming/shard_info/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10472/logo_256_1658733681.png" group-title="📰 Новости и познавательные", CGTN
+https://mhd116.iptv2022.com/x/Wo11R5T-9TPp0gswOtogsQ,1787900154/streaming/cgtn/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10473/logo_256_1658733665.png" group-title="📰 Новости и познавательные", CGTN Русский
+https://mhd116.iptv2022.com/x/-DpvMxHJiTgj3hHMR018_Q,1787900154/streaming/cgtn-rus/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/11320/logo_256_1655386173.png" group-title="📰 Новости и познавательные", Известия Саратов
+https://mhd116.iptv2022.com/x/6TjZwTRw4LurmTJvLyV7LA,1787900154/streaming/izvestia-saratov/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/13602/logo_256_1660805431.png" group-title="📰 Новости и познавательные", Кунгур ТВ (Пермский край)
+https://mhd116.iptv2022.com/x/KHjWUhz0A204Czh9jsiLnA,1787900154/streaming/kungurtv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10129/logo_256_1660806906.png" group-title="📰 Новости и познавательные", ПРО БИЗНЕС
+https://mhd116.iptv2022.com/x/zVAsL-aVWV40RTWpugONPQ,1787900154/streaming/probusiness/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/30038/logo_256.png" group-title="📰 Новости и познавательные", News Front TV
+https://mhd116.iptv2022.com/x/zWazOjuozjyYCeLT3YwEVA,1787900154/streaming/news-front/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/31172/logo_256.webp" group-title="📰 Новости и познавательные", Известия Кемерово
+https://mhd116.iptv2022.com/x/kac2JC6ju5LuHuLOkZ_u9g,1787900154/streaming/izvestia_kemerovo/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/31179/logo_256.webp" group-title="📰 Новости и познавательные", Известия Армавир
+https://mhd116.iptv2022.com/x/2uZI3Is-mBJua6HY1w7b1Q,1787900154/streaming/izvestia_armavir/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/19881/logo_256.webp" group-title="📰 Новости и познавательные", GLN News 24 Геленджик
+https://mhd116.iptv2022.com/x/V2PB4dv1k7at1Ggo-shNQg,1787900154/streaming/gln_news/324/1/index.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Репортер 73
+http://rt-vlg-ul-htlive.cdn.ngenix.net/hls/CH_R03_REP73/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-logo="http://fe-ural.svc.iptv.rt.ru/images/broadcastChannel1531138277952.png" group-title="📰 Новости и познавательные",Рифей-ТВ
 https://rt-ural-perm-htlive.cdn.ngenix.net/hls/CH_R02_OTT_RENTV_REFEY_PERM/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Россия К
 http://zabava-htlive.cdn.ngenix.net/hls/CH_RUSSIAK/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Репортер 73
-http://rt-vlg-ul-htlive.cdn.ngenix.net/hls/CH_R03_REP73/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Россия К (+2)
+http://zabava-htlive.cdn.ngenix.net/hls/CH_RUSSIAK_2/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Россия К (+4)
 http://zabava-htlive.cdn.ngenix.net/hls/CH_RUSSIAK_4/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Россия К (+7)
 http://zabava-htlive.cdn.ngenix.net/hls/CH_RUSSIAK_7/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",2x2
+http://zabava-htlive.cdn.ngenix.net/hls/CH_2X2/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",2x2 (+2)
+http://zabava-htlive.cdn.ngenix.net/hls/CH_2X2_2/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",2x2 (+4)
+http://zabava-htlive.cdn.ngenix.net/hls/CH_2X2_4/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",2x2 (+7)
 http://zabava-htlive.cdn.ngenix.net/hls/CH_2X2_7/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",СОЛНЦЕ
 http://zabava-htlive.cdn.ngenix.net/hls/CH_DISNEY/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",СОЛНЦЕ (+2)
 http://zabava-htlive.cdn.ngenix.net/hls/CH_DISNEY_2/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",2x2
-http://zabava-htlive.cdn.ngenix.net/hls/CH_2X2/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",2x2 (+4)
-http://zabava-htlive.cdn.ngenix.net/hls/CH_2X2_4/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Пятница
-http://zabava-htlive.cdn.ngenix.net/hls/CH_PYATNIZZA/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",СОЛНЦЕ (+7)
-http://zabava-htlive.cdn.ngenix.net/hls/CH_DISNEY_7/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="piatnica-pl5" group-title="📰 Новости и познавательные",Пятница! (+5)
-http://zabava-htlive.cdn.ngenix.net/hls/CH_PYATNIZZA_4/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",2x2 (+2)
-http://zabava-htlive.cdn.ngenix.net/hls/CH_2X2_2/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",СОЛНЦЕ (+4)
 http://zabava-htlive.cdn.ngenix.net/hls/CH_DISNEY_4/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Супер
-https://zabava-htlive.cdn.ngenix.net/hls/CH_SUPER/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",СОЛНЦЕ (+7)
+http://zabava-htlive.cdn.ngenix.net/hls/CH_DISNEY_7/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Пятница
+http://zabava-htlive.cdn.ngenix.net/hls/CH_PYATNIZZA/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="piatnica-pl2" group-title="📰 Новости и познавательные",Пятница! (+2)
 https://zabava-htlive.cdn.ngenix.net/hls/CH_FRIDAY_2/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="piatnica-pl4" group-title="📰 Новости и познавательные",Пятница! (+4)
 https://zabava-htlive.cdn.ngenix.net/hls/CH_PYATNIZZA_4/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Сургут 24
-http://rt-ural-sur-htlive.cdn.ngenix.net/hls/CH_R01_OTT_SURGUT24/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="piatnica-pl5" group-title="📰 Новости и познавательные",Пятница! (+5)
+http://zabava-htlive.cdn.ngenix.net/hls/CH_PYATNIZZA_4/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="piatnica-pl7" group-title="📰 Новости и познавательные",Пятница! (+7)
 https://zabava-htlive.cdn.ngenix.net/hls/CH_FRIDAY_7/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Супер (+7)
-https://zabava-htlive.cdn.ngenix.net/hls/CH_SUPER_7/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",ТВ3 (+2)
-http://zabava-htlive.cdn.ngenix.net/hls/CH_TV3_2/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",ТВ3
-http://zabava-htlive.cdn.ngenix.net/hls/CH_TV3/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Супер
+https://zabava-htlive.cdn.ngenix.net/hls/CH_SUPER/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Супер (+2)
 https://zabava-htlive.cdn.ngenix.net/hls/CH_SUPER_2/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Супер (+4)
+https://zabava-htlive.cdn.ngenix.net/hls/CH_SUPER_4/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Супер (+7)
+https://zabava-htlive.cdn.ngenix.net/hls/CH_SUPER_7/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Сургут 24
+http://rt-ural-sur-htlive.cdn.ngenix.net/hls/CH_R01_OTT_SURGUT24/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",ТВ3
+http://zabava-htlive.cdn.ngenix.net/hls/CH_TV3/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",ТВ3 (+2)
+http://zabava-htlive.cdn.ngenix.net/hls/CH_TV3_2/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",ТВ3 (+4)
 http://zabava-htlive.cdn.ngenix.net/hls/CH_TV3_4/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",ТВ3 (+7)
 http://zabava-htlive.cdn.ngenix.net/hls/CH_TV3_7/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Супер (+4)
-https://zabava-htlive.cdn.ngenix.net/hls/CH_SUPER_4/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Ю (+7)
-http://zabava-htlive.cdn.ngenix.net/hls/CH_U_7/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Ю (+4)
-http://zabava-htlive.cdn.ngenix.net/hls/CH_U_4/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Ю
-http://zabava-htlive.cdn.ngenix.net/hls/CH_U/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Че
 http://zabava-htlive.cdn.ngenix.net/hls/CH_PERETZ/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Че! (+7)
-http://zabava-htlive.cdn.ngenix.net/hls/CH_PERETZ_7/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Че! (+4)
-https://zabava-htlive.cdn.ngenix.net/hls/CH_CHE_4/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Домашний
-http://zabava-htlive.cdn.ngenix.net/hls/CH_DOMASHNIY/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Ю (+2)
-https://zabava-htlive.cdn.ngenix.net/hls/CH_U_2/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Че! (+2)
 https://rt-ural-chel-htlive.cdn.ngenix.net/hls/CH_R02_OTT_PERETZ/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Че! (+4)
+https://zabava-htlive.cdn.ngenix.net/hls/CH_CHE_4/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Че! (+7)
+http://zabava-htlive.cdn.ngenix.net/hls/CH_PERETZ_7/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Ю
+http://zabava-htlive.cdn.ngenix.net/hls/CH_U/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Ю (+2)
+https://zabava-htlive.cdn.ngenix.net/hls/CH_U_2/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Ю (+4)
+http://zabava-htlive.cdn.ngenix.net/hls/CH_U_4/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Ю (+7)
+http://zabava-htlive.cdn.ngenix.net/hls/CH_U_7/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Домашний
+http://zabava-htlive.cdn.ngenix.net/hls/CH_DOMASHNIY/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Домашний +2
 https://zabava-htlive.cdn.ngenix.net/hls/CH_DOMASHNY_2/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="doverie" group-title="📰 Новости и познавательные",Москва. Доверие
-https://rt-mos-htlive.cdn.ngenix.net/hls/CH_R04_DOVERIE/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",МУЗ ТВ (+4)
-http://zabava-htlive.cdn.ngenix.net/hls/CH_MUZTV_4/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Домашний +7
-https://zabava-htlive.cdn.ngenix.net/hls/CH_DOMASHNY_7/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Муз ТВ
-http://zabava-htlive.cdn.ngenix.net/hls/CH_MUZTV/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Домашний +4
 https://zabava-htlive.cdn.ngenix.net/hls/CH_DOMASHNIY_4/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Домашний +7
+https://zabava-htlive.cdn.ngenix.net/hls/CH_DOMASHNY_7/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="doverie" group-title="📰 Новости и познавательные",Москва. Доверие
+https://rt-mos-htlive.cdn.ngenix.net/hls/CH_R04_DOVERIE/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Муз ТВ
+http://zabava-htlive.cdn.ngenix.net/hls/CH_MUZTV/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",МУЗ ТВ (+2)
 http://zabava-htlive.cdn.ngenix.net/hls/CH_MUZTV_2/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Норд ТВ (Новодвинск)
-https://rt-nw-arkh-htlive.cdn.ngenix.net/hls/CH_R01_NORDTV/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",МУЗ ТВ (+4)
+http://zabava-htlive.cdn.ngenix.net/hls/CH_MUZTV_4/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",МУЗ ТВ (+7)
 http://zabava-htlive.cdn.ngenix.net/hls/CH_MUZTV_7/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="12-omsk" group-title="📰 Новости и познавательные",12 канал HD
-https://rt-sib-omsk-htlive.cdn.ngenix.net/hls/CH_R01_OTT_SIB_OMSK_12CHANNEL/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",6 ТВ
-https://s97982.cdn.ngenix.net/hls/CH_R27_OTT_DV_HVSK_6TV/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",31 канал (Челябинск)
 https://rt-ural-chel-htlive.cdn.ngenix.net/hls/CH_R01_OTT_31TVK_CHEL/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",8 канал
-http://s91030.cdn.ngenix.net/hls/CH_R01_OTT_DV_VLD_OTT8KANAL/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="no_epg_news" group-title="📰 Новости и познавательные",41 Регион
+https://s14131.cdn.ngenix.net/hls/CH_R02_OTT_DV_KAM_41REG_OTT/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="12-omsk" group-title="📰 Новости и познавательные",12 канал HD
+https://rt-sib-omsk-htlive.cdn.ngenix.net/hls/CH_R01_OTT_SIB_OMSK_12CHANNEL/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Норд ТВ (Новодвинск)
+https://rt-nw-arkh-htlive.cdn.ngenix.net/hls/CH_R01_NORDTV/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",6 ТВ
+https://s97982.cdn.ngenix.net/hls/CH_R27_OTT_DV_HVSK_6TV/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="kanal-12-cherepovec" group-title="📰 Новости и познавательные",12 канал Череповец
 https://rt-nw-vol-htlive.cdn.ngenix.net/hls/CH_R01_12CHANNEL/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",7 канал Красноярск
 https://rt-sib-krsk-htlive.cdn.ngenix.net/hls/CH_R13_OTT_SIB_KRSK_RENTV/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="no_epg_news" group-title="📰 Новости и познавательные",41 Регион
-https://s14131.cdn.ngenix.net/hls/CH_R02_OTT_DV_KAM_41REG_OTT/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",8 канал
+http://s91030.cdn.ngenix.net/hls/CH_R01_OTT_DV_VLD_OTT8KANAL/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="8vladik" group-title="📰 Новости и познавательные",8 канал (Владивосток)
 https://s91030.cdn.ngenix.net/hls/CH_R01_OTT_DV_VLD_OTT8KANAL/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",TMTV
-http://rt-vlg-kzn-htlive.cdn.ngenix.net/hls/CH_R03_OTT_VLG_KZN_TMTV/variant.m3u8?version2
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="8kanal-krasnoyarsk" group-title="📰 Новости и познавательные",8 канал (Красноярский край)
 https://rt-sib-krsk-htlive.cdn.ngenix.net/hls/CH_R02_OTT_SIB_KRSK_8CHANNEL/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="8kanal-novosibirsk" group-title="📰 Новости и познавательные",8 канал (Новосибирск)
+https://rt-sib-nsk-htlive.cdn.ngenix.net/hls/CH_R01_OTT_SIB_NSK_8CHANNEL/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",TMTV
+http://rt-vlg-kzn-htlive.cdn.ngenix.net/hls/CH_R03_OTT_VLG_KZN_TMTV/variant.m3u8?version2
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",UGRA TRAVEL
 https://rt-ural-sur-htlive.cdn.ngenix.net/hls/CH_R04_OTT_UGRA_TRAVEL/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Ариг Ус 24 HD
-https://rt-sib-uude-htlive.cdn.ngenix.net/hls/CH_R01_ARIGUS/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="aist" group-title="📰 Новости и познавательные",АИСТ HD
 https://rt-sib-irk-htlive.cdn.ngenix.net/hls/CH_R01_OTT_SIB_IRK_AIST/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="1obl-blagoveschensk" group-title="📰 Новости и познавательные",Амурское областное телевидение
+https://s84942.cdn.ngenix.net/hls/CH_R28_OTT_DV_BLAG_AOT/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Ариг Ус 24 HD
+https://rt-sib-uude-htlive.cdn.ngenix.net/hls/CH_R01_ARIGUS/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Арктика 24
 http://rt-ural-nbk-htlive.cdn.ngenix.net/hls/CH_R04_OTT_ARKTIKA24_URAL_YNF/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="78kanal" group-title="📰 Новости и познавательные",78 канал
 https://rt-nw-spb-htlive.cdn.ngenix.net/hls/CH_R02_KANAL78/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="nts-sevastopol" group-title="📰 Новости и познавательные",НТС
-https://zabava-htlive.cdn.ngenix.net/hls/CH_NTSHD/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="pervy-krymsky" group-title="📰 Новости и познавательные",Крым 1
-https://zabava-htlive.cdn.ngenix.net/hls/CH_KRYM1/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="pervy-sevastopolsky" group-title="📰 Новости и познавательные",Первый Севастопольский
-https://zabava-htlive.cdn.ngenix.net/hls/CH_PERVIJSEVASTOPOL/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="8kanal-novosibirsk" group-title="📰 Новости и познавательные",8 канал (Новосибирск)
-https://rt-sib-nsk-htlive.cdn.ngenix.net/hls/CH_R01_OTT_SIB_NSK_8CHANNEL/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="1obl-blagoveschensk" group-title="📰 Новости и познавательные",Амурское областное телевидение
-https://s84942.cdn.ngenix.net/hls/CH_R28_OTT_DV_BLAG_AOT/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="krym24" group-title="📰 Новости и познавательные",Крым 24
-https://zabava-htlive.cdn.ngenix.net/hls/CH_KRYM24HD/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="stv-sevastopol" group-title="📰 Новости и познавательные",СТВ
-https://zabava-htlive.cdn.ngenix.net/hls/CH_STVHD/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="rbk" group-title="📰 Новости и познавательные",РБК
 https://s91030.cdn.ngenix.net/hls/CH_R25_RBKTVHD_VLDK/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="pervy-sevastopolsky" group-title="📰 Новости и познавательные",Первый Севастопольский
+https://zabava-htlive.cdn.ngenix.net/hls/CH_PERVIJSEVASTOPOL/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="nts-sevastopol" group-title="📰 Новости и познавательные",НТС
+https://zabava-htlive.cdn.ngenix.net/hls/CH_NTSHD/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="stv-sevastopol" group-title="📰 Новости и познавательные",СТВ
+https://zabava-htlive.cdn.ngenix.net/hls/CH_STVHD/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="trk-555" group-title="📰 Новости и познавательные",ТРК-555
 https://zabava-htlive.cdn.ngenix.net/hls/CH_TRK555HD/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="pervy-krymsky" group-title="📰 Новости и познавательные",Крым 1
+https://zabava-htlive.cdn.ngenix.net/hls/CH_KRYM1/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="krym24" group-title="📰 Новости и познавательные",Крым 24
+https://zabava-htlive.cdn.ngenix.net/hls/CH_KRYM24HD/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="arktik-tv" group-title="📰 Новости и познавательные",Арктик-ТВ HD
 https://rt-nw-murm-htlive.cdn.ngenix.net/hls/CH_R03_ARCTIC/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",АТВ-Медиа
-https://rt-sib-uude-htlive.cdn.ngenix.net/hls/CH_R01_ATVMEDIA/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="arxyz24" group-title="📰 Новости и познавательные",Архыз-24 HD
 https://rt-sth-cherks-htlive.cdn.ngenix.net/hls/CH_R03_OTT_STH_CHERKS_ARKHIZ241/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Астрахань 24 HD
 https://rt-sth-astrh-htlive.cdn.ngenix.net/hls/CH_R01_ASTRAKHAN24/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",АТВ-Медиа
+https://rt-sib-uude-htlive.cdn.ngenix.net/hls/CH_R01_ATVMEDIA/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",АТВ-Ставрополь
 https://rt-sth-stavr-htlive.cdn.ngenix.net/hls/CH_R01_OTT_STH_STAVR_ATV/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="bars" group-title="📰 Новости и познавательные",Барс плюс
-https://rt-ct-ivan-htlive.cdn.ngenix.net/hls/CH_R01_OTT_CT_IVAN_BARS/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="stv24" group-title="📰 Новости и познавательные",СТВ 24 (Северодвинск)
 https://rt-nw-arkh-htlive.cdn.ngenix.net/hls/CH_R01_STV24/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Белгород 24
-https://rt-ct-belg-htlive.cdn.ngenix.net/hls/CH_R02_OTT_CT_BELG_BELGOROD24/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="bars" group-title="📰 Новости и познавательные",Барс плюс
+https://rt-ct-ivan-htlive.cdn.ngenix.net/hls/CH_R01_OTT_CT_IVAN_BARS/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Башкортостан 24
 https://s45177.cdn.ngenix.net/hls/CH_R02_BASHKORTOSTAN24/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="vetta24" group-title="📰 Новости и познавательные",Ветта-24
-http://rt-ural-perm-htlive.cdn.ngenix.net/hls/CH_R01_OTT_VETTA24_PERM/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="vsio-tv" group-title="📰 Новости и познавательные",Всё ТВ
-https://s72169.cdn.ngenix.net/hls/CH_VSETVHD/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="volga" group-title="📰 Новости и познавательные",Волга
-https://rt-vlg-nn-htlive.cdn.ngenix.net/hls/CH_R03_VOLGA/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-logo="http://fe-ural.svc.iptv.rt.ru/images/broadcastChannel1529493228465.jpg" group-title="📰 Новости и познавательные",Вектор 24
-https://rt-ural-nbk-htlive.cdn.ngenix.net/hls/CH_R02_VEKTOR24_GUBK/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Восток 24
-http://s91030.cdn.ngenix.net/hls/CH_R01_OTT_DV_VLD_VOSTOK24_OTT/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Белгород 24
+https://rt-ct-belg-htlive.cdn.ngenix.net/hls/CH_R02_OTT_CT_BELG_BELGOROD24/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="brianskaya-gubernia" group-title="📰 Новости и познавательные",Брянская Губерния HD
 https://rt-ct-bryansk-htlive.cdn.ngenix.net/hls/CH_R01_OTT_CT_BRYANSK_BRGRUBER/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",БСТ
+https://rt-ural-chel-htlive.cdn.ngenix.net/hls/CH_R01_OTT_BST/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="tk-variant" group-title="📰 Новости и познавательные",Вариант V
 https://rt-ct-vlad-htlive.cdn.ngenix.net/hls/CH_R01_OTT_CT_VLAD_VARIANT_V/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-logo="http://fe-ural.svc.iptv.rt.ru/images/broadcastChannel1529493228465.jpg" group-title="📰 Новости и познавательные",Вектор 24
+https://rt-ural-nbk-htlive.cdn.ngenix.net/hls/CH_R02_VEKTOR24_GUBK/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="vetta24" group-title="📰 Новости и познавательные",Ветта 24 Пермь
+https://rt-ural-perm-htlive.cdn.ngenix.net/hls/CH_R01_OTT_VETTA24_PERM/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="vetta24" group-title="📰 Новости и познавательные",Ветта-24
+http://rt-ural-perm-htlive.cdn.ngenix.net/hls/CH_R01_OTT_VETTA24_PERM/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="volga" group-title="📰 Новости и познавательные",Волга
+https://rt-vlg-nn-htlive.cdn.ngenix.net/hls/CH_R03_VOLGA/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Волгоград 1
+http://rt-sth-vgrad-htlive.cdn.ngenix.net/hls/CH_R06_OTT_STH_VGRAD_VOLGOGRAD1/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-logo="http://fe-sth.svc.iptv.rt.ru/images/broadcastChannel1472218027991.png" group-title="📰 Новости и познавательные",Волгоград 1 HD
 https://rt-sth-vgrad-htlive.cdn.ngenix.net/hls/CH_R06_OTT_STH_VGRAD_VOLGOGRAD1/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="volgograd-24" group-title="📰 Новости и познавательные",Волгоград-24 HD
 https://rt-sth-vgrad-htlive.cdn.ngenix.net/hls/CH_R01_OTT_STH_VGRAD_VOLGOGRAD24/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="vetta24" group-title="📰 Новости и познавательные",Ветта 24 Пермь
-https://rt-ural-perm-htlive.cdn.ngenix.net/hls/CH_R01_OTT_VETTA24_PERM/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",БСТ
-https://rt-ural-chel-htlive.cdn.ngenix.net/hls/CH_R01_OTT_BST/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Волгоград 1
-http://rt-sth-vgrad-htlive.cdn.ngenix.net/hls/CH_R06_OTT_STH_VGRAD_VOLGOGRAD1/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="vremia-n" group-title="📰 Новости и познавательные",Время Н
-https://rt-vlg-nn-htlive.cdn.ngenix.net/hls/CH_R04_VREMYAN/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-logo="https://i.postimg.cc/QtQrZy4k/23.jpg" group-title="📰 Новости и познавательные",ВТК 41 "Аргус"
-https://rt-ct-vrzh-htlive.cdn.ngenix.net/hls/CH_R01_ARGUS/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Девятка ТВ
-https://rt-vlg-kirov-htlive.cdn.ngenix.net/hls/CH_R02_9TV/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="gubernia-33" group-title="📰 Новости и познавательные",Губерния 33 HD
-http://rt-ct-vlad-htlive.cdn.ngenix.net/hls/CH_R02_OTT_CT_VLAD_GUBERNIA33/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Восток 24
+http://s91030.cdn.ngenix.net/hls/CH_R01_OTT_DV_VLD_VOSTOK24_OTT/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="vot-tv" group-title="📰 Новости и познавательные",ВОТтв HD
 https://rt-ct-lipetsk-htlive.cdn.ngenix.net/hls/CH_R01_OTT_CT_LIPETSK_VOTTV/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Дзержинск ТВ
-https://rt-vlg-nn-htlive.cdn.ngenix.net/hls/CH_R01_DZERZHINSK/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="vremia-n" group-title="📰 Новости и познавательные",Время Н
+https://rt-vlg-nn-htlive.cdn.ngenix.net/hls/CH_R04_VREMYAN/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="vsio-tv" group-title="📰 Новости и познавательные",Всё ТВ
+https://s72169.cdn.ngenix.net/hls/CH_VSETVHD/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-logo="https://i.postimg.cc/QtQrZy4k/23.jpg" group-title="📰 Новости и познавательные",ВТК 41 "Аргус"
+https://rt-ct-vrzh-htlive.cdn.ngenix.net/hls/CH_R01_ARGUS/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="gorodskoy-yaroslavl" group-title="📰 Новости и познавательные",Городской телеканал Ярославль
+https://rt-ct-yarl-htlive.cdn.ngenix.net/hls/CH_R02_OTT_CT_YARL_GTREG/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="gubernia-33" group-title="📰 Новости и познавательные",Губерния 33 HD
+http://rt-ct-vlad-htlive.cdn.ngenix.net/hls/CH_R02_OTT_CT_VLAD_GUBERNIA33/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Губерния Самара
 https://rt-vlg-samara-htlive.cdn.ngenix.net/hls/CH_R02_GUBERNIA/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Девятка ТВ
+https://rt-vlg-kirov-htlive.cdn.ngenix.net/hls/CH_R02_9TV/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Дзержинск ТВ
+https://rt-vlg-nn-htlive.cdn.ngenix.net/hls/CH_R01_DZERZHINSK/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="don-24" group-title="📰 Новости и познавательные",ДОН 24 HD
 https://rt-sth-rd-htlive.cdn.ngenix.net/hls/CH_R02_OTT_STH_RD_DON24/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="enisey-region" group-title="📰 Новости и познавательные",Енисей HD
 https://rt-sib-krsk-htlive.cdn.ngenix.net/hls/CH_R01_OTT_SIB_KRSK_ENISEY/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Ивановское общественное телевидение
 https://rt-ct-ivan-htlive.cdn.ngenix.net/hls/CH_R02_OTT_CT_IVAN_IOT/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-logo="http://fe-ural.svc.iptv.rt.ru/images/broadcastChannel1558583498243.png" group-title="📰 Новости и познавательные",Импульс Севера
+https://rt-ural-nbk-htlive.cdn.ngenix.net/hls/CH_R02_IMPULS_NBK/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-logo="http://fe-ural.svc.iptv.rt.ru/images/broadcastChannel1550219150031.png" group-title="📰 Новости и познавательные",Инфо 24 (Шадринск)
+https://rt-ural-krg-htlive.cdn.ngenix.net/hls/CH_R04_OTT_SHINFO_URAL_KRG/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-logo="http://fe-ural.svc.iptv.rt.ru/images/broadcastChannel1562587410193.png" group-title="📰 Новости и познавательные",Информационная служба Югры
+https://rt-ural-sur-htlive.cdn.ngenix.net/hls/CH_R01_OTT_PERVIYSOVETSKIY/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Кавказ 24
+https://rt-sth-stavr-htlive.cdn.ngenix.net/hls/CH_R01_OTT_STH_STAVR_KAVKAZ24/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="no_epg_news" group-title="📰 Новости и познавательные",Камчатка HD
 https://s14131.cdn.ngenix.net/hls/CH_R41_OTT_DV_KAM_KAMCHATKA/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="kaskad24" group-title="📰 Новости и познавательные",Каскад
 http://rt-nw-klgr-htlive.cdn.ngenix.net/hls/CH_R01_KASKAD/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-logo="http://fe-ural.svc.iptv.rt.ru/images/broadcastChannel1562587410193.png" group-title="📰 Новости и познавательные",Информационная служба Югры
-https://rt-ural-sur-htlive.cdn.ngenix.net/hls/CH_R01_OTT_PERVIYSOVETSKIY/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-logo="http://fe-ural.svc.iptv.rt.ru/images/broadcastChannel1550219150031.png" group-title="📰 Новости и познавательные",Инфо 24 (Шадринск)
-https://rt-ural-krg-htlive.cdn.ngenix.net/hls/CH_R04_OTT_SHINFO_URAL_KRG/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-logo="http://fe-ural.svc.iptv.rt.ru/images/broadcastChannel1558583498243.png" group-title="📰 Новости и познавательные",Импульс Севера
-https://rt-ural-nbk-htlive.cdn.ngenix.net/hls/CH_R02_IMPULS_NBK/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="katun-24" group-title="📰 Новости и познавательные",Катунь 24
 https://rt-sib-bul-htlive.cdn.ngenix.net/hls/CH_R01_OTT_SIB_BUL_KATUN24/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="krasnodar" group-title="📰 Новости и познавательные",Краснодар HD
 https://rt-sth-krdar-htlive.cdn.ngenix.net/hls/CH_R01_OTT_STH_KRDAR_KRASNODAR/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Кавказ 24
-https://rt-sth-stavr-htlive.cdn.ngenix.net/hls/CH_R01_OTT_STH_STAVR_KAVKAZ24/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="ktv-gorod" group-title="📰 Новости и познавательные",КТВ-Город
 http://rt-ct-vrzh-htlive.cdn.ngenix.net/hls/CH_R02_OTT_CT_VRZH_CTVGOROD/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="lot-47" group-title="📰 Новости и познавательные",Лен ТВ 24
-https://rt-nw-spb-htlive.cdn.ngenix.net/hls/CH_R02_LENTVSD/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="mig-tv-noyabrsk" group-title="📰 Новости и познавательные",МИГ ТВ
-http://rt-ural-nbk-htlive.cdn.ngenix.net/hls/CH_R04_OTT_MIG_TV_URAL_YNF/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-logo="http://fe-sib.svc.iptv.rt.ru/images/broadcastChannel1578629022322.png" group-title="📰 Новости и познавательные",Кузбасс 1
-https://rt-sib-kem-htlive.cdn.ngenix.net/hls/CH_R01_OTT_SIB_KEM_GTRK/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Кубань 24
 https://rt-sth-krdar-htlive.cdn.ngenix.net/hls/CH_R04_KUBAN24/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="kuban-24" group-title="📰 Новости и познавательные",Майкопское Телевидение
-https://rt-sth-krdar-htlive.cdn.ngenix.net/hls/CH_R04_OTT_STH_KRDAR_MAYKOP/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-logo="http://fe-ural.svc.iptv.rt.ru/images/broadcastChannel1569901043455.jpg" group-title="📰 Новости и познавательные",Муравленко 24
-https://rt-ural-nbk-htlive.cdn.ngenix.net/hls/CH_R01_OTT_MURAVLENKO_24/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Майдан
-http://rt-vlg-kzn-htlive.cdn.ngenix.net/hls/CH_R05_OTT_VLG_KZN_MAIDAN/variant.m3u8?version2
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-logo="http://fe-sib.svc.iptv.rt.ru/images/broadcastChannel1578629022322.png" group-title="📰 Новости и познавательные",Кузбасс 1
+https://rt-sib-kem-htlive.cdn.ngenix.net/hls/CH_R01_OTT_SIB_KEM_GTRK/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="lot-47" group-title="📰 Новости и познавательные",Лен ТВ 24
+https://rt-nw-spb-htlive.cdn.ngenix.net/hls/CH_R02_LENTVSD/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Липецкое время
 http://rt-ct-lipetsk-htlive.cdn.ngenix.net/hls/CH_R02_OTT_CT_LIPETSK_LVREM/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Майдан
+http://rt-vlg-kzn-htlive.cdn.ngenix.net/hls/CH_R05_OTT_VLG_KZN_MAIDAN/variant.m3u8?version2
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="kuban-24" group-title="📰 Новости и познавательные",Майкопское Телевидение
+https://rt-sth-krdar-htlive.cdn.ngenix.net/hls/CH_R04_OTT_STH_KRDAR_MAYKOP/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="mig-tv-noyabrsk" group-title="📰 Новости и познавательные",МИГ ТВ
+http://rt-ural-nbk-htlive.cdn.ngenix.net/hls/CH_R04_OTT_MIG_TV_URAL_YNF/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-logo="http://fe-vlg.svc.iptv.rt.ru/images/broadcastChannel1553783249761.png" group-title="📰 Новости и познавательные",Мордовия 24
 https://rt-vlg-srnk-htlive.cdn.ngenix.net/hls/CH_R02_MORDOVIY24/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Наш дом
-https://rt-vlg-penza-htlive.cdn.ngenix.net/hls/CH_R03_NASHDOM/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-logo="http://fe-ural.svc.iptv.rt.ru/images/broadcastChannel1569901043455.jpg" group-title="📰 Новости и познавательные",Муравленко 24
+https://rt-ural-nbk-htlive.cdn.ngenix.net/hls/CH_R01_OTT_MURAVLENKO_24/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",МЭТР
+https://rt-vlg-yola-htlive.cdn.ngenix.net/hls/CH_R03_METR/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-logo="http://fe-vlg.svc.iptv.rt.ru/images/broadcastChannel1490273937894.png" group-title="📰 Новости и познавательные",Народное телевидение Мордовии
 https://rt-vlg-srnk-htlive.cdn.ngenix.net/hls/CH_R01_NTM/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="chavash-en" group-title="📰 Новости и познавательные",Национальное ТВ Чувашии
 https://rt-vlg-chr-htlive.cdn.ngenix.net/hls/CH_R01_NATIONALTV/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="sankt-peterburg" group-title="📰 Новости и познавательные",Санкт-Петербург
-https://rt-nw-spb-htlive.cdn.ngenix.net/hls/CH_R02_SPBREGIONALHD/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}"  group-title="📰 Новости и познавательные",Наши города
-https://rt-ural-sur-htlive.cdn.ngenix.net/hls/CH_R04_OTT_NGOR_URAL_SUR/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",МЭТР
-https://rt-vlg-yola-htlive.cdn.ngenix.net/hls/CH_R03_METR/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}"  tvg-id="kotlastv" group-title="📰 Новости и познавательные", Котлас ТВ (Арх. область)
-https://rt-nw-arkh-htlive.cdn.ngenix.net/hls/CH_R01_KOTLASTV/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="moskva-24" group-title="📰 Новости и познавательные",Москва 24
-https://rt-mos-htlive.cdn.ngenix.net/hls/CH_R04_MOSKOV24/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Наш дом
+https://rt-vlg-penza-htlive.cdn.ngenix.net/hls/CH_R03_NASHDOM/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="sever" group-title="📰 Новости и познавательные",Север (Нарьян-Мар)
 https://rt-nw-arkh-htlive.cdn.ngenix.net/hls/CH_R01_SEVER/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="gorodskoy-yaroslavl" group-title="📰 Новости и познавательные",Городской телеканал Ярославль
-https://rt-ct-yarl-htlive.cdn.ngenix.net/hls/CH_R02_OTT_CT_YARL_GTREG/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="nika-tv" group-title="📰 Новости и познавательные",Ника-ТВ
-https://rt-ct-kaluga-htlive.cdn.ngenix.net/hls/CH_R01_NIKA/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Новый век (Тамбов)
-http://rt-ct-tamb-htlive.cdn.ngenix.net/hls/CH_R03_OTT_CT_TAMB_NOVIY_VEK/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}"  tvg-id="kotlastv" group-title="📰 Новости и познавательные", Котлас ТВ (Арх. область)
+https://rt-nw-arkh-htlive.cdn.ngenix.net/hls/CH_R01_KOTLASTV/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="sankt-peterburg" group-title="📰 Новости и познавательные",Санкт-Петербург
+https://rt-nw-spb-htlive.cdn.ngenix.net/hls/CH_R02_SPBREGIONALHD/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="moskva-24" group-title="📰 Новости и познавательные",Москва 24
+https://rt-mos-htlive.cdn.ngenix.net/hls/CH_R04_MOSKOV24/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}"  group-title="📰 Новости и познавательные",Наши города
+https://rt-ural-sur-htlive.cdn.ngenix.net/hls/CH_R04_OTT_NGOR_URAL_SUR/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="saxa" group-title="📰 Новости и познавательные",НВК (Саха)
 https://s34351.cdn.ngenix.net/hls/CH_R03_OTT_DV_YKT_NVC_OTT/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="nika-tv" group-title="📰 Новости и познавательные",Ника-ТВ
+https://rt-ct-kaluga-htlive.cdn.ngenix.net/hls/CH_R01_NIKA/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Новгородское областное телевидение
 https://rt-nw-novg-htlive.cdn.ngenix.net/hls/CH_R02_NOVGORODTV/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-logo="http://immo.date/logo/radujniy.png" group-title="📰 Новости и познавательные",Новое время (Радужный)
+https://rt-ural-sur-htlive.cdn.ngenix.net/hls/CH_R04_OTT_RADUZNYI/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Новый век (Тамбов)
+http://rt-ct-tamb-htlive.cdn.ngenix.net/hls/CH_R03_OTT_CT_TAMB_NOVIY_VEK/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="49kanal" group-title="📰 Новости и познавательные",НСК 49
 https://rt-sib-nsk-htlive.cdn.ngenix.net/hls/CH_R01_OTT_SIB_NSK_49CHANNEL/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",НТК
 https://s97982.cdn.ngenix.net/hls/CH_R79_OTT_DV_HVSK_NTK/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",НТС Иркутск
+https://rt-sib-irk-htlive.cdn.ngenix.net/hls/CH_R01_OTT_SIB_IRK_RENTVIRK/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="nts-irbit" group-title="📰 Новости и познавательные",НТС-Ирбит (Екатеринбург)
 https://rt-ural-ekt-htlive.cdn.ngenix.net/hls/CH_R04_IRBITVEST_EKT/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-logo="http://fe-ural.svc.iptv.rt.ru/images/broadcastChannel1574910981778.jpg" group-title="📰 Новости и познавательные",Область 45 HD
+https://rt-ural-krg-htlive.cdn.ngenix.net/hls/CH_R04_OTT_OBLAST45/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="objektiv-59" group-title="📰 Новости и познавательные",Объектив 59 HD
+https://rt-ural-perm-htlive.cdn.ngenix.net/hls/CH_R04_OTT_OBJECTIVE59/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",ОРТ-Планета (Оренбург)
 https://rt-vlg-orb-htlive.cdn.ngenix.net/hls/CH_R03_ORTPLANET/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="osetia-iryston" group-title="📰 Новости и познавательные",Осетия Ирыстон HD
 http://rt-sth-vkaz-htlive.cdn.ngenix.net/hls/CH_R01_OTT_STH_VKAZ_IRISTON/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="otv-primorie" group-title="📰 Новости и познавательные",ОТВ-Владивосток
-https://s91030.cdn.ngenix.net/hls/CH_R25_OTT_DV_VLD_OTV/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="objektiv-59" group-title="📰 Новости и познавательные",Объектив 59 HD
-https://rt-ural-perm-htlive.cdn.ngenix.net/hls/CH_R04_OTT_OBJECTIVE59/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="otv-eburg" group-title="📰 Новости и познавательные",ОТВ Екатеринбург HD
 https://rt-ural-ekt-htlive.cdn.ngenix.net/hls/CH_R02_OTT_OTV_URAL_EKT/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-logo="http://fe-ural.svc.iptv.rt.ru/images/broadcastChannel1574910981778.jpg" group-title="📰 Новости и познавательные",Область 45 HD
-https://rt-ural-krg-htlive.cdn.ngenix.net/hls/CH_R04_OTT_OBLAST45/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="otv-primorie" group-title="📰 Новости и познавательные",ОТВ-Владивосток
+https://s91030.cdn.ngenix.net/hls/CH_R25_OTT_DV_VLD_OTV/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="otv-saxalin" group-title="📰 Новости и познавательные",ОТВ-Сахалин
+https://s14553.cdn.ngenix.net/hls/CH_R65_OTT_DV_SLIN_OTV_SLIN/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные", ОТВ Челябинск
 https://rt-ural-chel-htlive.cdn.ngenix.net/hls/CH_R02_OTT_OTV_CHEL/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",ОТС HD
 https://rt-sib-nsk-htlive.cdn.ngenix.net/hls/CH_R01_OTT_SIB_NSK_OTS/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Первый городской (Киров)
 https://rt-vlg-kirov-htlive.cdn.ngenix.net/hls/CH_R03_PERVYGORODSKOY/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="pervy-tulsky" group-title="📰 Новости и познавательные",Первый Тульский HD
-https://rt-ct-tula-htlive.cdn.ngenix.net/hls/CH_R01_OTT_CT_TULA_PERV_TUL/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="otv-saxalin" group-title="📰 Новости и познавательные",ОТВ-Сахалин
-https://s14553.cdn.ngenix.net/hls/CH_R65_OTT_DV_SLIN_OTV_SLIN/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Первый Ярославский
-https://rt-ct-yarl-htlive.cdn.ngenix.net/hls/CH_R01_OTT_CT_YARL_NTM/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Регион 29
-https://rt-nw-arkh-htlive.cdn.ngenix.net/hls/CH_R02_PRAVDASEVERA/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="pervy-oblastnoy-orel" group-title="📰 Новости и познавательные",Первый областной
 https://rt-ct-orl-htlive.cdn.ngenix.net/hls/CH_R01_PERVOBL/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="rgvk-dagestan" group-title="📰 Новости и познавательные",РГВК Дагестан
-https://rt-sth-mahachk-htlive.cdn.ngenix.net/hls/CH_R01_OTT_STH_MAHACHK_DAGESTAN/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="rts-abakan" group-title="📰 Новости и познавательные",РТС-Абакан
-https://rt-sib-abakan-htlive.cdn.ngenix.net/hls/CH_R01_OTT_SIB_ABAKAN_RTS/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="pervy-tulsky" group-title="📰 Новости и познавательные",Первый Тульский HD
+https://rt-ct-tula-htlive.cdn.ngenix.net/hls/CH_R01_OTT_CT_TULA_PERV_TUL/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Первый Ярославский
+https://rt-ct-yarl-htlive.cdn.ngenix.net/hls/CH_R01_OTT_CT_YARL_NTM/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="prima" group-title="📰 Новости и познавательные",Прима-ТВ
 https://rt-sib-krsk-htlive.cdn.ngenix.net/hls/CH_R11_OTT_SIB_KRSK_STS/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="rgvk-dagestan" group-title="📰 Новости и познавательные",РГВК Дагестан
+https://rt-sth-mahachk-htlive.cdn.ngenix.net/hls/CH_R01_OTT_STH_MAHACHK_DAGESTAN/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Регион 29
+https://rt-nw-arkh-htlive.cdn.ngenix.net/hls/CH_R02_PRAVDASEVERA/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="rts-abakan" group-title="📰 Новости и познавательные",РТС-Абакан
+https://rt-sib-abakan-htlive.cdn.ngenix.net/hls/CH_R01_OTT_SIB_ABAKAN_RTS/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Русский Север
 https://rt-nw-vol-htlive.cdn.ngenix.net/hls/CH_R01_TV7/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="rybinsk40" group-title="📰 Новости и познавательные",Рыбинск-40
-https://rt-ct-yarl-htlive.cdn.ngenix.net/hls/CH_R01_RYBINSK40/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}"  group-title="📰 Новости и познавательные",Русь (Кострома)
 https://rt-ct-kostroma-htlive.cdn.ngenix.net/hls/CH_R01_OTT_CT_KOSTROMA_RUS/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Самара-Гис
-https://rt-vlg-samara-htlive.cdn.ngenix.net/hls/CH_R02_SAMARAGIS/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="saratov-24" group-title="📰 Новости и познавательные",Саратов-24
-https://rt-vlg-saratov-htlive.cdn.ngenix.net/hls/CH_R01_SARATOV24/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="sampo-tv" group-title="📰 Новости и познавательные",Сампо ТВ 360°
-https://rt-nw-pzav-htlive.cdn.ngenix.net/hls/CH_R01_SAMPOTV/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="rybinsk40" group-title="📰 Новости и познавательные",Рыбинск-40
+https://rt-ct-yarl-htlive.cdn.ngenix.net/hls/CH_R01_RYBINSK40/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="s1-surgut" group-title="📰 Новости и познавательные",С1 Сургут HD
+https://rt-ural-sur-htlive.cdn.ngenix.net/hls/CH_R04_OTT_C1_URAL_SUR/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="samara24" group-title="📰 Новости и познавательные",Самара-24
 https://rt-vlg-samara-htlive.cdn.ngenix.net/hls/CH_R03_SAMARA24/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Самара-Гис
+https://rt-vlg-samara-htlive.cdn.ngenix.net/hls/CH_R02_SAMARAGIS/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="sampo-tv" group-title="📰 Новости и познавательные",Сампо ТВ 360°
+https://rt-nw-pzav-htlive.cdn.ngenix.net/hls/CH_R01_SAMPOTV/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="saratov-24" group-title="📰 Новости и познавательные",Саратов-24
+https://rt-vlg-saratov-htlive.cdn.ngenix.net/hls/CH_R01_SARATOV24/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Саха
+http://s34351.cdn.ngenix.net/hls/CH_R03_OTT_DV_YKT_NVC_OTT/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="mamonttv" channelId="-1" group-title="📰 Новости и познавательные",Мамонт (Республика Саха - Якутск)
+https://s34351.cdn.ngenix.net/hls/CH_R14_MAMONT/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="svoyo-tv-stavropol" group-title="📰 Новости и познавательные",Своё ТВ Ставрополь HD
 https://rt-sth-stavr-htlive.cdn.ngenix.net/hls/CH_R03_OTT_STH_STAVR_STV-PLUS/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-logo="http://fe-sib.svc.iptv.rt.ru/images/broadcastChannel1578964121507.png" group-title="📰 Новости и познавательные",ТВ-7 Абакан
 https://rt-sib-abakan-htlive.cdn.ngenix.net/hls/CH_R01_TV7/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="tatarstan24" group-title="📰 Новости и познавательные",Татарстан 24
-https://rt-vlg-kzn-htlive.cdn.ngenix.net/hls/CH_R02_EFIR24/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}"  tvg-id="stv-baykal" group-title="📰 Новости и познавательные",СТВ-Байкал
-http://rt-sib-uude-htlive.cdn.ngenix.net/hls/CH_R01_OTT_SIB_UUDE_STVBAYKAL/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",ТВ21+
 https://rt-nw-murm-htlive.cdn.ngenix.net/hls/CH_R01_TV21PLUS/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-logo="http://immo.date/logo/radujniy.png" group-title="📰 Новости и познавательные",Новое время (Радужный)
-https://rt-ural-sur-htlive.cdn.ngenix.net/hls/CH_R04_OTT_RADUZNYI/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",НТС Иркутск
-https://rt-sib-irk-htlive.cdn.ngenix.net/hls/CH_R01_OTT_SIB_IRK_RENTVIRK/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="mamonttv" channelId="-1" group-title="📰 Новости и познавательные",Мамонт (Республика Саха - Якутск)
-https://s34351.cdn.ngenix.net/hls/CH_R14_MAMONT/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Саха
-http://s34351.cdn.ngenix.net/hls/CH_R03_OTT_DV_YKT_NVC_OTT/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="tatarstan24" group-title="📰 Новости и познавательные",Татарстан 24
+https://rt-vlg-kzn-htlive.cdn.ngenix.net/hls/CH_R02_EFIR24/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="sochi24" group-title="📰 Новости и познавательные",Сочи24 HD
 https://rt-sth-krdar-htlive.cdn.ngenix.net/hls/CH_R01_MAKS241/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}"  tvg-id="stv-baykal" group-title="📰 Новости и познавательные",СТВ-Байкал
+http://rt-sib-uude-htlive.cdn.ngenix.net/hls/CH_R01_OTT_SIB_UUDE_STVBAYKAL/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="tv-guberniya" group-title="📰 Новости и познавательные",ТВ-Губерния
+https://rt-ct-vrzh-htlive.cdn.ngenix.net/hls/CH_R01_OTT_CT_VRZH_TVGUBERNIYA/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="tv-in" group-title="📰 Новости и познавательные",ТВ-ИН-Магнитогорск
 https://rt-ural-chel-htlive.cdn.ngenix.net/hls/CH_R01_TVIN_MAGN/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="kolyma-plus" group-title="📰 Новости и познавательные",ТВ-Колыма-Плюс HD
 https://s20441.cdn.ngenix.net/hls/CH_R49_OTT_DV_MGDN_KOLYMA/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="tv-guberniya" group-title="📰 Новости и познавательные",ТВ-Губерния
-https://rt-ct-vrzh-htlive.cdn.ngenix.net/hls/CH_R01_OTT_CT_VRZH_TVGUBERNIYA/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",ТК Центр Красноярск
-https://rt-sib-krsk-htlive.cdn.ngenix.net/hls/CH_R01_OTT_SIB_KRSK_CENTRKRSN/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",ТНВ-Татарстан
-https://rt-vlg-kzn-htlive.cdn.ngenix.net/hls/CH_R01_TNVT/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="s1-surgut" group-title="📰 Новости и познавательные",С1 Сургут HD
-https://rt-ural-sur-htlive.cdn.ngenix.net/hls/CH_R04_OTT_C1_URAL_SUR/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Тивиком HD
 https://rt-sib-uude-htlive.cdn.ngenix.net/hls/CH_R01_TIVICOM/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",ТНВ-Планета
-https://rt-vlg-nn-htlive.cdn.ngenix.net/hls/CH_R05_TNV/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",ТНР 24 (Нижневартовск)
-https://rt-ural-sur-htlive.cdn.ngenix.net/hls/CH_R01_OTT_TNR24/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",ТК Центр Красноярск
+https://rt-sib-krsk-htlive.cdn.ngenix.net/hls/CH_R01_OTT_SIB_KRSK_CENTRKRSN/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",ТКР Рязань
 https://rt-ct-ryaz-htlive.cdn.ngenix.net/hls/CH_R01_OTT_CT_RYAZ_TKP/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Хамдан
-http://rt-sth-elista-htlive.cdn.ngenix.net/hls/CH_R01_OTT_STH_ELISTA_HAMDAN/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="tolyatti24" group-title="📰 Новости и познавательные",Тольятти-24
-https://rt-vlg-samara-htlive.cdn.ngenix.net/hls/CH_R01_TOLYTTI24/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="tolpartv" group-title="📰 Новости и познавательные",Толпар ТВ
-https://s45177.cdn.ngenix.net/hls/CH_R02_TOLPAR/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="tomskoe-vremia" group-title="📰 Новости и познавательные",Томское время HD
-https://rt-sib-tomsk-htlive.cdn.ngenix.net/hls/CH_R01_OTT_SIB_TOMSK_TOMSKVREMIA/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Ульяновская правда
-https://rt-vlg-ul-htlive.cdn.ngenix.net/hls/CH_R01_ULPRAVDA/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",ТНВ-Планета
+https://rt-vlg-nn-htlive.cdn.ngenix.net/hls/CH_R05_TNV/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",ТНВ-Татарстан
+https://rt-vlg-kzn-htlive.cdn.ngenix.net/hls/CH_R01_TNVT/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",ТНР 24 (Нижневартовск)
+https://rt-ural-sur-htlive.cdn.ngenix.net/hls/CH_R01_OTT_TNR24/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Толк
 https://rt-sib-bul-htlive.cdn.ngenix.net/hls/CH_R01_OTT_SIB_BUL_TOLK/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Эфир
-https://rt-vlg-kzn-htlive.cdn.ngenix.net/hls/CH_R01_EFIR/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Удмуртия
-https://rt-vlg-izhsk-htlive.cdn.ngenix.net/hls/CH_R03_MYUDMURTIA/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Югорск ТВ
-https://rt-ural-sur-htlive.cdn.ngenix.net/hls/CH_R01_YUGORSKTV/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="tolpartv" group-title="📰 Новости и познавательные",Толпар ТВ
+https://s45177.cdn.ngenix.net/hls/CH_R02_TOLPAR/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="tolyatti24" group-title="📰 Новости и познавательные",Тольятти-24
+https://rt-vlg-samara-htlive.cdn.ngenix.net/hls/CH_R01_TOLYTTI24/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="tomskoe-vremia" group-title="📰 Новости и познавательные",Томское время HD
+https://rt-sib-tomsk-htlive.cdn.ngenix.net/hls/CH_R01_OTT_SIB_TOMSK_TOMSKVREMIA/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Тюменское время
 https://rt-ural-tum-htlive.cdn.ngenix.net/hls/CH_R01_OTT_TUMVR_URAL_TUM/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Удмуртия
+https://rt-vlg-izhsk-htlive.cdn.ngenix.net/hls/CH_R03_MYUDMURTIA/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Ульяновская правда
+https://rt-vlg-ul-htlive.cdn.ngenix.net/hls/CH_R01_ULPRAVDA/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Хамдан
+http://rt-sth-elista-htlive.cdn.ngenix.net/hls/CH_R01_OTT_STH_ELISTA_HAMDAN/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Эфир
+https://rt-vlg-kzn-htlive.cdn.ngenix.net/hls/CH_R01_EFIR/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Югорск ТВ
+https://rt-ural-sur-htlive.cdn.ngenix.net/hls/CH_R01_YUGORSKTV/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Югра
+https://rt-ural-sur-htlive.cdn.ngenix.net/hls/CH_R04_OTT_UGRA_URAL_SUR/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Шаян ТВ
 https://s45177.cdn.ngenix.net/hls/CH_R03_SHAYNTV/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="express" group-title="📰 Новости и познавательные",Экспресс HD
 https://rt-vlg-penza-htlive.cdn.ngenix.net/hls/CH_R01_EXPRESS/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Юрган
 https://rt-nw-komi-htlive.cdn.ngenix.net/hls/CH_R01_YURGAN/variant.m3u8
+#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",ЮТВ Чебоксары
+https://rt-vlg-chr-htlive.cdn.ngenix.net/hls/CH_R01_UTV/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Якутия 24
 https://s34351.cdn.ngenix.net/hls/CH_R14_OTT_DV_YKT_YKT/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Ямал-Регион
 https://rt-ural-nbk-htlive.cdn.ngenix.net/hls/CH_R04_OTT_YAMREG_URAL_YNF/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",ЮТВ Чебоксары
-https://rt-vlg-chr-htlive.cdn.ngenix.net/hls/CH_R01_UTV/variant.m3u8
-#EXTINF:-1 catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="📰 Новости и познавательные",Югра
-https://rt-ural-sur-htlive.cdn.ngenix.net/hls/CH_R04_OTT_UGRA_URAL_SUR/variant.m3u8
+
+# === ГРУППА: ⚽ Спортивные каналы ===
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/16472/logo_256_1674733090.png" group-title="⚽ Спортивные каналы", Старт Триумф
+https://mhd116.iptv2022.com/x/SecQRA0i8J_6djwlQb9KkA,1787900154/streaming/start-triumf/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10145/logo_256_1660807386.png" group-title="⚽ Спортивные каналы", Старт
+https://mhd116.iptv2022.com/x/V4ejyweGLVkKOpN23ZZjlA,1787900154/streaming/start/324/1/index.m3u8
+
+# === ГРУППА: 🎬 Кино и сериалы ===
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/143/logo_256_1660809926.png" group-title="🎬 Кино и сериалы", Феникс+ Кино
+https://mhd116.iptv2022.com/x/2B-OgzUoRFR3ypEexRzFvQ,1787900154/streaming/fenixkino/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/29737/logo_256.png" group-title="🎬 Кино и сериалы", Кино и Жизнь
+https://mhd116.iptv2022.com/x/za8C6fQEYcBJC6OPOceUeg,1787900154/streaming/kino_live/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/14862/logo_256_1680258355.png" group-title="🎬 Кино и сериалы", Наше старое кино
+https://mhd116.iptv2022.com/x/Qqh7cXYULw32QcD8XOVZlQ,1787900154/streaming/public_dom/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10476/logo_256_1658734432.png" group-title="🎬 Кино и сериалы", Детское кино
+https://mhd116.iptv2022.com/x/6-5BiO-MnC0mNtZ0MOgy3g,1787900154/streaming/det_kino/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10290/logo_256_1658737599.png" group-title="🎬 Кино и сериалы", Советское кино
+https://mhd116.iptv2022.com/x/MIGj5vClglEgHEANt9Uixw,1787900154/streaming/sovietmovs/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10286/logo_256_1658736631.png" group-title="🎬 Кино и сериалы", КиноМеню HD
+https://mhd116.iptv2022.com/x/hVLr4mVvCFkBjClVLX4Lnw,1787900154/streaming/kinomenu/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10287/logo_256_1658736730.png" group-title="🎬 Кино и сериалы", Классика кино
+https://mhd116.iptv2022.com/x/oahRKfP4-UPw59qdCNnITg,1787900154/streaming/k_kino/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10383/logo_256_1658736686.png" group-title="🎬 Кино и сериалы", КиноСезон
+https://mhd116.iptv2022.com/x/xDczwQqRG3Z39lqMRBJxCA,1787900154/streaming/kinosezon/324/1/index.m3u8
+
+# === ГРУППА: 📺 Развлекательные и общие ===
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/67/logo_256.webp" group-title="📺 Развлекательные и общие", Домашний
+https://mhd116.iptv2022.com/x/zO-_OInHfuivF-G5-SVxqw,1787900154/streaming/domashiyott/324/5/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/109/logo_256.webp" group-title="📺 Развлекательные и общие", Пятница!
+https://mhd116.iptv2022.com/x/tsnzjwMJ_fhe6FViHwCOlg,1787900154/streaming/pyatnicaott/324/5/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/167/logo_256.webp" group-title="📺 Развлекательные и общие", Че
+https://mhd116.iptv2022.com/x/sEtJvN3eWVnN_DHr5mwQ6Q,1787900154/streaming/cheott/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10184/logo_256.webp" group-title="📺 Развлекательные и общие", Суббота
+https://mhd116.iptv2022.com/x/fKxgOuN49LZBTv5XyYnhaw,1787900154/streaming/superott/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/1/logo_256_1705554875.png" group-title="📺 Развлекательные и общие", 2x2
+https://mhd116.iptv2022.com/x/R1mzy7mfehJ3Nr2huGsUUQ,1787900154/streaming/2x2/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10257/logo_256_1658733714.png" group-title="📺 Развлекательные и общие", Fashion TV
+https://mhd116.iptv2022.com/x/rZlbXUKu9vkHgCD1laL_xw,1787900154/streaming/fashion/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/11159/logo_256_1655386039.png" group-title="📺 Развлекательные и общие", Загородная Жизнь
+https://mhd116.iptv2022.com/x/LVsbDMs_q7SUheMM4Ognag,1787900154/streaming/zagorod/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10149/logo_256.png" group-title="📺 Развлекательные и общие", Продвижение
+https://mhd116.iptv2022.com/x/M6-3KfHYBWPeOkR7J0Z2lg,1787900154/streaming/prodvijenie/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/13728/logo_256_1660803734.png" group-title="📺 Развлекательные и общие", World Fashion Channel HD
+https://mhd116.iptv2022.com/x/9BXrtU-xuNMnL1IMt1Ugew,1787900154/streaming/world_fashion/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/13336/logo_256_1660809865.png" group-title="📺 Развлекательные и общие", ТРК Братск
+https://mhd116.iptv2022.com/x/7827peQgT1Y3yOVFrhmMaA,1787900154/streaming/bratsk/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10119/logo_256_1698217821.png" group-title="📺 Развлекательные и общие", НТРК Магас (Ингушетия)
+https://mhd116.iptv2022.com/x/60nvL2pH_AV1IE5Rcb4dFQ,1787900154/streaming/ingushetia/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10322/logo_256_1660891929.png" group-title="📺 Развлекательные и общие", ГТРК «Кабардино-Балкария»
+https://mhd116.iptv2022.com/x/haCwhynD-vwn4utDLj-tPg,1787900154/streaming/kab_tv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10121/logo_256_1660809914.png" group-title="📺 Развлекательные и общие", Тюменское Время
+https://mhd116.iptv2022.com/x/3Nv8TNL_Log6YZIZdHDVLA,1787900154/streaming/tumentime/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10189/logo_256_1660805518.png" group-title="📺 Развлекательные и общие", Липецкое время
+https://mhd116.iptv2022.com/x/4BrzHjnR4VWBsbSuUrdNzQ,1787900154/streaming/lipeck/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10202/logo_128_1652790001.png" group-title="📺 Развлекательные и общие", Томское время
+https://mhd116.iptv2022.com/x/xmMKCLTx6cFBjjhykG7Nyg,1787900154/streaming/tomsk/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10116/logo_256_1673861534.png" group-title="📺 Развлекательные и общие", Архыз 24 (Черкесск)
+https://mhd116.iptv2022.com/x/yoUngm6dY9oYbDsIK-jJVw,1787900154/streaming/arhis24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10197/logo_256_1660809879.png" group-title="📺 Развлекательные и общие", ТРК Экспресс (Пенза)
+https://mhd116.iptv2022.com/x/h7i6LB-tA02qB_-VZvOK5g,1787900154/streaming/expres_penza/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/26615/logo_256_1717993798.png" group-title="📺 Развлекательные и общие", Татарстан 24 Набережные Челны
+https://mhd116.iptv2022.com/x/ovKi0IgjEYSRepdT2sE5Ww,1787900154/streaming/tatar24_chelny/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10444/logo_256.webp" group-title="📺 Развлекательные и общие", УРАЛ1 (Челябинск)
+https://mhd116.iptv2022.com/x/g5IW99vhooVwemB8d_7_SQ,1787900154/streaming/ural1/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/31312/logo_256.webp" group-title="📺 Развлекательные и общие", Восточный Экспресс (Челябинская область г.Миасс)
+https://mhd116.iptv2022.com/x/CtD21dGAVwOK_VU0rXEygQ,1787900154/streaming/vostok_express/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10445/logo_256_1690286826.png" group-title="📺 Развлекательные и общие", Канал 12 (Череповец)
+https://mhd116.iptv2022.com/x/BHAiXTquPXWS8COWb19Y8Q,1787900154/streaming/12cherepovec/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/11677/logo_256_1660893439.png" group-title="📺 Развлекательные и общие", ЮУрГУ-ТВ (Челябинск)
+https://mhd116.iptv2022.com/x/Gid_8Oy8ldvmYjvn5_3UNg,1787900154/streaming/urgru/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/15688/logo_256_1669702700.png" group-title="📺 Развлекательные и общие", Среда (Дагестан)
+https://mhd116.iptv2022.com/x/7on5Y8FQr5o4WHz70vY5Lw,1787900154/streaming/sreda/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/11313/logo_256_1660810817.png" group-title="📺 Развлекательные и общие", ПроДвижение - Ленинск (Кемеровская обл.)
+https://mhd116.iptv2022.com/x/4_ePgBHdqVBBY0ABhd2NZw,1787900154/streaming/ltv1tnt/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/31235/logo_256.webp" group-title="📺 Развлекательные и общие", ОТВ (Челябинск)
+https://mhd116.iptv2022.com/x/B4Dtz2sfMGkiDT0xM3S8xQ,1787900154/streaming/otvchelyab/324/1/index.m3u8
+
+# === ГРУППА: 🎵 Музыкальные каналы ===
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/45/logo_256.webp" group-title="🎵 Музыкальные каналы", РУ.ТВ
+https://mhd116.iptv2022.com/x/sL8DZEipcb_5kHX7HZ297A,1787900154/streaming/rutvnn/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/13/logo_256.png" group-title="🎵 Музыкальные каналы", FON Music
+https://mhd116.iptv2022.com/x/gkDykk-PAGP2Z3iDJ2_yGw,1787900154/streaming/tntmusic/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/52/logo_256_1660800445.png" group-title="🎵 Музыкальные каналы", BRIDGE CLASSIC
+https://mhd116.iptv2022.com/x/nnYYcR9qFs2X-IAX06Fa5g,1787900154/streaming/br_classic/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/16/logo_256_1658733566.png" group-title="🎵 Музыкальные каналы", BRIDGE HITS
+https://mhd116.iptv2022.com/x/2eOMEltdixPRr02BaGOM9A,1787900154/streaming/br_dance/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/12356/logo_256_1678781216.png" group-title="🎵 Музыкальные каналы", BRIDGE ROCK
+https://mhd116.iptv2022.com/x/PjjztUTJ0CZD6VD4GTcX-w,1787900154/streaming/br_rock/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/11173/logo_256_1660828534.png" group-title="🎵 Музыкальные каналы", BRIDGE ШЛЯГЕР
+https://mhd116.iptv2022.com/x/kluihYwnduen960rViXOPw,1787900154/streaming/br_shlyager/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/11166/logo_256_1660828570.png" group-title="🎵 Музыкальные каналы", BRIDGE DELUXE
+https://mhd116.iptv2022.com/x/i97pEB1TGMgZwzGzr7CEVA,1787900154/streaming/br_delux/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/19139/logo_256_1690979070.png" group-title="🎵 Музыкальные каналы", BRIDGE Фрэш
+https://mhd116.iptv2022.com/x/4ZDb37b-QBnmRuJ7n9XEDQ,1787900154/streaming/br_fresh/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/29338/logo_256.png" group-title="🎵 Музыкальные каналы", BRIDGE ЭТНО
+https://mhd116.iptv2022.com/x/0sNQtKi3jRYvjwCmoV-b4Q,1787900154/streaming/bridge_etno/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/14/logo_256_1658733588.png" group-title="🎵 Музыкальные каналы", BRIDGE
+https://mhd116.iptv2022.com/x/4iRSn7UdqXWQDVev1LE27Q,1787900154/streaming/bridgetv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/21/logo_256_1658733697.png" group-title="🎵 Музыкальные каналы", Europa Plus TV
+https://mhd116.iptv2022.com/x/ZiEg9P5MmkYEzih2jVoekg,1787900154/streaming/evropaplus/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10102/logo_256_1660809994.png" group-title="🎵 Музыкальные каналы", Шансон ТВ
+https://mhd116.iptv2022.com/x/nuFVnWF3jEJY04bIOXMriw,1787900154/streaming/shanson/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10245/logo_256_1658733804.png" group-title="🎵 Музыкальные каналы", RUSSIAN MUSIC BOX
+https://mhd116.iptv2022.com/x/KtQMD0pUqZ5g6Zey56fbXw,1787900154/streaming/musicbox/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10264/logo_256_1658734669.png" group-title="🎵 Музыкальные каналы", Жара
+https://mhd116.iptv2022.com/x/TxCUVoiv8nljaGWVDnQzLA,1787900154/streaming/myhouse/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10311/logo_256_1658737705.png" group-title="🎵 Музыкальные каналы", Страна FM
+https://mhd116.iptv2022.com/x/UXKy9QuWMjE1ZWEnLEUpaw,1787900154/streaming/stranafm/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/12391/logo_256_1655389526.png" group-title="🎵 Музыкальные каналы", Clubbing TV HD
+https://mhd116.iptv2022.com/x/Tw6BgNKehJl5Uc2mofFhdg,1787900154/streaming/clubbingtv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/27315/logo_256_1723103999.png" group-title="🎵 Музыкальные каналы", AIVA
+https://mhd116.iptv2022.com/x/zR6le10qKD03qVPDeveDhw,1787900154/streaming/aiva_tv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10268/logo_256.png" group-title="🎵 Музыкальные каналы", Афонтово (Красноярск)
+https://mhd116.iptv2022.com/x/-tI29hSyoNoilEcXQt-ypw,1787900154/streaming/afontovo/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/12664/logo_256_1655386814.png" group-title="🎵 Музыкальные каналы", 27 канал Прокопьевск (Кемеровская обл.)
+https://mhd116.iptv2022.com/x/kdV0ofJlWd3LNL1ERzN4dw,1787900154/streaming/27trk/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/14365/logo_256_1660805668.png" group-title="🎵 Музыкальные каналы", Мегаполис Югра
+https://mhd116.iptv2022.com/x/z613nhdAQ0-qIz0khyX3xg,1787900154/streaming/megapolis_ugra/324/1/index.m3u8
+
+# === ГРУППА: 👶 Детские и мультипликационные ===
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/77/logo_256.webp" group-title="👶 Детские и мультипликационные", Солнце
+https://mhd116.iptv2022.com/x/H45W5CPYIII15YDEF1vb6A,1787900154/streaming/solnce/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10289/logo_256_1658737584.png" group-title="👶 Детские и мультипликационные", Советские мультфильмы
+https://mhd116.iptv2022.com/x/vScyIpcjhz74rVUkVpRMKw,1787900154/streaming/rusmult/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/96/logo_256_1669621639.png" group-title="👶 Детские и мультипликационные", Мультиландия
+https://mhd116.iptv2022.com/x/t9SmK10S9emdP38nlbiOCQ,1787900154/streaming/multimania/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10430/logo_256_1660805856.png" group-title="👶 Детские и мультипликационные", МультСезон
+https://mhd116.iptv2022.com/x/p_m5yMpfGioHj8UckD6qKA,1787900154/streaming/multsezon/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/15674/logo_256_1669288072.png" group-title="👶 Детские и мультипликационные", BABY TIME
+https://mhd116.iptv2022.com/x/hxdgoXrE8aunRXw8MF64zQ,1787900154/streaming/baby_time/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10128/logo_256.png" group-title="👶 Детские и мультипликационные", Смайл ТВ
+https://mhd116.iptv2022.com/x/oxQFGEi3VCYr3tYtZ1jWiA,1787900154/streaming/smile/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10251/logo_256_1658737368.png" group-title="👶 Детские и мультипликационные", Радость моя
+https://mhd116.iptv2022.com/x/xHtJFQbhYosU65bnmdIA6Q,1787900154/streaming/radost/324/1/index.m3u8
 
 # === ГРУППА: 📦 Прочее ===
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/105/logo_256.webp" group-title="📦 Прочее", Первый HD
+https://mhd116.iptv2022.com/x/NVrjMGbOsso3uUCqhvGZcw,1787900154/streaming/1kanalott/324/5/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/115/logo_256.webp" group-title="📦 Прочее", Россия HD
+https://mhd116.iptv2022.com/x/zEEABkZYbOXp-DwNg3gwiw,1787900154/streaming/rossia1ott/324/5/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/83/logo_256.webp" group-title="📦 Прочее", Россия К
+https://mhd116.iptv2022.com/x/GEf9R8gNAcG1QhETCoWfyw,1787900154/streaming/rossiak/324/5/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/130/logo_256.webp" group-title="📦 Прочее", ТВ-3
+https://mhd116.iptv2022.com/x/vMhhefVz7a-cfjtcJG0xhw,1787900154/streaming/tv3ott/324/5/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/93/logo_256.webp" group-title="📦 Прочее", МУЗ-ТВ
+https://mhd116.iptv2022.com/x/99jIWlI_ENy41TpH17Ucjw,1787900154/streaming/muztv/324/5/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/146/logo_256.webp" group-title="📦 Прочее", Ю
+https://mhd116.iptv2022.com/x/apdmCOo87_YMwpN6h5N6IQ,1787900154/streaming/channelu/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/13735/logo_256_1709794858.png" group-title="📦 Прочее", Соловьев Live
+https://mhd116.iptv2022.com/x/r8EFTPhaElJvSY5y1R06FQ,1787900154/streaming/solovyevlive/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10062/logo_256_1655452236.png" group-title="📦 Прочее", Красная линия
+https://mhd116.iptv2022.com/x/3OMdU1jDyJ8YGwH5SO49-Q,1787900154/streaming/redline/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10830/logo_256_1660892108.png" group-title="📦 Прочее", Тайны Галактики
+https://mhd116.iptv2022.com/x/2GH-YpOrRXn2PrTszfdFBw,1787900154/streaming/taina-galaxy/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10352/logo_256_1658734446.png" group-title="📦 Прочее", Диалоги о рыбалке
+https://mhd116.iptv2022.com/x/wgjcxHAqI0y4xHK4azSNfw,1787900154/streaming/oribalke/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10135/logo_256_1660809965.png" group-title="📦 Прочее", Центральное ТВ
+https://mhd116.iptv2022.com/x/RD2zgVxPt3SjvINxwCA5kQ,1787900154/streaming/centrtv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10676/logo_256_1660828620.png" group-title="📦 Прочее", Глазами туриста
+https://mhd116.iptv2022.com/x/QugXBdyv5wjyA3cAxggzAw,1787900154/streaming/tourist_eyes/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/17305/logo_256_1695723740.png" group-title="📦 Прочее", TV XXI
+https://mhd116.iptv2022.com/x/Hpfwc8WgUEYJzUork8gVig,1787900154/streaming/tv_xxi/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/14225/logo_256_1660810197.png" group-title="📦 Прочее", Телеканал HHQ
+https://mhd116.iptv2022.com/x/-4Y24jEL-37QJroRC37n6A,1787900154/streaming/hhq/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10299/logo_256_1722581023.png" group-title="📦 Прочее", Океан HD
+https://mhd116.iptv2022.com/x/sP9KDy2NOX3lvz7nxOI3Hw,1787900154/streaming/oceantv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/16052/logo_256_1671601595.png" group-title="📦 Прочее", Quadro 4K
+https://mhd116.iptv2022.com/x/2O5FeR8hrPRwxxd91YO28w,1787900154/streaming/quadrohd/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10141/logo_256_1658737383.png" group-title="📦 Прочее", Ратник
+https://mhd116.iptv2022.com/x/rrPY-_XTp00muP1iqn61kg,1787900154/streaming/ratnik/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10384/logo_256_1658737285.png" group-title="📦 Прочее", Перпетуум Мобиле
+https://mhd116.iptv2022.com/x/4orrNBclnJ8F7R4NwsoWZg,1787900154/streaming/pmobile/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/31242/logo_256.png" group-title="📦 Прочее", Хочу всё знать!
+https://mhd116.iptv2022.com/x/rDR31E4W1HP2Xiq6XG5VBA,1787900154/streaming/hochu_znat/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10219/logo_256_1658734632.png" group-title="📦 Прочее", ЕГЭ
+https://mhd116.iptv2022.com/x/JjzH-KdOgLH-HIYLLEt2LQ,1787900154/streaming/ege/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/28561/logo_256_1727870097.png" group-title="📦 Прочее", ВКУС
+https://mhd116.iptv2022.com/x/Or-rT2bzthfqZPNzNgMQUw,1787900154/streaming/vkus_tv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10387/logo_256_1658733779.png" group-title="📦 Прочее", Joy cook
+https://mhd116.iptv2022.com/x/mCmXXgoUzRV1PeTF1VkoFg,1787900154/streaming/joycook/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10221/logo_256_1658737228.png" group-title="📦 Прочее", Первый Вегетарианский
+https://mhd116.iptv2022.com/x/VIK9mzc5TDxceHGRyKM0zQ,1787900154/streaming/firstvegan/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10223/logo_256_1658736783.png" group-title="📦 Прочее", ЛДПР ТВ
+https://mhd116.iptv2022.com/x/zTqAa4M-ftCghupl0rTYKw,1787900154/streaming/ldprlive/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10074/logo_256_1658736572.png" group-title="📦 Прочее", Калейдоскоп ТВ
+https://mhd116.iptv2022.com/x/ZWajdlsEkkKeoeyQMvtYvw,1787900154/streaming/kaleidoskop/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10081/logo_256_1658733465.png" group-title="📦 Прочее", 8 Канал
+https://mhd116.iptv2022.com/x/iXw1W1n5FO7NPrqz7GeI0A,1787900154/streaming/8kanal/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10388/logo_256_1658734603.png" group-title="📦 Прочее", Дума ТВ
+https://mhd116.iptv2022.com/x/YZl-H96b3D-HZPpa748VSw,1787900154/streaming/dumatv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/15786/logo_256_1694427058.png" group-title="📦 Прочее", Horror TV
+https://mhd116.iptv2022.com/x/DCR_bU2PrTRj9yopGo8hIA,1787900154/streaming/horror_tv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10092/logo_256_1658744631.png" group-title="📦 Прочее", Точка ТВ
+https://mhd116.iptv2022.com/x/hMXlJyxMnolxfKoOsXdFQg,1787900154/streaming/tochka/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10385/logo_256_1658737896.png" group-title="📦 Прочее", Терра Инкогнита
+https://mhd116.iptv2022.com/x/SJvJrhbIsacdytg5CpupjA,1787900154/streaming/terra/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10675/logo_256_1658734683.png" group-title="📦 Прочее", Живая природа
+https://mhd116.iptv2022.com/x/Mn6PZwrnMhu8j04EEBRurw,1787900154/streaming/livenature/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/27266/logo_256_1723103951.png" group-title="📦 Прочее", Конгресс ТВ
+https://mhd116.iptv2022.com/x/BnEJ1DBhGMVRcr4FWVxtRw,1787900154/streaming/tvkongres/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10147/logo_256_1658737300.png" group-title="📦 Прочее", Пес и Ко
+https://mhd116.iptv2022.com/x/SGvSGwHnTekh4iUHjcTvGg,1787900154/streaming/pesiko/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10133/logo_256_1658734327.png" group-title="📦 Прочее", Вместе-РФ
+https://mhd116.iptv2022.com/x/f5QLGn2P6Hzk-VNRRPGKoQ,1787900154/streaming/vmeste-rf/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/142/logo_256_1658744711.png" group-title="📦 Прочее", Успех
+https://mhd116.iptv2022.com/x/HX3QZwAHP2Ac9lG5MqPoyw,1787900154/streaming/uspeh/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10345/logo_256_1658734259.png" group-title="📦 Прочее", Большая Азия
+https://mhd116.iptv2022.com/x/SPsmMLVDyF03qsRd5Vqkgw,1787900154/streaming/bigasia/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10646/logo_256_1655388613.png" group-title="📦 Прочее", Полёт ТВ
+https://mhd116.iptv2022.com/x/A5oCSAFgXgk5W8KRVXTzzQ,1787900154/streaming/polet/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10647/logo_256_1660803814.png" group-title="📦 Прочее", АКВА ТВ
+https://mhd116.iptv2022.com/x/xpVOK4w4qLujTQzm1CUbpQ,1787900154/streaming/aqua/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10666/logo_256_1655389321.png" group-title="📦 Прочее", Arirang
+https://mhd116.iptv2022.com/x/d385QXgqGu4OgzTsurVTng,1787900154/streaming/arirang/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10554/logo_256_1660891832.png" group-title="📦 Прочее", Song TV Россия
+https://mhd116.iptv2022.com/x/jl4jxoxMTIIwEIQI-JeyCQ,1787900154/streaming/songtvru/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10618/logo_256_1655389346.png" group-title="📦 Прочее", TV BRICS
+https://mhd116.iptv2022.com/x/68iAaZLAJjBoiexCoHrMGw,1787900154/streaming/briks/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10106/logo_256_1660806639.png" group-title="📦 Прочее", о2тв
+https://mhd116.iptv2022.com/x/YOtQHz4WuT_dfT4DSNioag,1787900154/streaming/o2tv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10641/logo_256_1660892186.png" group-title="📦 Прочее", Телеканал народной музыки
+https://mhd116.iptv2022.com/x/CnT8Ts-ZrWGQHJYifY_n5A,1787900154/streaming/folk_music/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10674/logo_256_1660828644.png" group-title="📦 Прочее", Живи Активно
+https://mhd116.iptv2022.com/x/GBcRBvzFGh90CXCIIDM6bw,1787900154/streaming/zhivi_aktivno/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10386/logo_256_1658737079.png" group-title="📦 Прочее", Неизвестная планета
+https://mhd116.iptv2022.com/x/_wajPWrB9vSvLZAfZ85NXw,1787900154/streaming/np/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/26846/logo_256_1719316009.png" group-title="📦 Прочее", LIVETVAZ
+https://mhd116.iptv2022.com/x/Ch7qdN1cJ1uICp9Z7EAVUw,1787900154/streaming/livetvaz/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10046/logo_256_1658737433.png" group-title="📦 Прочее", РЖД ТВ
+https://mhd116.iptv2022.com/x/N2uTmsCPSCzKRDnBdo19TQ,1787900154/streaming/rjd/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/26734/logo_256_1718620692.png" group-title="📦 Прочее", Аппетитный
+https://mhd116.iptv2022.com/x/FmxkpVcgJ-ZBKgO1e69FUA,1787900154/streaming/appetitniy/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/16528/logo_256_1675429328.png" group-title="📦 Прочее", АРТ
+https://mhd116.iptv2022.com/x/nRFNCUs64mjD615qB2rhyw,1787900154/streaming/art_tv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/17340/logo_256_1684409998.png" group-title="📦 Прочее", Неизвестная Россия
+https://mhd116.iptv2022.com/x/zcmJSeOJmgMw2fq7loA-RA,1787900154/streaming/unknown_russia/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/19734/logo_256_1697699059.png" group-title="📦 Прочее", Silk Way Cinema
+https://mhd116.iptv2022.com/x/PcFShYugvJgDo3MLCId_uA,1787900154/streaming/silk_way_cinema/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/26727/logo_256_1718620704.png" group-title="📦 Прочее", Мы
+https://mhd116.iptv2022.com/x/KI4uZ-D6ausxT6b_ir6-5w,1787900154/streaming/we_tv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/29149/logo_256_1731069588.png" group-title="📦 Прочее", Волейбол
+https://mhd116.iptv2022.com/x/uwwcISbq8VChEN6IwTqbkQ,1787900154/streaming/volleyball/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/30829/logo_256.png" group-title="📦 Прочее", САНГАТ
+https://mhd116.iptv2022.com/x/pBOK1uwwC-3DI2ASThmG3w,1787900154/streaming/sangat/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10648/logo_256_1655388871.png" group-title="📦 Прочее", Светлое ТВ
+https://mhd116.iptv2022.com/x/o6T706nBBf2lZvqTvcTVpQ,1787900154/streaming/svetloetv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/149/logo_256_1660802630.png" group-title="📦 Прочее", LUXURY
+https://mhd116.iptv2022.com/x/cCE2WnzFltmgX8nRM_9TnQ,1787900154/streaming/luxury/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10064/logo_256_1658733449.png" group-title="📦 Прочее", 7ТВ
+https://mhd116.iptv2022.com/x/-UFKYrRt0pNlawz0v5LHgQ,1787900154/streaming/7tv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10120/logo_256_1660805741.png" group-title="📦 Прочее", Министерство Идей
+https://mhd116.iptv2022.com/x/5o_EYG4pNXuvVUjg--ikVA,1787900154/streaming/minidei/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10310/logo_256.png" group-title="📦 Прочее", Мото Драйв ТВ
+https://mhd116.iptv2022.com/x/vjEszV-7rH4Gch2i1J-ljQ,1787900154/streaming/moto_drive/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10555/logo_128_1652790001.png" group-title="📦 Прочее", SONG TV Armenia
+https://mhd116.iptv2022.com/x/Xout5V8ap7DjecpVasXJlw,1787900154/streaming/songtvam/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/24648/logo_256_1712305656.png" group-title="📦 Прочее", LEOMAX24
+https://mhd116.iptv2022.com/x/5PLOVoLSWpJdLggOztwEwA,1787900154/streaming/leomax24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/28666/logo_256.png" group-title="📦 Прочее", ПЛЮС/МИНУС 16
+https://mhd116.iptv2022.com/x/aR0HwCKkbXGvTiHTPSUN-Q,1787900154/streaming/russian_ship/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10163/logo_256_1660805461.png" group-title="📦 Прочее", Курай
+https://mhd116.iptv2022.com/x/7wyweHrnNKw5bR9x9h4VGg,1787900154/streaming/curai/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/13490/logo_256_1660802549.png" group-title="📦 Прочее", Kinoliving
+https://mhd116.iptv2022.com/x/B2HU8eexDTQdiK3wzce7kQ,1787900154/streaming/kinoliving/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/14869/logo_256_1661855814.png" group-title="📦 Прочее", Осетия-Ирыстон
+https://mhd116.iptv2022.com/x/EVmKddJCY9J6fo5kU0LrKQ,1787900154/streaming/osetia-iryston/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10148/logo_256_1661854990.png" group-title="📦 Прочее", ТНВ Планета (Татарстан)
+https://mhd116.iptv2022.com/x/d1MMIv63g6wSsxzUmCv01w,1787900154/streaming/tnv-planet/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/13112/logo_256_1660800309.png" group-title="📦 Прочее", 7 канал (Красноярск)
+https://mhd116.iptv2022.com/x/7lP0G-4bs4TKHPdmVmNHTg,1787900154/streaming/7channel/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10150/logo_256.webp" group-title="📦 Прочее", Волга (Нижний Новгород)
+https://mhd116.iptv2022.com/x/mdYbO3AVSxg18d0szZ1L8w,1787900154/streaming/volga-nn/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10241/logo_256.png" group-title="📦 Прочее", ОТВ (Екатеринбург)
+https://mhd116.iptv2022.com/x/ZmnhrB3sCRhME1FjmQcirg,1787900154/streaming/otvekb/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10130/logo_256_1660806736.png" group-title="📦 Прочее", Первый Крымский
+https://mhd116.iptv2022.com/x/_KJxao6ZjIclEZHlwbz1-Q,1787900154/streaming/1crimea/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10162/logo_256_1660804483.png" group-title="📦 Прочее", БСТ
+https://mhd116.iptv2022.com/x/OEMWDVAHJPgw5KJ_z7t-LA,1787900154/streaming/bst/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10194/logo_256_1660805499.png" group-title="📦 Прочее", Лен ТВ 24
+https://mhd116.iptv2022.com/x/s_8EdKYeThIxuLjNdSvTFw,1787900154/streaming/lentv24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10122/logo_256_1660804740.png" group-title="📦 Прочее", Грозный
+https://mhd116.iptv2022.com/x/mbGsnG_1CgwhV2bkvmzfbw,1787900154/streaming/grozniy/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10111/logo_256_1660805233.png" group-title="📦 Прочее", Каскад
+https://mhd116.iptv2022.com/x/E-QEjD0Y3oGTMH4OQCW36A,1787900154/streaming/kaskad/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/98/logo_256.webp" group-title="📦 Прочее", Чаваш ЕН
+https://mhd116.iptv2022.com/x/TX-PKoCr3MV1zrcqCA18Mg,1787900154/streaming/chavashen/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10350/logo_256_1660810020.png" group-title="📦 Прочее", Шаян ТВ
+https://mhd116.iptv2022.com/x/f-zP-DN5k8q0t5J9vw0lzQ,1787900154/streaming/shayan/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10230/logo_256_1660805546.png" group-title="📦 Прочее", Майдан
+https://mhd116.iptv2022.com/x/QlehZ_EeKGbgwBhgwrLrnw,1787900154/streaming/maidan/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10298/logo_256_1660809952.png" group-title="📦 Прочее", Хузур ТВ
+https://mhd116.iptv2022.com/x/UrOgPH9v6tHsEzM0xMEl1A,1787900154/streaming/huzur/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10249/logo_256_1660804407.png" group-title="📦 Прочее", Башкортостан 24
+https://mhd116.iptv2022.com/x/woMUYfPJgm4hH2CwgInIwQ,1787900154/streaming/vgtrkbash/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10281/logo_256_1660803857.png" group-title="📦 Прочее", Арис 24
+https://mhd116.iptv2022.com/x/POhMGOnOu_0cGuowGsL-7Q,1787900154/streaming/aris24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10209/logo_256_1655387069.png" group-title="📦 Прочее", Вся Уфа
+https://mhd116.iptv2022.com/x/f0hjWvAcLlPW0F9GdEGLNg,1787900154/streaming/allufaru/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10242/logo_256_1677670850.png" group-title="📦 Прочее", ОТС
+https://mhd116.iptv2022.com/x/Y6XocSGGHmdhLetzfBEEkA,1787900154/streaming/otsnovnosib/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/30031/logo_256.webp" group-title="📦 Прочее", Область 45
+https://mhd116.iptv2022.com/x/-UlTQD48u7UEvmATBsnCpw,1787900154/streaming/oblast-45/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10285/logo_256_1660891610.png" group-title="📦 Прочее", 8 канал (Новосибирск)
+https://mhd116.iptv2022.com/x/HqRCtKK1LhLo6UKIimEieg,1787900154/streaming/8channelnsk/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10155/logo_256_1660800324.png" group-title="📦 Прочее", 12 канал (Омск)
+https://mhd116.iptv2022.com/x/-hloFpeiMX2ZKflOTWHKWQ,1787900154/streaming/12channel/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10218/logo_256_1660807373.png" group-title="📦 Прочее", Сочи 24
+https://mhd116.iptv2022.com/x/ED2o7K5RX9OmMxcUHx33eg,1787900154/streaming/maksmedia/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10114/logo_256_1660805366.png" group-title="📦 Прочее", Краснодар
+https://mhd116.iptv2022.com/x/CpMEuyA2zZqgAWUhd0elEA,1787900154/streaming/kransodar/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10253/logo_256_1660803568.png" group-title="📦 Прочее", SochiLive (Сочи)
+https://mhd116.iptv2022.com/x/qSC6aP5KbpnBSH3Vu_gc5A,1787900154/streaming/sochilive/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10131/logo_256_1660805381.png" group-title="📦 Прочее", Крым 24
+https://mhd116.iptv2022.com/x/TEtgxMagEQMv9v9fiETNHw,1787900154/streaming/crimea24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10134/logo_256_1655387098.png" group-title="📦 Прочее", РГВК Дагестан
+https://mhd116.iptv2022.com/x/ASJaCz7nRBwpziWnjMBzPw,1787900154/streaming/dagestan/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10139/logo_256_1660804787.png" group-title="📦 Прочее", Губерния ТВ (Хабаровск)
+https://mhd116.iptv2022.com/x/mJPW_deOY25rXdVRnHfong,1787900154/streaming/guberniya-h/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10673/logo_256.webp" group-title="📦 Прочее", 6ТВ (Хабаровск)
+https://mhd116.iptv2022.com/x/t3gRY3plHG2DzN7petBOeQ,1787900154/streaming/tvk6/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10320/logo_256_1690879147.png" group-title="📦 Прочее", Silk Way
+https://mhd116.iptv2022.com/x/Wmz4wYApL2RoL8YVo1vKqQ,1787900154/streaming/kazahtv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10631/logo_256.png" group-title="📦 Прочее", Запад 24
+https://mhd116.iptv2022.com/x/_B_ykP4-4WgredmfpgzZAQ,1787900154/streaming/zapad24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10132/logo_256_1660807275.png" group-title="📦 Прочее", Север
+https://mhd116.iptv2022.com/x/I37y8GdLE399XiKQ4dughg,1787900154/streaming/sever/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/31151/logo_256.webp" group-title="📦 Прочее", Кавказ 24
+https://mhd116.iptv2022.com/x/PSZjuUWX7H5utDcW8uPA0w,1787900154/streaming/kavkaz24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10191/logo_256.webp" group-title="📦 Прочее", Астрахань 24
+https://mhd116.iptv2022.com/x/o6dfK14RtNXF7EBNj8d3dA,1787900154/streaming/astrakhan24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/31137/logo_256.webp" group-title="📦 Прочее", Про Астрахань
+https://mhd116.iptv2022.com/x/flYEMqlXTDlkfz1AVsi41A,1787900154/streaming/pro_astrahan/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10172/logo_256_1660891626.png" group-title="📦 Прочее", 8 Канал (Красноярск)
+https://mhd116.iptv2022.com/x/U8a3lRvVHlUkKtRNWeGLKQ,1787900154/streaming/8krasnoyarsk/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10164/logo_256_1660810096.png" group-title="📦 Прочее", Юрган ТВ (Сыктывкар)
+https://mhd116.iptv2022.com/x/HyEKFGSpqMWPP1_YC0eiDw,1787900154/streaming/urgan/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10280/logo_256_1660828764.png" group-title="📦 Прочее", Сургут 86 FHD
+https://mhd116.iptv2022.com/x/jZyA_mw9QMfD4beMoPKScw,1787900154/streaming/channel86/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10258/logo_256_1658737018.png" group-title="📦 Прочее", Надежда
+https://mhd116.iptv2022.com/x/tM6FFddQOfZbOnND12ttlw,1787900154/streaming/nadejda/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10279/logo_256_1660828786.png" group-title="📦 Прочее", С1 Сургут HD
+https://mhd116.iptv2022.com/x/Xnyy-6zN1ADnZ1f1uZUO_w,1787900154/streaming/channelc1/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10328/logo_256_1697022368.png" group-title="📦 Прочее", НВК Саха (Якутия)
+https://mhd116.iptv2022.com/x/PZ1h99VKOkHR0NxQG3orPA,1787900154/streaming/nsk-saha/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10195/logo_256.webp" group-title="📦 Прочее", Санкт-Петербург
+https://mhd116.iptv2022.com/x/5WrGxbIV5TYmH4TLLIbLxQ,1787900154/streaming/topspb/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10348/logo_256_1673872590.png" group-title="📦 Прочее", Саратов 24
+https://mhd116.iptv2022.com/x/ttr84haS-YNnpqXCh4uL-g,1787900154/streaming/saratov24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10208/logo_256_1660806287.png" group-title="📦 Прочее", Наш дом (Пенза)
+https://mhd116.iptv2022.com/x/QeGCjbOmlsbocjyADHjydA,1787900154/streaming/11channel/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10117/logo_256_1701080361.png" group-title="📦 Прочее", Общественное телевидение Приморья (Владивосток)
+https://mhd116.iptv2022.com/x/iuE25TndmOLbGbRNHAYf1A,1787900154/streaming/otvprim/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10118/logo_256_1666600950.png" group-title="📦 Прочее", СВОЁТВ (Ставрополь)
+https://mhd116.iptv2022.com/x/MYbv1dsKyYE49f5VepHzbg,1787900154/streaming/svoetv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10190/logo_256.webp" group-title="📦 Прочее", Ямал-регион (Салехард)
+https://mhd116.iptv2022.com/x/48Gy3WnZx1ZRaleI3MxPcw,1787900154/streaming/yamal-region/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10325/logo_256_1660806619.png" group-title="📦 Прочее", НТС (Республика Крым г.Севастополь)
+https://mhd116.iptv2022.com/x/WkUyHAxDoMkkgFiYQ7IOKg,1787900154/streaming/nts-tv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10192/logo_256_1660804633.png" group-title="📦 Прочее", Волгоград 24
+https://mhd116.iptv2022.com/x/C6F3z-vqsnv0V_lHdrUJ0Q,1787900154/streaming/volgogradtrv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10193/logo_256_1660804899.png" group-title="📦 Прочее", Дон 24 (Ростов-на-Дону)
+https://mhd116.iptv2022.com/x/ug5QfwXxJOS4VZ7CUQwUug,1787900154/streaming/don24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10127/logo_256_1660806427.png" group-title="📦 Прочее", Ника ТВ (Калуга)
+https://mhd116.iptv2022.com/x/ddq-7eELMZSXPreeMWFGPw,1787900154/streaming/nika/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10126/logo_256_1660803680.png" group-title="📦 Прочее", TV Губерния (Воронеж)
+https://mhd116.iptv2022.com/x/U40UjUPKdZ7wg1WuRAlMTQ,1787900154/streaming/guberniya/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10199/logo_256_1660891950.png" group-title="📦 Прочее", Губерния Самарская
+https://mhd116.iptv2022.com/x/yCEm1eJKQ7Uq_6lJz6rvog,1787900154/streaming/guberniatv-s/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10203/logo_256_1660805812.png" group-title="📦 Прочее", МТВ (Волгоград)
+https://mhd116.iptv2022.com/x/muijIo84H_bIQMv2EbgiqQ,1787900154/streaming/volgograd1/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10113/logo_256_1660807307.png" group-title="📦 Прочее", Сейм (Курск)
+https://mhd116.iptv2022.com/x/mRf3w8GJYAOOzlHcEmj60g,1787900154/streaming/seim/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10196/logo_256_1723104021.png" group-title="📦 Прочее", ОРТ-Планета (Оренбург)
+https://mhd116.iptv2022.com/x/or3FAuEWUFDLycoOYSl_Lw,1787900154/streaming/media56/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10276/logo_256_1660804617.png" group-title="📦 Прочее", Ветта 24 (Пермь)
+https://mhd116.iptv2022.com/x/7EEBEMqXaV8sHnZbUEQePA,1787900154/streaming/vetta/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10344/logo_256.webp" group-title="📦 Прочее", Регион 29 (Архангельск)
+https://mhd116.iptv2022.com/x/BjuhJt3s2l1-dMou3J9jng,1787900154/streaming/region29/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/31130/logo_256.webp" group-title="📦 Прочее", Арктика 24 (Архангельск)
+https://mhd116.iptv2022.com/x/3hWa2YkPnZT00p-_l2z9dg,1787900154/streaming/arktika24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10217/logo_256.webp" group-title="📦 Прочее", Кубань 24 (Краснодар)
+https://mhd116.iptv2022.com/x/elR8FSOT1qkfh82T7U33dw,1787900154/streaming/cuban24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10210/logo_256_1660804970.png" group-title="📦 Прочее", Енисей (Красноярск)
+https://mhd116.iptv2022.com/x/CLUjtRYN3VDbxt4aKp-rdg,1787900154/streaming/enisey/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10291/logo_256.png" group-title="📦 Прочее", Ямал 1
+https://mhd116.iptv2022.com/x/BmdEPLanj3ovA9Aq3jZ0EQ,1787900154/streaming/arctica24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10165/logo_256_1660805256.png" group-title="📦 Прочее", Катунь-24 (Барнаул)
+https://mhd116.iptv2022.com/x/qacAQk_N9TH1-1cDR4khsg,1787900154/streaming/katun24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10275/logo_256_1660806558.png" group-title="📦 Прочее", НТМ (Мордовия)
+https://mhd116.iptv2022.com/x/-npWBZCJ2cVWCJlz0Sp0kA,1787900154/streaming/ntm/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10306/logo_256_1660809768.png" group-title="📦 Прочее", ТОЛЬЯТТИ 24
+https://mhd116.iptv2022.com/x/O1AJfQ9j2R3jJIQMNXWGaA,1787900154/streaming/tolyati24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10201/logo_256_1660803797.png" group-title="📦 Прочее", Аист ТВ (Иркутск)
+https://mhd116.iptv2022.com/x/Z5PYQJzIuHzNWqOnZKWS_w,1787900154/streaming/aisttv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10283/logo_256_1660807435.png" group-title="📦 Прочее", Тамыр (Уфа)
+https://mhd116.iptv2022.com/x/vB_5L5DsmovSbPnhfVbWlw,1787900154/streaming/tamir/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10272/logo_256_1660810055.png" group-title="📦 Прочее", Эхо 24 (Новоуральск)
+https://mhd116.iptv2022.com/x/cVadmEsMHP4RqXTL0JWEtQ,1787900154/streaming/eho24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10229/logo_256_1660805006.png" group-title="📦 Прочее", Жар Птица
+https://mhd116.iptv2022.com/x/TVuJ7CvzSDZEpPLvbGWYQA,1787900154/streaming/jarptica/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10063/logo_256_1660807097.png" group-title="📦 Прочее", Русский север (Вологда)
+https://mhd116.iptv2022.com/x/IPj-5hlHiwKGmOelXp1odA,1787900154/streaming/russever/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10284/logo_256_1660804826.png" group-title="📦 Прочее", Десятка (Кемеровская область г.Новокузнецк)
+https://mhd116.iptv2022.com/x/HfpmNENlD3snH-PhheS3QQ,1787900154/streaming/10channel/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10357/logo_256_1655386970.png" group-title="📦 Прочее", Брянская губерния
+https://mhd116.iptv2022.com/x/6XZbOos1O9z0Ko2CbbC4hA,1787900154/streaming/guberniya-b/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10361/logo_256_1660805685.png" group-title="📦 Прочее", Миллет (Крым)
+https://mhd116.iptv2022.com/x/cQqm0HIJbDKGgxBmUHJVZA,1787900154/streaming/millet/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10364/logo_256_1660810041.png" group-title="📦 Прочее", Эфир (Казань)
+https://mhd116.iptv2022.com/x/C4EuGg22H-Czj3h9I3R7QA,1787900154/streaming/efir/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10369/logo_256_1660807459.png" group-title="📦 Прочее", Татарстан 24
+https://mhd116.iptv2022.com/x/771Q_tLHzTjnsSyLDuPv9w,1787900154/streaming/tatar24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10370/logo_256_1660804651.png" group-title="📦 Прочее", Восток 24
+https://mhd116.iptv2022.com/x/xLjCRzBcgDTBN1fBELMQaw,1787900154/streaming/vostok24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10380/logo_256_1660805775.png" group-title="📦 Прочее", Мордовия 24
+https://mhd116.iptv2022.com/x/KTx0XYmXlMs_78rSamvhPw,1787900154/streaming/mordovia24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10389/logo_256_1660807150.png" group-title="📦 Прочее", Рыбинск-40
+https://mhd116.iptv2022.com/x/Z7x8gg3YMlU7qVt2mr2hKw,1787900154/streaming/rybinsk40/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10403/logo_256_1660810158.png" group-title="📦 Прочее", ТКР (Рязань)
+https://mhd116.iptv2022.com/x/LeC3Ew7A3b592hHGLvoasw,1787900154/streaming/trk_razan/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10404/logo_256_1660804447.png" group-title="📦 Прочее", Белгород 24
+https://mhd116.iptv2022.com/x/tu5h7y5qjfXFEknOcqY1hQ,1787900154/streaming/belgorod24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10405/logo_256_1660806857.png" group-title="📦 Прочее", Первый Тульский
+https://mhd116.iptv2022.com/x/A1CoZRcnuOKlWxRN9jPpDQ,1787900154/streaming/1tula/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10414/logo_256_1660807722.png" group-title="📦 Прочее", ТВК (Красноярск)
+https://mhd116.iptv2022.com/x/HyE2eRxqrR_EExuah2eVzA,1787900154/streaming/tvk/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10428/logo_256_1660807190.png" group-title="📦 Прочее", Салям (Уфа)
+https://mhd116.iptv2022.com/x/_2kPKgHWBjNeNQs2uA52jw,1787900154/streaming/salyam/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10435/logo_256_1660807827.png" group-title="📦 Прочее", ТИВИСИ (Иркутск)
+https://mhd116.iptv2022.com/x/ks1BvmjPNk9QClZh8a5K1w,1787900154/streaming/tivici/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10093/logo_256_1658737031.png" group-title="📦 Прочее", Нано
+https://mhd116.iptv2022.com/x/djawTdAiZe9TL-ZLLFwhvg,1787900154/streaming/nano/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10216/logo_256_1705393466.jpg" group-title="📦 Прочее", UNIVER TV
+https://mhd116.iptv2022.com/x/P8kZHWNJA5zYRhuxLluGOQ,1787900154/streaming/univertv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10168/logo_256_1658736754.png" group-title="📦 Прочее", Крик ТВ
+https://mhd116.iptv2022.com/x/6KZOUzMGQ6s2vyjtuzuJ5w,1787900154/streaming/rictv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10442/logo_256_1660807211.png" group-title="📦 Прочее", Самара 24
+https://mhd116.iptv2022.com/x/LMXGlulHz-x3_G0qqjvYeg,1787900154/streaming/samara24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10446/logo_256_1660805218.png" group-title="📦 Прочее", Канал 16 (Саров)
+https://mhd116.iptv2022.com/x/-XpA0GXwH604zCV-_t8iAg,1787900154/streaming/channel16/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10448/logo_256_1660807705.png" group-title="📦 Прочее", ТВ-ИН (Магнитогорск)
+https://mhd116.iptv2022.com/x/kS0Xp-jBA60GAl_Hz5iElQ,1787900154/streaming/tvin/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10453/logo_256_1671025191.png" group-title="📦 Прочее", Алмазный край (Якутия)
+https://mhd116.iptv2022.com/x/lI1PFfrku8fn9ef8NFCcyQ,1787900154/streaming/almaz_kray/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10454/logo_256_1697022216.png" group-title="📦 Прочее", Якутия 24
+https://mhd116.iptv2022.com/x/svRWFYtWfEi7M5Lz-yaDDg,1787900154/streaming/yak24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10458/logo_256_1660809902.png" group-title="📦 Прочее", Туапсе 24
+https://mhd116.iptv2022.com/x/oBRtC-aYR2q-r9U-KtPFXQ,1787900154/streaming/tuapse24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10459/logo_256_1660806887.png" group-title="📦 Прочее", ПРИМА (Красноярск)
+https://mhd116.iptv2022.com/x/yg4_FzwWL7Aydx_qONSQHg,1787900154/streaming/primatv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10461/logo_256_1660892157.png" group-title="📦 Прочее", Тивиком (Улан-Удэ)
+https://mhd116.iptv2022.com/x/qtv2sgLEKiVbJxaFI_ie1w,1787900154/streaming/tvcom/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10463/logo_256_1660809624.png" group-title="📦 Прочее", ТОЛК (Барнаул)
+https://mhd116.iptv2022.com/x/LhIz2S2kTD6LkwTOoNL90Q,1787900154/streaming/tolktv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10464/logo_256_1660806411.png" group-title="📦 Прочее", Нижний Новгород 24
+https://mhd116.iptv2022.com/x/1I9KwFtSBu4yKN3gGW3i1A,1787900154/streaming/vestinn24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10467/logo_256_1660800341.png" group-title="📦 Прочее", 41 канал ВТК АРГУС (Воронеж)
+https://mhd116.iptv2022.com/x/btCh54l_lP1rsjEbRnCLWQ,1787900154/streaming/41tv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10478/logo_256_1660891642.png" group-title="📦 Прочее", 41 регион (Петропавловск-Камчатский)
+https://mhd116.iptv2022.com/x/6_fFvmRmCIZE96w2cgelrg,1787900154/streaming/41region/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10479/logo_256_1660806828.png" group-title="📦 Прочее", Первый Псковский
+https://mhd116.iptv2022.com/x/LJFOY170eau3y05lMy9sCA,1787900154/streaming/1pskov/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10481/logo_256_1660805417.png" group-title="📦 Прочее", Кузбасс 1 (Кемерово)
+https://mhd116.iptv2022.com/x/wCaGryggRq-UlbC5NgbmTg,1787900154/streaming/kuzbas1/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/23423/logo_256_1709560054.png" group-title="📦 Прочее", Телеканал ТБВ
+https://mhd116.iptv2022.com/x/v7TIApZ_MbwtnrsAQANkqw,1787900154/streaming/blagvestraz/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10490/logo_256_1660808596.png" group-title="📦 Прочее", ТМ-КВАНТ (Кемеровская обл.)
+https://mhd116.iptv2022.com/x/FF50oiioFkafGB-RMNVMvg,1787900154/streaming/tm-kvant/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10531/logo_256_1660803768.png" group-title="📦 Прочее", Абакан 24
+https://mhd116.iptv2022.com/x/R5-mNohGSouXB7BqZJGxSg,1787900154/streaming/abakan24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10537/logo_256_1660804805.png" group-title="📦 Прочее", Девятка ТВ (Киров)
+https://mhd116.iptv2022.com/x/VWUrGJaPupPABcEqMxD6zg,1787900154/streaming/devyatka/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10539/logo_256.png" group-title="📦 Прочее", 4 канал (Екатеринбург)
+https://mhd116.iptv2022.com/x/WvDnejMYaXOt5IEF64FVqQ,1787900154/streaming/4channel/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10543/logo_256_1660807228.png" group-title="📦 Прочее", САМОТЛОР (Нижневартовск)
+https://mhd116.iptv2022.com/x/RzWMo4CbNb7P3-6lrRAjqg,1787900154/streaming/samotlor/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10630/logo_256_1660806529.png" group-title="📦 Прочее", Новый век (Тамбов)
+https://mhd116.iptv2022.com/x/K26AFL0topMvz572eqKI9g,1787900154/streaming/tambov/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10649/logo_256_1655386245.png" group-title="📦 Прочее", Истоки (Орел)
+https://mhd116.iptv2022.com/x/IjEFsVyEfUh0AI8XSVJoDA,1787900154/streaming/istoki/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10650/logo_256.png" group-title="📦 Прочее", ПРИМ24 (Владивосток)
+https://mhd116.iptv2022.com/x/jYb6nrWS7sWsMoNRAt3Lsw,1787900154/streaming/prim24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10671/logo_256.webp" group-title="📦 Прочее", 78 канал (Санкт-Петербург)
+https://mhd116.iptv2022.com/x/smvT52jU2tuS9s6eOfRIug,1787900154/streaming/78ch/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10684/logo_256_1660805446.png" group-title="📦 Прочее", Кунел ТВ (Татарстан)
+https://mhd116.iptv2022.com/x/8AjjNIdO-OhofpExivR8WA,1787900154/streaming/kuneltv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10690/logo_256_1655388777.png" group-title="📦 Прочее", Русь (Кострома)
+https://mhd116.iptv2022.com/x/cdTzq7x2wRiaP3bsULP0Vg,1787900154/streaming/kostroma/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10697/logo_256_1660892137.png" group-title="📦 Прочее", ТВ21+ (Мурманск)
+https://mhd116.iptv2022.com/x/bFac4MkgSiI4CrBdTQHpwQ,1787900154/streaming/murmansk-tv21/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10711/logo_256_1660892081.png" group-title="📦 Прочее", Рифей-ТВ (Пермь)
+https://mhd116.iptv2022.com/x/ZlVZSNGvWaOekVaMyoCH1w,1787900154/streaming/rifey/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10802/logo_256_1660892200.png" group-title="📦 Прочее", ТЕО ТВ (Москва)
+https://mhd116.iptv2022.com/x/AzK58XU-Wfm7_CdfVE1C7Q,1787900154/streaming/teo-tv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10809/logo_256_1719322385.png" group-title="📦 Прочее", Такт 24 (Курск)
+https://mhd116.iptv2022.com/x/pRY1ESdt2Rby8gwQSzOXcA,1787900154/streaming/takt-tv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10851/logo_256_1694427112.png" group-title="📦 Прочее", Своё ТВ (Пермский край г. Березники)
+https://mhd116.iptv2022.com/x/Ur89ViwIVGdA0rwSl92jqA,1787900154/streaming/svoetv-perm/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/11999/logo_256_1660891881.png" group-title="📦 Прочее", Брянск 24
+https://mhd116.iptv2022.com/x/doeRJA4yk71ELsIDBjguuw,1787900154/streaming/bryansk_24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/12027/logo_256_1655386988.png" group-title="📦 Прочее", БСТ24 (Иркутская область г. Братск)
+https://mhd116.iptv2022.com/x/Bb4e6qn1x0M0jw6peOvimw,1787900154/streaming/bst24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/12044/logo_256_1655390729.png" group-title="📦 Прочее", Саров 24
+https://mhd116.iptv2022.com/x/K5Leh_rAm-fNntml6K1AkA,1787900154/streaming/sarov24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/12167/logo_256_1655386400.png" group-title="📦 Прочее", НСК 49 (Новосибирск)
+https://mhd116.iptv2022.com/x/bqFDR_ETPzrAIRQJmB1U9w,1787900154/streaming/49channel/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/12307/logo_256.png" group-title="📦 Прочее", Волга24 (Нижний Новгород)
+https://mhd116.iptv2022.com/x/Tc-N9JD9pyiBhqZR5LKHkA,1787900154/streaming/vremyan/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/13098/logo_256_1655386931.png" group-title="📦 Прочее", АСТВ (Сахалин)
+https://mhd116.iptv2022.com/x/fYMogc3p3jIh4wwOA9aXyQ,1787900154/streaming/astv24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/13203/logo_256_1660804466.png" group-title="📦 Прочее", Бийское ТВ (Алтайский край г. Бийск)
+https://mhd116.iptv2022.com/x/KYe9JXYgYfqlPYtKeX2RCQ,1787900154/streaming/btv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/13378/logo_256_1660804394.png" group-title="📦 Прочее", Барс (Иваново)
+https://mhd116.iptv2022.com/x/akDfXreLTFa__-G6l91H2Q,1787900154/streaming/bars/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/13448/logo_256_1660805287.png" group-title="📦 Прочее", Колыма Плюс
+https://mhd116.iptv2022.com/x/JipZtFd1qnyh59Ck0lsKtQ,1787900154/streaming/kolyma_tv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/13595/logo_256_1660804499.png" group-title="📦 Прочее", Буряад ТВ
+https://mhd116.iptv2022.com/x/GeCg7SISfocwyzmcwkB4lQ,1787900154/streaming/buryad_tv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/13980/logo_256_1660806600.png" group-title="📦 Прочее", НТС (Иркутск)
+https://mhd116.iptv2022.com/x/v9uKEcUs4bVJcXjHF_H-Qw,1787900154/streaming/nts-irk/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/14071/logo_256_1673861583.png" group-title="📦 Прочее", Евпатория 24 (Республика Крым)
+https://mhd116.iptv2022.com/x/r-Nu7uxaKnwj_JNJamKAGA,1787900154/streaming/evpotoriya24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/14078/logo_256_1673861597.png" group-title="📦 Прочее", Керчь 24 (Республика Крым)
+https://mhd116.iptv2022.com/x/9361uV-pgIWvq3uazurL1A,1787900154/streaming/kerch24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/14085/logo_256_1673861753.png" group-title="📦 Прочее", Ялта 24 (Республика Крым)
+https://mhd116.iptv2022.com/x/Mb38eVZHeAImRzccWx7UqQ,1787900154/streaming/yalta24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/14092/logo_256_1673861565.png" group-title="📦 Прочее", Восточный Крым 24
+https://mhd116.iptv2022.com/x/21CaGfZrj2PQSDnPZI3N5g,1787900154/streaming/vostok-crimea24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/14099/logo_256_1673861613.png" group-title="📦 Прочее", Легендарный 24 (Республика Крым г.Севастополь)
+https://mhd116.iptv2022.com/x/MW0QLXOka-7cyEWp57ZfBw,1787900154/streaming/legend24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/14106/logo_256_1673861735.png" group-title="📦 Прочее", Симферополь 24 (Республика Крым)
+https://mhd116.iptv2022.com/x/E0bivSYEH2wEKUqLk5Etjg,1787900154/streaming/simferopol24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/15282/logo_256_1665665370.png" group-title="📦 Прочее", Первоуральск ТВ (Свердловская обл.)
+https://mhd116.iptv2022.com/x/s-Zn8AVaUPPA34nfjGYpkQ,1787900154/streaming/1uralsk/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/15324/logo_256_1665665350.png" group-title="📦 Прочее", Соль ТВ (Пермский край г. Соликамск)
+https://mhd116.iptv2022.com/x/5kezCPeVKYsBeBAhMfIWAA,1787900154/streaming/salt-tv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/15877/logo_256_1670913510.png" group-title="📦 Прочее", Сибирь 24
+https://mhd116.iptv2022.com/x/xEcWUthpXdFCFNvkwH1zrw,1787900154/streaming/sibir_24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/16143/logo_256_1672386465.png" group-title="📦 Прочее", Город (Оренбург)
+https://mhd116.iptv2022.com/x/q9qhNxd_bIIb8GQzPcYPTQ,1787900154/streaming/gorod-orenb/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/16549/logo_256_1711458765.png" group-title="📦 Прочее", Липецк 24
+https://mhd116.iptv2022.com/x/25cO87a4hb6TnLIOderkGg,1787900154/streaming/lipeck_time/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/16899/logo_256_1679058793.png" group-title="📦 Прочее", Дзержинск ТВ (Нижегородская обл.)
+https://mhd116.iptv2022.com/x/CFxZ0A46zD_Rxwx8hBOzRQ,1787900154/streaming/dzertv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/17053/logo_256.webp" group-title="📦 Прочее", Щёлковское ТВ (Моск. обл.)
+https://mhd116.iptv2022.com/x/Zs2p0G5gwqB5__0dNLGDTQ,1787900154/streaming/tv41/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/20721/logo_256_1699864819.png" group-title="📦 Прочее", Овертайм (Ставрополь)
+https://mhd116.iptv2022.com/x/e6NLqNPwnNeDTEFz5JKs_A,1787900154/streaming/overtime/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/24060/logo_256_1711102104.png" group-title="📦 Прочее", 10 канал (Мордовия)
+https://mhd116.iptv2022.com/x/zxskf5z3Y-Hn0pbK6dBLOQ,1787900154/streaming/10_kanal/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/138/logo_256_1660809851.png" group-title="📦 Прочее", Три Ангела
+https://mhd116.iptv2022.com/x/PqvSfn14jhrt7dif3jd6gg,1787900154/streaming/3angel/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/28022/logo_256_1726037359.png" group-title="📦 Прочее", МЭТР (Йошкар-Ола)
+https://mhd116.iptv2022.com/x/S5smFHPVqCExt9ztbdc04Q,1787900154/streaming/metr_tv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/29023/logo_256_1730206378.png" group-title="📦 Прочее", 25 регион (Владивосток)
+https://mhd116.iptv2022.com/x/k5pAyoskxkyWpdUctt_ARw,1787900154/streaming/region25/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/29996/logo_256.png" group-title="📦 Прочее", ОмскТВ
+https://mhd116.iptv2022.com/x/6H_t8wkAZ6LcmEHZ8HjIOg,1787900154/streaming/omsk-tv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/30003/logo_256.png" group-title="📦 Прочее", РТК Забайкалье (Чита)
+https://mhd116.iptv2022.com/x/KL2wIEBzKReHqb_F8kKpgw,1787900154/streaming/rtk-zab/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/30010/logo_256.png" group-title="📦 Прочее", Город (Рязань)
+https://mhd116.iptv2022.com/x/aohxBMSn8g8HP9HHat6ysg,1787900154/streaming/gorod-ryazan/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/30199/logo_256.png" group-title="📦 Прочее", Таврия (Херсон)
+https://mhd116.iptv2022.com/x/XoXRxnwiPk8q1sfrFfFVBA,1787900154/streaming/tavriya/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/12657/logo_256_1655388529.png" group-title="📦 Прочее", ОСН ТВ
+https://mhd116.iptv2022.com/x/gIy-EV4Q9oF_zHqnOCX3_g,1787900154/streaming/osnmedia/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10462/logo_256_1655386224.png" group-title="📦 Прочее", ИЛЛИ (Ингушетия)
+https://mhd116.iptv2022.com/x/07hkpI7azYcuL5_ntKocUg,1787900154/streaming/illitv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/31123/logo_256.webp" group-title="📦 Прочее", Первый областной (Орел)
+https://mhd116.iptv2022.com/x/ESuR9kNeMvgp5TJfmbiK1Q,1787900154/streaming/1obl-orel/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10480/logo_256.png" group-title="📦 Прочее", Экстра ТВ
+https://mhd116.iptv2022.com/x/xQbYr-EPeVoVzi05YbLoCw,1787900154/streaming/tvextra/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/31144/logo_256.webp" group-title="📦 Прочее", Антенна (Кинешма)
+https://mhd116.iptv2022.com/x/R0X5G3zktIocDedacoM9Cw,1787900154/streaming/antenna/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10207/logo_256.webp" group-title="📦 Прочее", Первый городской (Киров)
+https://mhd116.iptv2022.com/x/HU8vxAPY4x9jGDkQ0_h0Lw,1787900154/streaming/1gorod-kirov/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/31158/logo_256.webp" group-title="📦 Прочее", Удмуртия (Ижевск)
+https://mhd116.iptv2022.com/x/qg_KV4cvapjdUueDYtCdJQ,1787900154/streaming/udmurtia/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/31165/logo_256.webp" group-title="📦 Прочее", Ижевск
+https://mhd116.iptv2022.com/x/Kd8q2IWSeb9PqlJ15sbTPw,1787900154/streaming/ijevsk/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10354/logo_256.webp" group-title="📦 Прочее", Первый Ростовский (Ростов-на-Дону)
+https://mhd116.iptv2022.com/x/fyb2fXV8T6R2Pf4v_AwWwg,1787900154/streaming/1rostoskiy/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/31186/logo_256.webp" group-title="📦 Прочее", TVоя Тюмень
+https://mhd116.iptv2022.com/x/D_5ID9dckfoYt2PeLb0Kvg,1787900154/streaming/tvoya/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/31256/logo_256.webp" group-title="📦 Прочее", 24KZ
+https://mhd116.iptv2022.com/x/Vtu58aFlv4fMpKbEP_QNAQ,1787900154/streaming/24kz_rf/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/179/logo_256.webp" group-title="📦 Прочее", ЮТВ
+https://mhd116.iptv2022.com/x/iw_GW63KI4oOIkvjtPzRQg,1787900154/streaming/utv/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/10545/logo_256_1660804427.png" group-title="📦 Прочее", Беларусь 24
+https://mhd116.iptv2022.com/x/KCMrzG-KSuRaGrcSxerqQA,1787900154/streaming/belarus24/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/31270/logo_256.png" group-title="📦 Прочее", Сибирь 24 Томск
+https://mhd116.iptv2022.com/x/_obLjiErlf-h-FJy4B3vJg,1787900154/streaming/sibir24_tomsk/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/31284/logo_256.png" group-title="📦 Прочее", Тюмень 1
+https://mhd116.iptv2022.com/x/37vM6Jzhb65Ab1eBp7lV9w,1787900154/streaming/tumen_1/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/31298/logo_256.webp" group-title="📦 Прочее", Новгородское областное телевидение
+https://mhd116.iptv2022.com/x/DI2P3XSaonQOdZHG0NP4sg,1787900154/streaming/novgorod-obl/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/31305/logo_256.png" group-title="📦 Прочее", Н1 - Первый Нижневартовский
+https://mhd116.iptv2022.com/x/xLNhR5EgqwQPsXbjvHefTw,1787900154/streaming/h1_nijnevart/324/1/index.m3u8
+#EXTINF:-1 tvg-logo="https://mbmh5s36ok.a.trbcdn.net/572aecd6-static/channel/135/logo_256_1658737912.png" group-title="📦 Прочее", ТНВ Татарстан
+https://mhd116.iptv2022.com/x/oDB9rg8yPnXGg_znMs5jTQ,1787900154/streaming/tnv/324/1/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/SNzCzTBf/5c203420845831-562f213b2e6f7.png" group-title="📦 Прочее",Камин ТВ
 https://rt-vlg-nn-htlive.cdn.ngenix.net/hls/CH_R05_KAMINTV/variant.m3u8
 
