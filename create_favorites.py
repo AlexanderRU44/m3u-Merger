@@ -402,65 +402,6 @@ def get_new_group(info_line):
     # Если ничего не подошло - отправляем в "Прочее"
     return '📦 Прочее'
 
-def check_stream(url, timeout=CHECK_TIMEOUT):
-    """Проверяет один канал"""
-    if not url or not url.startswith(('http://', 'https://')):
-        return False
-    
-    try:
-        headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-        }
-        response = requests.get(url, headers=headers, timeout=timeout, stream=True)
-        
-        if response.status_code != 200:
-            return False
-        
-        chunk = response.raw.read(1024)
-        return bool(chunk)
-        
-    except Exception:
-        return False
-
-def check_all_parallel(channels, max_workers=MAX_WORKERS):
-    """Проверяет все каналы параллельно"""
-    total = len(channels)
-    print(f"🚀 Параллельная проверка {total} каналов (потоков: {max_workers})")
-    
-    working = []
-    dead = []
-    checked = 0
-    
-    start_time = time.time()
-    
-    with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
-        future_to_channel = {
-            executor.submit(check_stream, ch['url']): ch 
-            for ch in channels
-        }
-        
-        for future in concurrent.futures.as_completed(future_to_channel):
-            ch = future_to_channel[future]
-            checked += 1
-            
-            try:
-                is_working = future.result(timeout=CHECK_TIMEOUT + 2)
-                if is_working:
-                    working.append(ch)
-                else:
-                    dead.append(ch)
-            except:
-                dead.append(ch)
-            
-            if checked % 10 == 0 or checked == total:
-                elapsed = time.time() - start_time
-                rate = checked / elapsed if elapsed > 0 else 0
-                sys.stdout.write(f"\r  [{checked}/{total}] ✅ {len(working)} | ❌ {len(dead)} | {rate:.1f} каналов/сек")
-                sys.stdout.flush()
-    
-    print()
-    return working, dead
-
 def get_channel_name(info_line):
     match = re.search(r',([^,]*)$', info_line)
     if match:
@@ -470,8 +411,8 @@ def get_channel_name(info_line):
         return match.group(1).strip()
     return 'Без названия'
 
-def write_m3u_with_groups(channels, output_file, update_time, checked_count=None, dead_count=None, dedup_count=None):
-    """Записывает каналы в M3U файл с группировкой по категориям"""
+def write_m3u_with_groups(channels, output_file, update_time, dedup_count=None):
+    """Записывает каналы в M3U файл с группировкой по категориям (БЕЗ ПРОВЕРКИ)"""
     
     output_path = Path(output_file)
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -524,10 +465,6 @@ def write_m3u_with_groups(channels, output_file, update_time, checked_count=None
         f.write(f'# ❤️ Избранное — {update_time.strftime("%Y-%m-%d %H:%M:%S")} MSK\n')
         f.write(f'# Всего каналов: {len(channels)}\n')
         f.write(f'# Групп: {len(groups)}\n')
-        if checked_count is not None:
-            f.write(f'# Проверено: {checked_count}\n')
-        if dead_count is not None:
-            f.write(f'# Удалено нерабочих: {dead_count}\n')
         if dedup_count is not None:
             f.write(f'# Удалено региональных дублей: {dedup_count}\n')
         f.write('\n')
@@ -569,7 +506,7 @@ def main():
         return
     
     total_favorites = len(channels)
-    print(f"📊 Всего каналов для проверки: {total_favorites}")
+    print(f"📊 Всего каналов: {total_favorites}")
     
     # =============================================
     # 2. УДАЛЯЕМ РЕГИОНАЛЬНЫЕ ДУБЛИ
@@ -583,45 +520,33 @@ def main():
     print(f"📊 Было: {original_count}, стало: {len(channels)}, удалено: {dedup_count}")
     
     # =============================================
-    # 3. ПРОВЕРКА КАНАЛОВ
+    # 3. СОХРАНЯЕМ ПЛЕЙЛИСТ (БЕЗ ПРОВЕРКИ)
     # =============================================
     print("\n" + "="*50)
-    print("🔍 ПРОВЕРКА КАНАЛОВ")
+    print("💾 СОХРАНЕНИЕ ПЛЕЙЛИСТА (БЕЗ ПРОВЕРКИ)")
     print("="*50)
     
-    working, dead = check_all_parallel(channels)
-    
-    print(f"\n📊 Результат:")
-    print(f"  ✅ Работает: {len(working)}")
-    print(f"  ❌ Не работает: {len(dead)}")
-    print(f"  📊 Процент рабочих: {round(len(working)/(len(working)+len(dead))*100, 1) if (len(working)+len(dead)) > 0 else 0}%")
-    
-    # =============================================
-    # 4. СОХРАНЯЕМ ПЛЕЙЛИСТ
-    # =============================================
-    if working:
+    if channels:
         now = get_moscow_time()
         write_m3u_with_groups(
-            working, 
+            channels, 
             output_file, 
             now,
-            checked_count=len(working)+len(dead),
-            dead_count=len(dead),
             dedup_count=dedup_count
         )
         print(f"\n✅ Плейлист сохранён: {output_file}")
-        print(f"   Всего каналов: {len(working)}")
+        print(f"   Всего каналов: {len(channels)}")
         
         # Показываем распределение по категориям
         print("\n📂 Распределение по категориям:")
         temp_groups = {}
-        for ch in working:
+        for ch in channels:
             group = get_new_group(ch['info']) or '📦 Прочее'
             temp_groups[group] = temp_groups.get(group, 0) + 1
         for group, count in sorted(temp_groups.items(), key=lambda x: -x[1]):
             print(f"  {group}: {count} каналов")
     else:
-        print("\n❌ Нет рабочих каналов!")
+        print("\n❌ Нет каналов для сохранения!")
     
     print("\n" + "="*50)
     print("✅ Готово!")
