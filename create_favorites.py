@@ -14,22 +14,14 @@ from datetime import datetime, timezone, timedelta
 # 🔽 НАСТРОЙКИ ПРОВЕРКИ
 # ═══════════════════════════════════════════════════════════════
 
-CHECK_TIMEOUT = 3          # Таймаут на проверку (секунд)
-MAX_WORKERS = 20           # Количество параллельных проверок
-CHECK_DELAY = 0            # Задержка между проверками
+CHECK_TIMEOUT = 3
+MAX_WORKERS = 20
 
 # ═══════════════════════════════════════════════════════════════
-# 🔽 ГРУППЫ, КОТОРЫЕ НЕ ПРОВЕРЯЕМ НА РАБОТОСПОСОБНОСТЬ
+# 🔽 ГРУППЫ, КОТОРЫЕ НЕ ПРОВЕРЯЕМ
 # ═══════════════════════════════════════════════════════════════
 
-SKIP_CHECK_GROUPS = [
-    'Wink (VPN 🇷🇺)',
-]
-
-# ═══════════════════════════════════════════════════════════════
-# 🔽 ГРУППА, КОТОРУЮ ПЕРЕМЕЩАЕМ В АРХИВ
-# ═══════════════════════════════════════════════════════════════
-
+SKIP_CHECK_GROUPS = ['Wink (VPN 🇷🇺)']
 ARCHIVE_SOURCE_GROUP = 'Wink (VPN 🇷🇺)'
 
 # ═══════════════════════════════════════════════════════════════
@@ -37,22 +29,16 @@ ARCHIVE_SOURCE_GROUP = 'Wink (VPN 🇷🇺)'
 # ═══════════════════════════════════════════════════════════════
 
 BLOCKED_KEYWORDS = [
-    # Спортивные каналы
     'матч', 'match', 'спорт', 'sport', 'футбол', 'football',
     'хоккей', 'khl', 'eurosport', 'setanta', 'arena sport',
     'mma', 'бокс', 'баскет', 'окко', 'старт', 'премьер',
     'матч тв', 'match tv', 'евроспорт', 'setanta sports',
-    'мир баскетбола',
-    
-    # Другие удаляемые каналы
-    'камин тв',
-    
-    # 4K каналы
+    'мир баскетбола', 'камин тв',
     '4k', '4К', '4 K', 'UHD',
 ]
 
 # ═══════════════════════════════════════════════════════════════
-# 🔽 ТОЧНЫЕ НАЗВАНИЯ КАНАЛОВ ДЛЯ ИЗБРАННОГО
+# 🔽 ТОЧНЫЕ НАЗВАНИЯ ДЛЯ ИЗБРАННОГО
 # ═══════════════════════════════════════════════════════════════
 
 FAVORITE_EXACT_NAMES = [
@@ -144,34 +130,16 @@ GROUP_RULES = {
 }
 
 # ═══════════════════════════════════════════════════════════════
-# 🔽 СПИСОК КАНАЛОВ ДЛЯ ДЕДУПЛИКАЦИИ (УДАЛЕНИЕ РЕГИОНАЛЬНЫХ ДУБЛЕЙ)
+# 🔽 СПИСОК ДЛЯ ДЕДУПЛИКАЦИИ
 # ═══════════════════════════════════════════════════════════════
 
 CHANNELS_TO_DEDUP = [
-    'россия 24',
-    'россия 1',
-    'россия-1',
-    'ртр',
-    'ntv',
-    'нтв',
-    'рентв',
-    'рен тв',
-    '5 канал',
-    'пятый канал',
-    'тв центр',
-    'твц',
-    'матч тв',
-    'звезда',
-    'мир',
-    'otr',
-    'отр',
-    'спас',
-    'союз',
-    'карусель',
-    'первый канал',
+    'россия 24', 'россия 1', 'россия-1', 'ртр', 'ntv', 'нтв',
+    'рентв', 'рен тв', '5 канал', 'пятый канал', 'тв центр', 'твц',
+    'матч тв', 'звезда', 'мир', 'otr', 'отр', 'спас', 'союз',
+    'карусель', 'первый канал',
 ]
 
-# Настройка часового пояса (Москва UTC+3)
 MOSCOW_TZ = timezone(timedelta(hours=3))
 
 def get_moscow_time():
@@ -180,7 +148,6 @@ def get_moscow_time():
 def get_channel_brand(info_line):
     if not info_line:
         return None
-    
     name = None
     match = re.search(r'tvg-name="([^"]*)"', info_line, re.IGNORECASE)
     if match:
@@ -189,10 +156,8 @@ def get_channel_brand(info_line):
         match = re.search(r',([^,]*)$', info_line)
         if match:
             name = match.group(1).strip()
-    
     if not name:
         return None
-    
     name = re.sub(r'\s*\([^)]*\)\s*', '', name).strip()
     return name
 
@@ -206,184 +171,147 @@ def get_channel_name(info_line):
     return 'Без названия'
 
 def get_channel_name_clean(info_line):
-    """
-    Возвращает очищенное название канала (без HD, 4K, региона в скобках)
-    для группировки избранных каналов.
-    """
     name = get_channel_name(info_line)
     if not name:
         return ''
-    
-    # Удаляем регион в скобках
     name = re.sub(r'\s*\([^)]*\)\s*', ' ', name)
-    # Удаляем HD, FHD, 4K, UHD и т.д.
     name = re.sub(r'\s*(?:HD|FHD|4K|UHD|Full HD)\s*', ' ', name, flags=re.IGNORECASE)
-    # Удаляем лишние пробелы
     name = re.sub(r'\s+', ' ', name).strip()
-    
     return name
 
 def is_favorite_exact(info_line):
     if not info_line:
         return False
-    
     channel_name = get_channel_name(info_line)
     if not channel_name:
         return False
-    
     channel_name_lower = channel_name.lower()
     for favorite_name in FAVORITE_EXACT_NAMES:
         if favorite_name.lower() == channel_name_lower:
             return True
-    
     return False
 
 def is_info_channel(info_line):
-    """
-    Проверяет, является ли канал информационной заглушкой.
-    """
     if not info_line:
         return False
-    
     channel_name = get_channel_name(info_line)
     if not channel_name:
         return False
-    
     return '📅 Обновлено' in channel_name
+
+def remove_old_info_channel(channels):
+    if not channels:
+        return []
+    new_channels = []
+    removed_count = 0
+    for ch in channels:
+        if is_info_channel(ch['info']):
+            removed_count += 1
+        else:
+            new_channels.append(ch)
+    if removed_count > 0:
+        print(f"🗑️ Удалено старых информационных каналов: {removed_count}")
+    return new_channels
 
 def parse_m3u(file_path):
     if not Path(file_path).exists():
         print(f"⚠️ Файл {file_path} не найден!")
         return []
-    
     channels = []
     current_channel = None
-    
     try:
         with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
             lines = f.readlines()
-        
         for line in lines:
             line = line.strip()
             if not line:
                 continue
-            
             if line.startswith('#EXTINF'):
-                current_channel = {
-                    'info': line,
-                    'url': None,
-                }
+                current_channel = {'info': line, 'url': None}
             elif current_channel and line.startswith(('http://', 'https://')):
                 current_channel['url'] = line
                 channels.append(current_channel)
                 current_channel = None
-    
     except Exception as e:
         print(f"⚠️ Ошибка при чтении {file_path}: {e}")
         return []
-    
     return channels
 
 def is_blocked_channel(info_line):
     if not info_line:
         return False
-    
-    # Информационный канал не блокируем
     if is_info_channel(info_line):
         return False
-    
     info_lower = info_line.lower()
-    
     for keyword in BLOCKED_KEYWORDS:
         if keyword.lower() in info_lower:
             return True
-    
     group_match = re.search(r'group-title="([^"]*)"', info_line, re.IGNORECASE)
     if group_match:
         group_name = group_match.group(1).lower()
         for keyword in BLOCKED_KEYWORDS:
             if keyword.lower() in group_name:
                 return True
-    
     return False
 
 def deduplicate_channels(channels):
     if not channels:
         return []
-    
     brand_groups = {}
     for ch in channels:
         brand = get_channel_brand(ch['info'])
         if not brand:
             brand_groups.setdefault(ch['info'], []).append(ch)
             continue
-        
         brand_lower = brand.lower()
         should_dedup = False
         for dedup_channel in CHANNELS_TO_DEDUP:
             if dedup_channel.lower() in brand_lower:
                 should_dedup = True
                 break
-        
         if should_dedup:
             brand_groups.setdefault(brand, []).append(ch)
         else:
             brand_groups.setdefault(f"_{brand}_{ch['info']}", []).append(ch)
-    
     result = []
     removed_count = 0
-    
     for brand, group in brand_groups.items():
         if len(group) == 1:
             result.append(group[0])
             continue
-        
         clean = []
         regional = []
-        
         for ch in group:
             name = get_channel_name(ch['info'])
             if re.search(r'\([^)]*\)', name):
                 regional.append(ch)
             else:
                 clean.append(ch)
-        
         if clean:
             result.append(clean[0])
             removed_count += len(group) - 1
         else:
             result.append(regional[0])
             removed_count += len(group) - 1
-    
     if removed_count > 0:
         print(f"🗑️ Удалено региональных дублей: {removed_count}")
     return result
 
 def deduplicate_favorites(favorite_channels):
-    """
-    Оставляет только один канал для каждого названия в избранном.
-    Приоритет: канал без HD/4K/региона > с HD/4K/регионом.
-    """
     if not favorite_channels:
         return []
-    
-    # Группируем по очищенному названию
     groups = {}
     for ch in favorite_channels:
         clean_name = get_channel_name_clean(ch['info'])
         if not clean_name:
             clean_name = get_channel_name(ch['info'])
         groups.setdefault(clean_name, []).append(ch)
-    
     result = []
     removed_count = 0
-    
     for clean_name, group in groups.items():
         if len(group) == 1:
             result.append(group[0])
             continue
-        
-        # Сортируем: сначала без HD/4K/региона, потом с ними
         def priority(ch):
             name = get_channel_name(ch['info'])
             score = 0
@@ -394,94 +322,68 @@ def deduplicate_favorites(favorite_channels):
             if re.search(r'\([^)]*\)', name):
                 score += 3
             return score
-        
         group_sorted = sorted(group, key=priority)
         result.append(group_sorted[0])
         removed_count += len(group) - 1
-    
     if removed_count > 0:
         print(f"❤️ Удалено дублей в Избранном: {removed_count}")
-    
     return result
 
 def get_new_group(info_line):
     if not info_line:
         return '📦 Прочее'
-    
-    # Информационный канал отправляем в "Прочее"
     if is_info_channel(info_line):
         return '📦 Прочее'
-    
-    # Проверка на избранное по точному совпадению
     if is_favorite_exact(info_line):
         return '❤️ Избранное'
-    
     info_lower = info_line.lower()
-    
     group_match = re.search(r'group-title="([^"]*)"', info_line, re.IGNORECASE)
     current_group = group_match.group(1) if group_match else ''
-    
     if ARCHIVE_SOURCE_GROUP.lower() in current_group.lower():
         return '⌚ Архив'
-    
     current_group_lower = current_group.lower()
     for new_group, keywords in GROUP_RULES.items():
         for keyword in keywords:
             keyword_lower = keyword.lower()
             if keyword_lower in info_lower or keyword_lower in current_group_lower:
                 return new_group
-    
     return '📦 Прочее'
 
 def should_skip_check(info_line):
     if not info_line:
         return False
-    
-    # Информационный канал пропускаем проверку
     if is_info_channel(info_line):
         return True
-    
     group_match = re.search(r'group-title="([^"]*)"', info_line, re.IGNORECASE)
     if not group_match:
         return False
-    
     current_group = group_match.group(1)
     for skip_group in SKIP_CHECK_GROUPS:
         if skip_group.lower() in current_group.lower():
             return True
-    
     return False
 
 def check_stream(url, timeout=CHECK_TIMEOUT):
     if not url or not url.startswith(('http://', 'https://')):
         return False
-    
     try:
-        headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-        }
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
         response = requests.get(url, headers=headers, timeout=timeout, stream=True)
-        
         if response.status_code != 200:
             return False
-        
         chunk = response.raw.read(1024)
         return bool(chunk)
-        
     except Exception:
         return False
 
 def check_all_parallel(channels, max_workers=MAX_WORKERS):
     total = len(channels)
     print(f"🚀 Параллельная проверка {total} каналов (потоков: {max_workers})")
-    
     working = []
     dead = []
     skipped = []
     checked = 0
-    
     start_time = time.time()
-    
     to_check = []
     for ch in channels:
         if should_skip_check(ch['info']):
@@ -489,24 +391,16 @@ def check_all_parallel(channels, max_workers=MAX_WORKERS):
             working.append(ch)
         else:
             to_check.append(ch)
-    
     if skipped:
         print(f"⏭️ Пропущено проверки: {len(skipped)} каналов")
-    
     if not to_check:
         print("✅ Все каналы пропущены проверки!")
         return working, dead
-    
     with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
-        future_to_channel = {
-            executor.submit(check_stream, ch['url']): ch 
-            for ch in to_check
-        }
-        
+        future_to_channel = {executor.submit(check_stream, ch['url']): ch for ch in to_check}
         for future in concurrent.futures.as_completed(future_to_channel):
             ch = future_to_channel[future]
             checked += 1
-            
             try:
                 is_working = future.result(timeout=CHECK_TIMEOUT + 2)
                 if is_working:
@@ -515,45 +409,32 @@ def check_all_parallel(channels, max_workers=MAX_WORKERS):
                     dead.append(ch)
             except:
                 dead.append(ch)
-            
             if checked % 10 == 0 or checked == total:
                 elapsed = time.time() - start_time
                 rate = checked / elapsed if elapsed > 0 else 0
                 sys.stdout.write(f"\r  [{checked}/{total}] ✅ {len(working)} | ❌ {len(dead)} | {rate:.1f} каналов/сек")
                 sys.stdout.flush()
-    
     print()
     return working, dead
 
-def create_info_channel(update_time, stats):
+def create_info_channel(update_time):
     """
-    Создаёт информационный канал с датой обновления и статистикой.
+    Создаёт информационный канал ТОЛЬКО с датой в названии.
+    Вся статистика — в EPG.
     """
-    # Формируем название с датой и статистикой
     title = f"📅 Обновлено: {update_time.strftime('%Y-%m-%d %H:%M:%S')} MSK"
-    
-    # Добавляем статистику в название
-    if stats:
-        title += f" | Всего: {stats.get('total', 0)} | Работает: {stats.get('working', 0)} | Удалено: {stats.get('blocked', 0)}"
-    
     info_line = f'#EXTINF:-1 tvg-logo="" tvg-id="update.channel" group-title="📦 Прочее",{title}'
     url = 'http://info.channel/update'
-    
-    return {
-        'info': info_line,
-        'url': url,
-    }
+    return {'info': info_line, 'url': url}
 
 def create_epg_file(update_time, stats, output_file='./output/epg.xml'):
     """
-    Создаёт EPG-файл для информационного канала со статистикой.
+    Создаёт EPG-файл с полной статистикой в программе.
     """
     output_path = Path(output_file)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     
-    # Форматируем время для EPG (YYYYMMDDHHMMSS +0000)
     start_time = update_time.strftime('%Y%m%d%H%M%S') + ' +0300'
-    # Программа идёт 1 час
     end_time = (update_time + timedelta(hours=1)).strftime('%Y%m%d%H%M%S') + ' +0300'
     
     # Формируем описание со статистикой
@@ -574,14 +455,13 @@ def create_epg_file(update_time, stats, output_file='./output/epg.xml'):
     
     desc = ' | '.join(desc_parts) if desc_parts else 'Статистика недоступна'
     
-    # Формируем EPG
     epg_content = f'''<?xml version="1.0" encoding="UTF-8"?>
 <tv>
   <channel id="update.channel">
     <display-name>📅 Обновлено</display-name>
   </channel>
   <programme start="{start_time}" stop="{end_time}" channel="update.channel">
-    <title>Плейлист обновлён</title>
+    <title>📊 Статистика плейлиста</title>
     <desc>{desc}</desc>
   </programme>
 </tv>'''
@@ -593,20 +473,14 @@ def create_epg_file(update_time, stats, output_file='./output/epg.xml'):
     print(f"   {desc}")
 
 def write_m3u_with_groups(channels, output_file, update_time, stats):
-    """
-    Записывает каналы в M3U файл с группировкой по категориям
-    """
     output_path = Path(output_file)
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    
     groups = {}
-    
     for ch in channels:
         new_group = get_new_group(ch['info'])
         if new_group not in groups:
             groups[new_group] = []
         groups[new_group].append(ch)
-    
     group_order = [
         '❤️ Избранное',
         '⌚ Архив',
@@ -618,10 +492,8 @@ def write_m3u_with_groups(channels, output_file, update_time, stats):
         '👶 Детские и мультипликационные',
         '📦 Прочее',
     ]
-    
     other_groups = sorted([g for g in groups.keys() if g not in group_order])
     ordered_groups = [g for g in group_order if g in groups] + other_groups
-    
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write('#EXTM3U\n')
         f.write(f'# ❤️ Плейлист — {update_time.strftime("%Y-%m-%d %H:%M:%S")} MSK\n')
@@ -638,11 +510,9 @@ def write_m3u_with_groups(channels, output_file, update_time, stats):
         if stats.get('blocked') is not None:
             f.write(f'# Удалено заблокированных каналов: {stats["blocked"]}\n')
         f.write('\n')
-        
         for group_name in ordered_groups:
             channel_list = groups[group_name]
             f.write(f'# === ГРУППА: {group_name} ===\n')
-            
             for ch in channel_list:
                 info = ch['info']
                 info = re.sub(r'group-title="[^"]*"\s*', '', info)
@@ -650,7 +520,6 @@ def write_m3u_with_groups(channels, output_file, update_time, stats):
                     info = info.replace(',', f' group-title="{group_name}",')
                 f.write(info + '\n')
                 f.write(ch['url'] + '\n')
-            
             f.write('\n')
 
 def main():
@@ -664,35 +533,31 @@ def main():
     
     print("\n📖 ЧТЕНИЕ ФАЙЛА merged.m3u")
     print("-"*50)
-    
     channels = parse_m3u(input_file)
-    
     if not channels:
         print("❌ Каналы не найдены!")
         return
-    
     print(f"📊 Всего каналов: {len(channels)}")
     
-    # =============================================
+    # 1. УДАЛЯЕМ СТАРЫЕ ИНФОРМАЦИОННЫЕ КАНАЛЫ
+    print("\n" + "="*50)
+    print("🗑️  УДАЛЕНИЕ СТАРЫХ ИНФОРМАЦИОННЫХ КАНАЛОВ")
+    print("="*50)
+    channels = remove_old_info_channel(channels)
+    
     # 2. УДАЛЯЕМ ЗАБЛОКИРОВАННЫЕ КАНАЛЫ
-    # =============================================
     print("\n" + "="*50)
     print("🚫 УДАЛЕНИЕ ЗАБЛОКИРОВАННЫХ КАНАЛОВ")
     print("="*50)
-    
     original_count = len(channels)
     channels = [ch for ch in channels if not is_blocked_channel(ch['info'])]
     blocked_count = original_count - len(channels)
-    
     if blocked_count > 0:
         print(f"🗑️ Удалено заблокированных каналов: {blocked_count}")
-        print(f"   Список ключевых слов: {', '.join(BLOCKED_KEYWORDS)}")
     else:
         print("✅ Заблокированных каналов не найдено")
     
-    # =============================================
     # 3. УДАЛЯЕМ РЕГИОНАЛЬНЫЕ ДУБЛИ
-    # =============================================
     print("\n" + "="*50)
     print("🗑️  УДАЛЕНИЕ РЕГИОНАЛЬНЫХ ДУБЛЕЙ")
     print("="*50)
@@ -701,43 +566,28 @@ def main():
     dedup_count = before_dedup - len(channels)
     print(f"📊 Было: {before_dedup}, стало: {len(channels)}, удалено: {dedup_count}")
     
-    # =============================================
-    # 4. ВЫДЕЛЯЕМ И ДЕДУПЛИЦИРУЕМ ИЗБРАННЫЕ КАНАЛЫ
-    # =============================================
+    # 4. ОБРАБОТКА ИЗБРАННЫХ КАНАЛОВ
     print("\n" + "="*50)
     print("❤️  ОБРАБОТКА ИЗБРАННЫХ КАНАЛОВ")
     print("="*50)
-    
-    # Находим все избранные каналы
     favorite_channels = [ch for ch in channels if is_favorite_exact(ch['info'])]
     print(f"📊 Найдено избранных каналов (до дедупликации): {len(favorite_channels)}")
-    
-    # Дедуплицируем избранные
     if favorite_channels:
         favorite_channels = deduplicate_favorites(favorite_channels)
         print(f"❤️ Избранных каналов (после дедупликации): {len(favorite_channels)}")
-        
-        # Удаляем из основного списка все избранные (чтобы потом добавить дедуплицированные)
         favorite_urls = {ch['url'] for ch in favorite_channels}
         channels = [ch for ch in channels if ch['url'] not in favorite_urls]
-        
-        # Добавляем дедуплицированные избранные обратно
         channels = favorite_channels + channels
         print(f"📊 Всего каналов после обработки: {len(channels)}")
     else:
         print("⚠️ Избранные каналы не найдены!")
     
-    # =============================================
     # 5. ПРОВЕРКА КАНАЛОВ
-    # =============================================
     print("\n" + "="*50)
     print("🔍 ПРОВЕРКА КАНАЛОВ")
     print("="*50)
-    
     working, dead = check_all_parallel(channels)
-    
     skipped_count = sum(1 for ch in working if should_skip_check(ch['info']))
-    
     print(f"\n📊 Результат:")
     print(f"  ✅ Работает: {len(working)}")
     print(f"  ❌ Не работает: {len(dead)}")
@@ -745,11 +595,8 @@ def main():
         print(f"  ⏭️ Пропущено проверки: {skipped_count}")
     print(f"  📊 Процент рабочих: {round(len(working)/(len(working)+len(dead))*100, 1) if (len(working)+len(dead)) > 0 else 0}%")
     
-    # =============================================
     # 6. СОБИРАЕМ СТАТИСТИКУ
-    # =============================================
     now = get_moscow_time()
-    
     stats = {
         'total': len(working) + len(dead),
         'working': len(working),
@@ -760,39 +607,25 @@ def main():
         'blocked': blocked_count,
     }
     
-    # =============================================
-    # 7. СОЗДАЁМ ИНФОРМАЦИОННЫЙ КАНАЛ
-    # =============================================
+    # 7. СОЗДАЁМ ИНФОРМАЦИОННЫЙ КАНАЛ (ТОЛЬКО ДАТА В НАЗВАНИИ)
     print("\n" + "="*50)
     print("📅 ДОБАВЛЕНИЕ ИНФОРМАЦИОННОГО КАНАЛА")
     print("="*50)
-    
-    info_channel = create_info_channel(now, stats)
+    info_channel = create_info_channel(now)
     working.append(info_channel)
     print(f"✅ Добавлен информационный канал: {info_channel['info']}")
     
-    # =============================================
-    # 8. СОЗДАЁМ EPG ФАЙЛ
-    # =============================================
+    # 8. СОЗДАЁМ EPG ФАЙЛ (ВСЯ СТАТИСТИКА ЗДЕСЬ)
     print("\n" + "="*50)
     print("📅 СОЗДАНИЕ EPG ФАЙЛА")
     print("="*50)
-    
     create_epg_file(now, stats, epg_file)
     
-    # =============================================
     # 9. СОХРАНЯЕМ ПЛЕЙЛИСТ
-    # =============================================
     if working:
-        write_m3u_with_groups(
-            working, 
-            output_file, 
-            now,
-            stats
-        )
+        write_m3u_with_groups(working, output_file, now, stats)
         print(f"\n✅ Плейлист сохранён: {output_file}")
         print(f"   Всего каналов: {len(working)}")
-        
         print("\n📂 Распределение по категориям:")
         temp_groups = {}
         for ch in working:
