@@ -24,10 +24,55 @@ CHECK_DELAY = 0            # Задержка между проверками
 # Если в названии канала или его исходной группе есть слово из списка →
 # канал попадает в новую категорию в плейлисте
 
+# ═══════════════════════════════════════════════════════════════
+# 🔽 СПИСОК КЛЮЧЕВЫХ СЛОВ ДЛЯ АРХИВА
+# ═══════════════════════════════════════════════════════════════
+# Каналы, в названии которых есть эти слова, попадают в группу ⌚ Архив
+
+ARCHIVE_KEYWORDS = [
+    'архив', 'archive',
+    'запись', 'record',
+    'повтор', 'replay',
+    'эфир', 'live',
+    'трансляция', 'broadcast',
+    'прямой эфир',
+    'концерт',
+    'спектакль',
+    'шоу',
+    'программа',
+    'передача',
+    'фильм',
+    'кино',
+    'сериал',
+    'мультфильм',
+    'классика',
+    'золотой',
+    'легендарный',
+    'хит',
+    'лучшее',
+    'избранное',
+    'коллекция',
+    'подборка',
+    'сборник',
+    'вечер',
+    'ночь',
+    'утро',
+    'день',
+    'праздник',
+    'новый год',
+    'рождество',
+    'пасха',
+    'день победы',
+    '9 мая',
+    '23 февраля',
+    '8 марта',
+]
+
+# ═══════════════════════════════════════════════════════════════
+# 🔽 ОСТАЛЬНЫЕ ГРУППЫ
+# ═══════════════════════════════════════════════════════════════
+
 GROUP_RULES = {
-    '⌚ Архив': [
-        'архив', 'archive', 'запись', 'record', 'повтор', 'replay',
-    ],
     '📺 Федеральные каналы': [
         'первый канал', 'россия 1', 'россия-1', 'ртр', 'ntv', 'нтв',
         'рентв', 'рен тв', '5 канал', 'пятый канал', 'тв центр', 'твц',
@@ -265,6 +310,31 @@ def deduplicate_channels(channels):
         print(f"🗑️ Удалено региональных дублей: {removed_count}")
     return result
 
+def is_archive_channel(info_line):
+    """
+    Простая проверка на архив.
+    Возвращает True, если в названии или группе есть ключевое слово из списка.
+    """
+    if not info_line:
+        return False
+    
+    info_lower = info_line.lower()
+    
+    # Проверяем по ключевым словам архива
+    for keyword in ARCHIVE_KEYWORDS:
+        if keyword.lower() in info_lower:
+            return True
+    
+    # Проверяем группу
+    group_match = re.search(r'group-title="([^"]*)"', info_line, re.IGNORECASE)
+    if group_match:
+        group_name = group_match.group(1).lower()
+        for keyword in ARCHIVE_KEYWORDS:
+            if keyword.lower() in group_name:
+                return True
+    
+    return False
+
 def get_new_group(info_line):
     """
     Определяет, в какую новую группу поместить канал.
@@ -273,21 +343,18 @@ def get_new_group(info_line):
     if not info_line:
         return '📦 Прочее'
     
+    # ПРОВЕРКА НА АРХИВ (САМАЯ ПРОСТАЯ)
+    if is_archive_channel(info_line):
+        return '⌚ Архив'
+    
     info_lower = info_line.lower()
     
     # Извлекаем текущую группу
     group_match = re.search(r'group-title="([^"]*)"', info_line, re.IGNORECASE)
     current_group = group_match.group(1).lower() if group_match else ''
     
-    # ПРОВЕРКА НА АРХИВ В ПЕРВУЮ ОЧЕРЕДЬ
-    for keyword in GROUP_RULES.get('⌚ Архив', []):
-        if keyword.lower() in info_lower or keyword.lower() in current_group:
-            return '⌚ Архив'
-    
-    # Проверяем по всем остальным правилам
+    # Проверяем по остальным правилам
     for new_group, keywords in GROUP_RULES.items():
-        if new_group == '⌚ Архив':
-            continue
         for keyword in keywords:
             keyword_lower = keyword.lower()
             if keyword_lower in info_lower or keyword_lower in current_group:
