@@ -93,7 +93,11 @@ FAVORITE_KEYWORDS = [
 # канал попадает в новую категорию в плейлисте Избранное
 
 GROUP_RULES = {
-    '📺 Федеральные каналы и архивы': [
+    '⌚ Архив': [
+        'архив', 'archive', 'запись', 'record', 'повтор', 'replay',
+        'эфир', 'live', 'прямой эфир', 'трансляция', 'broadcast'
+    ],
+    '📺 Федеральные каналы': [
         'первый канал', 'россия 1', 'россия-1', 'ртр', 'ntv', 'нтв',
         'рентв', 'рен тв', '5 канал', 'пятый канал', 'тв центр', 'твц',
         'звезда', 'mir', 'мир', 'отр', 'спас', 'союз', 'тнт', 'стс',
@@ -193,8 +197,15 @@ def get_new_group(info_line):
     group_match = re.search(r'group-title="([^"]*)"', info_line, re.IGNORECASE)
     current_group = group_match.group(1).lower() if group_match else ''
     
-    # Проверяем по всем правилам
+    # ПРОВЕРКА НА АРХИВ В ПЕРВУЮ ОЧЕРЕДЬ
+    for keyword in GROUP_RULES.get('⌚ Архив', []):
+        if keyword.lower() in info_lower or keyword.lower() in current_group:
+            return '⌚ Архив'
+    
+    # Проверяем по всем остальным правилам
     for new_group, keywords in GROUP_RULES.items():
+        if new_group == '⌚ Архив':  # Пропускаем, так как уже проверили
+            continue
         for keyword in keywords:
             keyword_lower = keyword.lower()
             if keyword_lower in info_lower or keyword_lower in current_group:
@@ -343,7 +354,8 @@ def write_m3u_with_groups(channels, output_file, update_time, checked_count=None
     
     # Сортируем группы в нужном порядке
     group_order = [
-        '📺 Федеральные каналы и архивы',
+        '⌚ Архив',
+        '📺 Федеральные каналы',
         '📰 Новости и познавательные',
         '⚽ Спортивные каналы',
         '🎬 Кино и сериалы',
