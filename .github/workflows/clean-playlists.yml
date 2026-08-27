@@ -1,112 +1,129 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import os
-import sys
-import re
-import time
 import requests
+import time
+import sys
 from pathlib import Path
-from datetime import datetime
 
-def check_stream(url, timeout=60):
+def check_stream(url, timeout=10):
     """
     Проверяет, отвечает ли стрим-сервер.
-    timeout=60 — ждем ответа до 60 секунд (1 минута).
+    Возвращает True, если удалось получить данные.
     """
     if not url or not url.startswith(('http://', 'https://')):
         return False
+    
     try:
-        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        }
+        # Делаем запрос с таймаутом
         response = requests.get(url, headers=headers, timeout=timeout, stream=True)
+        
+        # Проверяем статус
         if response.status_code != 200:
             return False
+        
+        # Пробуем прочитать первые 1024 байта
         chunk = response.raw.read(1024)
         return bool(chunk)
+        
     except Exception:
         return False
 
-def clean_playlist(input_file, output_file, max_checks=100):
+def clean_playlist(input_file, output_file, max_checks=50):
     """
     Проверяет каналы в плейлисте и сохраняет только рабочие.
-    max_checks — ограничение на количество проверяемых каналов.
     """
-    if not Path(input_file).exists():
+    input_path = Path(input_file)
+    if not input_path.exists():
         print(f"❌ Файл {input_file} не найден")
         return
-
+    
     print(f"📖 Чтение {input_file}...")
+    
     with open(input_file, 'r', encoding='utf-8', errors='ignore') as f:
         lines = f.readlines()
-
-    print(f"📊 Найдено {len(lines)} строк")
     
-    working_channels = []
-    dead_count = 0
-    checked_count = 0
+    print(f"📊 Всего строк: {len(lines)}")
     
-    # Заголовки плейлиста
-    header = []
-    i = 0
-    while i < len(lines):
-        line = lines[i].strip()
+    # Собираем все каналы
+    channels = []
+    current_info = None
+    
+    for line in lines:
+        line = line.strip()
+        if not line:
+            continue
+            
         if line.startswith('#EXTINF'):
-            break
-        header.append(line)
-        i += 1
-
-    # Обрабатываем каналы
-    channels_to_check = []
-    current_channel = None
+            current_info = line
+        elif current_info and line.startswith(('http://', 'https://')):
+            channels.append({
+                'info': current_info,
+                'url': line
+            })
+            current_info = None
     
-    for i in range(i, len(lines)):
-        line = lines[i].strip()
-        if line.startswith('#EXTINF'):
-            current_channel = {'info': line, 'url': None}
-        elif current_channel and line.startswith(('http://', 'https://')):
-            current_channel['url'] = line
-            channels_to_check.append(current_channel)
-            current_channel = None
-
-    total = len(channels_to_check)
-    print(f"📺 Найдено каналов для проверки: {total}")
+    total = len(channels)
+    print(f"📺 Найдено каналов: {total}")
+    
+    if total == 0:
+        print("⚠️ Каналы не найдены!")
+        return
     
     # Проверяем каналы
-    for idx, ch in enumerate(channels_to_check):
-        if checked_count >= max_checks:
-            print(f"⏹️ Достигнут лимит проверок ({max_checks})")
-            break
-            
-        sys.stdout.write(f"\r  [{idx+1}/{total}] Проверка...")
+    working = []
+    dead = 0
+    checked = 0
+    
+    # Ограничиваем количество проверок
+    check_limit = min(max_checks, total)
+    print(f"🔍 Проверяю {check_limit} каналов...")
+    
+    for i, ch in enumerate(channels[:check_limit]):
+        sys.stdout.write(f"\r  [{i+1}/{check_limit}] Проверка...")
         sys.stdout.flush()
         
-        is_working = check_stream(ch['url'])  # timeout=60 секунд
-        checked_count += 1
+        is_working = check_stream(ch['url'])
+        checked += 1
         
         if is_working:
-            working_channels.append(ch)
+            working.append(ch)
         else:
-            dead_count += 1
-            
-        # Пауза между проверками, чтобы не перегружать серверы
+            dead += 1
+        
+        # Пауза, чтобы не перегружать серверы
         time.sleep(0.5)
-
-    print(f"\n✅ Проверено: {checked_count}, 💀 Мертвых: {dead_count}, 📺 Живых: {len(working_channels)}")
-
+    
+    print(f"\n\n📊 Результат:")
+    print(f"  ✅ Проверено: {checked}")
+    print(f"  📺 Работает: {len(working)}")
+    print(f"  ❌ Не работает: {dead}")
+    
     # Сохраняем результат
-    with open(output_file, 'w', encoding='utf-8') as f:
-        for h in header:
-            if h:
-                f.write(h + '\n')
-        for ch in working_channels:
-            f.write(ch['info'] + '\n')
-            f.write(ch['url'] + '\n')
-
-    print(f"✅ Чистый плейлист сохранен в {output_file}")
+    if working:
+        with open(output_file, 'w', encoding='utf-8') as f:
+            f.write('#EXTM3U\n')
+            f.write(f'# Очищенный плейлист\n')
+            f.write(f'# Всего каналов: {len(working)}\n')
+            f.write(f'# Проверено: {checked}, удалено: {dead}\n\n')
+            
+            for ch in working:
+                f.write(ch['info'] + '\n')
+                f.write(ch['url'] + '\n')
+        
+        print(f"✅ Чистый плейлист сохранен: {output_file}")
+    else:
+        print("❌ Нет рабочих каналов!")
 
 if __name__ == '__main__':
+    # Пути к файлам
     input_file = './output/merged.m3u'
     output_file = './output/merged_clean.m3u'
     
-    # Проверяем максимум 100 каналов (каждый по 60 секунд = ~100 минут работы)
-    clean_playlist(input_file, output_file, max_checks=100)
+    # Сколько каналов проверить (максимум)
+    max_checks = 50
+    
+    clean_playlist(input_file, output_file, max_checks)
