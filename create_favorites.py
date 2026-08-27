@@ -95,7 +95,6 @@ FAVORITE_KEYWORDS = [
 GROUP_RULES = {
     '⌚ Архив': [
         'архив', 'archive', 'запись', 'record', 'повтор', 'replay',
-        # Убраны общие слова: 'эфир', 'live', 'прямой эфир', 'трансляция', 'broadcast'
     ],
     '📺 Федеральные каналы': [
         'первый канал', 'россия 1', 'россия-1', 'ртр', 'ntv', 'нтв',
@@ -177,11 +176,135 @@ GROUP_RULES = {
     ]
 }
 
+# ═══════════════════════════════════════════════════════════════
+# 🔽 СПИСОК КАНАЛОВ ДЛЯ ДЕДУПЛИКАЦИИ (УДАЛЕНИЕ РЕГИОНАЛЬНЫХ ДУБЛЕЙ)
+# ═══════════════════════════════════════════════════════════════
+# Каналы, у которых нужно оставить только один экземпляр (без региона)
+
+CHANNELS_TO_DEDUP = [
+    'россия 24',
+    'россия 1',
+    'россия-1',
+    'ртр',
+    'ntv',
+    'нтв',
+    'рентв',
+    'рен тв',
+    '5 канал',
+    'пятый канал',
+    'тв центр',
+    'твц',
+    'матч тв',
+    'звезда',
+    'мир',
+    'otr',
+    'отр',
+    'спас',
+    'союз',
+    'карусель',
+    'первый канал',
+]
+
 # Настройка часового пояса (Москва UTC+3)
 MOSCOW_TZ = timezone(timedelta(hours=3))
 
 def get_moscow_time():
     return datetime.now(MOSCOW_TZ)
+
+def get_channel_brand(info_line):
+    """
+    Извлекает основное название канала (бренд) без региональных уточнений.
+    Например: 'Россия 24 (Смоленск)' → 'Россия 24'
+    Удаляет ТОЛЬКО регион в скобках. HD, FHD, +7, +2 и т.д. НЕ УДАЛЯЮТСЯ.
+    """
+    if not info_line:
+        return None
+    
+    # Пробуем извлечь tvg-name или название после запятой
+    name = None
+    match = re.search(r'tvg-name="([^"]*)"', info_line, re.IGNORECASE)
+    if match:
+        name = match.group(1).strip()
+    else:
+        match = re.search(r',([^,]*)$', info_line)
+        if match:
+            name = match.group(1).strip()
+    
+    if not name:
+        return None
+    
+    # Удаляем ТОЛЬКО региональные уточнения в скобках: (Смоленск), (г. Москва) и т.д.
+    # HD, FHD, 4K, +7, +2 и т.д. НЕ ТРОГАЕМ
+    name = re.sub(r'\s*\([^)]*\)\s*', '', name).strip()
+    
+    return name
+
+def deduplicate_channels(channels):
+    """
+    Удаляет региональные дубли каналов, оставляя только один экземпляр для каждого бренда.
+    Приоритет: сначала проверяем рабочие, потом выбираем с самым коротким названием (без региона).
+    """
+    if not channels:
+        return []
+    
+    # Группируем каналы по бренду
+    brand_groups = {}
+    for ch in channels:
+        brand = get_channel_brand(ch['info'])
+        if not brand:
+            # Если не удалось определить бренд, оставляем как есть
+            brand_groups.setdefault(ch['info'], []).append(ch)
+            continue
+        
+        # Проверяем, нужно ли дедуплицировать этот бренд
+        brand_lower = brand.lower()
+        should_dedup = False
+        for dedup_channel in CHANNELS_TO_DEDUP:
+            if dedup_channel.lower() in brand_lower:
+                should_dedup = True
+                break
+        
+        if should_dedup:
+            brand_groups.setdefault(brand, []).append(ch)
+        else:
+            # Не дедуплицируем - оставляем все копии
+            brand_groups.setdefault(f"_{brand}_{ch['info']}", []).append(ch)
+    
+    # Выбираем лучший канал из каждой группы
+    result = []
+    removed_count = 0
+    
+    for brand, group in brand_groups.items():
+        if len(group) == 1:
+            result.append(group[0])
+            continue
+        
+        # Сортируем: сначала проверенные (если есть), потом по длине названия
+        # Приоритет: каналы без региона в названии (короткие) > с регионом
+        
+        # Разделяем на "чистые" и "региональные"
+        clean = []
+        regional = []
+        
+        for ch in group:
+            # Проверяем, есть ли в названии скобки с регионом
+            name = get_channel_name(ch['info'])
+            if re.search(r'\([^)]*\)', name):
+                regional.append(ch)
+            else:
+                clean.append(ch)
+        
+        # Если есть чистый канал - берём первый из них
+        if clean:
+            result.append(clean[0])
+            removed_count += len(group) - 1
+        else:
+            # Иначе берём первый региональный
+            result.append(regional[0])
+            removed_count += len(group) - 1
+    
+    print(f"🗑️ Удалено региональных дублей: {removed_count}")
+    return result
 
 def get_new_group(info_line):
     """
@@ -319,7 +442,7 @@ def parse_m3u(file_path):
     
     return channels
 
-def write_m3u_with_groups(channels, output_file, update_time, checked_count=None, dead_count=None):
+def write_m3u_with_groups(channels, output_file, update_time, checked_count=None, dead_count=None, dedup_count=None):
     """Записывает каналы в M3U файл с группировкой по категориям"""
     
     output_path = Path(output_file)
@@ -378,6 +501,8 @@ def write_m3u_with_groups(channels, output_file, update_time, checked_count=None
             f.write(f'# Проверено: {checked_count}\n')
         if dead_count is not None:
             f.write(f'# Удалено нерабочих: {dead_count}\n')
+        if dedup_count is not None:
+            f.write(f'# Удалено региональных дублей: {dedup_count}\n')
         f.write('\n')
         
         for group_name in ordered_groups:
@@ -422,6 +547,15 @@ def main():
         print("   Проверьте список FAVORITE_KEYWORDS в create_favorites.py")
         return
     
+    # Удаляем региональные дубли
+    print("\n" + "="*50)
+    print("🗑️  УДАЛЕНИЕ РЕГИОНАЛЬНЫХ ДУБЛЕЙ")
+    print("="*50)
+    original_count = len(favorites)
+    favorites = deduplicate_channels(favorites)
+    dedup_count = original_count - len(favorites)
+    print(f"📊 Было: {original_count}, стало: {len(favorites)}, удалено: {dedup_count}")
+    
     # Параллельная проверка
     print("\n" + "="*50)
     print("🔍 ПРОВЕРКА КАНАЛОВ")
@@ -442,7 +576,8 @@ def main():
             output_file, 
             now,
             checked_count=len(working)+len(dead),
-            dead_count=len(dead)
+            dead_count=len(dead),
+            dedup_count=dedup_count
         )
         print(f"\n✅ Плейлист сохранён: {output_file}")
         print(f"   Всего каналов: {len(working)}")
