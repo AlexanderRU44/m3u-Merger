@@ -1,0 +1,31 @@
+name: Clean M3U Playlist
+
+on:
+  workflow_dispatch:  # Только ручной запуск
+  schedule:
+    - cron: '0 4 * * 0'  # Каждое воскресенье в 4:00 UTC (7:00 MSK)
+
+jobs:
+  clean:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      
+      - run: pip install requests
+      
+      - name: Check and clean playlists
+        run: python check_and_clean.py
+      
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -f output/
+          git diff --staged --quiet || (git commit -m "Clean playlist" && git push)
