@@ -35,37 +35,25 @@ ARCHIVE_SOURCE_GROUP = 'Wink (VPN 🇷🇺)'
 # ═══════════════════════════════════════════════════════════════
 # 🔽 СПИСОК КАНАЛОВ ДЛЯ УДАЛЕНИЯ
 # ═══════════════════════════════════════════════════════════════
-# Каналы, в названии или группе которых есть эти слова, будут удалены
 
 BLOCKED_KEYWORDS = [
     # Спортивные каналы
-    'матч', 'match',
-    'спорт', 'sport',
-    'футбол', 'football',
-    'хоккей',
-    'khl',
-    'eurosport',
-    'setanta',
-    'arena sport',
-    'mma',
-    'бокс',
-    'баскет',
-    'окко',
-    'старт',
-    'премьер',
-    'матч тв', 'match tv',
-    'евроспорт',
-    'setanta sports',
+    'матч', 'match', 'спорт', 'sport', 'футбол', 'football',
+    'хоккей', 'khl', 'eurosport', 'setanta', 'arena sport',
+    'mma', 'бокс', 'баскет', 'окко', 'старт', 'премьер',
+    'матч тв', 'match tv', 'евроспорт', 'setanta sports',
     'мир баскетбола',
     
     # Другие удаляемые каналы
     'камин тв',
+    
+    # 4K каналы
+    '4k', '4К', '4 K', 'UHD',
 ]
 
 # ═══════════════════════════════════════════════════════════════
 # 🔽 ТОЧНЫЕ НАЗВАНИЯ КАНАЛОВ ДЛЯ ИЗБРАННОГО
 # ═══════════════════════════════════════════════════════════════
-# Каналы с этими точными названиями попадут в группу ❤️ Избранное
 
 FAVORITE_EXACT_NAMES = [
     'Investigation Discovery',
@@ -190,9 +178,6 @@ def get_moscow_time():
     return datetime.now(MOSCOW_TZ)
 
 def get_channel_brand(info_line):
-    """
-    Извлекает основное название канала (бренд) без региональных уточнений.
-    """
     if not info_line:
         return None
     
@@ -208,13 +193,10 @@ def get_channel_brand(info_line):
     if not name:
         return None
     
-    # Удаляем ТОЛЬКО региональные уточнения в скобках
     name = re.sub(r'\s*\([^)]*\)\s*', '', name).strip()
-    
     return name
 
 def get_channel_name(info_line):
-    """Извлекает название канала из строки EXTINF"""
     match = re.search(r',([^,]*)$', info_line)
     if match:
         return match.group(1).strip()
@@ -223,11 +205,25 @@ def get_channel_name(info_line):
         return match.group(1).strip()
     return 'Без названия'
 
+def get_channel_name_clean(info_line):
+    """
+    Возвращает очищенное название канала (без HD, 4K, региона в скобках)
+    для группировки избранных каналов.
+    """
+    name = get_channel_name(info_line)
+    if not name:
+        return ''
+    
+    # Удаляем регион в скобках
+    name = re.sub(r'\s*\([^)]*\)\s*', ' ', name)
+    # Удаляем HD, FHD, 4K, UHD и т.д.
+    name = re.sub(r'\s*(?:HD|FHD|4K|UHD|Full HD)\s*', ' ', name, flags=re.IGNORECASE)
+    # Удаляем лишние пробелы
+    name = re.sub(r'\s+', ' ', name).strip()
+    
+    return name
+
 def is_favorite_exact(info_line):
-    """
-    Проверяет, является ли канал избранным по точному совпадению названия.
-    Возвращает True, если название канала точно совпадает с одним из списка.
-    """
     if not info_line:
         return False
     
@@ -235,7 +231,6 @@ def is_favorite_exact(info_line):
     if not channel_name:
         return False
     
-    # Проверяем точное совпадение (без учёта регистра)
     channel_name_lower = channel_name.lower()
     for favorite_name in FAVORITE_EXACT_NAMES:
         if favorite_name.lower() == channel_name_lower:
@@ -244,7 +239,6 @@ def is_favorite_exact(info_line):
     return False
 
 def parse_m3u(file_path):
-    """Парсит M3U файл и возвращает список каналов"""
     if not Path(file_path).exists():
         print(f"⚠️ Файл {file_path} не найден!")
         return []
@@ -278,21 +272,15 @@ def parse_m3u(file_path):
     return channels
 
 def is_blocked_channel(info_line):
-    """
-    Проверяет, является ли канал заблокированным для удаления.
-    Возвращает True, если канал нужно удалить.
-    """
     if not info_line:
         return False
     
     info_lower = info_line.lower()
     
-    # Проверяем в названии
     for keyword in BLOCKED_KEYWORDS:
         if keyword.lower() in info_lower:
             return True
     
-    # Проверяем в группе
     group_match = re.search(r'group-title="([^"]*)"', info_line, re.IGNORECASE)
     if group_match:
         group_name = group_match.group(1).lower()
@@ -303,7 +291,6 @@ def is_blocked_channel(info_line):
     return False
 
 def deduplicate_channels(channels):
-    """Удаляет региональные дубли каналов"""
     if not channels:
         return []
     
@@ -355,29 +342,67 @@ def deduplicate_channels(channels):
         print(f"🗑️ Удалено региональных дублей: {removed_count}")
     return result
 
+def deduplicate_favorites(favorite_channels):
+    """
+    Оставляет только один канал для каждого названия в избранном.
+    Приоритет: канал без HD/4K/региона > с HD/4K/регионом.
+    """
+    if not favorite_channels:
+        return []
+    
+    # Группируем по очищенному названию
+    groups = {}
+    for ch in favorite_channels:
+        clean_name = get_channel_name_clean(ch['info'])
+        if not clean_name:
+            clean_name = get_channel_name(ch['info'])
+        groups.setdefault(clean_name, []).append(ch)
+    
+    result = []
+    removed_count = 0
+    
+    for clean_name, group in groups.items():
+        if len(group) == 1:
+            result.append(group[0])
+            continue
+        
+        # Сортируем: сначала без HD/4K/региона, потом с ними
+        def priority(ch):
+            name = get_channel_name(ch['info'])
+            score = 0
+            if '4k' in name.lower() or '4K' in name:
+                score += 10
+            if 'hd' in name.lower() or 'HD' in name:
+                score += 5
+            if re.search(r'\([^)]*\)', name):
+                score += 3
+            return score
+        
+        group_sorted = sorted(group, key=priority)
+        result.append(group_sorted[0])
+        removed_count += len(group) - 1
+    
+    if removed_count > 0:
+        print(f"❤️ Удалено дублей в Избранном: {removed_count}")
+    
+    return result
+
 def get_new_group(info_line):
-    """
-    Определяет, в какую новую группу поместить канал.
-    Если канал из группы Wink (VPN 🇷🇺) → отправляем в ⌚ Архив
-    """
     if not info_line:
         return '📦 Прочее'
     
-    # ПРОВЕРКА НА ИЗБРАННОЕ ПО ТОЧНОМУ СОВПАДЕНИЮ
+    # Проверка на избранное по точному совпадению
     if is_favorite_exact(info_line):
         return '❤️ Избранное'
     
     info_lower = info_line.lower()
     
-    # Извлекаем текущую группу
     group_match = re.search(r'group-title="([^"]*)"', info_line, re.IGNORECASE)
     current_group = group_match.group(1) if group_match else ''
     
-    # Проверяем, из группы ли Wink (VPN 🇷🇺)
     if ARCHIVE_SOURCE_GROUP.lower() in current_group.lower():
         return '⌚ Архив'
     
-    # Проверяем по остальным правилам
     current_group_lower = current_group.lower()
     for new_group, keywords in GROUP_RULES.items():
         for keyword in keywords:
@@ -388,9 +413,6 @@ def get_new_group(info_line):
     return '📦 Прочее'
 
 def should_skip_check(info_line):
-    """
-    Проверяет, нужно ли пропускать проверку работоспособности для этого канала.
-    """
     if not info_line:
         return False
     
@@ -406,7 +428,6 @@ def should_skip_check(info_line):
     return False
 
 def check_stream(url, timeout=CHECK_TIMEOUT):
-    """Проверяет один канал"""
     if not url or not url.startswith(('http://', 'https://')):
         return False
     
@@ -426,10 +447,6 @@ def check_stream(url, timeout=CHECK_TIMEOUT):
         return False
 
 def check_all_parallel(channels, max_workers=MAX_WORKERS):
-    """
-    Проверяет все каналы параллельно.
-    Каналы из SKIP_CHECK_GROUPS пропускаются и считаются рабочими.
-    """
     total = len(channels)
     print(f"🚀 Параллельная проверка {total} каналов (потоков: {max_workers})")
     
@@ -440,12 +457,11 @@ def check_all_parallel(channels, max_workers=MAX_WORKERS):
     
     start_time = time.time()
     
-    # Сначала разделяем каналы на те, что нужно проверять, и те, что пропускаем
     to_check = []
     for ch in channels:
         if should_skip_check(ch['info']):
             skipped.append(ch)
-            working.append(ch)  # Сразу считаем рабочими
+            working.append(ch)
         else:
             to_check.append(ch)
     
@@ -485,12 +501,9 @@ def check_all_parallel(channels, max_workers=MAX_WORKERS):
     return working, dead
 
 def write_m3u_with_groups(channels, output_file, update_time, checked_count=None, dead_count=None, dedup_count=None, skipped_count=None, blocked_count=None):
-    """Записывает каналы в M3U файл с группировкой по категориям"""
-    
     output_path = Path(output_file)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     
-    # Группируем каналы по новым категориям
     groups = {}
     
     for ch in channels:
@@ -499,7 +512,6 @@ def write_m3u_with_groups(channels, output_file, update_time, checked_count=None
             groups[new_group] = []
         groups[new_group].append(ch)
     
-    # Сортируем группы в нужном порядке
     group_order = [
         '❤️ Избранное',
         '⌚ Архив',
@@ -554,9 +566,6 @@ def main():
     print("❤️  СОЗДАНИЕ ПЛЕЙЛИСТА ИЗ MERGED.M3U")
     print("="*50)
     
-    # =============================================
-    # 1. ЧИТАЕМ ВСЕ КАНАЛЫ ИЗ ФАЙЛА
-    # =============================================
     print("\n📖 ЧТЕНИЕ ФАЙЛА merged.m3u")
     print("-"*50)
     
@@ -597,7 +606,33 @@ def main():
     print(f"📊 Было: {original_count}, стало: {len(channels)}, удалено: {dedup_count}")
     
     # =============================================
-    # 4. ПРОВЕРКА КАНАЛОВ (С ПРОПУСКОМ ДЛЯ SKIP_CHECK_GROUPS)
+    # 4. ВЫДЕЛЯЕМ И ДЕДУПЛИЦИРУЕМ ИЗБРАННЫЕ КАНАЛЫ
+    # =============================================
+    print("\n" + "="*50)
+    print("❤️  ОБРАБОТКА ИЗБРАННЫХ КАНАЛОВ")
+    print("="*50)
+    
+    # Находим все избранные каналы
+    favorite_channels = [ch for ch in channels if is_favorite_exact(ch['info'])]
+    print(f"📊 Найдено избранных каналов (до дедупликации): {len(favorite_channels)}")
+    
+    # Дедуплицируем избранные
+    if favorite_channels:
+        favorite_channels = deduplicate_favorites(favorite_channels)
+        print(f"❤️ Избранных каналов (после дедупликации): {len(favorite_channels)}")
+        
+        # Удаляем из основного списка все избранные (чтобы потом добавить дедуплицированные)
+        favorite_urls = {ch['url'] for ch in favorite_channels}
+        channels = [ch for ch in channels if ch['url'] not in favorite_urls]
+        
+        # Добавляем дедуплицированные избранные обратно
+        channels = favorite_channels + channels
+        print(f"📊 Всего каналов после обработки: {len(channels)}")
+    else:
+        print("⚠️ Избранные каналы не найдены!")
+    
+    # =============================================
+    # 5. ПРОВЕРКА КАНАЛОВ
     # =============================================
     print("\n" + "="*50)
     print("🔍 ПРОВЕРКА КАНАЛОВ")
@@ -605,7 +640,6 @@ def main():
     
     working, dead = check_all_parallel(channels)
     
-    # Подсчитываем сколько пропущено проверки
     skipped_count = sum(1 for ch in working if should_skip_check(ch['info']))
     
     print(f"\n📊 Результат:")
@@ -616,7 +650,7 @@ def main():
     print(f"  📊 Процент рабочих: {round(len(working)/(len(working)+len(dead))*100, 1) if (len(working)+len(dead)) > 0 else 0}%")
     
     # =============================================
-    # 5. СОХРАНЯЕМ ПЛЕЙЛИСТ
+    # 6. СОХРАНЯЕМ ПЛЕЙЛИСТ
     # =============================================
     if working:
         now = get_moscow_time()
@@ -633,7 +667,6 @@ def main():
         print(f"\n✅ Плейлист сохранён: {output_file}")
         print(f"   Всего каналов: {len(working)}")
         
-        # Показываем распределение по категориям
         print("\n📂 Распределение по категориям:")
         temp_groups = {}
         for ch in working:
