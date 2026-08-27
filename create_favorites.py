@@ -19,57 +19,21 @@ MAX_WORKERS = 20           # Количество параллельных пр�
 CHECK_DELAY = 0            # Задержка между проверками
 
 # ═══════════════════════════════════════════════════════════════
-# 🔽 ПРАВИЛА ПЕРЕГРУППИРОВКИ
+# 🔽 ГРУППЫ, КОТОРЫЕ НЕ ПРОВЕРЯЕМ НА РАБОТОСПОСОБНОСТЬ
 # ═══════════════════════════════════════════════════════════════
-# Если в названии канала или его исходной группе есть слово из списка →
-# канал попадает в новую категорию в плейлисте
 
-# ═══════════════════════════════════════════════════════════════
-# 🔽 СПИСОК КЛЮЧЕВЫХ СЛОВ ДЛЯ АРХИВА
-# ═══════════════════════════════════════════════════════════════
-# Каналы, в названии которых есть эти слова, попадают в группу ⌚ Архив
-
-ARCHIVE_KEYWORDS = [
-    'архив', 'archive',
-    'запись', 'record',
-    'повтор', 'replay',
-    'эфир', 'live',
-    'трансляция', 'broadcast',
-    'прямой эфир',
-    'концерт',
-    'спектакль',
-    'шоу',
-    'программа',
-    'передача',
-    'фильм',
-    'кино',
-    'сериал',
-    'мультфильм',
-    'классика',
-    'золотой',
-    'легендарный',
-    'хит',
-    'лучшее',
-    'избранное',
-    'коллекция',
-    'подборка',
-    'сборник',
-    'вечер',
-    'ночь',
-    'утро',
-    'день',
-    'праздник',
-    'новый год',
-    'рождество',
-    'пасха',
-    'день победы',
-    '9 мая',
-    '23 февраля',
-    '8 марта',
+SKIP_CHECK_GROUPS = [
+    'Wink (VPN 🇷🇺)',
 ]
 
 # ═══════════════════════════════════════════════════════════════
-# 🔽 ОСТАЛЬНЫЕ ГРУППЫ
+# 🔽 ГРУППА, КОТОРУЮ ПЕРЕМЕЩАЕМ В АРХИВ
+# ═══════════════════════════════════════════════════════════════
+
+ARCHIVE_SOURCE_GROUP = 'Wink (VPN 🇷🇺)'
+
+# ═══════════════════════════════════════════════════════════════
+# 🔽 ПРАВИЛА ПЕРЕГРУППИРОВКИ
 # ═══════════════════════════════════════════════════════════════
 
 GROUP_RULES = {
@@ -156,7 +120,6 @@ GROUP_RULES = {
 # ═══════════════════════════════════════════════════════════════
 # 🔽 СПИСОК КАНАЛОВ ДЛЯ ДЕДУПЛИКАЦИИ (УДАЛЕНИЕ РЕГИОНАЛЬНЫХ ДУБЛЕЙ)
 # ═══════════════════════════════════════════════════════════════
-# Каналы, у которых нужно оставить только один экземпляр (без региона)
 
 CHANNELS_TO_DEDUP = [
     'россия 24',
@@ -191,13 +154,10 @@ def get_moscow_time():
 def get_channel_brand(info_line):
     """
     Извлекает основное название канала (бренд) без региональных уточнений.
-    Например: 'Россия 24 (Смоленск)' → 'Россия 24'
-    Удаляет ТОЛЬКО регион в скобках. HD, FHD, +7, +2 и т.д. НЕ УДАЛЯЮТСЯ.
     """
     if not info_line:
         return None
     
-    # Пробуем извлечь tvg-name или название после запятой
     name = None
     match = re.search(r'tvg-name="([^"]*)"', info_line, re.IGNORECASE)
     if match:
@@ -210,8 +170,7 @@ def get_channel_brand(info_line):
     if not name:
         return None
     
-    # Удаляем ТОЛЬКО региональные уточнения в скобках: (Смоленск), (г. Москва) и т.д.
-    # HD, FHD, 4K, +7, +2 и т.д. НЕ ТРОГАЕМ
+    # Удаляем ТОЛЬКО региональные уточнения в скобках
     name = re.sub(r'\s*\([^)]*\)\s*', '', name).strip()
     
     return name
@@ -251,13 +210,10 @@ def parse_m3u(file_path):
     return channels
 
 def deduplicate_channels(channels):
-    """
-    Удаляет региональные дубли каналов, оставляя только один экземпляр для каждого бренда.
-    """
+    """Удаляет региональные дубли каналов"""
     if not channels:
         return []
     
-    # Группируем каналы по бренду
     brand_groups = {}
     for ch in channels:
         brand = get_channel_brand(ch['info'])
@@ -265,7 +221,6 @@ def deduplicate_channels(channels):
             brand_groups.setdefault(ch['info'], []).append(ch)
             continue
         
-        # Проверяем, нужно ли дедуплицировать этот бренд
         brand_lower = brand.lower()
         should_dedup = False
         for dedup_channel in CHANNELS_TO_DEDUP:
@@ -278,7 +233,6 @@ def deduplicate_channels(channels):
         else:
             brand_groups.setdefault(f"_{brand}_{ch['info']}", []).append(ch)
     
-    # Выбираем лучший канал из каждой группы
     result = []
     removed_count = 0
     
@@ -287,7 +241,6 @@ def deduplicate_channels(channels):
             result.append(group[0])
             continue
         
-        # Разделяем на "чистые" и "региональные"
         clean = []
         regional = []
         
@@ -298,7 +251,6 @@ def deduplicate_channels(channels):
             else:
                 clean.append(ch)
         
-        # Если есть чистый канал - берём первый из них
         if clean:
             result.append(clean[0])
             removed_count += len(group) - 1
@@ -310,57 +262,51 @@ def deduplicate_channels(channels):
         print(f"🗑️ Удалено региональных дублей: {removed_count}")
     return result
 
-def is_archive_channel(info_line):
-    """
-    Простая проверка на архив.
-    Возвращает True, если в названии или группе есть ключевое слово из списка.
-    """
-    if not info_line:
-        return False
-    
-    info_lower = info_line.lower()
-    
-    # Проверяем по ключевым словам архива
-    for keyword in ARCHIVE_KEYWORDS:
-        if keyword.lower() in info_lower:
-            return True
-    
-    # Проверяем группу
-    group_match = re.search(r'group-title="([^"]*)"', info_line, re.IGNORECASE)
-    if group_match:
-        group_name = group_match.group(1).lower()
-        for keyword in ARCHIVE_KEYWORDS:
-            if keyword.lower() in group_name:
-                return True
-    
-    return False
-
 def get_new_group(info_line):
     """
     Определяет, в какую новую группу поместить канал.
-    Возвращает название новой группы.
+    Если канал из группы Wink (VPN 🇷🇺) → отправляем в ⌚ Архив
     """
     if not info_line:
         return '📦 Прочее'
-    
-    # ПРОВЕРКА НА АРХИВ (САМАЯ ПРОСТАЯ)
-    if is_archive_channel(info_line):
-        return '⌚ Архив'
     
     info_lower = info_line.lower()
     
     # Извлекаем текущую группу
     group_match = re.search(r'group-title="([^"]*)"', info_line, re.IGNORECASE)
-    current_group = group_match.group(1).lower() if group_match else ''
+    current_group = group_match.group(1) if group_match else ''
+    
+    # Проверяем, из группы ли Wink (VPN 🇷🇺)
+    if ARCHIVE_SOURCE_GROUP.lower() in current_group.lower():
+        return '⌚ Архив'
     
     # Проверяем по остальным правилам
+    current_group_lower = current_group.lower()
     for new_group, keywords in GROUP_RULES.items():
         for keyword in keywords:
             keyword_lower = keyword.lower()
-            if keyword_lower in info_lower or keyword_lower in current_group:
+            if keyword_lower in info_lower or keyword_lower in current_group_lower:
                 return new_group
     
     return '📦 Прочее'
+
+def should_skip_check(info_line):
+    """
+    Проверяет, нужно ли пропускать проверку работоспособности для этого канала.
+    """
+    if not info_line:
+        return False
+    
+    group_match = re.search(r'group-title="([^"]*)"', info_line, re.IGNORECASE)
+    if not group_match:
+        return False
+    
+    current_group = group_match.group(1)
+    for skip_group in SKIP_CHECK_GROUPS:
+        if skip_group.lower() in current_group.lower():
+            return True
+    
+    return False
 
 def check_stream(url, timeout=CHECK_TIMEOUT):
     """Проверяет один канал"""
@@ -383,20 +329,40 @@ def check_stream(url, timeout=CHECK_TIMEOUT):
         return False
 
 def check_all_parallel(channels, max_workers=MAX_WORKERS):
-    """Проверяет все каналы параллельно"""
+    """
+    Проверяет все каналы параллельно.
+    Каналы из SKIP_CHECK_GROUPS пропускаются и считаются рабочими.
+    """
     total = len(channels)
     print(f"🚀 Параллельная проверка {total} каналов (потоков: {max_workers})")
     
     working = []
     dead = []
+    skipped = []
     checked = 0
     
     start_time = time.time()
     
+    # Сначала разделяем каналы на те, что нужно проверять, и те, что пропускаем
+    to_check = []
+    for ch in channels:
+        if should_skip_check(ch['info']):
+            skipped.append(ch)
+            working.append(ch)  # Сразу считаем рабочими
+        else:
+            to_check.append(ch)
+    
+    if skipped:
+        print(f"⏭️ Пропущено проверки: {len(skipped)} каналов (из {', '.join(SKIP_CHECK_GROUPS)})")
+    
+    if not to_check:
+        print("✅ Все каналы пропущены проверки!")
+        return working, dead
+    
     with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
         future_to_channel = {
             executor.submit(check_stream, ch['url']): ch 
-            for ch in channels
+            for ch in to_check
         }
         
         for future in concurrent.futures.as_completed(future_to_channel):
@@ -430,7 +396,7 @@ def get_channel_name(info_line):
         return match.group(1).strip()
     return 'Без названия'
 
-def write_m3u_with_groups(channels, output_file, update_time, checked_count=None, dead_count=None, dedup_count=None):
+def write_m3u_with_groups(channels, output_file, update_time, checked_count=None, dead_count=None, dedup_count=None, skipped_count=None):
     """Записывает каналы в M3U файл с группировкой по категориям"""
     
     output_path = Path(output_file)
@@ -472,6 +438,8 @@ def write_m3u_with_groups(channels, output_file, update_time, checked_count=None
             f.write(f'# Удалено нерабочих: {dead_count}\n')
         if dedup_count is not None:
             f.write(f'# Удалено региональных дублей: {dedup_count}\n')
+        if skipped_count is not None:
+            f.write(f'# Пропущено проверки: {skipped_count}\n')
         f.write('\n')
         
         for group_name in ordered_groups:
@@ -489,17 +457,17 @@ def write_m3u_with_groups(channels, output_file, update_time, checked_count=None
             f.write('\n')
 
 def main():
-    input_file = './playlists/dimonovich_tv.m3u'
+    input_file = './output/merged.m3u'
     output_file = './output/favorites.m3u'
     
     print("="*50)
-    print("❤️  СОЗДАНИЕ ПЛЕЙЛИСТА ИЗ DIMONOVICH_TV.M3U")
+    print("❤️  СОЗДАНИЕ ПЛЕЙЛИСТА ИЗ MERGED.M3U")
     print("="*50)
     
     # =============================================
     # 1. ЧИТАЕМ ВСЕ КАНАЛЫ ИЗ ФАЙЛА
     # =============================================
-    print("\n📖 ЧТЕНИЕ ФАЙЛА dimonovich_tv.m3u")
+    print("\n📖 ЧТЕНИЕ ФАЙЛА merged.m3u")
     print("-"*50)
     
     channels = parse_m3u(input_file)
@@ -522,7 +490,7 @@ def main():
     print(f"📊 Было: {original_count}, стало: {len(channels)}, удалено: {dedup_count}")
     
     # =============================================
-    # 3. ПРОВЕРКА КАНАЛОВ
+    # 3. ПРОВЕРКА КАНАЛОВ (С ПРОПУСКОМ ДЛЯ SKIP_CHECK_GROUPS)
     # =============================================
     print("\n" + "="*50)
     print("🔍 ПРОВЕРКА КАНАЛОВ")
@@ -530,9 +498,14 @@ def main():
     
     working, dead = check_all_parallel(channels)
     
+    # Подсчитываем сколько пропущено проверки
+    skipped_count = sum(1 for ch in working if should_skip_check(ch['info']))
+    
     print(f"\n📊 Результат:")
     print(f"  ✅ Работает: {len(working)}")
     print(f"  ❌ Не работает: {len(dead)}")
+    if skipped_count > 0:
+        print(f"  ⏭️ Пропущено проверки: {skipped_count}")
     print(f"  📊 Процент рабочих: {round(len(working)/(len(working)+len(dead))*100, 1) if (len(working)+len(dead)) > 0 else 0}%")
     
     # =============================================
@@ -546,7 +519,8 @@ def main():
             now,
             checked_count=len(working)+len(dead),
             dead_count=len(dead),
-            dedup_count=dedup_count
+            dedup_count=dedup_count,
+            skipped_count=skipped_count
         )
         print(f"\n✅ Плейлист сохранён: {output_file}")
         print(f"   Всего каналов: {len(working)}")
