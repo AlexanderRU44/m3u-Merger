@@ -37,7 +37,7 @@ def download_playlist(url, output_path, timeout=60):
 
 def main():
     # ═══════════════════════════════════════════════════════════
-    # 🔽 ВСЕ ИСТОЧНИКИ (6 ПЛЕЙЛИСТОВ)
+    # 🔽 ВСЕ ИСТОЧНИКИ (7 ПЛЕЙЛИСТОВ)
     # ═══════════════════════════════════════════════════════════
     
     playlists = [
@@ -66,10 +66,15 @@ def main():
             'url': 'https://raw.githubusercontent.com/CrocoUser/zabava-project/refs/heads/main/zabava-ef.m3u',
             'name': 'zabava_ef.m3u'
         },
-        # 6. НОВЫЙ: Плейлист от LoganetTV
+        # 6. Плейлист от LoganetTV
         {
             'url': 'https://loganettv.github.io/playlists/all.m3u',
             'name': 'loganet_tv.m3u'
+        },
+        # 7. НОВЫЙ: Плейлист от bugsfreeweb (много кино и познавательных каналов)
+        {
+            'url': 'https://raw.githubusercontent.com/bugsfreeweb/LiveTVCollector/refs/heads/main/LiveTV/Russia/LiveTV.m3u',
+            'name': 'bugsfreeweb.m3u'
         },
     ]
     
