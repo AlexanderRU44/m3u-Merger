@@ -1,12 +1,12 @@
 {
-  "generated": "2026-08-27T14:15:31.436310+03:00",
+  "generated": "2026-08-27T14:18:57.606922+03:00",
   "input_dir": "./playlists",
   "output_file": "./output/merged.m3u",
   "total_files": 7,
-  "total_channels": 7302,
-  "unique_channels": 6294,
+  "total_channels": 7269,
+  "unique_channels": 6261,
   "duplicates_removed": 1008,
-  "excluded_channels": 1334,
+  "excluded_channels": 1367,
   "excluded_groups": [
     "🔺 INFO 🔺",
     "- ИНФО -",
@@ -41,7 +41,8 @@
     "Индия",
     "Венгрия",
     "Великобритания",
-    "USA"
+    "USA",
+    "Казахстан"
   ],
   "archive_channels": 267,
   "sources": {
@@ -62,5 +63,5 @@
     "playlists/shams_tv.m3u8": 592077,
     "playlists/iptv_stable.m3u8": 41592
   },
-  "output_size": 1535933
+  "output_size": 1524400
 }

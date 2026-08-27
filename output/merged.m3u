@@ -1,9 +1,9 @@
 #EXTM3U
-# Создано: 2026-08-27 14:15:31 MSK
-# Всего каналов: 6562
+# Создано: 2026-08-27 14:18:57 MSK
+# Всего каналов: 6529
 # Каналов с архивом: 534
 
-#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: 27.08.2026 14:15 MSK
+#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: 27.08.2026 14:18 MSK
 https://raw.githubusercontent.com/AlexanderRU44/m3u-Merger/main/output/info.m3u8
 #EXTINF:-1 group-title="Основные" tvg-id="pervy",Первый
 #EXTVLCOPT:http-user-agent=HlsWinkPlayer
@@ -13226,72 +13226,6 @@ http://stream.shbro.org/stream/14B37BB54802/tb1228000m3u8.m3u8
 http://stream.shbro.org/stream/14B37BB54802/tb3128000m3u8_ff75.m3u8
 #EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=39e7898fe67071126ad60912a495cf1fd698bd72-9101109-images-thumbs&n=13" group-title="Музыка",Maidan TV HD
 http://stream.shbro.org/stream/14B37BB54802/0playlistm3u8_c782.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=b463adb9f692e43a4171132e22d077dc87d22515-9229153-images-thumbs&n=13" group-title="Казахстан",Orken Live
-http://stream.shbro.org/stream/14B37BB54802/v1a1monom3u8_ba5c.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=e3c2d37a5afdad1bbd0248b917f91053600cd96c-5332191-images-thumbs&n=13" group-title="Казахстан",Qazsport HD
-http://stream.shbro.org/stream/14B37BB54802/f108indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=10f9da47f23dfb5e388eccc96480c595648c4886-5424841-images-thumbs&n=13" group-title="Казахстан",Abai TV
-http://stream.shbro.org/stream/14B37BB54802/a1monotsm3u8_bc4f.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=10f9da47f23dfb5e388eccc96480c595648c4886-5424841-images-thumbs&n=13" group-title="Казахстан",Abai TV HD
-http://stream.shbro.org/stream/14B37BB54802/a1monotsm3u8_3aec.m3u8
-#EXTINF:-1 group-title="Казахстан",БСТ
-http://stream.shbro.org/stream/14B37BB54802/istsdhighm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=5be1e5abafa0957144200e9ea71a9f6e13ccdf90-12715410-images-thumbs&n=13" group-title="Казахстан",Балапан ТВ
-http://stream.shbro.org/stream/14B37BB54802/vplaylistm3u8_f0fc.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=69fd66ee696fcf17618f049cf16491346af939e0-5296066-images-thumbs&n=13" group-title="Казахстан",КТК
-http://stream.shbro.org/stream/14B37BB54802/qplaylistm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=69fd66ee696fcf17618f049cf16491346af939e0-5296066-images-thumbs&n=13" group-title="Казахстан",КТК HD
-http://stream.shbro.org/stream/14B37BB54802/chunklistm3u8_face.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=d8924eece4713a956f6104ec7be0f9fa22bfa3db-4495101-images-thumbs&n=13" group-title="Казахстан",Казахстан International
-http://stream.shbro.org/stream/14B37BB54802/lplaylistm3u8_a423.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=055d680d7561244d9a8ab70515981056902ee567-5524434-images-thumbs&n=13" group-title="Казахстан",Салям HD
-http://stream.shbro.org/stream/14B37BB54802/a1monotsm3u8_3c89.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=48d6b42edaa5c50dc291502610652e0e7ed94494-4568486-images-thumbs&n=13" group-title="Казахстан",ТНВ Планета
-http://stream.shbro.org/stream/14B37BB54802/a1monotsm3u8_37c7.m3u8
-#EXTINF:-1 group-title="Казахстан",ТНВ Планета
-http://stream.shbro.org/stream/14B37BB54802/netaindexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=08aa6881734d1eddc837d179f2dcb8637396f2e6-6918470-images-thumbs&n=13" group-title="Казахстан",Silk Way Cinema
-http://stream.shbro.org/stream/14B37BB54802/a1monotsm3u8_a103.m3u8
-#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/mDh100316/fdbf92fdE0N_/K7YUGwDyFOIwknLyaBkm13gaJoGEdwIAcdpdGk0LWBIYGDFH-9C7ZgwT42Shr-zyoaQVXxRRLq0iT4imqdYXmr-S0G9xN4EmQWcyclhJBwKsKzdEJDLTpFQfmR-Yfs0SbpumcNmzKbB-1KRzwG_MItRg9PvA8ugMt8pvozhyQEyaVTZopHBnsFYxg-LoOGXC-MqkpZfxUZLEnDiounsKN83Z9SHbIBgB_BZUgICe3bMVQCB6IkEriqVKPkNrEcD9G2bnmxaQhiIGs0PiaSsFAeiYRtYEgMAhZB4oOGoKSFXdmiTimTJZwY43xEJwnq3y5ADjuHBT2lqWmt7jOnHC7conBXslIvaRxILgQYrr1-P46MWXVtHBAQbfiLpq24rWTvhk89tgaQL8FVfyAyzPkeaiYkiAw2kZplnsQmhh4V2YtueppsPn47Sw0LG6SjTDK2hHBFXi0BMFP_lKiZto1Q9YdyHa04kznPREMkMOztGEEVCr0XGpWTQrTxBasvA8C5ake6UD9EImYdHhiWmFYKmLZVfF4FOzVN_aeVvLOaedOqYwaNHoQx8XtdBjvs3wZ7OSOzJhaLqkad7QuvHTPXtmZRq3cYTwV2DQEZvYZ2M6OyckJrKwMOat-gur-ljFj1tUgFsACVGf16Vh002-kuSi8bnw03vZFYv8o1qxQr_ptsQZpmOlAUcigrEJGhVD66gVlCawAMAELGpIOeg7lRzpNeCZ0ogw_zeWkVCPX9OkcZL60CNo-ldqjROq8bN_2ZdnGBezZ8CE8KBwu1o2MuvKhsbUgrGxJjx4-boqeNeey9aAqvDps0xmhlGwXO9AxXEi2hBRmon1mCyAWdLxjqpFJlkWg2fAd2Exsyo5FBK5-dRHRBOxMKR_OTrp6clGDHkWcouBmNA_5AYAQQyucwYBo1piIFkaB8qNgRjiI78rxxV5ZWLmEdcBoGKrGlQCOKoGh_ei0ONEbaq4o" group-title="Казахстан",Abai TV
-http://stream.shbro.org/stream/14B37BB54802/vplaylistm3u8_32f1.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=24f805eec41ebd0ca9f0a3a722e6bc1c98fd16f5-5429239-images-thumbs&n=13" group-title="Казахстан",Qazaqstan TV International
-http://stream.shbro.org/stream/14B37BB54802/lplaylistm3u8_aa66.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=7ec8f2934dd75d1fc54a6fbd5439279a63d187e3-9041799-images-thumbs&n=13" group-title="Казахстан",МТРК
-http://stream.shbro.org/stream/14B37BB54802/kplaylistm3u8_8896.m3u8
-#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/tvpedia/images/6/6e/%D0%90%D0%BB%D0%B0%D1%83_%D0%A2%D0%92_%D0%BB%D0%BE%D0%B3%D0%BE.png/revision/latest/scale-to-width-down/1000?cb=20220213075110&path-prefix=ru" group-title="Казахстан",Алау ТВ
-http://stream.shbro.org/stream/14B37BB54802/laustreamm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/tvpedia/images/d/d4/%D0%9C%D0%B8%D1%80_2.svg/revision/latest/scale-to-width-down/100?cb=20220207113053&path-prefix=ru" group-title="Казахстан",Мир(Казахстан)
-http://stream.shbro.org/stream/14B37BB54802/mirindexm3u8_ac0e.m3u8
-#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/tvpedia/images/9/93/%D0%9C%D0%A2%D0%A0%D0%9A_2022.png/revision/latest?cb=20220817122335&path-prefix=ru" group-title="Казахстан",МТРК(Петропавловск)
-http://stream.shbro.org/stream/14B37BB54802/mtrkindexm3u8_d943.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=4d7ae90a0994d7f97786cab88eb2f2d7d85ea6b7-4872026-images-thumbs&n=13" group-title="Казахстан",Jibek Joly HD
-http://stream.shbro.org/stream/14B37BB54802/vplaylistm3u8_befa.m3u8
-#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/mDh100316/fdbf92fdE0N_/K7YUGwDyFOIwknLyaBkm13gaJoGEdwIAcdotT12eCDdofVEy_gWO1kxWtoEB2lyXlCRATxQEC63yP52zCaYnnw_S0C9RJ1GmcfaWMhiJZyPJzqaF9bIisQBvWMstK_3SSFunkNmC-LGvZESTsx5M0nRxIZ5wALgLQxo9YWnyww1pVqYJZoKmABchoIOIORZBCZpHFhQB4TM2_9tqmgn4FW345cOIgGuAHuaGY0BevcPlsAFK8eILyMUIvTCJoaCN2NeV2JUwRuGFcSJDiLgFIcqKFfRnkpCihV9ZegrZiVcP6KYSS8J5wd6Up_OCrr2zpEFBiTOwGTkVO23QKfDAj8gG1Dp1A_SRNrMT4CtbxfMommV3JsDBo6U9mNqI2ViVjHvEUlqAK_Ed5oVgMt0P0cdD4wjDQImKVguu4oii0Kx4VEXYp4AVgETDIdDba2QQCEnl9bXD8rK3PnireDoYd486ZEGIgZgRLIZkc_KdLdCHIVA6IBE7ShaZ3EHakAO9Gcdlm3WD1ZPlUfDRi1hHoavLBtfmU_AxF2-YiEvoSCb9qAaQmTOacFwFh4IQvZ3TpsLy-LDyK4v1CZ7QGnBAnhi3lVoUkafjVyDx0HtK9kOoWLaVlbCi0pTd6qg5GHlHn7pnYikAS5FOhUeSoQ1uoMRB45syMJmYlrh88mmQAA-aJUX7F4C1wqYws4Lb2DQxiIklpyWwoGJkP2s4eoprJM8p1QNJwpkQL-WnoVGOrEGFATD4cRBpi7X6nYPZYED-WhVkWBYxZQBn82GgGmp0EvmJRzR3QpLTFR17KssJqWeNq_fgKfG7caxW9rGRbn_xFmAwSFHQG3nGWG8iSpNjvKtmthlXMFUAZwDwMdn7FzDZ23Rm9tID05SfOGsIWmrWHDlFINvQygDPJXQxwJ8vsCWjQMnRomq6Vao9g0vSU26a5zQqd0O0gbagkKAIejRwyVontDZhsrJHfyr4g" group-title="Казахстан",Manas TV
-http://stream.shbro.org/stream/14B37BB54802/hlsmanasm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=b52292443456ae5b97163040560526adcba8972b-10511592-images-thumbs&n=13" group-title="Казахстан",MuzzOne
-http://stream.shbro.org/stream/14B37BB54802/ainstreamm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=24f805eec41ebd0ca9f0a3a722e6bc1c98fd16f5-5429239-images-thumbs&n=13" group-title="Казахстан",Qazaqstan
-http://stream.shbro.org/stream/14B37BB54802/6b4000000m3u8.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=ac2b5374d5ddfc523646ee32ff74ebe0d21de7c1-16510940-images-thumbs&n=13" group-title="Казахстан",Rika TV
-http://stream.shbro.org/stream/14B37BB54802/pplaylistm3u8_37bb.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=6c5a6983529c3aae357d5c842ce609ec1e28819a-5491581-images-thumbs&n=13" group-title="Казахстан",Silk Way
-http://stream.shbro.org/stream/14B37BB54802/AYSILKWAYm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=08aa6881734d1eddc837d179f2dcb8637396f2e6-6918470-images-thumbs&n=13" group-title="Казахстан",Silk Way Cinema
-http://stream.shbro.org/stream/14B37BB54802/nemaindexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=7dd2dcf5125734e54f74cb0ac4c11c6d1bd33323-4959824-images-thumbs&n=13" group-title="Казахстан",МТРК
-http://stream.shbro.org/stream/14B37BB54802/kplaylistm3u8_a153.m3u8
-#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/mDh100316/fdbf92fdE0N_/K7YUGwDyFOIwknLyaBkm13gaJoGEdwIAcd99P63ObXdtDQFXi7Cew2wTs2EUb8mHoWQ1HxREjq2XL-jjGaNnj1-C0C8BF0GGkVb2MhiJZyPJzqaF9bIisQBvWMstK_3SSFunkNmC-LGvZESTsx5M0nRxIZ5wALgLQxo9YWnyww1pVqYJZoKmABchoIOIORZBCZpHFhQB4TM2_9tqmgn4FW345cOIgGuAHuaGY0BevcPlsAFK8eILyMUIvTCJoaCN2NeV2JUwRuGFcSJDiLgFIcqKFfRnkpCihV9ZegrZiVcP6KYSS8J5wd6Up_OCrr2zpEFBiTOwGTkVO23QKfDAj8gG1Dp1A_SRNrMT4CtbxfMommV3JsDBo6U9mNqI2ViVjHvEUlqAK_Ed5oVgMt0P0cdD4wjDQImKVguu4oii0Kx4VEXYp4AVgETDIdDba2QQCEnl9bXD8rK3PnireDoYd486ZEGIgZgRLIZkc_KdLdCHIVA6IBE7ShaZ3EHakAO9Gcdlm3WD1ZPlUfDRi1hHoavLBtfmU_AxF2-YiEvoSCb9qAaQmTOacFwFh4IQvZ3TpsLy-LDyK4v1CZ7QGnBAnhi3lVoUkafjVyDx0HtK9kOoWLaVlbCi0pTd6qg5GHlHn7pnYikAS5FOhUeSoQ1uoMRB45syMJmYlrh88mmQAA-aJUX7F4C1wqYws4Lb2DQxiIklpyWwoGJkP2s4eoprJM8p1QNJwpkQL-WnoVGOrEGFATD4cRBpi7X6nYPZYED-WhVkWBYxZQBn82GgGmp0EvmJRzR3QpLTFR17KssJqWeNq_fgKfG7caxW9rGRbn_xFmAwSFHQG3nGWG8iSpNjvKtmthlXMFUAZwDwMdn7FzDZ23Rm9tID05SfOGsIWmrWHDlFINvQygDPJXQxwJ8vsCWjQMnRomq6Vao9g0vSU26a5zQqd0O0gbagkKAIejRwyVontDZhsrJHfyr4g" group-title="Казахстан",KTK
-http://stream.shbro.org/stream/14B37BB54802/t26indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://yandex-images.clstorage.net/mDh100316/fdbf92fdE0N_/K7YUGwDyFOIwknLyaBkm13gaJoGEdwIAcdptbz0OTQIIXSFni4C-Jnkj9tSxyknnxFQ1j9Rhe73XP23zHHNnSj-i0G8BJ6EmgRcyclhJBwKsKzdEJDLTpFQfmR-Yfs0SbpumcNmzKbB-1KRzwG_MItRg9PvA8ugMt8pvozhyQEyaVTZopHBnsFYxg-LoOGXC-MqkpZfxUZLEnDiounsKN83Z9SHbIBgB_BZUgICe3bMVQCB6IkEriqVKPkNrEcD9G2bnmxaQhiIGs0PiaSsFAeiYRtYEgMAhZB4oOGoKSFXdmiTimTJZwY43xEJwnq3y5ADjuHBT2lqWmt7jOnHC7conBXslIvaRxILgQYrr1-P46MWXVtHBAQbfiLpq24rWTvhk89tgaQL8FVfyAyzPkeaiYkiAw2kZplnsQmhh4V2YtueppsPn47Sw0LG6SjTDK2hHBFXi0BMFP_lKiZto1Q9YdyHa04kznPREMkMOztGEEVCr0XGpWTQrTxBasvA8C5ake6UD9EImYdHhiWmFYKmLZVfF4FOzVN_aeVvLOaedOqYwaNHoQx8XtdBjvs3wZ7OSOzJhaLqkad7QuvHTPXtmZRq3cYTwV2DQEZvYZ2M6OyckJrKwMOat-gur-ljFj1tUgFsACVGf16Vh002-kuSi8bnw03vZFYv8o1qxQr_ptsQZpmOlAUcigrEJGhVD66gVlCawAMAELGpIOeg7lRzpNeCZ0ogw_zeWkVCPX9OkcZL60CNo-ldqjROq8bN_2ZdnGBezZ8CE8KBwu1o2MuvKhsbUgrGxJjx4-boqeNeey9aAqvDps0xmhlGwXO9AxXEi2hBRmon1mCyAWdLxjqpFJlkWg2fAd2Exsyo5FBK5-dRHRBOxMKR_OTrp6clGDHkWcouBmNA_5AYAQQyucwYBo1piIFkaB8qNgRjiI78rxxV5ZWLmEdcBoGKrGlQCOKoGh_ei0ONEbaq4o" group-title="Казахстан",Channel 7 Kazakhstan
-http://stream.shbro.org/stream/14B37BB54802/t27indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=ab599e068c5d7ae64003b0e92038396600a3bbc5-5410808-images-thumbs&n=13" group-title="Казахстан",NTK
-http://stream.shbro.org/stream/14B37BB54802/389indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=908699152548cf3c1f66f630a41429d7ea66579f-5342409-images-thumbs&n=13" group-title="Казахстан",Astana TV
-http://stream.shbro.org/stream/14B37BB54802/t28indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=24f805eec41ebd0ca9f0a3a722e6bc1c98fd16f5-5429239-images-thumbs&n=13" group-title="Казахстан",Qazaqstan HD
-http://stream.shbro.org/stream/14B37BB54802/t71indexm3u8.m3u8
-#EXTINF:-1 tvg-logo="https://avatars.mds.yandex.net/i?id=5efeddf5b7d6b16a36bee874a35ab6dbac13e82e-9858428-images-thumbs&n=13" group-title="Казахстан",31 Kanal
-http://stream.shbro.org/stream/14B37BB54802/388indexm3u8.m3u8
 #EXTINF:-1 group-title="Шокирующие гипотезы",Последнее лето Европы
 http://stream.shbro.org/stream/14B37BB54802/4921766859mp4.mp4
 #EXTINF:-1 group-title="Шокирующие гипотезы",Секретные катакомбы
