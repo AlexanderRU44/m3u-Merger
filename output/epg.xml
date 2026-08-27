@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tv>
+  <channel id="update.channel">
+    <display-name>📅 Обновлено</display-name>
+  </channel>
+  <programme start="20260828004006 +0300" stop="20260828014006 +0300" channel="update.channel">
+    <title>Плейлист обновлён</title>
+    <desc>Всего каналов: 5068 | Работает: 3694 | Удалено нерабочих: 1374 | Удалено дублей: 731 | Удалено заблокированных: 660 | Пропущено проверки: 203</desc>
+  </programme>
+</tv>
