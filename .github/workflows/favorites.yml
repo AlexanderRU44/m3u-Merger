@@ -1,0 +1,43 @@
+name: Create Favorites Playlist
+
+on:
+  workflow_run:
+    workflows: ["Merge M3U Playlists"]
+    types:
+      - completed
+  workflow_dispatch:
+
+jobs:
+  create-favorites:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      
+      - name: Create favorites playlist
+        run: python create_favorites.py
+      
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -f output/
+          
+          if git diff --staged --quiet; then
+            echo "✅ Нет изменений для коммита"
+          else
+            git commit -m "❤️ Обновление плейлиста Избранное"
+            git pull --rebase origin main || true
+            git push origin main
+          fi
