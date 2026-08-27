@@ -18,14 +18,11 @@ def check_stream(url, timeout=10):
         headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
         }
-        # Делаем запрос с таймаутом
         response = requests.get(url, headers=headers, timeout=timeout, stream=True)
         
-        # Проверяем статус
         if response.status_code != 200:
             return False
         
-        # Пробуем прочитать первые 1024 байта
         chunk = response.raw.read(1024)
         return bool(chunk)
         
@@ -78,7 +75,6 @@ def clean_playlist(input_file, output_file, max_checks=50):
     dead = 0
     checked = 0
     
-    # Ограничиваем количество проверок
     check_limit = min(max_checks, total)
     print(f"🔍 Проверяю {check_limit} каналов...")
     
@@ -94,15 +90,13 @@ def clean_playlist(input_file, output_file, max_checks=50):
         else:
             dead += 1
         
-        # Пауза, чтобы не перегружать серверы
-        time.sleep(0.5)
+        time.sleep(0.3)
     
     print(f"\n\n📊 Результат:")
     print(f"  ✅ Проверено: {checked}")
     print(f"  📺 Работает: {len(working)}")
     print(f"  ❌ Не работает: {dead}")
     
-    # Сохраняем результат
     if working:
         with open(output_file, 'w', encoding='utf-8') as f:
             f.write('#EXTM3U\n')
@@ -119,11 +113,8 @@ def clean_playlist(input_file, output_file, max_checks=50):
         print("❌ Нет рабочих каналов!")
 
 if __name__ == '__main__':
-    # Пути к файлам
     input_file = './output/merged.m3u'
     output_file = './output/merged_clean.m3u'
-    
-    # Сколько каналов проверить (максимум)
     max_checks = 50
     
     clean_playlist(input_file, output_file, max_checks)
