@@ -205,6 +205,15 @@ CHANNELS_TO_DEDUP = [
     'первый канал',
 ]
 
+# ═══════════════════════════════════════════════════════════════
+# 🔽 ГРУППЫ ДЛЯ ИЗВЛЕЧЕНИЯ ИЗ ФАЙЛА dimonovich_tv.m3u
+# ═══════════════════════════════════════════════════════════════
+
+EXTRACT_GROUPS = [
+    'Wink (VPN 🇷🇺)',
+    'Lime (VPN 🇷🇺)',
+]
+
 # Настройка часового пояса (Москва UTC+3)
 MOSCOW_TZ = timezone(timedelta(hours=3))
 
@@ -238,6 +247,65 @@ def get_channel_brand(info_line):
     name = re.sub(r'\s*\([^)]*\)\s*', '', name).strip()
     
     return name
+
+def extract_channels_from_groups(file_path, target_groups):
+    """
+    Извлекает каналы из указанных групп из M3U файла.
+    Возвращает список каналов.
+    """
+    if not Path(file_path).exists():
+        print(f"⚠️ Файл {file_path} не найден!")
+        return []
+    
+    print(f"📖 Извлечение каналов из групп: {', '.join(target_groups)}")
+    
+    channels = []
+    current_channel = None
+    found_groups = set()
+    
+    try:
+        with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
+            lines = f.readlines()
+        
+        for line in lines:
+            line = line.strip()
+            if not line:
+                continue
+            
+            if line.startswith('#EXTINF'):
+                # Проверяем, принадлежит ли канал нужной группе
+                group_match = re.search(r'group-title="([^"]*)"', line, re.IGNORECASE)
+                if group_match:
+                    group_name = group_match.group(1)
+                    for target_group in target_groups:
+                        if target_group.lower() in group_name.lower():
+                            found_groups.add(group_name)
+                            current_channel = {
+                                'info': line,
+                                'url': None,
+                                'source_group': group_name,
+                            }
+                            break
+                    else:
+                        current_channel = None
+                else:
+                    current_channel = None
+                    
+            elif current_channel and line.startswith(('http://', 'https://')):
+                current_channel['url'] = line
+                channels.append(current_channel)
+                current_channel = None
+    
+    except Exception as e:
+        print(f"⚠️ Ошибка при чтении {file_path}: {e}")
+        return []
+    
+    print(f"✅ Найдено групп: {len(found_groups)}")
+    for group in found_groups:
+        print(f"   - {group}")
+    print(f"📊 Извлечено каналов: {len(channels)}")
+    
+    return channels
 
 def deduplicate_channels(channels):
     """
@@ -279,15 +347,11 @@ def deduplicate_channels(channels):
             result.append(group[0])
             continue
         
-        # Сортируем: сначала проверенные (если есть), потом по длине названия
-        # Приоритет: каналы без региона в названии (короткие) > с регионом
-        
         # Разделяем на "чистые" и "региональные"
         clean = []
         regional = []
         
         for ch in group:
-            # Проверяем, есть ли в названии скобки с регионом
             name = get_channel_name(ch['info'])
             if re.search(r'\([^)]*\)', name):
                 regional.append(ch)
@@ -303,7 +367,8 @@ def deduplicate_channels(channels):
             result.append(regional[0])
             removed_count += len(group) - 1
     
-    print(f"🗑️ Удалено региональных дублей: {removed_count}")
+    if removed_count > 0:
+        print(f"🗑️ Удалено региональных дублей: {removed_count}")
     return result
 
 def get_new_group(info_line):
@@ -396,15 +461,6 @@ def check_all_parallel(channels, max_workers=MAX_WORKERS):
     print()
     return working, dead
 
-def is_favorite(info_line):
-    if not info_line:
-        return False
-    info_lower = info_line.lower()
-    for keyword in FAVORITE_KEYWORDS:
-        if keyword.lower() in info_lower:
-            return True
-    return False
-
 def get_channel_name(info_line):
     match = re.search(r',([^,]*)$', info_line)
     if match:
@@ -414,34 +470,6 @@ def get_channel_name(info_line):
         return match.group(1).strip()
     return 'Без названия'
 
-def parse_m3u(file_path):
-    channels = []
-    current_channel = None
-    
-    try:
-        with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
-            lines = f.readlines()
-        
-        for line in lines:
-            line = line.strip()
-            if not line:
-                continue
-            
-            if line.startswith('#EXTINF'):
-                current_channel = {
-                    'info': line,
-                    'url': None,
-                }
-            elif current_channel and line.startswith(('http://', 'https://')):
-                current_channel['url'] = line
-                channels.append(current_channel)
-                current_channel = None
-    
-    except Exception as e:
-        print(f"⚠️ Ошибка при чтении {file_path}: {e}")
-    
-    return channels
-
 def write_m3u_with_groups(channels, output_file, update_time, checked_count=None, dead_count=None, dedup_count=None):
     """Записывает каналы в M3U файл с группировкой по категориям"""
     
@@ -450,7 +478,6 @@ def write_m3u_with_groups(channels, output_file, update_time, checked_count=None
     
     # Группируем каналы по новым категориям
     groups = {}
-    ungrouped = []
     
     for ch in channels:
         new_group = get_new_group(ch['info'])
@@ -521,54 +548,57 @@ def write_m3u_with_groups(channels, output_file, update_time, checked_count=None
             f.write('\n')
 
 def main():
-    input_file = './output/merged.m3u'
+    dimonovich_file = './playlists/dimonovich_tv.m3u'
     output_file = './output/favorites.m3u'
     
     print("="*50)
     print("❤️  СОЗДАНИЕ ПЛЕЙЛИСТА ИЗБРАННОЕ (С КАТЕГОРИЯМИ)")
     print("="*50)
     
-    if not Path(input_file).exists():
-        print(f"❌ Файл {input_file} не найден!")
-        print("   Сначала запустите основной workflow merge-playlists.yml")
+    # =============================================
+    # 1. ИЗВЛЕКАЕМ КАНАЛЫ ИЗ DIMONOVICH_TV.M3U
+    # =============================================
+    print("\n📁 ИЗВЛЕЧЕНИЕ КАНАЛОВ ИЗ DIMONOVICH_TV.M3U")
+    print("-"*50)
+    
+    channels = extract_channels_from_groups(dimonovich_file, EXTRACT_GROUPS)
+    
+    if not channels:
+        print("⚠️ Каналы из указанных групп не найдены!")
+        print(f"   Проверьте наличие групп: {', '.join(EXTRACT_GROUPS)}")
         return
     
-    print(f"📖 Чтение: {input_file}")
-    channels = parse_m3u(input_file)
-    print(f"📊 Всего каналов в merged.m3u: {len(channels)}")
+    total_favorites = len(channels)
+    print(f"📊 Всего каналов для проверки: {total_favorites}")
     
-    # Фильтруем избранные каналы
-    favorites = [ch for ch in channels if is_favorite(ch['info'])]
-    total_favorites = len(favorites)
-    print(f"❤️ Найдено избранных каналов: {total_favorites}")
-    
-    if not favorites:
-        print("⚠️ Избранные каналы не найдены!")
-        print("   Проверьте список FAVORITE_KEYWORDS в create_favorites.py")
-        return
-    
-    # Удаляем региональные дубли
+    # =============================================
+    # 2. УДАЛЯЕМ РЕГИОНАЛЬНЫЕ ДУБЛИ
+    # =============================================
     print("\n" + "="*50)
     print("🗑️  УДАЛЕНИЕ РЕГИОНАЛЬНЫХ ДУБЛЕЙ")
     print("="*50)
-    original_count = len(favorites)
-    favorites = deduplicate_channels(favorites)
-    dedup_count = original_count - len(favorites)
-    print(f"📊 Было: {original_count}, стало: {len(favorites)}, удалено: {dedup_count}")
+    original_count = len(channels)
+    channels = deduplicate_channels(channels)
+    dedup_count = original_count - len(channels)
+    print(f"📊 Было: {original_count}, стало: {len(channels)}, удалено: {dedup_count}")
     
-    # Параллельная проверка
+    # =============================================
+    # 3. ПРОВЕРКА КАНАЛОВ
+    # =============================================
     print("\n" + "="*50)
     print("🔍 ПРОВЕРКА КАНАЛОВ")
     print("="*50)
     
-    working, dead = check_all_parallel(favorites)
+    working, dead = check_all_parallel(channels)
     
     print(f"\n📊 Результат:")
     print(f"  ✅ Работает: {len(working)}")
     print(f"  ❌ Не работает: {len(dead)}")
     print(f"  📊 Процент рабочих: {round(len(working)/(len(working)+len(dead))*100, 1) if (len(working)+len(dead)) > 0 else 0}%")
     
-    # Сохраняем только рабочие каналы с группировкой по категориям
+    # =============================================
+    # 4. СОХРАНЯЕМ ПЛЕЙЛИСТ
+    # =============================================
     if working:
         now = get_moscow_time()
         write_m3u_with_groups(
@@ -584,7 +614,6 @@ def main():
         
         # Показываем распределение по категориям
         print("\n📂 Распределение по категориям:")
-        # Временно пересчитываем группы для вывода
         temp_groups = {}
         for ch in working:
             group = get_new_group(ch['info']) or '📦 Прочее'
