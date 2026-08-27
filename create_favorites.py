@@ -7,12 +7,12 @@ from pathlib import Path
 from datetime import datetime, timezone, timedelta
 
 # ═══════════════════════════════════════════════════════════════
-# 🔽 СПИСОК КАНАЛОВ ДЛЯ ИЗБРАННОГО
+# 🔽 СПИСОК КЛЮЧЕВЫХ СЛОВ ДЛЯ ИЗБРАННОГО
 # ═══════════════════════════════════════════════════════════════
-# Добавьте названия каналов, которые хотите видеть в Избранном
-# (регистр не важен, достаточно части названия)
+# Каналы, названия которых содержат эти слова, попадут в Избранное
+# Группой будет полное название канала (например, "Россия 1")
 
-FAVORITE_CHANNELS = [
+FAVORITE_KEYWORDS = [
     # === Российские ===
     'Первый канал',
     'Россия 1',
@@ -53,7 +53,6 @@ FAVORITE_CHANNELS = [
     'Bollywood',
     
     # === Спорт ===
-    'Матч ТВ',
     'Eurosport',
     'Setanta',
     'Спорт',
@@ -67,7 +66,6 @@ FAVORITE_CHANNELS = [
     
     # === Детские ===
     'Cartoon Network',
-    'Карусель',
     'Мульт',
     'Детский',
     
@@ -76,9 +74,8 @@ FAVORITE_CHANNELS = [
     'Шансон',
     'Жара',
     
-    # ⬇️ ДОБАВЬТЕ СВОИ КАНАЛЫ ЗДЕСЬ
+    # ⬇️ ДОБАВЬТЕ СВОИ КЛЮЧЕВЫЕ СЛОВА ЗДЕСЬ
     # 'Мой любимый канал',
-    # 'Ещё один канал',
 ]
 
 # Настройка часового пояса (Москва UTC+3)
@@ -88,17 +85,31 @@ def get_moscow_time():
     return datetime.now(MOSCOW_TZ)
 
 def is_favorite(info_line):
-    """Проверяет, является ли канал избранным"""
+    """Проверяет, является ли канал избранным по ключевым словам"""
     if not info_line:
         return False
     
     info_lower = info_line.lower()
     
-    for channel in FAVORITE_CHANNELS:
-        if channel.lower() in info_lower:
+    for keyword in FAVORITE_KEYWORDS:
+        if keyword.lower() in info_lower:
             return True
     
     return False
+
+def get_channel_name(info_line):
+    """Извлекает название канала из строки EXTINF"""
+    # Ищем название после последней запятой
+    match = re.search(r',([^,]*)$', info_line)
+    if match:
+        return match.group(1).strip()
+    
+    # Если не нашли, пробуем найти tvg-name
+    match = re.search(r'tvg-name="([^"]*)"', info_line, re.IGNORECASE)
+    if match:
+        return match.group(1).strip()
+    
+    return 'Без названия'
 
 def parse_m3u(file_path):
     """Парсит M3U файл и возвращает список каналов"""
@@ -129,29 +140,69 @@ def parse_m3u(file_path):
     
     return channels
 
-def write_m3u(channels, output_file, update_time):
-    """Записывает каналы в M3U файл"""
+def write_m3u_with_groups(channels, output_file, update_time):
+    """Записывает каналы в M3U файл с группировкой по названию"""
     
     output_path = Path(output_file)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     
+    # Группируем каналы по названию
+    groups = {}
+    
+    for ch in channels:
+        name = get_channel_name(ch['info'])
+        # Убираем всё после запятой (версии, HD, и т.д.)
+        # Например: "Россия 1 HD" → "Россия 1"
+        base_name = re.sub(r'\s*(HD|FHD|UHD|4K|\+.*|\(.*\))$', '', name, flags=re.IGNORECASE).strip()
+        
+        # Если название сильно изменилось, оставляем как есть
+        if not base_name:
+            base_name = name
+        
+        if base_name not in groups:
+            groups[base_name] = []
+        groups[base_name].append(ch)
+    
+    print(f"📂 Создано групп: {len(groups)}")
+    
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write('#EXTM3U\n')
         f.write(f'# ❤️ Избранное — {update_time.strftime("%Y-%m-%d %H:%M:%S")} MSK\n')
-        f.write(f'# Всего каналов: {len(channels)}\n\n')
+        f.write(f'# Всего каналов: {len(channels)}\n')
+        f.write(f'# Групп: {len(groups)}\n\n')
         
-        for channel in channels:
-            if channel.get('info'):
-                f.write(channel['info'] + '\n')
-            if channel.get('url'):
-                f.write(channel['url'] + '\n')
+        # Сортируем группы по названию
+        for group_name in sorted(groups.keys()):
+            channel_list = groups[group_name]
+            
+            # Добавляем комментарий-разделитель для группы
+            f.write(f'# === ГРУППА: {group_name} ===\n')
+            
+            for ch in channel_list:
+                # Изменяем или добавляем group-title
+                info = ch['info']
+                
+                # Удаляем старый group-title, если есть
+                info = re.sub(r'group-title="[^"]*"\s*', '', info)
+                
+                # Добавляем новый group-title
+                if 'group-title="' not in info:
+                    info = info.replace(
+                        ',',
+                        f' group-title="{group_name}",'
+                    )
+                
+                f.write(info + '\n')
+                f.write(ch['url'] + '\n')
+            
+            f.write('\n')  # Пустая строка между группами
 
 def main():
     input_file = './output/merged.m3u'
     output_file = './output/favorites.m3u'
     
     print("="*50)
-    print("❤️  СОЗДАНИЕ ПЛЕЙЛИСТА ИЗБРАННОЕ")
+    print("❤️  СОЗДАНИЕ ПЛЕЙЛИСТА ИЗБРАННОЕ (С ГРУППАМИ)")
     print("="*50)
     
     if not Path(input_file).exists():
@@ -161,7 +212,7 @@ def main():
     
     print(f"📖 Чтение: {input_file}")
     channels = parse_m3u(input_file)
-    print(f"📊 Найдено каналов: {len(channels)}")
+    print(f"📊 Всего каналов в merged.m3u: {len(channels)}")
     
     # Фильтруем избранные каналы
     favorites = []
@@ -173,26 +224,29 @@ def main():
     
     if not favorites:
         print("⚠️ Избранные каналы не найдены!")
-        print("   Проверьте список FAVORITE_CHANNELS в create_favorites.py")
+        print("   Проверьте список FAVORITE_KEYWORDS в create_favorites.py")
         return
     
-    # Показываем найденные каналы
-    print("\n📺 Найденные каналы:")
-    for i, ch in enumerate(favorites[:20], 1):
-        # Извлекаем название из строки
-        match = re.search(r',([^,]*)$', ch['info'])
-        name = match.group(1).strip() if match else 'Без названия'
-        print(f"  {i}. {name}")
+    # Показываем статистику по группам
+    groups = {}
+    for ch in favorites:
+        name = get_channel_name(ch['info'])
+        base_name = re.sub(r'\s*(HD|FHD|UHD|4K|\+.*|\(.*\))$', '', name, flags=re.IGNORECASE).strip()
+        if base_name not in groups:
+            groups[base_name] = 0
+        groups[base_name] += 1
     
-    if len(favorites) > 20:
-        print(f"  ... и ещё {len(favorites) - 20} каналов")
+    print("\n📂 Группы каналов:")
+    for group_name, count in sorted(groups.items()):
+        print(f"  - {group_name}: {count} каналов")
     
-    # Сохраняем
+    # Сохраняем с группировкой
     now = get_moscow_time()
-    write_m3u(favorites, output_file, now)
+    write_m3u_with_groups(favorites, output_file, now)
     
     print(f"\n✅ Плейлист Избранное сохранён: {output_file}")
     print(f"   Всего каналов: {len(favorites)}")
+    print(f"   Групп: {len(groups)}")
     print("="*50)
 
 if __name__ == '__main__':
