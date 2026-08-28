@@ -25,16 +25,54 @@ SKIP_CHECK_GROUPS = ['Wink (VPN 🇷🇺)']
 ARCHIVE_SOURCE_GROUP = 'Wink (VPN 🇷🇺)'
 
 # ═══════════════════════════════════════════════════════════════
-# 🔽 СПИСОК КАНАЛОВ ДЛЯ УДАЛЕНИЯ
+# 🔽 СПИСОК ГРУПП И КАНАЛОВ ДЛЯ УДАЛЕНИЯ
 # ═══════════════════════════════════════════════════════════════
 
 BLOCKED_KEYWORDS = [
+    # Спортивные каналы
     'матч', 'match', 'спорт', 'sport', 'футбол', 'football',
     'хоккей', 'khl', 'eurosport', 'setanta', 'arena sport',
     'mma', 'бокс', 'баскет', 'окко', 'старт', 'премьер',
     'матч тв', 'match tv', 'евроспорт', 'setanta sports',
-    'мир баскетбола', 'камин тв',
+    'мир баскетбола',
+    
+    # Другие удаляемые каналы
+    'камин тв',
+    
+    # 4K каналы
     '4k', '4К', '4 K', 'UHD',
+]
+
+# ═══════════════════════════════════════════════════════════════
+# 🔽 ГРУППЫ ДЛЯ УДАЛЕНИЯ (ВМЕСТЕ СО ВСЕМИ КАНАЛАМИ)
+# ═══════════════════════════════════════════════════════════════
+
+BLOCKED_GROUPS = [
+    'Беларусь',
+    '4K VIDEO (VPN)',
+    'Детские',
+    'Детям',
+    'Диджитал Нетворк (VPN)',
+    'Знания',
+    'Женские',
+    'Религия',
+    'Релакс',
+    'Мултики на (UZB) языке',
+    'Мультфильмы',
+    'Образовательные',
+    'Shop',
+    'Travel',
+    'Sports',
+    'Religious',
+    'News',
+    'Music',
+    'Фильмы на (UZB) языке',
+    'Христианские',
+    'Спорт',
+    'СПОРТ',
+    'Спортивные',
+    'Спорткомплекс 🏆',
+    'Фильмы на (RU)',
 ]
 
 # ═══════════════════════════════════════════════════════════════
@@ -209,16 +247,22 @@ def is_blocked_channel(info_line):
         return False
     if is_info_channel(info_line):
         return False
+    
     info_lower = info_line.lower()
+    
+    # Проверяем по ключевым словам
     for keyword in BLOCKED_KEYWORDS:
         if keyword.lower() in info_lower:
             return True
+    
+    # Проверяем по группе
     group_match = re.search(r'group-title="([^"]*)"', info_line, re.IGNORECASE)
     if group_match:
-        group_name = group_match.group(1).lower()
-        for keyword in BLOCKED_KEYWORDS:
-            if keyword.lower() in group_name:
+        group_name = group_match.group(1)
+        for blocked_group in BLOCKED_GROUPS:
+            if blocked_group.lower() in group_name.lower():
                 return True
+    
     return False
 
 def deduplicate_channels(channels):
@@ -422,7 +466,7 @@ def write_m3u_with_groups(channels, output_file, update_time, stats):
     
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write('#EXTM3U\n')
-        f.write(f'# EPG: {epg_url}\n')  # <-- Ссылка на EPG в комментарии
+        f.write(f'# EPG: {epg_url}\n')
         f.write(f'# ❤️ Плейлист — {update_time.strftime("%Y-%m-%d %H:%M:%S")} MSK\n')
         f.write(f'# Всего каналов: {stats.get("total", 0)}\n')
         f.write(f'# Групп: {len(groups)}\n')
@@ -482,6 +526,7 @@ def main():
     blocked_count = original_count - len(channels)
     if blocked_count > 0:
         print(f"🗑️ Удалено заблокированных каналов: {blocked_count}")
+        print(f"   По группам: {', '.join(BLOCKED_GROUPS[:5])}...")
     else:
         print("✅ Заблокированных каналов не найдено")
     
