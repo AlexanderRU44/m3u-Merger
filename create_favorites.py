@@ -38,23 +38,11 @@ BLOCKED_KEYWORDS = [
 ]
 
 # ═══════════════════════════════════════════════════════════════
-# 🔽 ТОЧНЫЕ НАЗВАНИЯ ДЛЯ ИЗБРАННОГО
-# ═══════════════════════════════════════════════════════════════
-
-FAVORITE_EXACT_NAMES = [
-    'Investigation Discovery',
-    '5 Канал',
-    'НТВ',
-    'ТВЦ',
-    'НСТ',
-    'КИНОУЖАС',
-]
-
-# ═══════════════════════════════════════════════════════════════
 # 🔽 ПРАВИЛА ПЕРЕГРУППИРОВКИ
 # ═══════════════════════════════════════════════════════════════
 
 GROUP_RULES = {
+    '❤️ Избранное': [],  # Пустая группа, каналы добавим позже
     '📺 Федеральные каналы': [
         'первый канал', 'россия 1', 'россия-1', 'ртр', 'ntv', 'нтв',
         'рентв', 'рен тв', '5 канал', 'пятый канал', 'тв центр', 'твц',
@@ -170,27 +158,6 @@ def get_channel_name(info_line):
         return match.group(1).strip()
     return 'Без названия'
 
-def get_channel_name_clean(info_line):
-    name = get_channel_name(info_line)
-    if not name:
-        return ''
-    name = re.sub(r'\s*\([^)]*\)\s*', ' ', name)
-    name = re.sub(r'\s*(?:HD|FHD|4K|UHD|Full HD)\s*', ' ', name, flags=re.IGNORECASE)
-    name = re.sub(r'\s+', ' ', name).strip()
-    return name
-
-def is_favorite_exact(info_line):
-    if not info_line:
-        return False
-    channel_name = get_channel_name(info_line)
-    if not channel_name:
-        return False
-    channel_name_lower = channel_name.lower()
-    for favorite_name in FAVORITE_EXACT_NAMES:
-        if favorite_name.lower() == channel_name_lower:
-            return True
-    return False
-
 def is_info_channel(info_line):
     if not info_line:
         return False
@@ -297,45 +264,11 @@ def deduplicate_channels(channels):
         print(f"🗑️ Удалено региональных дублей: {removed_count}")
     return result
 
-def deduplicate_favorites(favorite_channels):
-    if not favorite_channels:
-        return []
-    groups = {}
-    for ch in favorite_channels:
-        clean_name = get_channel_name_clean(ch['info'])
-        if not clean_name:
-            clean_name = get_channel_name(ch['info'])
-        groups.setdefault(clean_name, []).append(ch)
-    result = []
-    removed_count = 0
-    for clean_name, group in groups.items():
-        if len(group) == 1:
-            result.append(group[0])
-            continue
-        def priority(ch):
-            name = get_channel_name(ch['info'])
-            score = 0
-            if '4k' in name.lower() or '4K' in name:
-                score += 10
-            if 'hd' in name.lower() or 'HD' in name:
-                score += 5
-            if re.search(r'\([^)]*\)', name):
-                score += 3
-            return score
-        group_sorted = sorted(group, key=priority)
-        result.append(group_sorted[0])
-        removed_count += len(group) - 1
-    if removed_count > 0:
-        print(f"❤️ Удалено дублей в Избранном: {removed_count}")
-    return result
-
 def get_new_group(info_line):
     if not info_line:
         return '📦 Прочее'
     if is_info_channel(info_line):
         return '📦 Прочее'
-    if is_favorite_exact(info_line):
-        return '❤️ Избранное'
     info_lower = info_line.lower()
     group_match = re.search(r'group-title="([^"]*)"', info_line, re.IGNORECASE)
     current_group = group_match.group(1) if group_match else ''
@@ -418,26 +351,16 @@ def check_all_parallel(channels, max_workers=MAX_WORKERS):
     return working, dead
 
 def create_info_channel(update_time):
-    """
-    Создаёт информационный канал ТОЛЬКО с датой в названии.
-    Вся статистика — в EPG.
-    """
     title = f"📅 Обновлено: {update_time.strftime('%Y-%m-%d %H:%M:%S')} MSK"
     info_line = f'#EXTINF:-1 tvg-logo="" tvg-id="update.channel" group-title="📦 Прочее",{title}'
     url = 'http://info.channel/update'
     return {'info': info_line, 'url': url}
 
 def create_epg_file(update_time, stats, output_file='./output/epg.xml'):
-    """
-    Создаёт EPG-файл с полной статистикой в программе.
-    """
     output_path = Path(output_file)
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    
     start_time = update_time.strftime('%Y%m%d%H%M%S') + ' +0300'
     end_time = (update_time + timedelta(hours=1)).strftime('%Y%m%d%H%M%S') + ' +0300'
-    
-    # Формируем описание со статистикой
     desc_parts = []
     if stats:
         if stats.get('total') is not None:
@@ -452,9 +375,7 @@ def create_epg_file(update_time, stats, output_file='./output/epg.xml'):
             desc_parts.append(f"Удалено заблокированных: {stats['blocked']}")
         if stats.get('skipped') is not None:
             desc_parts.append(f"Пропущено проверки: {stats['skipped']}")
-    
     desc = ' | '.join(desc_parts) if desc_parts else 'Статистика недоступна'
-    
     epg_content = f'''<?xml version="1.0" encoding="UTF-8"?>
 <tv>
   <channel id="update.channel">
@@ -465,22 +386,22 @@ def create_epg_file(update_time, stats, output_file='./output/epg.xml'):
     <desc>{desc}</desc>
   </programme>
 </tv>'''
-    
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write(epg_content)
-    
     print(f"📅 EPG файл сохранён: {output_file}")
     print(f"   {desc}")
 
 def write_m3u_with_groups(channels, output_file, update_time, stats):
     output_path = Path(output_file)
     output_path.parent.mkdir(parents=True, exist_ok=True)
+    
     groups = {}
     for ch in channels:
         new_group = get_new_group(ch['info'])
         if new_group not in groups:
             groups[new_group] = []
         groups[new_group].append(ch)
+    
     group_order = [
         '❤️ Избранное',
         '⌚ Архив',
@@ -492,10 +413,16 @@ def write_m3u_with_groups(channels, output_file, update_time, stats):
         '👶 Детские и мультипликационные',
         '📦 Прочее',
     ]
+    
     other_groups = sorted([g for g in groups.keys() if g not in group_order])
     ordered_groups = [g for g in group_order if g in groups] + other_groups
+    
+    # Ссылка на EPG
+    epg_url = 'https://raw.githubusercontent.com/AlexanderRU44/m3u-Merger/main/output/epg.xml'
+    
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write('#EXTM3U\n')
+        f.write(f'# {epg_url}\n')  # <-- Ссылка на EPG добавляется сюда
         f.write(f'# ❤️ Плейлист — {update_time.strftime("%Y-%m-%d %H:%M:%S")} MSK\n')
         f.write(f'# Всего каналов: {stats.get("total", 0)}\n')
         f.write(f'# Групп: {len(groups)}\n')
@@ -510,6 +437,7 @@ def write_m3u_with_groups(channels, output_file, update_time, stats):
         if stats.get('blocked') is not None:
             f.write(f'# Удалено заблокированных каналов: {stats["blocked"]}\n')
         f.write('\n')
+        
         for group_name in ordered_groups:
             channel_list = groups[group_name]
             f.write(f'# === ГРУППА: {group_name} ===\n')
@@ -566,23 +494,7 @@ def main():
     dedup_count = before_dedup - len(channels)
     print(f"📊 Было: {before_dedup}, стало: {len(channels)}, удалено: {dedup_count}")
     
-    # 4. ОБРАБОТКА ИЗБРАННЫХ КАНАЛОВ
-    print("\n" + "="*50)
-    print("❤️  ОБРАБОТКА ИЗБРАННЫХ КАНАЛОВ")
-    print("="*50)
-    favorite_channels = [ch for ch in channels if is_favorite_exact(ch['info'])]
-    print(f"📊 Найдено избранных каналов (до дедупликации): {len(favorite_channels)}")
-    if favorite_channels:
-        favorite_channels = deduplicate_favorites(favorite_channels)
-        print(f"❤️ Избранных каналов (после дедупликации): {len(favorite_channels)}")
-        favorite_urls = {ch['url'] for ch in favorite_channels}
-        channels = [ch for ch in channels if ch['url'] not in favorite_urls]
-        channels = favorite_channels + channels
-        print(f"📊 Всего каналов после обработки: {len(channels)}")
-    else:
-        print("⚠️ Избранные каналы не найдены!")
-    
-    # 5. ПРОВЕРКА КАНАЛОВ
+    # 4. ПРОВЕРКА КАНАЛОВ
     print("\n" + "="*50)
     print("🔍 ПРОВЕРКА КАНАЛОВ")
     print("="*50)
@@ -595,7 +507,7 @@ def main():
         print(f"  ⏭️ Пропущено проверки: {skipped_count}")
     print(f"  📊 Процент рабочих: {round(len(working)/(len(working)+len(dead))*100, 1) if (len(working)+len(dead)) > 0 else 0}%")
     
-    # 6. СОБИРАЕМ СТАТИСТИКУ
+    # 5. СОБИРАЕМ СТАТИСТИКУ
     now = get_moscow_time()
     stats = {
         'total': len(working) + len(dead),
@@ -607,7 +519,7 @@ def main():
         'blocked': blocked_count,
     }
     
-    # 7. СОЗДАЁМ ИНФОРМАЦИОННЫЙ КАНАЛ (ТОЛЬКО ДАТА В НАЗВАНИИ)
+    # 6. СОЗДАЁМ ИНФОРМАЦИОННЫЙ КАНАЛ
     print("\n" + "="*50)
     print("📅 ДОБАВЛЕНИЕ ИНФОРМАЦИОННОГО КАНАЛА")
     print("="*50)
@@ -615,13 +527,13 @@ def main():
     working.append(info_channel)
     print(f"✅ Добавлен информационный канал: {info_channel['info']}")
     
-    # 8. СОЗДАЁМ EPG ФАЙЛ (ВСЯ СТАТИСТИКА ЗДЕСЬ)
+    # 7. СОЗДАЁМ EPG ФАЙЛ
     print("\n" + "="*50)
     print("📅 СОЗДАНИЕ EPG ФАЙЛА")
     print("="*50)
     create_epg_file(now, stats, epg_file)
     
-    # 9. СОХРАНЯЕМ ПЛЕЙЛИСТ
+    # 8. СОХРАНЯЕМ ПЛЕЙЛИСТ
     if working:
         write_m3u_with_groups(working, output_file, now, stats)
         print(f"\n✅ Плейлист сохранён: {output_file}")
