@@ -22,9 +22,6 @@ MAX_WORKERS = 20
 
 SKIP_CHECK_GROUPS = [
     'Wink (VPN 🇷🇺)',
-    'Rutube (VPN)',
-    'Кино',
-    'Развлечение',
 ]
 
 ARCHIVE_SOURCE_GROUP = 'Wink (VPN 🇷🇺)'
