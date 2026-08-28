@@ -20,7 +20,13 @@ MAX_WORKERS = 20
 # 🔽 ГРУППЫ, КОТОРЫЕ НЕ ПРОВЕРЯЕМ
 # ═══════════════════════════════════════════════════════════════
 
-SKIP_CHECK_GROUPS = ['Wink (VPN 🇷🇺)']
+SKIP_CHECK_GROUPS = [
+    'Wink (VPN 🇷🇺)',
+    'Rutube (VPN)',
+    'Кино',
+    'Развлечение',
+]
+
 ARCHIVE_SOURCE_GROUP = 'Wink (VPN 🇷🇺)'
 
 # ═══════════════════════════════════════════════════════════════
@@ -48,7 +54,7 @@ BLOCKED_GROUPS = [
 # ═══════════════════════════════════════════════════════════════
 # 🔽 ПРАВИЛА ДЛЯ ИЗБРАННОГО (ФАЙЛ → ГРУППА → КАНАЛ)
 # ═══════════════════════════════════════════════════════════════
-# Формат: { 'имя_файла_плейлиста.m3u': [ ('группа', 'название_канала'), ... ] }
+
 FAVORITE_RULES = {
     'dimonovich_tv.m3u': [
         ('Rutube (VPN)', 'Первый канал HD'),
@@ -58,11 +64,6 @@ FAVORITE_RULES = {
         ('Кино', '.Black'),
         ('Развлечение', '2x2'),
     ],
-    # Можно добавлять другие файлы плейлистов
-    # 'другой_плейлист.m3u': [
-    #     ('группа1', 'канал1'),
-    #     ('группа2', 'канал2'),
-    # ],
 }
 
 # ═══════════════════════════════════════════════════════════════
@@ -337,26 +338,36 @@ def check_stream(url, timeout=CHECK_TIMEOUT):
     except Exception:
         return False
 
-def check_all_parallel(channels, max_workers=MAX_WORKERS):
+def check_all_parallel(channels, max_workers=MAX_WORKERS, favorite_urls=None):
     total = len(channels)
     print(f"🚀 Параллельная проверка {total} каналов (потоков: {max_workers})")
+    
     working = []
     dead = []
     skipped = []
     checked = 0
+    
     start_time = time.time()
+    
     to_check = []
     for ch in channels:
-        if should_skip_check(ch['info']):
+        # Пропускаем проверку для избранных каналов
+        if favorite_urls and ch['url'] in favorite_urls:
+            skipped.append(ch)
+            working.append(ch)
+        elif should_skip_check(ch['info']):
             skipped.append(ch)
             working.append(ch)
         else:
             to_check.append(ch)
+    
     if skipped:
         print(f"⏭️ Пропущено проверки: {len(skipped)} каналов")
+    
     if not to_check:
         print("✅ Все каналы пропущены проверки!")
         return working, dead
+    
     with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
         future_to_channel = {executor.submit(check_stream, ch['url']): ch for ch in to_check}
         for future in concurrent.futures.as_completed(future_to_channel):
@@ -375,6 +386,7 @@ def check_all_parallel(channels, max_workers=MAX_WORKERS):
                 rate = checked / elapsed if elapsed > 0 else 0
                 sys.stdout.write(f"\r  [{checked}/{total}] ✅ {len(working)} | ❌ {len(dead)} | {rate:.1f} каналов/сек")
                 sys.stdout.flush()
+    
     print()
     return working, dead
 
@@ -426,14 +438,11 @@ def write_m3u_with_groups(channels, output_file, update_time, stats, favorite_ur
     groups = {}
     
     for ch in channels:
-        # Проверяем, является ли канал избранным (по URL)
         is_favorite = favorite_urls and ch['url'] in favorite_urls
         
         if is_favorite:
-            # Принудительно отправляем в группу ❤️ Избранное
             new_group = '❤️ Избранное'
         else:
-            # Для остальных каналов определяем группу как обычно
             new_group = get_new_group(ch['info'])
         
         if new_group not in groups:
@@ -487,14 +496,7 @@ def write_m3u_with_groups(channels, output_file, update_time, stats, favorite_ur
                 f.write(ch['url'] + '\n')
             f.write('\n')
 
-# ==============================================================
-# 🔽 НОВАЯ ФУНКЦИЯ ДЛЯ ПОИСКА КАНАЛОВ ПО ПРАВИЛАМ
-# ==============================================================
-
 def find_favorite_channels(playlists_dir='./playlists'):
-    """
-    Находит каналы для избранного согласно правилам FAVORITE_RULES.
-    """
     favorite_channels = []
     playlists_path = Path(playlists_dir)
 
@@ -510,33 +512,53 @@ def find_favorite_channels(playlists_dir='./playlists'):
             continue
 
         print(f"  📄 Обработка: {playlist_file}")
-        channels = parse_m3u(str(playlist_path))
-        if not channels:
+        
+        try:
+            with open(playlist_path, 'r', encoding='utf-8', errors='ignore') as f:
+                content = f.read()
+        except Exception as e:
+            print(f"    ❌ Ошибка чтения: {e}")
             continue
+        
+        lines = content.splitlines()
+        channels = []
+        current_channel = None
+        
+        for line in lines:
+            line = line.strip()
+            if not line:
+                continue
+            if line.startswith('#EXTINF'):
+                current_channel = {'info': line, 'url': None}
+            elif current_channel and line.startswith(('http://', 'https://')):
+                current_channel['url'] = line
+                channels.append(current_channel)
+                current_channel = None
+        
+        print(f"    📊 Найдено каналов в файле: {len(channels)}")
 
         for target_group, target_channel_name in rules:
             found = False
+            target_group_clean = target_group.strip().lower()
+            target_channel_clean = target_channel_name.strip().lower()
+            
             for ch in channels:
                 group_match = re.search(r'group-title="([^"]*)"', ch['info'], re.IGNORECASE)
-                current_group = group_match.group(1) if group_match else ''
-                current_channel_name = get_channel_name(ch['info'])
-
-                if (target_group.lower() in current_group.lower() and
-                    target_channel_name.lower() in current_channel_name.lower()):
+                current_group = group_match.group(1).strip() if group_match else ''
+                current_channel_name = get_channel_name(ch['info']).strip()
+                
+                if (target_group_clean in current_group.lower() and
+                    target_channel_clean in current_channel_name.lower()):
                     favorite_channels.append(ch)
                     print(f"    ✅ Найден: '{current_channel_name}' в группе '{current_group}'")
                     found = True
-                    break # Берём только первый подходящий канал
+                    break
 
             if not found:
                 print(f"    ⚠️ Канал '{target_channel_name}' в группе '{target_group}' не найден.")
 
     print(f"  📊 Всего найдено каналов для избранного: {len(favorite_channels)}")
     return favorite_channels
-
-# ==============================================================
-# 🔽 ОСНОВНАЯ ФУНКЦИЯ main()
-# ==============================================================
 
 def main():
     input_file = './output/merged.m3u'
@@ -548,11 +570,9 @@ def main():
     print("❤️  СОЗДАНИЕ ПЛЕЙЛИСТА ИЗ MERGED.M3U + ИЗБРАННОЕ")
     print("="*50)
 
-    # 1. НАХОДИМ КАНАЛЫ ДЛЯ ИЗБРАННОГО
     favorite_channels = find_favorite_channels(playlists_dir)
     favorite_urls = {ch['url'] for ch in favorite_channels} if favorite_channels else set()
 
-    # 2. ЧИТАЕМ ОСНОВНОЙ ПЛЕЙЛИСТ
     print("\n📖 ЧТЕНИЕ ФАЙЛА merged.m3u")
     print("-"*50)
     channels = parse_m3u(input_file)
@@ -561,13 +581,11 @@ def main():
         return
     print(f"📊 Всего каналов: {len(channels)}")
 
-    # 3. УДАЛЯЕМ СТАРЫЕ ИНФОРМАЦИОННЫЕ КАНАЛЫ
     print("\n" + "="*50)
     print("🗑️  УДАЛЕНИЕ СТАРЫХ ИНФОРМАЦИОННЫХ КАНАЛОВ")
     print("="*50)
     channels = remove_old_info_channel(channels)
 
-    # 4. УДАЛЯЕМ ЗАБЛОКИРОВАННЫЕ КАНАЛЫ
     print("\n" + "="*50)
     print("🚫 УДАЛЕНИЕ ЗАБЛОКИРОВАННЫХ КАНАЛОВ")
     print("="*50)
@@ -579,7 +597,6 @@ def main():
     else:
         print("✅ Заблокированных каналов не найдено")
 
-    # 5. УДАЛЯЕМ РЕГИОНАЛЬНЫЕ ДУБЛИ
     print("\n" + "="*50)
     print("🗑️  УДАЛЕНИЕ РЕГИОНАЛЬНЫХ ДУБЛЕЙ")
     print("="*50)
@@ -588,23 +605,19 @@ def main():
     dedup_count = before_dedup - len(channels)
     print(f"📊 Было: {before_dedup}, стало: {len(channels)}, удалено: {dedup_count}")
 
-    # 6. ДОБАВЛЯЕМ КАНАЛЫ В ИЗБРАННОЕ (В НАЧАЛО СПИСКА)
     if favorite_channels:
         print("\n" + "="*50)
         print("❤️  ДОБАВЛЕНИЕ КАНАЛОВ В ИЗБРАННОЕ")
         print("="*50)
-        # Удаляем возможные дубли из основного списка (по URL)
         channels = [ch for ch in channels if ch['url'] not in favorite_urls]
-        # Добавляем избранные каналы в начало
         channels = favorite_channels + channels
         print(f"📊 Всего каналов после добавления избранных: {len(channels)}")
 
-    # 7. ПРОВЕРКА КАНАЛОВ
     print("\n" + "="*50)
     print("🔍 ПРОВЕРКА КАНАЛОВ")
     print("="*50)
-    working, dead = check_all_parallel(channels)
-    skipped_count = sum(1 for ch in working if should_skip_check(ch['info']))
+    working, dead = check_all_parallel(channels, MAX_WORKERS, favorite_urls)
+    skipped_count = sum(1 for ch in working if should_skip_check(ch['info']) or (favorite_urls and ch['url'] in favorite_urls))
     print(f"\n📊 Результат:")
     print(f"  ✅ Работает: {len(working)}")
     print(f"  ❌ Не работает: {len(dead)}")
@@ -612,7 +625,6 @@ def main():
         print(f"  ⏭️ Пропущено проверки: {skipped_count}")
     print(f"  📊 Процент рабочих: {round(len(working)/(len(working)+len(dead))*100, 1) if (len(working)+len(dead)) > 0 else 0}%")
 
-    # 8. СОБИРАЕМ СТАТИСТИКУ
     now = get_moscow_time()
     stats = {
         'total': len(working) + len(dead),
@@ -624,7 +636,6 @@ def main():
         'blocked': blocked_count,
     }
 
-    # 9. СОЗДАЁМ ИНФОРМАЦИОННЫЙ КАНАЛ
     print("\n" + "="*50)
     print("📅 ДОБАВЛЕНИЕ ИНФОРМАЦИОННОГО КАНАЛА")
     print("="*50)
@@ -632,13 +643,11 @@ def main():
     working.append(info_channel)
     print(f"✅ Добавлен информационный канал: {info_channel['info']}")
 
-    # 10. СОЗДАЁМ EPG ФАЙЛ
     print("\n" + "="*50)
     print("📅 СОЗДАНИЕ EPG ФАЙЛА")
     print("="*50)
     create_epg_file(now, stats, epg_file)
 
-    # 11. СОХРАНЯЕМ ПЛЕЙЛИСТ
     if working:
         write_m3u_with_groups(working, output_file, now, stats, favorite_urls)
         print(f"\n✅ Плейлист сохранён: {output_file}")
@@ -646,7 +655,6 @@ def main():
         print("\n📂 Распределение по категориям:")
         temp_groups = {}
         for ch in working:
-            # Для подсчёта используем ту же логику
             is_fav = ch['url'] in favorite_urls
             if is_fav:
                 group = '❤️ Избранное'
