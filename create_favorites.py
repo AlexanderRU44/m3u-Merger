@@ -391,7 +391,7 @@ def create_epg_file(update_time, stats, output_file='./output/epg.xml'):
     print(f"📅 EPG файл сохранён: {output_file}")
     print(f"   {desc}")
 
-def write_m3u_with_groups(channels, output_file, update_time, stats, epg_content):
+def write_m3u_with_groups(channels, output_file, update_time, stats):
     output_path = Path(output_file)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     
@@ -417,8 +417,12 @@ def write_m3u_with_groups(channels, output_file, update_time, stats, epg_content
     other_groups = sorted([g for g in groups.keys() if g not in group_order])
     ordered_groups = [g for g in group_order if g in groups] + other_groups
     
+    # Ссылка на EPG (для ручного добавления в плеер)
+    epg_url = 'https://raw.githubusercontent.com/AlexanderRU44/m3u-Merger/main/output/epg.xml'
+    
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write('#EXTM3U\n')
+        f.write(f'# EPG: {epg_url}\n')  # <-- Ссылка на EPG в комментарии
         f.write(f'# ❤️ Плейлист — {update_time.strftime("%Y-%m-%d %H:%M:%S")} MSK\n')
         f.write(f'# Всего каналов: {stats.get("total", 0)}\n')
         f.write(f'# Групп: {len(groups)}\n')
@@ -433,11 +437,6 @@ def write_m3u_with_groups(channels, output_file, update_time, stats, epg_content
         if stats.get('blocked') is not None:
             f.write(f'# Удалено заблокированных каналов: {stats["blocked"]}\n')
         f.write('\n')
-        
-        # ВСТАВЛЯЕМ EPG ПРЯМО В ПЛЕЙЛИСТ
-        f.write('# === EPG ===\n')
-        f.write(epg_content)
-        f.write('\n# === КАНАЛЫ ===\n\n')
         
         for group_name in ordered_groups:
             channel_list = groups[group_name]
@@ -528,47 +527,15 @@ def main():
     working.append(info_channel)
     print(f"✅ Добавлен информационный канал: {info_channel['info']}")
     
-    # 7. СОЗДАЁМ EPG КОНТЕНТ (НО НЕ СОХРАНЯЕМ В ФАЙЛ)
+    # 7. СОЗДАЁМ EPG ФАЙЛ
     print("\n" + "="*50)
-    print("📅 СОЗДАНИЕ EPG КОНТЕНТА")
+    print("📅 СОЗДАНИЕ EPG ФАЙЛА")
     print("="*50)
+    create_epg_file(now, stats, epg_file)
     
-    # Формируем EPG контент
-    start_time = now.strftime('%Y%m%d%H%M%S') + ' +0300'
-    end_time = (now + timedelta(hours=1)).strftime('%Y%m%d%H%M%S') + ' +0300'
-    desc_parts = []
-    if stats:
-        if stats.get('total') is not None:
-            desc_parts.append(f"Всего каналов: {stats['total']}")
-        if stats.get('working') is not None:
-            desc_parts.append(f"Работает: {stats['working']}")
-        if stats.get('dead') is not None:
-            desc_parts.append(f"Удалено нерабочих: {stats['dead']}")
-        if stats.get('dedup') is not None:
-            desc_parts.append(f"Удалено дублей: {stats['dedup']}")
-        if stats.get('blocked') is not None:
-            desc_parts.append(f"Удалено заблокированных: {stats['blocked']}")
-        if stats.get('skipped') is not None:
-            desc_parts.append(f"Пропущено проверки: {stats['skipped']}")
-    desc = ' | '.join(desc_parts) if desc_parts else 'Статистика недоступна'
-    
-    epg_content = f'''<?xml version="1.0" encoding="UTF-8"?>
-<tv>
-  <channel id="update.channel">
-    <display-name>📅 Обновлено</display-name>
-  </channel>
-  <programme start="{start_time}" stop="{end_time}" channel="update.channel">
-    <title>📊 Статистика плейлиста</title>
-    <desc>{desc}</desc>
-  </programme>
-</tv>'''
-    
-    print(f"📅 EPG контент создан")
-    print(f"   {desc}")
-    
-    # 8. СОХРАНЯЕМ ПЛЕЙЛИСТ (ВМЕСТЕ С EPG)
+    # 8. СОХРАНЯЕМ ПЛЕЙЛИСТ
     if working:
-        write_m3u_with_groups(working, output_file, now, stats, epg_content)
+        write_m3u_with_groups(working, output_file, now, stats)
         print(f"\n✅ Плейлист сохранён: {output_file}")
         print(f"   Всего каналов: {len(working)}")
         print("\n📂 Распределение по категориям:")
