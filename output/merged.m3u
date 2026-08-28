@@ -1,9 +1,9 @@
 #EXTM3U
-# Создано: 2026-08-28 04:41:33 MSK
+# Создано: 2026-08-28 04:52:57 MSK
 # Всего каналов: 6465
 # Каналов с архивом: 546
 
-#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: 28.08.2026 04:41 MSK
+#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: 28.08.2026 04:52 MSK
 https://raw.githubusercontent.com/AlexanderRU44/m3u-Merger/main/output/info.m3u8
 #EXTINF:-1 group-title="Основные" tvg-id="pervy",Первый
 #EXTVLCOPT:http-user-agent=HlsWinkPlayer
