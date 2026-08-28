@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 import re
-import os
 import sys
 import time
 import requests
@@ -29,58 +28,49 @@ ARCHIVE_SOURCE_GROUP = 'Wink (VPN 🇷🇺)'
 # ═══════════════════════════════════════════════════════════════
 
 BLOCKED_KEYWORDS = [
-    # Спортивные каналы
     'матч', 'match', 'спорт', 'sport', 'футбол', 'football',
     'хоккей', 'khl', 'eurosport', 'setanta', 'arena sport',
     'mma', 'бокс', 'баскет', 'окко', 'старт', 'премьер',
     'матч тв', 'match tv', 'евроспорт', 'setanta sports',
-    'мир баскетбола',
-    
-    # Другие удаляемые каналы
-    'камин тв',
-    
-    # 4K каналы
+    'мир баскетбола', 'камин тв',
     '4k', '4К', '4 K', 'UHD',
 ]
 
-# ═══════════════════════════════════════════════════════════════
-# 🔽 ГРУППЫ ДЛЯ УДАЛЕНИЯ (ВМЕСТЕ СО ВСЕМИ КАНАЛАМИ)
-# ═══════════════════════════════════════════════════════════════
-
 BLOCKED_GROUPS = [
-    'Беларусь',
-    '4K VIDEO (VPN)',
-    'Детские',
-    'Детям',
-    'Диджитал Нетворк (VPN)',
-    'Знания',
-    'Женские',
-    'Религия',
-    'Релакс',
-    'Мултики на (UZB) языке',
-    'Мультфильмы',
-    'Образовательные',
-    'Shop',
-    'Travel',
-    'Sports',
-    'Religious',
-    'News',
-    'Music',
-    'Фильмы на (UZB) языке',
-    'Христианские',
-    'Спорт',
-    'СПОРТ',
-    'Спортивные',
-    'Спорткомплекс 🏆',
-    'Фильмы на (RU)',
+    'Беларусь', '4K VIDEO (VPN)', 'Детские', 'Детям',
+    'Диджитал Нетворк (VPN)', 'Знания', 'Женские', 'Религия', 'Релакс',
+    'Мултики на (UZB) языке', 'Мультфильмы', 'Образовательные',
+    'Shop', 'Travel', 'Sports', 'Religious', 'News', 'Music',
+    'Фильмы на (UZB) языке', 'Христианские', 'Спорт', 'СПОРТ',
+    'Спортивные', 'Спорткомплекс 🏆', 'Фильмы на (RU)',
 ]
+
+# ═══════════════════════════════════════════════════════════════
+# 🔽 ПРАВИЛА ДЛЯ ИЗБРАННОГО (ФАЙЛ → ГРУППА → КАНАЛ)
+# ═══════════════════════════════════════════════════════════════
+# Формат: { 'имя_файла_плейлиста.m3u': [ ('группа', 'название_канала'), ... ] }
+FAVORITE_RULES = {
+    'dimonovich_tv.m3u': [
+        ('Rutube (VPN)', 'Первый канал HD'),
+        ('Wink (VPN 🇷🇺)', 'НТВ'),
+    ],
+    'loganet_tv.m3u': [
+        ('Кино', '.Black'),
+        ('Развлечение', '2x2'),
+    ],
+    # Можно добавлять другие файлы плейлистов
+    # 'другой_плейлист.m3u': [
+    #     ('группа1', 'канал1'),
+    #     ('группа2', 'канал2'),
+    # ],
+}
 
 # ═══════════════════════════════════════════════════════════════
 # 🔽 ПРАВИЛА ПЕРЕГРУППИРОВКИ
 # ═══════════════════════════════════════════════════════════════
 
 GROUP_RULES = {
-    '❤️ Избранное': [],  # Пустая группа, каналы добавим позже
+    '❤️ Избранное': [],
     '📺 Федеральные каналы': [
         'первый канал', 'россия 1', 'россия-1', 'ртр', 'ntv', 'нтв',
         'рентв', 'рен тв', '5 канал', 'пятый канал', 'тв центр', 'твц',
@@ -247,22 +237,16 @@ def is_blocked_channel(info_line):
         return False
     if is_info_channel(info_line):
         return False
-    
     info_lower = info_line.lower()
-    
-    # Проверяем по ключевым словам
     for keyword in BLOCKED_KEYWORDS:
         if keyword.lower() in info_lower:
             return True
-    
-    # Проверяем по группе
     group_match = re.search(r'group-title="([^"]*)"', info_line, re.IGNORECASE)
     if group_match:
         group_name = group_match.group(1)
         for blocked_group in BLOCKED_GROUPS:
             if blocked_group.lower() in group_name.lower():
                 return True
-    
     return False
 
 def deduplicate_channels(channels):
@@ -438,14 +422,12 @@ def create_epg_file(update_time, stats, output_file='./output/epg.xml'):
 def write_m3u_with_groups(channels, output_file, update_time, stats):
     output_path = Path(output_file)
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    
     groups = {}
     for ch in channels:
         new_group = get_new_group(ch['info'])
         if new_group not in groups:
             groups[new_group] = []
         groups[new_group].append(ch)
-    
     group_order = [
         '❤️ Избранное',
         '⌚ Архив',
@@ -457,13 +439,9 @@ def write_m3u_with_groups(channels, output_file, update_time, stats):
         '👶 Детские и мультипликационные',
         '📦 Прочее',
     ]
-    
     other_groups = sorted([g for g in groups.keys() if g not in group_order])
     ordered_groups = [g for g in group_order if g in groups] + other_groups
-    
-    # Ссылка на EPG (для ручного добавления в плеер)
     epg_url = 'https://raw.githubusercontent.com/AlexanderRU44/m3u-Merger/main/output/epg.xml'
-    
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write('#EXTM3U\n')
         f.write(f'# EPG: {epg_url}\n')
@@ -481,7 +459,6 @@ def write_m3u_with_groups(channels, output_file, update_time, stats):
         if stats.get('blocked') is not None:
             f.write(f'# Удалено заблокированных каналов: {stats["blocked"]}\n')
         f.write('\n')
-        
         for group_name in ordered_groups:
             channel_list = groups[group_name]
             f.write(f'# === ГРУППА: {group_name} ===\n')
@@ -494,15 +471,71 @@ def write_m3u_with_groups(channels, output_file, update_time, stats):
                 f.write(ch['url'] + '\n')
             f.write('\n')
 
+# ==============================================================
+# 🔽 НОВАЯ ФУНКЦИЯ ДЛЯ ПОИСКА КАНАЛОВ ПО ПРАВИЛАМ
+# ==============================================================
+
+def find_favorite_channels(playlists_dir='./playlists'):
+    """
+    Находит каналы для избранного согласно правилам FAVORITE_RULES.
+    """
+    favorite_channels = []
+    playlists_path = Path(playlists_dir)
+
+    if not playlists_path.exists():
+        print(f"⚠️ Папка с плейлистами '{playlists_dir}' не найдена!")
+        return []
+
+    print("\n🔍 Поиск каналов для избранного...")
+    for playlist_file, rules in FAVORITE_RULES.items():
+        playlist_path = playlists_path / playlist_file
+        if not playlist_path.exists():
+            print(f"  ⚠️ Плейлист '{playlist_file}' не найден, пропускаем.")
+            continue
+
+        print(f"  📄 Обработка: {playlist_file}")
+        channels = parse_m3u(str(playlist_path))
+        if not channels:
+            continue
+
+        for target_group, target_channel_name in rules:
+            found = False
+            for ch in channels:
+                group_match = re.search(r'group-title="([^"]*)"', ch['info'], re.IGNORECASE)
+                current_group = group_match.group(1) if group_match else ''
+                current_channel_name = get_channel_name(ch['info'])
+
+                if (target_group.lower() in current_group.lower() and
+                    target_channel_name.lower() in current_channel_name.lower()):
+                    favorite_channels.append(ch)
+                    print(f"    ✅ Найден: '{current_channel_name}' в группе '{current_group}'")
+                    found = True
+                    break # Берём только первый подходящий канал
+
+            if not found:
+                print(f"    ⚠️ Канал '{target_channel_name}' в группе '{target_group}' не найден.")
+
+    print(f"  📊 Всего найдено каналов для избранного: {len(favorite_channels)}")
+    return favorite_channels
+
+# ==============================================================
+# 🔽 ОСНОВНАЯ ФУНКЦИЯ main()
+# ==============================================================
+
 def main():
     input_file = './output/merged.m3u'
     output_file = './output/favorites.m3u'
     epg_file = './output/epg.xml'
-    
+    playlists_dir = './playlists'
+
     print("="*50)
-    print("❤️  СОЗДАНИЕ ПЛЕЙЛИСТА ИЗ MERGED.M3U")
+    print("❤️  СОЗДАНИЕ ПЛЕЙЛИСТА ИЗ MERGED.M3U + ИЗБРАННОЕ")
     print("="*50)
-    
+
+    # 1. НАХОДИМ КАНАЛЫ ДЛЯ ИЗБРАННОГО
+    favorite_channels = find_favorite_channels(playlists_dir)
+
+    # 2. ЧИТАЕМ ОСНОВНОЙ ПЛЕЙЛИСТ
     print("\n📖 ЧТЕНИЕ ФАЙЛА merged.m3u")
     print("-"*50)
     channels = parse_m3u(input_file)
@@ -510,14 +543,14 @@ def main():
         print("❌ Каналы не найдены!")
         return
     print(f"📊 Всего каналов: {len(channels)}")
-    
-    # 1. УДАЛЯЕМ СТАРЫЕ ИНФОРМАЦИОННЫЕ КАНАЛЫ
+
+    # 3. УДАЛЯЕМ СТАРЫЕ ИНФОРМАЦИОННЫЕ КАНАЛЫ
     print("\n" + "="*50)
     print("🗑️  УДАЛЕНИЕ СТАРЫХ ИНФОРМАЦИОННЫХ КАНАЛОВ")
     print("="*50)
     channels = remove_old_info_channel(channels)
-    
-    # 2. УДАЛЯЕМ ЗАБЛОКИРОВАННЫЕ КАНАЛЫ
+
+    # 4. УДАЛЯЕМ ЗАБЛОКИРОВАННЫЕ КАНАЛЫ
     print("\n" + "="*50)
     print("🚫 УДАЛЕНИЕ ЗАБЛОКИРОВАННЫХ КАНАЛОВ")
     print("="*50)
@@ -526,11 +559,10 @@ def main():
     blocked_count = original_count - len(channels)
     if blocked_count > 0:
         print(f"🗑️ Удалено заблокированных каналов: {blocked_count}")
-        print(f"   По группам: {', '.join(BLOCKED_GROUPS[:5])}...")
     else:
         print("✅ Заблокированных каналов не найдено")
-    
-    # 3. УДАЛЯЕМ РЕГИОНАЛЬНЫЕ ДУБЛИ
+
+    # 5. УДАЛЯЕМ РЕГИОНАЛЬНЫЕ ДУБЛИ
     print("\n" + "="*50)
     print("🗑️  УДАЛЕНИЕ РЕГИОНАЛЬНЫХ ДУБЛЕЙ")
     print("="*50)
@@ -538,8 +570,20 @@ def main():
     channels = deduplicate_channels(channels)
     dedup_count = before_dedup - len(channels)
     print(f"📊 Было: {before_dedup}, стало: {len(channels)}, удалено: {dedup_count}")
-    
-    # 4. ПРОВЕРКА КАНАЛОВ
+
+    # 6. ДОБАВЛЯЕМ КАНАЛЫ В ИЗБРАННОЕ (В НАЧАЛО СПИСКА)
+    if favorite_channels:
+        print("\n" + "="*50)
+        print("❤️  ДОБАВЛЕНИЕ КАНАЛОВ В ИЗБРАННОЕ")
+        print("="*50)
+        # Удаляем возможные дубли из основного списка (по URL)
+        favorite_urls = {ch['url'] for ch in favorite_channels}
+        channels = [ch for ch in channels if ch['url'] not in favorite_urls]
+        # Добавляем избранные каналы в начало
+        channels = favorite_channels + channels
+        print(f"📊 Всего каналов после добавления избранных: {len(channels)}")
+
+    # 7. ПРОВЕРКА КАНАЛОВ
     print("\n" + "="*50)
     print("🔍 ПРОВЕРКА КАНАЛОВ")
     print("="*50)
@@ -551,8 +595,8 @@ def main():
     if skipped_count > 0:
         print(f"  ⏭️ Пропущено проверки: {skipped_count}")
     print(f"  📊 Процент рабочих: {round(len(working)/(len(working)+len(dead))*100, 1) if (len(working)+len(dead)) > 0 else 0}%")
-    
-    # 5. СОБИРАЕМ СТАТИСТИКУ
+
+    # 8. СОБИРАЕМ СТАТИСТИКУ
     now = get_moscow_time()
     stats = {
         'total': len(working) + len(dead),
@@ -563,22 +607,22 @@ def main():
         'skipped': skipped_count,
         'blocked': blocked_count,
     }
-    
-    # 6. СОЗДАЁМ ИНФОРМАЦИОННЫЙ КАНАЛ
+
+    # 9. СОЗДАЁМ ИНФОРМАЦИОННЫЙ КАНАЛ
     print("\n" + "="*50)
     print("📅 ДОБАВЛЕНИЕ ИНФОРМАЦИОННОГО КАНАЛА")
     print("="*50)
     info_channel = create_info_channel(now)
     working.append(info_channel)
     print(f"✅ Добавлен информационный канал: {info_channel['info']}")
-    
-    # 7. СОЗДАЁМ EPG ФАЙЛ
+
+    # 10. СОЗДАЁМ EPG ФАЙЛ
     print("\n" + "="*50)
     print("📅 СОЗДАНИЕ EPG ФАЙЛА")
     print("="*50)
     create_epg_file(now, stats, epg_file)
-    
-    # 8. СОХРАНЯЕМ ПЛЕЙЛИСТ
+
+    # 11. СОХРАНЯЕМ ПЛЕЙЛИСТ
     if working:
         write_m3u_with_groups(working, output_file, now, stats)
         print(f"\n✅ Плейлист сохранён: {output_file}")
@@ -592,7 +636,7 @@ def main():
             print(f"  {group}: {count} каналов")
     else:
         print("\n❌ Нет рабочих каналов!")
-    
+
     print("\n" + "="*50)
     print("✅ Готово!")
     print("="*50)
