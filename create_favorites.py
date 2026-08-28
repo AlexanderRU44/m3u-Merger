@@ -60,6 +60,7 @@ FAVORITE_RULES = {
     'loganet_tv.m3u': [
         ('Кино', '.Black'),
         ('Развлечение', '2x2'),
+        ('Развлечение', 'Investigation Discovery HD'),
     ],
 }
 
