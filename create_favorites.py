@@ -419,15 +419,27 @@ def create_epg_file(update_time, stats, output_file='./output/epg.xml'):
     print(f"📅 EPG файл сохранён: {output_file}")
     print(f"   {desc}")
 
-def write_m3u_with_groups(channels, output_file, update_time, stats):
+def write_m3u_with_groups(channels, output_file, update_time, stats, favorite_urls=None):
     output_path = Path(output_file)
     output_path.parent.mkdir(parents=True, exist_ok=True)
+    
     groups = {}
+    
     for ch in channels:
-        new_group = get_new_group(ch['info'])
+        # Проверяем, является ли канал избранным (по URL)
+        is_favorite = favorite_urls and ch['url'] in favorite_urls
+        
+        if is_favorite:
+            # Принудительно отправляем в группу ❤️ Избранное
+            new_group = '❤️ Избранное'
+        else:
+            # Для остальных каналов определяем группу как обычно
+            new_group = get_new_group(ch['info'])
+        
         if new_group not in groups:
             groups[new_group] = []
         groups[new_group].append(ch)
+    
     group_order = [
         '❤️ Избранное',
         '⌚ Архив',
@@ -439,9 +451,12 @@ def write_m3u_with_groups(channels, output_file, update_time, stats):
         '👶 Детские и мультипликационные',
         '📦 Прочее',
     ]
+    
     other_groups = sorted([g for g in groups.keys() if g not in group_order])
     ordered_groups = [g for g in group_order if g in groups] + other_groups
+    
     epg_url = 'https://raw.githubusercontent.com/AlexanderRU44/m3u-Merger/main/output/epg.xml'
+    
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write('#EXTM3U\n')
         f.write(f'# EPG: {epg_url}\n')
@@ -459,6 +474,7 @@ def write_m3u_with_groups(channels, output_file, update_time, stats):
         if stats.get('blocked') is not None:
             f.write(f'# Удалено заблокированных каналов: {stats["blocked"]}\n')
         f.write('\n')
+        
         for group_name in ordered_groups:
             channel_list = groups[group_name]
             f.write(f'# === ГРУППА: {group_name} ===\n')
@@ -534,6 +550,7 @@ def main():
 
     # 1. НАХОДИМ КАНАЛЫ ДЛЯ ИЗБРАННОГО
     favorite_channels = find_favorite_channels(playlists_dir)
+    favorite_urls = {ch['url'] for ch in favorite_channels} if favorite_channels else set()
 
     # 2. ЧИТАЕМ ОСНОВНОЙ ПЛЕЙЛИСТ
     print("\n📖 ЧТЕНИЕ ФАЙЛА merged.m3u")
@@ -577,7 +594,6 @@ def main():
         print("❤️  ДОБАВЛЕНИЕ КАНАЛОВ В ИЗБРАННОЕ")
         print("="*50)
         # Удаляем возможные дубли из основного списка (по URL)
-        favorite_urls = {ch['url'] for ch in favorite_channels}
         channels = [ch for ch in channels if ch['url'] not in favorite_urls]
         # Добавляем избранные каналы в начало
         channels = favorite_channels + channels
@@ -624,13 +640,18 @@ def main():
 
     # 11. СОХРАНЯЕМ ПЛЕЙЛИСТ
     if working:
-        write_m3u_with_groups(working, output_file, now, stats)
+        write_m3u_with_groups(working, output_file, now, stats, favorite_urls)
         print(f"\n✅ Плейлист сохранён: {output_file}")
         print(f"   Всего каналов: {len(working)}")
         print("\n📂 Распределение по категориям:")
         temp_groups = {}
         for ch in working:
-            group = get_new_group(ch['info'])
+            # Для подсчёта используем ту же логику
+            is_fav = ch['url'] in favorite_urls
+            if is_fav:
+                group = '❤️ Избранное'
+            else:
+                group = get_new_group(ch['info'])
             temp_groups[group] = temp_groups.get(group, 0) + 1
         for group, count in sorted(temp_groups.items(), key=lambda x: -x[1]):
             print(f"  {group}: {count} каналов")
