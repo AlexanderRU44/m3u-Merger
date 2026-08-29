@@ -15,8 +15,8 @@ from datetime import datetime, timezone, timedelta
 # 🔽 НАСТРОЙКИ ПРОВЕРКИ
 # ═══════════════════════════════════════════════════════════════
 
-CHECK_TIMEOUT = 3              # Таймаут на первую проверку (секунд)
-CHECK_TIMEOUT_RETRY = 12       # Таймаут на повторную проверку (секунд)
+CHECK_TIMEOUT = 5              # Таймаут на первую проверку (секунд)
+CHECK_TIMEOUT_RETRY = 15       # Таймаут на повторную проверку (секунд)
 MAX_WORKERS = 30               # Количество параллельных проверок
 
 # ═══════════════════════════════════════════════════════════════
@@ -375,7 +375,7 @@ def check_all_parallel(channels, max_workers=MAX_WORKERS, favorite_urls=None, re
     check_func = check_stream_retry if retry else check_stream
     
     total = len(channels)
-    print(f"🚀 {'Повторная' if retry else 'Первая'} проверка {total} каналов (таймаут: {timeout}с)")
+    print(f"🚀 {'Перепроверка' if retry else 'Первая'} проверка {total} каналов (таймаут: {timeout}с)")
     
     working = []
     dead = []
@@ -657,30 +657,29 @@ def main():
     print("🔍 ПЕРВАЯ ПРОВЕРКА КАНАЛОВ (быстрая)")
     print("="*50)
     working, dead = check_all_parallel(channels, MAX_WORKERS, favorite_urls, retry=False)
-    
+
     print(f"\n📊 После первой проверки:")
     print(f"  ✅ Работает: {len(working)}")
     print(f"  ❌ Не работает: {len(dead)}")
-    
+
     # =============================================
-    # 2. ПОВТОРНАЯ ПРОВЕРКА (все упавшие)
+    # 2. ПЕРЕПРОВЕРКА РАБОЧИХ КАНАЛОВ (с большим таймаутом)
     # =============================================
-    if dead:
+    if working:
         print("\n" + "="*50)
-        print("🔍 ПОВТОРНАЯ ПРОВЕРКА ВСЕХ УПАВШИХ КАНАЛОВ (с большим таймаутом)")
+        print("🔍 ПЕРЕПРОВЕРКА РАБОЧИХ КАНАЛОВ (с большим таймаутом)")
         print("="*50)
-        
-        retry_working, retry_dead = check_all_parallel(dead, MAX_WORKERS, favorite_urls, retry=True)
-        
-        # Добавляем ожившие обратно
-        working.extend(retry_working)
-        dead = retry_dead
-        
-        print(f"\n📊 После повторной проверки:")
-        print(f"  ✅ Ожило: {len(retry_working)}")
-        print(f"  ❌ Окончательно не работает: {len(retry_dead)}")
+
+        recheck_working, recheck_dead = check_all_parallel(working, MAX_WORKERS, favorite_urls, retry=True)
+
+        working = recheck_working
+        dead.extend(recheck_dead)
+
+        print(f"\n📊 После перепроверки рабочих:")
+        print(f"  ✅ Осталось рабочих: {len(recheck_working)}")
+        print(f"  ❌ Отсеяно при перепроверке: {len(recheck_dead)}")
     else:
-        print("\n✅ Все каналы рабочие, повторная проверка не нужна.")
+        print("\n⚠️ Нет рабочих каналов для перепроверки.")
 
     # Финальная статистика
     skipped_count = sum(1 for ch in working if should_skip_check(ch['info']) or (favorite_urls and ch['url'] in favorite_urls))
