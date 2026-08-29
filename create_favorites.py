@@ -58,7 +58,6 @@ FAVORITE_RULES = {
         ('Wink (VPN 🇷🇺)', 'НТВ'),
     ],
     'loganet_tv.m3u': [
-        ('Кино', '.Black'),
         ('Развлечение', '2x2'),
         ('Развлечение', 'Investigation Discovery HD'),
     ],
