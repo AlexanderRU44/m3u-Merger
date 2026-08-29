@@ -15,10 +15,9 @@ from datetime import datetime, timezone, timedelta
 # 🔽 НАСТРОЙКИ ПРОВЕРКИ
 # ═══════════════════════════════════════════════════════════════
 
-CHECK_TIMEOUT = 3          # Таймаут на быструю проверку (секунд)
-CHECK_TIMEOUT_DEEP = 10    # Таймаут на глубокую проверку (секунд)
-MAX_WORKERS = 20           # Количество параллельных проверок
-DEEP_CHECK_LIMIT = 100     # Максимум каналов для глубокой проверки (чтобы не тормозить)
+CHECK_TIMEOUT = 3              # Таймаут на первую проверку (секунд)
+CHECK_TIMEOUT_RETRY = 12       # Таймаут на повторную проверку (секунд)
+MAX_WORKERS = 30               # Количество параллельных проверок
 
 # ═══════════════════════════════════════════════════════════════
 # 🔽 ГРУППЫ, КОТОРЫЕ НЕ ПРОВЕРЯЕМ
@@ -339,85 +338,53 @@ def should_skip_check(info_line):
             return True
     return False
 
-def check_stream_fast(url, timeout=CHECK_TIMEOUT):
-    """
-    Быстрая проверка: проверяет, что сервер отвечает и есть данные.
-    """
+def check_stream(url, timeout=CHECK_TIMEOUT):
+    """Быстрая проверка"""
     if not url or not url.startswith(('http://', 'https://')):
-        return False, None
-    
+        return False
     try:
         headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
         response = requests.get(url, headers=headers, timeout=timeout, stream=True)
-        
-        if response.status_code != 200:
-            return False, None
-        
-        chunk = response.raw.read(1024)
-        if not chunk:
-            return False, None
-        
-        return True, chunk
-    except Exception:
-        return False, None
-
-def check_stream_deep(url, chunk, timeout=CHECK_TIMEOUT_DEEP):
-    """
-    Глубокая проверка: скачивает больше данных и проверяет признаки видео.
-    """
-    try:
-        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
-        response = requests.get(url, headers=headers, timeout=timeout, stream=True)
-        
         if response.status_code != 200:
             return False
-        
-        # Скачиваем ещё 50 КБ
-        more_data = response.raw.read(50000)
-        data = chunk + more_data
-        
-        # Проверяем признаки видео
-        if b'\x47' in data[:188]:  # MPEG-TS синхробайт
-            return True
-        if b'ftyp' in data[:100]:  # MP4
-            return True
-        if b'#EXTM3U' in data[:1000]:  # HLS плейлист
-            return True
-        if b'#EXT-X-STREAM-INF' in data[:1000]:  # HLS мастер-плейлист
-            return True
-        if b'#EXT-X-TARGETDURATION' in data[:1000]:  # HLS с параметрами
-            return True
-        if b'#EXT-X-MEDIA-SEQUENCE' in data[:1000]:  # HLS с параметрами
-            return True
-        
-        # Если есть больше 10 КБ данных — считаем рабочим (может быть нестандартный формат)
-        if len(data) > 10240:
-            return True
-        
-        return False
+        chunk = response.raw.read(1024)
+        return bool(chunk)
     except Exception:
         return False
 
-def check_all_parallel(channels, max_workers=MAX_WORKERS, favorite_urls=None):
+def check_stream_retry(url, timeout=CHECK_TIMEOUT_RETRY):
+    """Повторная проверка с большим таймаутом"""
+    if not url or not url.startswith(('http://', 'https://')):
+        return False
+    try:
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
+        response = requests.get(url, headers=headers, timeout=timeout, stream=True)
+        if response.status_code != 200:
+            return False
+        chunk = response.raw.read(5120)
+        return bool(chunk)
+    except Exception:
+        return False
+
+def check_all_parallel(channels, max_workers=MAX_WORKERS, favorite_urls=None, retry=False):
     """
-    Проверяет все каналы параллельно.
-    - Быстрая проверка для всех
-    - Глубокая проверка для подозрительных
+    Проверяет все каналы параллельно (без ограничений).
+    retry=True — использует повторную проверку с большим таймаутом.
     """
+    timeout = CHECK_TIMEOUT_RETRY if retry else CHECK_TIMEOUT
+    check_func = check_stream_retry if retry else check_stream
+    
     total = len(channels)
-    print(f"🚀 Параллельная проверка {total} каналов (потоков: {max_workers})")
+    print(f"🚀 {'Повторная' if retry else 'Первая'} проверка {total} каналов (таймаут: {timeout}с)")
     
     working = []
     dead = []
     skipped = []
-    suspicious = []  # Каналы для глубокой проверки
     checked = 0
     
     start_time = time.time()
     
-    # 1. БЫСТРАЯ ПРОВЕРКА
-    print("   🔍 Быстрая проверка...")
-    
+    # Пропускаем проверку для избранных и SKIP_CHECK_GROUPS
     to_check = []
     for ch in channels:
         if favorite_urls and ch['url'] in favorite_urls:
@@ -437,60 +404,27 @@ def check_all_parallel(channels, max_workers=MAX_WORKERS, favorite_urls=None):
         return working, dead
     
     with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
-        future_to_channel = {executor.submit(check_stream_fast, ch['url']): ch for ch in to_check}
+        future_to_channel = {executor.submit(check_func, ch['url'], timeout): ch for ch in to_check}
+        
         for future in concurrent.futures.as_completed(future_to_channel):
             ch = future_to_channel[future]
             checked += 1
             try:
-                is_working, chunk = future.result(timeout=CHECK_TIMEOUT + 2)
+                is_working = future.result(timeout=timeout + 2)
                 if is_working:
-                    # Прошёл быструю проверку → добавляем
                     working.append(ch)
                 else:
-                    # Не прошёл → отправляем на глубокую проверку
-                    suspicious.append(ch)
+                    dead.append(ch)
             except:
-                suspicious.append(ch)
+                dead.append(ch)
             
             if checked % 10 == 0 or checked == total:
                 elapsed = time.time() - start_time
                 rate = checked / elapsed if elapsed > 0 else 0
-                sys.stdout.write(f"\r  [{checked}/{total}] ✅ {len(working)} | ❌ {len(dead)} | ❓ {len(suspicious)} | {rate:.1f} каналов/сек")
+                sys.stdout.write(f"\r  [{checked}/{total}] ✅ {len(working)} | ❌ {len(dead)} | {rate:.1f} кан/с")
                 sys.stdout.flush()
     
     print()
-    print(f"   🔄 Глубокая проверка {len(suspicious)} подозрительных каналов...")
-    
-    # 2. ГЛУБОКАЯ ПРОВЕРКА (только для подозрительных)
-    if suspicious:
-        # Ограничиваем количество глубоких проверок, чтобы не тормозить
-        suspicious_to_check = suspicious[:DEEP_CHECK_LIMIT]
-        if len(suspicious) > DEEP_CHECK_LIMIT:
-            print(f"   ⚠️ Слишком много подозрительных ({len(suspicious)}), проверяем только {DEEP_CHECK_LIMIT}")
-        
-        checked_deep = 0
-        for ch in suspicious_to_check:
-            checked_deep += 1
-            # Берём chunk из быстрой проверки (если есть)
-            is_working = check_stream_deep(ch['url'], b'')
-            if is_working:
-                working.append(ch)
-            else:
-                dead.append(ch)
-            
-            if checked_deep % 10 == 0 or checked_deep == len(suspicious_to_check):
-                sys.stdout.write(f"\r  Глубокая: [{checked_deep}/{len(suspicious_to_check)}] ✅ {len(working)} | ❌ {len(dead)}")
-                sys.stdout.flush()
-        
-        # Остальные подозрительные считаем нерабочими
-        if len(suspicious) > DEEP_CHECK_LIMIT:
-            dead.extend(suspicious[DEEP_CHECK_LIMIT:])
-        
-        print()
-    
-    # 3. ФИНАЛЬНАЯ СТАТИСТИКА
-    print(f"\n   📊 Итог: ✅ {len(working)} | ❌ {len(dead)} | ⏭️ {len(skipped)}")
-    
     return working, dead
 
 def create_info_channel(update_time):
@@ -716,12 +650,41 @@ def main():
         channels = favorite_channels + channels
         print(f"📊 Всего каналов после добавления избранных: {len(channels)}")
 
+    # =============================================
+    # 1. ПЕРВАЯ ПРОВЕРКА (быстрая)
+    # =============================================
     print("\n" + "="*50)
-    print("🔍 ПРОВЕРКА КАНАЛОВ")
+    print("🔍 ПЕРВАЯ ПРОВЕРКА КАНАЛОВ (быстрая)")
     print("="*50)
-    working, dead = check_all_parallel(channels, MAX_WORKERS, favorite_urls)
+    working, dead = check_all_parallel(channels, MAX_WORKERS, favorite_urls, retry=False)
+    
+    print(f"\n📊 После первой проверки:")
+    print(f"  ✅ Работает: {len(working)}")
+    print(f"  ❌ Не работает: {len(dead)}")
+    
+    # =============================================
+    # 2. ПОВТОРНАЯ ПРОВЕРКА (все упавшие)
+    # =============================================
+    if dead:
+        print("\n" + "="*50)
+        print("🔍 ПОВТОРНАЯ ПРОВЕРКА ВСЕХ УПАВШИХ КАНАЛОВ (с большим таймаутом)")
+        print("="*50)
+        
+        retry_working, retry_dead = check_all_parallel(dead, MAX_WORKERS, favorite_urls, retry=True)
+        
+        # Добавляем ожившие обратно
+        working.extend(retry_working)
+        dead = retry_dead
+        
+        print(f"\n📊 После повторной проверки:")
+        print(f"  ✅ Ожило: {len(retry_working)}")
+        print(f"  ❌ Окончательно не работает: {len(retry_dead)}")
+    else:
+        print("\n✅ Все каналы рабочие, повторная проверка не нужна.")
+
+    # Финальная статистика
     skipped_count = sum(1 for ch in working if should_skip_check(ch['info']) or (favorite_urls and ch['url'] in favorite_urls))
-    print(f"\n📊 Результат:")
+    print(f"\n📊 Финальный результат:")
     print(f"  ✅ Работает: {len(working)}")
     print(f"  ❌ Не работает: {len(dead)}")
     if skipped_count > 0:
