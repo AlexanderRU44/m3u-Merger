@@ -15,9 +15,10 @@ from datetime import datetime, timezone, timedelta
 # 🔽 НАСТРОЙКИ ПРОВЕРКИ
 # ═══════════════════════════════════════════════════════════════
 
-CHECK_TIMEOUT = 5              # Таймаут на первую проверку (секунд)
-CHECK_TIMEOUT_RETRY = 15       # Таймаут на повторную проверку (секунд)
-MAX_WORKERS = 30               # Количество параллельных проверок
+CHECK_TIMEOUT = 3              # Таймаут на первую проверку (секунд)
+CHECK_TIMEOUT_RETRY = 20       # Таймаут на повторную проверку (секунд)
+MAX_WORKERS = 20               # Количество параллельных проверок
+MAX_WORKERS_RETRY = 10         # Количество параллельных проверок для повторной (меньше, чтобы не перегружать)
 
 # ═══════════════════════════════════════════════════════════════
 # 🔽 ГРУППЫ, КОТОРЫЕ НЕ ПРОВЕРЯЕМ
@@ -353,29 +354,60 @@ def check_stream(url, timeout=CHECK_TIMEOUT):
         return False
 
 def check_stream_retry(url, timeout=CHECK_TIMEOUT_RETRY):
-    """Повторная проверка с большим таймаутом"""
+    """
+    Повторная проверка с большим таймаутом и загрузкой данных.
+    """
     if not url or not url.startswith(('http://', 'https://')):
         return False
     try:
         headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
         response = requests.get(url, headers=headers, timeout=timeout, stream=True)
+        
         if response.status_code != 200:
             return False
-        chunk = response.raw.read(5120)
-        return bool(chunk)
+        
+        # Читаем больше данных (50 КБ), чтобы убедиться, что поток действительно идёт
+        data = b''
+        start_time = time.time()
+        while len(data) < 50000 and (time.time() - start_time) < timeout:
+            chunk = response.raw.read(1024)
+            if not chunk:
+                break
+            data += chunk
+            
+            # Проверяем признаки видео
+            if b'\x47' in data[:188]:  # MPEG-TS
+                return True
+            if b'ftyp' in data[:100]:  # MP4
+                return True
+            if b'#EXTM3U' in data[:1000]:  # HLS
+                return True
+        
+        # Если загрузили больше 10 КБ и нет признаков видео — считаем рабочим
+        # (может быть нестандартный формат)
+        return len(data) > 10000
+        
+    except requests.exceptions.Timeout:
+        return False
     except Exception:
         return False
 
 def check_all_parallel(channels, max_workers=MAX_WORKERS, favorite_urls=None, retry=False):
     """
-    Проверяет все каналы параллельно (без ограничений).
+    Проверяет все каналы параллельно.
     retry=True — использует повторную проверку с большим таймаутом.
     """
     timeout = CHECK_TIMEOUT_RETRY if retry else CHECK_TIMEOUT
     check_func = check_stream_retry if retry else check_stream
     
+    # Для повторной проверки используем меньше потоков
+    if retry:
+        workers = min(max_workers, MAX_WORKERS_RETRY)
+    else:
+        workers = max_workers
+    
     total = len(channels)
-    print(f"🚀 {'Перепроверка' if retry else 'Первая'} проверка {total} каналов (таймаут: {timeout}с)")
+    print(f"🚀 {'Перепроверка' if retry else 'Первая'} проверка {total} каналов (таймаут: {timeout}с, потоков: {workers})")
     
     working = []
     dead = []
@@ -403,19 +435,21 @@ def check_all_parallel(channels, max_workers=MAX_WORKERS, favorite_urls=None, re
         print("   ✅ Все каналы пропущены проверки!")
         return working, dead
     
-    with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as executor:
         future_to_channel = {executor.submit(check_func, ch['url'], timeout): ch for ch in to_check}
         
         for future in concurrent.futures.as_completed(future_to_channel):
             ch = future_to_channel[future]
             checked += 1
             try:
-                is_working = future.result(timeout=timeout + 2)
+                is_working = future.result(timeout=timeout + 5)
                 if is_working:
                     working.append(ch)
                 else:
                     dead.append(ch)
-            except:
+            except concurrent.futures.TimeoutError:
+                dead.append(ch)
+            except Exception:
                 dead.append(ch)
             
             if checked % 10 == 0 or checked == total:
