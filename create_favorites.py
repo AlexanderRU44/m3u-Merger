@@ -4,6 +4,8 @@
 import re
 import sys
 import time
+import json
+import os
 import requests
 import concurrent.futures
 from pathlib import Path
@@ -13,8 +15,10 @@ from datetime import datetime, timezone, timedelta
 # 🔽 НАСТРОЙКИ ПРОВЕРКИ
 # ═══════════════════════════════════════════════════════════════
 
-CHECK_TIMEOUT = 3
-MAX_WORKERS = 20
+CHECK_TIMEOUT = 3          # Таймаут на быструю проверку (секунд)
+CHECK_TIMEOUT_DEEP = 10    # Таймаут на глубокую проверку (секунд)
+MAX_WORKERS = 20           # Количество параллельных проверок
+DEEP_CHECK_LIMIT = 100     # Максимум каналов для глубокой проверки (чтобы не тормозить)
 
 # ═══════════════════════════════════════════════════════════════
 # 🔽 ГРУППЫ, КОТОРЫЕ НЕ ПРОВЕРЯЕМ
@@ -46,26 +50,35 @@ BLOCKED_GROUPS = [
     'Shop', 'Travel', 'Sports', 'Religious', 'News', 'Music',
     'Фильмы на (UZB) языке', 'Христианские', 'Спорт', 'СПОРТ',
     'Спортивные', 'Спорткомплекс 🏆', 'Фильмы на (RU)',
-    'Hetzner Online AG',  # <-- Добавлено
+    'Hetzner Online AG',
 ]
 
 # ═══════════════════════════════════════════════════════════════
 # 🔽 ПРАВИЛА ДЛЯ ИЗБРАННОГО (ФАЙЛ → ГРУППА → КАНАЛ)
 # ═══════════════════════════════════════════════════════════════
 
-FAVORITE_RULES = {
-    'dimonovich_tv.m3u': [
-        ('Rutube (VPN)', 'Первый канал HD'),
-        ('Wink (VPN 🇷🇺)', 'НТВ'),
-    ],
-    'loganet_tv.m3u': [
-        ('Развлечение', '2x2'),
-        ('Развлечение', 'Investigation Discovery HD'),
-    ],
-    'bugsfreeweb.m3u': [
-        ('Кино', '.Black'),
-    ],
-}
+def load_rules_from_json():
+    """Загружает правила из favorites_rules.json (если есть)"""
+    rules_file = "favorites_rules.json"
+    if os.path.exists(rules_file):
+        try:
+            with open(rules_file, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except:
+            pass
+    # Правила по умолчанию, если JSON нет
+    return {
+        'dimonovich_tv.m3u': [
+            ['Rutube (VPN)', 'Первый канал HD'],
+            ['Wink (VPN 🇷🇺)', 'НТВ'],
+        ],
+        'loganet_tv.m3u': [
+            ['Кино', '.Black'],
+            ['Развлечение', '2x2'],
+        ],
+    }
+
+FAVORITE_RULES = load_rules_from_json()
 
 # ═══════════════════════════════════════════════════════════════
 # 🔽 ПРАВИЛА ПЕРЕГРУППИРОВКИ
@@ -326,33 +339,87 @@ def should_skip_check(info_line):
             return True
     return False
 
-def check_stream(url, timeout=CHECK_TIMEOUT):
+def check_stream_fast(url, timeout=CHECK_TIMEOUT):
+    """
+    Быстрая проверка: проверяет, что сервер отвечает и есть данные.
+    """
     if not url or not url.startswith(('http://', 'https://')):
-        return False
+        return False, None
+    
     try:
         headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
         response = requests.get(url, headers=headers, timeout=timeout, stream=True)
+        
+        if response.status_code != 200:
+            return False, None
+        
+        chunk = response.raw.read(1024)
+        if not chunk:
+            return False, None
+        
+        return True, chunk
+    except Exception:
+        return False, None
+
+def check_stream_deep(url, chunk, timeout=CHECK_TIMEOUT_DEEP):
+    """
+    Глубокая проверка: скачивает больше данных и проверяет признаки видео.
+    """
+    try:
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
+        response = requests.get(url, headers=headers, timeout=timeout, stream=True)
+        
         if response.status_code != 200:
             return False
-        chunk = response.raw.read(1024)
-        return bool(chunk)
+        
+        # Скачиваем ещё 50 КБ
+        more_data = response.raw.read(50000)
+        data = chunk + more_data
+        
+        # Проверяем признаки видео
+        if b'\x47' in data[:188]:  # MPEG-TS синхробайт
+            return True
+        if b'ftyp' in data[:100]:  # MP4
+            return True
+        if b'#EXTM3U' in data[:1000]:  # HLS плейлист
+            return True
+        if b'#EXT-X-STREAM-INF' in data[:1000]:  # HLS мастер-плейлист
+            return True
+        if b'#EXT-X-TARGETDURATION' in data[:1000]:  # HLS с параметрами
+            return True
+        if b'#EXT-X-MEDIA-SEQUENCE' in data[:1000]:  # HLS с параметрами
+            return True
+        
+        # Если есть больше 10 КБ данных — считаем рабочим (может быть нестандартный формат)
+        if len(data) > 10240:
+            return True
+        
+        return False
     except Exception:
         return False
 
 def check_all_parallel(channels, max_workers=MAX_WORKERS, favorite_urls=None):
+    """
+    Проверяет все каналы параллельно.
+    - Быстрая проверка для всех
+    - Глубокая проверка для подозрительных
+    """
     total = len(channels)
     print(f"🚀 Параллельная проверка {total} каналов (потоков: {max_workers})")
     
     working = []
     dead = []
     skipped = []
+    suspicious = []  # Каналы для глубокой проверки
     checked = 0
     
     start_time = time.time()
     
+    # 1. БЫСТРАЯ ПРОВЕРКА
+    print("   🔍 Быстрая проверка...")
+    
     to_check = []
     for ch in channels:
-        # Пропускаем проверку для избранных каналов
         if favorite_urls and ch['url'] in favorite_urls:
             skipped.append(ch)
             working.append(ch)
@@ -363,32 +430,67 @@ def check_all_parallel(channels, max_workers=MAX_WORKERS, favorite_urls=None):
             to_check.append(ch)
     
     if skipped:
-        print(f"⏭️ Пропущено проверки: {len(skipped)} каналов")
+        print(f"   ⏭️ Пропущено проверки: {len(skipped)} каналов")
     
     if not to_check:
-        print("✅ Все каналы пропущены проверки!")
+        print("   ✅ Все каналы пропущены проверки!")
         return working, dead
     
     with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
-        future_to_channel = {executor.submit(check_stream, ch['url']): ch for ch in to_check}
+        future_to_channel = {executor.submit(check_stream_fast, ch['url']): ch for ch in to_check}
         for future in concurrent.futures.as_completed(future_to_channel):
             ch = future_to_channel[future]
             checked += 1
             try:
-                is_working = future.result(timeout=CHECK_TIMEOUT + 2)
+                is_working, chunk = future.result(timeout=CHECK_TIMEOUT + 2)
                 if is_working:
+                    # Прошёл быструю проверку → добавляем
                     working.append(ch)
                 else:
-                    dead.append(ch)
+                    # Не прошёл → отправляем на глубокую проверку
+                    suspicious.append(ch)
             except:
-                dead.append(ch)
+                suspicious.append(ch)
+            
             if checked % 10 == 0 or checked == total:
                 elapsed = time.time() - start_time
                 rate = checked / elapsed if elapsed > 0 else 0
-                sys.stdout.write(f"\r  [{checked}/{total}] ✅ {len(working)} | ❌ {len(dead)} | {rate:.1f} каналов/сек")
+                sys.stdout.write(f"\r  [{checked}/{total}] ✅ {len(working)} | ❌ {len(dead)} | ❓ {len(suspicious)} | {rate:.1f} каналов/сек")
                 sys.stdout.flush()
     
     print()
+    print(f"   🔄 Глубокая проверка {len(suspicious)} подозрительных каналов...")
+    
+    # 2. ГЛУБОКАЯ ПРОВЕРКА (только для подозрительных)
+    if suspicious:
+        # Ограничиваем количество глубоких проверок, чтобы не тормозить
+        suspicious_to_check = suspicious[:DEEP_CHECK_LIMIT]
+        if len(suspicious) > DEEP_CHECK_LIMIT:
+            print(f"   ⚠️ Слишком много подозрительных ({len(suspicious)}), проверяем только {DEEP_CHECK_LIMIT}")
+        
+        checked_deep = 0
+        for ch in suspicious_to_check:
+            checked_deep += 1
+            # Берём chunk из быстрой проверки (если есть)
+            is_working = check_stream_deep(ch['url'], b'')
+            if is_working:
+                working.append(ch)
+            else:
+                dead.append(ch)
+            
+            if checked_deep % 10 == 0 or checked_deep == len(suspicious_to_check):
+                sys.stdout.write(f"\r  Глубокая: [{checked_deep}/{len(suspicious_to_check)}] ✅ {len(working)} | ❌ {len(dead)}")
+                sys.stdout.flush()
+        
+        # Остальные подозрительные считаем нерабочими
+        if len(suspicious) > DEEP_CHECK_LIMIT:
+            dead.extend(suspicious[DEEP_CHECK_LIMIT:])
+        
+        print()
+    
+    # 3. ФИНАЛЬНАЯ СТАТИСТИКА
+    print(f"\n   📊 Итог: ✅ {len(working)} | ❌ {len(dead)} | ⏭️ {len(skipped)}")
+    
     return working, dead
 
 def create_info_channel(update_time):
