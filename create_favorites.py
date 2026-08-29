@@ -70,11 +70,21 @@ def load_rules_from_json():
     return {
         'dimonovich_tv.m3u': [
             ['Rutube (VPN)', 'Первый канал HD'],
-            ['Wink (VPN 🇷🇺)', 'НТВ'],
+            ['Rutube (VPN)', 'НТВ HD'],
+            ['Rutube (VPN)', 'ТВ3 HD'],
+            ['Rutube (VPN)', 'ТНТ HD'],
+            ['Rutube (VPN)', 'Пятница HD'],
+            ['Wink (VPN 🇷🇺)', 'Пятый канал'],
+            ['Individual Entrepreneur', 'НСТ']
+            ['С сайтов (VPN)', 'ТВЦ']
         ],
         'loganet_tv.m3u': [
-            ['Кино', '.Black'],
-            ['Развлечение', '2x2'],
+            ['Развлечение', '.Investigation Discovery HD'],
+            ['Кино', 'Кинохит HD']
+            ['Кино', 'Киноужас HD']
+        ],
+                'bugsfreeweb.m3u': [
+            ['Россия', 'СТС HD']
         ],
     }
 
