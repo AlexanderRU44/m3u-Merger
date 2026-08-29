@@ -75,16 +75,16 @@ def load_rules_from_json():
             ['Rutube (VPN)', 'ТНТ HD'],
             ['Rutube (VPN)', 'Пятница HD'],
             ['Wink (VPN 🇷🇺)', 'Пятый канал'],
-            ['Individual Entrepreneur', 'НСТ']
-            ['С сайтов (VPN)', 'ТВЦ']
+            ['Individual Entrepreneur', 'НСТ'],
+            ['С сайтов (VPN)', 'ТВЦ'],
         ],
         'loganet_tv.m3u': [
             ['Развлечение', '.Investigation Discovery HD'],
-            ['Кино', 'Кинохит HD']
-            ['Кино', 'Киноужас HD']
+            ['Кино', 'Кинохит HD'],
+            ['Кино', 'Киноужас HD'],
         ],
                 'bugsfreeweb.m3u': [
-            ['Россия', 'СТС HD']
+            ['Россия', 'СТС HD'],
         ],
     }
 
