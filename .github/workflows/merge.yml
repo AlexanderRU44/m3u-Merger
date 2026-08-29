@@ -2,7 +2,7 @@ name: Merge Playlists
 
 on:
   schedule:
-    - cron: '0 */6 * * *'  # Каждые 6 часов
+    - cron: '0 */6 * * *'
   push:
     paths:
       - 'playlists/**'
@@ -13,6 +13,8 @@ on:
 jobs:
   merge:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
       
@@ -37,3 +39,5 @@ jobs:
           git add output/merged.m3u playlists/
           git diff --staged --quiet || git commit -m "Auto update merged playlist"
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

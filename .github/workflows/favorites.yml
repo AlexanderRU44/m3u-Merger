@@ -1,15 +1,13 @@
 name: Create Favorites Playlist
 
 on:
-  workflow_dispatch:  # Только ручной запуск!
-  # push:            # <- ЗАКОММЕНТИРОВАНО!
-  #   paths:
-  #     - 'playlists/**'
-  #     - 'favorites_rules.json'
+  workflow_dispatch:
 
 jobs:
   favorites:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
       
@@ -33,3 +31,5 @@ jobs:
           git add output/favorites.m3u output/epg.xml
           git diff --staged --quiet || git commit -m "Auto update favorites playlist"
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
