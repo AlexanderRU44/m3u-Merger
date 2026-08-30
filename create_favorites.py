@@ -80,6 +80,7 @@ def load_rules_from_json():
         ],
         'loganet_tv.m3u': [
             ['Развлечение', '.Investigation Discovery HD'],
+          ['Развлечение', '.Investigation Discovery'],
             ['Кино', 'Кинохит HD'],
             ['Кино', 'Киноужас HD'],
         ],
