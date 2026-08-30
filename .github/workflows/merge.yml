@@ -2,7 +2,7 @@ name: Merge Playlists
 
 on:
   schedule:
-    - cron: '0 */6 * * *'  # Каждые 6 часов
+    - cron: '0 */6 * * *'
   push:
     paths:
       - 'playlists/**'
@@ -42,19 +42,25 @@ jobs:
           else
             echo "changed=true" >> $GITHUB_OUTPUT
             echo "🔄 merged.m3u изменён"
-            # Сохраняем статистику для релиза
             if [ -f output/merged.m3u ]; then
               TOTAL=$(grep -c "^#EXTINF" output/merged.m3u || echo "0")
               echo "total_channels=$TOTAL" >> $GITHUB_OUTPUT
             fi
           fi
       
+      - name: Set date and time
+        id: datetime
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          echo "date=$(date '+%Y-%m-%d %H:%M:%S')" >> $GITHUB_OUTPUT
+          echo "date_short=$(date '+%Y-%m-%d')" >> $GITHUB_OUTPUT
+      
       - name: Commit and push merged.m3u (если есть изменения)
         if: steps.check_changes.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git commit -m "Auto update merged playlist - $(date '+%Y-%m-%d %H:%M:%S')"
+          git commit -m "Auto update merged playlist - ${{ steps.datetime.outputs.date }}"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -64,11 +70,11 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           tag_name: latest
-          name: "📺 Плейлист обновлён"
+          name: "📺 Плейлист обновлён — ${{ steps.datetime.outputs.date_short }}"
           body: |
             ## 🔄 Обновление merged.m3u
             
-            **Дата:** $(date '+%Y-%m-%d %H:%M:%S') MSK
+            **Дата:** ${{ steps.datetime.outputs.date }} MSK
             
             ### 📊 Статистика:
             - **Всего каналов:** ${{ steps.check_changes.outputs.total_channels || 'N/A' }}
