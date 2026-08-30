@@ -34,6 +34,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase
           git add output/favorites.m3u output/epg.xml
           git diff --staged --quiet || git commit -m "Auto update favorites playlist"
           git push
