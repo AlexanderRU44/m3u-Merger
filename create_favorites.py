@@ -15,10 +15,10 @@ from datetime import datetime, timezone, timedelta
 # 🔽 НАСТРОЙКИ ПРОВЕРКИ
 # ═══════════════════════════════════════════════════════════════
 
-CHECK_TIMEOUT = 3              # Таймаут на первую проверку (секунд)
-CHECK_TIMEOUT_RETRY = 20       # Таймаут на повторную проверку (секунд)
-MAX_WORKERS = 20               # Количество параллельных проверок
-MAX_WORKERS_RETRY = 10         # Количество параллельных проверок для повторной (меньше, чтобы не перегружать)
+CHECK_TIMEOUT = 3
+CHECK_TIMEOUT_RETRY = 20
+MAX_WORKERS = 20
+MAX_WORKERS_RETRY = 10
 
 # ═══════════════════════════════════════════════════════════════
 # 🔽 ГРУППЫ, КОТОРЫЕ НЕ ПРОВЕРЯЕМ
@@ -29,6 +29,163 @@ SKIP_CHECK_GROUPS = [
 ]
 
 ARCHIVE_SOURCE_GROUP = 'Wink (VPN 🇷🇺)'
+
+# ═══════════════════════════════════════════════════════════════
+# 🔽 КАНАЛЫ ДЛЯ ПОЛНОГО УДАЛЕНИЯ
+# ═══════════════════════════════════════════════════════════════
+
+REMOVE_CHANNELS = [
+    'Репортер 73',
+    'Рифей-ТВ',
+    'Сургут 24',
+    '31 канал (Челябинск)',
+    '41 Регион',
+    '12 канал HD (Омск)',
+    'Норд ТВ (Новодвинск)',
+    '6 ТВ',
+    '12 канал Череповец',
+    '7 канал Красноярск',
+    '8 канал (Владивосток)',
+    '8 канал (Красноярский край)',
+    '8 канал (Новосибирск)',
+    'TMTV',
+    'UGRA TRAVEL',
+    'АИСТ HD',
+    'Амурское областное телевидение',
+    'Ариг Ус 24 HD',
+    'Арктика 24',
+    '78 канал',
+    'Первый Севастопольский',
+    'НТС (Севастополь)',
+    'СТВ (Севастополь)',
+    'ТРК-555',
+    'Крым 1',
+    'Крым 24',
+    'Арктик-ТВ HD',
+    'Архыз-24 HD',
+    'Астрахань 24 HD',
+    'АТВ-Медиа',
+    'АТВ-Ставрополь',
+    'СТВ 24 (Северодвинск)',
+    'Барс плюс',
+    'Башкортостан 24',
+    'Белгород 24',
+    'Брянская Губерния HD',
+    'БСТ',
+    'Вариант V',
+    'Вектор 24',
+    'Ветта 24 Пермь',
+    'Волга',
+    'Волгоград 1',
+    'Волгоград-24 HD',
+    'ВОТтв HD',
+    'Время Н',
+    'Всё ТВ',
+    'ВТК 41 "Аргус"',
+    'Городской телеканал Ярославль',
+    'Губерния 33 HD',
+    'Губерния Самара',
+    'Девятка ТВ',
+    'Дзержинск ТВ',
+    'ДОН 24 HD',
+    'Евразия',
+    'Енисей HD',
+    'Ивановское общественное телевидение',
+    'Импульс Севера',
+    'Инфо 24 (Шадринск)',
+    'Информационная служба Югры',
+    'Кавказ 24',
+    'Камчатка HD',
+    'Каскад',
+    'Катунь 24',
+    'Краснодар HD',
+    'КТВ-Город',
+    'Кузбасс 1',
+    'Липецкое время',
+    'Майдан',
+    'Майкопское Телевидение',
+    'Матур ТВ',
+    'МИГ ТВ',
+    'Мир Белогорья',
+    'Мордовия 24',
+    'Муравленко 24',
+    'Народное телевидение Мордовии',
+    'Национальное ТВ Чувашии',
+    'Наш дом',
+    'Север (Нарьян-Мар)',
+    'Котлас ТВ (Арх. область)',
+    'Санкт-Петербург',
+    'Москва 24',
+    'Москва. Доверие',
+    'Наши города',
+    'НВК (Саха)',
+    'Ника-ТВ',
+    'ННТВ',
+    'Новое время (Радужный)',
+    'Новый век (Тамбов)',
+    'НСК 49',
+    'НТС Иркутск',
+    'НТС-Ирбит (Екатеринбург)',
+    'Область 45 HD',
+    'Объектив 59 HD',
+    'ОРТ-Планета (Оренбург)',
+    'Осетия Ирыстон HD',
+    'ОТВ Екатеринбург HD',
+    'ОТВ-Владивосток',
+    'ОТВ-Сахалин',
+    'ОТВ Челябинск',
+    'ОТС HD',
+    'Первый городской (Киров)',
+    'Первый областной (Орёл)',
+    'Первый Тульский HD',
+    'Первый Ярославский',
+    'Прима-ТВ',
+    'РГВК Дагестан',
+    'Регион 29',
+    'РТС-Абакан',
+    'Русский Север',
+    'Русь (Кострома)',
+    'Рыбинск-40',
+    'С1 Сургут HD',
+    'Самара-24',
+    'Самара-Гис',
+    'Сампо ТВ 360°',
+    'Саратов-24',
+    'Саха',
+    'Мамонт (Республика Саха - Якутск)',
+    'Своё ТВ Ставрополь HD',
+    'ТВ-7 Абакан',
+    'ТВ21+',
+    'Татарстан 24',
+    'Сочи24 HD',
+    'СТВ-Байкал',
+    'ТВ-Губерния',
+    'ТВ-ИН-Магнитогорск',
+    'ТВ-Колыма-Плюс HD',
+    'Тивиком HD',
+    'ТК Центр Красноярск',
+    'ТКР Рязань',
+    'ТНВ-Планета',
+    'ТНВ-Татарстан',
+    'ТНР 24 (Нижневартовск)',
+    'Толк',
+    'Толпар ТВ',
+    'Тольятти-24',
+    'Томское время HD',
+    'Тюменское время',
+    'Удмуртия',
+    'Ульяновская правда',
+    'Хамдан',
+    'Эфир',
+    'Югорск ТВ',
+    'Югра',
+    'Шаян ТВ',
+    'Экспресс HD',
+    'Юрган',
+    'ЮТВ Чебоксары',
+    'Якутия 24',
+    'Ямал-Регион',
+]
 
 # ═══════════════════════════════════════════════════════════════
 # 🔽 СПИСОК ГРУПП И КАНАЛОВ ДЛЯ УДАЛЕНИЯ
@@ -58,7 +215,6 @@ BLOCKED_GROUPS = [
 # ═══════════════════════════════════════════════════════════════
 
 def load_rules_from_json():
-    """Загружает правила из favorites_rules.json (если есть)"""
     rules_file = "favorites_rules.json"
     if os.path.exists(rules_file):
         try:
@@ -66,25 +222,16 @@ def load_rules_from_json():
                 return json.load(f)
         except:
             pass
-    # Правила по умолчанию, если JSON нет
     return {
         'dimonovich_tv.m3u': [
             ['Rutube (VPN)', 'Первый канал HD'],
-            ['Rutube (VPN)', 'НТВ HD'],
-            ['Rutube (VPN)', 'ТВ3 HD'],
-            ['Rutube (VPN)', 'ТНТ HD'],
-            ['Rutube (VPN)', 'Пятница HD'],
-            ['Wink (VPN 🇷🇺)', 'Пятый канал'],
-            ['Individual Entrepreneur', 'НСТ'],
-            ['С сайтов (VPN)', 'ТВЦ'],
+            ['Wink (VPN 🇷🇺)', 'НТВ'],
         ],
         'loganet_tv.m3u': [
-            ['Развлечение', 'Investigation Discovery HD'],
-            ['Кино', 'Кинохит HD'],
-            ['Кино', 'Киноужас HD'],
-        ],
-                'bugsfreeweb.m3u': [
-            ['Россия', 'СТС HD'],
+            ['Кино', '.Black'],
+            ['Развлечение', '2x2'],
+            ['Развлечение', '.Investigation Discovery HD'],
+            ['Развлечение', '.Investigation Discovery'],
         ],
     }
 
@@ -211,6 +358,12 @@ def get_channel_name(info_line):
         return match.group(1).strip()
     return 'Без названия'
 
+def remove_logos_from_line(line):
+    """Удаляет атрибут tvg-logo из строки #EXTINF"""
+    if line.startswith('#EXTINF'):
+        return re.sub(r'\s*tvg-logo="[^"]*"', '', line)
+    return line
+
 def is_info_channel(info_line):
     if not info_line:
         return False
@@ -218,6 +371,16 @@ def is_info_channel(info_line):
     if not channel_name:
         return False
     return '📅 Обновлено' in channel_name
+
+def is_removed_channel(info_line):
+    """Проверяет, нужно ли удалить канал по списку REMOVE_CHANNELS"""
+    if not info_line:
+        return False
+    channel_name = get_channel_name(info_line)
+    for removed in REMOVE_CHANNELS:
+        if removed.lower() in channel_name.lower():
+            return True
+    return False
 
 def remove_old_info_channel(channels):
     if not channels:
@@ -247,7 +410,8 @@ def parse_m3u(file_path):
             if not line:
                 continue
             if line.startswith('#EXTINF'):
-                current_channel = {'info': line, 'url': None}
+                clean_line = remove_logos_from_line(line)
+                current_channel = {'info': clean_line, 'url': None}
             elif current_channel and line.startswith(('http://', 'https://')):
                 current_channel['url'] = line
                 channels.append(current_channel)
@@ -350,7 +514,6 @@ def should_skip_check(info_line):
     return False
 
 def check_stream(url, timeout=CHECK_TIMEOUT):
-    """Быстрая проверка"""
     if not url or not url.startswith(('http://', 'https://')):
         return False
     try:
@@ -364,19 +527,13 @@ def check_stream(url, timeout=CHECK_TIMEOUT):
         return False
 
 def check_stream_retry(url, timeout=CHECK_TIMEOUT_RETRY):
-    """
-    Повторная проверка с большим таймаутом и загрузкой данных.
-    """
     if not url or not url.startswith(('http://', 'https://')):
         return False
     try:
         headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
         response = requests.get(url, headers=headers, timeout=timeout, stream=True)
-        
         if response.status_code != 200:
             return False
-        
-        # Читаем больше данных (50 КБ), чтобы убедиться, что поток действительно идёт
         data = b''
         start_time = time.time()
         while len(data) < 50000 and (time.time() - start_time) < timeout:
@@ -384,33 +541,22 @@ def check_stream_retry(url, timeout=CHECK_TIMEOUT_RETRY):
             if not chunk:
                 break
             data += chunk
-            
-            # Проверяем признаки видео
-            if b'\x47' in data[:188]:  # MPEG-TS
+            if b'\x47' in data[:188]:
                 return True
-            if b'ftyp' in data[:100]:  # MP4
+            if b'ftyp' in data[:100]:
                 return True
-            if b'#EXTM3U' in data[:1000]:  # HLS
+            if b'#EXTM3U' in data[:1000]:
                 return True
-        
-        # Если загрузили больше 10 КБ и нет признаков видео — считаем рабочим
-        # (может быть нестандартный формат)
         return len(data) > 10000
-        
     except requests.exceptions.Timeout:
         return False
     except Exception:
         return False
 
 def check_all_parallel(channels, max_workers=MAX_WORKERS, favorite_urls=None, retry=False):
-    """
-    Проверяет все каналы параллельно.
-    retry=True — использует повторную проверку с большим таймаутом.
-    """
     timeout = CHECK_TIMEOUT_RETRY if retry else CHECK_TIMEOUT
     check_func = check_stream_retry if retry else check_stream
     
-    # Для повторной проверки используем меньше потоков
     if retry:
         workers = min(max_workers, MAX_WORKERS_RETRY)
     else:
@@ -426,7 +572,6 @@ def check_all_parallel(channels, max_workers=MAX_WORKERS, favorite_urls=None, re
     
     start_time = time.time()
     
-    # Пропускаем проверку для избранных и SKIP_CHECK_GROUPS
     to_check = []
     for ch in channels:
         if favorite_urls and ch['url'] in favorite_urls:
@@ -526,6 +671,8 @@ def write_m3u_with_groups(channels, output_file, update_time, stats, favorite_ur
         else:
             new_group = get_new_group(ch['info'])
         
+        ch['info'] = remove_logos_from_line(ch['info'])
+        
         if new_group not in groups:
             groups[new_group] = []
         groups[new_group].append(ch)
@@ -573,6 +720,7 @@ def write_m3u_with_groups(channels, output_file, update_time, stats, favorite_ur
                 info = re.sub(r'group-title="[^"]*"\s*', '', info)
                 if 'group-title="' not in info:
                     info = info.replace(',', f' group-title="{group_name}",')
+                info = remove_logos_from_line(info)
                 f.write(info + '\n')
                 f.write(ch['url'] + '\n')
             f.write('\n')
@@ -610,7 +758,8 @@ def find_favorite_channels(playlists_dir='./playlists'):
             if not line:
                 continue
             if line.startswith('#EXTINF'):
-                current_channel = {'info': line, 'url': None}
+                clean_line = remove_logos_from_line(line)
+                current_channel = {'info': clean_line, 'url': None}
             elif current_channel and line.startswith(('http://', 'https://')):
                 current_channel['url'] = line
                 channels.append(current_channel)
@@ -662,6 +811,13 @@ def main():
         return
     print(f"📊 Всего каналов: {len(channels)}")
 
+    # Удаляем каналы из списка REMOVE_CHANNELS
+    original_count = len(channels)
+    channels = [ch for ch in channels if not is_removed_channel(ch['info'])]
+    removed_count = original_count - len(channels)
+    if removed_count > 0:
+        print(f"🗑️ Удалено каналов по списку: {removed_count}")
+
     print("\n" + "="*50)
     print("🗑️  УДАЛЕНИЕ СТАРЫХ ИНФОРМАЦИОННЫХ КАНАЛОВ")
     print("="*50)
@@ -690,13 +846,12 @@ def main():
         print("\n" + "="*50)
         print("❤️  ДОБАВЛЕНИЕ КАНАЛОВ В ИЗБРАННОЕ")
         print("="*50)
+        for ch in favorite_channels:
+            ch['info'] = remove_logos_from_line(ch['info'])
         channels = [ch for ch in channels if ch['url'] not in favorite_urls]
         channels = favorite_channels + channels
         print(f"📊 Всего каналов после добавления избранных: {len(channels)}")
 
-    # =============================================
-    # 1. ПЕРВАЯ ПРОВЕРКА (быстрая)
-    # =============================================
     print("\n" + "="*50)
     print("🔍 ПЕРВАЯ ПРОВЕРКА КАНАЛОВ (быстрая)")
     print("="*50)
@@ -706,9 +861,6 @@ def main():
     print(f"  ✅ Работает: {len(working)}")
     print(f"  ❌ Не работает: {len(dead)}")
 
-    # =============================================
-    # 2. ПЕРЕПРОВЕРКА РАБОЧИХ КАНАЛОВ (с большим таймаутом)
-    # =============================================
     if working:
         print("\n" + "="*50)
         print("🔍 ПЕРЕПРОВЕРКА РАБОЧИХ КАНАЛОВ (с большим таймаутом)")
@@ -725,7 +877,6 @@ def main():
     else:
         print("\n⚠️ Нет рабочих каналов для перепроверки.")
 
-    # Финальная статистика
     skipped_count = sum(1 for ch in working if should_skip_check(ch['info']) or (favorite_urls and ch['url'] in favorite_urls))
     print(f"\n📊 Финальный результат:")
     print(f"  ✅ Работает: {len(working)}")
