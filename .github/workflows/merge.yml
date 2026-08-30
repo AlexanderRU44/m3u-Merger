@@ -14,7 +14,7 @@ jobs:
   merge:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # Разрешение на запись в релиз
+      contents: write
     steps:
       - uses: actions/checkout@v4
       
@@ -32,22 +32,59 @@ jobs:
           python download_playlists.py
           python merge_m3u.py
       
-      - name: Commit and push merged.m3u to repo
+      - name: Check if merged.m3u changed
+        id: check_changes
+        run: |
+          git add output/merged.m3u playlists/
+          if git diff --staged --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "✅ Нет изменений в merged.m3u"
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "🔄 merged.m3u изменён"
+            # Сохраняем статистику для релиза
+            if [ -f output/merged.m3u ]; then
+              TOTAL=$(grep -c "^#EXTINF" output/merged.m3u || echo "0")
+              echo "total_channels=$TOTAL" >> $GITHUB_OUTPUT
+            fi
+          fi
+      
+      - name: Commit and push merged.m3u (если есть изменения)
+        if: steps.check_changes.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add output/merged.m3u playlists/
-          git diff --staged --quiet || git commit -m "Auto update merged playlist"
+          git commit -m "Auto update merged playlist - $(date '+%Y-%m-%d %H:%M:%S')"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
-      - name: Upload merged.m3u to Release
+      - name: Create Release with info
+        if: steps.check_changes.outputs.changed == 'true'
         uses: softprops/action-gh-release@v1
         with:
           tag_name: latest
+          name: "📺 Плейлист обновлён"
+          body: |
+            ## 🔄 Обновление merged.m3u
+            
+            **Дата:** $(date '+%Y-%m-%d %H:%M:%S') MSK
+            
+            ### 📊 Статистика:
+            - **Всего каналов:** ${{ steps.check_changes.outputs.total_channels || 'N/A' }}
+            
+            ### 📁 Файлы:
+            - `merged.m3u` — основной плейлист
+            
+            ---
+            *Автоматическое обновление*
           files: |
             output/merged.m3u
           token: ${{ secrets.GITHUB_TOKEN }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Skip release (нет изменений)
+        if: steps.check_changes.outputs.changed == 'false'
+        run: |
+          echo "⏭️ Пропускаем обновление релиза (нет изменений)"
