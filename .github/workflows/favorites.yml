@@ -5,7 +5,9 @@ on:
   push:
     paths:
       - 'create_favorites.py'
-      - 'favorites_rules.json'  # если правила избранного тоже могут меняться
+      - 'favorites_rules.json'
+  schedule:
+    - cron: '0 */6 * * *'
 
 jobs:
   favorites:
