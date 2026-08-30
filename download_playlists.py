@@ -2,13 +2,33 @@
 # -*- coding: utf-8 -*-
 
 import os
+import re
 import requests
 import json
 from pathlib import Path
 from datetime import datetime
 
+def remove_logos_from_line(line):
+    """Удаляет атрибут tvg-logo из строки #EXTINF"""
+    if line.startswith('#EXTINF'):
+        return re.sub(r'\s*tvg-logo="[^"]*"', '', line)
+    return line
+
+def clean_m3u_content(content):
+    """Очищает весь M3U контент от иконок"""
+    lines = content.splitlines()
+    cleaned_lines = []
+    
+    for line in lines:
+        if line.startswith('#EXTINF'):
+            cleaned_lines.append(remove_logos_from_line(line))
+        else:
+            cleaned_lines.append(line)
+    
+    return '\n'.join(cleaned_lines)
+
 def download_playlist(url, output_path, timeout=60):
-    """Скачивает плейлист по ссылке"""
+    """Скачивает плейлист по ссылке и очищает от иконок"""
     try:
         headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
@@ -22,11 +42,14 @@ def download_playlist(url, output_path, timeout=60):
         if not any(marker in content.lower() for marker in ['#extm3u', '#extinf']):
             print(f"⚠️ Предупреждение: возможно не M3U файл")
         
-        with open(output_path, 'w', encoding='utf-8') as f:
-            f.write(content)
+        # Очищаем от иконок
+        cleaned_content = clean_m3u_content(content)
         
-        print(f"✅ Сохранено: {output_path} ({len(content)} байт)")
-        return True, {'size': len(content), 'status': 'success'}
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write(cleaned_content)
+        
+        print(f"✅ Сохранено: {output_path} ({len(cleaned_content)} байт, иконки удалены)")
+        return True, {'size': len(cleaned_content), 'status': 'success'}
         
     except requests.exceptions.Timeout:
         print(f"⏰ Таймаут: {url}")
