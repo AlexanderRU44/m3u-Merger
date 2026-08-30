@@ -17,6 +17,13 @@ def get_moscow_time():
     """Возвращает текущее время по Москве"""
     return datetime.now(MOSCOW_TZ)
 
+def remove_logos_from_line(line):
+    """Удаляет атрибут tvg-logo из строки #EXTINF"""
+    if line.startswith('#EXTINF'):
+        # Удаляет tvg-logo="..." (включая кавычки и пробел перед атрибутом)
+        return re.sub(r'\s*tvg-logo="[^"]*"', '', line)
+    return line
+
 def create_info_channel(update_time):
     """Создает информационный канал с датой обновления (без логотипа)"""
     info_line = f'#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: {update_time.strftime("%d.%m.%Y %H:%M")} MSK'
@@ -148,7 +155,7 @@ def get_catchup_info(info_line):
     return info
 
 def parse_m3u(file_path):
-    """Парсит M3U файл и возвращает список каналов"""
+    """Парсит M3U файл и возвращает список каналов с очищенными логотипами"""
     channels = []
     current_channel = None
     
@@ -168,9 +175,11 @@ def parse_m3u(file_path):
                 continue
                 
             if line.startswith('#EXTINF'):
-                catchup_info = get_catchup_info(line)
+                # Очищаем логотип сразу при парсинге
+                clean_line = remove_logos_from_line(line)
+                catchup_info = get_catchup_info(clean_line)
                 current_channel = {
-                    'info': line,
+                    'info': clean_line,  # <-- Очищенная строка
                     'url': None,
                     'source': os.path.basename(file_path),
                     'has_catchup': catchup_info['has_catchup'],
@@ -227,7 +236,7 @@ def merge_m3u_files(input_dir, output_file, remove_duplicates=True, sort_channel
     
     for file_path in m3u_files:
         print(f"📖 Чтение {file_path.name}...")
-        channels = parse_m3u(file_path)
+        channels = parse_m3u(file_path)  # <-- Здесь уже очищены логотипы
         sources[file_path.name] = len(channels)
         
         for channel in channels:
@@ -328,7 +337,7 @@ def merge_m3u_files(input_dir, output_file, remove_duplicates=True, sort_channel
     return True, stats
 
 def write_m3u(channels, output_file, update_time):
-    """Записывает каналы в M3U файл"""
+    """Записывает каналы в M3U файл (с дополнительной очисткой логотипов)"""
     
     output_path = Path(output_file)
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -345,7 +354,9 @@ def write_m3u(channels, output_file, update_time):
         
         for channel in channels:
             if channel.get('info'):
-                f.write(channel['info'] + '\n')
+                # Дополнительная очистка логотипа при записи (страховка)
+                clean_info = remove_logos_from_line(channel['info'])
+                f.write(clean_info + '\n')
             if channel.get('url'):
                 f.write(channel['url'] + '\n')
 
