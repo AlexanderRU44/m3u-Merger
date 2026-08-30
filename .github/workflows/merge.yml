@@ -2,7 +2,7 @@ name: Merge Playlists
 
 on:
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '0 */6 * * *'  # Каждые 6 часов
   push:
     paths:
       - 'playlists/**'
@@ -14,7 +14,7 @@ jobs:
   merge:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write  # Разрешение на запись в релиз
     steps:
       - uses: actions/checkout@v4
       
@@ -32,12 +32,22 @@ jobs:
           python download_playlists.py
           python merge_m3u.py
       
-      - name: Commit and push
+      - name: Commit and push merged.m3u to repo
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add output/merged.m3u playlists/
           git diff --staged --quiet || git commit -m "Auto update merged playlist"
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Upload merged.m3u to Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: latest
+          files: |
+            output/merged.m3u
+          token: ${{ secrets.GITHUB_TOKEN }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
