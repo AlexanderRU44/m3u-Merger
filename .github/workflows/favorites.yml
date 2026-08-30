@@ -2,6 +2,10 @@ name: Create Favorites Playlist
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'create_favorites.py'
+      - 'favorites_rules.json'  # если правила избранного тоже могут меняться
 
 jobs:
   favorites:
