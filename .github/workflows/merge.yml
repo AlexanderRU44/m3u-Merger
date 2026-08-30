@@ -48,12 +48,14 @@ jobs:
             fi
           fi
       
-      - name: Set date and time
+      - name: Set date and time (MSK)
         id: datetime
         if: steps.check_changes.outputs.changed == 'true'
         run: |
-          echo "date=$(date '+%Y-%m-%d %H:%M:%S')" >> $GITHUB_OUTPUT
-          echo "date_short=$(date '+%Y-%m-%d')" >> $GITHUB_OUTPUT
+          MSK_DATE=$(date -d "+3 hours" '+%Y-%m-%d %H:%M:%S')
+          MSK_DATE_SHORT=$(date -d "+3 hours" '+%Y-%m-%d')
+          echo "date=$MSK_DATE" >> $GITHUB_OUTPUT
+          echo "date_short=$MSK_DATE_SHORT" >> $GITHUB_OUTPUT
       
       - name: Commit and push merged.m3u (если есть изменения)
         if: steps.check_changes.outputs.changed == 'true'
