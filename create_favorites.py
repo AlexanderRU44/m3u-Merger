@@ -79,8 +79,7 @@ def load_rules_from_json():
             ['С сайтов (VPN)', 'ТВЦ'],
         ],
         'loganet_tv.m3u': [
-            ['Развлечение', '.Investigation Discovery HD'],
-            ['Развлечение', '.Investigation Discovery'],
+            ['Развлечение', 'Investigation Discovery HD'],
             ['Кино', 'Кинохит HD'],
             ['Кино', 'Киноужас HD'],
         ],
