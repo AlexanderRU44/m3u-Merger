@@ -1,0 +1,46 @@
+name: Create Release
+
+on:
+  push:
+    paths:
+      - 'output/merged.m3u'
+      - 'output/favorites.m3u'
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Get file dates
+        id: dates
+        run: |
+          # Получаем дату последнего коммита для merged.m3u
+          MERGED_DATE=$(git log -1 --format="%cd" --date=format:"%Y-%m-%d %H:%M:%S" -- output/merged.m3u || echo "неизвестно")
+          # Получаем дату последнего коммита для favorites.m3u
+          FAVORITES_DATE=$(git log -1 --format="%cd" --date=format:"%Y-%m-%d %H:%M:%S" -- output/favorites.m3u || echo "неизвестно")
+          
+          echo "MERGED_DATE=$MERGED_DATE" >> $GITHUB_OUTPUT
+          echo "FAVORITES_DATE=$FAVORITES_DATE" >> $GITHUB_OUTPUT
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: "📡 Плейлисты от $(date +'%Y-%m-%d %H:%M:%S')"
+          tag_name: "v${{ github.run_number }}"
+          body: |
+            🔄 Обновление плейлистов
+            
+            📅 merged.m3u: ${{ steps.dates.outputs.MERGED_DATE }} MSK
+            📅 favorites.m3u: ${{ steps.dates.outputs.FAVORITES_DATE }} MSK
+            
+            📁 Файлы приложены ниже.
+          files: |
+            output/merged.m3u
+            output/favorites.m3u
+          generate_release_notes: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
