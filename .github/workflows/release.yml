@@ -14,14 +14,27 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Get file dates
+      - name: Get current date for release name
+        id: release_date
+        run: echo "RELEASE_DATE=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_OUTPUT
+
+      - name: Get file modification dates
         id: dates
         run: |
-          # Получаем дату последнего коммита для merged.m3u
+          # Получаем дату последнего изменения merged.m3u из git log с follow
           MERGED_DATE=$(git log -1 --format="%cd" --date=format:"%Y-%m-%d %H:%M:%S" -- output/merged.m3u || echo "неизвестно")
-          # Получаем дату последнего коммита для favorites.m3u
           FAVORITES_DATE=$(git log -1 --format="%cd" --date=format:"%Y-%m-%d %H:%M:%S" -- output/favorites.m3u || echo "неизвестно")
+          
+          # Проверяем, есть ли незакоммиченные изменения в файлах
+          if git diff --name-only | grep -q "output/merged.m3u"; then
+            MERGED_DATE="$(date +'%Y-%m-%d %H:%M:%S') (текущие изменения)"
+          fi
+          if git diff --name-only | grep -q "output/favorites.m3u"; then
+            FAVORITES_DATE="$(date +'%Y-%m-%d %H:%M:%S') (текущие изменения)"
+          fi
           
           echo "MERGED_DATE=$MERGED_DATE" >> $GITHUB_OUTPUT
           echo "FAVORITES_DATE=$FAVORITES_DATE" >> $GITHUB_OUTPUT
@@ -29,7 +42,7 @@ jobs:
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
-          name: "📡 Плейлисты от $(date +'%Y-%m-%d %H:%M:%S')"
+          name: "📡 Плейлисты от ${{ steps.release_date.outputs.RELEASE_DATE }}"
           tag_name: "v${{ github.run_number }}"
           body: |
             🔄 Обновление плейлистов
