@@ -1,9 +1,9 @@
 #EXTM3U
-# Создано: 2026-09-01 20:50:16 MSK
+# Создано: 2026-09-01 21:02:16 MSK
 # Всего каналов: 15361
 # Каналов с архивом: 432
 
-#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: 01.09.2026 20:50 MSK
+#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: 01.09.2026 21:02 MSK
 https://raw.githubusercontent.com/AlexanderRU44/m3u-Merger/main/output/info.m3u8
 #EXTINF:-1 group-title="Кино",Amedia 1
 https://s70378.cdn.ngenix.net/amedia_1/2/index.m3u8
