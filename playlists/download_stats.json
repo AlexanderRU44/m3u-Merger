@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-04T10:58:07.464838",
+  "timestamp": "2026-09-04T16:05:26.426408",
   "total": 7,
   "success": 7,
   "results": {
@@ -23,7 +23,7 @@
       "url": "https://smolnp.github.io/IPTVru/IPTVru.m3u",
       "success": true,
       "info": {
-        "size": 43150,
+        "size": 46017,
         "status": "success"
       }
     },
