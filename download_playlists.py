@@ -74,9 +74,9 @@ def main():
             'url': 'http://iptvshams.ru/ShamsTV.m3u8',
             'name': 'shams_tv.m3u8'
         },
-        # 3. Плейлист IPTVru (основной)
+        # 3. Плейлист IPTVru (основной) - ИСПРАВЛЕНО: убран двойной слеш
         {
-            'url': 'https://smolnp.github.io/IPTVru//IPTVru.m3u',
+            'url': 'https://smolnp.github.io/IPTVru/IPTVru.m3u',
             'name': 'iptv_ru.m3u'
         },
         # 4. Плейлист IPTVstable (стабильная версия)
@@ -94,7 +94,7 @@ def main():
             'url': 'https://loganettv.github.io/playlists/all.m3u',
             'name': 'loganet_tv.m3u'
         },
-        # 7. НОВЫЙ: Плейлист от bugsfreeweb (много кино и познавательных каналов)
+        # 7. Плейлист от bugsfreeweb (много кино и познавательных каналов)
         {
             'url': 'https://raw.githubusercontent.com/bugsfreeweb/LiveTVCollector/refs/heads/main/LiveTV/Russia/LiveTV.m3u',
             'name': 'bugsfreeweb.m3u'

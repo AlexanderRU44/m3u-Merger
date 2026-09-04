@@ -20,7 +20,8 @@ def get_moscow_time():
 def create_info_channel(update_time):
     """Создает информационный канал с датой обновления (без логотипа)"""
     info_line = f'#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: {update_time.strftime("%d.%m.%Y %H:%M")} MSK'
-    info_url = 'https://raw.githubusercontent.com/AlexanderRU44/m3u-Merger/main/output/info.m3u8'
+    # ИСПРАВЛЕНО: ссылка на существующий файл, чтобы не было 404
+    info_url = 'https://raw.githubusercontent.com/AlexanderRU44/m3u-Merger/main/output/merged.m3u'
     return {'info': info_line, 'url': info_url, 'source': 'M3U-Merger', 'has_catchup': False}
 
 # Список групп, которые нужно исключить

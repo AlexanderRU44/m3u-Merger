@@ -30,22 +30,28 @@ jobs:
       - name: Run merge
         run: |
           python download_playlists.py
-          python merge_m3u.py
+          python merge_m3u.py --generate-stats
       
-      - name: Check if merged.m3u changed
+      - name: Check if merged.m3u exists and changed
         id: check_changes
         run: |
-          git add output/merged.m3u playlists/
-          if git diff --staged --quiet; then
+          # Проверяем, существует ли файл
+          if [ ! -f output/merged.m3u ]; then
+            echo "❌ merged.m3u не существует"
             echo "changed=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          
+          # Проверяем изменения в файле
+          if git diff --quiet HEAD -- output/merged.m3u; then
             echo "✅ Нет изменений в merged.m3u"
+            echo "changed=false" >> $GITHUB_OUTPUT
           else
-            echo "changed=true" >> $GITHUB_OUTPUT
             echo "🔄 merged.m3u изменён"
-            if [ -f output/merged.m3u ]; then
-              TOTAL=$(grep -c "^#EXTINF" output/merged.m3u || echo "0")
-              echo "total_channels=$TOTAL" >> $GITHUB_OUTPUT
-            fi
+            echo "changed=true" >> $GITHUB_OUTPUT
+            # Считаем каналы
+            TOTAL=$(grep -c "^#EXTINF" output/merged.m3u || echo "0")
+            echo "total_channels=$TOTAL" >> $GITHUB_OUTPUT
           fi
       
       - name: Set date and time (MSK)
@@ -62,6 +68,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          # Добавляем ВСЕ файлы для коммита
+          git add output/merged.m3u output/stats.json output/epg.xml playlists/
           git commit -m "Auto update merged playlist - ${{ steps.datetime.outputs.date }}"
           git push
         env:
@@ -83,11 +91,13 @@ jobs:
             
             ### 📁 Файлы:
             - `merged.m3u` — основной плейлист
+            - `stats.json` — статистика
             
             ---
             *Автоматическое обновление*
           files: |
             output/merged.m3u
+            output/stats.json
           token: ${{ secrets.GITHUB_TOKEN }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
