@@ -1,9 +1,9 @@
 #EXTM3U
-# Создано: 2026-09-04 23:35:37 MSK
-# Всего каналов: 17392
+# Создано: 2026-09-05 06:52:06 MSK
+# Всего каналов: 17397
 # Каналов с архивом: 600
 
-#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: 04.09.2026 23:35 MSK
+#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: 05.09.2026 06:52 MSK
 https://raw.githubusercontent.com/AlexanderRU44/m3u-Merger/main/output/merged.m3u
 #EXTINF:-1 group-title="TEST ⓵",🔺 INFO 🔺Посмотри!!!
 https://github.com/Dimonovich/TV/releases/download/v1.0.0/1.mp4
@@ -11709,22 +11709,14 @@ http://stream.mcquack.net/80/index.m3u8
 http://stream.mcquack.net/206/index.m3u8
 #EXTINF:-1 group-title="Uncategorized",UDAR (1080p)
 http://stream.mcquack.net/279/index.m3u8
-#EXTINF:-1 group-title="Undefined",7TV (576p)
-http://31.148.48.15/7TV/index.m3u8
-#EXTINF:-1 group-title="Undefined",Zvezda Plus HD (1080p)
-http://tvzvezda.bonus-tv.ru/cdn/zvezdaplus/playlist.m3u8
-#EXTINF:-1 group-title="Undefined",Архыз 24 (1080p)
-https://live.mediacdn.ru/sr1/arhis24/playlist.m3u8
-#EXTINF:-1 group-title="Undefined",БСТ (Башкирское спутниковое телевидение) (576p)
-https://bsttv.bonus-tv.ru/cdn/bst/playlist.m3u8
-#EXTINF:-1 group-title="Undefined",like Gecko) Chrome/144.0.0.0 Safari/537.36" group-title="Undefined",Время (720p)
-https://cdn4.skygo.mn/live/disk1/Vremya/HLSv3-FTA/Vremya.m3u8
-#EXTINF:-1 group-title="Undefined",Санкт-Петербург (576p)
-http://31.148.48.15/Sankt_Peterburg/index.m3u8
-#EXTINF:-1 group-title="Undefined",Точка ТВ (576p)
-http://31.148.48.15/Tochka_TV/index.m3u8
-#EXTINF:-1 group-title="Undefined",Шаян ТВ (Татарстан) (1080p)
-https://shayan.bonus-tv.ru/cdn/shayan/playlist.m3u8
+#EXTINF:-1 group-title="Uncategorized",Russia-1 HD (1080p)
+https://live.smotrim.ru/vgtrk/0/russia1-hd/index.m3u8
+#EXTINF:-1 group-title="Uncategorized",Russia-24 HD (1080p)
+https://live.smotrim.ru/vgtrk/0/russia24-hd/index.m3u8
+#EXTINF:-1 group-title="Uncategorized",National Geographic Wild (1080p)
+http://dtv.vol.net.ua/Nat-Geo-Wild-HD/index.m3u8
+#EXTINF:-1 group-title="General",like Gecko) Chrome/144.0.0.0 Safari/537.36" group-title="General",5 Канал
+https://streaming.televizor-24-tochka.ru/live/8.m3u8
 #EXTINF:-1 group-title="General",12 канал (1080p)
 https://12channel.bonus-tv.ru/cdn/12channel/playlist.m3u8
 #EXTINF:-1 group-title="General",Radio Mir (720p)
@@ -11757,6 +11749,8 @@ https://vgtrkregion-reg.cdnvideo.ru/vgtrk/kaliningrad/zapad24-hd/index.m3u8
 https://vgtrkregion-reg.cdnvideo.ru/vgtrk/stavropol/kavkaz24-hd/index.m3u8
 #EXTINF:-1 group-title="General",Курай (Уфа) (576p)
 https://bsttv.bonus-tv.ru/cdn/kurai/playlist.m3u8
+#EXTINF:-1 group-title="General",ЛенТВ24
+https://player.smotrim.ru/iframe/stream/live_id/3e95d201-f87d-4ac1-8897-db2c66bb9657
 #EXTINF:-1 group-title="General",like Gecko) Chrome/144.0.0.0 Safari/537.36" group-title="General",Мир (720p)
 https://cdn4.skygo.mn/live/disk1/MIR/HLSv3-FTA/MIR.m3u8
 #EXTINF:-1 group-title="General",Мир (+4) (576p)
@@ -11787,6 +11781,22 @@ https://vgtrkregion-reg.cdnvideo.ru/vgtrk/novosibirsk/sibir24-hd/index.m3u8
 https://streaming.televizor-24-tochka.ru/live/24.m3u8
 #EXTINF:-1 group-title="General",Урал 24 (Челябинск) (1080p)
 https://vgtrkregion-reg.cdnvideo.ru/vgtrk/chelyabinsk/ural24-hd/index.m3u8
+#EXTINF:-1 group-title="Undefined",7TV (576p)
+http://31.148.48.15/7TV/index.m3u8
+#EXTINF:-1 group-title="Undefined",Zvezda Plus HD (1080p)
+http://tvzvezda.bonus-tv.ru/cdn/zvezdaplus/playlist.m3u8
+#EXTINF:-1 group-title="Undefined",Архыз 24 (1080p)
+https://live.mediacdn.ru/sr1/arhis24/playlist.m3u8
+#EXTINF:-1 group-title="Undefined",БСТ (Башкирское спутниковое телевидение) (576p)
+https://bsttv.bonus-tv.ru/cdn/bst/playlist.m3u8
+#EXTINF:-1 group-title="Undefined",like Gecko) Chrome/144.0.0.0 Safari/537.36" group-title="Undefined",Время (720p)
+https://cdn4.skygo.mn/live/disk1/Vremya/HLSv3-FTA/Vremya.m3u8
+#EXTINF:-1 group-title="Undefined",Санкт-Петербург (576p)
+http://31.148.48.15/Sankt_Peterburg/index.m3u8
+#EXTINF:-1 group-title="Undefined",Точка ТВ (576p)
+http://31.148.48.15/Tochka_TV/index.m3u8
+#EXTINF:-1 group-title="Undefined",Шаян ТВ (Татарстан) (1080p)
+https://shayan.bonus-tv.ru/cdn/shayan/playlist.m3u8
 #EXTINF:-1 group-title="Music",15+ Music (1080p)
 https://live.15plusmg.ru/memfs/ce3366b1-bf25-4e24-96bb-1adf0d44bd3d.m3u8
 #EXTINF:-1 group-title="Music",Amedia 1 (576p)
@@ -11799,6 +11809,8 @@ http://hls127.freeott.top:8080/1muz_HD/video.m3u8
 https://cdn4.yayin.com.tr/kntv/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="Music",о2тв (720p)
 http://31.148.48.15/O2_HD/index.m3u8
+#EXTINF:-1 group-title="Music",Страна ФМ
+https://live-stranafm.cdnvideo.ru/stranafm/smil:stranafm.smil/playlist.m3u8
 #EXTINF:-1 group-title="News",Euronews Russian (720p)
 https://cdn-euronews.akamaized.net/live/eds/euronews-ru/25071/index.m3u8
 #EXTINF:-1 group-title="News",Дон 24 (1080p)
@@ -11899,8 +11911,6 @@ https://vgtrkregion-reg.cdnvideo.ru/vgtrk/4/kultura-hd/index.m3u8
 https://vgtrkregion-reg.cdnvideo.ru/vgtrk/7/kultura-hd/index.m3u8
 #EXTINF:-1 group-title="Family",like Gecko) Chrome/144.0.0.0 Safari/537.36" group-title="Family",STS Love (576i)
 https://cdn4.skygo.mn/live/disk1/Fashion_TV/HLSv3-FTA/Fashion_TV.m3u8
-#EXTINF:-1 group-title="Legislative",like Gecko) Chrome/144.0.0.0 Safari/537.36" group-title="Legislative",Дума ТВ (1080p) [Not 24/7]
-https://dumatv.iptv2022.com/playlist.m3u8
 #EXTINF:-1 group-title="Entertainment;Outdoor",Поехали! (1080p)
 http://31.148.48.15/Poehali/index.m3u8
 #EXTINF:-1 group-title="Cooking",like Gecko) Chrome/144.0.0.0 Safari/537.36" group-title="Cooking",Телекафе (720p)
