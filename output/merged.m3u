@@ -1,9 +1,9 @@
 #EXTM3U
-# Создано: 2026-09-06 14:17:31 MSK
+# Создано: 2026-09-06 14:18:53 MSK
 # Всего каналов: 17732
 # Каналов с архивом: 636
 
-#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: 06.09.2026 14:17 MSK
+#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: 06.09.2026 14:18 MSK
 https://raw.githubusercontent.com/AlexanderRU44/m3u-Merger/main/output/merged.m3u
 #EXTINF:-1 group-title="ТОП каналы" tvg-id="pervy" catchup="append" catchup-days="7" catchup-source="?offset=-${offset}&utcstart=${timestamp}", Первый канал (Архив)
 #EXTVLCOPT:http-user-agent=WINK/1.40.1  (AndroidTV/9) HlsWinkPlayer
