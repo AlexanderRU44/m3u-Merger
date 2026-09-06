@@ -1,11 +1,11 @@
 {
-  "generated": "2026-09-06T13:39:21.762882+03:00",
+  "generated": "2026-09-06T14:14:06.314609+03:00",
   "input_dir": "./playlists",
   "output_file": "./output/merged.m3u",
-  "total_files": 7,
-  "total_channels": 18221,
-  "unique_channels": 17096,
-  "duplicates_removed": 1125,
+  "total_files": 8,
+  "total_channels": 18929,
+  "unique_channels": 17413,
+  "duplicates_removed": 1516,
   "excluded_channels": 1554,
   "excluded_groups": [
     "🔺 INFO 🔺",
@@ -45,8 +45,9 @@
     "Казахстан",
     "Республика Крым"
   ],
-  "archive_channels": 300,
+  "archive_channels": 318,
   "sources": {
+    "iptv_scraper.m3u": 708,
     "dimonovich_tv.m3u": 3865,
     "iptv_ru.m3u": 328,
     "zabava_ef.m3u": 112,
@@ -56,6 +57,7 @@
     "iptv_stable.m3u8": 223
   },
   "file_sizes": {
+    "playlists/iptv_scraper.m3u": 106646,
     "playlists/dimonovich_tv.m3u": 752822,
     "playlists/iptv_ru.m3u": 52093,
     "playlists/zabava_ef.m3u": 20372,
@@ -64,5 +66,5 @@
     "playlists/shams_tv.m3u8": 1914265,
     "playlists/iptv_stable.m3u8": 35900
   },
-  "output_size": 2874489
+  "output_size": 2926574
 }
