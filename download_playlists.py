@@ -60,7 +60,7 @@ def download_playlist(url, output_path, timeout=60):
 
 def main():
     # ═══════════════════════════════════════════════════════════
-    # 🔽 ВСЕ ИСТОЧНИКИ (7 ПЛЕЙЛИСТОВ)
+    # 🔽 ВСЕ ИСТОЧНИКИ (8 ПЛЕЙЛИСТОВ)
     # ═══════════════════════════════════════════════════════════
     
     playlists = [
@@ -74,7 +74,7 @@ def main():
             'url': 'http://iptvshams.ru/ShamsTV.m3u8',
             'name': 'shams_tv.m3u8'
         },
-        # 3. Плейлист IPTVru (основной) - ИСПРАВЛЕНО: убран двойной слеш
+        # 3. Плейлист IPTVru (основной)
         {
             'url': 'https://smolnp.github.io/IPTVru/IPTVru.m3u',
             'name': 'iptv_ru.m3u'
@@ -98,6 +98,11 @@ def main():
         {
             'url': 'https://raw.githubusercontent.com/bugsfreeweb/LiveTVCollector/refs/heads/main/LiveTV/Russia/LiveTV.m3u',
             'name': 'bugsfreeweb.m3u'
+        },
+        # 8. Плейлист от iptv-scraper (GitVerse)
+        {
+            'url': 'https://gitverse.ru/api/repos/iptvm3u/iptv-scraper/raw/branch/master/iptv%2Fall_in_one.m3u',
+            'name': 'iptv_scraper.m3u'
         },
     ]
     
