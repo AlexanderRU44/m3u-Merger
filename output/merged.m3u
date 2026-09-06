@@ -1,9 +1,9 @@
 #EXTM3U
-# Создано: 2026-09-06 13:44:09 MSK
+# Создано: 2026-09-06 14:14:21 MSK
 # Всего каналов: 17314
 # Каналов с архивом: 434
 
-#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: 06.09.2026 13:44 MSK
+#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: 06.09.2026 14:14 MSK
 https://raw.githubusercontent.com/AlexanderRU44/m3u-Merger/main/output/merged.m3u
 #EXTINF:-1 group-title="Кино",Amedia 1
 https://cdn.kinolar.workers.dev/a1hd/mono.m3u8?key=halvatv
