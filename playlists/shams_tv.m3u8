@@ -3925,28 +3925,278 @@ http://stream.shbro.org/stream/5DAA46FD1012/tb1228000m3u8.m3u8
 http://stream.shbro.org/stream/5DAA46FD1012/tb3128000m3u8_ff75.m3u8
 #EXTINF:-1 group-title="Музыка",Maidan TV HD
 http://stream.shbro.org/stream/5DAA46FD1012/0playlistm3u8_c782.m3u8
+#EXTINF:-1 group-title="Музыка",UA Music HD
+http://stream.shbro.org/stream/5DAA46FD1012/icHDmonom3u8_92ed.m3u8
+#EXTINF:-1 group-title="Музыка",Happy Radio
+http://stream.shbro.org/stream/5DAA46FD1012/radiomonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Музвар
+http://stream.shbro.org/stream/5DAA46FD1012/uzvarmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Moba
+http://stream.shbro.org/stream/5DAA46FD1012/Mobamonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",VOX Music TV
+http://stream.shbro.org/stream/5DAA46FD1012/icTVmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",MTV Europe
+http://stream.shbro.org/stream/5DAA46FD1012/uropemonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",AIVA HD
+http://stream.shbro.org/stream/5DAA46FD1012/VAHDmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Busuioc TV
+http://stream.shbro.org/stream/5DAA46FD1012/HDMDmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",H!T Music
+http://stream.shbro.org/stream/5DAA46FD1012/yEngmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Classic music HD
+http://stream.shbro.org/stream/5DAA46FD1012/icHDmonom3u8_2867.m3u8
+#EXTINF:-1 group-title="Музыка",MTV Hits IL
+http://stream.shbro.org/stream/5DAA46FD1012/tsILmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",MTV 00 IL
+http://stream.shbro.org/stream/5DAA46FD1012/00ILmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",MTV Gold
+http://stream.shbro.org/stream/5DAA46FD1012/HDILmonom3u8_232b.m3u8
+#EXTINF:-1 group-title="Музыка",MCM Top HD
+http://stream.shbro.org/stream/5DAA46FD1012/OPHDmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Noroc TV MD
+http://stream.shbro.org/stream/5DAA46FD1012/TVHDmonom3u8_631c.m3u8
+#EXTINF:-1 group-title="Музыка",Music Box Hits HD
+http://stream.shbro.org/stream/5DAA46FD1012/tsHDmonom3u8_8600.m3u8
+#EXTINF:-1 group-title="Музыка",Balkanika
+http://stream.shbro.org/stream/5DAA46FD1012/anikamonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Xite HD
+http://stream.shbro.org/stream/5DAA46FD1012/teHDmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",VivaLatino HD
+http://stream.shbro.org/stream/5DAA46FD1012/noHDmonom3u8_96ec.m3u8
+#EXTINF:-1 group-title="Музыка",MyHits
+http://stream.shbro.org/stream/5DAA46FD1012/Hitsmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Mezzo HD
+http://stream.shbro.org/stream/5DAA46FD1012/zoHDmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Bridge TV
+http://stream.shbro.org/stream/5DAA46FD1012/GETVmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Bridge TV Deluxe HD
+http://stream.shbro.org/stream/5DAA46FD1012/GEHDmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Bridge Hits
+http://stream.shbro.org/stream/5DAA46FD1012/dansemonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Bridge Русский Хит
+http://stream.shbro.org/stream/5DAA46FD1012/UHitmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Bridge TV Classic
+http://stream.shbro.org/stream/5DAA46FD1012/assicmonom3u8_f9db.m3u8
+#EXTINF:-1 group-title="Музыка",1 HD
+http://stream.shbro.org/stream/5DAA46FD1012/v1HDmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",EU Music HD
+http://stream.shbro.org/stream/5DAA46FD1012/icHDmonom3u8_73d5.m3u8
+#EXTINF:-1 group-title="Музыка",Mezzo
+http://stream.shbro.org/stream/5DAA46FD1012/Mezzomonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Mezzo Live HD
+http://stream.shbro.org/stream/5DAA46FD1012/veHDmonom3u8_2a30.m3u8
+#EXTINF:-1 group-title="Музыка",M2O TV
+http://stream.shbro.org/stream/5DAA46FD1012/2otvmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Music Box Sexy
+http://stream.shbro.org/stream/5DAA46FD1012/Sexymonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",RFM HD
+http://stream.shbro.org/stream/5DAA46FD1012/0intmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",V2Beat
+http://stream.shbro.org/stream/5DAA46FD1012/2beatmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",MCM Top
+http://stream.shbro.org/stream/5DAA46FD1012/MTopmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Жара
+http://stream.shbro.org/stream/5DAA46FD1012/RASDmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Жара HD
+http://stream.shbro.org/stream/5DAA46FD1012/RAHDmonom3u8_9de6.m3u8
+#EXTINF:-1 group-title="Музыка",BOX Metall HD
+http://stream.shbro.org/stream/5DAA46FD1012/llHDmonom3u8_6767.m3u8
+#EXTINF:-1 group-title="Музыка",Music Box Ukraine HD
+http://stream.shbro.org/stream/5DAA46FD1012/UAHDmonom3u8_1f27.m3u8
+#EXTINF:-1 group-title="Музыка",Music Box Россия
+http://stream.shbro.org/stream/5DAA46FD1012/icBoxmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Music Box Россия HD
+http://stream.shbro.org/stream/5DAA46FD1012/BoxHDmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",MusicBox Gold
+http://stream.shbro.org/stream/5DAA46FD1012/Goldmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",The Voice HD
+http://stream.shbro.org/stream/5DAA46FD1012/0intmonom3u8_fe89.m3u8
+#EXTINF:-1 group-title="Музыка",HitMix HD
+http://stream.shbro.org/stream/5DAA46FD1012/0intmonom3u8_bc9b.m3u8
+#EXTINF:-1 group-title="Музыка",RU TV
+http://stream.shbro.org/stream/5DAA46FD1012/RUTVmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",RU TV HD
+http://stream.shbro.org/stream/5DAA46FD1012/TVHDmonom3u8_df2a.m3u8
+#EXTINF:-1 group-title="Музыка",O2 ТВ
+http://stream.shbro.org/stream/5DAA46FD1012/O2TVmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",O2 HD
+http://stream.shbro.org/stream/5DAA46FD1012/TVHDmonom3u8_cc14.m3u8
+#EXTINF:-1 group-title="Музыка",Европа плюс ТВ
+http://stream.shbro.org/stream/5DAA46FD1012/PLUSmonom3u8_bc61.m3u8
+#EXTINF:-1 group-title="Музыка",Европа плюс HD
+http://stream.shbro.org/stream/5DAA46FD1012/usHDmonom3u8_02ec.m3u8
+#EXTINF:-1 group-title="Музыка",Deluxe Dance HD
+http://stream.shbro.org/stream/5DAA46FD1012/Musicmonom3u8_6c2d.m3u8
+#EXTINF:-1 group-title="Музыка",Deluxe Music HD
+http://stream.shbro.org/stream/5DAA46FD1012/ICHDmonom3u8_6570.m3u8
+#EXTINF:-1 group-title="Музыка",Stingray iConcert HD
+http://stream.shbro.org/stream/5DAA46FD1012/tsHDmonom3u8_0999.m3u8
+#EXTINF:-1 group-title="Музыка",Восток ТВ
+http://stream.shbro.org/stream/5DAA46FD1012/okTVmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Наше Ретро HD
+http://stream.shbro.org/stream/5DAA46FD1012/roHDmonom3u8_fa83.m3u8
+#EXTINF:-1 group-title="Музыка",НашеMusic HD
+http://stream.shbro.org/stream/5DAA46FD1012/HEHDmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Етно HD
+http://stream.shbro.org/stream/5DAA46FD1012/tnoHDmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Муз ТВ
+http://stream.shbro.org/stream/5DAA46FD1012/YZTVmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Музыка первого
+http://stream.shbro.org/stream/5DAA46FD1012/RVOGOmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",360 TuneBox HD
+http://stream.shbro.org/stream/5DAA46FD1012/BoxHDmonom3u8_c48b.m3u8
+#EXTINF:-1 group-title="Музыка",4 Ever music HD
+http://stream.shbro.org/stream/5DAA46FD1012/verHDmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",FON Music HD
+http://stream.shbro.org/stream/5DAA46FD1012/ICHDmonom3u8_dc78.m3u8
+#EXTINF:-1 group-title="Музыка",C music HD
+http://stream.shbro.org/stream/5DAA46FD1012/Musicmonom3u8_c743.m3u8
+#EXTINF:-1 group-title="Музыка",FON Music
+http://stream.shbro.org/stream/5DAA46FD1012/MUSICmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Ля Минор
+http://stream.shbro.org/stream/5DAA46FD1012/MINORmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Balkanika HD
+http://stream.shbro.org/stream/5DAA46FD1012/kaHDmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Music Box Dance HD
+http://stream.shbro.org/stream/5DAA46FD1012/ceHDmonom3u8_200e.m3u8
+#EXTINF:-1 group-title="Музыка",Bridge TV Шлягер
+http://stream.shbro.org/stream/5DAA46FD1012/YAGERmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",4 Fun Dance
+http://stream.shbro.org/stream/5DAA46FD1012/Dancemonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",4fun Kids
+http://stream.shbro.org/stream/5DAA46FD1012/Hitsmonom3u8_e187.m3u8
+#EXTINF:-1 group-title="Музыка",4 Fun TV
+http://stream.shbro.org/stream/5DAA46FD1012/unTVmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",The Box
+http://stream.shbro.org/stream/5DAA46FD1012/Hitsmonom3u8_a271.m3u8
+#EXTINF:-1 group-title="Музыка",Disco Polo Music
+http://stream.shbro.org/stream/5DAA46FD1012/MUSICmonom3u8_100e.m3u8
+#EXTINF:-1 group-title="Музыка",Eska TV
+http://stream.shbro.org/stream/5DAA46FD1012/kaTVmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Eska TV Extra
+http://stream.shbro.org/stream/5DAA46FD1012/Extramonom3u8_ead2.m3u8
+#EXTINF:-1 group-title="Музыка",Polsat Music HD
+http://stream.shbro.org/stream/5DAA46FD1012/icHDmonom3u8_a92c.m3u8
+#EXTINF:-1 group-title="Музыка",Stars TV
+http://stream.shbro.org/stream/5DAA46FD1012/Starsmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",BG Music
+http://stream.shbro.org/stream/5DAA46FD1012/annelmonom3u8_6be9.m3u8
+#EXTINF:-1 group-title="Музыка",Jukebox
+http://stream.shbro.org/stream/5DAA46FD1012/keboxmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Trace Urban HD
+http://stream.shbro.org/stream/5DAA46FD1012/anHDmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Megogo MUSIC  HD
+http://stream.shbro.org/stream/5DAA46FD1012/iveHDmonom3u8_d91e.m3u8
+#EXTINF:-1 group-title="Музыка",VIRGIN RADIO
+http://stream.shbro.org/stream/5DAA46FD1012/RADIOmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",BOX
+http://stream.shbro.org/stream/5DAA46FD1012/BoxTVmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Magic TV
+http://stream.shbro.org/stream/5DAA46FD1012/gicTVmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Planeta HD BG
+http://stream.shbro.org/stream/5DAA46FD1012/taHDmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",The Voice
+http://stream.shbro.org/stream/5DAA46FD1012/Voicemonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Bridge TV Classic HD
+http://stream.shbro.org/stream/5DAA46FD1012/icHDmonom3u8_5736.m3u8
+#EXTINF:-1 group-title="Музыка",Bridge Hits HD
+http://stream.shbro.org/stream/5DAA46FD1012/tsHDmonom3u8_3c1e.m3u8
+#EXTINF:-1 group-title="Музыка",HitMix
+http://stream.shbro.org/stream/5DAA46FD1012/itmixmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Muzzik TV
+http://stream.shbro.org/stream/5DAA46FD1012/ikTVmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",MTV Polska HD
+http://stream.shbro.org/stream/5DAA46FD1012/SKAHDmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Power TV
+http://stream.shbro.org/stream/5DAA46FD1012/erTVmonom3u8_0a06.m3u8
+#EXTINF:-1 group-title="Музыка",Eska Rock TV
+http://stream.shbro.org/stream/5DAA46FD1012/aROCKmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",SADYBA MUSIC HD
+http://stream.shbro.org/stream/5DAA46FD1012/ICHDmonom3u8_27b4.m3u8
+#EXTINF:-1 group-title="Музыка",М1
+http://stream.shbro.org/stream/5DAA46FD1012/evM1monom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",М1 HD
+http://stream.shbro.org/stream/5DAA46FD1012/M1HDmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",М2
+http://stream.shbro.org/stream/5DAA46FD1012/evM2monom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",М2 HD
+http://stream.shbro.org/stream/5DAA46FD1012/M2HDmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",InRating HD
+http://stream.shbro.org/stream/5DAA46FD1012/ngHDmonom3u8_9416.m3u8
+#EXTINF:-1 group-title="Музыка",Bridge TV Rock HD
+http://stream.shbro.org/stream/5DAA46FD1012/shHDmonom3u8_0688.m3u8
+#EXTINF:-1 group-title="Музыка",Bridge TV HD
+http://stream.shbro.org/stream/5DAA46FD1012/TVHDmonom3u8_3c72.m3u8
+#EXTINF:-1 group-title="Музыка",Black HD
+http://stream.shbro.org/stream/5DAA46FD1012/HDUAmonom3u8_828d.m3u8
+#EXTINF:-1 group-title="Музыка",R&R
+http://stream.shbro.org/stream/5DAA46FD1012/RTVmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",POP Star
+http://stream.shbro.org/stream/5DAA46FD1012/Starmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Zona M
+http://stream.shbro.org/stream/5DAA46FD1012/onaMmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Bridge TV Rock
+http://stream.shbro.org/stream/5DAA46FD1012/FRESHmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Vocea Basarabiei HD
+http://stream.shbro.org/stream/5DAA46FD1012/abieimonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Music Box Classic
+http://stream.shbro.org/stream/5DAA46FD1012/assicmonom3u8_a07b.m3u8
+#EXTINF:-1 group-title="Музыка",MyHits HD
+http://stream.shbro.org/stream/5DAA46FD1012/testmonom3u8_fb8e.m3u8
+#EXTINF:-1 group-title="Музыка",Radio Italia Trend TV HD
+http://stream.shbro.org/stream/5DAA46FD1012/TVHDmonom3u8_b855.m3u8
+#EXTINF:-1 group-title="Музыка",Radio Italia Tv HD
+http://stream.shbro.org/stream/5DAA46FD1012/TvHDmonom3u8_ae10.m3u8
+#EXTINF:-1 group-title="Музыка",NRJ Hits HD
+http://stream.shbro.org/stream/5DAA46FD1012/tsFRmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Metal Rocks
+http://stream.shbro.org/stream/5DAA46FD1012/ksTVmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Clubbing HD
+http://stream.shbro.org/stream/5DAA46FD1012/INGHDmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Музыка первого HD
+http://stream.shbro.org/stream/5DAA46FD1012/goHDmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Music Box 90s HD
+http://stream.shbro.org/stream/5DAA46FD1012/ox90monom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Music Box 80s HD
+http://stream.shbro.org/stream/5DAA46FD1012/ox80monom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Music Box 00s HD
+http://stream.shbro.org/stream/5DAA46FD1012/ox00monom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Bridge Fresh HD
+http://stream.shbro.org/stream/5DAA46FD1012/Frashmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Bridge Etno
+http://stream.shbro.org/stream/5DAA46FD1012/etnomonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",RADIO MONTE CARLO
+http://stream.shbro.org/stream/5DAA46FD1012/CARLOmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Krone Hit
+http://stream.shbro.org/stream/5DAA46FD1012/ehitmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Ocko HD CZ
+http://stream.shbro.org/stream/5DAA46FD1012/koCZmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Ocko Black HD CZ
+http://stream.shbro.org/stream/5DAA46FD1012/ckCZmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Ocko Start HD CZ
+http://stream.shbro.org/stream/5DAA46FD1012/rtCZmonom3u8_9d04.m3u8
+#EXTINF:-1 group-title="Музыка",Ocko Expres HD CZ
+http://stream.shbro.org/stream/5DAA46FD1012/esCZmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Jūsų Panevėžys TV HD
+http://stream.shbro.org/stream/5DAA46FD1012/TVHDmonom3u8_7547.m3u8
+#EXTINF:-1 group-title="Музыка",Retro CZ
+http://stream.shbro.org/stream/5DAA46FD1012/roCZmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",BOX HD
+http://stream.shbro.org/stream/5DAA46FD1012/OXHDmonom3u8_de1d.m3u8
+#EXTINF:-1 group-title="Музыка",Tezaur TV
+http://stream.shbro.org/stream/5DAA46FD1012/URTVmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",BOX Music 4K
+http://stream.shbro.org/stream/5DAA46FD1012/ic4kmonom3u8.m3u8
+#EXTINF:-1 group-title="Музыка",Music Box Polska HD
+http://stream.shbro.org/stream/5DAA46FD1012/kaTVmonom3u8_e498.m3u8
+#EXTINF:-1 group-title="Музыка",Муз ТВ HD
+http://stream.shbro.org/stream/5DAA46FD1012/TVHDmonom3u8_0b63.m3u8
 #EXTINF:-1 group-title="Узбекистан",Tas-X.Media
 http://stream.shbro.org/stream/5DAA46FD1012/v1a1monom3u8_df38.m3u8
-#EXTINF:-1 group-title="Узбекистан",Istiqlol TV
-http://stream.shbro.org/stream/5DAA46FD1012/v1a1monom3u8_8361.m3u8
-#EXTINF:-1 group-title="Узбекистан",ntv (o'zbekiston)
-http://stream.shbro.org/stream/5DAA46FD1012/v1a1monom3u8_705f.m3u8
-#EXTINF:-1 group-title="Узбекистан",Gold TV
-http://stream.shbro.org/stream/5DAA46FD1012/v1a1monom3u8_7d7a.m3u8
-#EXTINF:-1 group-title="Узбекистан",Nurafshon
-http://stream.shbro.org/stream/5DAA46FD1012/v1a1monom3u8_5527.m3u8
 #EXTINF:-1 group-title="Узбекистан",Vodiy TV
 http://stream.shbro.org/stream/5DAA46FD1012/v1a1monom3u8_1517.m3u8
-#EXTINF:-1 group-title="Узбекистан",JTV
-http://stream.shbro.org/stream/5DAA46FD1012/v1a1monom3u8_3ae3.m3u8
 #EXTINF:-1 group-title="Узбекистан",Ishonch TV
 http://stream.shbro.org/stream/5DAA46FD1012/v1a1monom3u8_1bdc.m3u8
-#EXTINF:-1 group-title="Узбекистан",Eliqqala TV
-http://stream.shbro.org/stream/5DAA46FD1012/v1a1monom3u8_caec.m3u8
-#EXTINF:-1 group-title="Узбекистан",JaslarTV
-http://stream.shbro.org/stream/5DAA46FD1012/v1a1monom3u8_8419.m3u8
-#EXTINF:-1 group-title="Узбекистан",Amudaryo TV
-http://stream.shbro.org/stream/5DAA46FD1012/v1a1monom3u8_d0d8.m3u8
 #EXTINF:-1 group-title="Узбекистан",TTV Telekanal
 http://stream.shbro.org/stream/5DAA46FD1012/v1a1monom3u8_edc2.m3u8
 #EXTINF:-1 group-title="Узбекистан",TTV Kino
@@ -5018,7 +5268,7 @@ http://stream.shbro.org/stream/5DAA46FD1012/DSTVmonom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",7/8 TV
 http://stream.shbro.org/stream/5DAA46FD1012/78TVmonom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",Crime Investigation BG
-http://stream.shbro.org/stream/5DAA46FD1012/tworkmonom3u8_712a.m3u8
+http://stream.shbro.org/stream/5DAA46FD1012/tworkmonom3u8_001b.m3u8
 #EXTINF:-1 group-title="Болгария",CodeFashion HD
 http://stream.shbro.org/stream/5DAA46FD1012/onHDmonom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",Cine Star TV
@@ -5066,7 +5316,7 @@ http://stream.shbro.org/stream/5DAA46FD1012/BGIDmonom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",Skat
 http://stream.shbro.org/stream/5DAA46FD1012/Skatmonom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",Star BG
-http://stream.shbro.org/stream/5DAA46FD1012/annelmonom3u8_8b3b.m3u8
+http://stream.shbro.org/stream/5DAA46FD1012/annelmonom3u8_9fe8.m3u8
 #EXTINF:-1 group-title="Болгария",National Geographic Wild BG
 http://stream.shbro.org/stream/5DAA46FD1012/WILDmonom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",National Geographic Wild HD BG
@@ -5078,7 +5328,7 @@ http://stream.shbro.org/stream/5DAA46FD1012/eoHDmonom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",Nickelodeon BG
 http://stream.shbro.org/stream/5DAA46FD1012/odeonmonom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",Planeta Folk BG
-http://stream.shbro.org/stream/5DAA46FD1012/Folkmonom3u8_0daf.m3u8
+http://stream.shbro.org/stream/5DAA46FD1012/Folkmonom3u8_3f97.m3u8
 #EXTINF:-1 group-title="Болгария",Канал 3 HD
 http://stream.shbro.org/stream/5DAA46FD1012/3HDmonom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",БГ+ HD
@@ -5086,9 +5336,9 @@ http://stream.shbro.org/stream/5DAA46FD1012/usHDmonom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",FEN TV HD
 http://stream.shbro.org/stream/5DAA46FD1012/ENHDmonom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",Тянков Фолк
-http://stream.shbro.org/stream/5DAA46FD1012/Folkmonom3u8_01a7.m3u8
+http://stream.shbro.org/stream/5DAA46FD1012/Folkmonom3u8_5e7b.m3u8
 #EXTINF:-1 group-title="Болгария",Travel Channel BG
-http://stream.shbro.org/stream/5DAA46FD1012/annelmonom3u8_abed.m3u8
+http://stream.shbro.org/stream/5DAA46FD1012/annelmonom3u8_8f0e.m3u8
 #EXTINF:-1 group-title="Болгария",bTV
 http://stream.shbro.org/stream/5DAA46FD1012/GbTVmonom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",bTV Action
@@ -5100,7 +5350,7 @@ http://stream.shbro.org/stream/5DAA46FD1012/TVHDmonom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",bTV Story
 http://stream.shbro.org/stream/5DAA46FD1012/Storymonom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",Cine Star TV Action
-http://stream.shbro.org/stream/5DAA46FD1012/ctionmonom3u8_9c4f.m3u8
+http://stream.shbro.org/stream/5DAA46FD1012/ctionmonom3u8_08df.m3u8
 #EXTINF:-1 group-title="Болгария",Comedy.box
 http://stream.shbro.org/stream/5DAA46FD1012/dyboxmonom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",БНТ 1
@@ -5110,7 +5360,7 @@ http://stream.shbro.org/stream/5DAA46FD1012/HBO2monom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",HBO3 BG
 http://stream.shbro.org/stream/5DAA46FD1012/HBO3monom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",HGTV BG HD
-http://stream.shbro.org/stream/5DAA46FD1012/TVHDmonom3u8_6458.m3u8
+http://stream.shbro.org/stream/5DAA46FD1012/TVHDmonom3u8_e1f3.m3u8
 #EXTINF:-1 group-title="Болгария",TV 1 BG HD
 http://stream.shbro.org/stream/5DAA46FD1012/1HDmonom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",Nostalgia HD
@@ -5130,21 +5380,21 @@ http://stream.shbro.org/stream/5DAA46FD1012/y2HDmonom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",HBO BG
 http://stream.shbro.org/stream/5DAA46FD1012/GHBOmonom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",bTV Story HD
-http://stream.shbro.org/stream/5DAA46FD1012/ryHDmonom3u8_0417.m3u8
+http://stream.shbro.org/stream/5DAA46FD1012/ryHDmonom3u8_fdef.m3u8
 #EXTINF:-1 group-title="Болгария",Diema Family HD
 http://stream.shbro.org/stream/5DAA46FD1012/lyHDmonom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",SkyShowtime 1 BG
-http://stream.shbro.org/stream/5DAA46FD1012/HDBGmonom3u8_85b0.m3u8
+http://stream.shbro.org/stream/5DAA46FD1012/HDBGmonom3u8_ee4e.m3u8
 #EXTINF:-1 group-title="Болгария",bTV Comedy
 http://stream.shbro.org/stream/5DAA46FD1012/omedymonom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",Ambience TV HD
-http://stream.shbro.org/stream/5DAA46FD1012/TVHDmonom3u8_c871.m3u8
+http://stream.shbro.org/stream/5DAA46FD1012/TVHDmonom3u8_9a9d.m3u8
 #EXTINF:-1 group-title="Болгария",BG Music HD
 http://stream.shbro.org/stream/5DAA46FD1012/icHDmonom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",SkyShowtime 2 BG
-http://stream.shbro.org/stream/5DAA46FD1012/HDBGmonom3u8_4c5b.m3u8
+http://stream.shbro.org/stream/5DAA46FD1012/HDBGmonom3u8_932d.m3u8
 #EXTINF:-1 group-title="Болгария",Viasat Kino BG HD
-http://stream.shbro.org/stream/5DAA46FD1012/HDBGmonom3u8_1c70.m3u8
+http://stream.shbro.org/stream/5DAA46FD1012/HDBGmonom3u8_6a99.m3u8
 #EXTINF:-1 group-title="Болгария",Cinemax 2 BG
 http://stream.shbro.org/stream/5DAA46FD1012/max2monom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",БНТ 3 HD
@@ -5154,9 +5404,9 @@ http://stream.shbro.org/stream/5DAA46FD1012/BNT2monom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",Родина ТВ
 http://stream.shbro.org/stream/5DAA46FD1012/odinamonom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",Agro TV HD
-http://stream.shbro.org/stream/5DAA46FD1012/TVHDmonom3u8_ad0e.m3u8
+http://stream.shbro.org/stream/5DAA46FD1012/TVHDmonom3u8_4f38.m3u8
 #EXTINF:-1 group-title="Болгария",bTV Cinema HD
-http://stream.shbro.org/stream/5DAA46FD1012/maHDmonom3u8_afb9.m3u8
+http://stream.shbro.org/stream/5DAA46FD1012/maHDmonom3u8_14dd.m3u8
 #EXTINF:-1 group-title="Болгария",БГ+
 http://stream.shbro.org/stream/5DAA46FD1012/Gplusmonom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",bTV Comedy HD
@@ -5166,11 +5416,11 @@ http://stream.shbro.org/stream/5DAA46FD1012/thHDmonom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",VIVACOM Arena HD
 http://stream.shbro.org/stream/5DAA46FD1012/naHDmonom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",Cinemania HD
-http://stream.shbro.org/stream/5DAA46FD1012/iaHDmonom3u8_5ca3.m3u8
+http://stream.shbro.org/stream/5DAA46FD1012/iaHDmonom3u8_d663.m3u8
 #EXTINF:-1 group-title="Болгария",Fen Folk HD
 http://stream.shbro.org/stream/5DAA46FD1012/lkHDmonom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",Nick Jr BG
-http://stream.shbro.org/stream/5DAA46FD1012/uniormonom3u8_20c9.m3u8
+http://stream.shbro.org/stream/5DAA46FD1012/uniormonom3u8_75de.m3u8
 #EXTINF:-1 group-title="Болгария",Viasat Kino BG
 http://stream.shbro.org/stream/5DAA46FD1012/V1000monom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",Nostalgia
@@ -5184,7 +5434,7 @@ http://stream.shbro.org/stream/5DAA46FD1012/eSTARmonom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",Kino Nova HD
 http://stream.shbro.org/stream/5DAA46FD1012/vaHDmonom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",Roma TV HD
-http://stream.shbro.org/stream/5DAA46FD1012/TVHDmonom3u8_a424.m3u8
+http://stream.shbro.org/stream/5DAA46FD1012/TVHDmonom3u8_b1b4.m3u8
 #EXTINF:-1 group-title="Болгария",TV 1 BG
 http://stream.shbro.org/stream/5DAA46FD1012/TV1monom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",TLC BG
@@ -5192,13 +5442,13 @@ http://stream.shbro.org/stream/5DAA46FD1012/GTLCmonom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",Nova News HD
 http://stream.shbro.org/stream/5DAA46FD1012/wsHDmonom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",bTV Action HD
-http://stream.shbro.org/stream/5DAA46FD1012/onHDmonom3u8_ecca.m3u8
+http://stream.shbro.org/stream/5DAA46FD1012/onHDmonom3u8_1cea.m3u8
 #EXTINF:-1 group-title="Болгария",Euronews Bulgaria
 http://stream.shbro.org/stream/5DAA46FD1012/gariamonom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",БНТ 1 HD
 http://stream.shbro.org/stream/5DAA46FD1012/T1HDmonom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",Nova HD
-http://stream.shbro.org/stream/5DAA46FD1012/vaHDmonom3u8_4912.m3u8
+http://stream.shbro.org/stream/5DAA46FD1012/vaHDmonom3u8_53da.m3u8
 #EXTINF:-1 group-title="Болгария",Nicktoons BG
 http://stream.shbro.org/stream/5DAA46FD1012/toonsmonom3u8.m3u8
 #EXTINF:-1 group-title="Болгария",Cine.box
