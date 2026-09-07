@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-06T20:14:17.589376",
+  "timestamp": "2026-09-07T03:56:22.483642",
   "total": 8,
   "success": 8,
   "results": {
@@ -55,7 +55,7 @@
       "url": "https://raw.githubusercontent.com/bugsfreeweb/LiveTVCollector/refs/heads/main/LiveTV/Russia/LiveTV.m3u",
       "success": true,
       "info": {
-        "size": 291135,
+        "size": 292348,
         "status": "success"
       }
     },
@@ -63,7 +63,7 @@
       "url": "https://gitverse.ru/api/repos/iptvm3u/iptv-scraper/raw/branch/master/iptv%2Fall_in_one.m3u",
       "success": true,
       "info": {
-        "size": 98253,
+        "size": 98318,
         "status": "success"
       }
     }
