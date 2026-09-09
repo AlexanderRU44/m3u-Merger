@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-09T16:18:51.076303",
+  "timestamp": "2026-09-09T20:45:56.434749",
   "total": 8,
   "success": 8,
   "results": {
@@ -7,7 +7,7 @@
       "url": "https://raw.githubusercontent.com/Dimonovich/TV/Dimonovich/FREE/TV",
       "success": true,
       "info": {
-        "size": 697807,
+        "size": 698397,
         "status": "success"
       }
     },
@@ -55,7 +55,7 @@
       "url": "https://raw.githubusercontent.com/bugsfreeweb/LiveTVCollector/refs/heads/main/LiveTV/Russia/LiveTV.m3u",
       "success": true,
       "info": {
-        "size": 292688,
+        "size": 292691,
         "status": "success"
       }
     },
