@@ -1,12 +1,12 @@
 {
-  "generated": "2026-09-09T23:45:56.900238+03:00",
+  "generated": "2026-09-10T07:03:01.446503+03:00",
   "input_dir": "./playlists",
   "output_file": "./output/merged.m3u",
   "total_files": 8,
   "total_channels": 19086,
   "unique_channels": 17562,
   "duplicates_removed": 1524,
-  "excluded_channels": 1546,
+  "excluded_channels": 1558,
   "excluded_groups": [
     "🔺 INFO 🔺",
     "- ИНФО -",
@@ -48,7 +48,7 @@
   "archive_channels": 318,
   "sources": {
     "iptv_scraper.m3u": 708,
-    "dimonovich_tv.m3u": 3877,
+    "dimonovich_tv.m3u": 3889,
     "iptv_ru.m3u": 328,
     "zabava_ef.m3u": 112,
     "loganet_tv.m3u": 511,
@@ -58,7 +58,7 @@
   },
   "file_sizes": {
     "playlists/iptv_scraper.m3u": 107296,
-    "playlists/dimonovich_tv.m3u": 755636,
+    "playlists/dimonovich_tv.m3u": 757574,
     "playlists/iptv_ru.m3u": 52093,
     "playlists/zabava_ef.m3u": 20372,
     "playlists/loganet_tv.m3u": 78029,
