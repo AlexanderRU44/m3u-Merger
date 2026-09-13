@@ -1,11 +1,11 @@
 {
-  "generated": "2026-09-12T23:23:38.175571+03:00",
+  "generated": "2026-09-13T07:12:30.634714+03:00",
   "input_dir": "./playlists",
   "output_file": "./output/merged.m3u",
   "total_files": 8,
   "total_channels": 19133,
-  "unique_channels": 17661,
-  "duplicates_removed": 1472,
+  "unique_channels": 17656,
+  "duplicates_removed": 1477,
   "excluded_channels": 1556,
   "excluded_groups": [
     "🔺 INFO 🔺",
@@ -66,5 +66,5 @@
     "playlists/shams_tv.m3u8": 1928632,
     "playlists/iptv_stable.m3u8": 35900
   },
-  "output_size": 2955287
+  "output_size": 2954348
 }
