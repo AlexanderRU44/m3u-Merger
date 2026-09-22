@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-22T04:15:49.352334",
+  "timestamp": "2026-09-22T11:18:06.477248",
   "total": 8,
   "success": 8,
   "results": {
@@ -7,7 +7,7 @@
       "url": "https://raw.githubusercontent.com/Dimonovich/TV/Dimonovich/FREE/TV",
       "success": true,
       "info": {
-        "size": 616692,
+        "size": 616593,
         "status": "success"
       }
     },
@@ -15,7 +15,7 @@
       "url": "http://iptvshams.ru/ShamsTV.m3u8",
       "success": true,
       "info": {
-        "size": 1589122,
+        "size": 1586362,
         "status": "success"
       }
     },
