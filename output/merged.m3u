@@ -1,9 +1,9 @@
 #EXTM3U
-# Создано: 2026-09-22 00:51:48 MSK
-# Всего каналов: 17052
+# Создано: 2026-09-22 07:15:49 MSK
+# Всего каналов: 17056
 # Каналов с архивом: 636
 
-#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: 22.09.2026 00:51 MSK
+#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: 22.09.2026 07:15 MSK
 https://raw.githubusercontent.com/AlexanderRU44/m3u-Merger/main/output/merged.m3u
 #EXTINF:-1 group-title="ТОП каналы" tvg-id="pervy" catchup="append" catchup-days="7" catchup-source="?offset=-${offset}&utcstart=${timestamp}", Первый канал (Архив)
 #EXTVLCOPT:http-user-agent=WINK/1.40.1  (AndroidTV/9) HlsWinkPlayer
@@ -12277,6 +12277,14 @@ http://88.212.15.19/live/test_bober/playlist.m3u8
 http://88.212.15.19/live/test_poehali/playlist.m3u8
 #EXTINF:-1 group-title="Uncategorized",Russia-24
 http://dmi3y-tv.online/hls/smotrim/T2/CH_RUSSIA24_INT.m3u8
+#EXTINF:-1 group-title="Uncategorized",Novorossiya TV (1080p) [Geo-blocked]
+http://31.131.139.253:9002/novoros/index.m3u8
+#EXTINF:-1 group-title="Uncategorized",Oplot TV (1080p) [Geo-blocked]
+http://31.131.139.253:9002/oplot_hd/index.m3u8
+#EXTINF:-1 group-title="Uncategorized",6 TV Gorlovka (720p) [Geo-blocked]
+http://91.214.48.158:4022/udp/224.2.2.4:10000
+#EXTINF:-1 group-title="Uncategorized",TNT International Belarus (1080p)
+http://05cea6e8.ucomist.net/iptv/VK7YCHHWNDD8XC/15230/index.m3u8
 #EXTINF:-1 group-title="Music",15+ Music (1080p)
 https://live.15plusmg.ru/memfs/ce3366b1-bf25-4e24-96bb-1adf0d44bd3d.m3u8
 #EXTINF:-1 group-title="Music",A1 (576p)
