@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-24T16:53:00.928885",
+  "timestamp": "2026-09-24T21:21:50.989894",
   "total": 8,
   "success": 8,
   "results": {
@@ -7,7 +7,7 @@
       "url": "https://raw.githubusercontent.com/Dimonovich/TV/Dimonovich/FREE/TV",
       "success": true,
       "info": {
-        "size": 624404,
+        "size": 625028,
         "status": "success"
       }
     },
@@ -47,7 +47,7 @@
       "url": "https://loganettv.github.io/playlists/all.m3u",
       "success": true,
       "info": {
-        "size": 76874,
+        "size": 76766,
         "status": "success"
       }
     },
