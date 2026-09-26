@@ -1,9 +1,9 @@
 #EXTM3U
-# Создано: 2026-09-26 14:07:28 MSK
+# Создано: 2026-09-26 19:08:20 MSK
 # Всего каналов: 17316
 # Каналов с архивом: 642
 
-#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: 26.09.2026 14:07 MSK
+#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: 26.09.2026 19:08 MSK
 https://raw.githubusercontent.com/AlexanderRU44/m3u-Merger/main/output/merged.m3u
 #EXTINF:-1 group-title="TEST ⓵",🔺 INFO 🔺Посмотри!!!
 https://github.com/Dimonovich/TV/releases/download/v1.0.0/1.mp4
@@ -703,6 +703,8 @@ http://stream.mcquack.net/357/tracks-v1a1/mono.ts.m3u8
 http://stream.mcquack.net/241/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 group-title="Ott Club+Реклама",Світ навиворіт+ HD
 http://stream.mcquack.net/49/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="Ott Club+Реклама",Загублений світ+ HD
+http://stream.mcquack.net/223/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 group-title="Ott Club+Реклама",36.6 HD
 http://stream.mcquack.net/331/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 group-title="Ott Club+Реклама",Дім HD
@@ -711,8 +713,6 @@ http://stream.mcquack.net/383/tracks-v1a1/mono.ts.m3u8
 http://stream.mcquack.net/460/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 group-title="Ott Club+Реклама",Nature Relaxation
 http://stream.mcquack.net/459/tracks-v1a1/mono.ts.m3u8
-#EXTINF:-1 group-title="Ott Club+Реклама",Загублений світ+ HD
-http://stream.mcquack.net/223/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 group-title="Ott Club+Реклама",TLC
 http://stream.mcquack.net/168/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 group-title="Ott Club+Реклама",Cinema
@@ -769,7 +769,7 @@ http://stream.mcquack.net/69/tracks-v1a1/mono.ts.m3u8
 http://stream.mcquack.net/263/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 group-title="Ott Club+Реклама",.Sci-Fi
 http://stream.mcquack.net/180/tracks-v1a1/mono.ts.m3u8
-#EXTINF:-1 group-title="Ott Club+Реклама",Kinogrande HD UA
+#EXTINF:-1 group-title="Ott Club+Реклама",KINOGRANDE HD
 http://stream.mcquack.net/456/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 group-title="Ott Club+Реклама",Шокирующее HD
 http://stream.mcquack.net/75/tracks-v1a1/mono.ts.m3u8
@@ -871,15 +871,15 @@ http://stream.mcquack.net/84/tracks-v1a1/mono.ts.m3u8
 http://stream.mcquack.net/406/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 group-title="Ott Club+Реклама",Kino 1 HD
 http://stream.mcquack.net/395/tracks-v1a1/mono.ts.m3u8
-#EXTINF:-1 group-title="Ott Club+Реклама",Машина часу
+#EXTINF:-1 group-title="Ott Club+Реклама",Машина часу HD
 http://stream.mcquack.net/140/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 group-title="Ott Club+Реклама",ЖВЛ+
 http://stream.mcquack.net/139/tracks-v1a1/mono.ts.m3u8
-#EXTINF:-1 group-title="Ott Club+Реклама",Сiмейнi Мелодрами+
+#EXTINF:-1 group-title="Ott Club+Реклама",Сімейні мелодрами+ HD
 http://stream.mcquack.net/137/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 group-title="Ott Club+Реклама",Панянка-селянка+ HD
 http://stream.mcquack.net/134/tracks-v1a1/mono.ts.m3u8
-#EXTINF:-1 group-title="Ott Club+Реклама",Опер за викликом +
+#EXTINF:-1 group-title="Ott Club+Реклама",Опер за викликом+
 http://stream.mcquack.net/50/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 group-title="Ott Club+Реклама",Твiй серiал
 http://stream.mcquack.net/466/tracks-v1a1/mono.ts.m3u8
