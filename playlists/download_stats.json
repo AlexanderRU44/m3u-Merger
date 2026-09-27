@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-09-26T20:53:46.266315",
+  "timestamp": "2026-09-27T04:43:44.273146",
   "total": 8,
-  "success": 8,
+  "success": 7,
   "results": {
     "dimonovich_tv.m3u": {
       "url": "https://raw.githubusercontent.com/Dimonovich/TV/Dimonovich/FREE/TV",
@@ -55,16 +55,16 @@
       "url": "https://raw.githubusercontent.com/bugsfreeweb/LiveTVCollector/refs/heads/main/LiveTV/Russia/LiveTV.m3u",
       "success": true,
       "info": {
-        "size": 318562,
+        "size": 318833,
         "status": "success"
       }
     },
     "iptv_scraper.m3u": {
       "url": "https://gitverse.ru/api/repos/iptvm3u/iptv-scraper/raw/branch/master/iptv%2Fall_in_one.m3u",
-      "success": true,
+      "success": false,
       "info": {
-        "size": 98773,
-        "status": "success"
+        "status": "error",
+        "error": "502 Server Error: Bad Gateway for url: https://gitverse.ru/api/repos/iptvm3u/iptv-scraper/raw/branch/master/iptv%2Fall_in_one.m3u"
       }
     }
   }
