@@ -1,9 +1,9 @@
 #EXTM3U
-# Создано: 2026-09-30 01:04:50 MSK
-# Всего каналов: 17205
+# Создано: 2026-09-30 07:59:01 MSK
+# Всего каналов: 17204
 # Каналов с архивом: 642
 
-#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: 30.09.2026 01:04 MSK
+#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: 30.09.2026 07:59 MSK
 https://raw.githubusercontent.com/AlexanderRU44/m3u-Merger/main/output/merged.m3u
 #EXTINF:-1 group-title="TEST ⓵",🔺 INFO 🔺Посмотри!!!
 https://github.com/Dimonovich/TV/releases/download/v1.0.0/1.mp4
@@ -12443,8 +12443,6 @@ http://cdn-01.bonus-tv.ru/kriktv_edge/playlist.m3u8
 https://streaming.televizor-24-tochka.ru/live/27.m3u8
 #EXTINF:-1 group-title="News",Russia-24 (1080p)
 https://vgtrkregion-reg.cdnvideo.ru/vgtrk/habarovsk/russia24-sd/index.m3u8
-#EXTINF:-1 group-title="Science",.sci-fi (576p)
-http://31.148.48.15/SONY_SCI_FI/index.m3u8
 #EXTINF:-1 group-title="Comedy;Family;Movies",alpha Cinema (1080p)
 https://live.15plusmg.ru/memfs/b389173a-df4e-4171-8904-e249893e71eb.m3u8
 #EXTINF:-1 group-title="Movies;Series",Amedia Premium (720p)
