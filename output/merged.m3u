@@ -1,9 +1,9 @@
 #EXTM3U
-# Создано: 2026-10-01 01:04:13 MSK
-# Всего каналов: 17281
+# Создано: 2026-10-01 08:12:29 MSK
+# Всего каналов: 17301
 # Каналов с архивом: 642
 
-#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: 01.10.2026 01:04 MSK
+#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: 01.10.2026 08:12 MSK
 https://raw.githubusercontent.com/AlexanderRU44/m3u-Merger/main/output/merged.m3u
 #EXTINF:-1 group-title="TEST ⓵",🔺 INFO 🔺Посмотри!!!
 https://github.com/Dimonovich/TV/releases/download/v1.0.0/1.mp4
@@ -10146,23 +10146,23 @@ http://zabava-htlive.cdn.ngenix.net/hls/CH_1TVSD/variant.m3u8
 #EXTINF:-1 group-title="Россия",Россия К
 https://live.smotrim.ru/vgtrk/0/kultura-hd/index.m3u8
 #EXTINF:-1 group-title="Россия",НТВ HD
-https://edge02r.mediavitrina.ru/hls-livef5/ntv_msk/index.m3u8?token=v2.HJOEdZBRUcc_j3j5gRDH47DfzKTazwZGerB2VU-P2nk.ea7BBBS8B2-l6VsE85DAfW5ulynMQysAkOy9fnfStv4.1791229089.792d9b9344e0ca87e601c817f5102318
+https://edge06d.mediavitrina.ru/hls-livef6/ntv_msk/index.m3u8?token=v2.gxgjwbQPhmaLwCyyF1hdGt2sX8AGFP8yDCurPyVIwL4.eSs1lZS1D-_EPyurr3F1-3bDiSgQeF4D8QjTrqX6P9M.1791401889.6d7f20ac3f2a01d4db578e5acf4750ff
 #EXTINF:-1 group-title="Россия",ТВЦ HD
-https://edge01r.mediavitrina.ru/hls-livef5/tvc/index.m3u8?token=v2.nsk9MkbiDgm_0H5B33LHkCoNQWG7VWKUVh8NDjIdYTQ.HShKnNgwIBIz1MbIYIjVUlr_V3NE0Jrdtio9_8Z3BmI.1791229089.9aab3790d4cbf7b9ed986594f74438ea
+https://edge03p.mediavitrina.ru/hls-livef6/tvc/index.m3u8?token=v2.HMo8P_3vd40gm9vrjlxSXmXj_Db1WCv0LOvzW32hQfU.AnzCz-Ujg9nq0-5rPSy1zGXclim8f-SoIhBmJRd625c.1791401890.be4155af418364edfeef21b7fbf25365
 #EXTINF:-1 group-title="Россия",Пятый канал HD
-https://edge02p.mediavitrina.ru/hls-livef7/5tv/index.m3u8?token=v2.9cq9Eum5XS2dtfrRQ5EyjUSUBLxgRW-nafdrEIXUeV0.ReugIAdB70lNDVDuAJKLoNY35UABenD8gIFYNdmIJL8.1791229089.6a2775d491c43c1e20af11ce9e405d65
+https://edge01r.mediavitrina.ru/hls-livef8/5tv/index.m3u8?token=v2.SzrVbmImt-zUr9C-iYGpvqJbQM1u-qdzr958_Y3jMNI.vtegj_V1rrBbQK5b9slnpbWbgjhZHRo3BcYwTCW5GdI.1791401889.843582e234728b14d7220236715c0d52
 #EXTINF:-1 group-title="Россия",Рен ТВ HD
-https://edge05p.mediavitrina.ru/hls-livef5/ren-tv/index.m3u8?token=v2.7ncxL5jREDXNCXXetkCEJ9D13Gl-c9ZXglqsb3y77nE.mPH1LEiGucKIgKn3c514Pn5jGyEMHA59b5n4_agzmKM.1791229090.252be5c50afd198a998826a05f0b24f4
+https://edge08d.mediavitrina.ru/hls-livef5/ren-tv/index.m3u8?token=v2.KxAhNGPGf1UYpjsQk6YCBDKh25fp3as0OV6ZMaG26vw.aKIzhUwJeQ4l7NEw1SQgFoMFtw54sEOioJhq4RdfLtU.1791401890.80b2fa217e658c946eb2a1045bbf2115
 #EXTINF:-1 group-title="Россия",СТС HD
-https://edge08d.mediavitrina.ru/hls-livef5/ctc/index.m3u8?token=v2.pSFc84CpXT7XEhWYy94JjQ3ylE6NGZG9Do1_laUeTAI.vSTZ-xwOw1Zmm6ZuFh4vwn6T4qxAj1RQC9q0JqhToUE.1791229090.ded9752244415eba706952df5021fa7d
+https://edge03p.mediavitrina.ru/hls-livef6/ctc/index.m3u8?token=v2.gou7oc1nF5Be0GaHXxAfSJccs1__fMWDxG4LCo_PZrY.QVC7lmgpGa6N6sxctxTVZj2cfGlwElsqaPJ591mjTJs.1791401890.daa47c93d8e8776517bfd40434df0cbe
 #EXTINF:-1 group-title="Россия",ТНТ HD
-https://edge02p.mediavitrina.ru/hls-livef7/tnt/index.m3u8?token=v2.IJIuScUeGue0k7bN-inS6g9560G3cz35vJdAffKprmg.kz10RlZZerkHGd2-2Uq9Hh6RP9lOP1TumghXWLolLv8.1791229091.7bfc7450e135dca9fba7e3991fec3c95
+https://edge01p.mediavitrina.ru/hls-livef7/tnt/index.m3u8?token=v2.Otm5cgFyo1x8j2fubD8ilU9axl02uEvpoNo6ks-Of9w.RtlqM_OEScQXSTDXqOsJaKL2t1JMaOi-RHaPXezFkFw.1791401892.b584589c6e5fedfb1f14d488914d2486
 #EXTINF:-1 group-title="Россия",ТНТ4 HD
 https://bl.rutube.ru/livestream/c801a7087e29a097192d74c270fbc6c1/index.m3u8?s=WtZxDOlOKwuDX36QiUQgzA&e=2089930021&scheme=https
 #EXTINF:-1 group-title="Россия",Пятница! HD
-https://edge07r.mediavitrina.ru/hls-livef7/friday/index.m3u8?token=v2.ZIwkl239OsXcDUbFwdz-bXyitbRaRQRfBItf0cGkIkQ.5qcdJqU6EjUI_9udp7M3X8WS-b0XA6tIlVRcH55IRfU.1791229090.153357f417671656d3ee8d45ae914482
+https://edge08r.mediavitrina.ru/hls-livef8/friday/index.m3u8?token=v2.-cWA0lzrcsdSYy4PGRq4C22KLyVJOVXjIKSPs9TW2IM.KqaZ388FEnqPwRCXNSTFPoXOzzVqUZHoVdlQQZ8mXdE.1791401891.bdc776d7d7c57d519b89d7ae5c744f85
 #EXTINF:-1 group-title="Россия",ТВ3 HD
-https://edge02d.mediavitrina.ru/hls-livef8/tv3/index.m3u8?token=v2.dC-DYn2mybsk4ZsPyS11hywg6f-XXnWmlZOuSzXz7dM.-wBWj13uzKplx3AO8wIGkl4Z_iu94c5fWbNhl96YCP8.1791229090.e4ab247ad54ed3f48efb71a2cd6ec16d
+https://edge02d.mediavitrina.ru/hls-livef8/tv3/index.m3u8?token=v2.fnV0EQD7GllD-wfwNTeSD3c5IK8oSWt1uMdmo1-VDlo.fBkfBC5tKTtKxza_dW0QKpzW_UfLzA6kDpZXZwDMPo4.1791401891.ed794afc20df4273908b5d44c7850da0
 #EXTINF:-1 group-title="Россия",Известия
 https://hls-igi.cdnvideo.ru/igi/igi_hq/playlist.m3u8
 #EXTINF:-1 group-title="Россия",РБК
@@ -10172,13 +10172,13 @@ https://rferl-ingest.akamaized.net/hls/live/2121657/tvmc05/playlist_1080.m3u8
 #EXTINF:-1 group-title="Россия",Вместе-РФ
 http://cdn-01.bonus-tv.ru:80/vmesterf/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="Россия",Домашний HD
-https://edge01p.mediavitrina.ru/hls-livef5/ctc-dom/index.m3u8?token=v2.rg15VHlhvhy1HO7GLL8ZoI7Mrue8pjdp2jNTDHwU244.GEsKlk7KDWZAP6xx68C4h_Ye5PJkfWQ5hr03tV5A7qk.1791229090.07193b9c972834d870abd76f9deed9e7
+https://edge06d.mediavitrina.ru/hls-livef6/ctc-dom/index.m3u8?token=v2.0kmQAJfH5EPi2yXvsGzjyCxKg0uci5dJMKdngI8CZJ8.e6OJbusN0stRoJAVFQx0kKHEHffVmxLea9uJsjo_1cU.1791401890.ad8ebe9539d874d1140e59f1c329757c
 #EXTINF:-1 group-title="Россия",8 канал
 http://v4.proofix.ru:80/8tv-russia/index.m3u8
 #EXTINF:-1 group-title="Россия",8 канал International
 http://v4.proofix.ru:80/8tv-europe/index.m3u8
 #EXTINF:-1 group-title="Россия",ОТР
-https://edge02r.mediavitrina.ru/hls-livef6/otr_0/index.m3u8?token=v2.Iw3zOxf3CCQKwCH3klYwIevm5DZ_bceoxE8a7pwXPbs.hECGkiOol2_laHWbYbTLPxVi5WtKQhqzHb6YVoZk0RU.1791229089.de9e8583a2a8d19a3910922f18a88a73
+https://edge03p.mediavitrina.ru/hls-livef5/otr_0/index.m3u8?token=v2.YxUk9hFkxxBu-pJhJzdsfE_vJIhhsCe0liBmK7KiwtE.WNtfjb16ubkVVBqRUXp3YD4SWoSodFcCkS5tIwBy-A8.1791401890.1a9bf27c825d1ecb7420a990f75551f0
 #EXTINF:-1 group-title="Новости",RTVi
 https://a3569457567-s70378.cdn.ngenix.net/rtvi/1/index.m3u8
 #EXTINF:-1 group-title="Новости",Дождь
@@ -10206,7 +10206,7 @@ http://185.78.112.47:8077/Eurosport1HD/index.m3u8
 #EXTINF:-1 group-title="Спорт",Eurosport 2 HD
 http://185.78.112.47:8077/Eurosport2HD/index.m3u8
 #EXTINF:-1 group-title="Спорт",Матч! HD
-https://edge08r.mediavitrina.ru/hls-livef6/matchtv/index.m3u8?token=v2.cFiPOdKobxshjWds0UfsXRDoJBSKIRX5VMVT7AGrhts.rYLA9RCHefffly5aJogdhUSVYR6ZEXn2uWFvkJ2xfhA.1791229089.e423165ef317135f7b267d1a8dabf2c6
+https://edge06r.mediavitrina.ru/hls-livef6/matchtv/index.m3u8?token=v2.gKXWP3reD5QnB-0q1BpBbdngXAS_BKqIHe49v2d8nkQ.6QU4yPDycEIi34WO1Xe1lhYuMVNyyidmvgWDCADOVeg.1791401889.3ae471530a3c3e86f32f96fddc302639
 #EXTINF:-1 group-title="Спорт",Матч! Игра
 http://45.145.32.13:20440/match_igra_hd/index.m3u8?token=test
 #EXTINF:-1 group-title="Спорт",Матч! Страна
@@ -12571,6 +12571,48 @@ http://91.228.35.249:8001/1:0:1:6a7:3138:13e:820000:0:0:0:
 http://iptv.mega.net.ru:8888/Oplot_2/index.m3u8
 #EXTINF:-1 group-title="Uncategorized",RT en Espanol (1080p)
 http://168.196.127.137:6001/play/a0a9/index.m3u8
+#EXTINF:-1 group-title="Uncategorized",Channel One (576p)
+http://31.148.5.241/kanal_1/index.m3u8
+#EXTINF:-1 group-title="Uncategorized",Russia-1 (576p)
+http://31.148.5.241/kanal_2/index.m3u8
+#EXTINF:-1 group-title="Uncategorized",Match! Ultra (1080p)
+http://31.148.5.241/kanal_3/index.m3u8
+#EXTINF:-1 group-title="Uncategorized",NTV (576p)
+http://31.148.5.241/kanal_4/index.m3u8
+#EXTINF:-1 group-title="Uncategorized",Channel 5 (576p)
+http://31.148.5.241/kanal_5/index.m3u8
+#EXTINF:-1 group-title="Uncategorized",Russia-K (576p)
+http://31.148.5.241/kanal_6/index.m3u8
+#EXTINF:-1 group-title="Uncategorized",Russia-24 (576p)
+http://31.148.5.241/kanal_7/index.m3u8
+#EXTINF:-1 group-title="Uncategorized",Carousel (576p)
+http://31.148.5.241/kanal_8/index.m3u8
+#EXTINF:-1 group-title="Uncategorized",OTR (576p)
+http://31.148.5.241/kanal_9/index.m3u8
+#EXTINF:-1 group-title="Uncategorized",TV Centr (576p)
+http://31.148.5.241/kanal_10/index.m3u8
+#EXTINF:-1 group-title="Uncategorized",REN TV (576p)
+http://31.148.5.241/kanal_11/index.m3u8
+#EXTINF:-1 group-title="Uncategorized",STS (576p)
+http://31.148.5.241/kanal_13/index.m3u8
+#EXTINF:-1 group-title="Uncategorized",Domashniy (576p)
+http://31.148.5.241/kanal_14/index.m3u8
+#EXTINF:-1 group-title="Uncategorized",TV-3 (576p)
+http://31.148.5.241/kanal_15/index.m3u8
+#EXTINF:-1 group-title="Uncategorized",Friday! (576p)
+http://31.148.5.241/kanal_16/index.m3u8
+#EXTINF:-1 group-title="Uncategorized",Zvezda (576p)
+http://31.148.5.241/kanal_17/index.m3u8
+#EXTINF:-1 group-title="Uncategorized",Mir (576p)
+http://31.148.5.241/kanal_18/index.m3u8
+#EXTINF:-1 group-title="Uncategorized",TNT (576p)
+http://31.148.5.241/kanal_19/index.m3u8
+#EXTINF:-1 group-title="Uncategorized",Muz-TV (576p)
+http://31.148.5.241/kanal_20/index.m3u8
+#EXTINF:-1 group-title="Uncategorized",Rus (576p)
+http://31.148.5.241/kanal_21/index.m3u8
+#EXTINF:-1 group-title="Uncategorized",Gorodskoy telekanal (720p)
+https://gtk.tv/hls/gtyar.m3u8
 #EXTINF:-1 group-title="Music",15+ Music (1080p)
 https://live.15plusmg.ru/memfs/ce3366b1-bf25-4e24-96bb-1adf0d44bd3d.m3u8
 #EXTINF:-1 group-title="Music",A1 (576p)
@@ -12950,8 +12992,6 @@ https://bl.rutube.ru/livestream/1da5d92af8c55b16241f1eb12a27f00c/index.m3u8?s=Qz
 http://12channel.bonus-tv.ru/cdn/12channel/playlist_sdhigh.m3u8
 #EXTINF:-1 tvg-id="abakan24" group-title="Местные" ,Абакан 24
 https://bl.rutube.ru/livestream/7c5ae60686a94e04691f6917e1dec066/index.m3u8?s=lbRb3zr0EFJczX70hVvgfw&e=2070623508&scheme=https
-#EXTINF:-1 tvg-id="gorodskoy-yaroslavl" group-title="Местные" ,Городской Телеканал-Ярославль
-https://gtk.tv/hls/gtyar.m3u8
 #EXTINF:-1 tvg-id="saxa" group-title="Местные" ,НВК Саха HD
 https://live-saha.cdnvideo.ru/saha2/saha_live.smil/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 tvg-id="tst-cheremchovo" group-title="Местные" ,ТСТ (Черемхово)
