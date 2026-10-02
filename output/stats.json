@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-02T08:01:02.699324+03:00",
+  "generated": "2026-10-02T15:13:34.812852+03:00",
   "input_dir": "./playlists",
   "output_file": "./output/merged.m3u",
   "total_files": 8,
-  "total_channels": 18317,
+  "total_channels": 18316,
   "unique_channels": 16825,
-  "duplicates_removed": 1492,
+  "duplicates_removed": 1491,
   "excluded_channels": 1529,
   "excluded_groups": [
     "🔺 INFO 🔺",
@@ -47,7 +47,7 @@
   ],
   "archive_channels": 321,
   "sources": {
-    "dimonovich_tv.m3u": 3599,
+    "dimonovich_tv.m3u": 3598,
     "iptv_scraper.m3u": 708,
     "loganet_tv.m3u": 569,
     "iptv_ru.m3u": 328,
@@ -57,8 +57,8 @@
     "shams_tv.m3u8": 11702
   },
   "file_sizes": {
-    "playlists/dimonovich_tv.m3u": 675485,
-    "playlists/iptv_scraper.m3u": 107491,
+    "playlists/dimonovich_tv.m3u": 675380,
+    "playlists/iptv_scraper.m3u": 107621,
     "playlists/loganet_tv.m3u": 83797,
     "playlists/iptv_ru.m3u": 52093,
     "playlists/bugsfreeweb.m3u": 345737,

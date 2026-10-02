@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-02T05:01:02.254341",
+  "timestamp": "2026-10-02T12:13:34.366942",
   "total": 8,
   "success": 8,
   "results": {
@@ -7,7 +7,7 @@
       "url": "https://raw.githubusercontent.com/Dimonovich/TV/Dimonovich/FREE/TV",
       "success": true,
       "info": {
-        "size": 628414,
+        "size": 628320,
         "status": "success"
       }
     },
@@ -63,7 +63,7 @@
       "url": "https://gitverse.ru/api/repos/iptvm3u/iptv-scraper/raw/branch/master/iptv%2Fall_in_one.m3u",
       "success": true,
       "info": {
-        "size": 98968,
+        "size": 99098,
         "status": "success"
       }
     }
