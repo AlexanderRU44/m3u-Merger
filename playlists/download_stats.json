@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-03T11:24:34.629911",
+  "timestamp": "2026-10-03T16:01:05.159656",
   "total": 8,
   "success": 8,
   "results": {
@@ -63,7 +63,7 @@
       "url": "https://gitverse.ru/api/repos/iptvm3u/iptv-scraper/raw/branch/master/iptv%2Fall_in_one.m3u",
       "success": true,
       "info": {
-        "size": 99293,
+        "size": 99358,
         "status": "success"
       }
     }

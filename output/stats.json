@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-03T14:24:34.982988+03:00",
+  "generated": "2026-10-03T19:01:05.397683+03:00",
   "input_dir": "./playlists",
   "output_file": "./output/merged.m3u",
   "total_files": 8,
@@ -58,7 +58,7 @@
   },
   "file_sizes": {
     "playlists/dimonovich_tv.m3u": 675748,
-    "playlists/iptv_scraper.m3u": 107816,
+    "playlists/iptv_scraper.m3u": 107881,
     "playlists/loganet_tv.m3u": 83797,
     "playlists/iptv_ru.m3u": 52093,
     "playlists/bugsfreeweb.m3u": 345737,
