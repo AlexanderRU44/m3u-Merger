@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-10-10T21:26:04.366404",
+  "timestamp": "2026-10-11T05:07:33.266795",
   "total": 8,
-  "success": 7,
+  "success": 8,
   "results": {
     "dimonovich_tv.m3u": {
       "url": "https://raw.githubusercontent.com/Dimonovich/TV/Dimonovich/FREE/TV",
@@ -55,16 +55,16 @@
       "url": "https://raw.githubusercontent.com/bugsfreeweb/LiveTVCollector/refs/heads/main/LiveTV/Russia/LiveTV.m3u",
       "success": true,
       "info": {
-        "size": 324296,
+        "size": 308199,
         "status": "success"
       }
     },
     "iptv_scraper.m3u": {
       "url": "https://gitverse.ru/api/repos/iptvm3u/iptv-scraper/raw/branch/master/iptv%2Fall_in_one.m3u",
-      "success": false,
+      "success": true,
       "info": {
-        "status": "timeout",
-        "error": "Timeout"
+        "size": 100723,
+        "status": "success"
       }
     }
   }
