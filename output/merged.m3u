@@ -1,9 +1,9 @@
 #EXTM3U
-# Создано: 2026-10-12 00:42:07 MSK
+# Создано: 2026-10-12 08:21:12 MSK
 # Всего каналов: 16835
 # Каналов с архивом: 642
 
-#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: 12.10.2026 00:42 MSK
+#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: 12.10.2026 08:21 MSK
 https://raw.githubusercontent.com/AlexanderRU44/m3u-Merger/main/output/merged.m3u
 #EXTINF:-1 group-title="TEST ⓵",🔺 INFO 🔺Посмотри!!!
 https://github.com/Dimonovich/TV/releases/download/v1.0.0/1.mp4
@@ -11692,8 +11692,8 @@ https://live-stranafm.cdnvideo.ru/stranafm/smil:stranafm.smil/playlist.m3u8
 https://rfe-ingest.akamaized.net/hls/live/2033043/tvmc05/master.m3u8
 #EXTINF:-1 group-title="News",Don 24 (1080p)
 https://donmedia.bonus-tv.ru/cdn/donmedia/playlist.m3u8
-#EXTINF:-1 group-title="News",Euronews Russian (1080p)
-http://str2.iptvhd.ru:8080/Euronews/index.m3u8
+#EXTINF:-1 group-title="News",Euronews Russian (720p)
+https://cdn-euronews.akamaized.net/live/eds/euronews-ru/25071/index.m3u8
 #EXTINF:-1 group-title="News",Krik-TV (1080p)
 http://cdn-01.bonus-tv.ru/kriktv_edge/playlist.m3u8
 #EXTINF:-1 group-title="News",Pervyy Respublikanskiy
@@ -11842,8 +11842,8 @@ https://bsttv.bonus-tv.ru/cdn/tamyr/playlist.m3u8
 http://31.148.48.15/Detskiy/index.m3u8
 #EXTINF:-1 group-title="Cooking",like Gecko) Chrome/144.0.0.0 Safari/537.36" group-title="Cooking",Telecafe (Russia) (720p)
 https://cdn4.skygo.mn/live/disk1/Telecafe/HLSv3-FTA/Telecafe.m3u8
-#EXTINF:-1 group-title="Documentary",DocuBox Russia (1080p)
-http://str2.iptvhd.ru:8080/DocuBoxHD/index.m3u8
+#EXTINF:-1 group-title="Documentary",DocuBox Russia
+http://dtv.vol.net.ua/DOCUBOX-HD/index.m3u8
 #EXTINF:-1 group-title="Documentary",Nauka (Russia) (1080p)
 http://31.148.48.15/Nauka_2.0/index.m3u8
 #EXTINF:-1 group-title="Documentary",RT Documentary Russian (1080p)
