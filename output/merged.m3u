@@ -1,9 +1,9 @@
 #EXTM3U
-# Создано: 2026-10-14 14:32:24 MSK
-# Всего каналов: 5842
+# Создано: 2026-10-14 19:54:46 MSK
+# Всего каналов: 5843
 # Каналов с архивом: 642
 
-#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: 14.10.2026 14:32 MSK
+#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: 14.10.2026 19:54 MSK
 https://raw.githubusercontent.com/AlexanderRU44/m3u-Merger/main/output/merged.m3u
 #EXTINF:-1 group-title="TEST ⓵",🔺 INFO 🔺Посмотри!!!
 https://github.com/Dimonovich/TV/releases/download/v1.0.0/1.mp4
@@ -11642,6 +11642,8 @@ http://192.162.64.99:5000/play/a02b/index.m3u8
 http://stream.mcquack.net/177/index.m3u8
 #EXTINF:-1 group-title="Uncategorized",Animal Planet (1080p)
 http://stream.mcquack.net/114/index.m3u8
+#EXTINF:-1 group-title="Uncategorized",Quadro (2160p)
+http://57.128.231.171:8080/316/index.m3u8
 #EXTINF:-1 group-title="Music",15+ Music (1080p)
 https://live.15plusmg.ru/memfs/ce3366b1-bf25-4e24-96bb-1adf0d44bd3d.m3u8
 #EXTINF:-1 group-title="Music",A1 (576p)
