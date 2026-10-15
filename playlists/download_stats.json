@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-15T04:03:19.332152",
+  "timestamp": "2026-10-15T11:10:17.859239",
   "total": 8,
   "success": 7,
   "results": {
@@ -7,7 +7,7 @@
       "url": "https://raw.githubusercontent.com/Dimonovich/TV/Dimonovich/FREE/TV",
       "success": true,
       "info": {
-        "size": 662005,
+        "size": 611050,
         "status": "success"
       }
     },
