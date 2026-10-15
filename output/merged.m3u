@@ -1,9 +1,9 @@
 #EXTM3U
-# Создано: 2026-10-15 14:10:18 MSK
+# Создано: 2026-10-15 19:41:25 MSK
 # Всего каналов: 5843
 # Каналов с архивом: 642
 
-#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: 15.10.2026 14:10 MSK
+#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: 15.10.2026 19:41 MSK
 https://raw.githubusercontent.com/AlexanderRU44/m3u-Merger/main/output/merged.m3u
 #EXTINF:-1 group-title="TEST ⓵",🔺 INFO 🔺Посмотри!!!
 https://github.com/Dimonovich/TV/releases/download/v1.0.0/1.mp4
