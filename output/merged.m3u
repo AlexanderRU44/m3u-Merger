@@ -1,9 +1,9 @@
 #EXTM3U
-# Создано: 2026-10-18 23:23:01 MSK
-# Всего каналов: 5844
+# Создано: 2026-10-19 07:05:50 MSK
+# Всего каналов: 5833
 # Каналов с архивом: 642
 
-#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: 18.10.2026 23:23 MSK
+#EXTINF:-1 group-title="📊 ИНФО",📅 Обновлено: 19.10.2026 07:05 MSK
 https://raw.githubusercontent.com/AlexanderRU44/m3u-Merger/main/output/merged.m3u
 #EXTINF:-1 group-title="TEST ⓵",🔺 INFO 🔺Посмотри!!!
 https://github.com/Dimonovich/TV/releases/download/v1.0.0/1.mp4
@@ -11023,8 +11023,6 @@ http://stream.mcquack.net/419/index.m3u8
 http://hls127.freeott.top:8080/Lubimoe_Kino/video.m3u8
 #EXTINF:-1 group-title="Uncategorized",Nashe muzhskoe HD (1080p)
 http://stream.mcquack.net/362/index.m3u8
-#EXTINF:-1 group-title="Uncategorized",Nashe Novoe Kino (1080p)
-http://hls127.freeott.top:8080/Nashe_Novoe_Kino_HD/video.m3u8
 #EXTINF:-1 group-title="Uncategorized",National Geographic Wild (1080p)
 http://hls127.freeott.top:8080/Nat_Geo_Wild_SD/video.m3u8
 #EXTINF:-1 group-title="Uncategorized",Nevskiy (1080p)
@@ -11067,14 +11065,10 @@ http://hls127.freeott.top:8080/Ocean_TV/video.m3u8
 http://stream.mcquack.net/194/index.m3u8
 #EXTINF:-1 group-title="Uncategorized",Okhota i rybalka (576p)
 http://stream.mcquack.net/155/index.m3u8
-#EXTINF:-1 group-title="Uncategorized",Okko Futbol (1080p)
-http://stream.mcquack.net/491/index.m3u8
 #EXTINF:-1 group-title="Uncategorized",Okko Futbol (576p)
 http://178.124.179.122:8080/Setanta1/index.m3u8
 #EXTINF:-1 group-title="Uncategorized",Okko Prajm Sport (1080p)
 http://stream.mcquack.net/493/index.m3u8
-#EXTINF:-1 group-title="Uncategorized",Okko Sport (1080p)
-http://stream.mcquack.net/492/index.m3u8
 #EXTINF:-1 group-title="Uncategorized",Ostrosyuzhetnoye HD (1080p)
 http://stream.mcquack.net/214/index.m3u8
 #EXTINF:-1 group-title="Uncategorized",Patriot (720p)
@@ -11087,8 +11081,6 @@ https://cdn-dvr.ntv.ru/Perviy_otdel/index.m3u8
 https://cdn-dvr.ntv.ru/Pes/index.m3u8
 #EXTINF:-1 group-title="Uncategorized",Priklyucheniya HD (1080p)
 http://stream.mcquack.net/198/index.m3u8
-#EXTINF:-1 group-title="Uncategorized",Pro100TV (576p)
-https://sirius.greenhosting.ru/Pro100tvRu/video.m3u8
 #EXTINF:-1 group-title="Uncategorized",Pro Business (720p)
 https://tv-streaming.bsh.ru:21938/probusiness/probusiness.stream/playlist.m3u8
 #EXTINF:-1 group-title="Uncategorized",Pro Lyubov (1080p)
@@ -11212,8 +11204,6 @@ https://songtv.hls.iptvdc.com/web-russia/playlist.m3u8
 #EXTINF:-1 group-title="Uncategorized",Soyuzny (480p)
 http://178.124.179.122:8080/TRO/index.m3u8
 #EXTINF:-1 group-title="Uncategorized",Spas (576p)
-http://hls127.freeott.top:8080/Spas/video.m3u8
-#EXTINF:-1 group-title="Uncategorized",Spas (576p)
 https://tvspas.mediacdn.ru/cdn/spas/playlist.m3u8
 #EXTINF:-1 group-title="Uncategorized",Star Cinema
 https://dash2.antik.sk/live/test_star_cinema_atktv/playlist.m3u8
@@ -11223,8 +11213,6 @@ http://tshift-1.telecoma.tv/sts/index.m3u8
 http://stream.mcquack.net/138/index.m3u8
 #EXTINF:-1 group-title="Uncategorized",STS kids (576p)
 http://hls127.freeott.top:8080/STS_Kids/video.m3u8
-#EXTINF:-1 group-title="Uncategorized",STS Love (576p)
-http://hls127.freeott.top:8080/CTC-LOVE/video.m3u8
 #EXTINF:-1 group-title="Uncategorized",STS Love (576p)
 http://stream.mcquack.net/183/index.m3u8
 #EXTINF:-1 group-title="Uncategorized",STS SD (576p)
@@ -11240,7 +11228,7 @@ http://46.32.176.50/subbota/index.m3u8
 #EXTINF:-1 group-title="Uncategorized",SuperGeroi (1080p)
 http://31.148.48.15/Malish_TV/index.m3u8
 #EXTINF:-1 group-title="Uncategorized",Svoboda
-http://88.212.15.19/live/svoboda/index.m3u8
+http://88.212.15.17/live/svoboda/index.m3u8
 #EXTINF:-1 group-title="Uncategorized",T24 (576p)
 http://178.134.1.158:8081/t24/index.m3u8
 #EXTINF:-1 group-title="Uncategorized",T24 (576p)
@@ -11357,10 +11345,6 @@ http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mirtv7_2500/playlist.m3u8
 http://stream.tvbelgorod.ru:8080/mirbelogorya/index.m3u8
 #EXTINF:-1 group-title="Uncategorized",МТВ (Волгоград) (720p) [Not 24/7]
 http://hls.volgograd1vtv.cdnvideo.ru/volgograd1vtv/volgograd1vtv.sdp/playlist.m3u8
-#EXTINF:-1 group-title="Uncategorized",Мультимания (576p)
-https://sirius.greenhosting.ru/MultimaniaRu/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Uncategorized",Мультимания ТВ (576p)
-http://sirius.greenhosting.ru/MultimaniaRu/video.m3u8
 #EXTINF:-1 group-title="Uncategorized",Надежда (720p)
 https://live-tvhope.cdnvideo.ru/tvhope-pull/tvhope_1/playlist.m3u8
 #EXTINF:-1 group-title="Uncategorized",Надежда (720p)
@@ -11377,8 +11361,6 @@ https://peqk71plnjy.a.trbcdn.net/livemaster/w4kz7pki62_nts_tv/playlist.m3u8
 http://osnmedia.servicecdn.ru/streams/17603_88089/playlist.m3u8
 #EXTINF:-1 group-title="Uncategorized",Открытый мир. Здоровье (576p)
 https://v4.proofix.ru/0mir/index.m3u8
-#EXTINF:-1 group-title="Uncategorized",Патриот (576i)
-http://catchup.videoline.ru/asvtv/index.m3u8
 #EXTINF:-1 group-title="Uncategorized",Прима (1080p)
 https://tele2dvrnat01-02.cdnvideo.ru/stream/NAT_Prima/hls/index.m3u8
 #EXTINF:-1 group-title="Uncategorized",Радио Говорит Москва (Веб-камера) (720p)
@@ -11423,8 +11405,6 @@ http://158.101.222.193:88/georgia_play.php?id=setanta_georgia
 http://158.101.222.193:88/georgia_play.php?id=setanta_sports_plus_georgia
 #EXTINF:-1 group-title="Uncategorized",2x2 (576p)
 http://flussonic.mkpnet.ru/tv-17540fb90079a865/video.m3u8
-#EXTINF:-1 group-title="Uncategorized",Pobeda (1080p)
-http://94.155.93.182/POBEDA_HD/index.m3u8
 #EXTINF:-1 group-title="Uncategorized",Nauka (576p)
 http://45.145.32.13:20440/nauka/index.m3u8?token=test
 #EXTINF:-1 group-title="Uncategorized",Detskiy (576p)
@@ -11496,7 +11476,7 @@ http://flussonic.linkintel.ru/tiji/index.m3u8
 #EXTINF:-1 group-title="Uncategorized",Match! Ultra (576p)
 http://flussonic.linkintel.ru/match/index.m3u8
 #EXTINF:-1 group-title="Uncategorized",Muzyka Pervogo (576p)
-http://88.212.15.19/live/test_muzyka_pervogo/playlist.m3u8
+http://88.212.15.17/live/test_muzyka_pervogo/playlist.m3u8
 #EXTINF:-1 group-title="Uncategorized",TV-3 HD (1080p)
 http://stream.mcquack.net/136/index.m3u8
 #EXTINF:-1 group-title="Uncategorized",TNT4 (576p)
@@ -11537,8 +11517,6 @@ http://fashionlive.mediacdn.ru/cdn/fashiontv/playlist.m3u8
 https://stream8.cinerama.uz/1281/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="Uncategorized",Channel One CIS (576p)
 https://fs.uplink.kz/perviy_kanal_sng/mono.m3u8?token=onlinetv
-#EXTINF:-1 group-title="Uncategorized",Rybalka i okhota (576p)
-https://fs.uplink.kz/ohota_i_ribalka/mono.m3u8?token=onlinetv
 #EXTINF:-1 group-title="Uncategorized",Friday! International Kazakhstan (576p)
 https://fs.uplink.kz/bolshaya_pyatnica/mono.m3u8?token=onlinetv
 #EXTINF:-1 group-title="Uncategorized",Domashnie Zhivotnye (576p)
@@ -11552,19 +11530,19 @@ http://176.118.197.101/Komediya/index.m3u8
 #EXTINF:-1 group-title="Uncategorized",Russia-1 HD (1080p)
 http://176.118.197.101/RossiyaHD/index.m3u8
 #EXTINF:-1 group-title="Uncategorized",Carousel (576p)
-http://88.212.15.19/live/test_karusel/playlist.m3u8
+http://88.212.15.17/live/test_karusel/playlist.m3u8
 #EXTINF:-1 group-title="Uncategorized",Vremya (576p)
-http://88.212.15.19/live/test_vremya/playlist.m3u8
+http://88.212.15.17/live/test_vremya/playlist.m3u8
 #EXTINF:-1 group-title="Uncategorized",Dom kino (576p)
-http://88.212.15.19/live/test_dom_kino/playlist.m3u8
+http://88.212.15.17/live/test_dom_kino/playlist.m3u8
 #EXTINF:-1 group-title="Uncategorized",Dom kino Premium (576p)
-http://88.212.15.19/live/test_dom_kino_premium/playlist.m3u8
+http://88.212.15.17/live/test_dom_kino_premium/playlist.m3u8
 #EXTINF:-1 group-title="Uncategorized",Telecafe (576p)
-http://88.212.15.19/live/test_telecafe_tv/playlist.m3u8
+http://88.212.15.17/live/test_telecafe_tv/playlist.m3u8
 #EXTINF:-1 group-title="Uncategorized",Bober (576p)
-http://88.212.15.19/live/test_bober/playlist.m3u8
+http://88.212.15.17/live/test_bober/playlist.m3u8
 #EXTINF:-1 group-title="Uncategorized",Poehali! (576p)
-http://88.212.15.19/live/test_poehali/playlist.m3u8
+http://88.212.15.17/live/test_poehali/playlist.m3u8
 #EXTINF:-1 group-title="Uncategorized",Russia-24
 http://dmi3y-tv.online/hls/smotrim/T2/CH_RUSSIA24_INT.m3u8
 #EXTINF:-1 group-title="Uncategorized",Novorossiya TV (1080p) [Geo-blocked]
@@ -11577,8 +11555,6 @@ http://91.214.48.158:4022/udp/224.2.2.4:10000
 http://05cea6e8.ucomist.net/iptv/VK7YCHHWNDD8XC/15230/index.m3u8
 #EXTINF:-1 group-title="Uncategorized",Yalta TV (480p) [Geo-blocked]
 http://195.26.83.96:7029/play/a006
-#EXTINF:-1 group-title="Uncategorized",Setanta Sports 1 HD
-https://fs.uplink.kz/setanta_sports_1_hd/mono.m3u8?token=onlinetv
 #EXTINF:-1 group-title="Uncategorized",Channel 8 International (576p) [Geo-blocked]
 http://live-11cinema.cdnvideo.net/11cinemanet/11cinemanet/playlist.m3u8
 #EXTINF:-1 group-title="Uncategorized",Channel One Europa (480p)
@@ -11647,6 +11623,8 @@ http://stream.mcquack.net/177/index.m3u8
 http://stream.mcquack.net/114/index.m3u8
 #EXTINF:-1 group-title="Uncategorized",Quadro (2160p)
 http://57.128.231.171:8080/316/index.m3u8
+#EXTINF:-1 group-title="Uncategorized",O! International (720p)
+http://88.212.15.17/live/test_telekanal_o/playlist.m3u8
 #EXTINF:-1 group-title="Music",15+ Music (1080p)
 https://live.15plusmg.ru/memfs/ce3366b1-bf25-4e24-96bb-1adf0d44bd3d.m3u8
 #EXTINF:-1 group-title="Music",A1 (576p)
@@ -11685,12 +11663,12 @@ https://janya-digimix.akamaized.net/vglive-sk-955415/russia/ngrp:angelrussia_all
 https://live.mediacdn.ru/sr1/arhis24/playlist.m3u8
 #EXTINF:-1 group-title="Undefined",BST (576p)
 https://bsttv.bonus-tv.ru/cdn/bst/playlist.m3u8
+#EXTINF:-1 group-title="Undefined",like Gecko) Chrome/144.0.0.0 Safari/537.36" group-title="Undefined",Pobeda (576p)
+https://cdn4.skygo.mn/live/disk1/Pobeda/HLSv3-FTA/Pobeda.m3u8
 #EXTINF:-1 group-title="Undefined",Sankt-Peterburg (576p)
 http://31.148.48.15/Sankt_Peterburg/index.m3u8
 #EXTINF:-1 group-title="Undefined",Seven (576p)
 http://31.148.48.15/7TV/index.m3u8
-#EXTINF:-1 group-title="Undefined",Shayan TV (1080p)
-https://shayan.bonus-tv.ru/cdn/shayan/playlist.m3u8
 #EXTINF:-1 group-title="Undefined",Tochka TV (576p)
 http://31.148.48.15/Tochka_TV/index.m3u8
 #EXTINF:-1 group-title="Undefined",like Gecko) Chrome/144.0.0.0 Safari/537.36" group-title="Undefined",Vremya (720p)
@@ -11803,8 +11781,8 @@ http://kino-1.catcast.tv/content/38617/index.m3u8
 http://31.148.48.15/Kino_TV_HD/index.m3u8
 #EXTINF:-1 group-title="Movies",KinoSat (576p)
 http://31.148.48.15/Kineko/index.m3u8
-#EXTINF:-1 group-title="Movies",Novyi Russkii (720p)
-https://live.15plusmg.ru/memfs/f983b507-a170-41a9-85a9-d9afc6cba9c1.m3u8
+#EXTINF:-1 group-title="Movies",Russkiy Illusion (576p)
+http://31.148.48.15/Russkiy_illusion/index.m3u8
 #EXTINF:-1 group-title="Kids",Carousel (1080p)
 http://31.148.48.15/Karusel_HD/index.m3u8
 #EXTINF:-1 group-title="Kids",Mult (1080p)
