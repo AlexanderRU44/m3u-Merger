@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-22T16:56:21.490175",
+  "timestamp": "2026-10-22T21:22:41.596314",
   "total": 8,
   "success": 7,
   "results": {
@@ -7,7 +7,7 @@
       "url": "https://raw.githubusercontent.com/Dimonovich/TV/Dimonovich/FREE/TV",
       "success": true,
       "info": {
-        "size": 600616,
+        "size": 600254,
         "status": "success"
       }
     },
@@ -23,7 +23,7 @@
       "url": "https://smolnp.github.io/IPTVru/IPTVru.m3u",
       "success": true,
       "info": {
-        "size": 46017,
+        "size": 48571,
         "status": "success"
       }
     },
