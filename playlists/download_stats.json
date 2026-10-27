@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-26T22:29:45.999754",
+  "timestamp": "2026-10-27T04:28:51.237920",
   "total": 8,
   "success": 7,
   "results": {
@@ -55,7 +55,7 @@
       "url": "https://raw.githubusercontent.com/bugsfreeweb/LiveTVCollector/refs/heads/main/LiveTV/Russia/LiveTV.m3u",
       "success": true,
       "info": {
-        "size": 303787,
+        "size": 303899,
         "status": "success"
       }
     },
