@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-28T07:59:39.710944+03:00",
+  "generated": "2026-10-28T15:28:58.026235+03:00",
   "input_dir": "./playlists",
   "output_file": "./output/merged.m3u",
   "total_files": 7,
-  "total_channels": 6848,
-  "unique_channels": 5410,
-  "duplicates_removed": 1438,
+  "total_channels": 6833,
+  "unique_channels": 5399,
+  "duplicates_removed": 1434,
   "excluded_channels": 805,
   "excluded_groups": [
     "🔺 INFO 🔺",
@@ -45,24 +45,24 @@
     "Казахстан",
     "Республика Крым"
   ],
-  "archive_channels": 227,
+  "archive_channels": 321,
   "sources": {
-    "zabava_ef.m3u": 112,
-    "loganet_tv.m3u": 569,
-    "bugsfreeweb.m3u": 2420,
-    "dimonovich_tv.m3u": 3323,
+    "dimonovich_tv.m3u": 3308,
     "iptv_scraper.m3u": 708,
+    "loganet_tv.m3u": 569,
     "iptv_ru.m3u": 298,
+    "bugsfreeweb.m3u": 2420,
+    "zabava_ef.m3u": 112,
     "iptv_stable.m3u8": 223
   },
   "file_sizes": {
-    "playlists/zabava_ef.m3u": 20372,
-    "playlists/loganet_tv.m3u": 83797,
-    "playlists/bugsfreeweb.m3u": 326013,
-    "playlists/dimonovich_tv.m3u": 648503,
+    "playlists/dimonovich_tv.m3u": 646354,
     "playlists/iptv_scraper.m3u": 109246,
+    "playlists/loganet_tv.m3u": 83797,
     "playlists/iptv_ru.m3u": 56617,
+    "playlists/bugsfreeweb.m3u": 326013,
+    "playlists/zabava_ef.m3u": 20372,
     "playlists/iptv_stable.m3u8": 35900
   },
-  "output_size": 985598
+  "output_size": 1024184
 }
