@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-10-28T12:28:57.875606",
+  "timestamp": "2026-10-28T22:24:33.553177",
   "total": 8,
-  "success": 7,
+  "success": 5,
   "results": {
     "dimonovich_tv.m3u": {
       "url": "https://raw.githubusercontent.com/Dimonovich/TV/Dimonovich/FREE/TV",
       "success": true,
       "info": {
-        "size": 601431,
+        "size": 601074,
         "status": "success"
       }
     },
@@ -21,18 +21,18 @@
     },
     "iptv_ru.m3u": {
       "url": "https://smolnp.github.io/IPTVru/IPTVru.m3u",
-      "success": true,
+      "success": false,
       "info": {
-        "size": 48571,
-        "status": "success"
+        "status": "error",
+        "error": "404 Client Error: Not Found for url: https://smolnp.github.io/IPTVru/IPTVru.m3u"
       }
     },
     "iptv_stable.m3u8": {
       "url": "https://raw.githubusercontent.com/smolnp/IPTVru/refs/heads/gh-pages/IPTVstable.m3u8",
-      "success": true,
+      "success": false,
       "info": {
-        "size": 31798,
-        "status": "success"
+        "status": "error",
+        "error": "404 Client Error: Not Found for url: https://raw.githubusercontent.com/smolnp/IPTVru/refs/heads/gh-pages/IPTVstable.m3u8"
       }
     },
     "zabava_ef.m3u": {
