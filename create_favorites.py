@@ -589,7 +589,7 @@ def write_m3u_with_groups(channels, output_file, update_time, stats, favorite_ur
     other_groups = sorted([g for g in groups.keys() if g not in group_order])
     ordered_groups = [g for g in group_order if g in groups] + other_groups
     
-    epg_url = 'https://raw.githubusercontent.com/AlexanderRU44/m3u-Merger/main/output/epg.xml'
+    epg_url = 'https://raw.githubusercontent.com/A-N-D-R-404/m3u-Merger/main/output/epg.xml'
     
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write('#EXTM3U\n')
